@@ -1,7 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en-US">
+
+<!-- Mirrored from www.w3schools.com/html/html_links.asp by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Sep 2019 08:38:17 GMT -->
 <head>
-<title>HTML Tutorial</title>
+<title>HTML Links</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="Keywords" content="HTML,CSS,JavaScript,SQL,PHP,jQuery,XML,DOM,Bootstrap,Python,Java,Web development,W3C,tutorials,programming,training,learning,quiz,primer,lessons,references,examples,exercises,source code,colors,demos,tips">
@@ -479,6 +482,21 @@ function w3_getStyleValue(elmnt,style) {
   }
 }
 </script>
+<style>
+.mytestbtn {
+  background-color: #f44336 !important;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.mytestbtn:hover {
+  background-color: red !important;
+  color: white!important;
+}
+</style>
 </head>
 <body>
 <div class='w3-container top'>
@@ -806,40 +824,59 @@ function w3_getStyleValue(elmnt,style) {
         <!-- adspace leaderboard -->
        
       </div>
-<h1>HTML5<span class="color_h1"> Tutorial</span></h1>
+<h1>HTML <span class="color_h1">Links</span></h1>
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="../default.html">&#10094; Home</a>
-<a class="w3-right w3-btn" href="html_intro.html">Next &#10095;</a>
+<a class="w3-left w3-btn" href="html_css.html">&#10094; Previous</a>
+<a class="w3-right w3-btn" href="html_images.html">Next &#10095;</a>
 </div>
-
-<div class="w3-panel w3-info intro">
-<p>HTML is the standard markup language for Web pages.</p>
-  <p>With HTML you can create your own Website.</p>
-<p>HTML is easy to learn - You will enjoy it!</p>
-</div>
-
 <hr>
-<h2>Examples in Every Chapter</h2>
-<p>This HTML tutorial contains hundreds of HTML examples.</p>
-<p>With our online HTML editor, you can edit the HTML, and click on a button to 
-view the result.</p>
+<p class="intro">Links are found in nearly all web pages. Links allow users to click their way from page to page.</p>
+<hr>
+
+<h2>HTML Links - Hyperlinks</h2>
+<p>HTML links are hyperlinks.</p>
+<p>You can click on a link and jump to another document.</p>
+<p>When you move the mouse over a link, the mouse arrow will turn into a little hand.</p>
+<div class="w3-panel w3-note">
+  <p><strong>Note:</strong> A link does not have to be text. It can be an image or any other HTML element.</p>
+</div>
+<hr>
+
+<h2>HTML Links - Syntax</h2>
+<p>Hyperlinks are defined with the HTML <code class="w3-codespan">&lt;a&gt;</code> tag:</p>
+<div class="w3-example">
+<div class="w3-code notranslate htmlHigh">
+&lt;a href=&quot;<i>url</i>&quot;&gt;<i>link text</i>&lt;/a&gt;
+</div>
+</div>
 <div class="w3-example">
 <h3>Example</h3>
 <div class="w3-code notranslate htmlHigh">
-&lt;!DOCTYPE html&gt;<br>
-&lt;html&gt;<br>&lt;head&gt;<br>&lt;title&gt;Page Title&lt;/title&gt;<br>
-&lt;/head&gt;<br>&lt;body&gt;<br><br>&lt;h1&gt;This is a Heading&lt;/h1&gt;<br>&lt;p&gt;This is a paragraph.&lt;/p&gt;<br><br>
-&lt;/body&gt;<br>&lt;/html&gt;
+&lt;a href=&quot;https://www.w3schools.com/html/&quot;&gt;Visit our HTML tutorial&lt;/a&gt;
 </div>
-<a class="w3-btn w3-margin-bottom" href="tryitfb35.html?filename=tryhtml_default" target="_blank">Try it Yourself &raquo;</a>
+<a class="w3-btn w3-margin-bottom" href="tryit082c.html?filename=tryhtml_links_w3schools" target="_blank">Try it Yourself &raquo;</a>
 </div>
-<p><strong>Click on the &quot;Try it Yourself&quot; button to see how it works.</strong></p>
-<p><a href="html_intro.html">Start learning HTML now!</a></p><hr>
+<p>The <code class="w3-codespan">href</code> attribute specifies the destination address (<span class="w3-text-indigo">https://www.w3schools.com/html/</span>) 
+of the link.</p>
+<p>The <strong>link text</strong> is the visible part (Visit our HTML tutorial).</p>
+<p>Clicking on the link text will send you to the specified address.</p>
 
-<h2>HTML Examples</h2>
-<p>At the end of this HTML tutorial, you will find more than 200 examples.</p>
-<p>With our online editor, you can edit and test each example yourself.</p>
-<p><a href="html_examples.html">Go to HTML Examples!</a></p>
+<div class="w3-panel w3-note">
+<p><strong>Note:</strong> Without a forward slash at the end of subfolder addresses, you might generate two requests to the server.
+Many servers will automatically add a forward slash to the end of the address, and then create a new request.</p>
+</div>
+<hr>
+
+<h2>Local Links</h2>
+<p>The example above used an absolute URL (a full web address). </p>
+<p>A local link (link to the same web site) is specified with a relative URL (without https://www....).</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;a href=&quot;html_images.asp&quot;&gt;HTML Images&lt;/a&gt;
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit2507.html?filename=tryhtml_links" target="_blank">Try it Yourself &raquo;</a>
+</div>
 <hr>
 <div id="midcontentadcontainer" style="overflow:auto;text-align:center">
 <!-- MidContent -->
@@ -849,57 +886,229 @@ view the result.</p>
     
 </div>
 <hr>
+<h2>HTML Link Colors</h2>
+<p>By default, a link will appear like this (in all browsers):</p>
+<ul>
+  <li>An unvisited link is underlined and blue</li>
+  <li>A visited link is underlined and purple</li>
+  <li>An active link is underlined and red</li>
+</ul>
+<p>You can change the default colors, by using CSS:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+&lt;style&gt;<br>a:link {<br>&nbsp;&nbsp;color: green; <br>&nbsp;&nbsp;background-color: transparent; 
+  <br>&nbsp;&nbsp;text-decoration: none;<br>}<br><br>
+a:visited {<br>&nbsp; color: pink;<br>&nbsp; background-color: transparent;<br>&nbsp; 
+  text-decoration: none;<br>}<br><br>a:hover {<br>&nbsp; color: red;<br>&nbsp; background-color: transparent;<br>
+  &nbsp; text-decoration: underline;<br>}<br><br>
+  a:active {<br>&nbsp; color: yellow;<br>&nbsp; background-color: transparent;<br>&nbsp; 
+  text-decoration: underline;<br>}<br>&lt;/style&gt;
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit5394.html?filename=tryhtml_links_colors" target="_blank">Try it Yourself &raquo;</a>
+</div>
+
+<p>Links are often styled as buttons, by using CSS:</p>
+<a class="mytestbtn" href="javascript:void(0)">This is a link</a>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+&lt;style&gt;<br>a:link, a:visited {<br>&nbsp; background-color: #f44336;<br>&nbsp; 
+  color: white;<br>&nbsp; padding: 15px 25px;<br>&nbsp; text-align: center;<br>&nbsp; 
+  text-decoration: none;<br>&nbsp; display: inline-block;<br>}<br><br>a:hover, a:active {<br>&nbsp; 
+  background-color: red;<br>}<br>&lt;/style&gt;
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryitcf20.html?filename=tryhtml_links_button" target="_blank">Try it Yourself &raquo;</a>
+</div>
+
+<div class="w3-note w3-panel">
+<p>To learn more about CSS, go to our <a href="../css/default.html">CSS Tutorial</a>.</p></div>
+<hr>
+
+<h2>HTML Links - The target Attribute</h2>
+<p>The <code class="w3-codespan">target</code> attribute specifies where to open the linked document.</p>
+<p>The <code class="w3-codespan">target</code> attribute can have one of the following values:</p>
+<ul>
+  <li><code class="w3-codespan">_blank</code> - Opens the linked document in a new window or tab</li>
+  <li><code class="w3-codespan">_self</code> - Opens the linked document in the same window/tab as it was clicked (this is default)</li>
+  <li><code class="w3-codespan">_parent</code> - Opens the linked document in the parent frame</li>
+  <li><code class="w3-codespan">_top</code> - Opens the linked document in the full body of the window</li>
+  <li><em>framename</em> - Opens the linked document in a named frame</li>
+</ul>
+<p>This example will open the linked document in a new browser window/tab:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;a href=&quot;https://www.w3schools.com/&quot;
+target=&quot;_blank&quot;&gt;Visit W3Schools!&lt;/a&gt;
+</div>
+<a target="_blank" href="tryitb165.html?filename=tryhtml_links_target" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
+</div>
+
+<p><strong>Tip:</strong> If your webpage is locked in a frame, you can use <code class="w3-codespan">target=&quot;_top&quot;</code> to break out of the frame:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;a href=&quot;https://www.w3schools.com/html/&quot;
+target=&quot;_top&quot;&gt;HTML5 tutorial!&lt;/a&gt;
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryitfba0.html?filename=tryhtml_links_target_top" target="_blank">Try it Yourself &raquo;</a>
+</div>
+<hr>
+
+<h2>HTML Links - Image as Link</h2>
+<p>It is common to use images as links:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;a href=&quot;default.asp&quot;&gt;<br>&nbsp; &lt;img src=&quot;smiley.gif&quot; alt=&quot;HTML tutorial&quot; style=&quot;width:42px;height:42px;border:0;&quot;&gt;<br>&lt;/a&gt;
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit45fc.html?filename=tryhtml_links_image" target="_blank">Try it Yourself &raquo;</a>
+</div>
+
+<div class="w3-panel w3-note">
+<p><strong>Note:</strong> <code class="w3-codespan">border:0;</code> is added to prevent IE9 (and earlier) from displaying a border around the image 
+(when the image is a link).</p>
+</div>
+<hr>
+
+<h2>Link Titles</h2>
+<p>The <code class="w3-codespan">title</code> attribute specifies extra information about an element.
+The information is most often shown as a tooltip text when the mouse moves over the element.</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+  &lt;a href=&quot;https://www.w3schools.com/html/&quot; title=&quot;Go to W3Schools HTML 
+  section&quot;&gt;Visit our HTML Tutorial&lt;/a&gt;</div>
+<a class="w3-btn w3-margin-bottom" href="tryite836.html?filename=tryhtml_links_title" target="_blank">Try it Yourself &raquo;</a>
+</div>
+<hr>
+
+<h2>HTML Links - Create a Bookmark</h2>
+<p>HTML bookmarks are used to allow readers to jump to specific parts of a Web 
+page.</p>
+<p>Bookmarks can be useful if your webpage is very long.</p>
+<p>To make a bookmark, you must first create the bookmark, and then add a link 
+to it.</p>
+<p>When the link is clicked, the page will scroll to the location with the 
+bookmark.</p>
+<h2>Example</h2>
+<p>First, create a bookmark with the <code class="w3-codespan">id</code> attribute:</p>
+<div class="w3-example">
+<div class="w3-code notranslate htmlHigh">
+&lt;h2 id=&quot;C4&quot;&gt;Chapter 4&lt;/h2&gt;</div>
+</div>
+<p>Then, add a link to the bookmark (&quot;Jump to Chapter 4&quot;), from within the same page:</p>
+<div class="w3-example">
+<div class="w3-code notranslate htmlHigh">
+ &lt;a href=&quot;#C4&quot;&gt;Jump to Chapter 4&lt;/a&gt;
+</div>
+</div>
+<p>Or, add a link to the bookmark (&quot;Jump to Chapter 4&quot;), from another page:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;a href=&quot;html_demo.html#C4&quot;&gt;Jump to Chapter 4&lt;/a&gt;
+</div>
+<a target="_blank" href="tryit3864.html?filename=tryhtml_links_bookmark" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
+</div>
+
+<hr>
+<h2>External Paths</h2>
+<p>External pages can be referenced with a full URL or with a path relative to the current web page.</p>
+<p>This example uses a full URL to link to a web page:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+  &lt;a href=&quot;https://www.w3schools.com/html/default.asp&quot;&gt;HTML tutorial&lt;/a&gt;</div>
+<p>
+<a class="w3-btn" href="tryit61d3.html?filename=tryhtml_links_external_url" target="_blank">Try it Yourself &raquo;</a></p>
+</div>
+
+<p>This example links to a page located in the html folder on the current web site:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+  &lt;a href=&quot;/html/default.asp&quot;&gt;HTML tutorial&lt;/a&gt;</div>
+<p>
+<a class="w3-btn" href="tryitea89.html?filename=tryhtml_links_external_relative" target="_blank">Try it Yourself &raquo;</a></p>
+</div>
+
+<p>This example links to a page located in the same folder as the current page:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+  &lt;a href=&quot;default.asp&quot;&gt;HTML tutorial&lt;/a&gt;</div>
+<p>
+<a class="w3-btn" href="tryit8c27.html?filename=tryhtml_links_external" target="_blank">Try it Yourself &raquo;</a></p>
+</div>
+
+<div class="w3-panel w3-note">
+<p>You can read more about file paths in the chapter <a href="html_filepaths.html">HTML 
+File Paths</a>.</p>
+</div>
+
+
+<hr>
+
+<h2>Chapter Summary</h2>
+<ul>
+  <li>Use the <code class="w3-codespan">&lt;a&gt;</code> element to define a link</li>
+  <li>Use the <code class="w3-codespan">href</code> attribute to define the link address</li>
+  <li>Use the <code class="w3-codespan">target</code> attribute to define where to open the linked document</li>
+  <li>Use the <code class="w3-codespan">&lt;img&gt;</code> element (inside &lt;a&gt;) to use an image as a link</li>
+  <li>Use the <code class="w3-codespan">id</code> attribute (id=&quot;<em>value</em>&quot;) to define bookmarks in a page</li>
+  <li>Use the <code class="w3-codespan">href</code> attribute (href=&quot;#<em>value</em>&quot;) to link to the bookmark</li>
+</ul>
+<hr>
 <h2>HTML Exercises</h2>
-<p>This HTML tutorial also contains nearly 100 HTML exercises.</p>
-<form autocomplete="off" id="w3-exerciseform" action="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_attributes1" method="post" target="_blank">
+<form autocomplete="off" id="w3-exerciseform" action="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_links1" method="post" target="_blank">
 <h2>Test Yourself With Exercises</h2>
 <div class="exercisewindow">
 <h2>Exercise:</h2>
-<p>Add a "tooltip" to the paragraph below with the text "About W3Schools".</p>
+<p>Use the correct HTML to make the text below into a link to "default.html".</p>
 <div class="exerciseprecontainer">
-&lt;p <input name="ex1" maxlength="5" style="width: 54px;">="About W3Schools"&gt;W3Schools is a web developer's site.&lt;/p&gt;
+<input name="ex1" spellcheck="false" maxlength="2" style="width: 28px;"> <input name="ex2" spellcheck="false" maxlength="19" style="width: 195px;">&gt;Visit our HTML tutorial.<input name="ex3" spellcheck="false" maxlength="4" style="width: 48px;">
 </div>
 <br>
 <button type="submit" class="w3-btn w3-margin-bottom">Submit Answer &raquo;</button>
-<p><a target="_blank" href="exercise4b52.html?filename=exercise_html_attributes1">Start the Exercise</a></p>
+<p><a target="_blank" href="exercisee1fe.html?filename=exercise_html_links1">Start the Exercise</a></p>
 </div>
 </form>
 <hr>
-<h2>HTML Quiz Test</h2>
-<p>Test your HTML skills with our HTML Quiz!</p>
-<p><a href="html_quiz.html" class="w3-button w3-blue">Start HTML Quiz!</a></p>
+
+<!--
 <hr>
 
-<h2>HTML References</h2>
-<p>At W3Schools you will find complete references about tags,  
-attributes, events, color names, entities, character-sets, URL encoding, 
-language codes, HTTP messages, and more.</p>
-<p><a href="../tags/default.html">HTML Tag Reference</a></p>
+<div class="w3-container w3-dark-grey w3-padding">
+  <h2>Test Yourself with Exercises!</h2>
+  <div class="w3-bar w3-margin-bottom">
+    <a class="w3-bar-item w3-btn" href="exercise.asp?filename=exercise_links1" target="_blank">Exercise 1 &raquo;</a>
+    <a class="w3-bar-item w3-btn" href="exercise.asp?filename=exercise_links2" target="_blank">Exercise 2 &raquo;</a>
+    <a class="w3-bar-item w3-btn" href="exercise.asp?filename=exercise_links3" target="_blank">Exercise 3 &raquo;</a>
+    <a class="w3-bar-item w3-btn" href="exercise.asp?filename=exercise_links4" target="_blank">Exercise 4 &raquo;</a>
+    <a class="w3-bar-item w3-btn" href="exercise.asp?filename=exercise_links5" target="_blank">Exercise 5 &raquo;</a>
+  </div>
+</div>
 <hr>
+-->
 
-<h2>HTML Exam - Get Your Diploma!</h2>
-<div class="w3-row">
-<div class="w3-third w3-container w3-padding-24"><a href="../cert/default.html"><img src="../images/w3certified_logo_250.png" style="max-width:100%;" alt="W3Schools Certification" /></a> </div>
-<div class="w3-twothird w3-container"><h2>W3Schools' Online Certification</h2>
-<p>The perfect solution for professionals who need to balance work, family, and career building.</p>
-<p>More than 25 000 certificates already issued!</p>
+<h2>HTML Link Tags</h2>
+<table class="w3-table-all notranslate">
+<tr>
+<th style="width:30%">Tag</th>
+<th>Description</th></tr><tr>
+<td><a href="../tags/tag_a.html">&lt;a&gt;</a></td><td>Defines a hyperlink</td></tr>
+</table>
+<div class="w3-note w3-panel">
+  <p>For a complete list of all available HTML tags, visit our <a href="../tags/default.html">HTML Tag Reference</a>.</p>
 </div>
-</div>
-<p><a class="w3-btn" href="../cert/default.html">Get Your Certificate &raquo;</a></p>
-<p style="clear:both;">The <a href="../cert/default.html">HTML Certificate</a> documents your knowledge of HTML.</p>
-<p>The <a href="../cert/default.html">CSS Certificate</a> documents your knowledge of advanced CSS.</p>
-<p>The <a href="../cert/default.html">JavaScript Certificate</a> documents your knowledge of JavaScript and HTML DOM.</p>
-<p>The <a href="../cert/default.html">Python Certificate</a> documents your knowledge of Python.</p>
-<p>The <a href="../cert/default.html">jQuery Certificate</a> documents your knowledge of jQuery.</p>
-<p>The <a href="../cert/default.html">SQL Certificate</a> documents your knowledge of SQL.</p>
-<p>The <a href="../cert/default.html">PHP Certificate</a> documents your knowledge of PHP and MySQL.</p>
-<p>The <a href="../cert/default.html">XML Certificate</a> documents your knowledge of XML, XML DOM and XSLT.</p>
-<p>The <a href="../cert/default.html">Bootstrap Certificate</a> documents your knowledge of the Bootstrap framework.</p>
 
 <br>
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="../default.html">&#10094; Home</a>
-<a class="w3-right w3-btn" href="html_intro.html">Next &#10095;</a>
+<a class="w3-left w3-btn" href="html_css.html">&#10094; Previous</a>
+<a class="w3-right w3-btn" href="html_images.html">Next &#10095;</a>
 </div>
 </div>
 <div class="w3-col l2 m12" id="right">
@@ -1193,4 +1402,6 @@ While using this site, you agree to have read and accepted our <a href="../about
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>  
 <![endif]-->
 </body>
+
+<!-- Mirrored from www.w3schools.com/html/html_links.asp by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Sep 2019 08:38:17 GMT -->
 </html>

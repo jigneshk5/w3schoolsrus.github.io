@@ -1,7 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en-US">
+
+<!-- Mirrored from www.w3schools.com/html/html_images_imagemap.asp by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Sep 2019 08:38:19 GMT -->
 <head>
-<title>HTML Tutorial</title>
+<title>HTML Image Maps</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="Keywords" content="HTML,CSS,JavaScript,SQL,PHP,jQuery,XML,DOM,Bootstrap,Python,Java,Web development,W3C,tutorials,programming,training,learning,quiz,primer,lessons,references,examples,exercises,source code,colors,demos,tips">
@@ -479,6 +482,17 @@ function w3_getStyleValue(elmnt,style) {
   }
 }
 </script>
+<style>
+.tut_overview{
+ display :none;
+ margin-left:10px;
+ background-color :#ddd;
+ line-height:1.8em;
+}
+#sidenav a.activesub:link,#sidenav a.activesub:visited {background-color:#ddd;color:#000;}
+#sidenav a.activesub:hover,#sidenav a.activesub:active {background-color:#ccc;color:#000;}
+#sidenav a.active_overview:link,#sidenav a.active_overview:visited {background-color:#ccc;color:#000;}
+</style>
 </head>
 <body>
 <div class='w3-container top'>
@@ -694,7 +708,7 @@ function w3_getStyleValue(elmnt,style) {
     <div class='w3-light-grey' id='leftmenuinnerinner'>
 <!--  <a href='javascript:void(0)' onclick='close_menu()' class='w3-button w3-hide-large w3-large w3-display-topright' style='right:16px;padding:3px 12px;font-weight:bold;'>&times;</a>-->
 <h2 class="left"><span class="left_h2">HTML5</span> Tutorial</h2>
-<a target="_top" href="default.html">HTML HOME</a>
+<a target="_top" href="default_srtest.html">HTML HOME</a>
 <a target="_top" href="html_intro.html">HTML Introduction</a>
 <a target="_top" href="html_editors.html">HTML Editors</a>
 <a target="_top" href="html_basic.html">HTML Basic</a>
@@ -709,9 +723,9 @@ function w3_getStyleValue(elmnt,style) {
 <a target="_top" href="html_colors.html">HTML Colors</a>
 <a target="_top" href="html_css.html">HTML CSS</a>
 <a target="_top" href="html_links.html">HTML Links</a>
-<a target="_top" href="html_images.html">HTML Images</a>
+<a target="_top" href="html_images_srtest.html">HTML Images</a>
 <div class="tut_overview">
-  <a target="_top" href="html_images.html">Images</a>
+  <a target="_top" href="html_images_srtest.html">Images</a>
   <a target="_top" href="html_images_imagemap.html">Image Map</a>
   <a target="_top" href="html_images_background.html">Background Images</a>
   <a target="_top" href="html_images_picture.html">The Picture Element</a>
@@ -806,40 +820,39 @@ function w3_getStyleValue(elmnt,style) {
         <!-- adspace leaderboard -->
        
       </div>
-<h1>HTML5<span class="color_h1"> Tutorial</span></h1>
+<h1>HTML <span class="color_h1">Image Maps</span></h1>
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="../default.html">&#10094; Home</a>
-<a class="w3-right w3-btn" href="html_intro.html">Next &#10095;</a>
+<a class="w3-left w3-btn" href="html_images.html">&#10094; Previous</a>
+<a class="w3-right w3-btn" href="html_images_background.html">Next &#10095;</a>
 </div>
-
-<div class="w3-panel w3-info intro">
-<p>HTML is the standard markup language for Web pages.</p>
-  <p>With HTML you can create your own Website.</p>
-<p>HTML is easy to learn - You will enjoy it!</p>
-</div>
-
 <hr>
-<h2>Examples in Every Chapter</h2>
-<p>This HTML tutorial contains hundreds of HTML examples.</p>
-<p>With our online HTML editor, you can edit the HTML, and click on a button to 
-view the result.</p>
-<div class="w3-example">
-<h3>Example</h3>
-<div class="w3-code notranslate htmlHigh">
-&lt;!DOCTYPE html&gt;<br>
-&lt;html&gt;<br>&lt;head&gt;<br>&lt;title&gt;Page Title&lt;/title&gt;<br>
-&lt;/head&gt;<br>&lt;body&gt;<br><br>&lt;h1&gt;This is a Heading&lt;/h1&gt;<br>&lt;p&gt;This is a paragraph.&lt;/p&gt;<br><br>
-&lt;/body&gt;<br>&lt;/html&gt;
-</div>
-<a class="w3-btn w3-margin-bottom" href="tryitfb35.html?filename=tryhtml_default" target="_blank">Try it Yourself &raquo;</a>
-</div>
-<p><strong>Click on the &quot;Try it Yourself&quot; button to see how it works.</strong></p>
-<p><a href="html_intro.html">Start learning HTML now!</a></p><hr>
+<p class="intro">With image maps, you can add clickable areas on an image.</p>
+<hr>
 
-<h2>HTML Examples</h2>
-<p>At the end of this HTML tutorial, you will find more than 200 examples.</p>
-<p>With our online editor, you can edit and test each example yourself.</p>
-<p><a href="html_examples.html">Go to HTML Examples!</a></p>
+<h2>Image Maps</h2>
+<p>The <code class="w3-codespan">&lt;map&gt;</code> tag defines an image-map. An image-map is an image with 
+clickable areas.</p>
+<p>Click on the computer, the phone, or the cup of coffee in the image below:</p>
+
+<img src="workplace.jpg" alt="Workplace" usemap="#workmap">
+
+<map name="workmap">
+  <area shape="rect" coords="34,44,270,350" alt="Sun" href="computer.html" target="_blank">
+  <area shape="rect" coords="290,172,333,250" alt="Mercury" href="phone.html" target="_blank">
+  <area shape="circle" coords="337,300,44" alt="Venus" href="coffee.html" target="_blank">
+</map>
+
+<div class="w3-example">
+  <h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;img src=&quot;workplace.jpg&quot; alt=&quot;Workplace&quot; usemap=&quot;#workmap&quot;&gt;<br>
+<br>&lt;map name=&quot;workmap&quot;&gt;<br>&nbsp; &lt;area shape=&quot;rect&quot; coords=&quot;34,44,270,350&quot; 
+  alt=&quot;Computer&quot; href=&quot;computer.htm&quot;&gt;<br>&nbsp; &lt;area shape=&quot;rect&quot; coords=&quot;290,172,333,250&quot; 
+  alt=&quot;Phone&quot; href=&quot;phone.htm&quot;&gt;<br>&nbsp; &lt;area shape=&quot;circle&quot; coords=&quot;337,300,44&quot; 
+  alt=&quot;Coffee&quot; href=&quot;coffee.htm&quot;&gt;<br>&lt;/map&gt;</div>
+<a class="w3-btn w3-margin-bottom" href="tryit8b5b.html?filename=tryhtml_images_map2" target="_blank">Try it Yourself &raquo;</a>
+</div>
+
 <hr>
 <div id="midcontentadcontainer" style="overflow:auto;text-align:center">
 <!-- MidContent -->
@@ -848,60 +861,229 @@ view the result.</p>
   <div id="snhb-mid_content-0"></div>
     
 </div>
-<hr>
-<h2>HTML Exercises</h2>
-<p>This HTML tutorial also contains nearly 100 HTML exercises.</p>
-<form autocomplete="off" id="w3-exerciseform" action="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_attributes1" method="post" target="_blank">
-<h2>Test Yourself With Exercises</h2>
-<div class="exercisewindow">
-<h2>Exercise:</h2>
-<p>Add a "tooltip" to the paragraph below with the text "About W3Schools".</p>
-<div class="exerciseprecontainer">
-&lt;p <input name="ex1" maxlength="5" style="width: 54px;">="About W3Schools"&gt;W3Schools is a web developer's site.&lt;/p&gt;
-</div>
-<br>
-<button type="submit" class="w3-btn w3-margin-bottom">Submit Answer &raquo;</button>
-<p><a target="_blank" href="exercise4b52.html?filename=exercise_html_attributes1">Start the Exercise</a></p>
-</div>
-</form>
-<hr>
-<h2>HTML Quiz Test</h2>
-<p>Test your HTML skills with our HTML Quiz!</p>
-<p><a href="html_quiz.html" class="w3-button w3-blue">Start HTML Quiz!</a></p>
+
 <hr>
 
-<h2>HTML References</h2>
-<p>At W3Schools you will find complete references about tags,  
-attributes, events, color names, entities, character-sets, URL encoding, 
-language codes, HTTP messages, and more.</p>
-<p><a href="../tags/default.html">HTML Tag Reference</a></p>
+<h2>How Does it Work?</h2>
+
+<p>The idea behind an image map is that you should be able to perform different 
+actions depending on were in the image you click.</p>
+<p>To create an image map you need an image, and a map containing some rules that describe the 
+clickable areas.</p>
+
+<hr>
+<h2>The Image</h2>
+
+<p>The image is inserted using the <code class="w3-codespan">&lt;img&gt;</code> tag. 
+The only difference from other images is that you must 
+add a <code class="w3-codespan">usemap</code> attribute:</p>
+
+<div class="w3-example">
+<div class="w3-code notranslate htmlHigh">
+&lt;img src=&quot;workplace.jpg&quot; alt=&quot;Workplace&quot; usemap=&quot;#workmap&quot;&gt;
+</div>
+</div>
+
+<p>The <code class="w3-codespan">usemap</code> value starts with a hash tag
+<code class="w3-codespan">#</code> followed by the name of the image map, and is used to create a relationship 
+between the image and the image map.</p>
+
+<div class="w3-panel w3-note">
+  <p><strong>Note:</strong> You can use any image as an image map.</p>
+</div>
+
 <hr>
 
-<h2>HTML Exam - Get Your Diploma!</h2>
-<div class="w3-row">
-<div class="w3-third w3-container w3-padding-24"><a href="../cert/default.html"><img src="../images/w3certified_logo_250.png" style="max-width:100%;" alt="W3Schools Certification" /></a> </div>
-<div class="w3-twothird w3-container"><h2>W3Schools' Online Certification</h2>
-<p>The perfect solution for professionals who need to balance work, family, and career building.</p>
-<p>More than 25 000 certificates already issued!</p>
+<h2>The Map</h2>
+
+<p>Then add a <code class="w3-codespan">&lt;map&gt;</code> element.</p>
+
+<p>
+The <code class="w3-codespan">&lt;map&gt;</code> element is used to create an image map, and is linked to the image by using the <code class="w3-codespan">name</code> 
+attribute:</p>
+
+<div class="w3-example">
+<div class="w3-code notranslate htmlHigh">
+&lt;map name=&quot;workmap&quot;&gt;
 </div>
 </div>
-<p><a class="w3-btn" href="../cert/default.html">Get Your Certificate &raquo;</a></p>
-<p style="clear:both;">The <a href="../cert/default.html">HTML Certificate</a> documents your knowledge of HTML.</p>
-<p>The <a href="../cert/default.html">CSS Certificate</a> documents your knowledge of advanced CSS.</p>
-<p>The <a href="../cert/default.html">JavaScript Certificate</a> documents your knowledge of JavaScript and HTML DOM.</p>
-<p>The <a href="../cert/default.html">Python Certificate</a> documents your knowledge of Python.</p>
-<p>The <a href="../cert/default.html">jQuery Certificate</a> documents your knowledge of jQuery.</p>
-<p>The <a href="../cert/default.html">SQL Certificate</a> documents your knowledge of SQL.</p>
-<p>The <a href="../cert/default.html">PHP Certificate</a> documents your knowledge of PHP and MySQL.</p>
-<p>The <a href="../cert/default.html">XML Certificate</a> documents your knowledge of XML, XML DOM and XSLT.</p>
-<p>The <a href="../cert/default.html">Bootstrap Certificate</a> documents your knowledge of the Bootstrap framework.</p>
+
+<p>The <code class="w3-codespan">name</code> attribute must have the same value as the
+<code class="w3-codespan">usemap</code> attribute.</p>
+
+<div class="w3-panel w3-note">
+  <p><strong>Note:</strong> You may insert the <code class="w3-codespan">&lt;map&gt;</code> element anywhere you like, it 
+  does not have to be inserted right after the image.</p>
+</div>
+
+<hr>
+
+<h2>The Areas</h2>
+
+<p>Then add the clickable areas.</p>
+<p>A clickable area is defined using an <code class="w3-codespan">&lt;area&gt;</code> element.</p>
+<h3>Shape</h3>
+<p>You must define the shape of the area, and you can choose one of these 
+values:</p>
+<ul>
+  <li><code class="w3-codespan">rect</code> - defines a rectangular region</li>
+  <li><code class="w3-codespan">circle</code> - defines a circular region</li>
+  <li><code class="w3-codespan">poly</code> - defines a polygonal region</li>
+  <li><code class="w3-codespan">default</code> - defines the entire region</li>
+</ul>
+<h3>Coordinates</h3>
+<p>You must define some coordinates to be able to place the clickable area onto 
+the image.</p>
+<p>The coordinates come in pairs, one for the x-axis and one for the y-axis.</p>
+<p>The coordinates <code class="w3-codespan">34, 44</code> is located 34 pixels 
+from the left margin and 44 pixels from the top:</p>
+
+<div style="position:relative">
+
+<div style="position:absolute;width:2px;height:379px;left:34px;background-color:GreenYellow ;opacity:0.8"></div>
+<div style="position:absolute;width:400px;height:2px;top:44px;background-color:GreenYellow ;opacity:0.8"></div>
+<div style="border:2px solid red;border-radius:50%;position:absolute;width:20px;height:20px;left:25px;top:35px;background-color:transparent;xopacity:0.8"></div>
+</div>
+<img src="workplace.jpg" alt="Workplace">
+<p>The coordinates <code class="w3-codespan">270, 350</code> is located 270 
+pixels from the left margin and 350 pixels from the top:</p>
+
+<div style="position:relative">
+<div style="position:absolute;width:2px;height:379px;left:270px;background-color:GreenYellow ;opacity:0.8"></div>
+<div style="position:absolute;width:400px;height:2px;top:350px;background-color:GreenYellow ;opacity:0.8"></div>
+<div style="border:2px solid red;border-radius:50%;position:absolute;width:20px;height:20px;left:261px;top:341px;background-color:transparent;xopacity:0.8"></div>
+</div>
+<img src="workplace.jpg" alt="Workplace">
+
+<p>Now you have enough data to create a clickable rectangular area:<br></p>
+
+<div class="w3-example">
+<div class="w3-code notranslate htmlHigh">
+&lt;area shape=&quot;rect&quot; coords=&quot;34, 44, 270, 350&quot; href=&quot;computer.htm&quot;&gt;
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryitc190.html?filename=tryhtml_images_map3" target="_blank">Try it Yourself &raquo;</a>
+</div>
+
+<p>This is the area that becomes clickable and will send the user to the page computer.htm:</p>
+<div style="position:relative">
+<div style="position:absolute;width:236px;height:306px;left:34px;top:44px;background-color:dodgerblue;opacity:0.8"></div>
+</div>
+<img src="workplace.jpg" alt="Workplace">
+
+<hr>
+
+<h3>Circle</h3>
+<p>To add a circle area, first locate the coordinates of the center of the circle:</p>
+<p><code class="w3-codespan">337, 300</code></p>
+<div style="position:relative">
+<div style="position:absolute;width:2px;height:379px;left:337px;background-color:GreenYellow ;xopacity:0.8"></div>
+<div style="position:absolute;width:400px;height:2px;top:300px;background-color:GreenYellow ;xopacity:0.8"></div>
+<div style="border:2px solid red;border-radius:50%;position:absolute;width:20px;height:20px;left:328px;top:291px;background-color:transparent;xopacity:0.8"></div>
+
+</div>
+<img src="workplace.jpg" alt="Workplace">
+
+
+
+<p>Then specify the radius of the circle:</p>
+<p><code class="w3-codespan">44</code> pixels</p>
+<div style="position:relative">
+<div style="position:absolute;width:44px;height:2px;left:337px;top:300px;background-color:GreenYellow ;opacity:0.8"></div>
+<div style="border:2px solid red;border-radius:50%;position:absolute;width:88px;height:88px;left:293px;top:256px;background-color:transparent;xopacity:0.8"></div>
+</div>
+<img src="workplace.jpg" alt="Workplace">
+
+<p>Now you have enough data to create a clickable circular area:<br></p>
+
+<div class="w3-example">
+<div class="w3-code notranslate htmlHigh">
+&lt;area shape=&quot;circle&quot; coords=&quot;337, 300, 44&quot; href=&quot;coffee.htm&quot;&gt;
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit38bc.html?filename=tryhtml_images_map4" target="_blank">Try it Yourself &raquo;</a>
+</div>
+
+<p>This is the area that becomes clickable and will send the user to the page coffee.htm:</p>
+<div style="position:relative">
+<div style="border-radius:50%;position:absolute;width:88px;height:88px;left:293px;top:256px;background-color:dodgerblue;opacity:0.8"></div>
+</div>
+<img src="workplace.jpg" alt="Workplace">
+
+<hr>
+
+<!--
+<div id="xycoordinates">&nbsp;</div>
+<img src="workplace.jpg" alt="Workplace" id="coordinateexample" style="margin-left:40px;">
+
+<script>
+
+function initCoordinates() {
+  var img = document.getElementById("coordinateexample")
+  var w = img.width;
+  var i, x = "";
+  for (i = 0; i < img.width; i++) {
+    x += "<span id='coo" + i + "' style='position:absolute;left:" + i + "px;'>" + i + "</span>";
+  }
+  document.getElementById("xycoordinates").innerHTML = "&nbsp;" + x;
+}
+
+function displayCoordinates(x, y) {
+  var img = document.getElementById("coordinateexample")
+  var txt = "<span style='position:absolute;left:" + (40 + x) + "px;'>" + x + "</span>";
+  txt += "<span style='position:absolute;top:" + (10+y) + "px;'>" + y + "</span>";
+  if (x>34 && y>44) {
+    var w = (x-34);
+    var h = (y-44);
+    if (w > (270-34)) w = (270-34);
+    if (h > (350-44)) h = (350-44);
+    txt += "<div style='border:1px solid blue;opacity:0.5;pointer-events:none;background-color:#fff;position:absolute;left:" + (40 + 34) + "px;top:" + (20+44) + "px;width:" + w + "px;height:" + h + "px;'></div>";
+  }
+  document.getElementById("xycoordinates").innerHTML = "&nbsp;" + txt;
+}
+
+
+
+function getCoordinates(event) {
+  displayCoordinates(event.offsetX, event.offsetY);
+}
+//window.addEventListener("load", initCoordinates);
+document.getElementById("coordinateexample").addEventListener("mousemove", getCoordinates);
+</script>
+<style>
+#xycoordinates {
+  position:relative;
+}
+</style>
+
+<p>The <code class="w3-codespan">name</code> attribute of the <code class="w3-codespan">&lt;map&gt;</code> tag is associated with the <code class="w3-codespan">&lt;img&gt;</code>'s usemap 
+attribute and creates a relationship between the image and the map.</p>
+<p>The <code class="w3-codespan">&lt;map&gt;</code> element contains a number of <code class="w3-codespan">&lt;area&gt;</code> tags, that define the clickable 
+areas in the image-map.</p>
+
+<hr>
+-->
+<h2>Image Map and JavaScript</h2>
+
+<p>A clickable area does not have to be a link to another page, it can also 
+trigger a JavaScript function.</p>
+
+<p>Add a <code class="w3-codespan">click</code> event on the <code class="w3-codespan">&lt;area&gt;</code> element
+to execute a JavaScript function:</p>
+<div class="w3-example">
+  <h3>Example</h3>
+  <p>You can use the <code class="w3-codespan">onclick</code> attribute to execute a JavaScript function when the 
+  area is clicked</p>
+<div class="w3-code notranslate htmlHigh">
+  &lt;area shape=&quot;circle&quot; coords=&quot;337,300,44&quot; 
+  onclick=&quot;myFunction()&quot;&gt;</div>
+<a class="w3-btn w3-margin-bottom" href="tryitab62.html?filename=tryhtml_images_map5" target="_blank">Try it Yourself &raquo;</a>
+</div>
 
 <br>
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="../default.html">&#10094; Home</a>
-<a class="w3-right w3-btn" href="html_intro.html">Next &#10095;</a>
+<a class="w3-left w3-btn" href="html_images.html">&#10094; Previous</a>
+<a class="w3-right w3-btn" href="html_images_background.html">Next &#10095;</a>
 </div>
-</div>
+  </div>
 <div class="w3-col l2 m12" id="right">
 
 <div class="sidesection">
@@ -1115,7 +1297,6 @@ Read More &raquo;</a>
 <a href="../php/default.html">PHP Tutorial</a><br>
 <a href="../jquery/default.html">jQuery Tutorial</a><br>
 <a href="../java/default.html">Java Tutorial</a><br>
-<a href="../cpp/default.html">C++ Tutorial</a><br>
 </div>
 </div>
 <div class="w3-col l3 m6 s12">
@@ -1131,8 +1312,8 @@ Read More &raquo;</a>
 <a href="../php/php_ref_overview.html">PHP Reference</a><br>
 <a href="../colors/colors_names.html">HTML Colors</a><br>
 <a href="../jquery/jquery_ref_overview.html">jQuery Reference</a><br>
-<a href="../java/java_ref_keywords.html">Java Reference</a><br>
 <a href="../angular/angular_ref_directives.html">Angular Reference</a><br>
+<a href="../java/java_ref_keywords.html">Java Reference</a><br>
 </div>
 </div>
 <div class="w3-col l3 m6 s12">
@@ -1186,11 +1367,13 @@ While using this site, you agree to have read and accepted our <a href="../about
 </div>
 
 </div>
-<script src="../lib/w3schools_footer.js"></script>
+<script src="../lib/w3schools_footer_srtest.js"></script>
 <script src="../../translate.google.com/translate_a/elementa0d8.html?cb=googleTranslateElementInit"></script>
 <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>  
 <![endif]-->
 </body>
+
+<!-- Mirrored from www.w3schools.com/html/html_images_imagemap.asp by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Sep 2019 08:38:19 GMT -->
 </html>

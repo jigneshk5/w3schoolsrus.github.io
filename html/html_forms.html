@@ -1,7 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en-US">
+
+<!-- Mirrored from www.w3schools.com/html/html_forms.asp by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Sep 2019 08:38:27 GMT -->
 <head>
-<title>HTML Tutorial</title>
+<title>HTML Forms</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="Keywords" content="HTML,CSS,JavaScript,SQL,PHP,jQuery,XML,DOM,Bootstrap,Python,Java,Web development,W3C,tutorials,programming,training,learning,quiz,primer,lessons,references,examples,exercises,source code,colors,demos,tips">
@@ -375,14 +378,18 @@ ga('require', 'displayfeatures');
 ga('send', 'pageview');
 </script>
 
-<script src="../../snigelweb-com.videoplayerhub.com/videoloader.js" async></script>
-
 <script type='text/javascript'>
 var k42 = false;
 var googletag = googletag || {}; googletag.cmd = googletag.cmd || [];
 
-k42 = true;
-(adsbygoogle=window.adsbygoogle||[]).pauseAdRequests=1;
+(function() {
+  var gads = document.createElement('script');
+  gads.async = true;
+  gads.type = 'text/javascript';
+  gads.src = '../../www.googletagservices.com/tag/js/gpt.js';
+  var node = document.getElementsByTagName('script')[0];
+  node.parentNode.insertBefore(gads, node);
+})();
 
 var snhb = snhb || {}; snhb.queue = snhb.queue || [];
 snhb.options = {
@@ -393,6 +400,85 @@ snhb.options = {
                      reconsiderationAppealIntervalSeconds: 0
                      }
                };
+
+// GPT slots
+var gptAdSlots = [];
+googletag.cmd.push(function() {
+  googletag.pubads().disableInitialLoad();               
+  googletag.pubads().enableSingleRequest();
+  var leaderMapping = googletag.sizeMapping().
+    // Mobile ad
+    addSize([0, 0], [320, 50]). 
+    // Vertical Tablet ad
+    addSize([480, 0], [468, 60]). 
+    // Horizontal Tablet
+    addSize([780, 0], [728, 90]).
+    // Small Desktop
+    addSize([993, 0], [468, 60]).
+    // Normal Desktop
+    addSize([1150, 0], [728, 90]).
+    // Large Desktop and bigger ad
+    addSize([1425, 0], [[728, 90], [970, 90]]).build();
+  gptAdSlots[0] = googletag.defineSlot('/16833175/MainLeaderboard', [[728, 90], [970, 90]], 'div-gpt-ad-1422003450156-2').
+    defineSizeMapping(leaderMapping).addService(googletag.pubads());
+  var skyMapping = googletag.sizeMapping().
+    // Mobile ad
+    addSize([0, 0], [320, 50]). 
+    // Tablet ad
+    addSize([975, 0], [120, 600]). 
+    // Desktop
+    addSize([1135, 0], [160, 600]).   
+    // Large Desktop
+    addSize([1675, 0], [[160, 600], [300, 600], [300, 1050]]).build();
+  gptAdSlots[1] = googletag.defineSlot('/16833175/WideSkyScraper', [[160, 600], [300, 600], [300, 1050]], 'div-gpt-ad-1422003450156-5').
+    defineSizeMapping(skyMapping).addService(googletag.pubads());
+  var stickyMapping = googletag.sizeMapping().
+    // Mobile ad
+    addSize([0, 0], []). 
+    // Tablet ad
+    addSize([975, 0], [120, 600]). 
+    // Desktop
+    addSize([1135, 0], [160, 600]).   
+    // Large Desktop
+    addSize([1675, 0], [[160, 600], [300, 600], [300, 250]]).build();
+  gptAdSlots[4] = googletag.defineSlot('/16833175/StickySkyScraper', [[300, 600], [120, 600], [300, 250], [160, 600]], 'div-gpt-ad-1472547360578-0').
+    defineSizeMapping(stickyMapping).addService(googletag.pubads());
+  var mcontMapping = googletag.sizeMapping().
+    // Mobile ad
+    addSize([0, 0], [[300, 250], [336, 280], [320, 50]]). 
+    // Vertical Tablet ad
+    addSize([490, 0], [[300, 250], [336, 280], [468, 60]]). 
+    // Horizontal Tablet
+    addSize([750, 0], [728, 90]).
+    // Small Desktop
+    addSize([993, 0], [[300, 250], [336, 280], [468, 60]]).
+    // Normal Desktop
+    addSize([1135, 0], [728, 90]).
+    // Large Desktop and bigger ad
+    addSize([1440, 0], [[728, 90], [970, 90], [970, 250]]).build();
+  gptAdSlots[5] = googletag.defineSlot('/16833175/MidContent', [[300, 250], [336, 280]], 'div-gpt-ad-1493883843099-0').
+    defineSizeMapping(mcontMapping).setCollapseEmptyDiv(true).addService(googletag.pubads());
+  var bmrMapping = googletag.sizeMapping().
+    // Smaller
+    addSize([0, 0], [[300, 250], [336, 280]]). 
+    // Large Desktop
+    addSize([1240, 0], [[300, 250], [336, 280], [970, 250]]).build();
+    gptAdSlots[2] = googletag.defineSlot('/16833175/BottomMediumRectangle', [[300, 250], [336, 280], [970, 250]], 'div-gpt-ad-1422003450156-0').
+    defineSizeMapping(bmrMapping).setCollapseEmptyDiv(true).addService(googletag.pubads());
+  var rbmrMapping = googletag.sizeMapping().
+    // Smaller
+    addSize([0, 0], []). 
+    // Large Desktop
+    addSize([975, 0], [[300, 250], [336, 280]]).build();
+  gptAdSlots[3] = googletag.defineSlot('/16833175/RightBottomMediumRectangle', [[300, 250], [336, 280]], 'div-gpt-ad-1422003450156-3').
+    defineSizeMapping(rbmrMapping).setCollapseEmptyDiv(true).addService(googletag.pubads());
+  googletag.pubads().setTargeting("content",(function () {
+    var folder = location.pathname;
+    folder = folder.replace("../index.html", "");
+    folder = folder.substr(0, folder.indexOf("../index.html"));
+    return folder;
+  })());
+});  
 
 </script>
 <script src="../../static.h-bid.com/sncmp/sncmp_stub.min.js" type="text/javascript"></script>
@@ -417,7 +503,7 @@ snhb.options = {
 <script>
   snhb.queue.push(function(){
 
-    snhb.startAuction(["main_leaderboard", "wide_skyscraper", "bottom_medium_rectangle", "right_bottom_medium_rectangle"]);
+    snhb.addAdditionalAdSlotsToRefresh(gptAdSlots);
 
   });
 </script>
@@ -800,106 +886,370 @@ function w3_getStyleValue(elmnt,style) {
     <div class='w3-col l10 m12' id='main'>
       <div id='mainLeaderboard' style='overflow:hidden;'>
         <!-- MainLeaderboard-->
-
-        <!--<pre>main_leaderboard, all: [728,90][970,90][320,50][468,60]</pre>-->
-        <div id="snhb-main_leaderboard-0"></div>
-        <!-- adspace leaderboard -->
+        
+        <div id='div-gpt-ad-1422003450156-2'>
+          <script type='text/javascript'>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1422003450156-2'); });</script>
+        </div>
        
       </div>
-<h1>HTML5<span class="color_h1"> Tutorial</span></h1>
+<h1>HTML <span class="color_h1">Forms</span></h1>
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="../default.html">&#10094; Home</a>
-<a class="w3-right w3-btn" href="html_intro.html">Next &#10095;</a>
+<a class="w3-left w3-btn" href="html_xhtml.html">&#10094; Previous</a>
+<a class="w3-right w3-btn" href="html_form_elements.html">Next &#10095;</a>
 </div>
-
-<div class="w3-panel w3-info intro">
-<p>HTML is the standard markup language for Web pages.</p>
-  <p>With HTML you can create your own Website.</p>
-<p>HTML is easy to learn - You will enjoy it!</p>
-</div>
-
 <hr>
-<h2>Examples in Every Chapter</h2>
-<p>This HTML tutorial contains hundreds of HTML examples.</p>
-<p>With our online HTML editor, you can edit the HTML, and click on a button to 
-view the result.</p>
-<div class="w3-example">
-<h3>Example</h3>
-<div class="w3-code notranslate htmlHigh">
-&lt;!DOCTYPE html&gt;<br>
-&lt;html&gt;<br>&lt;head&gt;<br>&lt;title&gt;Page Title&lt;/title&gt;<br>
-&lt;/head&gt;<br>&lt;body&gt;<br><br>&lt;h1&gt;This is a Heading&lt;/h1&gt;<br>&lt;p&gt;This is a paragraph.&lt;/p&gt;<br><br>
-&lt;/body&gt;<br>&lt;/html&gt;
-</div>
-<a class="w3-btn w3-margin-bottom" href="tryitfb35.html?filename=tryhtml_default" target="_blank">Try it Yourself &raquo;</a>
-</div>
-<p><strong>Click on the &quot;Try it Yourself&quot; button to see how it works.</strong></p>
-<p><a href="html_intro.html">Start learning HTML now!</a></p><hr>
 
-<h2>HTML Examples</h2>
-<p>At the end of this HTML tutorial, you will find more than 200 examples.</p>
-<p>With our online editor, you can edit and test each example yourself.</p>
-<p><a href="html_examples.html">Go to HTML Examples!</a></p>
+<div class="w3-example">
+<h3>HTML Form Example</h3>
+<div class="w3-white w3-padding notranslate">
+<form action="https://www.w3schools.com/action_page.php" target="_blank">
+  First name:<br>
+  <input type="text" name="firstname" value="Mickey"><br>
+  Last name:<br>
+  <input type="text" name="lastname" value="Mouse">
+  <br><br>
+  <input type="submit" value="Submit">
+</form> 
+</div>
+<a class="w3-btn w3-margin-top w3-margin-bottom" href="tryitcff8.html?filename=tryhtml_form_submit" target="_blank">Try it Yourself &raquo;</a>
+</div>
+<hr>
+
+<h2>The &lt;form&gt; Element</h2>
+<p>The HTML <code class="w3-codespan">&lt;form&gt;</code> element defines a form that is used to 
+collect user input:</p>
+<div class="w3-example">
+<div class="w3-code notranslate htmlHigh">
+ &lt;form&gt;<br>
+ .<br>
+<i>form elements</i><br>
+ .<br>
+ &lt;/form&gt;<br>
+</div></div>
+<p>An HTML form contains <strong>form elements</strong>.</p>
+<p>Form elements are different types of input elements, like text fields, checkboxes, radio 
+buttons, submit buttons, and more.</p>
+<hr>
+
+<h2>The &lt;input&gt; Element</h2>
+<p>The <code class="w3-codespan">&lt;input&gt;</code> element is the most important form element. </p>
+<p>The <code class="w3-codespan">&lt;input&gt;</code> element can be displayed in several ways, depending on the <strong>type</strong> 
+attribute.</p>
+<p>Here are some examples:</p>
+<table class="w3-table-all">
+ <tr>
+  <th>Type</th>
+  <th>Description</th>
+ </tr>
+ <tr>
+  <td>&lt;input type=&quot;text&quot;&gt;</td>
+  <td>Defines a one-line text input field</td>
+ </tr>
+ <tr>
+  <td>&lt;input type=&quot;radio&quot;&gt;</td>
+  <td>Defines a radio button (for selecting one of many choices)</td>
+ </tr>
+ <tr>
+  <td>&lt;input type=&quot;submit&quot;&gt;</td>
+  <td>Defines a submit button (for submitting the form)</td>
+ </tr>
+</table>
+<div class="w3-panel w3-note">
+<p>You will learn a lot more about input types later in this tutorial.</p>
+</div>
 <hr>
 <div id="midcontentadcontainer" style="overflow:auto;text-align:center">
 <!-- MidContent -->
 
-  <!--<pre>mid_content, all: [300,250][336,280][728,90][970,250][970,90][320,50][468,60]</pre>-->
-  <div id="snhb-mid_content-0"></div>
+  <div id='div-gpt-ad-1493883843099-0' style="display: inline-block">
+    <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1493883843099-0'); });
+    </script>
+  </div>
     
 </div>
 <hr>
+<h2>Text Input</h2>
+<p><code class="w3-codespan">&lt;input type="text"&gt;</code> defines a one-line input field for 
+<strong>text input</strong>:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;form&gt;<br>
+ &nbsp;
+ First name:&lt;br&gt;<br>&nbsp; &lt;input type="text" name="firstname"&gt;&lt;br&gt;<br>
+ &nbsp;
+ Last name:&lt;br&gt;<br>&nbsp; &lt;input type="text" name="lastname"&gt;<br>
+ &lt;/form&gt;
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit5852.html?filename=tryhtml_form_text" target="_blank">Try it Yourself &raquo;</a>
+</div>
+<p>This is how it will look like in a browser:</p>
+First name:<br> <input type="text"><br>
+Last name:<br> <input type="text">
+<div class="w3-panel w3-note">
+<p><b>Note:</b> The form itself is not visible. Also note that the default width 
+of a text field is 20 characters.</p>
+</div>
+<hr>
+
+<h2>Radio Button Input</h2>
+<p><code class="w3-codespan">&lt;input type="radio"&gt;</code> defines a <strong>radio button</strong>.</p>
+<p>Radio buttons let a user select ONE of a limited number of choices:</p>
+<div class="w3-example">
+ <h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;form&gt;<br>&nbsp; &lt;input type="radio" name="gender&quot; value="male" checked&gt; Male&lt;br&gt;<br>
+ &nbsp;
+ &lt;input type="radio" name="gender" value="female"&gt; Female&lt;br&gt;<br>&nbsp;
+ &lt;input type="radio" name="gender" value="other"&gt; Other<br>&lt;/form&gt;
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit1082.html?filename=tryhtml_form_radio" target="_blank">Try it Yourself &raquo;</a>
+</div>
+<p>This is how the HTML code above will be displayed in a browser:</p>
+<input type="radio" name="gender" checked> Male<br>
+<input type="radio" name="gender"> Female<br>
+<input type="radio" name="gender"> Other
+<hr>
+
+<h2>The Submit Button</h2>
+<p><code class="w3-codespan">&lt;input type="submit"&gt;</code> defines a button for <strong>
+submitting</strong> the form data to a <strong>form-handler</strong>.</p>
+<p>The form-handler is typically a server page with a script for processing 
+input data.</p>
+<p>The form-handler is specified in the form's <strong>action</strong> 
+attribute:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;form action="/action_page.php"&gt;<br>&nbsp; First name:&lt;br&gt;<br>&nbsp; &lt;input type="text" 
+ name="firstname" value="Mickey"&gt;&lt;br&gt;<br>&nbsp; Last name:&lt;br&gt;<br>&nbsp; &lt;input 
+ type="text" name="lastname" value="Mouse"&gt;&lt;br&gt;&lt;br&gt;<br>&nbsp; &lt;input type="submit" value="Submit"&gt;<br>&lt;/form&gt;
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryitcff8.html?filename=tryhtml_form_submit" target="_blank">Try it Yourself &raquo;</a>
+</div>
+<p>This is how the HTML code above will be displayed in a browser:</p>
+<form action="https://www.w3schools.com/action_page.php" target="_blank">
+ First name:<br>
+<input type="text" name="firstname" value="Mickey">
+<br>
+ Last name:<br>
+<input type="text" name="lastname" value="Mouse">
+<br><br>
+<input type="submit" value="Submit">
+</form> 
+<hr>
+
+<h2>The Action Attribute</h2>
+<p>The <code class="w3-codespan">action</code> attribute defines the action to be performed when the form is submitted.</p>
+<p>Normally, the form data is sent to a web page on the server when the user clicks on the submit button.</p>
+<p>In the example above, the form data is sent to a page on the server called &quot;/action_page.php&quot;. 
+This page contains a server-side script that handles the form data:</p>
+<div class="w3-example">
+<div class="w3-code notranslate htmlHigh">
+ &lt;form <strong>action="/action_page.php</strong>"&gt;<br>
+</div></div>
+<p>If the <code class="w3-codespan">action</code> attribute is omitted, the action is set to the current page.</p>
+
+<hr>
+
+<h2>The Target Attribute</h2>
+<p>The <code class="w3-codespan">target</code> attribute specifies if the submitted result will open in a new 
+browser tab, a frame, or in the current window.</p>
+<p>The default value is "<code class="w3-codespan">_self</code>" which means the form will be submitted in the current window.</p>
+<p>To make the form result open in a new browser tab, use the value &quot;<code class="w3-codespan">_blank</code>&quot;:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;form action="/action_page.php"
+  <strong>target="_blank&quot;</strong>&gt;</div>
+<a class="w3-btn w3-margin-bottom" href="tryitfb32.html?filename=tryhtml_form_target" target="_blank">Try it Yourself &raquo;</a>
+</div>
+<p>Other legal values are "<code class="w3-codespan">_parent</code>", "<code class="w3-codespan">_top</code>", or a name representing the name of an iframe.</p>
+<hr>
+
+<h2>The Method Attribute</h2>
+<p>The <code class="w3-codespan">method</code> attribute specifies the HTTP method (<strong>GET </strong>or <strong>
+POST</strong>) to be used when submitting the form data:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;form action="/action_page.php" <strong>method="get&quot;</strong>&gt;</div>
+<a class="w3-btn w3-margin-bottom" href="tryit6bc0.html?filename=tryhtml_form_get" target="_blank">Try it Yourself &raquo;</a>
+</div>
+<p>or:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;form action="/action_page.php" <strong>method="post&quot;</strong>&gt;</div>
+<a class="w3-btn w3-margin-bottom" href="tryit362c.html?filename=tryhtml_form_post" target="_blank">Try it Yourself &raquo;</a>
+</div>
+<hr>
+
+<h2>When to Use GET?</h2>
+<p>The default method when submitting form data is GET.</p>
+<p>However, when GET is used, the submitted form data will be <strong>visible in the page address 
+field</strong>:</p>
+<div class="w3-example">
+<div class="w3-code notranslate htmlHigh">
+/action_page.php?firstname=Mickey&amp;lastname=Mouse</div></div>
+
+<p><b>Notes on GET:</b> </p>
+<ul>
+  <li>Appends form-data into the URL in name/value pairs</li>
+  <li>The length of a URL is limited (about 3000 characters)</li>
+  <li>Never use GET to send sensitive data! (will be visible in the URL)</li>
+  <li>Useful for form submissions where a user wants to bookmark the result</li>
+  <li>GET is better for non-secure data, like query strings in Google</li>
+</ul>
+<hr>
+
+<h2>When to Use POST?</h2>
+<p>Always use POST if the form data contains sensitive or personal information. 
+The POST method does not display the submitted form data in the page address field.</p>
+<p><b>Notes on POST:</b> </p>
+<ul>
+  <li>POST has no size limitations, and can be used to send large amounts of data.</li>
+  <li>Form submissions with POST cannot be bookmarked</li>
+</ul>
+
+<hr>
+
+<h2>The Name Attribute</h2>
+<p>Each input field must have a <code class="w3-codespan">name</code> attribute to be submitted.</p>
+<p>If the <code class="w3-codespan">name</code> attribute is omitted, the data of that input field will not be sent at all.</p>
+<p>This example will only submit the &quot;Last name&quot; input field:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;form action="/action_page.php"&gt;<br>&nbsp; First name:&lt;br&gt;<br>&nbsp; &lt;input type="text" 
+ value="Mickey"&gt;&lt;br&gt;<br>&nbsp; Last name:&lt;br&gt;<br>&nbsp; &lt;input 
+ type="text" name="lastname" value="Mouse"&gt;&lt;br&gt;&lt;br&gt;<br>&nbsp; &lt;input type="submit" value="Submit"&gt;<br>&lt;/form&gt;
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit1c32.html?filename=tryhtml_form_submit_id" target="_blank">Try it Yourself &raquo;</a>
+</div>
+<hr>
+
+<h2>Grouping Form Data with &lt;fieldset&gt;</h2>
+<p>The <code class="w3-codespan">&lt;fieldset&gt;</code> element is used to group related data in a form.</p>
+<p>The <code class="w3-codespan">&lt;legend&gt;</code> element defines a caption for the <code class="w3-codespan">
+&lt;fieldset&gt;</code>
+element.</p>
+<div class="w3-example">
+ <h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;form action="/action_page.php"&gt;<br>&nbsp; &lt;fieldset&gt;<br>&nbsp;&nbsp;&nbsp; &lt;legend&gt;Personal 
+ information:&lt;/legend&gt;<br>&nbsp;&nbsp;&nbsp; First name:&lt;br&gt;<br>&nbsp;&nbsp;&nbsp; &lt;input type="text" name="firstname" 
+ value="Mickey"&gt;&lt;br&gt;<br>&nbsp;&nbsp;&nbsp; Last name:&lt;br&gt;<br>
+ &nbsp;&nbsp;&nbsp;
+ &lt;input type="text" name="lastname" value="Mouse"&gt;&lt;br&gt;&lt;br&gt;<br>
+ &nbsp;&nbsp;&nbsp;
+ &lt;input type="submit" value="Submit"&gt;<br>&nbsp; &lt;/fieldset&gt;<br>
+ &lt;/form&gt;
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit4436.html?filename=tryhtml_form_legend" target="_blank">Try it Yourself &raquo;</a>
+</div>
+<p>This is how the HTML code above will be displayed in a browser:</p>
+<form action="https://www.w3schools.com/action_page.php" target="_blank">
+<fieldset>
+<legend>Personal information:</legend>
+First name:<br>
+<input type="text" name="firstname" value="Mickey">
+<br>
+Last name:<br>
+<input type="text" name="lastname" value="Mouse">
+<br><br>
+<input type="submit" value="Submit">
+</fieldset>
+</form> 
+<hr>
 <h2>HTML Exercises</h2>
-<p>This HTML tutorial also contains nearly 100 HTML exercises.</p>
-<form autocomplete="off" id="w3-exerciseform" action="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_attributes1" method="post" target="_blank">
+<form autocomplete="off" id="w3-exerciseform" action="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_forms1" method="post" target="_blank">
 <h2>Test Yourself With Exercises</h2>
 <div class="exercisewindow">
 <h2>Exercise:</h2>
-<p>Add a "tooltip" to the paragraph below with the text "About W3Schools".</p>
+<p>In the form below, add an input field with the type "button" and the value "OK".</p>
 <div class="exerciseprecontainer">
-&lt;p <input name="ex1" maxlength="5" style="width: 54px;">="About W3Schools"&gt;W3Schools is a web developer's site.&lt;/p&gt;
+&lt;form&gt;
+<br>
+&lt;<input name="ex1" spellcheck="false" maxlength="30" style="width: 304px;">&gt;
+<br>
+&lt;/form&gt;
 </div>
 <br>
 <button type="submit" class="w3-btn w3-margin-bottom">Submit Answer &raquo;</button>
-<p><a target="_blank" href="exercise4b52.html?filename=exercise_html_attributes1">Start the Exercise</a></p>
+<p><a target="_blank" href="exercise5b43.html?filename=exercise_html_forms1">Start the Exercise</a></p>
 </div>
 </form>
 <hr>
-<h2>HTML Quiz Test</h2>
-<p>Test your HTML skills with our HTML Quiz!</p>
-<p><a href="html_quiz.html" class="w3-button w3-blue">Start HTML Quiz!</a></p>
+
+<!--
 <hr>
 
-<h2>HTML References</h2>
-<p>At W3Schools you will find complete references about tags,  
-attributes, events, color names, entities, character-sets, URL encoding, 
-language codes, HTTP messages, and more.</p>
-<p><a href="../tags/default.html">HTML Tag Reference</a></p>
+<div class="w3-container w3-dark-grey w3-padding">
+  <h2>Test Yourself with Exercises!</h2>
+  <div class="w3-bar w3-margin-bottom">
+    <a class="w3-bar-item w3-btn" href="exercise.asp?filename=exercise_forms1" target="_blank">Exercise 1 &raquo;</a>
+    <a class="w3-bar-item w3-btn" href="exercise.asp?filename=exercise_forms2" target="_blank">Exercise 2 &raquo;</a>
+    <a class="w3-bar-item w3-btn" href="exercise.asp?filename=exercise_forms3" target="_blank">Exercise 3 &raquo;</a>
+    <a class="w3-bar-item w3-btn" href="exercise.asp?filename=exercise_forms4" target="_blank">Exercise 4 &raquo;</a>
+  </div>
+</div>
 <hr>
+-->
+<p>Here is the list of all <code class="w3-codespan">&lt;form&gt;</code> attributes:</p>
 
-<h2>HTML Exam - Get Your Diploma!</h2>
-<div class="w3-row">
-<div class="w3-third w3-container w3-padding-24"><a href="../cert/default.html"><img src="../images/w3certified_logo_250.png" style="max-width:100%;" alt="W3Schools Certification" /></a> </div>
-<div class="w3-twothird w3-container"><h2>W3Schools' Online Certification</h2>
-<p>The perfect solution for professionals who need to balance work, family, and career building.</p>
-<p>More than 25 000 certificates already issued!</p>
+<table class="w3-table-all">
+ <tr>
+  <th>Attribute</th>
+  <th>Description</th>
+ </tr>
+ <tr>
+  <td>accept-charset</td>
+  <td>Specifies the charset used in the submitted form (default: the page 
+  charset).</td>
+ </tr>
+ <tr>
+  <td>action</td>
+  <td>Specifies an address (url) where to submit the form (default: the 
+  submitting page).</td>
+ </tr>
+ <tr>
+  <td>autocomplete</td>
+  <td>Specifies if the browser should autocomplete the form (default: on).</td>
+ </tr>
+ <tr>
+  <td>enctype</td>
+  <td>Specifies the encoding of the submitted data (default: is url-encoded).</td>
+ </tr>
+ <tr>
+  <td>method</td>
+  <td>Specifies the HTTP method used when submitting the form (default: GET).</td>
+ </tr>
+ <tr>
+  <td>name</td>
+  <td>Specifies a name used to identify the form (for DOM usage: 
+  document.forms.name).</td>
+ </tr>
+ <tr>
+  <td>novalidate</td>
+  <td>Specifies that the browser should not validate the form.</td>
+ </tr>
+ <tr>
+  <td>target</td>
+  <td>Specifies the target of the address in the action attribute (default: 
+  _self).</td>
+ </tr>
+</table>
+<div class="w3-panel w3-note">
+<p>You will learn more about the form attributes in the next chapters.
+</p>
 </div>
-</div>
-<p><a class="w3-btn" href="../cert/default.html">Get Your Certificate &raquo;</a></p>
-<p style="clear:both;">The <a href="../cert/default.html">HTML Certificate</a> documents your knowledge of HTML.</p>
-<p>The <a href="../cert/default.html">CSS Certificate</a> documents your knowledge of advanced CSS.</p>
-<p>The <a href="../cert/default.html">JavaScript Certificate</a> documents your knowledge of JavaScript and HTML DOM.</p>
-<p>The <a href="../cert/default.html">Python Certificate</a> documents your knowledge of Python.</p>
-<p>The <a href="../cert/default.html">jQuery Certificate</a> documents your knowledge of jQuery.</p>
-<p>The <a href="../cert/default.html">SQL Certificate</a> documents your knowledge of SQL.</p>
-<p>The <a href="../cert/default.html">PHP Certificate</a> documents your knowledge of PHP and MySQL.</p>
-<p>The <a href="../cert/default.html">XML Certificate</a> documents your knowledge of XML, XML DOM and XSLT.</p>
-<p>The <a href="../cert/default.html">Bootstrap Certificate</a> documents your knowledge of the Bootstrap framework.</p>
 
 <br>
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="../default.html">&#10094; Home</a>
-<a class="w3-right w3-btn" href="html_intro.html">Next &#10095;</a>
+<a class="w3-left w3-btn" href="html_xhtml.html">&#10094; Previous</a>
+<a class="w3-right w3-btn" href="html_form_elements.html">Next &#10095;</a>
 </div>
 </div>
 <div class="w3-col l2 m12" id="right">
@@ -907,9 +1257,13 @@ language codes, HTTP messages, and more.</p>
 <div class="sidesection">
   <div id="skyscraper">
   
-    <!--<pre>wide_skyscraper, all: [160,600][300,600][320,50][120,600][300,1050]</pre>-->
-    <div id="snhb-wide_skyscraper-0"></div>
-    <!-- adspace wide-->
+    <div id="div-gpt-ad-1422003450156-5">
+      <script>
+      googletag.cmd.push(function() {
+      googletag.display('div-gpt-ad-1422003450156-5');
+      });
+      </script> 
+    </div>
   
   </div>
 </div>
@@ -1010,24 +1364,13 @@ Read More &raquo;</a>
   <div id="stickyadcontainer">
     <div style="position:relative;margin:auto;">
       
-      <!--<pre>sidebar_sticky, desktop: [120,600][160,600][300,600][300,250]</pre>-->
-      <div id="snhb-sidebar_sticky-0"></div>
-      <script>
-          if (Number(w3_getStyleValue(document.getElementById("main"), "height").replace("px", "")) > 2200) {
-            // adspace sticky
-            if (document.getElementById("snhb-mid_content-0")) {
-              snhb.queue.push(function(){  snhb.startAuction(["sidebar_sticky", "mid_content" ]); });
-            }
-            else {
-              snhb.queue.push(function(){  snhb.startAuction(["sidebar_sticky"]); });
-            }
-          }
-          else {
-              if (document.getElementById("snhb-mid_content-0")) {
-                snhb.queue.push(function(){  snhb.startAuction(["mid_content"]); });
-              }
-          }
-      </script>  
+        <script>
+        if (Number(w3_getStyleValue(document.getElementById("main"), "height").replace("px", "")) > 2200) {
+        document.write("<div id='div-gpt-ad-1472547360578-0'>");
+        googletag.cmd.push(function() { googletag.display('div-gpt-ad-1472547360578-0'); });
+        document.write("</div>");
+        }
+        </script>
       
     </div>
   </div>
@@ -1045,14 +1388,17 @@ Read More &raquo;</a>
 <hr>
 
 <div style="overflow:auto">
-  <div class="bottomad">
-    <!-- BottomMediumRectangle -->
-    <!--<pre>bottom_medium_rectangle, all: [970,250][300,250][336,280]</pre>-->
-    <div id="snhb-bottom_medium_rectangle-0" style="padding:0 10px 10px 0;float:left;width:auto;"></div>
-    <!-- adspace bmr -->
-    <!-- RightBottomMediumRectangle -->
-    <!--<pre>right_bottom_medium_rectangle, desktop: [300,250][336,280]</pre>-->
-    <div id="snhb-right_bottom_medium_rectangle-0" style="padding:0 10px 10px 0;float:left;width:auto;"></div>
+  <!-- BottomMediumRectangle -->
+  <div class="bottomad" id='div-gpt-ad-1422003450156-0'>
+    <script type='text/javascript'>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1422003450156-0'); });
+    </script>
+  </div>
+  <!-- RightBottomMediumRectangle -->
+  <div class="bottomad" id='div-gpt-ad-1422003450156-3'>
+    <script type='text/javascript'>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1422003450156-3'); });
+    </script>
   </div>
 </div>
 
@@ -1193,4 +1539,6 @@ While using this site, you agree to have read and accepted our <a href="../about
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>  
 <![endif]-->
 </body>
+
+<!-- Mirrored from www.w3schools.com/html/html_forms.asp by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Sep 2019 08:38:27 GMT -->
 </html>

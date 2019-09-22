@@ -1,7 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en-US">
+
+<!-- Mirrored from www.w3schools.com/html/html5_semantic_elements.asp by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Sep 2019 08:38:29 GMT -->
 <head>
-<title>HTML Tutorial</title>
+<title>HTML5 Semantic Elements</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="Keywords" content="HTML,CSS,JavaScript,SQL,PHP,jQuery,XML,DOM,Bootstrap,Python,Java,Web development,W3C,tutorials,programming,training,learning,quiz,primer,lessons,references,examples,exercises,source code,colors,demos,tips">
@@ -375,14 +378,18 @@ ga('require', 'displayfeatures');
 ga('send', 'pageview');
 </script>
 
-<script src="../../snigelweb-com.videoplayerhub.com/videoloader.js" async></script>
-
 <script type='text/javascript'>
 var k42 = false;
 var googletag = googletag || {}; googletag.cmd = googletag.cmd || [];
 
-k42 = true;
-(adsbygoogle=window.adsbygoogle||[]).pauseAdRequests=1;
+(function() {
+  var gads = document.createElement('script');
+  gads.async = true;
+  gads.type = 'text/javascript';
+  gads.src = '../../www.googletagservices.com/tag/js/gpt.js';
+  var node = document.getElementsByTagName('script')[0];
+  node.parentNode.insertBefore(gads, node);
+})();
 
 var snhb = snhb || {}; snhb.queue = snhb.queue || [];
 snhb.options = {
@@ -393,6 +400,85 @@ snhb.options = {
                      reconsiderationAppealIntervalSeconds: 0
                      }
                };
+
+// GPT slots
+var gptAdSlots = [];
+googletag.cmd.push(function() {
+  googletag.pubads().disableInitialLoad();               
+  googletag.pubads().enableSingleRequest();
+  var leaderMapping = googletag.sizeMapping().
+    // Mobile ad
+    addSize([0, 0], [320, 50]). 
+    // Vertical Tablet ad
+    addSize([480, 0], [468, 60]). 
+    // Horizontal Tablet
+    addSize([780, 0], [728, 90]).
+    // Small Desktop
+    addSize([993, 0], [468, 60]).
+    // Normal Desktop
+    addSize([1150, 0], [728, 90]).
+    // Large Desktop and bigger ad
+    addSize([1425, 0], [[728, 90], [970, 90]]).build();
+  gptAdSlots[0] = googletag.defineSlot('/16833175/MainLeaderboard', [[728, 90], [970, 90]], 'div-gpt-ad-1422003450156-2').
+    defineSizeMapping(leaderMapping).addService(googletag.pubads());
+  var skyMapping = googletag.sizeMapping().
+    // Mobile ad
+    addSize([0, 0], [320, 50]). 
+    // Tablet ad
+    addSize([975, 0], [120, 600]). 
+    // Desktop
+    addSize([1135, 0], [160, 600]).   
+    // Large Desktop
+    addSize([1675, 0], [[160, 600], [300, 600], [300, 1050]]).build();
+  gptAdSlots[1] = googletag.defineSlot('/16833175/WideSkyScraper', [[160, 600], [300, 600], [300, 1050]], 'div-gpt-ad-1422003450156-5').
+    defineSizeMapping(skyMapping).addService(googletag.pubads());
+  var stickyMapping = googletag.sizeMapping().
+    // Mobile ad
+    addSize([0, 0], []). 
+    // Tablet ad
+    addSize([975, 0], [120, 600]). 
+    // Desktop
+    addSize([1135, 0], [160, 600]).   
+    // Large Desktop
+    addSize([1675, 0], [[160, 600], [300, 600], [300, 250]]).build();
+  gptAdSlots[4] = googletag.defineSlot('/16833175/StickySkyScraper', [[300, 600], [120, 600], [300, 250], [160, 600]], 'div-gpt-ad-1472547360578-0').
+    defineSizeMapping(stickyMapping).addService(googletag.pubads());
+  var mcontMapping = googletag.sizeMapping().
+    // Mobile ad
+    addSize([0, 0], [[300, 250], [336, 280], [320, 50]]). 
+    // Vertical Tablet ad
+    addSize([490, 0], [[300, 250], [336, 280], [468, 60]]). 
+    // Horizontal Tablet
+    addSize([750, 0], [728, 90]).
+    // Small Desktop
+    addSize([993, 0], [[300, 250], [336, 280], [468, 60]]).
+    // Normal Desktop
+    addSize([1135, 0], [728, 90]).
+    // Large Desktop and bigger ad
+    addSize([1440, 0], [[728, 90], [970, 90], [970, 250]]).build();
+  gptAdSlots[5] = googletag.defineSlot('/16833175/MidContent', [[300, 250], [336, 280]], 'div-gpt-ad-1493883843099-0').
+    defineSizeMapping(mcontMapping).setCollapseEmptyDiv(true).addService(googletag.pubads());
+  var bmrMapping = googletag.sizeMapping().
+    // Smaller
+    addSize([0, 0], [[300, 250], [336, 280]]). 
+    // Large Desktop
+    addSize([1240, 0], [[300, 250], [336, 280], [970, 250]]).build();
+    gptAdSlots[2] = googletag.defineSlot('/16833175/BottomMediumRectangle', [[300, 250], [336, 280], [970, 250]], 'div-gpt-ad-1422003450156-0').
+    defineSizeMapping(bmrMapping).setCollapseEmptyDiv(true).addService(googletag.pubads());
+  var rbmrMapping = googletag.sizeMapping().
+    // Smaller
+    addSize([0, 0], []). 
+    // Large Desktop
+    addSize([975, 0], [[300, 250], [336, 280]]).build();
+  gptAdSlots[3] = googletag.defineSlot('/16833175/RightBottomMediumRectangle', [[300, 250], [336, 280]], 'div-gpt-ad-1422003450156-3').
+    defineSizeMapping(rbmrMapping).setCollapseEmptyDiv(true).addService(googletag.pubads());
+  googletag.pubads().setTargeting("content",(function () {
+    var folder = location.pathname;
+    folder = folder.replace("../index.html", "");
+    folder = folder.substr(0, folder.indexOf("../index.html"));
+    return folder;
+  })());
+});  
 
 </script>
 <script src="../../static.h-bid.com/sncmp/sncmp_stub.min.js" type="text/javascript"></script>
@@ -417,7 +503,7 @@ snhb.options = {
 <script>
   snhb.queue.push(function(){
 
-    snhb.startAuction(["main_leaderboard", "wide_skyscraper", "bottom_medium_rectangle", "right_bottom_medium_rectangle"]);
+    snhb.addAdditionalAdSlotsToRefresh(gptAdSlots);
 
   });
 </script>
@@ -479,6 +565,7 @@ function w3_getStyleValue(elmnt,style) {
   }
 }
 </script>
+<link rel="stylesheet" type="text/css" href="../browserref.css">
 </head>
 <body>
 <div class='w3-container top'>
@@ -800,106 +887,332 @@ function w3_getStyleValue(elmnt,style) {
     <div class='w3-col l10 m12' id='main'>
       <div id='mainLeaderboard' style='overflow:hidden;'>
         <!-- MainLeaderboard-->
-
-        <!--<pre>main_leaderboard, all: [728,90][970,90][320,50][468,60]</pre>-->
-        <div id="snhb-main_leaderboard-0"></div>
-        <!-- adspace leaderboard -->
+        
+        <div id='div-gpt-ad-1422003450156-2'>
+          <script type='text/javascript'>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1422003450156-2'); });</script>
+        </div>
        
       </div>
-<h1>HTML5<span class="color_h1"> Tutorial</span></h1>
+
+<h1>HTML5 <span class="color_h1">Semantic Elements</span></h1>
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="../default.html">&#10094; Home</a>
-<a class="w3-right w3-btn" href="html_intro.html">Next &#10095;</a>
+<a class="w3-left w3-btn" href="html5_new_elements.html">&#10094; Previous</a>
+<a class="w3-right w3-btn" href="html5_migration.html">Next &#10095;</a>
 </div>
-
-<div class="w3-panel w3-info intro">
-<p>HTML is the standard markup language for Web pages.</p>
-  <p>With HTML you can create your own Website.</p>
-<p>HTML is easy to learn - You will enjoy it!</p>
-</div>
-
 <hr>
-<h2>Examples in Every Chapter</h2>
-<p>This HTML tutorial contains hundreds of HTML examples.</p>
-<p>With our online HTML editor, you can edit the HTML, and click on a button to 
-view the result.</p>
-<div class="w3-example">
-<h3>Example</h3>
-<div class="w3-code notranslate htmlHigh">
-&lt;!DOCTYPE html&gt;<br>
-&lt;html&gt;<br>&lt;head&gt;<br>&lt;title&gt;Page Title&lt;/title&gt;<br>
-&lt;/head&gt;<br>&lt;body&gt;<br><br>&lt;h1&gt;This is a Heading&lt;/h1&gt;<br>&lt;p&gt;This is a paragraph.&lt;/p&gt;<br><br>
-&lt;/body&gt;<br>&lt;/html&gt;
-</div>
-<a class="w3-btn w3-margin-bottom" href="tryitfb35.html?filename=tryhtml_default" target="_blank">Try it Yourself &raquo;</a>
-</div>
-<p><strong>Click on the &quot;Try it Yourself&quot; button to see how it works.</strong></p>
-<p><a href="html_intro.html">Start learning HTML now!</a></p><hr>
+<p class="intro">Semantics is the study of the meanings of words and phrases in 
+a language.</p>
+<p class="intro">Semantic elements = elements with a meaning.</p>
+<hr>
 
-<h2>HTML Examples</h2>
-<p>At the end of this HTML tutorial, you will find more than 200 examples.</p>
-<p>With our online editor, you can edit and test each example yourself.</p>
-<p><a href="html_examples.html">Go to HTML Examples!</a></p>
+<h2>What are Semantic Elements?</h2>
+<p>A semantic element clearly describes its meaning to both the browser and the developer.</p>
+<p>Examples of <strong>non-semantic</strong> elements: <code class="w3-codespan">&lt;div&gt;</code> and <code class="w3-codespan">&lt;span&gt;</code> - Tells nothing about its content.</p>
+<p>Examples of <strong>semantic</strong> elements: <code class="w3-codespan">&lt;form&gt;</code>, <code class="w3-codespan">&lt;table&gt;</code>, and <code class="w3-codespan">&lt;article&gt;</code> - Clearly defines its content.</p>
+<hr>
+
+<h2>Browser Support</h2>
+  
+<table class="browserref notranslate">
+  <tr>
+    <th style="width:20%;font-size:20px;padding:22px" class="bsChrome" title="Chrome"></th>
+    <th style="width:20%;font-size:16px;padding:22px" class="bsEdge" title="Internet Explorer / Edge"></th>
+    <th style="width:20%;font-size:16px;padding:22px" class="bsFirefox" title="Firefox"></th>
+    <th style="width:20%;font-size:16px;padding:22px" class="bsSafari" title="Safari"></th>
+    <th style="width:20%;font-size:16px;padding:22px" class="bsOpera" title="Opera"></th>                
+  </tr>
+  <tr>
+    <td>Yes</td>
+    <td>Yes</td>    
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
+  </tr>
+</table>
+<p>HTML5 semantic elements are supported in all modern browsers.</p>
+<p>In addition, you can &quot;teach&quot; older browsers how to handle &quot;unknown elements&quot;.</p>
+<p>Read about it in <a href="html5_browsers.html">HTML5 Browser Support</a>.</p>
+<hr>
+
+<h2>New Semantic Elements in HTML5</h2>
+<p>Many web sites contain HTML code like:
+&lt;div id=&quot;nav&quot;&gt; &lt;div class=&quot;header&quot;&gt; &lt;div id=&quot;footer&quot;&gt;<br>
+to indicate navigation, header, and footer.</p>
+<p>HTML5 offers new semantic elements to define different parts of a web page:
+&nbsp;</p>
+
+<div style="width:374px;float:left">
+ <ul>
+  <li>&lt;article&gt;</li>
+  <li>&lt;aside&gt;</li>
+  <li>&lt;details&gt;</li>
+  <li>&lt;figcaption&gt;</li>
+  <li>&lt;figure&gt;</li>
+  <li>&lt;footer&gt;</li>
+  <li>&lt;header&gt;</li>
+  <li>&lt;main&gt;</li>
+  <li>&lt;mark&gt;</li>
+  <li>&lt;nav&gt;</li>
+  <li>&lt;section&gt;</li>
+  <li>&lt;summary&gt;</li>
+  <li>&lt;time&gt;</li>
+</ul>
+</div>
+<div style="width:260px;float:left;margin-bottom:15px;"><img alt="HTML5 Semantic Elements"
+src="img_sem_elements.gif" width="219" height="258">
+</div>
+<p style="clear:both;"></p>
 <hr>
 <div id="midcontentadcontainer" style="overflow:auto;text-align:center">
 <!-- MidContent -->
 
-  <!--<pre>mid_content, all: [300,250][336,280][728,90][970,250][970,90][320,50][468,60]</pre>-->
-  <div id="snhb-mid_content-0"></div>
+  <div id='div-gpt-ad-1493883843099-0' style="display: inline-block">
+    <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1493883843099-0'); });
+    </script>
+  </div>
     
 </div>
 <hr>
-<h2>HTML Exercises</h2>
-<p>This HTML tutorial also contains nearly 100 HTML exercises.</p>
-<form autocomplete="off" id="w3-exerciseform" action="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_attributes1" method="post" target="_blank">
-<h2>Test Yourself With Exercises</h2>
-<div class="exercisewindow">
-<h2>Exercise:</h2>
-<p>Add a "tooltip" to the paragraph below with the text "About W3Schools".</p>
-<div class="exerciseprecontainer">
-&lt;p <input name="ex1" maxlength="5" style="width: 54px;">="About W3Schools"&gt;W3Schools is a web developer's site.&lt;/p&gt;
+<h2>HTML5 &lt;section&gt; Element</h2>
+<p>The <code class="w3-codespan">&lt;section&gt;</code> element defines a section in a document.</p>
+<p>According to W3C's HTML5 documentation: &quot;A section is a thematic grouping of content, typically with a heading.&quot;</p>
+<p>A home page could normally be split into sections for introduction, 
+content, and contact information.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+    &lt;section&gt;<br>
+&nbsp; &lt;h1&gt;WWF&lt;/h1&gt;<br>
+&nbsp; &lt;p&gt;The World Wide Fund for Nature (WWF) is....&lt;/p&gt;<br>
+ &lt;/section&gt;
 </div>
-<br>
-<button type="submit" class="w3-btn w3-margin-bottom">Submit Answer &raquo;</button>
-<p><a target="_blank" href="exercise4b52.html?filename=exercise_html_attributes1">Start the Exercise</a></p>
+<a target="_blank" href="tryitfe11.html?filename=tryhtml5_section" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
 </div>
-</form>
-<hr>
-<h2>HTML Quiz Test</h2>
-<p>Test your HTML skills with our HTML Quiz!</p>
-<p><a href="html_quiz.html" class="w3-button w3-blue">Start HTML Quiz!</a></p>
 <hr>
 
-<h2>HTML References</h2>
-<p>At W3Schools you will find complete references about tags,  
-attributes, events, color names, entities, character-sets, URL encoding, 
-language codes, HTTP messages, and more.</p>
-<p><a href="../tags/default.html">HTML Tag Reference</a></p>
+<h2>HTML5 &lt;article&gt; Element</h2>
+<p>The <code class="w3-codespan">&lt;article&gt;</code> element specifies independent, self-contained content.</p>
+<p>An article should make sense on its own, and it should be possible to 
+read it independently from the rest of the web site.</p>
+<p>Examples of where an <code class="w3-codespan">&lt;article&gt;</code> element can be used:</p>
+<ul>
+  <li>Forum post</li>
+  <li>Blog post</li>
+  <li>Newspaper article</li>
+</ul>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+    &lt;article&gt;<br>
+&nbsp;
+ &lt;h1&gt;What Does WWF Do?&lt;/h1&gt;<br>
+ &nbsp; &lt;p&gt;WWF's mission is to stop the degradation of our planet's natural environment,<br>&nbsp; and build a future in which humans live in harmony with nature.&lt;/p&gt;<br>
+ &lt;/article&gt;
+</div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="tryit66b2.html?filename=tryhtml5_article">Try it Yourself &raquo;</a>
+</div>
 <hr>
 
-<h2>HTML Exam - Get Your Diploma!</h2>
-<div class="w3-row">
-<div class="w3-third w3-container w3-padding-24"><a href="../cert/default.html"><img src="../images/w3certified_logo_250.png" style="max-width:100%;" alt="W3Schools Certification" /></a> </div>
-<div class="w3-twothird w3-container"><h2>W3Schools' Online Certification</h2>
-<p>The perfect solution for professionals who need to balance work, family, and career building.</p>
-<p>More than 25 000 certificates already issued!</p>
+<h2>Nesting &lt;article&gt; in &lt;section&gt; or Vice Versa?</h2>
+<p>The<code class="w3-codespan">&lt;article&gt;</code> 
+element specifies independent, self-contained content.</p>
+<p>The <code class="w3-codespan">&lt;section&gt;</code> element defines section in a document.</p>
+<p>Can we use the definitions to decide how to nest those elements? No, we cannot!</p>
+<p>So, on the Internet, you will find HTML pages with <code class="w3-codespan">&lt;section&gt;</code> elements 
+containing <code class="w3-codespan">&lt;article&gt;</code> elements, and <code class="w3-codespan">&lt;article&gt;</code> elements containing <code class="w3-codespan">&lt;section&gt;</code> elements.</p>
+<p>You will also find pages with <code class="w3-codespan">&lt;section&gt;</code> elements containing <code class="w3-codespan">&lt;section&gt;</code> 
+elements, and <code class="w3-codespan">&lt;article&gt;</code> elements containing <code class="w3-codespan">&lt;article&gt;</code> elements.</p>
+<div class="w3-panel w3-note">
+<p>Example for a newspaper: The sport <code class="w3-codespan">&lt;article&gt;</code> in the sport <strong>section</strong>, 
+may have a technical <strong>section</strong> in each <code class="w3-codespan">&lt;article&gt;</code>.
+</p>
 </div>
+<hr>
+
+<h2>HTML5 &lt;header&gt; Element</h2>
+<p>The <code class="w3-codespan">&lt;header&gt;</code> element specifies a header for a document or section.</p>
+<p>The <code class="w3-codespan">&lt;header&gt;</code> element should be used as a container for introductory content.</p>
+<p>You can have several <code class="w3-codespan">&lt;header&gt;</code> elements in one document.</p>
+<p>The following example defines a header for an article:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+      
+    &lt;article&gt;<br>
+&nbsp; &lt;header&gt;<br>
+ &nbsp;&nbsp;&nbsp;
+ &lt;h1&gt;What Does WWF Do?&lt;/h1&gt;<br>
+&nbsp;&nbsp;&nbsp; &lt;p&gt;WWF's mission:&lt;/p&gt;<br>
+&nbsp; &lt;/header&gt;<br>
+ &nbsp; &lt;p&gt;WWF's mission is to stop the degradation of our planet's natural environment,<br>&nbsp; and build a future in which humans live in harmony with nature.&lt;/p&gt;<br>
+ &lt;/article&gt;
 </div>
-<p><a class="w3-btn" href="../cert/default.html">Get Your Certificate &raquo;</a></p>
-<p style="clear:both;">The <a href="../cert/default.html">HTML Certificate</a> documents your knowledge of HTML.</p>
-<p>The <a href="../cert/default.html">CSS Certificate</a> documents your knowledge of advanced CSS.</p>
-<p>The <a href="../cert/default.html">JavaScript Certificate</a> documents your knowledge of JavaScript and HTML DOM.</p>
-<p>The <a href="../cert/default.html">Python Certificate</a> documents your knowledge of Python.</p>
-<p>The <a href="../cert/default.html">jQuery Certificate</a> documents your knowledge of jQuery.</p>
-<p>The <a href="../cert/default.html">SQL Certificate</a> documents your knowledge of SQL.</p>
-<p>The <a href="../cert/default.html">PHP Certificate</a> documents your knowledge of PHP and MySQL.</p>
-<p>The <a href="../cert/default.html">XML Certificate</a> documents your knowledge of XML, XML DOM and XSLT.</p>
-<p>The <a href="../cert/default.html">Bootstrap Certificate</a> documents your knowledge of the Bootstrap framework.</p>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="tryit5401.html?filename=tryhtml5_header">Try it Yourself &raquo;</a>
+</div>
+<hr>
+
+<h2>HTML5 &lt;footer&gt; Element</h2>
+<p>The <code class="w3-codespan">&lt;footer&gt;</code> element specifies a footer for a document or section.</p>
+<p>A <code class="w3-codespan">&lt;footer&gt;</code> element should contain information about its containing element.</p>
+<p>A footer typically contains the author of the document, copyright 
+information, links to terms of use, contact information, etc.</p>
+<p>You may have several <code class="w3-codespan">&lt;footer&gt;</code> elements in one document.</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+      
+    &lt;footer&gt;<br>
+&nbsp; &lt;p&gt;Posted by: Hege Refsnes&lt;/p&gt;<br>
+&nbsp; &lt;p&gt;Contact information: &lt;a href=&quot;mailto:someone@example.com&quot;&gt;<br>&nbsp; someone@example.com&lt;/a&gt;.&lt;/p&gt;<br>
+ &lt;/footer&gt;
+</div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="tryit8fd7.html?filename=tryhtml5_footer">Try it Yourself &raquo;</a>
+</div>
+<hr>
+
+<h2>HTML5 &lt;nav&gt; Element</h2>
+<p>The <code class="w3-codespan">&lt;nav&gt;</code> element defines a set of navigation links.</p>
+<div class="w3-panel w3-note">
+<p>Notice that NOT all links of a document should be inside a <code class="w3-codespan">&lt;nav&gt;</code> element. The 
+<code class="w3-codespan">&lt;nav&gt;</code> element is intended only for major block of navigation links. </p>
+</div>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+    &lt;nav&gt;<br>
+ &nbsp;
+ &lt;a href=&quot;/html/&quot;&gt;HTML&lt;/a&gt; |<br>
+ &nbsp;
+ &lt;a href=&quot;/css/&quot;&gt;CSS&lt;/a&gt; |<br>
+ &nbsp;
+ &lt;a href=&quot;/js/&quot;&gt;JavaScript&lt;/a&gt; |<br>
+ &nbsp;
+ &lt;a href=&quot;/jquery/&quot;&gt;jQuery&lt;/a&gt;<br>
+ &lt;/nav&gt;
+</div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="tryit0af9.html?filename=tryhtml5_nav">Try it Yourself &raquo;</a>
+</div>
+<hr>
+
+<h2>HTML5 &lt;aside&gt; Element</h2>
+<p>The <code class="w3-codespan">&lt;aside&gt;</code> element defines some content aside from the content it is 
+placed in (like a sidebar).</p>
+<p>The <code class="w3-codespan">&lt;aside&gt;</code> content should be related to the surrounding content.</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+    &lt;p&gt;My family and I visited The Epcot center this summer.&lt;/p&gt;<br>
+ <br>
+ &lt;aside&gt;<br>
+ &nbsp;
+ &lt;h4&gt;Epcot Center&lt;/h4&gt;<br>
+ &nbsp; &lt;p&gt;The Epcot Center is a theme park in Disney World, Florida.&lt;/p&gt;<br>
+ &lt;/aside&gt;
+</div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="tryited17.html?filename=tryhtml5_aside">Try it Yourself &raquo;</a>
+</div>
+<hr>
+
+<h2>HTML5 &lt;figure&gt; and &lt;figcaption&gt; Elements</h2>
+<p>The purpose of a figure caption is to add a visual explanation to an image.</p>
+<p>In HTML5, an image and a caption can be grouped together in a <code class="w3-codespan">&lt;figure&gt;</code> 
+element:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;figure&gt;<br>
+&nbsp; &lt;img src=&quot;pic_trulli.jpg&quot; alt=&quot;Trulli&quot;&gt;<br>
+&nbsp; &lt;figcaption&gt;Fig1. - Trulli, Puglia, Italy.&lt;/figcaption&gt;<br>
+&lt;/figure&gt;
+</div>
+  <a class="w3-btn w3-margin-bottom" href="tryitf32a.html?filename=tryhtml_figcaption" target="_blank">Try it Yourself &raquo;</a>
+</div>
+<p>The <code class="w3-codespan">&lt;img&gt;</code> element defines the image, the <code class="w3-codespan">&lt;figcaption&gt;</code> 
+element defines the caption.</p>
+<hr>
+
+<h2>Why Semantic Elements?</h2>
+<p>With HTML4, developers used their own id/class names to style  
+elements: header, top, bottom, footer, menu, navigation, main, container, content, 
+article, sidebar, topnav, etc.</p>
+<p>This made it impossible for search engines to identify the correct web page 
+content.</p>
+<p>With the new HTML5 elements (<code class="w3-codespan">&lt;header&gt; &lt;footer&gt; &lt;nav&gt; &lt;section&gt; &lt;article&gt;</code>), this 
+will become easier.</p>
+<p>According to the W3C, a Semantic Web: &quot;Allows data to be shared and reused across applications, 
+enterprises, and communities.&quot;</p>
+<hr>
+
+<h2>Semantic Elements in HTML5</h2>
+<p>Below is an alphabetical list of the new semantic elements in HTML5.</p>
+<p>The links go to our complete <a href="../tags/default.html">HTML5 Reference</a>.</p>
+<table class="w3-table-all notranslate">
+<tr>
+<th style="width:20%">Tag</th>
+<th>Description</th>
+</tr>
+<tr>
+<td><a href="../tags/tag_article.html">&lt;article&gt;</a></td>
+<td>Defines an article</td>
+</tr>
+<tr>
+<td><a href="../tags/tag_aside.html">&lt;aside&gt;</a></td>
+<td>Defines content aside from the page content</td>
+</tr>
+<tr>
+<td><a href="../tags/tag_details.html">&lt;details&gt;</a></td>
+<td>Defines additional details that the user can view or hide</td>
+</tr>
+<tr>
+<td><a href="../tags/tag_figcaption.html">&lt;figcaption&gt;</a></td>
+<td>Defines a caption for a &lt;figure&gt; element</td>
+</tr>
+<tr>
+<td><a href="../tags/tag_figure.html">&lt;figure&gt;</a></td>
+<td>Specifies self-contained content, like illustrations, diagrams, photos, code 
+listings, etc.</td>
+</tr>
+<tr>
+<td><a href="../tags/tag_footer.html">&lt;footer&gt;</a></td>
+<td>Defines a footer for a document or section</td>
+</tr>
+<tr>
+<td><a href="../tags/tag_header.html">&lt;header&gt;</a></td>
+<td>Specifies a header for a document or section</td>
+</tr>
+<tr>
+<td><a href="../tags/tag_main.html">&lt;main&gt;</a></td>
+<td>Specifies the main content of a document</td>
+</tr>
+<tr>
+<td><a href="../tags/tag_mark.html">&lt;mark&gt;</a></td>
+<td>Defines marked/highlighted text</td>
+</tr>
+<tr>
+<td><a href="../tags/tag_nav.html">&lt;nav&gt;</a></td>
+<td>Defines navigation links</td>
+</tr>
+<tr>
+<td><a href="../tags/tag_section.html">&lt;section&gt;</a></td>
+<td>Defines a section in a document</td>
+</tr>
+<tr>
+<td><a href="../tags/tag_summary.html">&lt;summary&gt;</a></td>
+<td>Defines a visible heading for a &lt;details&gt; element</td>
+</tr>
+<tr>
+<td><a href="../tags/tag_time.html">&lt;time&gt;</a></td>
+<td>Defines a date/time</td>
+</tr>
+</table>
 
 <br>
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="../default.html">&#10094; Home</a>
-<a class="w3-right w3-btn" href="html_intro.html">Next &#10095;</a>
+<a class="w3-left w3-btn" href="html5_new_elements.html">&#10094; Previous</a>
+<a class="w3-right w3-btn" href="html5_migration.html">Next &#10095;</a>
 </div>
 </div>
 <div class="w3-col l2 m12" id="right">
@@ -907,9 +1220,13 @@ language codes, HTTP messages, and more.</p>
 <div class="sidesection">
   <div id="skyscraper">
   
-    <!--<pre>wide_skyscraper, all: [160,600][300,600][320,50][120,600][300,1050]</pre>-->
-    <div id="snhb-wide_skyscraper-0"></div>
-    <!-- adspace wide-->
+    <div id="div-gpt-ad-1422003450156-5">
+      <script>
+      googletag.cmd.push(function() {
+      googletag.display('div-gpt-ad-1422003450156-5');
+      });
+      </script> 
+    </div>
   
   </div>
 </div>
@@ -1010,24 +1327,13 @@ Read More &raquo;</a>
   <div id="stickyadcontainer">
     <div style="position:relative;margin:auto;">
       
-      <!--<pre>sidebar_sticky, desktop: [120,600][160,600][300,600][300,250]</pre>-->
-      <div id="snhb-sidebar_sticky-0"></div>
-      <script>
-          if (Number(w3_getStyleValue(document.getElementById("main"), "height").replace("px", "")) > 2200) {
-            // adspace sticky
-            if (document.getElementById("snhb-mid_content-0")) {
-              snhb.queue.push(function(){  snhb.startAuction(["sidebar_sticky", "mid_content" ]); });
-            }
-            else {
-              snhb.queue.push(function(){  snhb.startAuction(["sidebar_sticky"]); });
-            }
-          }
-          else {
-              if (document.getElementById("snhb-mid_content-0")) {
-                snhb.queue.push(function(){  snhb.startAuction(["mid_content"]); });
-              }
-          }
-      </script>  
+        <script>
+        if (Number(w3_getStyleValue(document.getElementById("main"), "height").replace("px", "")) > 2200) {
+        document.write("<div id='div-gpt-ad-1472547360578-0'>");
+        googletag.cmd.push(function() { googletag.display('div-gpt-ad-1472547360578-0'); });
+        document.write("</div>");
+        }
+        </script>
       
     </div>
   </div>
@@ -1045,14 +1351,17 @@ Read More &raquo;</a>
 <hr>
 
 <div style="overflow:auto">
-  <div class="bottomad">
-    <!-- BottomMediumRectangle -->
-    <!--<pre>bottom_medium_rectangle, all: [970,250][300,250][336,280]</pre>-->
-    <div id="snhb-bottom_medium_rectangle-0" style="padding:0 10px 10px 0;float:left;width:auto;"></div>
-    <!-- adspace bmr -->
-    <!-- RightBottomMediumRectangle -->
-    <!--<pre>right_bottom_medium_rectangle, desktop: [300,250][336,280]</pre>-->
-    <div id="snhb-right_bottom_medium_rectangle-0" style="padding:0 10px 10px 0;float:left;width:auto;"></div>
+  <!-- BottomMediumRectangle -->
+  <div class="bottomad" id='div-gpt-ad-1422003450156-0'>
+    <script type='text/javascript'>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1422003450156-0'); });
+    </script>
+  </div>
+  <!-- RightBottomMediumRectangle -->
+  <div class="bottomad" id='div-gpt-ad-1422003450156-3'>
+    <script type='text/javascript'>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1422003450156-3'); });
+    </script>
   </div>
 </div>
 
@@ -1193,4 +1502,6 @@ While using this site, you agree to have read and accepted our <a href="../about
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>  
 <![endif]-->
 </body>
+
+<!-- Mirrored from www.w3schools.com/html/html5_semantic_elements.asp by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Sep 2019 08:38:30 GMT -->
 </html>

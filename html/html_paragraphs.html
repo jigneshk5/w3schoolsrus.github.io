@@ -1,7 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en-US">
+
+<!-- Mirrored from www.w3schools.com/html/html_paragraphs.asp by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Sep 2019 08:38:14 GMT -->
 <head>
-<title>HTML Tutorial</title>
+<title>HTML Paragraphs</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="Keywords" content="HTML,CSS,JavaScript,SQL,PHP,jQuery,XML,DOM,Bootstrap,Python,Java,Web development,W3C,tutorials,programming,training,learning,quiz,primer,lessons,references,examples,exercises,source code,colors,demos,tips">
@@ -806,40 +809,43 @@ function w3_getStyleValue(elmnt,style) {
         <!-- adspace leaderboard -->
        
       </div>
-<h1>HTML5<span class="color_h1"> Tutorial</span></h1>
+<h1>HTML <span class="color_h1">Paragraphs</span></h1>
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="../default.html">&#10094; Home</a>
-<a class="w3-right w3-btn" href="html_intro.html">Next &#10095;</a>
+<a class="w3-left w3-btn" href="html_headings.html">&#10094; Previous</a>
+<a class="w3-right w3-btn" href="html_styles.html">Next &#10095;</a>
 </div>
-
-<div class="w3-panel w3-info intro">
-<p>HTML is the standard markup language for Web pages.</p>
-  <p>With HTML you can create your own Website.</p>
-<p>HTML is easy to learn - You will enjoy it!</p>
-</div>
-
 <hr>
-<h2>Examples in Every Chapter</h2>
-<p>This HTML tutorial contains hundreds of HTML examples.</p>
-<p>With our online HTML editor, you can edit the HTML, and click on a button to 
-view the result.</p>
+<h2>HTML Paragraphs</h2>
+<p>The HTML <code class="w3-codespan">&lt;p&gt;</code> element defines a <strong>paragraph</strong>:</p>
 <div class="w3-example">
 <h3>Example</h3>
 <div class="w3-code notranslate htmlHigh">
-&lt;!DOCTYPE html&gt;<br>
-&lt;html&gt;<br>&lt;head&gt;<br>&lt;title&gt;Page Title&lt;/title&gt;<br>
-&lt;/head&gt;<br>&lt;body&gt;<br><br>&lt;h1&gt;This is a Heading&lt;/h1&gt;<br>&lt;p&gt;This is a paragraph.&lt;/p&gt;<br><br>
-&lt;/body&gt;<br>&lt;/html&gt;
+&lt;p&gt;This is a paragraph.&lt;/p&gt;<br>
+&lt;p&gt;This is another paragraph.&lt;/p&gt;
 </div>
-<a class="w3-btn w3-margin-bottom" href="tryitfb35.html?filename=tryhtml_default" target="_blank">Try it Yourself &raquo;</a>
+<a target="_blank" href="tryitf9c9.html?filename=tryhtml_paragraphs1" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
 </div>
-<p><strong>Click on the &quot;Try it Yourself&quot; button to see how it works.</strong></p>
-<p><a href="html_intro.html">Start learning HTML now!</a></p><hr>
+<div class="w3-panel w3-note">
+  <p><strong>Note:</strong> Browsers automatically add some white space (a margin) before and after a paragraph.</p>
+</div>
+<hr>
 
-<h2>HTML Examples</h2>
-<p>At the end of this HTML tutorial, you will find more than 200 examples.</p>
-<p>With our online editor, you can edit and test each example yourself.</p>
-<p><a href="html_examples.html">Go to HTML Examples!</a></p>
+<h2>HTML Display</h2>
+<p>You cannot be sure how HTML will be displayed.</p>
+<p>Large or small screens, and resized windows will create different results. </p>
+<p>With HTML, you cannot change the output by adding extra spaces or extra lines in your HTML code.</p>
+<p>The browser will remove any extra spaces and extra lines when the page is 
+displayed:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;p&gt;<br>This paragraph<br>contains a lot of lines<br>in the source code,<br>but 
+ the browser <br>ignores it.<br>&lt;/p&gt;<br><br>&lt;p&gt;<br>This paragraph<br>contains&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ a lot of spaces<br>in the source&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ code,<br>but the&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; browser <br>ignores 
+ it.<br>&lt;/p&gt;</div>
+<a class="w3-btn w3-margin-bottom" href="tryit7f09.html?filename=tryhtml_paragraphs2" target="_blank">Try it Yourself &raquo;</a>
+</div>
 <hr>
 <div id="midcontentadcontainer" style="overflow:auto;text-align:center">
 <!-- MidContent -->
@@ -849,57 +855,123 @@ view the result.</p>
     
 </div>
 <hr>
+<h2>Don't Forget the End Tag</h2>
+<p>Most browsers will display HTML correctly even if you forget the end tag:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;p&gt;This is a paragraph.<br>
+&lt;p&gt;This is another paragraph.</div>
+<a target="_blank" href="tryit3815.html?filename=tryhtml_paragraphs0" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
+</div>
+<p>The example above will work in most browsers, but do not rely on it.</p>
+<div class="w3-panel w3-note">
+  <p><strong>Note:</strong> Dropping the end tag can produce unexpected results or errors.</p>
+</div>
+<hr>
+
+<h2>HTML Line Breaks</h2>
+<p>The HTML <code class="w3-codespan">&lt;br&gt;</code> element defines a <strong>line break</strong>.</p>
+<p>Use <code class="w3-codespan">&lt;br&gt;</code> if you want a line break (a new line) without starting a new paragraph:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;p&gt;This is&lt;br&gt;a paragraph&lt;br&gt;with line breaks.&lt;/p&gt;</div>
+<a target="_blank" href="tryit7d53.html?filename=tryhtml_paragraphs" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
+</div>
+<p>The <code class="w3-codespan">&lt;br&gt;</code> tag is an empty tag, which means that it has no end tag.</p>
+<hr>
+
+<h2>The Poem Problem</h2>
+<p>This poem will display on a single line:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;p&gt;<br>&nbsp; My Bonnie lies over 
+ the ocean.<br><br>&nbsp; My Bonnie lies over the sea.<br><br>&nbsp; My Bonnie 
+ lies over the ocean.<br><br>&nbsp; Oh, bring back my Bonnie to me.<br>&lt;/p&gt;</div>
+<a class="w3-btn w3-margin-bottom" href="tryit36b9.html?filename=tryhtml_poem" target="_blank">Try it Yourself &raquo;</a>
+</div>
+<hr>
+
+<h2>The HTML &lt;pre&gt; Element</h2>
+<p>The HTML <code class="w3-codespan">&lt;pre&gt;</code> element defines preformatted text.</p>
+<p>The text inside a <code class="w3-codespan">&lt;pre&gt;</code> element is displayed in a fixed-width font (usually 
+Courier), and it preserves both spaces and line breaks:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;pre&gt;<br>&nbsp; My Bonnie lies over the ocean.<br>
+<br>&nbsp; My Bonnie lies over the sea.<br><br>&nbsp; My Bonnie lies over the 
+ocean.<br><br>&nbsp; Oh, bring back my Bonnie to me.<br>&lt;/pre&gt;</div>
+<a class="w3-btn w3-margin-bottom" href="tryitb8e5.html?filename=tryhtml_pre" target="_blank">Try it Yourself &raquo;</a>
+</div>
+<hr>
 <h2>HTML Exercises</h2>
-<p>This HTML tutorial also contains nearly 100 HTML exercises.</p>
-<form autocomplete="off" id="w3-exerciseform" action="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_attributes1" method="post" target="_blank">
+<form autocomplete="off" id="w3-exerciseform" action="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_paragraphs1" method="post" target="_blank">
 <h2>Test Yourself With Exercises</h2>
 <div class="exercisewindow">
 <h2>Exercise:</h2>
-<p>Add a "tooltip" to the paragraph below with the text "About W3Schools".</p>
+<p>Use the correct HTML tag to add a paragraph with the text "Hello World!".</p>
 <div class="exerciseprecontainer">
-&lt;p <input name="ex1" maxlength="5" style="width: 54px;">="About W3Schools"&gt;W3Schools is a web developer's site.&lt;/p&gt;
+&lt;html&gt;
+<br>
+&lt;body&gt;
+<br>
+<input name="ex1" maxlength="19" style="width: 195px;">
+<br>
+&lt;/body&gt;
+<br>
+&lt;/html&gt;
 </div>
 <br>
 <button type="submit" class="w3-btn w3-margin-bottom">Submit Answer &raquo;</button>
-<p><a target="_blank" href="exercise4b52.html?filename=exercise_html_attributes1">Start the Exercise</a></p>
+<p><a target="_blank" href="exerciseff3a.html?filename=exercise_html_paragraphs1">Start the Exercise</a></p>
 </div>
 </form>
 <hr>
-<h2>HTML Quiz Test</h2>
-<p>Test your HTML skills with our HTML Quiz!</p>
-<p><a href="html_quiz.html" class="w3-button w3-blue">Start HTML Quiz!</a></p>
-<hr>
 
-<h2>HTML References</h2>
-<p>At W3Schools you will find complete references about tags,  
-attributes, events, color names, entities, character-sets, URL encoding, 
-language codes, HTTP messages, and more.</p>
-<p><a href="../tags/default.html">HTML Tag Reference</a></p>
+<!--
+<div class="w3-container w3-dark-grey w3-padding">
+  <h2>Test Yourself with Exercises!</h2>
+  <div class="w3-bar w3-margin-bottom">
+    <a class="w3-bar-item w3-btn" href="exercise.asp?filename=exercise_paragraphs1" target="_blank">Exercise 1 &raquo;</a>
+    <a class="w3-bar-item w3-btn" href="exercise.asp?filename=exercise_paragraphs2" target="_blank">Exercise 2 &raquo;</a>
+    <a class="w3-bar-item w3-btn" href="exercise.asp?filename=exercise_paragraphs3" target="_blank">Exercise 3 &raquo;</a>
+    <a class="w3-bar-item w3-btn" href="exercise.asp?filename=exercise_paragraphs4" target="_blank">Exercise 4 &raquo;</a>
+  </div>
+</div>
 <hr>
+-->
+<h2>HTML Tag Reference</h2>
+<p>W3Schools' tag reference contains additional information about HTML elements and their attributes.</p>
+<table class="w3-table-all notranslate">
+<tr>
+ <th>Tag</th>
+ <th>Description</th>
+</tr>
+<tr>
+  <td><a href="../tags/tag_p.html">&lt;p&gt;</a></td>
+  <td>Defines a paragraph</td>
+</tr>
+<tr>
+  <td><a href="../tags/tag_br.html">&lt;br&gt;</a></td>
+  <td>Inserts a single line break</td>
+</tr>
+<tr>
+  <td><a href="../tags/tag_pre.html">&lt;pre&gt;</a></td>
+  <td>Defines pre-formatted text</td>
+</tr>
+</table>
+<div class="w3-note w3-panel">
+  <p>For a complete list of all available HTML tags, visit our <a href="../tags/default.html">HTML Tag Reference</a>.</p>
+</div>
 
-<h2>HTML Exam - Get Your Diploma!</h2>
-<div class="w3-row">
-<div class="w3-third w3-container w3-padding-24"><a href="../cert/default.html"><img src="../images/w3certified_logo_250.png" style="max-width:100%;" alt="W3Schools Certification" /></a> </div>
-<div class="w3-twothird w3-container"><h2>W3Schools' Online Certification</h2>
-<p>The perfect solution for professionals who need to balance work, family, and career building.</p>
-<p>More than 25 000 certificates already issued!</p>
-</div>
-</div>
-<p><a class="w3-btn" href="../cert/default.html">Get Your Certificate &raquo;</a></p>
-<p style="clear:both;">The <a href="../cert/default.html">HTML Certificate</a> documents your knowledge of HTML.</p>
-<p>The <a href="../cert/default.html">CSS Certificate</a> documents your knowledge of advanced CSS.</p>
-<p>The <a href="../cert/default.html">JavaScript Certificate</a> documents your knowledge of JavaScript and HTML DOM.</p>
-<p>The <a href="../cert/default.html">Python Certificate</a> documents your knowledge of Python.</p>
-<p>The <a href="../cert/default.html">jQuery Certificate</a> documents your knowledge of jQuery.</p>
-<p>The <a href="../cert/default.html">SQL Certificate</a> documents your knowledge of SQL.</p>
-<p>The <a href="../cert/default.html">PHP Certificate</a> documents your knowledge of PHP and MySQL.</p>
-<p>The <a href="../cert/default.html">XML Certificate</a> documents your knowledge of XML, XML DOM and XSLT.</p>
-<p>The <a href="../cert/default.html">Bootstrap Certificate</a> documents your knowledge of the Bootstrap framework.</p>
 
 <br>
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="../default.html">&#10094; Home</a>
-<a class="w3-right w3-btn" href="html_intro.html">Next &#10095;</a>
+<a class="w3-left w3-btn" href="html_headings.html">&#10094; Previous</a>
+<a class="w3-right w3-btn" href="html_styles.html">Next &#10095;</a>
 </div>
 </div>
 <div class="w3-col l2 m12" id="right">
@@ -1193,4 +1265,6 @@ While using this site, you agree to have read and accepted our <a href="../about
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>  
 <![endif]-->
 </body>
+
+<!-- Mirrored from www.w3schools.com/html/html_paragraphs.asp by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Sep 2019 08:38:14 GMT -->
 </html>

@@ -1,7 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en-US">
+
+<!-- Mirrored from www.w3schools.com/html/html5_canvas.asp by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Sep 2019 08:38:30 GMT -->
 <head>
-<title>HTML Tutorial</title>
+<title>HTML5 Canvas</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="Keywords" content="HTML,CSS,JavaScript,SQL,PHP,jQuery,XML,DOM,Bootstrap,Python,Java,Web development,W3C,tutorials,programming,training,learning,quiz,primer,lessons,references,examples,exercises,source code,colors,demos,tips">
@@ -479,8 +482,9 @@ function w3_getStyleValue(elmnt,style) {
   }
 }
 </script>
+<link rel="stylesheet" type="text/css" href="../browserref.css">
 </head>
-<body>
+<body onload="myCanvas()">
 <div class='w3-container top'>
   <a class='w3schools-logo notranslate' href='../index.html'>w3schools<span class='dotcom'>.com</span></a>
   <div class='w3-right w3-hide-small w3-wide toptext' style="font-family:'Segoe UI',Arial,sans-serif">THE WORLD'S LARGEST WEB DEVELOPER SITE</div>
@@ -806,40 +810,115 @@ function w3_getStyleValue(elmnt,style) {
         <!-- adspace leaderboard -->
        
       </div>
-<h1>HTML5<span class="color_h1"> Tutorial</span></h1>
+<h1>HTML5 <span class="color_h1">Canvas</span></h1>
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="../default.html">&#10094; Home</a>
-<a class="w3-right w3-btn" href="html_intro.html">Next &#10095;</a>
+<a class="w3-left w3-btn" href="html5_syntax.html">&#10094; Previous</a>
+<a class="w3-right w3-btn" href="html5_svg.html">Next &#10095;</a>
 </div>
-
-<div class="w3-panel w3-info intro">
-<p>HTML is the standard markup language for Web pages.</p>
-  <p>With HTML you can create your own Website.</p>
-<p>HTML is easy to learn - You will enjoy it!</p>
-</div>
-
 <hr>
-<h2>Examples in Every Chapter</h2>
-<p>This HTML tutorial contains hundreds of HTML examples.</p>
-<p>With our online HTML editor, you can edit the HTML, and click on a button to 
-view the result.</p>
+
+<div>
+<canvas id="myCanvas" width="270" height="160"
+style="border:1px solid #c3c3c3;float:left;margin-right:20px;margin-bottom:15px">
+Your browser does not support the &lt;canvas&gt; element.
+</canvas>
+<p class="intro">The HTML <code class="w3-codespan">&lt;canvas&gt;</code> element is used to draw graphics on a web page.</p>
+<p class="intro">The graphic to the left is created with <code class="w3-codespan">&lt;canvas&gt;</code>. It shows four 
+elements: a red rectangle, a gradient rectangle,
+a multicolor rectangle, and a multicolor text.</p>
+</div>
+<div style="clear:both;"></div>
+<script>
+var c=document.getElementById("myCanvas");
+var canvOK=1;
+try {c.getContext("2d");}
+catch (er) {canvOK=0;}
+if (canvOK==1)
+ {
+ var ctx=c.getContext("2d");
+ ctx.fillStyle="#FF0000";
+ ctx.fillRect(20,20,100,50);
+ 
+ var grd=ctx.createLinearGradient(140,20,240,70);
+    grd.addColorStop(0,"black");
+    grd.addColorStop(1,"white");
+    ctx.fillStyle=grd;
+    ctx.fillRect(140,20,100,50);
+    
+    var grd2=ctx.createLinearGradient(20,90,120,90);
+    grd2.addColorStop(0,"black");
+    grd2.addColorStop("0.3","magenta");
+    grd2.addColorStop("0.5","blue");
+    grd2.addColorStop("0.6","green");
+    grd2.addColorStop("0.8","yellow");
+    grd2.addColorStop(1,"red");
+    ctx.fillStyle=grd2;
+    ctx.fillRect(20,90,100,50);
+    
+    ctx.font="30px Verdana";
+    var grd3=ctx.createLinearGradient(140,20,240,90);
+    grd3.addColorStop(0,"black");
+    grd3.addColorStop("0.3","magenta");
+    grd3.addColorStop("0.6","blue");
+    grd3.addColorStop("0.8","green");
+    grd3.addColorStop(1,"red");
+    ctx.strokeStyle=grd3;
+    ctx.strokeText("Smile!",140,120); }
+</script>
+<hr>
+
+<h2>What is HTML Canvas?</h2>
+<p>The HTML <code class="w3-codespan">&lt;canvas&gt;</code> element is used to draw graphics, on the fly, via JavaScript.</p>
+<p>The <code class="w3-codespan">&lt;canvas&gt;</code> element is only a container for graphics. You must use  
+JavaScript to actually draw the graphics.</p>
+<p>Canvas has several methods for drawing paths, boxes, circles, text, and adding images.</p>
+<hr>
+
+<h2>Browser Support</h2>
+<p>The numbers in the table specify the first browser version that fully supports the 
+<code class="w3-codespan">&lt;canvas&gt;</code> element.</p>
+<table class="browserref notranslate">
+  <tr>
+    <th style="width:20%;font-size:16px;text-align:left;">Element</th>
+    <th style="width:16%;" class="bsChrome" title="Chrome"></th>
+    <th style="width:16%;" class="bsEdge" title="Internet Explorer / Edge"></th>
+    <th style="width:16%;" class="bsFirefox" title="Firefox"></th>
+    <th style="width:16%;" class="bsSafari" title="Safari"></th>
+    <th style="width:16%;" class="bsOpera" title="Opera"></th>                
+  </tr>
+  <tr>
+    <td style="text-align:left;">&lt;canvas&gt;</td>
+    <td>4.0</td>
+    <td>9.0</td>
+    <td>2.0</td>
+    <td>3.1</td>
+    <td>9.0</td>
+  </tr>
+</table>
+<hr>
+
+<h2>Canvas Examples</h2>
+<p>A canvas is a rectangular area on an HTML page. By default, a canvas has no border and no content.</p>
+<p>The markup looks like this:</p>
+<div class="w3-code w3-border notranslate htmlHigh"><div>
+&lt;canvas id="myCanvas&quot; width="200" height="100"&gt;&lt;/canvas&gt;
+</div></div>
+<p><b>Note:</b> Always specify an <code class="w3-codespan">id</code> attribute (to be referred to in a script), 
+and a <code class="w3-codespan">width</code> and <code class="w3-codespan">height</code> attribute to define the size of the canvas. To add a border, use the <code class="w3-codespan">style</code> attribute.</p>
+<p>Here is an example of a basic, empty canvas:</p>
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
+Your browser does not support the canvas element.
+</canvas>
 <div class="w3-example">
 <h3>Example</h3>
 <div class="w3-code notranslate htmlHigh">
-&lt;!DOCTYPE html&gt;<br>
-&lt;html&gt;<br>&lt;head&gt;<br>&lt;title&gt;Page Title&lt;/title&gt;<br>
-&lt;/head&gt;<br>&lt;body&gt;<br><br>&lt;h1&gt;This is a Heading&lt;/h1&gt;<br>&lt;p&gt;This is a paragraph.&lt;/p&gt;<br><br>
-&lt;/body&gt;<br>&lt;/html&gt;
+&lt;canvas id="myCanvas&quot; width="200" height="100"
+style=&quot;border:1px solid 
+#000000;&quot;&gt;<br>
+&lt;/canvas&gt;
 </div>
-<a class="w3-btn w3-margin-bottom" href="tryitfb35.html?filename=tryhtml_default" target="_blank">Try it Yourself &raquo;</a>
+<a target="_blank" href="tryitc5c9.html?filename=tryhtml5_canvas_empty" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
 </div>
-<p><strong>Click on the &quot;Try it Yourself&quot; button to see how it works.</strong></p>
-<p><a href="html_intro.html">Start learning HTML now!</a></p><hr>
-
-<h2>HTML Examples</h2>
-<p>At the end of this HTML tutorial, you will find more than 200 examples.</p>
-<p>With our online editor, you can edit and test each example yourself.</p>
-<p><a href="html_examples.html">Go to HTML Examples!</a></p>
 <hr>
 <div id="midcontentadcontainer" style="overflow:auto;text-align:center">
 <!-- MidContent -->
@@ -849,57 +928,204 @@ view the result.</p>
     
 </div>
 <hr>
-<h2>HTML Exercises</h2>
-<p>This HTML tutorial also contains nearly 100 HTML exercises.</p>
-<form autocomplete="off" id="w3-exerciseform" action="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_attributes1" method="post" target="_blank">
-<h2>Test Yourself With Exercises</h2>
-<div class="exercisewindow">
-<h2>Exercise:</h2>
-<p>Add a "tooltip" to the paragraph below with the text "About W3Schools".</p>
-<div class="exerciseprecontainer">
-&lt;p <input name="ex1" maxlength="5" style="width: 54px;">="About W3Schools"&gt;W3Schools is a web developer's site.&lt;/p&gt;
+<h3>Draw a Line</h3>
+<canvas id="myCanvas2" width="200" height="100" style="border:1px solid #d3d3d3;">
+Your browser does not support the canvas element
+</canvas>
+<script>
+var c=document.getElementById("myCanvas2");
+var canvOK=1;
+try {c.getContext("2d");}
+catch (er) {canvOK=0;}
+if (canvOK==1)
+ {
+ var ctx=c.getContext("2d");
+ ctx.moveTo(0,0);
+ ctx.lineTo(200,100);
+ ctx.stroke();
+ }
+</script> 
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+ var c = document.getElementById(&quot;myCanvas&quot;);<br>var ctx = c.getContext(&quot;2d&quot;);<br>
+ ctx.moveTo(0, 0);<br>ctx.lineTo(200, 100);<br>
+ ctx.stroke();</div>
+<a class="w3-btn w3-margin-bottom" href="tryitdeac.html?filename=tryhtml5_canvas_tut_path" target="_blank">Try it Yourself &raquo;</a>
 </div>
-<br>
-<button type="submit" class="w3-btn w3-margin-bottom">Submit Answer &raquo;</button>
-<p><a target="_blank" href="exercise4b52.html?filename=exercise_html_attributes1">Start the Exercise</a></p>
-</div>
-</form>
-<hr>
-<h2>HTML Quiz Test</h2>
-<p>Test your HTML skills with our HTML Quiz!</p>
-<p><a href="html_quiz.html" class="w3-button w3-blue">Start HTML Quiz!</a></p>
 <hr>
 
-<h2>HTML References</h2>
-<p>At W3Schools you will find complete references about tags,  
-attributes, events, color names, entities, character-sets, URL encoding, 
-language codes, HTTP messages, and more.</p>
-<p><a href="../tags/default.html">HTML Tag Reference</a></p>
+<h3>Draw a Circle</h3>
+<canvas id="myCanvas3" width="200" height="100" style="border:1px solid #d3d3d3;">
+Your browser does not support the canvas element
+</canvas>
+<script>
+var c=document.getElementById("myCanvas3");
+var canvOK=1;
+try {c.getContext("2d");}
+catch (er) {canvOK=0;}
+if (canvOK==1)
+ {
+ var ctx=c.getContext("2d");
+ ctx.beginPath();
+ ctx.arc(95,50,40,0,2*Math.PI);
+ ctx.stroke();
+ }
+</script> 
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+var c = document.getElementById(&quot;myCanvas&quot;);<br>var ctx = c.getContext(&quot;2d&quot;);<br>
+ ctx.beginPath();<br>ctx.arc(95, 50, 40, 0, 2 * Math.PI);<br>ctx.stroke();</div>
+<a class="w3-btn w3-margin-bottom" href="tryitabb9.html?filename=tryhtml5_canvas_tut_path2" target="_blank">Try it Yourself &raquo;</a>
+</div>
 <hr>
 
-<h2>HTML Exam - Get Your Diploma!</h2>
-<div class="w3-row">
-<div class="w3-third w3-container w3-padding-24"><a href="../cert/default.html"><img src="../images/w3certified_logo_250.png" style="max-width:100%;" alt="W3Schools Certification" /></a> </div>
-<div class="w3-twothird w3-container"><h2>W3Schools' Online Certification</h2>
-<p>The perfect solution for professionals who need to balance work, family, and career building.</p>
-<p>More than 25 000 certificates already issued!</p>
+<h3>Draw a Text</h3>
+<canvas id="myCanvas4" width="200" height="100" style="border:1px solid #d3d3d3;">
+Your browser does not support the canvas element
+</canvas>
+<script>
+var c=document.getElementById("myCanvas4");
+var canvOK=1;
+try {c.getContext("2d");}
+catch (er) {canvOK=0;}
+if (canvOK==1)
+ {
+    var ctx=c.getContext("2d");
+    ctx.font="30px Arial";
+    ctx.fillText("Hello World",10,50);
+ }
+</script> 
+<div class="w3-example">
+<h3>Example</h3>
+ <div class="w3-code notranslate jsHigh">
+ var c = document.getElementById(&quot;myCanvas&quot;);<br>var ctx = c.getContext(&quot;2d&quot;);<br>
+ ctx.font = &quot;30px Arial&quot;;<br>ctx.fillText(&quot;Hello World&quot;, 10, 50);</div>
+<a class="w3-btn w3-margin-bottom" href="tryit99c3.html?filename=tryhtml5_canvas_tut_text" target="_blank">Try it Yourself &raquo;</a>
 </div>
+<hr>
+
+<h3>Stroke Text</h3>
+<canvas id="myCanvas5" width="200" height="100" style="border:1px solid #d3d3d3;">
+Your browser does not support the canvas element
+</canvas>
+<script>
+var c=document.getElementById("myCanvas5");
+var canvOK=1;
+try {c.getContext("2d");}
+catch (er) {canvOK=0;}
+if (canvOK==1)
+ {
+    var ctx=c.getContext("2d");
+    ctx.font="30px Arial";
+    ctx.strokeText("Hello World",10,50);
+ }
+</script> 
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+ var c = document.getElementById(&quot;myCanvas&quot;);<br>var ctx = c.getContext(&quot;2d&quot;);<br>
+ ctx.font = &quot;30px Arial&quot;;<br>ctx.strokeText(&quot;Hello World&quot;, 10, 50);</div>
+<a class="w3-btn w3-margin-bottom" href="tryitdf3c.html?filename=tryhtml5_canvas_tut_text2" target="_blank">Try it Yourself &raquo;</a>
 </div>
-<p><a class="w3-btn" href="../cert/default.html">Get Your Certificate &raquo;</a></p>
-<p style="clear:both;">The <a href="../cert/default.html">HTML Certificate</a> documents your knowledge of HTML.</p>
-<p>The <a href="../cert/default.html">CSS Certificate</a> documents your knowledge of advanced CSS.</p>
-<p>The <a href="../cert/default.html">JavaScript Certificate</a> documents your knowledge of JavaScript and HTML DOM.</p>
-<p>The <a href="../cert/default.html">Python Certificate</a> documents your knowledge of Python.</p>
-<p>The <a href="../cert/default.html">jQuery Certificate</a> documents your knowledge of jQuery.</p>
-<p>The <a href="../cert/default.html">SQL Certificate</a> documents your knowledge of SQL.</p>
-<p>The <a href="../cert/default.html">PHP Certificate</a> documents your knowledge of PHP and MySQL.</p>
-<p>The <a href="../cert/default.html">XML Certificate</a> documents your knowledge of XML, XML DOM and XSLT.</p>
-<p>The <a href="../cert/default.html">Bootstrap Certificate</a> documents your knowledge of the Bootstrap framework.</p>
+<hr>
+
+<h3>Draw Linear Gradient</h3>
+<canvas id="myCanvas6" width="200" height="100" style="border:1px solid #d3d3d3;">
+Your browser does not support the canvas element
+</canvas>
+<script>
+var c=document.getElementById("myCanvas6");
+var canvOK=1;
+try {c.getContext("2d");}
+catch (er) {canvOK=0;}
+if (canvOK==1)
+ {
+    var ctx=c.getContext("2d");
+    // Create gradient
+    var grd = ctx.createLinearGradient(0,0,200,0);
+    grd.addColorStop(0,"red");
+    grd.addColorStop(1,"white");
+    // Fill with gradient
+    ctx.fillStyle = grd;
+    ctx.fillRect(10,10,150,80);
+ }
+</script> 
+<div class="w3-example">
+<h3>Example</h3>
+ <div class="w3-code notranslate jsHigh">
+ var c = document.getElementById(&quot;myCanvas&quot;);<br>
+ var ctx = c.getContext(&quot;2d&quot;);<br>
+ <br>
+ // Create gradient<br>
+ var grd = ctx.createLinearGradient(0, 0, 200, 0);<br>
+ grd.addColorStop(0, &quot;red&quot;);<br>
+ grd.addColorStop(1, &quot;white&quot;);<br>
+ <br>
+ // Fill with gradient<br>
+ ctx.fillStyle = grd;<br>
+ ctx.fillRect(10, 10, 150, 80);</div>
+<a class="w3-btn w3-margin-bottom" href="tryit4412.html?filename=tryhtml5_canvas_tut_grad" target="_blank">Try it Yourself &raquo;</a>
+</div>
+<hr>
+
+<h3>Draw Circular Gradient</h3>
+<canvas id="myCanvas7" width="200" height="100" style="border:1px solid #d3d3d3;">
+Your browser does not support the canvas element
+</canvas>
+<script>
+var c=document.getElementById("myCanvas7");
+var canvOK=1;
+try {c.getContext("2d");}
+catch (er) {canvOK=0;}
+if (canvOK==1)
+ {
+    var ctx=c.getContext("2d");
+    // Create gradient
+    var grd = ctx.createRadialGradient(75,50,5,90,60,100);
+    grd.addColorStop(0,"red");
+    grd.addColorStop(1,"white");
+    // Fill with gradient
+    ctx.fillStyle = grd;
+    ctx.fillRect(10,10,150,80);
+ }
+</script> 
+<div class="w3-example">
+<h3>Example</h3>
+ <div class="w3-code notranslate jsHigh">
+ var c = document.getElementById(&quot;myCanvas&quot;);<br>
+ var ctx = c.getContext(&quot;2d&quot;);<br>
+ <br>
+ // Create gradient<br>
+ var grd = ctx.createRadialGradient(75, 50, 5, 90, 60, 100);<br>
+ grd.addColorStop(0, &quot;red&quot;);<br>
+ grd.addColorStop(1, &quot;white&quot;);<br>
+ <br>
+ // Fill with gradient<br>
+  ctx.fillStyle = grd;<br>ctx.fillRect(10, 10, 150, 80);</div>
+<a class="w3-btn w3-margin-bottom" href="tryitb560.html?filename=tryhtml5_canvas_tut_grad2" target="_blank">Try it Yourself &raquo;</a>
+</div>
+<hr>
+
+<div class="w3-example">
+<h3>Draw Image</h3>
+<div class="w3-code notranslate jsHigh">
+ var c = document.getElementById(&quot;myCanvas&quot;);<br>
+ var ctx = c.getContext(&quot;2d&quot;);<br>
+ var img = document.getElementById(&quot;scream&quot;);<br>
+ ctx.drawImage(img, 10, 10);</div>
+<a class="w3-btn w3-margin-bottom" href="tryit3ad8.html?filename=tryhtml5_canvas_tut_img" target="_blank">Try it Yourself &raquo;</a>
+</div>
+<hr>
+
+<h2>HTML Canvas Tutorial</h2>
+<p>To learn all about HTML <code class="w3-codespan">&lt;canvas&gt;</code>, <a href="../graphics/canvas_intro.html">Visit our complete HTML Canvas Tutorial</a>.</p>
 
 <br>
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="../default.html">&#10094; Home</a>
-<a class="w3-right w3-btn" href="html_intro.html">Next &#10095;</a>
+<a class="w3-left w3-btn" href="html5_syntax.html">&#10094; Previous</a>
+<a class="w3-right w3-btn" href="html5_svg.html">Next &#10095;</a>
 </div>
 </div>
 <div class="w3-col l2 m12" id="right">
@@ -1193,4 +1419,6 @@ While using this site, you agree to have read and accepted our <a href="../about
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>  
 <![endif]-->
 </body>
+
+<!-- Mirrored from www.w3schools.com/html/html5_canvas.asp by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Sep 2019 08:38:30 GMT -->
 </html>

@@ -1,7 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en-US">
+
+<!-- Mirrored from www.w3schools.com/html/html5_syntax.asp by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Sep 2019 08:38:30 GMT -->
 <head>
-<title>HTML Tutorial</title>
+<title>HTML5 Style Guide</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="Keywords" content="HTML,CSS,JavaScript,SQL,PHP,jQuery,XML,DOM,Bootstrap,Python,Java,Web development,W3C,tutorials,programming,training,learning,quiz,primer,lessons,references,examples,exercises,source code,colors,demos,tips">
@@ -479,6 +482,12 @@ function w3_getStyleValue(elmnt,style) {
   }
 }
 </script>
+<style>
+img.viewport {
+   border:10px solid #f1f1f1;
+   border-radius:3px;
+}
+</style>
 </head>
 <body>
 <div class='w3-container top'>
@@ -806,40 +815,70 @@ function w3_getStyleValue(elmnt,style) {
         <!-- adspace leaderboard -->
        
       </div>
-<h1>HTML5<span class="color_h1"> Tutorial</span></h1>
+<h1>HTML5 <span class="color_h1">Style Guide and Coding Conventions</span></h1>
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="../default.html">&#10094; Home</a>
-<a class="w3-right w3-btn" href="html_intro.html">Next &#10095;</a>
+<a class="w3-left w3-btn" href="html5_migration.html">&#10094; Previous</a>
+<a class="w3-right w3-btn" href="html5_canvas.html">Next &#10095;</a>
 </div>
+<hr>
 
-<div class="w3-panel w3-info intro">
-<p>HTML is the standard markup language for Web pages.</p>
-  <p>With HTML you can create your own Website.</p>
-<p>HTML is easy to learn - You will enjoy it!</p>
+<h2>HTML Coding Conventions</h2>
+<p>Web developers are often uncertain about the coding style and syntax to use in HTML.</p>
+<p>Between 2000 and 2010, many web developers converted from HTML to XHTML.</p>
+<p>With XHTML, developers were forced to write valid and &quot;well-formed&quot; code.</p>
+<p>HTML5 is a bit more sloppy when it comes to code validation.</p>
+<hr>
+
+<h2>Be Smart and Future Proof</h2>
+<p>A consistent use of style makes it easier for others to understand your HTML.</p>
+<p>In the future, programs like XML readers may want to read your HTML.</p>
+<p>Using a well-formed-&quot;close to XHTML&quot; syntax can be smart.</p>
+<div class="w3-panel w3-note">
+<p>Always keep your code tidy, clean and well-formed.</p>
 </div>
 
 <hr>
-<h2>Examples in Every Chapter</h2>
-<p>This HTML tutorial contains hundreds of HTML examples.</p>
-<p>With our online HTML editor, you can edit the HTML, and click on a button to 
-view the result.</p>
-<div class="w3-example">
-<h3>Example</h3>
-<div class="w3-code notranslate htmlHigh">
-&lt;!DOCTYPE html&gt;<br>
-&lt;html&gt;<br>&lt;head&gt;<br>&lt;title&gt;Page Title&lt;/title&gt;<br>
-&lt;/head&gt;<br>&lt;body&gt;<br><br>&lt;h1&gt;This is a Heading&lt;/h1&gt;<br>&lt;p&gt;This is a paragraph.&lt;/p&gt;<br><br>
-&lt;/body&gt;<br>&lt;/html&gt;
-</div>
-<a class="w3-btn w3-margin-bottom" href="tryitfb35.html?filename=tryhtml_default" target="_blank">Try it Yourself &raquo;</a>
-</div>
-<p><strong>Click on the &quot;Try it Yourself&quot; button to see how it works.</strong></p>
-<p><a href="html_intro.html">Start learning HTML now!</a></p><hr>
 
-<h2>HTML Examples</h2>
-<p>At the end of this HTML tutorial, you will find more than 200 examples.</p>
-<p>With our online editor, you can edit and test each example yourself.</p>
-<p><a href="html_examples.html">Go to HTML Examples!</a></p>
+<h2>Use Correct Document Type</h2>
+<p>Always declare the document type as the first line in your document:</p>
+<div class="w3-example">
+<div class="w3-code notranslate htmlHigh">
+ &lt;!DOCTYPE html&gt;</div>
+</div>
+<p>If you want consistency with lower case tags, you can use:</p>
+<div class="w3-example">
+<div class="w3-code notranslate htmlHigh">
+ &lt;!doctype html&gt;</div>
+</div>
+<hr>
+
+<h2>Use Lower Case Element Names</h2>
+<p>HTML5 allows mixing uppercase and lowercase letters in element names.</p>
+<p>We recommend using lowercase element names because:</p>
+<ul>
+ <li>Mixing uppercase and lowercase names is bad</li>
+ <li>Developers normally use lowercase names (as in XHTML)</li>
+ <li>Lowercase look cleaner</li>
+ <li>Lowercase are easier to write</li>
+</ul>
+
+<div class="w3-example">
+<h3>Bad:</h3>
+<div class="w3-code notranslate htmlHigh" style="border-color:red;">
+ &lt;SECTION&gt; <br>&nbsp; &lt;p&gt;This is a paragraph.&lt;/p&gt;<br>&lt;/SECTION&gt;</div>
+</div>
+
+<div class="w3-example">
+<h3>Very Bad:</h3>
+<div class="w3-code notranslate htmlHigh" style="border-color:red;">
+ &lt;Section&gt; <br>&nbsp; &lt;p&gt;This is a paragraph.&lt;/p&gt;<br>&lt;/SECTION&gt;</div>
+</div>
+
+<div class="w3-example">
+<h3>Good:</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;section&gt; <br>&nbsp; &lt;p&gt;This is a paragraph.&lt;/p&gt;<br>&lt;/section&gt;</div>
+</div>
 <hr>
 <div id="midcontentadcontainer" style="overflow:auto;text-align:center">
 <!-- MidContent -->
@@ -849,57 +888,392 @@ view the result.</p>
     
 </div>
 <hr>
-<h2>HTML Exercises</h2>
-<p>This HTML tutorial also contains nearly 100 HTML exercises.</p>
-<form autocomplete="off" id="w3-exerciseform" action="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_attributes1" method="post" target="_blank">
-<h2>Test Yourself With Exercises</h2>
-<div class="exercisewindow">
-<h2>Exercise:</h2>
-<p>Add a "tooltip" to the paragraph below with the text "About W3Schools".</p>
-<div class="exerciseprecontainer">
-&lt;p <input name="ex1" maxlength="5" style="width: 54px;">="About W3Schools"&gt;W3Schools is a web developer's site.&lt;/p&gt;
+<h2>Close All HTML Elements</h2>
+<p>In HTML5, you don't have to close all elements (for example the <code class="w3-codespan">&lt;p&gt;</code> element). </p>
+<p>We recommend closing all HTML elements.</p>
+<div class="w3-example">
+<h3>Bad:</h3>
+<div class="w3-code notranslate htmlHigh" style="border-color:red;">
+ &lt;section&gt;<br>&nbsp; &lt;p&gt;This is a paragraph.<br>&nbsp; &lt;p&gt;This is a paragraph.<br>
+    &lt;/section&gt;</div>
+</div>
+<div class="w3-example">
+<h3>Good:</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;section&gt;<br>&nbsp; &lt;p&gt;This is a paragraph.&lt;/p&gt;<br>&nbsp; &lt;p&gt;This is a paragraph.&lt;/p&gt;<br>
+    &lt;/section&gt;</div>
+</div>
+<hr>
+
+<h2>Close Empty HTML Elements</h2>
+<p>In HTML5, it is optional to close empty elements.</p>
+<div class="w3-example">
+<h3>Allowed:</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;meta 
+    charset=&quot;utf-8&quot;&gt;</div>
+</div>
+<div class="w3-example">
+<h3>Also Allowed:</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;meta charset=&quot;utf-8&quot; /&gt;</div>
+</div>
+<p>However, the closing slash (/) is REQUIRED in XHTML and XML.</p>
+<p>If you expect XML software to access your page, it is a good idea to keep the 
+closing slash!</p>
+<hr>
+
+<h2>Use Lower Case Attribute Names</h2>
+<p>HTML5 allows mixing uppercase and lowercase letters in attribute names.</p>
+<p>We recommend using lowercase attribute names because:</p>
+<ul>
+ <li>Mixing uppercase and lowercase names is bad</li>
+ <li>Developers normally use lowercase names (as in XHTML)</li>
+ <li>Lowercase look cleaner</li>
+ <li>Lowercase are easier to write</li>
+</ul>
+<div class="w3-example">
+<h3>Bad:</h3>
+<div class="w3-code notranslate htmlHigh" style="border-color:red;">
+ &lt;div CLASS=&quot;menu&quot;&gt;</div>
+</div>
+<div class="w3-example">
+<h3>Good:</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;div 
+    class=&quot;menu&quot;&gt;</div>
+</div>
+<hr>
+
+<h2>Quote Attribute Values</h2>
+<p>HTML5 allows attribute values without quotes.</p>
+<p>We recommend quoting attribute values because:</p>
+<ul>
+  <li>Developers normally quote attribute values (as in XHTML)</li>
+  <li>Quoted values are easier to read</li>
+  <li>You MUST use quotes if the value contains spaces</li>
+</ul>
+<div class="w3-example">
+<h3>Very bad:</h3>
+<p>This will not work, because the value contains spaces:</p>
+<div class="w3-code notranslate htmlHigh" style="border-color:red;">
+ &lt;table class=table striped&gt;</div>
+</div>
+
+<div class="w3-example">
+<h3>Bad:</h3>
+<div class="w3-code notranslate htmlHigh" style="border-color:red;">
+ &lt;table class=striped&gt;</div>
+</div>
+<div class="w3-example">
+<h3>Good:</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;table 
+    class=&quot;striped&quot;&gt;</div>
+</div>
+<hr>
+
+<h2>Image Attributes</h2>
+<p>Always add the <code class="w3-codespan">alt</code> attribute to images. This attribute is important when the image 
+for some reason cannot be displayed. Also, always define image width and height. It reduces flickering because the browser can reserve space for 
+the image before loading.</p>
+<div class="w3-example">
+<h3>Bad:</h3>
+<div class="w3-code notranslate htmlHigh" style="border-color:red;">
+ &lt;img 
+    src=&quot;html5.gif&quot;&gt;</div>
+</div>
+<div class="w3-example">
+<h3>Good:</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;img 
+    src=&quot;html5.gif&quot; alt=&quot;HTML5&quot; style=&quot;width:128px;height:128px&quot;&gt;</div>
+</div>
+<hr>
+
+<h2>Spaces and Equal Signs</h2>
+<p>HTML5 allows spaces around equal signs. But space-less is easier to read and 
+groups entities better together.</p>
+<div class="w3-example">
+<h3>Bad:</h3>
+<div class="w3-code notranslate htmlHigh" style="border-color:red;">
+ &lt;link 
+    rel = &quot;stylesheet&quot; href = &quot;styles.css&quot;&gt;</div>
+</div>
+<div class="w3-example">
+<h3>Good:</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;link rel=&quot;stylesheet&quot; href=&quot;styles.css&quot;&gt;</div>
+</div>
+<hr>
+
+<h2>Avoid Long Code Lines</h2>
+<p>When using an HTML editor, it is inconvenient to scroll right and left to read the HTML code.</p>
+<p>Try to avoid code lines longer than 80 characters.</p>
+<hr>
+
+<h2>Blank Lines and Indentation</h2>
+<p>Do not add blank lines without a reason.</p>
+<p>For readability, add blank lines to separate large or logical code blocks.</p>
+<p>For readability, add two spaces of indentation. Do not use the tab key.</p>
+<p>Do not use unnecessary blank lines and indentation. It is not necessary to indent every 
+element: </p>
+<div class="w3-example">
+<h3>Unnecessary:</h3>
+<div class="w3-code notranslate htmlHigh" style="border-color:orange;">
+ &lt;body&gt;<br><br>&nbsp; &lt;h1&gt;Famous Cities&lt;/h1&gt;<br><br>&nbsp; &lt;h2&gt;Tokyo&lt;/h2&gt;<br>
+    <br>&nbsp; &lt;p&gt;<br>&nbsp;&nbsp;&nbsp; Tokyo is the capital of Japan, the 
+    center of the Greater Tokyo Area,<br>&nbsp;&nbsp;&nbsp; and the most 
+    populous metropolitan area in the world.<br>&nbsp;&nbsp;&nbsp; It is the 
+    seat of the Japanese government and the Imperial Palace,<br>&nbsp;&nbsp;&nbsp; 
+    and the home of the Japanese Imperial Family.<br>&nbsp; &lt;/p&gt;<br><br>&lt;/body&gt;</div>
+</div>
+<div class="w3-example">
+<h3>Better:</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;body&gt;<br><br>&lt;h1&gt;Famous Cities&lt;/h1&gt;<br><br>&lt;h2&gt;Tokyo&lt;/h2&gt;<br>
+    &lt;p&gt;Tokyo is the capital of Japan, the 
+    center of the Greater Tokyo Area,<br>and the most 
+    populous metropolitan area in the world.<br>It is the 
+    seat of the Japanese government and the Imperial Palace,<br>
+and the home of the Japanese Imperial Family.&lt;/p&gt;<br><br>&lt;/body&gt;</div>
+</div>
+
+<div class="w3-example">
+<h3>Table Example:</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;table&gt;<br>&nbsp; &lt;tr&gt;<br>&nbsp;&nbsp;&nbsp; &lt;th&gt;Name&lt;/th&gt;<br>
+&nbsp;&nbsp;&nbsp; &lt;th&gt;Description&lt;/th&gt;<br>
+    &nbsp;
+    &lt;/tr&gt;<br>&nbsp; &lt;tr&gt;<br>&nbsp;&nbsp;&nbsp; &lt;td&gt;A&lt;/td&gt;<br>
+&nbsp;&nbsp;&nbsp; &lt;td&gt;Description of A&lt;/td&gt;<br>
+    &nbsp;
+    &lt;/tr&gt;<br>&nbsp; &lt;tr&gt;<br>&nbsp;&nbsp;&nbsp; &lt;td&gt;B&lt;/td&gt;<br>
+&nbsp;&nbsp;&nbsp; &lt;td&gt;Description of B&lt;/td&gt;<br>&nbsp; &lt;/tr&gt;<br>&lt;/table&gt;</div>
+</div>
+<div class="w3-example">
+<h3>List Example:</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;ul&gt;<br>&nbsp; &lt;li&gt;London&lt;/li&gt;<br>&nbsp; &lt;li&gt;Paris&lt;/li&gt;<br>
+    &nbsp; 
+    &lt;li&gt;Tokyo&lt;/li&gt;<br>&lt;/ul&gt;</div>
+</div>
+<hr>
+
+<h2>Omitting &lt;html&gt; and &lt;body&gt;?</h2>
+<p>In HTML5, the <code class="w3-codespan">&lt;html&gt;</code> tag and the <code class="w3-codespan">&lt;body&gt;</code> tag can be omitted.</p>
+<p>The following code will validate as HTML5:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+    &lt;!DOCTYPE html&gt;<br>&lt;head&gt;<br>&nbsp; &lt;title&gt;Page Title&lt;/title&gt;<br>
+    &lt;/head&gt;<br>
+    <br>
+ &lt;h1&gt;This is a heading&lt;/h1&gt;<br>&lt;p&gt;This is a paragraph.&lt;/p&gt;</div>
+<a class="w3-btn w3-margin-bottom" href="tryitd2bb.html?filename=tryhtml_syntax_nobody" target="_blank">Try it Yourself &raquo;</a>
+</div>
+
+<p><strong>However, we do not recommend omitting the <code class="w3-codespan">&lt;html&gt;</code> and the <code class="w3-codespan">&lt;body&gt;</code> tag.</strong></p>
+<p>The <code class="w3-codespan">&lt;html&gt;</code> element is the document root. It is the recommended place 
+for specifying the page language:</p>
+<div class="w3-example">
+ <div class="w3-code notranslate htmlHigh">
+    &lt;!DOCTYPE html&gt;<br>&lt;html lang=&quot;en-US&quot;&gt;</div>
+</div>
+<p>Declaring a language is important for accessibility applications (screen readers) and search engines.</p>
+<p>Omitting <code class="w3-codespan">&lt;html&gt;</code> or <code class="w3-codespan">&lt;body&gt;</code> can crash DOM and XML software.</p>
+<p>Omitting <code class="w3-codespan">&lt;body&gt;</code> can produce errors in older browsers (IE9).</p>
+<hr>
+
+<h2>Omitting &lt;head&gt;?</h2>
+<p>In HTML5, the &lt;head&gt; tag can also 
+be omitted.</p>
+<p>By default, browsers will add all elements before <code class="w3-codespan">&lt;body&gt;</code> to a default <code class="w3-codespan">&lt;head&gt;</code> 
+element.</p>
+<p>You can reduce the complexity of HTML by omitting the <code class="w3-codespan">&lt;head&gt;</code> tag:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+    &lt;!DOCTYPE html&gt;<br>&lt;html&gt;<br>&lt;title&gt;Page Title&lt;/title&gt;<br>
+ <br>&lt;body&gt;<br>&nbsp; &lt;h1&gt;This is a heading&lt;/h1&gt;<br>&nbsp; &lt;p&gt;This is a paragraph.&lt;/p&gt;<br>
+    &lt;/body&gt;<br><br>&lt;/html&gt;</div>
+<a class="w3-btn w3-margin-bottom" href="tryitbc26.html?filename=tryhtml_syntax_nohead" target="_blank">Try it Yourself &raquo;</a>
+</div>
+<p><strong>However, we do not recommend omitting the <code class="w3-codespan">&lt;head&gt;</code> tag.</strong></p>
+<div class="w3-panel w3-note">
+<p>Omitting tags is unfamiliar to web developers. It needs time to be established as a 
+guideline.</p>
+</div>
+<hr>
+
+<h2>Meta Data</h2>
+<p>The <code class="w3-codespan">&lt;title&gt;</code> element is required in HTML5. Make the title as meaningful as possible:</p>
+<div class="w3-example">
+<div class="w3-code notranslate htmlHigh">
+ &lt;title&gt;HTML5 
+    Syntax and Coding Style&lt;/title&gt;</div>
+</div>
+
+<p>To ensure proper interpretation and correct search engine indexing, both the language and 
+the character encoding should be defined as early as possible in a document:</p>
+<div class="w3-example">
+<div class="w3-code notranslate htmlHigh">
+ &lt;!DOCTYPE html&gt;<br>&lt;html 
+    lang=&quot;en-US&quot;&gt;<br>&lt;head&gt;<br>&nbsp; &lt;meta charset=&quot;UTF-8&quot;&gt;<br>&nbsp; &lt;title&gt;HTML5 
+    Syntax and Coding Style&lt;/title&gt;<br>&lt;/head&gt;</div>
+</div>
+<hr>
+
+<h2>Setting The Viewport</h2>
+<p>HTML5 introduced a method to let web designers take control over the viewport, through the 
+<code class="w3-codespan">&lt;meta&gt;</code> tag.</p>
+<p>The viewport is the user's visible area of a web page. It varies with the device, and will be smaller on a mobile phone than on a computer screen.</p>
+<p>You should include the following <code class="w3-codespan">&lt;meta&gt;</code> viewport element in all your web pages:</p>
+<div class="w3-code w3-border notranslate htmlHigh">
+<div>
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+</div>
+</div>
+<p>A <code class="w3-codespan">&lt;meta&gt;</code> viewport element gives the browser instructions on how 
+to control the page's dimensions and scaling.</p>
+<p>The width=device-width part sets the width of the page to follow the screen-width of the device (which will vary depending on the device).</p>
+<p>The initial-scale=1.0 part sets the initial zoom level when the page is first loaded by the browser.</p>
+<p>Here is an example of a web page <em>without</em> the viewport meta tag, and the same web page <em>with</em> the viewport meta tag:</p>
+<div class="w3-note w3-panel">
+<p><strong>Tip:</strong> If you are browsing this page with a phone or a tablet, you can click on the two links below to see the difference.</p>
 </div>
 <br>
-<button type="submit" class="w3-btn w3-margin-bottom">Submit Answer &raquo;</button>
-<p><a target="_blank" href="exercise4b52.html?filename=exercise_html_attributes1">Start the Exercise</a></p>
+<div class="w3-row" style="text-align:center;">
+  <div class="w3-half">
+    <a target="_blank" href="example_withoutviewport.html"><img src="../css/img_viewport1.png" class="w3-hover-shadow viewport"><br><br><b>Without the 
+viewport meta tag</b></a>
+   <br>
+    <br>
+  </div>
+  <div class="w3-half">
+    <a target="_blank" href="example_withviewport.html"><img src="../css/img_viewport2.png" class="w3-hover-shadow viewport"><br><br><b>With the 
+viewport meta tag</b></a>
+    <br>
+    <br>
+  </div>  
 </div>
-</form>
-<hr>
-<h2>HTML Quiz Test</h2>
-<p>Test your HTML skills with our HTML Quiz!</p>
-<p><a href="html_quiz.html" class="w3-button w3-blue">Start HTML Quiz!</a></p>
 <hr>
 
-<h2>HTML References</h2>
-<p>At W3Schools you will find complete references about tags,  
-attributes, events, color names, entities, character-sets, URL encoding, 
-language codes, HTTP messages, and more.</p>
-<p><a href="../tags/default.html">HTML Tag Reference</a></p>
+<h2>HTML Comments</h2>
+<p>Short comments should be written on one line, like this:</p>
+<div class="w3-example">
+<div class="w3-code notranslate htmlHigh">
+&lt;!-- This is a comment --&gt;
+</div>
+</div>
+<p>Comments that spans more than one line, should be written like this:</p>
+<div class="w3-example">
+ <div class="w3-code notranslate htmlHigh">
+&lt;!-- <br>&nbsp; This is a long comment example. This is 
+  a long comment example.<br>&nbsp; This is a 
+  long comment example. This is a long comment example.<br>--&gt;
+</div>
+</div>
+<p>Long comments are easier to observe if they are indented two spaces.</p>
 <hr>
 
-<h2>HTML Exam - Get Your Diploma!</h2>
-<div class="w3-row">
-<div class="w3-third w3-container w3-padding-24"><a href="../cert/default.html"><img src="../images/w3certified_logo_250.png" style="max-width:100%;" alt="W3Schools Certification" /></a> </div>
-<div class="w3-twothird w3-container"><h2>W3Schools' Online Certification</h2>
-<p>The perfect solution for professionals who need to balance work, family, and career building.</p>
-<p>More than 25 000 certificates already issued!</p>
+<h2>Style Sheets</h2>
+<p>Use simple syntax for linking to style sheets (the type attribute is not necessary):</p>
+<div class="w3-example">
+<div class="w3-code notranslate htmlHigh">
+&lt;link rel=&quot;stylesheet&quot; href=&quot;styles.css&quot;&gt;
 </div>
 </div>
-<p><a class="w3-btn" href="../cert/default.html">Get Your Certificate &raquo;</a></p>
-<p style="clear:both;">The <a href="../cert/default.html">HTML Certificate</a> documents your knowledge of HTML.</p>
-<p>The <a href="../cert/default.html">CSS Certificate</a> documents your knowledge of advanced CSS.</p>
-<p>The <a href="../cert/default.html">JavaScript Certificate</a> documents your knowledge of JavaScript and HTML DOM.</p>
-<p>The <a href="../cert/default.html">Python Certificate</a> documents your knowledge of Python.</p>
-<p>The <a href="../cert/default.html">jQuery Certificate</a> documents your knowledge of jQuery.</p>
-<p>The <a href="../cert/default.html">SQL Certificate</a> documents your knowledge of SQL.</p>
-<p>The <a href="../cert/default.html">PHP Certificate</a> documents your knowledge of PHP and MySQL.</p>
-<p>The <a href="../cert/default.html">XML Certificate</a> documents your knowledge of XML, XML DOM and XSLT.</p>
-<p>The <a href="../cert/default.html">Bootstrap Certificate</a> documents your knowledge of the Bootstrap framework.</p>
+<p>Short rules can be written compressed, like this:</p>
+<div class="w3-example">
+<div class="w3-code notranslate cssHigh">
+p.intro {font-family: Verdana; font-size: 16em;}</div>
+</div>
+
+<p>Long rules should be written over multiple lines:</p>
+<div class="w3-example">
+<div class="w3-code notranslate cssHigh">
+body {<br>&nbsp; background-color: lightgrey;<br>&nbsp; font-family: &quot;Arial 
+Black&quot;, Helvetica, sans-serif;<br>&nbsp; font-size: 16em;<br>&nbsp; color: 
+black;<br>}</div>
+</div>
+
+<ul>
+ <li>Place the opening bracket on the same line as the selector</li>
+ <li>Use one space before the opening bracket</li>
+ <li>Use two spaces of indentation</li>
+ <li>Use semicolon after each property-value pair, including the last</li>
+ <li>Only use quotes around values if the value contains spaces</li>
+ <li>Place the closing bracket on a new line, without leading spaces</li>
+ <li>Avoid lines over 80 characters</li>
+</ul>
+<hr>
+
+<h2>Loading JavaScript in HTML</h2>
+<p>Use simple syntax for loading external scripts (the type attribute is not necessary):</p>
+
+<div class="w3-example">
+<div class="w3-code notranslate htmlHigh">
+&lt;script src=&quot;myscript.js&quot;&gt;
+</div>
+</div>
+<hr>
+<h2>Accessing HTML Elements with JavaScript</h2>
+<p>A consequence of using &quot;untidy&quot; HTML styles can result in JavaScript errors.</p>
+<p>These two JavaScript statements will produce different results:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+ var obj =
+ getElementById(&quot;Demo&quot;)<br><br>var obj = getElementById(&quot;demo&quot;)
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit1e1a.html?filename=tryhtml_syntax_javascript" target="_blank">Try it Yourself &raquo;</a>
+</div>
+<p><a href="../js/js_conventions.html">Visit the JavaScript Style Guide</a>.</p>
+<hr>
+
+<h2>Use Lower Case File Names</h2>
+<p>Some web servers (Apache, Unix) are case sensitive about file names: &quot;london.jpg&quot; cannot be accessed as 
+&quot;London.jpg&quot;. </p>
+<p>Other web servers (Microsoft, IIS) are not case sensitive: &quot;london.jpg&quot; can be accessed as 
+&quot;London.jpg&quot; or &quot;london.jpg&quot;.</p>
+<p>If you use a mix of upper and lower case, you have to be extremely consistent.</p>
+<p>If you move from a case insensitive to a case sensitive server, even small 
+errors will break your web!</p>
+<p>To avoid these problems, always use lower case file names.</p>
+<hr>
+
+<h2>File Extensions</h2>
+<p>HTML files should have a <strong>.html</strong> or <strong>.htm</strong> extension.</p>
+<p>CSS files should have a <strong>.css</strong> extension.</p>
+<p>JavaScript files should have a <strong>.js</strong> extension.</p>
+<hr>
+
+<h2>Differences Between .htm and .html</h2>
+<p>There is no difference between the .htm and .html extensions. Both will be 
+treated as HTML by any web browser or web server.</p>
+<p>The differences are cultural:</p>
+<p>.htm &quot;smells&quot; of early DOS systems where the system limited the extensions to 
+3 characters.</p>
+<p>.html &quot;smells&quot; of Unix operating systems that did not have this limitation.</p>
+<hr>
+
+<h2>Technical Differences</h2>
+<p>When a URL does not specify a filename (like https://www.w3schools.com/css/), 
+the server returns a default filename. Common default filenames are index.html, 
+index.htm, default.html and default.htm.</p>
+<p>If your server is configured only with &quot;index.html&quot; as default filename, your 
+file must be named &quot;index.html&quot;, not &quot;index.htm.&quot;</p>
+<p>However, servers can be configured with more than one default filename, and 
+normally you can set up as many default filenames as needed.</p>
+<p>Anyway, the full extension for HTML files is .html, and there's no reason it 
+should not be used.</p>
 
 <br>
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="../default.html">&#10094; Home</a>
-<a class="w3-right w3-btn" href="html_intro.html">Next &#10095;</a>
+<a class="w3-left w3-btn" href="html5_migration.html">&#10094; Previous</a>
+<a class="w3-right w3-btn" href="html5_canvas.html">Next &#10095;</a>
 </div>
 </div>
 <div class="w3-col l2 m12" id="right">
@@ -1193,4 +1567,6 @@ While using this site, you agree to have read and accepted our <a href="../about
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>  
 <![endif]-->
 </body>
+
+<!-- Mirrored from www.w3schools.com/html/html5_syntax.asp by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Sep 2019 08:38:30 GMT -->
 </html>

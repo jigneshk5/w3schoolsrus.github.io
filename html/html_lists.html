@@ -1,7 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en-US">
+
+<!-- Mirrored from www.w3schools.com/html/html_lists.asp by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Sep 2019 08:38:21 GMT -->
 <head>
-<title>HTML Tutorial</title>
+<title>HTML Lists</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="Keywords" content="HTML,CSS,JavaScript,SQL,PHP,jQuery,XML,DOM,Bootstrap,Python,Java,Web development,W3C,tutorials,programming,training,learning,quiz,primer,lessons,references,examples,exercises,source code,colors,demos,tips">
@@ -375,14 +378,18 @@ ga('require', 'displayfeatures');
 ga('send', 'pageview');
 </script>
 
-<script src="../../snigelweb-com.videoplayerhub.com/videoloader.js" async></script>
-
 <script type='text/javascript'>
 var k42 = false;
 var googletag = googletag || {}; googletag.cmd = googletag.cmd || [];
 
-k42 = true;
-(adsbygoogle=window.adsbygoogle||[]).pauseAdRequests=1;
+(function() {
+  var gads = document.createElement('script');
+  gads.async = true;
+  gads.type = 'text/javascript';
+  gads.src = '../../www.googletagservices.com/tag/js/gpt.js';
+  var node = document.getElementsByTagName('script')[0];
+  node.parentNode.insertBefore(gads, node);
+})();
 
 var snhb = snhb || {}; snhb.queue = snhb.queue || [];
 snhb.options = {
@@ -393,6 +400,85 @@ snhb.options = {
                      reconsiderationAppealIntervalSeconds: 0
                      }
                };
+
+// GPT slots
+var gptAdSlots = [];
+googletag.cmd.push(function() {
+  googletag.pubads().disableInitialLoad();               
+  googletag.pubads().enableSingleRequest();
+  var leaderMapping = googletag.sizeMapping().
+    // Mobile ad
+    addSize([0, 0], [320, 50]). 
+    // Vertical Tablet ad
+    addSize([480, 0], [468, 60]). 
+    // Horizontal Tablet
+    addSize([780, 0], [728, 90]).
+    // Small Desktop
+    addSize([993, 0], [468, 60]).
+    // Normal Desktop
+    addSize([1150, 0], [728, 90]).
+    // Large Desktop and bigger ad
+    addSize([1425, 0], [[728, 90], [970, 90]]).build();
+  gptAdSlots[0] = googletag.defineSlot('/16833175/MainLeaderboard', [[728, 90], [970, 90]], 'div-gpt-ad-1422003450156-2').
+    defineSizeMapping(leaderMapping).addService(googletag.pubads());
+  var skyMapping = googletag.sizeMapping().
+    // Mobile ad
+    addSize([0, 0], [320, 50]). 
+    // Tablet ad
+    addSize([975, 0], [120, 600]). 
+    // Desktop
+    addSize([1135, 0], [160, 600]).   
+    // Large Desktop
+    addSize([1675, 0], [[160, 600], [300, 600], [300, 1050]]).build();
+  gptAdSlots[1] = googletag.defineSlot('/16833175/WideSkyScraper', [[160, 600], [300, 600], [300, 1050]], 'div-gpt-ad-1422003450156-5').
+    defineSizeMapping(skyMapping).addService(googletag.pubads());
+  var stickyMapping = googletag.sizeMapping().
+    // Mobile ad
+    addSize([0, 0], []). 
+    // Tablet ad
+    addSize([975, 0], [120, 600]). 
+    // Desktop
+    addSize([1135, 0], [160, 600]).   
+    // Large Desktop
+    addSize([1675, 0], [[160, 600], [300, 600], [300, 250]]).build();
+  gptAdSlots[4] = googletag.defineSlot('/16833175/StickySkyScraper', [[300, 600], [120, 600], [300, 250], [160, 600]], 'div-gpt-ad-1472547360578-0').
+    defineSizeMapping(stickyMapping).addService(googletag.pubads());
+  var mcontMapping = googletag.sizeMapping().
+    // Mobile ad
+    addSize([0, 0], [[300, 250], [336, 280], [320, 50]]). 
+    // Vertical Tablet ad
+    addSize([490, 0], [[300, 250], [336, 280], [468, 60]]). 
+    // Horizontal Tablet
+    addSize([750, 0], [728, 90]).
+    // Small Desktop
+    addSize([993, 0], [[300, 250], [336, 280], [468, 60]]).
+    // Normal Desktop
+    addSize([1135, 0], [728, 90]).
+    // Large Desktop and bigger ad
+    addSize([1440, 0], [[728, 90], [970, 90], [970, 250]]).build();
+  gptAdSlots[5] = googletag.defineSlot('/16833175/MidContent', [[300, 250], [336, 280]], 'div-gpt-ad-1493883843099-0').
+    defineSizeMapping(mcontMapping).setCollapseEmptyDiv(true).addService(googletag.pubads());
+  var bmrMapping = googletag.sizeMapping().
+    // Smaller
+    addSize([0, 0], [[300, 250], [336, 280]]). 
+    // Large Desktop
+    addSize([1240, 0], [[300, 250], [336, 280], [970, 250]]).build();
+    gptAdSlots[2] = googletag.defineSlot('/16833175/BottomMediumRectangle', [[300, 250], [336, 280], [970, 250]], 'div-gpt-ad-1422003450156-0').
+    defineSizeMapping(bmrMapping).setCollapseEmptyDiv(true).addService(googletag.pubads());
+  var rbmrMapping = googletag.sizeMapping().
+    // Smaller
+    addSize([0, 0], []). 
+    // Large Desktop
+    addSize([975, 0], [[300, 250], [336, 280]]).build();
+  gptAdSlots[3] = googletag.defineSlot('/16833175/RightBottomMediumRectangle', [[300, 250], [336, 280]], 'div-gpt-ad-1422003450156-3').
+    defineSizeMapping(rbmrMapping).setCollapseEmptyDiv(true).addService(googletag.pubads());
+  googletag.pubads().setTargeting("content",(function () {
+    var folder = location.pathname;
+    folder = folder.replace("../index.html", "");
+    folder = folder.substr(0, folder.indexOf("../index.html"));
+    return folder;
+  })());
+});  
 
 </script>
 <script src="../../static.h-bid.com/sncmp/sncmp_stub.min.js" type="text/javascript"></script>
@@ -417,7 +503,7 @@ snhb.options = {
 <script>
   snhb.queue.push(function(){
 
-    snhb.startAuction(["main_leaderboard", "wide_skyscraper", "bottom_medium_rectangle", "right_bottom_medium_rectangle"]);
+    snhb.addAdditionalAdSlotsToRefresh(gptAdSlots);
 
   });
 </script>
@@ -800,106 +886,392 @@ function w3_getStyleValue(elmnt,style) {
     <div class='w3-col l10 m12' id='main'>
       <div id='mainLeaderboard' style='overflow:hidden;'>
         <!-- MainLeaderboard-->
-
-        <!--<pre>main_leaderboard, all: [728,90][970,90][320,50][468,60]</pre>-->
-        <div id="snhb-main_leaderboard-0"></div>
-        <!-- adspace leaderboard -->
+        
+        <div id='div-gpt-ad-1422003450156-2'>
+          <script type='text/javascript'>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1422003450156-2'); });</script>
+        </div>
        
       </div>
-<h1>HTML5<span class="color_h1"> Tutorial</span></h1>
+<h1>HTML <span class="color_h1">Lists</span></h1>
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="../default.html">&#10094; Home</a>
-<a class="w3-right w3-btn" href="html_intro.html">Next &#10095;</a>
+<a class="w3-left w3-btn" href="html_tables.html">&#10094; Previous</a>
+<a class="w3-right w3-btn" href="html_blocks.html">Next &#10095;</a>
 </div>
-
-<div class="w3-panel w3-info intro">
-<p>HTML is the standard markup language for Web pages.</p>
-  <p>With HTML you can create your own Website.</p>
-<p>HTML is easy to learn - You will enjoy it!</p>
+<div class="w3-example">
+<h3>&nbsp;HTML List Example</h3>
+<div class="w3-padding w3-white">
+<div class="w3-row">
+<div class="w3col w3-half">
+<h3>An Unordered List:</h3>
+<ul>
+  <li>Item</li>
+  <li>Item</li>
+  <li>Item</li>
+  <li>Item</li>    
+</ul>
 </div>
-
+<div class="w3col w3-half">
+<h3>An Ordered List:</h3>
+<ol>
+  <li>First item</li>
+  <li>Second item</li>
+  <li>Third item</li>
+  <li>Fourth item</li>  
+</ol>
+</div>
+</div>
+</div>
+<a class="w3-btn w3-margin-top w3-margin-bottom" href="tryit02f9.html?filename=tryhtml_lists_intro" target="_blank">Try it Yourself &raquo;</a>
+</div>
 <hr>
-<h2>Examples in Every Chapter</h2>
-<p>This HTML tutorial contains hundreds of HTML examples.</p>
-<p>With our online HTML editor, you can edit the HTML, and click on a button to 
-view the result.</p>
+
+<h2>Unordered HTML List</h2>
+<p>An unordered list starts with the <code class="w3-codespan">
+<a href="../tags/tag_ul.html">&lt;ul&gt;</a></code> tag. Each list item starts with the 
+<code class="w3-codespan"><a href="../tags/tag_li.html">&lt;li&gt;</a></code> tag.</p>
+<p>The list items will be marked with bullets (small black circles) by default:</p>
 <div class="w3-example">
 <h3>Example</h3>
 <div class="w3-code notranslate htmlHigh">
-&lt;!DOCTYPE html&gt;<br>
-&lt;html&gt;<br>&lt;head&gt;<br>&lt;title&gt;Page Title&lt;/title&gt;<br>
-&lt;/head&gt;<br>&lt;body&gt;<br><br>&lt;h1&gt;This is a Heading&lt;/h1&gt;<br>&lt;p&gt;This is a paragraph.&lt;/p&gt;<br><br>
-&lt;/body&gt;<br>&lt;/html&gt;
+&lt;ul&gt;<br>
+&nbsp;
+&lt;li&gt;Coffee&lt;/li&gt;<br>&nbsp; &lt;li&gt;Tea&lt;/li&gt;<br>
+&nbsp;
+&lt;li&gt;Milk&lt;/li&gt;<br>
+&lt;/ul&gt;
 </div>
-<a class="w3-btn w3-margin-bottom" href="tryitfb35.html?filename=tryhtml_default" target="_blank">Try it Yourself &raquo;</a>
+<p>
+<a class="w3-btn" href="tryit56b2.html?filename=tryhtml_lists_unordered" target="_blank">Try it Yourself &raquo;</a>
+</p>
 </div>
-<p><strong>Click on the &quot;Try it Yourself&quot; button to see how it works.</strong></p>
-<p><a href="html_intro.html">Start learning HTML now!</a></p><hr>
+<hr>
 
-<h2>HTML Examples</h2>
-<p>At the end of this HTML tutorial, you will find more than 200 examples.</p>
-<p>With our online editor, you can edit and test each example yourself.</p>
-<p><a href="html_examples.html">Go to HTML Examples!</a></p>
+<h2>Unordered HTML List - Choose List Item Marker</h2>
+<p>The CSS <code class="w3-codespan">list-style-type</code> property is used to define the style of the 
+list item marker:</p>
+<table class="w3-table-all notranslate">
+<tr>
+<th>Value</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>disc</td>
+<td>Sets the list item marker to a bullet (default)</td>
+</tr>
+<tr>
+<td>circle</td>
+<td>Sets the list item marker to a circle</td>
+</tr>
+<tr>
+<td>square</td>
+<td>Sets the list item marker to a square</td>
+</tr>
+<tr>
+<td>none</td>
+<td>The list items will not be marked</td>
+</tr>
+</table>
+<div class="w3-example">
+<h3>Example - Disc</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;ul style=&quot;list-style-type:disc;&quot;&gt;<br>&nbsp; &lt;li&gt;Coffee&lt;/li&gt;<br>
+&nbsp; &lt;li&gt;Tea&lt;/li&gt;<br>&nbsp; &lt;li&gt;Milk&lt;/li&gt;<br>&lt;/ul&gt;
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit678a.html?filename=tryhtml_lists_unordered_disc" target="_blank">Try it Yourself &raquo;</a>
+</div>
+
+<div class="w3-example">
+<h3>Example - Circle</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;ul style=&quot;list-style-type:circle;&quot;&gt;<br>&nbsp; &lt;li&gt;Coffee&lt;/li&gt;<br>
+&nbsp; &lt;li&gt;Tea&lt;/li&gt;<br>&nbsp; &lt;li&gt;Milk&lt;/li&gt;<br>&lt;/ul&gt;
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryitfcf7.html?filename=tryhtml_lists_unordered_circle" target="_blank">Try it Yourself &raquo;</a>
+</div>
+
+<div class="w3-example">
+<h3>Example - Square</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;ul style=&quot;list-style-type:square;&quot;&gt;<br>&nbsp; &lt;li&gt;Coffee&lt;/li&gt;<br>
+&nbsp; &lt;li&gt;Tea&lt;/li&gt;<br>&nbsp; &lt;li&gt;Milk&lt;/li&gt;<br>&lt;/ul&gt;
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit0e3c.html?filename=tryhtml_lists_unordered_square" target="_blank">Try it Yourself &raquo;</a>
+</div>
+
+<div class="w3-example">
+<h3>Example - None</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;ul style=&quot;list-style-type:none;&quot;&gt;<br>&nbsp; &lt;li&gt;Coffee&lt;/li&gt;<br>
+&nbsp; &lt;li&gt;Tea&lt;/li&gt;<br>&nbsp; &lt;li&gt;Milk&lt;/li&gt;<br>&lt;/ul&gt;
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit023a.html?filename=tryhtml_lists_unordered_none" target="_blank">Try it Yourself &raquo;</a>
+</div>
 <hr>
 <div id="midcontentadcontainer" style="overflow:auto;text-align:center">
 <!-- MidContent -->
 
-  <!--<pre>mid_content, all: [300,250][336,280][728,90][970,250][970,90][320,50][468,60]</pre>-->
-  <div id="snhb-mid_content-0"></div>
+  <div id='div-gpt-ad-1493883843099-0' style="display: inline-block">
+    <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1493883843099-0'); });
+    </script>
+  </div>
     
 </div>
 <hr>
+<h2>Ordered HTML List</h2>
+<p>An ordered list starts with the <code class="w3-codespan">
+<a href="../tags/tag_ol.html">&lt;ol&gt;</a></code> tag. Each list item starts with the <code class="w3-codespan">
+<a href="../tags/tag_li.html">&lt;li&gt;</a></code> tag.</p>
+<p>The list items will be marked with numbers by default:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;ol&gt;<br>
+&nbsp;
+&lt;li&gt;Coffee&lt;/li&gt;<br>&nbsp; &lt;li&gt;Tea&lt;/li&gt;<br>
+&nbsp;
+&lt;li&gt;Milk&lt;/li&gt;<br>
+&lt;/ol&gt;
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit2865.html?filename=tryhtml_lists_ordered" target="_blank">Try it Yourself &raquo;</a>
+</div>
+<hr>
+
+<h2>Ordered HTML List - The Type Attribute</h2>
+<p>The <code class="w3-codespan">type</code> attribute of the <code class="w3-codespan">
+<a href="../tags/tag_ol.html">&lt;ol&gt;</a></code> tag, defines the type of the 
+list item marker:</p>
+<table class="w3-table-all notranslate">
+<tr>
+<th>Type</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>type=&quot;1&quot;</td>
+<td>The list items will be numbered with numbers (default)</td>
+</tr>
+<tr>
+<td>type=&quot;A&quot;</td>
+<td>The list items will be numbered with uppercase letters</td>
+</tr>
+<tr>
+<td>type=&quot;a&quot;</td>
+<td>The list items will be numbered with lowercase letters</td>
+</tr>
+<tr>
+<td>type=&quot;I&quot;</td>
+<td>The list items will be numbered with uppercase roman numbers</td>
+</tr>
+<tr>
+<td>type=&quot;i&quot;</td>
+<td>The list items will be numbered with lowercase roman numbers</td>
+</tr>
+</table>
+
+<div class="w3-example">
+<h3>Numbers:</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;ol type=&quot;1&quot;&gt;<br>&nbsp; &lt;li&gt;Coffee&lt;/li&gt;<br>
+&nbsp; &lt;li&gt;Tea&lt;/li&gt;<br>&nbsp; &lt;li&gt;Milk&lt;/li&gt;<br>&lt;/ol&gt;
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit1046.html?filename=tryhtml_lists_ordered_numbers" target="_blank">Try it Yourself &raquo;</a>
+</div>
+<div class="w3-example">
+<h3>Uppercase Letters:</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;ol type=&quot;A&quot;&gt;<br>&nbsp; &lt;li&gt;Coffee&lt;/li&gt;<br>
+&nbsp; &lt;li&gt;Tea&lt;/li&gt;<br>&nbsp; &lt;li&gt;Milk&lt;/li&gt;<br>&lt;/ol&gt;
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryitbc1a.html?filename=tryhtml_lists_ordered_ucase" target="_blank">Try it Yourself &raquo;</a>
+</div>
+<div class="w3-example">
+<h3>Lowercase Letters:</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;ol type=&quot;a&quot;&gt;<br>&nbsp; &lt;li&gt;Coffee&lt;/li&gt;<br>
+&nbsp; &lt;li&gt;Tea&lt;/li&gt;<br>&nbsp; &lt;li&gt;Milk&lt;/li&gt;<br>&lt;/ol&gt;
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryitbb71.html?filename=tryhtml_lists_ordered_lcase" target="_blank">Try it Yourself &raquo;</a>
+</div>
+<div class="w3-example">
+<h3>Uppercase Roman Numbers:</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;ol type=&quot;I&quot;&gt;<br>&nbsp; &lt;li&gt;Coffee&lt;/li&gt;<br>
+&nbsp; &lt;li&gt;Tea&lt;/li&gt;<br>&nbsp; &lt;li&gt;Milk&lt;/li&gt;<br>&lt;/ol&gt;
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit2272.html?filename=tryhtml_lists_ordered_roman_ucase" target="_blank">Try it Yourself &raquo;</a>
+</div>
+<div class="w3-example">
+<h3>Lowercase Roman Numbers:</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;ol type=&quot;i&quot;&gt;<br>&nbsp; &lt;li&gt;Coffee&lt;/li&gt;<br>
+&nbsp; &lt;li&gt;Tea&lt;/li&gt;<br>&nbsp; &lt;li&gt;Milk&lt;/li&gt;<br>&lt;/ol&gt;
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryitb795.html?filename=tryhtml_lists_ordered_roman_lcase" target="_blank">Try it Yourself &raquo;</a>
+</div>
+<hr>
+
+<h2>HTML Description Lists</h2>
+<p>HTML also supports description lists.</p>
+<p>A description list is a list of terms, with a description of each term.</p>
+<p>The <code class="w3-codespan"><a href="../tags/tag_dl.html">&lt;dl&gt;</a></code> tag defines the description list, the <code class="w3-codespan">
+<a href="../tags/tag_dt.html">&lt;dt&gt;</a></code> tag defines the term (name), and the <code class="w3-codespan">
+<a href="../tags/tag_dd.html">&lt;dd&gt;</a></code> 
+tag describes each term:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;dl&gt;<br>
+&nbsp;
+&lt;dt&gt;Coffee&lt;/dt&gt;<br>
+&nbsp;
+&lt;dd&gt;- black hot drink&lt;/dd&gt;<br>
+&nbsp;
+&lt;dt&gt;Milk&lt;/dt&gt;<br>
+&nbsp;
+&lt;dd&gt;- white cold drink&lt;/dd&gt;<br>
+&lt;/dl&gt;
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryita055.html?filename=tryhtml_lists_description" target="_blank">Try it Yourself &raquo;</a>
+</div>
+<hr>
+
+<h2>Nested HTML Lists</h2>
+<p>List can be nested (lists inside lists):</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;ul&gt;<br>&nbsp; &lt;li&gt;Coffee&lt;/li&gt;<br>&nbsp; &lt;li&gt;Tea<br>
+&nbsp; &nbsp; &lt;ul&gt;<br>&nbsp;&nbsp;&nbsp; &nbsp; 
+&lt;li&gt;Black tea&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;Green tea&lt;/li&gt;<br>
+&nbsp;&nbsp;&nbsp; &lt;/ul&gt;<br>&nbsp; 
+&lt;/li&gt;<br>&nbsp; &lt;li&gt;Milk&lt;/li&gt;<br>&lt;/ul&gt;
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit4479.html?filename=tryhtml_lists_nested" target="_blank">Try it Yourself &raquo;</a>
+</div>
+
+<div class="w3-panel w3-note">
+  <p><strong>Note:</strong> List items can contain new list, and other HTML elements, like images and links, etc.</p>
+</div>
+<hr>
+
+<h2>Control List Counting</h2>
+<p>By default, an ordered list will start counting from 1. If you want to start counting from a specified number, you can use the <code class="w3-codespan">start</code> attribute:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+  &lt;ol start=&quot;50&quot;&gt;<br>&nbsp; &lt;li&gt;Coffee&lt;/li&gt;<br>&nbsp; &lt;li&gt;Tea&lt;/li&gt;<br>&nbsp; 
+  &lt;li&gt;Milk&lt;/li&gt;<br>&lt;/ol&gt;</div>
+<a class="w3-btn w3-margin-bottom" href="tryit9fe3.html?filename=tryhtml_lists_start" target="_blank">Try it Yourself &raquo;</a>
+</div>
+<hr>
+
+<h2>Horizontal List with CSS</h2>
+<p>HTML lists can be styled in many different ways with CSS.</p>
+<p>One popular way is to style a list horizontally, to create a navigation menu:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;!DOCTYPE html&gt;<br>&lt;html&gt;<br>&lt;head&gt;<br>&lt;style&gt;<br>ul {<br>&nbsp; list-style-type: none;<br>
+  &nbsp; margin: 0;<br>&nbsp; padding: 0;<br>&nbsp;&nbsp;overflow: hidden;<br>&nbsp;&nbsp;background-color: #333333;<br>}<br><br>li {<br>&nbsp;&nbsp;float: left;<br>}<br><br>li a {<br>&nbsp;&nbsp;display: block;<br>&nbsp;&nbsp;color: white;<br>&nbsp;&nbsp;text-align: center;<br>&nbsp;&nbsp;padding: 16px;<br>&nbsp; text-decoration: none;<br>}<br>
+ <br>li a:hover {<br>&nbsp;&nbsp;background-color: #111111;<br>}<br>
+ &lt;/style&gt;<br>&lt;/head&gt;<br>&lt;body&gt;<br><br>&lt;ul&gt;<br>&nbsp; &lt;li&gt;&lt;a href=&quot;#home&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;<br>&nbsp; &lt;li&gt;&lt;a href=&quot;#news&quot;&gt;News&lt;/a&gt;&lt;/li&gt;<br>&nbsp; &lt;li&gt;&lt;a href=&quot;#contact&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;<br>&nbsp; &lt;li&gt;&lt;a href=&quot;#about&quot;&gt;About&lt;/a&gt;&lt;/li&gt;<br>
+ &lt;/ul&gt;<br><br>&lt;/body&gt;<br>&lt;/html&gt;
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit0464.html?filename=tryhtml_lists_menu" target="_blank">Try it Yourself &raquo;</a>
+</div>
+<div class="w3-panel w3-note">
+  <p><strong>Tip:</strong> You can learn much more about CSS in our <a href="../css/default.html">CSS Tutorial</a>.</p>
+</div>
+
+<hr>
+
+<h2>Chapter Summary</h2>
+<ul>
+  <li>Use the HTML <code class="w3-codespan">&lt;ul&gt;</code> element to define an unordered list</li>
+  <li>Use the CSS <code class="w3-codespan">list-style-type</code> property to define the list item marker</li>
+  <li>Use the HTML <code class="w3-codespan">&lt;ol&gt;</code> element to define an ordered list</li>
+  <li>Use the HTML <code class="w3-codespan">type</code> attribute to define the numbering type</li>
+  <li>Use the HTML <code class="w3-codespan">&lt;li&gt;</code> element to define a list item</li>
+  <li>Use the HTML <code class="w3-codespan">&lt;dl&gt;</code> element to define a description list</li>
+  <li>Use the HTML <code class="w3-codespan">&lt;dt&gt;</code> element to define the description term</li>
+  <li>Use the HTML <code class="w3-codespan">&lt;dd&gt;</code> element to describe the term in a description list </li>
+  <li>Lists can be nested inside lists</li>
+  <li>List items can contain other HTML elements </li>
+  <li>Use the CSS property <code class="w3-codespan">float:left</code> or <code class="w3-codespan">display:inline</code> to display a list horizontally</li>
+</ul>
+<hr>
 <h2>HTML Exercises</h2>
-<p>This HTML tutorial also contains nearly 100 HTML exercises.</p>
-<form autocomplete="off" id="w3-exerciseform" action="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_attributes1" method="post" target="_blank">
+<form autocomplete="off" id="w3-exerciseform" action="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_lists1" method="post" target="_blank">
 <h2>Test Yourself With Exercises</h2>
 <div class="exercisewindow">
 <h2>Exercise:</h2>
-<p>Add a "tooltip" to the paragraph below with the text "About W3Schools".</p>
+<p>Add a list item with the text "Coffee" inside the <code class="w3-codespan">&lt;ul></code> element.</p>
 <div class="exerciseprecontainer">
-&lt;p <input name="ex1" maxlength="5" style="width: 54px;">="About W3Schools"&gt;W3Schools is a web developer's site.&lt;/p&gt;
+&lt;ul&gt;<input name="ex1" spellcheck="false" maxlength="4" style="width: 46px;">Coffee<input name="ex2" spellcheck="false" maxlength="5" style="width: 56px;">&lt;/ul&gt;
 </div>
 <br>
 <button type="submit" class="w3-btn w3-margin-bottom">Submit Answer &raquo;</button>
-<p><a target="_blank" href="exercise4b52.html?filename=exercise_html_attributes1">Start the Exercise</a></p>
+<p><a target="_blank" href="exercise7ed4.html?filename=exercise_html_lists1">Start the Exercise</a></p>
 </div>
 </form>
 <hr>
-<h2>HTML Quiz Test</h2>
-<p>Test your HTML skills with our HTML Quiz!</p>
-<p><a href="html_quiz.html" class="w3-button w3-blue">Start HTML Quiz!</a></p>
+
+<!--
 <hr>
 
-<h2>HTML References</h2>
-<p>At W3Schools you will find complete references about tags,  
-attributes, events, color names, entities, character-sets, URL encoding, 
-language codes, HTTP messages, and more.</p>
-<p><a href="../tags/default.html">HTML Tag Reference</a></p>
+<div class="w3-container w3-dark-grey w3-padding">
+  <h2>Test Yourself with Exercises!</h2>
+  <div class="w3-bar w3-margin-bottom">
+    <a class="w3-bar-item w3-btn" href="exercise.asp?filename=exercise_lists1" target="_blank">Exercise 1 &raquo;</a>
+    <a class="w3-bar-item w3-btn" href="exercise.asp?filename=exercise_lists2" target="_blank">Exercise 2 &raquo;</a>
+    <a class="w3-bar-item w3-btn" href="exercise.asp?filename=exercise_lists3" target="_blank">Exercise 3 &raquo;</a>
+    <a class="w3-bar-item w3-btn" href="exercise.asp?filename=exercise_lists4" target="_blank">Exercise 4 &raquo;</a>
+    <a class="w3-bar-item w3-btn" href="exercise.asp?filename=exercise_lists5" target="_blank">Exercise 5 &raquo;</a>
+    <a class="w3-bar-item w3-btn" href="exercise.asp?filename=exercise_lists6" target="_blank">Exercise 6 &raquo;</a>
+  </div>
+</div>
 <hr>
-
-<h2>HTML Exam - Get Your Diploma!</h2>
-<div class="w3-row">
-<div class="w3-third w3-container w3-padding-24"><a href="../cert/default.html"><img src="../images/w3certified_logo_250.png" style="max-width:100%;" alt="W3Schools Certification" /></a> </div>
-<div class="w3-twothird w3-container"><h2>W3Schools' Online Certification</h2>
-<p>The perfect solution for professionals who need to balance work, family, and career building.</p>
-<p>More than 25 000 certificates already issued!</p>
+-->
+<h2>HTML List Tags</h2>
+<table class="w3-table-all notranslate">
+<tr>
+<th>Tag</th>
+<th>Description</th>
+</tr>
+<tr>
+<td><a href="../tags/tag_ul.html">&lt;ul&gt;</a></td>
+<td>Defines an unordered list</td>
+</tr>
+<tr>
+<td><a href="../tags/tag_ol.html">&lt;ol&gt;</a></td>
+<td>Defines an ordered list</td>
+</tr>
+<tr>
+<td><a href="../tags/tag_li.html">&lt;li&gt;</a></td>
+<td>Defines a list item</td>
+</tr>
+<tr>
+<td><a href="../tags/tag_dl.html">&lt;dl&gt;</a></td>
+<td>Defines a description list</td>
+</tr>
+<tr>
+<td><a href="../tags/tag_dt.html">&lt;dt&gt;</a></td>
+<td>Defines a term in a description list</td>
+</tr>
+<tr>
+<td><a href="../tags/tag_dd.html">&lt;dd&gt;</a></td>
+<td>Describes the term in a description list</td>
+</tr>
+</table>
+<div class="w3-note w3-panel">
+  <p>For a complete list of all available HTML tags, visit our <a href="../tags/default.html">HTML Tag Reference</a>.</p>
 </div>
-</div>
-<p><a class="w3-btn" href="../cert/default.html">Get Your Certificate &raquo;</a></p>
-<p style="clear:both;">The <a href="../cert/default.html">HTML Certificate</a> documents your knowledge of HTML.</p>
-<p>The <a href="../cert/default.html">CSS Certificate</a> documents your knowledge of advanced CSS.</p>
-<p>The <a href="../cert/default.html">JavaScript Certificate</a> documents your knowledge of JavaScript and HTML DOM.</p>
-<p>The <a href="../cert/default.html">Python Certificate</a> documents your knowledge of Python.</p>
-<p>The <a href="../cert/default.html">jQuery Certificate</a> documents your knowledge of jQuery.</p>
-<p>The <a href="../cert/default.html">SQL Certificate</a> documents your knowledge of SQL.</p>
-<p>The <a href="../cert/default.html">PHP Certificate</a> documents your knowledge of PHP and MySQL.</p>
-<p>The <a href="../cert/default.html">XML Certificate</a> documents your knowledge of XML, XML DOM and XSLT.</p>
-<p>The <a href="../cert/default.html">Bootstrap Certificate</a> documents your knowledge of the Bootstrap framework.</p>
 
 <br>
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="../default.html">&#10094; Home</a>
-<a class="w3-right w3-btn" href="html_intro.html">Next &#10095;</a>
+<a class="w3-left w3-btn" href="html_tables.html">&#10094; Previous</a>
+<a class="w3-right w3-btn" href="html_blocks.html">Next &#10095;</a>
 </div>
 </div>
 <div class="w3-col l2 m12" id="right">
@@ -907,9 +1279,13 @@ language codes, HTTP messages, and more.</p>
 <div class="sidesection">
   <div id="skyscraper">
   
-    <!--<pre>wide_skyscraper, all: [160,600][300,600][320,50][120,600][300,1050]</pre>-->
-    <div id="snhb-wide_skyscraper-0"></div>
-    <!-- adspace wide-->
+    <div id="div-gpt-ad-1422003450156-5">
+      <script>
+      googletag.cmd.push(function() {
+      googletag.display('div-gpt-ad-1422003450156-5');
+      });
+      </script> 
+    </div>
   
   </div>
 </div>
@@ -1010,24 +1386,13 @@ Read More &raquo;</a>
   <div id="stickyadcontainer">
     <div style="position:relative;margin:auto;">
       
-      <!--<pre>sidebar_sticky, desktop: [120,600][160,600][300,600][300,250]</pre>-->
-      <div id="snhb-sidebar_sticky-0"></div>
-      <script>
-          if (Number(w3_getStyleValue(document.getElementById("main"), "height").replace("px", "")) > 2200) {
-            // adspace sticky
-            if (document.getElementById("snhb-mid_content-0")) {
-              snhb.queue.push(function(){  snhb.startAuction(["sidebar_sticky", "mid_content" ]); });
-            }
-            else {
-              snhb.queue.push(function(){  snhb.startAuction(["sidebar_sticky"]); });
-            }
-          }
-          else {
-              if (document.getElementById("snhb-mid_content-0")) {
-                snhb.queue.push(function(){  snhb.startAuction(["mid_content"]); });
-              }
-          }
-      </script>  
+        <script>
+        if (Number(w3_getStyleValue(document.getElementById("main"), "height").replace("px", "")) > 2200) {
+        document.write("<div id='div-gpt-ad-1472547360578-0'>");
+        googletag.cmd.push(function() { googletag.display('div-gpt-ad-1472547360578-0'); });
+        document.write("</div>");
+        }
+        </script>
       
     </div>
   </div>
@@ -1045,14 +1410,17 @@ Read More &raquo;</a>
 <hr>
 
 <div style="overflow:auto">
-  <div class="bottomad">
-    <!-- BottomMediumRectangle -->
-    <!--<pre>bottom_medium_rectangle, all: [970,250][300,250][336,280]</pre>-->
-    <div id="snhb-bottom_medium_rectangle-0" style="padding:0 10px 10px 0;float:left;width:auto;"></div>
-    <!-- adspace bmr -->
-    <!-- RightBottomMediumRectangle -->
-    <!--<pre>right_bottom_medium_rectangle, desktop: [300,250][336,280]</pre>-->
-    <div id="snhb-right_bottom_medium_rectangle-0" style="padding:0 10px 10px 0;float:left;width:auto;"></div>
+  <!-- BottomMediumRectangle -->
+  <div class="bottomad" id='div-gpt-ad-1422003450156-0'>
+    <script type='text/javascript'>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1422003450156-0'); });
+    </script>
+  </div>
+  <!-- RightBottomMediumRectangle -->
+  <div class="bottomad" id='div-gpt-ad-1422003450156-3'>
+    <script type='text/javascript'>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1422003450156-3'); });
+    </script>
   </div>
 </div>
 
@@ -1193,4 +1561,6 @@ While using this site, you agree to have read and accepted our <a href="../about
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>  
 <![endif]-->
 </body>
+
+<!-- Mirrored from www.w3schools.com/html/html_lists.asp by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Sep 2019 08:38:21 GMT -->
 </html>

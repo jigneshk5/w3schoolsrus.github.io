@@ -1,7 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en-US">
+
+<!-- Mirrored from www.w3schools.com/html/html_accessibility.asp by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Sep 2019 08:38:36 GMT -->
 <head>
-<title>HTML Tutorial</title>
+<title>HTML Accessibility</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="Keywords" content="HTML,CSS,JavaScript,SQL,PHP,jQuery,XML,DOM,Bootstrap,Python,Java,Web development,W3C,tutorials,programming,training,learning,quiz,primer,lessons,references,examples,exercises,source code,colors,demos,tips">
@@ -479,6 +482,22 @@ function w3_getStyleValue(elmnt,style) {
   }
 }
 </script>
+<style>
+@media (min-width: 1200px) {
+  .w3-col.x {
+    width: 50%;
+  }
+}
+@media (max-width: 805px) {
+  .w3-col.x {
+    width:100%;
+  }
+}
+.noshadow a {
+    box-shadow: 0 0 0 0 !important;
+}
+</style>
+
 </head>
 <body>
 <div class='w3-container top'>
@@ -806,40 +825,81 @@ function w3_getStyleValue(elmnt,style) {
         <!-- adspace leaderboard -->
        
       </div>
-<h1>HTML5<span class="color_h1"> Tutorial</span></h1>
+<h1>HTML <span class="color_h1">Accessibility</span></h1>
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="../default.html">&#10094; Home</a>
-<a class="w3-right w3-btn" href="html_intro.html">Next &#10095;</a>
-</div>
-
-<div class="w3-panel w3-info intro">
-<p>HTML is the standard markup language for Web pages.</p>
-  <p>With HTML you can create your own Website.</p>
-<p>HTML is easy to learn - You will enjoy it!</p>
+<a class="w3-left w3-btn" href="html_summary.html">&#10094; Previous</a>
+<a class="w3-right w3-btn" href="../tags/default.html">HTML Reference &#10095;</a>
 </div>
 
 <hr>
-<h2>Examples in Every Chapter</h2>
-<p>This HTML tutorial contains hundreds of HTML examples.</p>
-<p>With our online HTML editor, you can edit the HTML, and click on a button to 
-view the result.</p>
+<h2>HTML Accessibility</h2>
+<p>Write HTML with accessibility in mind. Provide the user a good way to navigate and interact with your site. Make your HTML code 
+as <strong>semantic</strong> as possible, so that the code is easy to understand for visitors 
+and screen readers.</p>
+<hr>
+<h2>Semantic HTML</h2>
+<p>Semantic HTML means using correct HTML elements for their correct purpose as 
+much as possible. Semantic elements are elements with a meaning; if you need a button, use the <code class="w3-codespan">&lt;button&gt;</code> element (and not a 
+<code class="w3-codespan">&lt;div&gt;</code>).</p>
+
+<div class="w3-row-padding" style="margin:-16px">
+
+<div class="w3-half">
+<div class="w3-example">
+<h3>Semantic</h3>
+<div class="w3-code notranslate htmlHigh">
+  &lt;button&gt;Click Me&lt;/button&gt;</div>
+<a class="w3-btn w3-margin-bottom" href="tryit6047.html?filename=tryhtml_accessibility_button" target="_blank">Try it Yourself &raquo;</a>
+</div>
+
+</div>
+<div class="w3-half">
+<div class="w3-example">
+<h3>Non-semantic</h3>
+<div class="w3-code notranslate htmlHigh" style="border-color:red;">
+  &lt;div&gt;Click Me&lt;/div&gt;</div>
+<a class="w3-btn w3-margin-bottom" href="tryit6047.html?filename=tryhtml_accessibility_button" target="_blank">Try it Yourself &raquo;</a>
+</div>
+
+</div>
+
+</div>
+
+<p>Semantic HTML gives context to screen readers, which read the contents of a web page out loud.</p> 
+<p>With the button example in mind: </p>
+<ul>
+  <li>buttons have more suitable styling by default</li>
+  <li>a screen reader identifies it as a button</li>
+  <li>focusable</li>
+  <li>clickable</li>
+</ul>
+<p>A button is also accessible for people relying on keyboard-only navigation; 
+it can be clickable with both mouse and keys, and it can be tabbed between 
+(using the tab key on the keyboard).</p>
+<p>Examples of <strong>non-semantic</strong> elements: <code class="w3-codespan">&lt;div&gt;</code> and <code class="w3-codespan">&lt;span&gt;</code> - Tells nothing about its content.</p>
+<p>Examples of <strong>semantic</strong> elements: <code class="w3-codespan">&lt;form&gt;</code>, <code class="w3-codespan">&lt;table&gt;</code>, and <code class="w3-codespan">&lt;article&gt;</code> - Clearly defines its content.</p>
+<hr>
+
+<h2>Headings Are Important</h2>
+<p>Headings are defined with the <code class="w3-codespan">&lt;h1&gt;</code> to <code class="w3-codespan">&lt;h6&gt;</code> tags:</p>
 <div class="w3-example">
 <h3>Example</h3>
 <div class="w3-code notranslate htmlHigh">
-&lt;!DOCTYPE html&gt;<br>
-&lt;html&gt;<br>&lt;head&gt;<br>&lt;title&gt;Page Title&lt;/title&gt;<br>
-&lt;/head&gt;<br>&lt;body&gt;<br><br>&lt;h1&gt;This is a Heading&lt;/h1&gt;<br>&lt;p&gt;This is a paragraph.&lt;/p&gt;<br><br>
-&lt;/body&gt;<br>&lt;/html&gt;
+&lt;h1&gt;Heading 1&lt;/h1&gt;<br>
+&lt;h2&gt;Heading 2&lt;/h2&gt;<br>
+&lt;h3&gt;Heading 3&lt;/h3&gt;<br>&lt;h4&gt;Heading 4&lt;/h4&gt;<br>&lt;h5&gt;Heading 5&lt;/h5&gt;<br>&lt;h6&gt;Heading 6&lt;/h6&gt;</div>
+<a target="_blank" href="tryitbe80.html?filename=tryhtml_headings" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
 </div>
-<a class="w3-btn w3-margin-bottom" href="tryitfb35.html?filename=tryhtml_default" target="_blank">Try it Yourself &raquo;</a>
-</div>
-<p><strong>Click on the &quot;Try it Yourself&quot; button to see how it works.</strong></p>
-<p><a href="html_intro.html">Start learning HTML now!</a></p><hr>
 
-<h2>HTML Examples</h2>
-<p>At the end of this HTML tutorial, you will find more than 200 examples.</p>
-<p>With our online editor, you can edit and test each example yourself.</p>
-<p><a href="html_examples.html">Go to HTML Examples!</a></p>
+<p>Search engines use the headings to index the structure and content of your web pages.</p>
+<p>Users skim your pages by its headings. It is important to use headings to 
+show the document structure and the relationships between different sections.</p>
+<p><code class="w3-codespan">&lt;h1&gt;</code> headings should be used for main headings, followed by <code class="w3-codespan">&lt;h2&gt;</code> headings, then the less important 
+<code class="w3-codespan">&lt;h3&gt;</code>, and so on.</p>
+<div class="w3-panel w3-note">
+  <p><strong>Note:</strong> Use HTML headings for headings only. Don't use headings to make text 
+  <strong>BIG</strong> or <strong>bold</strong>.</p>
+</div>
 <hr>
 <div id="midcontentadcontainer" style="overflow:auto;text-align:center">
 <!-- MidContent -->
@@ -849,57 +909,104 @@ view the result.</p>
     
 </div>
 <hr>
-<h2>HTML Exercises</h2>
-<p>This HTML tutorial also contains nearly 100 HTML exercises.</p>
-<form autocomplete="off" id="w3-exerciseform" action="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_attributes1" method="post" target="_blank">
-<h2>Test Yourself With Exercises</h2>
-<div class="exercisewindow">
-<h2>Exercise:</h2>
-<p>Add a "tooltip" to the paragraph below with the text "About W3Schools".</p>
-<div class="exerciseprecontainer">
-&lt;p <input name="ex1" maxlength="5" style="width: 54px;">="About W3Schools"&gt;W3Schools is a web developer's site.&lt;/p&gt;
+
+<h2>Alternative Text</h2>
+<p>The <code class="w3-codespan">alt</code> attribute provides an alternate text for an image, if the user for 
+some reason cannot view it (because of slow connection, an error in the src 
+attribute, or if the user uses a screen reader).</p>
+<p>The value of the <code class="w3-codespan">alt</code> attribute should describe the image:</p>
+<div class="w3-example">
+  <h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;img src=&quot;img_chania.jpg&quot; alt=&quot;Flowers 
+  in Chania&quot;&gt;
 </div>
-<br>
-<button type="submit" class="w3-btn w3-margin-bottom">Submit Answer &raquo;</button>
-<p><a target="_blank" href="exercise4b52.html?filename=exercise_html_attributes1">Start the Exercise</a></p>
+<a class="w3-btn w3-margin-bottom" href="tryit0aa4.html?filename=tryhtml_images_alt_chania" target="_blank">Try it Yourself &raquo;</a>
 </div>
-</form>
-<hr>
-<h2>HTML Quiz Test</h2>
-<p>Test your HTML skills with our HTML Quiz!</p>
-<p><a href="html_quiz.html" class="w3-button w3-blue">Start HTML Quiz!</a></p>
+<p>If a browser cannot find an image, it will display the value of the <code class="w3-codespan">alt</code> 
+attribute:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;img src=&quot;wrongname.gif&quot; alt=&quot;Flowers 
+  in Chania&quot;&gt;
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit8e07.html?filename=tryhtml_images_wrongname" target="_blank">Try it Yourself &raquo;</a>
+</div>
 <hr>
 
-<h2>HTML References</h2>
-<p>At W3Schools you will find complete references about tags,  
-attributes, events, color names, entities, character-sets, URL encoding, 
-language codes, HTTP messages, and more.</p>
-<p><a href="../tags/default.html">HTML Tag Reference</a></p>
+<h2>Declare the Language</h2>
+<p>Declaring a language is important for screen readers and search engines, and is declared with the <code class="w3-codespan">lang</code> 
+attribute. Use the following to show a web page in English:</p>
+<div class="w3-example">
+<div class="w3-code notranslate htmlHigh">
+&lt;!DOCTYPE html&gt;<br>&lt;html lang=&quot;en&quot;&gt;<br>&lt;body&gt;<br><br>
+ ...<br><br>&lt;/body&gt;<br>&lt;/html&gt;
+</div>
+</div>
 <hr>
 
-<h2>HTML Exam - Get Your Diploma!</h2>
-<div class="w3-row">
-<div class="w3-third w3-container w3-padding-24"><a href="../cert/default.html"><img src="../images/w3certified_logo_250.png" style="max-width:100%;" alt="W3Schools Certification" /></a> </div>
-<div class="w3-twothird w3-container"><h2>W3Schools' Online Certification</h2>
-<p>The perfect solution for professionals who need to balance work, family, and career building.</p>
-<p>More than 25 000 certificates already issued!</p>
+<h2>Use Clear Language</h2>
+<p>Use clear language that is easy to understand, and try to avoid characters that 
+cannot be read clearly by a screen reader. For example:</p>
+<ul>
+  <li>Keep sentences as short as possible.</li>
+  <li>Avoid dashes. Instead of writing 1-3, write 1 to 3</li>
+  <li>Avoid abbreviations. Instead of writing Feb, write February</li>
+  <li>Avoid slang words</li>
+</ul>
+<hr>
+
+<h2>Write Good Links</h2>
+<p>A link should explain clearly what information the reader will get by clicking on that link.</p>
+<p>Examples of good and bad links:</p>
+<div class="w3-row-padding" style="margin:-16px">
+
+<div class="w3-col x l12 m6">
+<div class="w3-example">
+<h3>Good</h3>
+<div class="w3-code notranslate htmlHigh noshadow" style="font-family: Verdana;font-size:15px">
+<p><a href="javascript:void(0)">Find out more about the HTML language</a></p>
+<p>Read more about <a href="javascript:void(0)">how to eat healthy</a></p>
+<p><a href="javascript:void(0)">Buy tickets to Mars here</a></p>
+
 </div>
+<a class="w3-btn w3-margin-bottom" href="tryit006f.html?filename=tryhtml_accessibility_links" target="_blank">Try it Yourself &raquo;</a>
 </div>
-<p><a class="w3-btn" href="../cert/default.html">Get Your Certificate &raquo;</a></p>
-<p style="clear:both;">The <a href="../cert/default.html">HTML Certificate</a> documents your knowledge of HTML.</p>
-<p>The <a href="../cert/default.html">CSS Certificate</a> documents your knowledge of advanced CSS.</p>
-<p>The <a href="../cert/default.html">JavaScript Certificate</a> documents your knowledge of JavaScript and HTML DOM.</p>
-<p>The <a href="../cert/default.html">Python Certificate</a> documents your knowledge of Python.</p>
-<p>The <a href="../cert/default.html">jQuery Certificate</a> documents your knowledge of jQuery.</p>
-<p>The <a href="../cert/default.html">SQL Certificate</a> documents your knowledge of SQL.</p>
-<p>The <a href="../cert/default.html">PHP Certificate</a> documents your knowledge of PHP and MySQL.</p>
-<p>The <a href="../cert/default.html">XML Certificate</a> documents your knowledge of XML, XML DOM and XSLT.</p>
-<p>The <a href="../cert/default.html">Bootstrap Certificate</a> documents your knowledge of the Bootstrap framework.</p>
+
+</div>
+<div class="w3-col x l12 m6">
+<div class="w3-example">
+<h3>Bad</h3>
+<div class="w3-code notranslate htmlHigh noshadow" style="border-color:red;font-family: Verdana;font-size:15px">
+<p><a href="javascript:void(0)">Click here</a></p>
+<p><a href="javascript:void(0)">Read more..</a></p>
+<p>Buy tickets to Mars <a href="javascript:void(0)">here</a></p>
+
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit006f.html?filename=tryhtml_accessibility_links" target="_blank">Try it Yourself &raquo;</a>
+</div>
+
+</div>
+
+</div>
+
+<hr>
+<h2>Link Titles</h2>
+<p>The <code class="w3-codespan">title</code> attribute specifies extra information about an element.
+The information is most often shown as a tooltip text when the mouse moves over the element.</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+  &lt;a href=&quot;https://www.w3schools.com/html/&quot; title=&quot;Go to W3Schools HTML 
+  section&quot;&gt;Visit our HTML Tutorial&lt;/a&gt;</div>
+<a class="w3-btn w3-margin-bottom" href="tryite836.html?filename=tryhtml_links_title" target="_blank">Try it Yourself &raquo;</a>
+</div>
 
 <br>
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="../default.html">&#10094; Home</a>
-<a class="w3-right w3-btn" href="html_intro.html">Next &#10095;</a>
+<a class="w3-left w3-btn" href="html_summary.html">&#10094; Previous</a>
+<a class="w3-right w3-btn" href="../tags/default.html">HTML Reference &#10095;</a>
 </div>
 </div>
 <div class="w3-col l2 m12" id="right">
@@ -1193,4 +1300,6 @@ While using this site, you agree to have read and accepted our <a href="../about
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>  
 <![endif]-->
 </body>
+
+<!-- Mirrored from www.w3schools.com/html/html_accessibility.asp by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Sep 2019 08:38:37 GMT -->
 </html>

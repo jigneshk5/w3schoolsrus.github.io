@@ -1,7 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en-US">
+
+<!-- Mirrored from www.w3schools.com/html/html_id.asp by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Sep 2019 08:38:21 GMT -->
 <head>
-<title>HTML Tutorial</title>
+<title>HTML id</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="Keywords" content="HTML,CSS,JavaScript,SQL,PHP,jQuery,XML,DOM,Bootstrap,Python,Java,Web development,W3C,tutorials,programming,training,learning,quiz,primer,lessons,references,examples,exercises,source code,colors,demos,tips">
@@ -479,6 +482,13 @@ function w3_getStyleValue(elmnt,style) {
   }
 }
 </script>
+<style>
+#myHeader {
+    background-color: lightblue;
+    padding: 40px;
+    text-align: center;
+} 
+</style>
 </head>
 <body>
 <div class='w3-container top'>
@@ -806,41 +816,69 @@ function w3_getStyleValue(elmnt,style) {
         <!-- adspace leaderboard -->
        
       </div>
-<h1>HTML5<span class="color_h1"> Tutorial</span></h1>
+<h1>HTML <span class="color_h1">The id Attribute</span></h1>
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="../default.html">&#10094; Home</a>
-<a class="w3-right w3-btn" href="html_intro.html">Next &#10095;</a>
+<a class="w3-left w3-btn" href="html_classes.html">&#10094; Previous</a>
+<a class="w3-right w3-btn" href="html_iframe.html">Next &#10095;</a>
 </div>
-
-<div class="w3-panel w3-info intro">
-<p>HTML is the standard markup language for Web pages.</p>
-  <p>With HTML you can create your own Website.</p>
-<p>HTML is easy to learn - You will enjoy it!</p>
-</div>
-
 <hr>
-<h2>Examples in Every Chapter</h2>
-<p>This HTML tutorial contains hundreds of HTML examples.</p>
-<p>With our online HTML editor, you can edit the HTML, and click on a button to 
-view the result.</p>
+<h2>Using The id Attribute</h2>
+<p>The <code class="w3-codespan">id</code> attribute specifies a unique id for an HTML element (the value must be unique within the HTML document).</p>
+<p>The id value can be used by CSS and JavaScript to perform certain tasks for 
+the element with the specific id value.</p>
+<p>In CSS, to select an element with a specific id, write a hash (#) character, followed by the id of the element:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Use CSS to style an element with the id "myHeader":</p>
+<div class="w3-code notranslate htmlHigh">
+  &lt;style&gt;<br>
+  <strong>#myHeader</strong> {<br>&nbsp; background-color: lightblue;<br>&nbsp;&nbsp;color: black;<br>&nbsp;&nbsp;padding: 
+  40px;<br>&nbsp;&nbsp;text-align: center;<br>} <br>&lt;/style&gt;<br>
+  <br>&lt;h1 id=&quot;myHeader&quot;&gt;My Header&lt;/h1&gt;<br></div>
+  <p>Result:</p>
+  <h1 id="myHeader">My Header</h1>
+
+<a class="w3-btn w3-margin-bottom" style="margin-top:8px" href="tryit89a7.html?filename=tryhtml_id_css" target="_blank">
+ Try it Yourself &raquo;</a>
+</div>
+
+
+<div class="w3-panel w3-note">
+  <p><strong>Tip:</strong> The id attribute can be used on <strong>any</strong> HTML element.</p>
+  <p><strong>Note:</strong> The id value is case-sensitive.</p>
+  <p><strong>Note:</strong> The id value must contain at least <strong>one</strong> 
+  character, and must <strong>not</strong> contain whitespace (spaces, tabs, 
+  etc.).</p>
+</div>
+<hr>
+
+<h2>Difference Between Class and ID</h2>
+<p>An HTML element can only have one unique id that belongs to that single element, while a 
+class name can be used by multiple elements:</p>
 <div class="w3-example">
 <h3>Example</h3>
 <div class="w3-code notranslate htmlHigh">
-&lt;!DOCTYPE html&gt;<br>
-&lt;html&gt;<br>&lt;head&gt;<br>&lt;title&gt;Page Title&lt;/title&gt;<br>
-&lt;/head&gt;<br>&lt;body&gt;<br><br>&lt;h1&gt;This is a Heading&lt;/h1&gt;<br>&lt;p&gt;This is a paragraph.&lt;/p&gt;<br><br>
-&lt;/body&gt;<br>&lt;/html&gt;
+  &lt;style&gt;<br>/* Style the element with the id "myHeader" 
+  */<br>
+  <strong>#myHeader</strong> {<br>&nbsp; background-color: lightblue;<br>&nbsp; 
+  color: black;<br>&nbsp;&nbsp;padding: 
+  40px;<br>&nbsp;&nbsp;text-align: center;<br>}<br><br>/* Style all 
+  elements with the class name "city" */<br><strong>.city
+  </strong>{<br>&nbsp; background-color: tomato;<br>&nbsp;&nbsp;color: white;<br>&nbsp;&nbsp;padding: 10px;<br>} <br>&lt;/style&gt;<br>
+  <br>&lt;!-- A unique element --&gt;<br>&lt;h1 id=&quot;myHeader&quot;&gt;My 
+  Cities&lt;/h1&gt;<br><br>&lt;!-- Multiple similar elements --&gt;<br>&lt;h2 class=&quot;city&quot;&gt;London&lt;/h2&gt;<br>&lt;p&gt;London is the capital of England.&lt;/p&gt;<br><br>
+  &lt;h2 class=&quot;city&quot;&gt;Paris&lt;/h2&gt;<br>&lt;p&gt;Paris is the capital of France.&lt;/p&gt;<br><br>
+  &lt;h2 class=&quot;city&quot;&gt;Tokyo&lt;/h2&gt;<br>&lt;p&gt;Tokyo is the capital of Japan.&lt;/p&gt;<br></div>
+<a class="w3-btn w3-margin-bottom" href="tryitf300.html?filename=tryhtml_id_class" target="_blank">
+ Try it Yourself &raquo;</a>
 </div>
-<a class="w3-btn w3-margin-bottom" href="tryitfb35.html?filename=tryhtml_default" target="_blank">Try it Yourself &raquo;</a>
+<div class="w3-panel w3-note">
+  <p><strong>Tip:</strong> You can learn much more about CSS in our <a href="../css/default.html">CSS Tutorial</a>.</p>
 </div>
-<p><strong>Click on the &quot;Try it Yourself&quot; button to see how it works.</strong></p>
-<p><a href="html_intro.html">Start learning HTML now!</a></p><hr>
 
-<h2>HTML Examples</h2>
-<p>At the end of this HTML tutorial, you will find more than 200 examples.</p>
-<p>With our online editor, you can edit and test each example yourself.</p>
-<p><a href="html_examples.html">Go to HTML Examples!</a></p>
 <hr>
+
 <div id="midcontentadcontainer" style="overflow:auto;text-align:center">
 <!-- MidContent -->
 
@@ -849,57 +887,105 @@ view the result.</p>
     
 </div>
 <hr>
+
+<h2>Bookmarks with ID and Links</h2>
+<p>HTML bookmarks are used to allow readers to jump to specific parts of a Web 
+page.</p>
+<p>Bookmarks can be useful if your webpage is very long.</p>
+<p>To make a bookmark, you must first create the bookmark, and then add a link 
+to it.</p>
+<p>When the link is clicked, the page will scroll to the location with the 
+bookmark.</p>
+<h2>Example</h2>
+<p>First, create a bookmark with the <code class="w3-codespan">id</code> attribute:</p>
+<div class="w3-example">
+<div class="w3-code notranslate htmlHigh">
+&lt;h2 id=&quot;C4&quot;&gt;Chapter 4&lt;/h2&gt;</div>
+</div>
+<p>Then, add a link to the bookmark (&quot;Jump to Chapter 4&quot;), from within the same page:</p>
+<div class="w3-example">
+<div class="w3-code notranslate htmlHigh">
+ &lt;a href=&quot;#C4&quot;&gt;Jump to Chapter 4&lt;/a&gt;
+</div>
+</div>
+<p>Or, add a link to the bookmark (&quot;Jump to Chapter 4&quot;), from another page:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;a href=&quot;html_demo.html#C4&quot;&gt;Jump to Chapter 4&lt;/a&gt;
+</div>
+<a target="_blank" href="tryit3864.html?filename=tryhtml_links_bookmark" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
+</div>
+<hr>
+
+<h2>Using The id Attribute in JavaScript</h2>
+<p>JavaScript can access an element with a specified id by using the <code class="w3-codespan">getElementById()</code> method:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+  <p>Use the id attribute to manipulate text with JavaScript:</p>
+<div class="w3-code notranslate htmlHigh">
+  &lt;script&gt;<br>function displayResult() {<br>&nbsp;&nbsp;document.getElementById(&quot;myHeader&quot;).innerHTML = &quot;Have a nice day!&quot;;<br>}<br>
+  &lt;/script&gt;</div>
+<a class="w3-btn w3-margin-bottom" href="tryit16e1.html?filename=tryhtml_id_js" target="_blank">
+ Try it Yourself &raquo;</a>
+</div>
+<div class="w3-note w3-panel">
+<p><strong>Tip:</strong> Study JavaScript in the <a href="html_scripts.html">HTML JavaScript</a> chapter, or in our
+<a href="../js/default.html">JavaScript Tutorial</a>.</p>
+</div>
+<hr>
 <h2>HTML Exercises</h2>
-<p>This HTML tutorial also contains nearly 100 HTML exercises.</p>
-<form autocomplete="off" id="w3-exerciseform" action="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_attributes1" method="post" target="_blank">
+<form autocomplete="off" id="w3-exerciseform" action="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_id1" method="post" target="_blank">
 <h2>Test Yourself With Exercises</h2>
 <div class="exercisewindow">
 <h2>Exercise:</h2>
-<p>Add a "tooltip" to the paragraph below with the text "About W3Schools".</p>
+<p>Add the correct HTML attribute to make the H1 element red.</p>
 <div class="exerciseprecontainer">
-&lt;p <input name="ex1" maxlength="5" style="width: 54px;">="About W3Schools"&gt;W3Schools is a web developer's site.&lt;/p&gt;
+&lt;!DOCTYPE html&gt;
+<br>
+&lt;html&gt;
+<br>
+&lt;head&gt;
+<br>
+&lt;style&gt;
+<br>
+#myheader {color:red;}
+<br>
+&lt;/style&gt;
+<br>
+&lt;/head&gt;
+<br>
+&lt;body&gt;
+<br><br>
+&lt;h1 <input name="ex1" spellcheck="false" maxlength="13" style="width: 135px;">&gt;My Home Page&lt;/h1&gt;
+<br><br>
+&lt;/body&gt;
+<br>
+&lt;/html&gt;
 </div>
 <br>
 <button type="submit" class="w3-btn w3-margin-bottom">Submit Answer &raquo;</button>
-<p><a target="_blank" href="exercise4b52.html?filename=exercise_html_attributes1">Start the Exercise</a></p>
+<p><a target="_blank" href="exercise4d98.html?filename=exercise_html_id1">Start the Exercise</a></p>
 </div>
 </form>
 <hr>
-<h2>HTML Quiz Test</h2>
-<p>Test your HTML skills with our HTML Quiz!</p>
-<p><a href="html_quiz.html" class="w3-button w3-blue">Start HTML Quiz!</a></p>
+
+<!--
 <hr>
 
-<h2>HTML References</h2>
-<p>At W3Schools you will find complete references about tags,  
-attributes, events, color names, entities, character-sets, URL encoding, 
-language codes, HTTP messages, and more.</p>
-<p><a href="../tags/default.html">HTML Tag Reference</a></p>
-<hr>
-
-<h2>HTML Exam - Get Your Diploma!</h2>
-<div class="w3-row">
-<div class="w3-third w3-container w3-padding-24"><a href="../cert/default.html"><img src="../images/w3certified_logo_250.png" style="max-width:100%;" alt="W3Schools Certification" /></a> </div>
-<div class="w3-twothird w3-container"><h2>W3Schools' Online Certification</h2>
-<p>The perfect solution for professionals who need to balance work, family, and career building.</p>
-<p>More than 25 000 certificates already issued!</p>
+<div class="w3-container w3-dark-grey w3-padding">
+  <h2>Test Yourself with Exercises!</h2>
+  <div class="w3-bar w3-margin-bottom">
+    <a class="w3-bar-item w3-btn" href="exercise.asp?filename=exercise_id1" target="_blank">Exercise 1 &raquo;</a>
+    <a class="w3-bar-item w3-btn" href="exercise.asp?filename=exercise_id2" target="_blank">Exercise 2 &raquo;</a>
+  </div>
 </div>
-</div>
-<p><a class="w3-btn" href="../cert/default.html">Get Your Certificate &raquo;</a></p>
-<p style="clear:both;">The <a href="../cert/default.html">HTML Certificate</a> documents your knowledge of HTML.</p>
-<p>The <a href="../cert/default.html">CSS Certificate</a> documents your knowledge of advanced CSS.</p>
-<p>The <a href="../cert/default.html">JavaScript Certificate</a> documents your knowledge of JavaScript and HTML DOM.</p>
-<p>The <a href="../cert/default.html">Python Certificate</a> documents your knowledge of Python.</p>
-<p>The <a href="../cert/default.html">jQuery Certificate</a> documents your knowledge of jQuery.</p>
-<p>The <a href="../cert/default.html">SQL Certificate</a> documents your knowledge of SQL.</p>
-<p>The <a href="../cert/default.html">PHP Certificate</a> documents your knowledge of PHP and MySQL.</p>
-<p>The <a href="../cert/default.html">XML Certificate</a> documents your knowledge of XML, XML DOM and XSLT.</p>
-<p>The <a href="../cert/default.html">Bootstrap Certificate</a> documents your knowledge of the Bootstrap framework.</p>
-
+-->
 <br>
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="../default.html">&#10094; Home</a>
-<a class="w3-right w3-btn" href="html_intro.html">Next &#10095;</a>
+<a class="w3-left w3-btn" href="html_classes.html">&#10094; Previous</a>
+<a class="w3-right w3-btn" href="html_iframe.html">Next &#10095;</a>
 </div>
 </div>
 <div class="w3-col l2 m12" id="right">
@@ -1193,4 +1279,6 @@ While using this site, you agree to have read and accepted our <a href="../about
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>  
 <![endif]-->
 </body>
+
+<!-- Mirrored from www.w3schools.com/html/html_id.asp by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Sep 2019 08:38:22 GMT -->
 </html>

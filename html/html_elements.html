@@ -1,7 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en-US">
+
+<!-- Mirrored from www.w3schools.com/html/html_elements.asp by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Sep 2019 08:38:14 GMT -->
 <head>
-<title>HTML Tutorial</title>
+<title>HTML Elements</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="Keywords" content="HTML,CSS,JavaScript,SQL,PHP,jQuery,XML,DOM,Bootstrap,Python,Java,Web development,W3C,tutorials,programming,training,learning,quiz,primer,lessons,references,examples,exercises,source code,colors,demos,tips">
@@ -806,40 +809,113 @@ function w3_getStyleValue(elmnt,style) {
         <!-- adspace leaderboard -->
        
       </div>
-<h1>HTML5<span class="color_h1"> Tutorial</span></h1>
+<h1>HTML <span class="color_h1">Elements</span></h1>
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="../default.html">&#10094; Home</a>
-<a class="w3-right w3-btn" href="html_intro.html">Next &#10095;</a>
+<a class="w3-left w3-btn" href="html_basic.html">&#10094; Previous</a>
+<a class="w3-right w3-btn" href="html_attributes.html">Next &#10095;</a>
 </div>
-
-<div class="w3-panel w3-info intro">
-<p>HTML is the standard markup language for Web pages.</p>
-  <p>With HTML you can create your own Website.</p>
-<p>HTML is easy to learn - You will enjoy it!</p>
-</div>
-
 <hr>
-<h2>Examples in Every Chapter</h2>
-<p>This HTML tutorial contains hundreds of HTML examples.</p>
-<p>With our online HTML editor, you can edit the HTML, and click on a button to 
-view the result.</p>
+<h2>HTML Elements</h2>
+<p>An HTML element usually consists of a <strong>start</strong> tag and an <strong>end</strong> tag, 
+with the content inserted in between:</p>
+<div class="htmlHigh" style="font-size:20px;padding:10px;margin-bottom:10px;">
+&lt;tagname&gt;Content goes here...&lt;/tagname&gt;
+</div>
+
+<p>The HTML <strong>element</strong> is everything from the start tag to the end tag:</p>
+<div class="htmlHigh" style="font-size:20px;padding:10px;margin-bottom:10px;">
+&lt;p&gt;My first paragraph.&lt;/p&gt;
+</div>
+
+<table class="w3-table-all notranslate">
+<tr>
+<th>Start tag</th>
+<th>Element content</th>
+<th>End tag</th>
+</tr>
+<tr>
+<td>&lt;h1&gt;</td>
+<td>My First Heading</td>
+<td>&lt;/h1&gt;</td>
+</tr>
+<tr>
+<td>&lt;p&gt;</td>
+<td>My first paragraph.</td>
+<td>&lt;/p&gt;</td>
+</tr>
+<tr>
+<td>&lt;br&gt;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+
+<div class="w3-panel w3-note">
+<p>HTML elements with no content are called empty elements. Empty elements do not have an end tag, such as the &lt;br&gt; 
+  element (which indicates a line break).</p>
+</div>
+<hr>
+
+<h2>Nested HTML Elements</h2>
+<p>HTML elements can be nested (elements can contain elements).</p>
+<p>All HTML documents consist of nested HTML elements.</p>
+<p>This example contains four HTML elements:</p>
 <div class="w3-example">
 <h3>Example</h3>
 <div class="w3-code notranslate htmlHigh">
 &lt;!DOCTYPE html&gt;<br>
-&lt;html&gt;<br>&lt;head&gt;<br>&lt;title&gt;Page Title&lt;/title&gt;<br>
-&lt;/head&gt;<br>&lt;body&gt;<br><br>&lt;h1&gt;This is a Heading&lt;/h1&gt;<br>&lt;p&gt;This is a paragraph.&lt;/p&gt;<br><br>
+&lt;html&gt;<br>&lt;body&gt;<br><br>
+ &lt;h1&gt;My First Heading&lt;/h1&gt;<br>&lt;p&gt;My first paragraph.&lt;/p&gt;<br><br>
 &lt;/body&gt;<br>&lt;/html&gt;
 </div>
-<a class="w3-btn w3-margin-bottom" href="tryitfb35.html?filename=tryhtml_default" target="_blank">Try it Yourself &raquo;</a>
+<a class="w3-btn w3-margin-bottom" href="tryit3b68.html?filename=tryhtml_elements" target="_blank">Try it Yourself &raquo;</a>
 </div>
-<p><strong>Click on the &quot;Try it Yourself&quot; button to see how it works.</strong></p>
-<p><a href="html_intro.html">Start learning HTML now!</a></p><hr>
+<h3>Example Explained</h3>
+<p>The <code class="w3-codespan">&lt;html&gt;</code> element defines the <strong>whole document</strong>.</p>
+<p>It has a <strong>start</strong> tag &lt;html&gt; and an <strong>end</strong> tag &lt;/html&gt;.</p>
+<p>Inside the &lt;html&gt; element is the <code class="w3-codespan">&lt;body&gt;</code> element.</p>
+<div class="w3-example">
+<div class="w3-code notranslate htmlHigh">
+&lt;html&gt;<br>
+&lt;body&gt;<br><br>
+ &lt;h1&gt;My First Heading&lt;/h1&gt;<br>&lt;p&gt;My first paragraph.&lt;/p&gt;<br><br>
+&lt;/body&gt;<br>
+&lt;/html&gt;
+</div></div>
 
-<h2>HTML Examples</h2>
-<p>At the end of this HTML tutorial, you will find more than 200 examples.</p>
-<p>With our online editor, you can edit and test each example yourself.</p>
-<p><a href="html_examples.html">Go to HTML Examples!</a></p>
+<p>The <code class="w3-codespan">&lt;body&gt;</code> element defines the <strong>document body</strong>.</p>
+<p>It has a <strong>start</strong> tag &lt;body&gt; and an <strong>end</strong> tag &lt;/body&gt;.</p>
+<p>Inside the &lt;body&gt; element is two other HTML elements:
+<code class="w3-codespan">&lt;h1&gt;</code> and <code class="w3-codespan">
+&lt;p&gt;</code>.</p>
+<div class="w3-example">
+<div class="w3-code notranslate htmlHigh">
+&lt;body&gt;<br><br>
+ &lt;h1&gt;My First Heading&lt;/h1&gt;<br>&lt;p&gt;My first paragraph.&lt;/p&gt;<br><br>
+&lt;/body&gt;
+</div></div>
+
+<p>The <code class="w3-codespan">&lt;h1&gt;</code> element defines a <strong>heading</strong>.</p>
+<p>It has a <strong>start</strong> tag &lt;h1&gt; and an 
+<strong>end</strong> tag &lt;/h1&gt;.</p>
+<p>The element <strong>content</strong> is: My First Heading.</p>
+
+<div class="w3-example">
+<div class="w3-code notranslate htmlHigh">
+&lt;h1&gt;My First Heading&lt;/h1&gt;
+</div>
+</div>
+
+<p>The <code class="w3-codespan">&lt;p&gt;</code> element defines a <strong>paragraph</strong>.</p>
+<p>It has a <strong>start</strong> tag &lt;p&gt; and an 
+<strong>end</strong> tag &lt;/p&gt;.</p>
+<p>The element <strong>content</strong> is: My first paragraph.</p>
+
+<div class="w3-example">
+<div class="w3-code notranslate htmlHigh">
+&lt;p&gt;My first paragraph.&lt;/p&gt;
+</div>
+</div>
 <hr>
 <div id="midcontentadcontainer" style="overflow:auto;text-align:center">
 <!-- MidContent -->
@@ -849,57 +925,52 @@ view the result.</p>
     
 </div>
 <hr>
-<h2>HTML Exercises</h2>
-<p>This HTML tutorial also contains nearly 100 HTML exercises.</p>
-<form autocomplete="off" id="w3-exerciseform" action="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_attributes1" method="post" target="_blank">
-<h2>Test Yourself With Exercises</h2>
-<div class="exercisewindow">
-<h2>Exercise:</h2>
-<p>Add a "tooltip" to the paragraph below with the text "About W3Schools".</p>
-<div class="exerciseprecontainer">
-&lt;p <input name="ex1" maxlength="5" style="width: 54px;">="About W3Schools"&gt;W3Schools is a web developer's site.&lt;/p&gt;
+<h2>Do Not Forget the End Tag</h2>
+<p>Some HTML elements will display correctly, even if you forget the end tag:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;html&gt;<br>&lt;body&gt;<br><br>
+ &lt;p&gt;This is a paragraph<br>
+ &lt;p&gt;This is a paragraph<br>
+<br>&lt;/body&gt;<br>&lt;/html&gt;</div>
+<a target="_blank" href="tryit0fab.html?filename=tryhtml_no_endtag" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
 </div>
-<br>
-<button type="submit" class="w3-btn w3-margin-bottom">Submit Answer &raquo;</button>
-<p><a target="_blank" href="exercise4b52.html?filename=exercise_html_attributes1">Start the Exercise</a></p>
-</div>
-</form>
-<hr>
-<h2>HTML Quiz Test</h2>
-<p>Test your HTML skills with our HTML Quiz!</p>
-<p><a href="html_quiz.html" class="w3-button w3-blue">Start HTML Quiz!</a></p>
+
+<p>The example above works in all browsers, because the closing tag is considered optional. </p>
+<p><strong>Never rely on this. It might produce unexpected results and/or errors if you forget the end tag.</strong></p>
 <hr>
 
-<h2>HTML References</h2>
-<p>At W3Schools you will find complete references about tags,  
-attributes, events, color names, entities, character-sets, URL encoding, 
-language codes, HTTP messages, and more.</p>
-<p><a href="../tags/default.html">HTML Tag Reference</a></p>
+<h2>Empty HTML Elements</h2>
+<p>HTML elements with no content are called empty elements.</p>
+<p><code class="w3-codespan">&lt;br&gt;</code> is an empty element without a closing tag (the <code class="w3-codespan">&lt;br&gt;</code> 
+tag defines a line break):</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+  &lt;p&gt;This is a &lt;br&gt; paragraph with a line break.&lt;/p&gt;</div>
+<a target="_blank" href="tryit070a.html?filename=tryhtml_elements_br" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
+</div>
+<p>Empty elements can be &quot;closed&quot; in the opening tag like this: &lt;br /&gt;.</p>
+<p>HTML5 does not require empty elements to be closed. But if you want stricter 
+validation, or if you need to make your document readable by XML parsers, you 
+must close all HTML elements properly.</p>
+
 <hr>
 
-<h2>HTML Exam - Get Your Diploma!</h2>
-<div class="w3-row">
-<div class="w3-third w3-container w3-padding-24"><a href="../cert/default.html"><img src="../images/w3certified_logo_250.png" style="max-width:100%;" alt="W3Schools Certification" /></a> </div>
-<div class="w3-twothird w3-container"><h2>W3Schools' Online Certification</h2>
-<p>The perfect solution for professionals who need to balance work, family, and career building.</p>
-<p>More than 25 000 certificates already issued!</p>
+<h2>HTML Is Not Case Sensitive</h2>
+<p>HTML tags are not case sensitive: &lt;P&gt; means the same as &lt;p&gt;.</p>
+<p>The HTML5 standard does not require lowercase tags, but W3C
+<b>recommends</b> lowercase in HTML, and <b>demands</b> lowercase for stricter document types like XHTML.</p>
+
+<div class="w3-panel w3-note">
+  <p>At W3Schools we always use lowercase tags.</p>
 </div>
-</div>
-<p><a class="w3-btn" href="../cert/default.html">Get Your Certificate &raquo;</a></p>
-<p style="clear:both;">The <a href="../cert/default.html">HTML Certificate</a> documents your knowledge of HTML.</p>
-<p>The <a href="../cert/default.html">CSS Certificate</a> documents your knowledge of advanced CSS.</p>
-<p>The <a href="../cert/default.html">JavaScript Certificate</a> documents your knowledge of JavaScript and HTML DOM.</p>
-<p>The <a href="../cert/default.html">Python Certificate</a> documents your knowledge of Python.</p>
-<p>The <a href="../cert/default.html">jQuery Certificate</a> documents your knowledge of jQuery.</p>
-<p>The <a href="../cert/default.html">SQL Certificate</a> documents your knowledge of SQL.</p>
-<p>The <a href="../cert/default.html">PHP Certificate</a> documents your knowledge of PHP and MySQL.</p>
-<p>The <a href="../cert/default.html">XML Certificate</a> documents your knowledge of XML, XML DOM and XSLT.</p>
-<p>The <a href="../cert/default.html">Bootstrap Certificate</a> documents your knowledge of the Bootstrap framework.</p>
 
 <br>
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="../default.html">&#10094; Home</a>
-<a class="w3-right w3-btn" href="html_intro.html">Next &#10095;</a>
+<a class="w3-left w3-btn" href="html_basic.html">&#10094; Previous</a>
+<a class="w3-right w3-btn" href="html_attributes.html">Next &#10095;</a>
 </div>
 </div>
 <div class="w3-col l2 m12" id="right">
@@ -1193,4 +1264,6 @@ While using this site, you agree to have read and accepted our <a href="../about
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>  
 <![endif]-->
 </body>
+
+<!-- Mirrored from www.w3schools.com/html/html_elements.asp by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Sep 2019 08:38:14 GMT -->
 </html>

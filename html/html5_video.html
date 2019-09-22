@@ -1,7 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en-US">
+
+<!-- Mirrored from www.w3schools.com/html/html5_video.asp by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Sep 2019 08:38:31 GMT -->
 <head>
-<title>HTML Tutorial</title>
+<title>HTML5 Video</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="Keywords" content="HTML,CSS,JavaScript,SQL,PHP,jQuery,XML,DOM,Bootstrap,Python,Java,Web development,W3C,tutorials,programming,training,learning,quiz,primer,lessons,references,examples,exercises,source code,colors,demos,tips">
@@ -479,6 +482,7 @@ function w3_getStyleValue(elmnt,style) {
   }
 }
 </script>
+<link rel="stylesheet" type="text/css" href="../browserref.css">
 </head>
 <body>
 <div class='w3-container top'>
@@ -806,40 +810,70 @@ function w3_getStyleValue(elmnt,style) {
         <!-- adspace leaderboard -->
        
       </div>
-<h1>HTML5<span class="color_h1"> Tutorial</span></h1>
+
+<h1>HTML5 <span class="color_h1">Video</span></h1>
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="../default.html">&#10094; Home</a>
-<a class="w3-right w3-btn" href="html_intro.html">Next &#10095;</a>
+<a class="w3-left w3-btn" href="html_media.html">&#10094; Previous</a>
+<a class="w3-right w3-btn" href="html5_audio.html">Next &#10095;</a>
 </div>
-
-<div class="w3-panel w3-info intro">
-<p>HTML is the standard markup language for Web pages.</p>
-  <p>With HTML you can create your own Website.</p>
-<p>HTML is easy to learn - You will enjoy it!</p>
-</div>
-
 <hr>
-<h2>Examples in Every Chapter</h2>
-<p>This HTML tutorial contains hundreds of HTML examples.</p>
-<p>With our online HTML editor, you can edit the HTML, and click on a button to 
-view the result.</p>
+
+<div class="w3-example">
+<h3>HTML Video Example.  Courtesy of <a href="https://www.bigbuckbunny.org/" target="_blank">Big Buck Bunny</a>.</h3>
+<div class="w3-padding w3-white notranslate">
+  <div style="text-align:center"> 
+  <video id="video1" style="width:600px;max-width:100%;" controls>
+    <source src="mov_bbb.mp4" type="video/mp4">
+    <source src="mov_bbb.ogg" type="video/ogg">
+    Your browser does not support HTML5 video.
+  </video>
+</div> 
+</div>
+<a target="_blank" href="tryit420a.html?filename=tryhtml5_video" class="w3-btn w3-margin-bottom w3-margin-top">Try it Yourself &raquo;</a>
+</div>
+<hr>
+
+<h2>Playing Videos in HTML</h2>
+<p>Before HTML5, a video could only be played in a browser with a plug-in (like flash).</p>
+<p>The HTML5 <code class="w3-codespan">&lt;video&gt;</code> element specifies a standard way to embed a video in a web page.</p>
+<hr>
+
+<h2>Browser Support</h2>
+<p>The numbers in the table specify the first browser version that fully supports the 
+<code class="w3-codespan">&lt;video&gt;</code> element.</p>
+<table class="browserref notranslate">
+  <tr>
+    <th style="width:20%;font-size:16px;text-align:left;">Element</th>
+    <th style="width:16%;" class="bsChrome" title="Chrome"></th>
+    <th style="width:16%;" class="bsEdge" title="Internet Explorer / Edge"></th>
+    <th style="width:16%;" class="bsFirefox" title="Firefox"></th>
+    <th style="width:16%;" class="bsSafari" title="Safari"></th>
+    <th style="width:16%;" class="bsOpera" title="Opera"></th>                
+  </tr>
+  <tr>
+    <td style="text-align:left;">&lt;video&gt;</td>
+    <td>4.0</td>
+    <td>9.0</td>
+    <td>3.5</td>
+    <td>4.0</td>
+    <td>10.5</td>
+  </tr>
+  </table>
+<hr>
+
+<h2>The HTML &lt;video&gt; Element</h2>
+<p>To show a video in HTML, use the <code class="w3-codespan">&lt;video&gt;</code> element:</p>
 <div class="w3-example">
 <h3>Example</h3>
 <div class="w3-code notranslate htmlHigh">
-&lt;!DOCTYPE html&gt;<br>
-&lt;html&gt;<br>&lt;head&gt;<br>&lt;title&gt;Page Title&lt;/title&gt;<br>
-&lt;/head&gt;<br>&lt;body&gt;<br><br>&lt;h1&gt;This is a Heading&lt;/h1&gt;<br>&lt;p&gt;This is a paragraph.&lt;/p&gt;<br><br>
-&lt;/body&gt;<br>&lt;/html&gt;
+&lt;video width=&quot;320&quot; height=&quot;240&quot; controls&gt;<br>
+&nbsp; &lt;source src=&quot;movie.mp4&quot; type=&quot;video/mp4&quot;&gt;<br>
+&nbsp; &lt;source src=&quot;movie.ogg&quot; type=&quot;video/ogg&quot;&gt;<br>
+Your browser does not support the video tag.<br>
+&lt;/video&gt;
 </div>
-<a class="w3-btn w3-margin-bottom" href="tryitfb35.html?filename=tryhtml_default" target="_blank">Try it Yourself &raquo;</a>
+<a target="_blank" href="tryit8456.html?filename=tryhtml5_video_all" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
 </div>
-<p><strong>Click on the &quot;Try it Yourself&quot; button to see how it works.</strong></p>
-<p><a href="html_intro.html">Start learning HTML now!</a></p><hr>
-
-<h2>HTML Examples</h2>
-<p>At the end of this HTML tutorial, you will find more than 200 examples.</p>
-<p>With our online editor, you can edit and test each example yourself.</p>
-<p><a href="html_examples.html">Go to HTML Examples!</a></p>
 <hr>
 <div id="midcontentadcontainer" style="overflow:auto;text-align:center">
 <!-- MidContent -->
@@ -849,57 +883,170 @@ view the result.</p>
     
 </div>
 <hr>
-<h2>HTML Exercises</h2>
-<p>This HTML tutorial also contains nearly 100 HTML exercises.</p>
-<form autocomplete="off" id="w3-exerciseform" action="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_attributes1" method="post" target="_blank">
-<h2>Test Yourself With Exercises</h2>
-<div class="exercisewindow">
-<h2>Exercise:</h2>
-<p>Add a "tooltip" to the paragraph below with the text "About W3Schools".</p>
-<div class="exerciseprecontainer">
-&lt;p <input name="ex1" maxlength="5" style="width: 54px;">="About W3Schools"&gt;W3Schools is a web developer's site.&lt;/p&gt;
-</div>
-<br>
-<button type="submit" class="w3-btn w3-margin-bottom">Submit Answer &raquo;</button>
-<p><a target="_blank" href="exercise4b52.html?filename=exercise_html_attributes1">Start the Exercise</a></p>
-</div>
-</form>
-<hr>
-<h2>HTML Quiz Test</h2>
-<p>Test your HTML skills with our HTML Quiz!</p>
-<p><a href="html_quiz.html" class="w3-button w3-blue">Start HTML Quiz!</a></p>
+<h2>How it Works</h2>
+<p>The <code class="w3-codespan">controls</code> attribute adds video controls, like play, pause, and volume.</p>
+<p>It is a good idea to always include <code class="w3-codespan">width</code> and <code class="w3-codespan">height</code> attributes. If height and width are not set, the page 
+might flicker while the video loads.</p>
+<p>The <code class="w3-codespan">&lt;source&gt;</code> element allows you to specify alternative video 
+files which the browser may choose from. The browser will use the first recognized format.</p>
+<p>The text between the <code class="w3-codespan">&lt;video&gt;</code> and <code class="w3-codespan">&lt;/video&gt;</code> tags will only be displayed 
+in browsers that do not 
+support the <code class="w3-codespan">&lt;video&gt;</code> element.</p>
 <hr>
 
-<h2>HTML References</h2>
-<p>At W3Schools you will find complete references about tags,  
-attributes, events, color names, entities, character-sets, URL encoding, 
-language codes, HTTP messages, and more.</p>
-<p><a href="../tags/default.html">HTML Tag Reference</a></p>
+<h2>HTML &lt;video&gt; Autoplay</h2>
+<p>To start a video automatically use the <code class="w3-codespan">autoplay</code> attribute:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;video width=&quot;320&quot; height=&quot;240&quot; autoplay&gt;<br>
+&nbsp; &lt;source src=&quot;movie.mp4&quot; type=&quot;video/mp4&quot;&gt;<br>
+&nbsp; &lt;source src=&quot;movie.ogg&quot; type=&quot;video/ogg&quot;&gt;<br>
+Your browser does not support the video tag.<br>
+&lt;/video&gt;
+</div>
+<a target="_blank" href="tryit7842.html?filename=tryhtml5_video_autoplay" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
+</div>
+
+<div class="w3-panel w3-note">
+<p>The autoplay attribute does not work in mobile devices like iPad and iPhone.</p>
+</div>
 <hr>
 
-<h2>HTML Exam - Get Your Diploma!</h2>
-<div class="w3-row">
-<div class="w3-third w3-container w3-padding-24"><a href="../cert/default.html"><img src="../images/w3certified_logo_250.png" style="max-width:100%;" alt="W3Schools Certification" /></a> </div>
-<div class="w3-twothird w3-container"><h2>W3Schools' Online Certification</h2>
-<p>The perfect solution for professionals who need to balance work, family, and career building.</p>
-<p>More than 25 000 certificates already issued!</p>
+<h2>HTML Video - Browser Support</h2>
+<p>In HTML5, there are 3 supported video formats: MP4, WebM, and Ogg.</p>
+<p>The browser support for the different formats is:</p>
+<table class="w3-table-all notranslate">
+<tr>
+<th style="width:25%">Browser</th>
+<th style="width:25%">MP4</th>
+<th style="width:25%">WebM</th>
+<th style="width:25%">Ogg</th>
+</tr>
+<tr>
+<td>Internet Explorer</td>
+<td>YES</td>
+<td>NO</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>Chrome</td>
+<td>YES</td>
+<td>YES</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>Firefox</td>
+<td>YES</td>
+<td>YES</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>Safari</td>
+<td>YES</td>
+<td>NO</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>Opera</td>
+<td>YES (from Opera 25)</td>
+<td>YES</td>
+<td>YES</td>
+</tr>
+</table>
+<hr>
+
+<h2>HTML Video - Media Types</h2>
+<table class="w3-table-all notranslate" id="table1">
+<tr>
+<th style="width:50%">File Format</th>
+<th style="width:50%">Media Type</th>
+</tr>
+<tr>
+<td>MP4</td>
+<td>video/mp4</td>
+</tr>
+<tr>
+<td>WebM</td>
+<td>video/webm</td>
+</tr>
+<tr>
+<td>Ogg</td>
+<td>video/ogg</td>
+</tr>
+</table>
+<hr>
+
+<h2>HTML Video - Methods, Properties, and Events</h2>
+<p>HTML5 defines DOM methods, properties, and events for the <code class="w3-codespan">&lt;video&gt;</code> element.</p>
+<p>This allows you to load, play, and pause videos, as well as setting duration and volume.</p>
+<p>There are also DOM events that can notify you when a video begins to play, is paused, etc.</p>
+<div class="w3-example">
+<h3>Example: Using JavaScript</h3>
+  <br>
+  <div style="text-align:center;" class="w3-white w3-padding-16"> 
+  <button onclick="playPause()">Play/Pause</button> 
+  <button onclick="makeBig()">Big</button>
+  <button onclick="makeSmall()">Small</button>
+  <button onclick="makeNormal()">Normal</button>
+  <br><br> 
+  <video id="video2" width="480" style="max-width:100%">
+    <source src="mov_bbb.mp4" type="video/mp4">
+    <source src="mov_bbb.ogg" type="video/ogg">
+    Your browser does not support HTML5 video.
+  </video>
+<script> 
+var myVideo = document.getElementById("video2"); 
+function playPause() { 
+    if (myVideo.paused) 
+        myVideo.play(); 
+    else 
+        myVideo.pause(); 
+} 
+
+function makeBig() {
+    myVideo.width = 600;
+} 
+
+function makeSmall() { 
+    myVideo.width = 320; 
+} 
+
+function makeNormal() { 
+    myVideo.width = 480;
+} 
+</script> 
+<p>Video courtesy of <a href="https://www.bigbuckbunny.org/" target="_blank">Big Buck Bunny</a>.</p>
 </div>
+<a target="_blank" href="tryited54.html?filename=tryhtml5_video_js_prop" class="w3-btn w3-margin-bottom w3-margin-top">Try it Yourself &raquo;</a>
 </div>
-<p><a class="w3-btn" href="../cert/default.html">Get Your Certificate &raquo;</a></p>
-<p style="clear:both;">The <a href="../cert/default.html">HTML Certificate</a> documents your knowledge of HTML.</p>
-<p>The <a href="../cert/default.html">CSS Certificate</a> documents your knowledge of advanced CSS.</p>
-<p>The <a href="../cert/default.html">JavaScript Certificate</a> documents your knowledge of JavaScript and HTML DOM.</p>
-<p>The <a href="../cert/default.html">Python Certificate</a> documents your knowledge of Python.</p>
-<p>The <a href="../cert/default.html">jQuery Certificate</a> documents your knowledge of jQuery.</p>
-<p>The <a href="../cert/default.html">SQL Certificate</a> documents your knowledge of SQL.</p>
-<p>The <a href="../cert/default.html">PHP Certificate</a> documents your knowledge of PHP and MySQL.</p>
-<p>The <a href="../cert/default.html">XML Certificate</a> documents your knowledge of XML, XML DOM and XSLT.</p>
-<p>The <a href="../cert/default.html">Bootstrap Certificate</a> documents your knowledge of the Bootstrap framework.</p>
+<p>For a full DOM reference, go to our <a href="../tags/ref_av_dom.html">HTML5 Audio/Video DOM Reference</a>.</p>
+<hr>
+
+<h2>HTML5 Video Tags</h2>
+<table class="w3-table-all notranslate">
+<tr>
+<th style="width:20%">Tag</th>
+<th>Description</th>
+</tr>
+<tr>
+<td><a href="../tags/tag_video.html">&lt;video&gt;</a></td>
+<td>Defines a video or movie</td>
+</tr>
+<tr>
+<td><a href="../tags/tag_source.html">&lt;source&gt;</a></td>
+<td>Defines multiple media resources for media elements, such as &lt;video&gt; and &lt;audio&gt;</td>
+</tr>
+<tr>
+<td><a href="../tags/tag_track.html">&lt;track&gt;</a></td>
+<td>Defines text tracks in media players</td>
+</tr>
+</table>
 
 <br>
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="../default.html">&#10094; Home</a>
-<a class="w3-right w3-btn" href="html_intro.html">Next &#10095;</a>
+<a class="w3-left w3-btn" href="html_media.html">&#10094; Previous</a>
+<a class="w3-right w3-btn" href="html5_audio.html">Next &#10095;</a>
 </div>
 </div>
 <div class="w3-col l2 m12" id="right">
@@ -1193,4 +1340,6 @@ While using this site, you agree to have read and accepted our <a href="../about
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>  
 <![endif]-->
 </body>
+
+<!-- Mirrored from www.w3schools.com/html/html5_video.asp by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Sep 2019 08:38:33 GMT -->
 </html>

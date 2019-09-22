@@ -1,7 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en-US">
+
+<!-- Mirrored from www.w3schools.com/html/html_intro.asp by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Sep 2019 08:38:11 GMT -->
 <head>
-<title>HTML Tutorial</title>
+<title>Introduction to HTML</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="Keywords" content="HTML,CSS,JavaScript,SQL,PHP,jQuery,XML,DOM,Bootstrap,Python,Java,Web development,W3C,tutorials,programming,training,learning,quiz,primer,lessons,references,examples,exercises,source code,colors,demos,tips">
@@ -806,40 +809,67 @@ function w3_getStyleValue(elmnt,style) {
         <!-- adspace leaderboard -->
        
       </div>
-<h1>HTML5<span class="color_h1"> Tutorial</span></h1>
+<h1>HTML <span class="color_h1">Introduction</span></h1>
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="../default.html">&#10094; Home</a>
-<a class="w3-right w3-btn" href="html_intro.html">Next &#10095;</a>
+<a class="w3-left w3-btn" href="default.html">&#10094; Previous</a>
+<a class="w3-right w3-btn" href="html_editors.html">Next &#10095;</a>
 </div>
-
-<div class="w3-panel w3-info intro">
-<p>HTML is the standard markup language for Web pages.</p>
-  <p>With HTML you can create your own Website.</p>
-<p>HTML is easy to learn - You will enjoy it!</p>
-</div>
-
 <hr>
-<h2>Examples in Every Chapter</h2>
-<p>This HTML tutorial contains hundreds of HTML examples.</p>
-<p>With our online HTML editor, you can edit the HTML, and click on a button to 
-view the result.</p>
+
+<h2>What is HTML?</h2>
+<p>HTML is the standard markup language for creating Web pages.</p>
+<ul>
+<li>HTML stands for Hyper Text Markup Language</li>
+  <li>HTML describes the structure of a Web page</li>
+  <li>HTML consists of a series of elements</li>
+  <li>HTML elements tell the browser how to display the content</li>
+  <li>HTML elements are represented by tags</li>
+  <li>HTML tags label pieces of content such as &quot;heading&quot;, &quot;paragraph&quot;, &quot;table&quot;, and so on</li>
+  <li>Browsers do not display the HTML tags, but use them to render the content of the page</li>
+</ul>
+<hr>
+
+<h2>A Simple HTML Document</h2>
 <div class="w3-example">
 <h3>Example</h3>
 <div class="w3-code notranslate htmlHigh">
-&lt;!DOCTYPE html&gt;<br>
+ &lt;!DOCTYPE html&gt;<br>
 &lt;html&gt;<br>&lt;head&gt;<br>&lt;title&gt;Page Title&lt;/title&gt;<br>
-&lt;/head&gt;<br>&lt;body&gt;<br><br>&lt;h1&gt;This is a Heading&lt;/h1&gt;<br>&lt;p&gt;This is a paragraph.&lt;/p&gt;<br><br>
-&lt;/body&gt;<br>&lt;/html&gt;
+ &lt;/head&gt;<br>
+&lt;body&gt;<br><br>&lt;h1&gt;My First Heading&lt;/h1&gt;<br>&lt;p&gt;My first paragraph.&lt;/p&gt;<br><br>
+    &lt;/body&gt;<br>&lt;/html&gt;
 </div>
-<a class="w3-btn w3-margin-bottom" href="tryitfb35.html?filename=tryhtml_default" target="_blank">Try it Yourself &raquo;</a>
+<a target="_blank" href="tryit6a1d.html?filename=tryhtml_intro" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
 </div>
-<p><strong>Click on the &quot;Try it Yourself&quot; button to see how it works.</strong></p>
-<p><a href="html_intro.html">Start learning HTML now!</a></p><hr>
+<h3>Example Explained</h3>
+<ul>
+<li>The <code class="w3-codespan">&lt;!DOCTYPE html&gt;</code> declaration defines this document to be HTML5</li>
+<li>The <code class="w3-codespan">&lt;html&gt;</code> element is the root element of an HTML 
+page</li>
+ <li>The <code class="w3-codespan">&lt;head&gt;</code> element contains meta information about the document</li>
+ <li>The <code class="w3-codespan">&lt;title&gt;</code> element specifies a title for the document</li>
+ <li>The <code class="w3-codespan">&lt;body&gt;</code> element contains the visible page content</li>
+ <li>The <code class="w3-codespan">&lt;h1&gt;</code> element defines a large heading</li>
+ <li>The <code class="w3-codespan">&lt;p&gt;</code> element defines a paragraph</li>
+</ul>
+<hr>
 
-<h2>HTML Examples</h2>
-<p>At the end of this HTML tutorial, you will find more than 200 examples.</p>
-<p>With our online editor, you can edit and test each example yourself.</p>
-<p><a href="html_examples.html">Go to HTML Examples!</a></p>
+<h2>HTML Tags</h2>
+<p>HTML tags are element names surrounded by angle brackets:</p>
+
+<div class="w3-panel w3-light-grey w3-border">
+<p class="w3-xlarge">&lt;tagname&gt;content goes here...&lt;/tagname&gt;</p>
+</div>
+
+<ul>
+<li>HTML tags normally come <b>in pairs</b> like <code class="w3-codespan">&lt;p&gt;</code> and <code class="w3-codespan">&lt;/p&gt;</code></li>
+<li>The first tag in a pair is the <b> start tag,</b> the second tag is the <b> end tag</b></li>
+<li>The end tag is written like the start tag, but with a <strong>forward slash</strong> 
+inserted before the tag name </li>
+</ul>
+<div class="w3-panel w3-note">
+  <p><strong>Tip:</strong> The start tag is also called the <b>opening tag</b>, and the end tag the <b>closing tag</b>.</p>
+</div>
 <hr>
 <div id="midcontentadcontainer" style="overflow:auto;text-align:center">
 <!-- MidContent -->
@@ -849,57 +879,83 @@ view the result.</p>
     
 </div>
 <hr>
-<h2>HTML Exercises</h2>
-<p>This HTML tutorial also contains nearly 100 HTML exercises.</p>
-<form autocomplete="off" id="w3-exerciseform" action="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_attributes1" method="post" target="_blank">
-<h2>Test Yourself With Exercises</h2>
-<div class="exercisewindow">
-<h2>Exercise:</h2>
-<p>Add a "tooltip" to the paragraph below with the text "About W3Schools".</p>
-<div class="exerciseprecontainer">
-&lt;p <input name="ex1" maxlength="5" style="width: 54px;">="About W3Schools"&gt;W3Schools is a web developer's site.&lt;/p&gt;
-</div>
-<br>
-<button type="submit" class="w3-btn w3-margin-bottom">Submit Answer &raquo;</button>
-<p><a target="_blank" href="exercise4b52.html?filename=exercise_html_attributes1">Start the Exercise</a></p>
-</div>
-</form>
-<hr>
-<h2>HTML Quiz Test</h2>
-<p>Test your HTML skills with our HTML Quiz!</p>
-<p><a href="html_quiz.html" class="w3-button w3-blue">Start HTML Quiz!</a></p>
+<h2>Web Browsers</h2>
+<p>The purpose of a web browser (Chrome, Edge, Firefox, Safari) is to read HTML documents and display them.</p>
+<p>The browser does not display the HTML tags, but uses them to determine how to display the document:</p>
+<p><img alt="View in Browser" src="img_chrome.png" class="w3-image"></p>
 <hr>
 
-<h2>HTML References</h2>
-<p>At W3Schools you will find complete references about tags,  
-attributes, events, color names, entities, character-sets, URL encoding, 
-language codes, HTTP messages, and more.</p>
-<p><a href="../tags/default.html">HTML Tag Reference</a></p>
+<h2>HTML Page Structure</h2>
+<p>Below is a visualization of an HTML page structure:</p>
+<div style="width:99%;border:1px solid grey;padding:3px;margin:0;background-color:#ddd">&lt;html&gt;
+<div style="width:90%;border:1px solid grey;padding:3px;margin:20px">&lt;head&gt;
+<div style="width:90%;border:1px solid grey;padding:5px;margin:20px">&lt;title&gt;Page title&lt;/title&gt;
+</div>
+&lt;/head&gt;
+</div>
+<div style="width:90%;border:1px solid grey;padding:3px;margin:20px;background-color:#ddd">&lt;body&gt;
+<div style="width:90%;border:1px solid grey;padding:3px;margin:20px;background-color:#fff">
+<div style="width:90%;border:1px solid grey;padding:5px;margin:20px">&lt;h1&gt;This is a heading&lt;/h1&gt;</div>
+<div style="width:90%;border:1px solid grey;padding:5px;margin:20px">&lt;p&gt;This is a paragraph.&lt;/p&gt;</div>
+<div style="width:90%;border:1px solid grey;padding:5px;margin:20px">&lt;p&gt;This is another paragraph.&lt;/p&gt;</div>
+</div>
+&lt;/body&gt;
+</div>
+&lt;/html&gt;
+</div>
+<div class="w3-panel w3-note">
+<p><strong>Note:</strong> Only the content inside the &lt;body&gt; section (the white area above) is displayed in a browser.</p>
+</div>
 <hr>
 
-<h2>HTML Exam - Get Your Diploma!</h2>
-<div class="w3-row">
-<div class="w3-third w3-container w3-padding-24"><a href="../cert/default.html"><img src="../images/w3certified_logo_250.png" style="max-width:100%;" alt="W3Schools Certification" /></a> </div>
-<div class="w3-twothird w3-container"><h2>W3Schools' Online Certification</h2>
-<p>The perfect solution for professionals who need to balance work, family, and career building.</p>
-<p>More than 25 000 certificates already issued!</p>
+<h2>The &lt;!DOCTYPE&gt; Declaration</h2>
+<p>The <code class="w3-codespan">&lt;!DOCTYPE&gt;</code> declaration represents the document type, and helps browsers to display web pages correctly.</p>
+<p>It must only appear once, at the top of the page (before any HTML tags). </p>
+<p>The <code class="w3-codespan">&lt;!DOCTYPE&gt;</code> declaration is not case sensitive.</p>
+<p>The <code class="w3-codespan">&lt;!DOCTYPE&gt;</code> declaration for HTML5 is:</p>
+<div class="w3-example">
+ <div class="w3-code notranslate htmlHigh">
+&lt;!DOCTYPE html&gt;</div>
 </div>
-</div>
-<p><a class="w3-btn" href="../cert/default.html">Get Your Certificate &raquo;</a></p>
-<p style="clear:both;">The <a href="../cert/default.html">HTML Certificate</a> documents your knowledge of HTML.</p>
-<p>The <a href="../cert/default.html">CSS Certificate</a> documents your knowledge of advanced CSS.</p>
-<p>The <a href="../cert/default.html">JavaScript Certificate</a> documents your knowledge of JavaScript and HTML DOM.</p>
-<p>The <a href="../cert/default.html">Python Certificate</a> documents your knowledge of Python.</p>
-<p>The <a href="../cert/default.html">jQuery Certificate</a> documents your knowledge of jQuery.</p>
-<p>The <a href="../cert/default.html">SQL Certificate</a> documents your knowledge of SQL.</p>
-<p>The <a href="../cert/default.html">PHP Certificate</a> documents your knowledge of PHP and MySQL.</p>
-<p>The <a href="../cert/default.html">XML Certificate</a> documents your knowledge of XML, XML DOM and XSLT.</p>
-<p>The <a href="../cert/default.html">Bootstrap Certificate</a> documents your knowledge of the Bootstrap framework.</p>
+<hr>
+
+<h2>HTML Versions</h2>
+<p>Since the early days of the web, there have been many versions of HTML:</p>
+<table class="w3-table-all notranslate">
+  <tr>
+    <th>Version</th>
+    <th>Year</th>
+  </tr>
+  <tr>
+    <td>HTML</td>
+    <td>1991</td>
+  </tr>
+  <tr>
+    <td>HTML 2.0</td>
+    <td>1995</td>
+  </tr>
+  <tr>
+    <td>HTML 3.2</td>
+    <td>1997</td>
+  </tr>
+  <tr>
+    <td>HTML 4.01</td>
+    <td>1999</td>
+  </tr>
+  <tr>
+    <td>XHTML</td>
+    <td>2000</td>
+  </tr>
+  <tr>
+    <td>HTML5</td>
+    <td>2014</td>
+  </tr>
+</table>
 
 <br>
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="../default.html">&#10094; Home</a>
-<a class="w3-right w3-btn" href="html_intro.html">Next &#10095;</a>
+<a class="w3-left w3-btn" href="default.html">&#10094; Previous</a>
+<a class="w3-right w3-btn" href="html_editors.html">Next &#10095;</a>
 </div>
 </div>
 <div class="w3-col l2 m12" id="right">
@@ -1193,4 +1249,6 @@ While using this site, you agree to have read and accepted our <a href="../about
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>  
 <![endif]-->
 </body>
+
+<!-- Mirrored from www.w3schools.com/html/html_intro.asp by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Sep 2019 08:38:12 GMT -->
 </html>

@@ -1,7 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en-US">
+
+<!-- Mirrored from www.w3schools.com/html/html_entities.asp by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Sep 2019 08:38:27 GMT -->
 <head>
-<title>HTML Tutorial</title>
+<title>HTML Entities</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="Keywords" content="HTML,CSS,JavaScript,SQL,PHP,jQuery,XML,DOM,Bootstrap,Python,Java,Web development,W3C,tutorials,programming,training,learning,quiz,primer,lessons,references,examples,exercises,source code,colors,demos,tips">
@@ -806,40 +809,56 @@ function w3_getStyleValue(elmnt,style) {
         <!-- adspace leaderboard -->
        
       </div>
-<h1>HTML5<span class="color_h1"> Tutorial</span></h1>
+<h1>HTML <span class="color_h1">Entities</span></h1>
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="../default.html">&#10094; Home</a>
-<a class="w3-right w3-btn" href="html_intro.html">Next &#10095;</a>
+<a class="w3-left w3-btn" href="html_computercode_elements.html">&#10094; Previous</a>
+<a class="w3-right w3-btn" href="html_symbols.html">Next &#10095;</a>
 </div>
-
-<div class="w3-panel w3-info intro">
-<p>HTML is the standard markup language for Web pages.</p>
-  <p>With HTML you can create your own Website.</p>
-<p>HTML is easy to learn - You will enjoy it!</p>
-</div>
-
 <hr>
-<h2>Examples in Every Chapter</h2>
-<p>This HTML tutorial contains hundreds of HTML examples.</p>
-<p>With our online HTML editor, you can edit the HTML, and click on a button to 
-view the result.</p>
-<div class="w3-example">
-<h3>Example</h3>
-<div class="w3-code notranslate htmlHigh">
-&lt;!DOCTYPE html&gt;<br>
-&lt;html&gt;<br>&lt;head&gt;<br>&lt;title&gt;Page Title&lt;/title&gt;<br>
-&lt;/head&gt;<br>&lt;body&gt;<br><br>&lt;h1&gt;This is a Heading&lt;/h1&gt;<br>&lt;p&gt;This is a paragraph.&lt;/p&gt;<br><br>
-&lt;/body&gt;<br>&lt;/html&gt;
-</div>
-<a class="w3-btn w3-margin-bottom" href="tryitfb35.html?filename=tryhtml_default" target="_blank">Try it Yourself &raquo;</a>
-</div>
-<p><strong>Click on the &quot;Try it Yourself&quot; button to see how it works.</strong></p>
-<p><a href="html_intro.html">Start learning HTML now!</a></p><hr>
+<p class="intro">Reserved characters in HTML must be replaced with character entities.</p>
+<p class="intro">Characters that are not present on your keyboard can also be replaced by entities.</p>
+<hr>
 
-<h2>HTML Examples</h2>
-<p>At the end of this HTML tutorial, you will find more than 200 examples.</p>
-<p>With our online editor, you can edit and test each example yourself.</p>
-<p><a href="html_examples.html">Go to HTML Examples!</a></p>
+<h2>HTML Entities</h2>
+<p>Some characters are reserved in HTML.</p>
+<p>If you use the less than (&lt;) or greater than (&gt;) signs in your text, the browser might mix them with tags.</p>
+<p>Character entities are used to display reserved characters in HTML.</p>
+<p>A character entity looks like this:</p>
+<div class="w3-example">
+<div class="w3-code notranslate htmlHigh">
+&amp;<i>entity_name</i>;
+<p>OR</p>
+&amp;#<i>entity_number</i>;
+</div></div>
+<p>To display a less than sign (&lt;) we must write: <b>&amp;lt;</b> or <b>&amp;#60;</b></p>
+<div class="w3-panel w3-note">
+<p><strong>Advantage of using an entity name:</strong> An entity name is easy to remember.<br>
+<strong>Disadvantage of using an entity name:</strong> Browsers may not support all entity names, but the support for numbers is good.</p>
+</div>
+<hr>
+
+<h2>Non-breaking Space</h2>
+<p>A common character entity used in HTML is the non-breaking space: <strong>&amp;nbsp;</strong></p>
+<p>A non-breaking space is a space that will not break into a new line.</p>
+<p>Two words 
+separated by a non-breaking space will stick together (not break into a new 
+line). This 
+is handy when breaking the words might be disruptive.</p>
+<p>Examples:</p>
+<ul>
+ <li>&sect; 10</li>
+ <li>10 km/h</li>
+ <li>10 PM</li>
+</ul>
+
+<p>Another common use of the non-breaking space is to prevent browsers from truncating spaces in HTML pages.</p>
+<p>If you write 10 spaces in your text, the browser will remove 9 of them. To add real spaces to your text, 
+you can use the <strong>&amp;nbsp;</strong> character entity.</p>
+
+<div class="w3-panel w3-note">
+<p>The non-breaking hyphen (<a href="../charsets/ref_utf_punctuation.html">&amp;#8209;</a>) lets you 
+use a hyphen character (&#8209;) that won't break.</p>
+</div>
 <hr>
 <div id="midcontentadcontainer" style="overflow:auto;text-align:center">
 <!-- MidContent -->
@@ -849,57 +868,163 @@ view the result.</p>
     
 </div>
 <hr>
-<h2>HTML Exercises</h2>
-<p>This HTML tutorial also contains nearly 100 HTML exercises.</p>
-<form autocomplete="off" id="w3-exerciseform" action="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_attributes1" method="post" target="_blank">
-<h2>Test Yourself With Exercises</h2>
-<div class="exercisewindow">
-<h2>Exercise:</h2>
-<p>Add a "tooltip" to the paragraph below with the text "About W3Schools".</p>
-<div class="exerciseprecontainer">
-&lt;p <input name="ex1" maxlength="5" style="width: 54px;">="About W3Schools"&gt;W3Schools is a web developer's site.&lt;/p&gt;
+<h2>Some Other Useful HTML Character Entities</h2>
+<table class="w3-table-all notranslate">
+    <tr>
+      <th>Result</th>
+      <th>Description</th>
+      <th>Entity Name</th>
+      <th>Entity Number</th>
+    </tr>
+    <tr>
+      <td style="height: 29px"></td>
+      <td style="height: 29px">non-breaking space</td>
+      <td style="height: 29px">&amp;nbsp;</td>
+      <td style="height: 29px">&amp;#160;</td>
+    </tr>
+    <tr>
+      <td>&lt;</td>
+      <td>less than</td>
+      <td>&amp;lt;</td>
+      <td>&amp;#60;</td>
+    </tr>
+    <tr>
+      <td>&gt;</td>
+      <td>greater than</td>
+      <td>&amp;gt;</td>
+      <td>&amp;#62;</td>
+    </tr>
+    <tr>
+      <td>&amp;</td>
+      <td>ampersand</td>
+      <td>&amp;amp;</td>
+      <td>&amp;#38;</td>
+    </tr>
+    <tr>
+      <td>&quot;</td>
+      <td>double quotation mark </td>
+      <td>&amp;quot;</td>
+      <td>&amp;#34;</td>
+    </tr>
+    <tr>
+      <td>&apos;</td>
+      <td>single quotation mark (apostrophe) </td>
+      <td>&amp;apos;</td>
+      <td>&amp;#39;</td>
+    </tr>
+    <tr>
+      <td>&cent;</td>
+      <td>cent</td>
+      <td>&amp;cent;</td>
+      <td>&amp;#162;</td>
+    </tr>
+    <tr>
+      <td>&pound;</td>
+      <td>pound</td>
+      <td>&amp;pound;</td>
+      <td>&amp;#163;</td>
+    </tr>
+    <tr>
+      <td>&yen;</td>
+      <td>yen</td>
+      <td>&amp;yen;</td>
+      <td>&amp;#165;</td>
+    </tr>
+    <tr>
+      <td>&euro;</td>
+      <td>euro</td>
+      <td>&amp;euro;</td>
+      <td>&amp;#8364;</td>
+    </tr>
+    <tr>
+      <td>&copy;</td>
+      <td>copyright</td>
+      <td>&amp;copy;</td>
+      <td>&amp;#169;</td>
+    </tr>
+    <tr>
+      <td>&#174;</td>
+      <td>registered trademark</td>
+      <td>&amp;reg;</td>
+      <td>&amp;#174;</td>
+    </tr>
+    </table>
+
+<div class="w3-panel w3-note">
+<p><strong>Note:</strong> Entity names are case sensitive.</p>
 </div>
-<br>
-<button type="submit" class="w3-btn w3-margin-bottom">Submit Answer &raquo;</button>
-<p><a target="_blank" href="exercise4b52.html?filename=exercise_html_attributes1">Start the Exercise</a></p>
-</div>
-</form>
-<hr>
-<h2>HTML Quiz Test</h2>
-<p>Test your HTML skills with our HTML Quiz!</p>
-<p><a href="html_quiz.html" class="w3-button w3-blue">Start HTML Quiz!</a></p>
 <hr>
 
-<h2>HTML References</h2>
-<p>At W3Schools you will find complete references about tags,  
-attributes, events, color names, entities, character-sets, URL encoding, 
-language codes, HTTP messages, and more.</p>
-<p><a href="../tags/default.html">HTML Tag Reference</a></p>
-<hr>
-
-<h2>HTML Exam - Get Your Diploma!</h2>
-<div class="w3-row">
-<div class="w3-third w3-container w3-padding-24"><a href="../cert/default.html"><img src="../images/w3certified_logo_250.png" style="max-width:100%;" alt="W3Schools Certification" /></a> </div>
-<div class="w3-twothird w3-container"><h2>W3Schools' Online Certification</h2>
-<p>The perfect solution for professionals who need to balance work, family, and career building.</p>
-<p>More than 25 000 certificates already issued!</p>
-</div>
-</div>
-<p><a class="w3-btn" href="../cert/default.html">Get Your Certificate &raquo;</a></p>
-<p style="clear:both;">The <a href="../cert/default.html">HTML Certificate</a> documents your knowledge of HTML.</p>
-<p>The <a href="../cert/default.html">CSS Certificate</a> documents your knowledge of advanced CSS.</p>
-<p>The <a href="../cert/default.html">JavaScript Certificate</a> documents your knowledge of JavaScript and HTML DOM.</p>
-<p>The <a href="../cert/default.html">Python Certificate</a> documents your knowledge of Python.</p>
-<p>The <a href="../cert/default.html">jQuery Certificate</a> documents your knowledge of jQuery.</p>
-<p>The <a href="../cert/default.html">SQL Certificate</a> documents your knowledge of SQL.</p>
-<p>The <a href="../cert/default.html">PHP Certificate</a> documents your knowledge of PHP and MySQL.</p>
-<p>The <a href="../cert/default.html">XML Certificate</a> documents your knowledge of XML, XML DOM and XSLT.</p>
-<p>The <a href="../cert/default.html">Bootstrap Certificate</a> documents your knowledge of the Bootstrap framework.</p>
+<h2>Combining Diacritical Marks</h2>
+<p>A diacritical mark is a &quot;glyph&quot; added to a letter.</p>
+<p>Some diacritical marks, like grave (&nbsp; &#768;) and acute (&nbsp; &#769;) are called accents. </p>
+<p>Diacritical marks can appear both above and below a letter, inside a letter, 
+and between two letters.</p>
+<p>Diacritical marks can be used in combination with alphanumeric characters to produce a character that is not present in 
+the character set (encoding) used in the page.</p>
+<p>Here are some examples:</p>
+<table class="w3-table-all notranslate">
+<tr>
+<th>Mark</th>
+<th>Character</th>
+<th>Construct</th>
+<th>Result</th>
+</tr>
+<tr>
+      <td>&nbsp;&#768;</td>
+      <td>a</td>
+      <td>a&amp;#768;</td>
+      <td>a&#768;</td>
+</tr>
+<tr>
+      <td>&nbsp;&#769;</td>
+      <td>a</td>
+      <td>a&amp;#769;</td>
+      <td>a&#769;</td>
+</tr>
+<tr>
+      <td>&#770;</td>
+      <td>a</td>
+      <td>a&amp;#770;</td>
+      <td>a&#770;</td>
+</tr>
+<tr>
+      <td>&nbsp;&#771;</td>
+      <td>a</td>
+      <td>a&amp;#771;</td>
+      <td>a&#771;</td>
+</tr>
+<tr>
+      <td>&nbsp;&#768;</td>
+      <td>O</td>
+      <td>O&amp;#768;</td>
+      <td>O&#768;</td>
+</tr>
+<tr>
+      <td>&nbsp;&#769;</td>
+      <td>O</td>
+      <td>O&amp;#769;</td>
+      <td>O&#769;</td>
+</tr>
+<tr>
+      <td>&#770;</td>
+      <td>O</td>
+      <td>O&amp;#770;</td>
+      <td>O&#770;</td>
+</tr>
+<tr>
+      <td>&nbsp;&#771;</td>
+      <td>O</td>
+      <td>O&amp;#771;</td>
+      <td>O&#771;</td>
+</tr>
+</table>
+<p>You will see more HTML symbols in the next chapter of this tutorial.</p>
 
 <br>
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="../default.html">&#10094; Home</a>
-<a class="w3-right w3-btn" href="html_intro.html">Next &#10095;</a>
+<a class="w3-left w3-btn" href="html_computercode_elements.html">&#10094; Previous</a>
+<a class="w3-right w3-btn" href="html_symbols.html">Next &#10095;</a>
 </div>
 </div>
 <div class="w3-col l2 m12" id="right">
@@ -1193,4 +1318,6 @@ While using this site, you agree to have read and accepted our <a href="../about
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>  
 <![endif]-->
 </body>
+
+<!-- Mirrored from www.w3schools.com/html/html_entities.asp by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Sep 2019 08:38:27 GMT -->
 </html>

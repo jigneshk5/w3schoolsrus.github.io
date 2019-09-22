@@ -1,7 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en-US">
+
+<!-- Mirrored from www.w3schools.com/html/html5_browsers.asp by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Sep 2019 08:38:29 GMT -->
 <head>
-<title>HTML Tutorial</title>
+<title>HTML5 Browser Support</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="Keywords" content="HTML,CSS,JavaScript,SQL,PHP,jQuery,XML,DOM,Bootstrap,Python,Java,Web development,W3C,tutorials,programming,training,learning,quiz,primer,lessons,references,examples,exercises,source code,colors,demos,tips">
@@ -806,40 +809,56 @@ function w3_getStyleValue(elmnt,style) {
         <!-- adspace leaderboard -->
        
       </div>
-<h1>HTML5<span class="color_h1"> Tutorial</span></h1>
+<h1>HTML5 <span class="color_h1">Browser Support</span></h1>
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="../default.html">&#10094; Home</a>
-<a class="w3-right w3-btn" href="html_intro.html">Next &#10095;</a>
+<a class="w3-left w3-btn" href="html5_intro.html">&#10094; Previous</a>
+<a class="w3-right w3-btn" href="html5_new_elements.html">Next &#10095;</a>
 </div>
-
-<div class="w3-panel w3-info intro">
-<p>HTML is the standard markup language for Web pages.</p>
-  <p>With HTML you can create your own Website.</p>
-<p>HTML is easy to learn - You will enjoy it!</p>
-</div>
-
 <hr>
-<h2>Examples in Every Chapter</h2>
-<p>This HTML tutorial contains hundreds of HTML examples.</p>
-<p>With our online HTML editor, you can edit the HTML, and click on a button to 
-view the result.</p>
+<p class="intro">You can teach older browsers to handle HTML5 correctly.</p>
+<hr>
+
+<h2>HTML5 Browser Support</h2>
+<p>HTML5 is supported in all modern browsers.</p>
+<p>In addition, all browsers, old and new, automatically handle unrecognized elements as inline elements.</p>
+<p>Because of this, you can &quot;teach&quot; older browsers to handle &quot;unknown&quot; HTML elements.</p>
+<div class="w3-panel w3-note">
+<p>You can even teach IE6 (Windows XP 2001) how to handle unknown HTML elements.</p>
+</div>
+<hr>
+
+<h2>Define Semantic Elements as Block Elements</h2>
+<p>HTML5 defines eight new <strong>semantic</strong> elements. All these are <strong>block-level</strong> elements.</p>
+<p>To secure correct behavior in older browsers, you can set the CSS <strong>display</strong> property for these 
+HTML elements to <strong>block</strong>:</p>
+<div class="w3-example">
+<div class="w3-code notranslate cssHigh">
+header, section, footer, aside, nav, main, article, figure {<br>
+&nbsp;&nbsp;display: block; <br>
+}
+</div></div>
+<hr>
+
+<h2>Add New Elements to HTML</h2>
+<p>You can also add new elements to an HTML page with a browser trick.</p>
+<p>This example adds a new element called <code class="w3-codespan">&lt;myHero&gt;</code> to an HTML 
+page, and defines a style for it:</p>
 <div class="w3-example">
 <h3>Example</h3>
 <div class="w3-code notranslate htmlHigh">
 &lt;!DOCTYPE html&gt;<br>
-&lt;html&gt;<br>&lt;head&gt;<br>&lt;title&gt;Page Title&lt;/title&gt;<br>
-&lt;/head&gt;<br>&lt;body&gt;<br><br>&lt;h1&gt;This is a Heading&lt;/h1&gt;<br>&lt;p&gt;This is a paragraph.&lt;/p&gt;<br><br>
-&lt;/body&gt;<br>&lt;/html&gt;
+&lt;html&gt;<br>&lt;head&gt;<br>&lt;script&gt;document.createElement(&quot;myHero&quot;)&lt;/script&gt;<br>&lt;style&gt;<br>myHero {<br>
+  &nbsp; display: block;<br>&nbsp; background-color: #dddddd;<br>&nbsp; padding: 50px;<br>&nbsp; font-size: 30px;<br>
+  } <br>&lt;/style&gt; <br>&lt;/head&gt;<br>&lt;body&gt;<br><br>
+&lt;h1&gt;A Heading&lt;/h1&gt;<br>
+ &lt;myHero&gt;My Hero Element&lt;/myHero&gt;<br>
+<br>
+&lt;/body&gt;<br>
+&lt;/html&gt;
 </div>
-<a class="w3-btn w3-margin-bottom" href="tryitfb35.html?filename=tryhtml_default" target="_blank">Try it Yourself &raquo;</a>
+<a class="w3-btn w3-margin-bottom" href="tryit21d1.html?filename=tryhtml5_browsers_myhero" target="_blank">Try it Yourself &raquo;</a>
 </div>
-<p><strong>Click on the &quot;Try it Yourself&quot; button to see how it works.</strong></p>
-<p><a href="html_intro.html">Start learning HTML now!</a></p><hr>
-
-<h2>HTML Examples</h2>
-<p>At the end of this HTML tutorial, you will find more than 200 examples.</p>
-<p>With our online editor, you can edit and test each example yourself.</p>
-<p><a href="html_examples.html">Go to HTML Examples!</a></p>
+<p>The JavaScript statement <code class="w3-codespan">document.createElement(&quot;myHero&quot;)</code> is needed to create a new element in IE 9, and earlier.</p>
 <hr>
 <div id="midcontentadcontainer" style="overflow:auto;text-align:center">
 <!-- MidContent -->
@@ -849,57 +868,66 @@ view the result.</p>
     
 </div>
 <hr>
-<h2>HTML Exercises</h2>
-<p>This HTML tutorial also contains nearly 100 HTML exercises.</p>
-<form autocomplete="off" id="w3-exerciseform" action="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_attributes1" method="post" target="_blank">
-<h2>Test Yourself With Exercises</h2>
-<div class="exercisewindow">
-<h2>Exercise:</h2>
-<p>Add a "tooltip" to the paragraph below with the text "About W3Schools".</p>
-<div class="exerciseprecontainer">
-&lt;p <input name="ex1" maxlength="5" style="width: 54px;">="About W3Schools"&gt;W3Schools is a web developer's site.&lt;/p&gt;
+<h2>Problem With Internet Explorer 8</h2>
+<p>You could use the solution described above for all new HTML5 elements.</p>
+<p>However, <strong>IE8 (and earlier) does not allow styling of unknown elements!</strong></p>
+<p>Thankfully, Sjoerd Visscher created the HTML5Shiv! The HTML5Shiv is a JavaScript workaround to enable styling of HTML5 elements 
+in versions of Internet Explorer prior to version 9.</p>
+<div class="w3-panel w3-note">
+<p>You will require the HTML5shiv to provide compatibility for IE Browsers older than IE 9.</p>
 </div>
+<hr>
+
+<h2>Syntax For HTML5Shiv</h2>
+<p>The HTML5Shiv is placed within the <code class="w3-codespan">&lt;head&gt;</code> tag.</p>
+<p>The HTML5Shiv is a javascript file that is referenced in a <code class="w3-codespan">&lt;script&gt;</code> tag.</p>
+<p>You should use the HTML5Shiv when you are using the new HTML5 elements such 
+as: <code class="w3-codespan">&lt;article&gt;</code>, <code class="w3-codespan">&lt;section&gt;</code>, <code class="w3-codespan">&lt;aside&gt;</code>, <code class="w3-codespan">&lt;nav&gt;</code>, <code class="w3-codespan">&lt;footer&gt;</code>.</p>
+<p>You can <a href="https://github.com/aFarkas/html5shiv" target="_blank">download the 
+latest version of HTML5shiv from github</a> or reference the CDN version at
+<a href="../../oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js" target="_blank">
+https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js</a></p>
+
+<div class="w3-example">
+<h3>Syntax</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;head&gt;<br>&nbsp; 
+&lt;!--[if lt IE 9]&gt;<br>
+ &nbsp;&nbsp;&nbsp; &lt;script src=&quot;/js/html5shiv.js&quot;&gt;&lt;/script&gt;<br>
+&nbsp; 
+&lt;![endif]--&gt;<br>&lt;/head&gt;
+</div>
+</div>
+<hr>
+
+<h2>HTML5Shiv Example</h2>
+<p>If you do not want to download and store the HTML5Shiv on your site, you 
+could reference the version found on the CDN site.</p>
+<p>The HTML5Shiv script must be placed in the <code class="w3-codespan">&lt;head&gt;</code> element, after any stylesheets:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;!DOCTYPE html&gt;<br>
+&lt;html&gt;<br>&lt;head&gt;<br>&lt;meta charset=&quot;UTF-8&quot;&gt;<br>&lt;!--[if lt IE 9]&gt;<br>
+ &nbsp; &lt;script src=&quot;https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js&quot;&gt;&lt;/script&gt;<br>
+&lt;![endif]--&gt;<br>&lt;/head&gt;<br>&lt;body&gt;<br><br>
+ &lt;section&gt;<br><br>
+ &lt;h1&gt;Famous Cities&lt;/h1&gt;<br><br>&lt;article&gt;<br>&lt;h2&gt;London&lt;/h2&gt;<br>&lt;p&gt;London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.&lt;/p&gt;<br>&lt;/article&gt;<br>
+ <br>&lt;article&gt;<br>&lt;h2&gt;Paris&lt;/h2&gt;<br>&lt;p&gt;Paris is the capital and most populous city of France.&lt;/p&gt;<br>&lt;/article&gt;<br><br>&lt;article&gt;<br>&lt;h2&gt;Tokyo&lt;/h2&gt;<br>
+ &lt;p&gt;Tokyo is the capital of Japan, the center of the Greater Tokyo Area,
+ and the most populous metropolitan area in the world.&lt;/p&gt;<br>&lt;/article&gt;<br>
+ <br>&lt;/section&gt;<br>
 <br>
-<button type="submit" class="w3-btn w3-margin-bottom">Submit Answer &raquo;</button>
-<p><a target="_blank" href="exercise4b52.html?filename=exercise_html_attributes1">Start the Exercise</a></p>
+&lt;/body&gt;<br>
+&lt;/html&gt;
 </div>
-</form>
-<hr>
-<h2>HTML Quiz Test</h2>
-<p>Test your HTML skills with our HTML Quiz!</p>
-<p><a href="html_quiz.html" class="w3-button w3-blue">Start HTML Quiz!</a></p>
-<hr>
-
-<h2>HTML References</h2>
-<p>At W3Schools you will find complete references about tags,  
-attributes, events, color names, entities, character-sets, URL encoding, 
-language codes, HTTP messages, and more.</p>
-<p><a href="../tags/default.html">HTML Tag Reference</a></p>
-<hr>
-
-<h2>HTML Exam - Get Your Diploma!</h2>
-<div class="w3-row">
-<div class="w3-third w3-container w3-padding-24"><a href="../cert/default.html"><img src="../images/w3certified_logo_250.png" style="max-width:100%;" alt="W3Schools Certification" /></a> </div>
-<div class="w3-twothird w3-container"><h2>W3Schools' Online Certification</h2>
-<p>The perfect solution for professionals who need to balance work, family, and career building.</p>
-<p>More than 25 000 certificates already issued!</p>
+<a class="w3-btn w3-margin-bottom" href="tryitdc1b.html?filename=tryhtml5_browsers_html5shiv" target="_blank">Try it Yourself &raquo;</a>
 </div>
-</div>
-<p><a class="w3-btn" href="../cert/default.html">Get Your Certificate &raquo;</a></p>
-<p style="clear:both;">The <a href="../cert/default.html">HTML Certificate</a> documents your knowledge of HTML.</p>
-<p>The <a href="../cert/default.html">CSS Certificate</a> documents your knowledge of advanced CSS.</p>
-<p>The <a href="../cert/default.html">JavaScript Certificate</a> documents your knowledge of JavaScript and HTML DOM.</p>
-<p>The <a href="../cert/default.html">Python Certificate</a> documents your knowledge of Python.</p>
-<p>The <a href="../cert/default.html">jQuery Certificate</a> documents your knowledge of jQuery.</p>
-<p>The <a href="../cert/default.html">SQL Certificate</a> documents your knowledge of SQL.</p>
-<p>The <a href="../cert/default.html">PHP Certificate</a> documents your knowledge of PHP and MySQL.</p>
-<p>The <a href="../cert/default.html">XML Certificate</a> documents your knowledge of XML, XML DOM and XSLT.</p>
-<p>The <a href="../cert/default.html">Bootstrap Certificate</a> documents your knowledge of the Bootstrap framework.</p>
 
 <br>
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="../default.html">&#10094; Home</a>
-<a class="w3-right w3-btn" href="html_intro.html">Next &#10095;</a>
+<a class="w3-left w3-btn" href="html5_intro.html">&#10094; Previous</a>
+<a class="w3-right w3-btn" href="html5_new_elements.html">Next &#10095;</a>
 </div>
 </div>
 <div class="w3-col l2 m12" id="right">
@@ -1193,4 +1221,6 @@ While using this site, you agree to have read and accepted our <a href="../about
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>  
 <![endif]-->
 </body>
+
+<!-- Mirrored from www.w3schools.com/html/html5_browsers.asp by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Sep 2019 08:38:29 GMT -->
 </html>

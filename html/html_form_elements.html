@@ -1,7 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en-US">
+
+<!-- Mirrored from www.w3schools.com/html/html_form_elements.asp by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Sep 2019 08:38:27 GMT -->
 <head>
-<title>HTML Tutorial</title>
+<title>HTML Form Elements</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="Keywords" content="HTML,CSS,JavaScript,SQL,PHP,jQuery,XML,DOM,Bootstrap,Python,Java,Web development,W3C,tutorials,programming,training,learning,quiz,primer,lessons,references,examples,exercises,source code,colors,demos,tips">
@@ -806,40 +809,116 @@ function w3_getStyleValue(elmnt,style) {
         <!-- adspace leaderboard -->
        
       </div>
-<h1>HTML5<span class="color_h1"> Tutorial</span></h1>
+<h1>HTML <span class="color_h1">Form Elements</span></h1>
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="../default.html">&#10094; Home</a>
-<a class="w3-right w3-btn" href="html_intro.html">Next &#10095;</a>
+<a class="w3-left w3-btn" href="html_forms.html">&#10094; Previous</a>
+<a class="w3-right w3-btn" href="html_form_input_types.html">Next &#10095;</a>
 </div>
-
-<div class="w3-panel w3-info intro">
-<p>HTML is the standard markup language for Web pages.</p>
-  <p>With HTML you can create your own Website.</p>
-<p>HTML is easy to learn - You will enjoy it!</p>
-</div>
-
 <hr>
-<h2>Examples in Every Chapter</h2>
-<p>This HTML tutorial contains hundreds of HTML examples.</p>
-<p>With our online HTML editor, you can edit the HTML, and click on a button to 
-view the result.</p>
+
+<p class="intro">This chapter describes all HTML form elements. </p>
+<hr>
+
+<h2>The &lt;input&gt; Element</h2>
+<p>The most important form element is the <code class="w3-codespan">&lt;input&gt;</code> element. </p>
+<p>The <code class="w3-codespan">&lt;input&gt;</code> element can be displayed in several ways, depending on the <code class="w3-codespan">type</code> 
+attribute.</p>
+
 <div class="w3-example">
 <h3>Example</h3>
 <div class="w3-code notranslate htmlHigh">
-&lt;!DOCTYPE html&gt;<br>
-&lt;html&gt;<br>&lt;head&gt;<br>&lt;title&gt;Page Title&lt;/title&gt;<br>
-&lt;/head&gt;<br>&lt;body&gt;<br><br>&lt;h1&gt;This is a Heading&lt;/h1&gt;<br>&lt;p&gt;This is a paragraph.&lt;/p&gt;<br><br>
-&lt;/body&gt;<br>&lt;/html&gt;
+ &lt;input name=&quot;firstname&quot; type=&quot;text&quot;&gt;</div>
+<a class="w3-btn w3-margin-bottom" href="tryit4324.html?filename=tryhtml_elem_input" target="_blank">Try it Yourself &raquo;</a>
 </div>
-<a class="w3-btn w3-margin-bottom" href="tryitfb35.html?filename=tryhtml_default" target="_blank">Try it Yourself &raquo;</a>
-</div>
-<p><strong>Click on the &quot;Try it Yourself&quot; button to see how it works.</strong></p>
-<p><a href="html_intro.html">Start learning HTML now!</a></p><hr>
 
-<h2>HTML Examples</h2>
-<p>At the end of this HTML tutorial, you will find more than 200 examples.</p>
-<p>With our online editor, you can edit and test each example yourself.</p>
-<p><a href="html_examples.html">Go to HTML Examples!</a></p>
+<div class="w3-panel w3-note">
+<p>If the <code class="w3-codespan">type</code> attribute is omitted, the input field gets the default type: 
+&quot;text&quot;.</p>
+</div>
+<p>All
+the different input types are covered in the next chapter.
+</p>
+
+<hr>
+<h2>The &lt;select&gt; Element</h2>
+<p>The <code class="w3-codespan">&lt;select&gt;</code> element defines a <strong>drop-down list</strong>:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;select name=&quot;cars&quot;&gt;<br>&nbsp; &lt;option value=&quot;volvo&quot;&gt;Volvo&lt;/option&gt;<br>
+ &nbsp;
+ &lt;option value=&quot;saab&quot;&gt;Saab&lt;/option&gt;<br>&nbsp; &lt;option value=&quot;fiat&quot;&gt;Fiat&lt;/option&gt;<br>
+ &nbsp;
+ &lt;option value=&quot;audi&quot;&gt;Audi&lt;/option&gt;<br>&lt;/select&gt;</div>
+<a class="w3-btn w3-margin-bottom" href="tryitc4f4.html?filename=tryhtml_elem_select" target="_blank">Try it Yourself &raquo;</a>
+</div>
+
+<p>The <code class="w3-codespan">&lt;option&gt;</code> elements defines an option that can be 
+selected.</p>
+<p>By default, the first item in the drop-down list is selected.</p>
+<p>To define a pre-selected option, add the <code class="w3-codespan">selected</code> attribute 
+to the option: </p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;option value=&quot;fiat&quot; selected&gt;Fiat&lt;/option&gt;</div>
+<a class="w3-btn w3-margin-bottom" href="tryitc971.html?filename=tryhtml_elem_select_pre" target="_blank">Try it Yourself &raquo;</a>
+</div>
+
+<h3>Visible Values:</h3>
+<p>Use the <code class="w3-codespan">size</code> attribute to specify the number of visible values:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;select name=&quot;cars&quot; <strong>size=&quot;3&quot;</strong>&gt;<br>&nbsp; &lt;option value=&quot;volvo&quot;&gt;Volvo&lt;/option&gt;<br>
+ &nbsp;
+ &lt;option value=&quot;saab&quot;&gt;Saab&lt;/option&gt;<br>&nbsp; &lt;option value=&quot;fiat&quot;&gt;Fiat&lt;/option&gt;<br>
+ &nbsp;
+ &lt;option value=&quot;audi&quot;&gt;Audi&lt;/option&gt;<br>&lt;/select&gt;</div>
+<a class="w3-btn w3-margin-bottom" href="tryit4c22.html?filename=tryhtml_elem_select_size" target="_blank">Try it Yourself &raquo;</a>
+</div>
+
+<h3>Allow Multiple Selections:</h3>
+<p>Use the <code class="w3-codespan">multiple</code> attribute to allow the user to select more than one value:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;select name=&quot;cars&quot; size=&quot;4&quot;<strong> multiple</strong>&gt;<br>&nbsp; &lt;option value=&quot;volvo&quot;&gt;Volvo&lt;/option&gt;<br>
+ &nbsp;
+ &lt;option value=&quot;saab&quot;&gt;Saab&lt;/option&gt;<br>&nbsp; &lt;option value=&quot;fiat&quot;&gt;Fiat&lt;/option&gt;<br>
+ &nbsp;
+ &lt;option value=&quot;audi&quot;&gt;Audi&lt;/option&gt;<br>&lt;/select&gt;</div>
+<a class="w3-btn w3-margin-bottom" href="tryit4efd.html?filename=tryhtml_elem_select_multiple" target="_blank">Try it Yourself &raquo;</a>
+</div>
+
+<hr>
+
+<h2>The &lt;textarea&gt; Element</h2>
+<p>The <code class="w3-codespan">&lt;textarea&gt;</code> element defines a multi-line input field (<strong>a text area</strong>):</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;textarea name=&quot;message&quot; rows=&quot;10&quot; cols=&quot;30&quot;&gt;<br>The cat was playing in the garden.<br>&lt;/textarea&gt;</div>
+<a class="w3-btn w3-margin-bottom" href="tryitb083.html?filename=tryhtml_elem_textarea" target="_blank">Try it Yourself &raquo;</a>
+</div>
+
+<p>The <code class="w3-codespan">rows</code> attribute specifies the visible number of lines in 
+a text area.</p>
+<p>The <code class="w3-codespan">cols</code> attribute specifies the visible width of a text 
+area.</p>
+<p>This is how the HTML code above will be displayed in a browser:</p>
+<textarea rows="10" cols="30">
+The cat was playing in the garden.
+</textarea>
+<p>You can also define the size of the text area by using CSS:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;textarea name=&quot;message&quot; 
+  style=&quot;width:200px; height:600px;&quot;&gt;<br>The cat was playing in the garden.<br>&lt;/textarea&gt;</div>
+<a class="w3-btn w3-margin-bottom" href="tryita01d.html?filename=tryhtml_elem_textarea_style" target="_blank">Try it Yourself &raquo;</a>
+</div>
+
 <hr>
 <div id="midcontentadcontainer" style="overflow:auto;text-align:center">
 <!-- MidContent -->
@@ -849,57 +928,178 @@ view the result.</p>
     
 </div>
 <hr>
+<h2>The &lt;button&gt; Element</h2>
+<p>The <code class="w3-codespan">&lt;button&gt;</code> element defines a clickable <strong>button</strong>:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;button type=&quot;button&quot; 
+ onclick=&quot;alert('Hello World!')&quot;&gt;Click Me!&lt;/button&gt;</div>
+<a class="w3-btn w3-margin-bottom" href="tryit13bd.html?filename=tryhtml_elem_button" target="_blank">Try it Yourself &raquo;</a>
+</div>
+
+<p>This is how the HTML code above will be displayed in a browser:</p>
+<button type="button" onclick="alert('Hello World!')">Click Me!</button>
+<br>
+<div class="w3-panel w3-note">
+<p><strong>Note:</strong> Always specify the <strong>type</strong> attribute for the button element. Different browsers may use different default types for the button element.
+</p>
+</div>
+
+<hr>
+
+<h2>HTML5 Form Elements</h2>
+<p>HTML5 added the following form elements:</p>
+<ul>
+  <li><code class="w3-codespan">&lt;datalist&gt;</code></li>
+  <li><code class="w3-codespan">&lt;output&gt;</code></li>
+</ul>
+<div class="w3-panel w3-note">
+<p><strong>Note:</strong> Browsers do not display unknown elements. New elements 
+that are not supported in older browsers will not &quot;destroy&quot; your web page.</p>
+</div>
+
+<hr>
+
+<h2>HTML5 &lt;datalist&gt; Element</h2>
+<p>The <code class="w3-codespan">&lt;datalist&gt;</code> element specifies a list of pre-defined options for an <code class="w3-codespan">&lt;input&gt;</code> element.</p>
+<p>Users will see a drop-down list of the pre-defined options as they input data.</p>
+<p>The <code class="w3-codespan">list</code> attribute of the <code class="w3-codespan">&lt;input&gt;</code> element, must refer to the
+<code class="w3-codespan">id</code> attribute of the <code class="w3-codespan">&lt;datalist&gt;</code> element.</p>
+<div class="w3-example">
+<img style="float:right;" src="../images/compatible_opera2020.gif" title="Opera" alt="Opera" width="20" height="20"><img style="float:right;" src="../images/compatible_safari2020.gif" title="Safari" alt="Safari" width="20" height="20"><img style="float:right;" src="../images/compatible_chrome2020.gif" title="Chrome" alt="Chrome" width="20" height="20"><img style="float:right;" src="../images/compatible_firefox2020.gif" title="Firefox" alt="Firefox" width="20" height="20"><img style="float:right;" src="../images/compatible_edge2020.gif" title="Internet Explorer" alt="Internet Explorer" width="20" height="20"><h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+  
+    &lt;form action=&quot;/action_page.php&quot;&gt;<br>&nbsp; &lt;input list=&quot;browsers&quot;&gt;<br>
+ &nbsp;
+ &lt;datalist id=&quot;browsers&quot;&gt;<br>
+ &nbsp;&nbsp;&nbsp; &lt;option value=&quot;Internet Explorer&quot;&gt;<br>
+&nbsp;
+&nbsp; &lt;option value=&quot;Firefox&quot;&gt;<br>
+&nbsp;&nbsp;&nbsp; &lt;option value=&quot;Chrome&quot;&gt;<br>
+&nbsp;
+&nbsp; &lt;option value=&quot;Opera&quot;&gt;<br>
+&nbsp;&nbsp;&nbsp; &lt;option value=&quot;Safari&quot;&gt;<br>
+ &nbsp;
+ &lt;/datalist&gt; <br>&lt;/form&gt;</div>
+<a class="w3-btn w3-margin-bottom" href="tryit13d9.html?filename=tryhtml_elem_datalist" target="_blank">Try it Yourself &raquo;</a>
+</div>
+<hr><h2>HTML5 &lt;output&gt; Element</h2>
+<p>The <code class="w3-codespan">&lt;output&gt;</code> element represents the result of a calculation (like one 
+performed by a script).</p>
+<div class="w3-example">
+<img style="float:right;" src="../images/compatible_opera2020.gif" title="Opera" alt="Opera" width="20" height="20"><img style="float:right;" src="../images/compatible_safari2020.gif" title="Safari" alt="Safari" width="20" height="20"><img style="float:right;" src="../images/compatible_chrome2020.gif" title="Chrome" alt="Chrome" width="20" height="20"><img style="float:right;" src="../images/compatible_firefox2020.gif" title="Firefox" alt="Firefox" width="20" height="20"><img style="float:right;" src="../images/compatible_edge2020.gif" title="Internet Explorer" alt="Internet Explorer" width="20" height="20"><h3>Example</h3>
+<p>Perform a calculation and show the result in an <code class="w3-codespan">&lt;output&gt;</code> element:</p>
+<div class="w3-code notranslate htmlHigh">
+    &lt;form action=&quot;/action_page.php&quot;<br>&nbsp; oninput=&quot;x.value=parseInt(a.value)+parseInt(b.value)&quot;&gt;<br>&nbsp; 0<br>
+    &nbsp;
+    &lt;input type=&quot;range&quot;&nbsp; id=&quot;a&quot; name=&quot;a&quot; value=&quot;50&quot;&gt;<br>&nbsp; 100 +<br>
+    &nbsp;
+    &lt;input type=&quot;number&quot; id=&quot;b&quot; name=&quot;b&quot; value=&quot;50&quot;&gt;<br>&nbsp; =<br>
+    &nbsp;
+    &lt;output name=&quot;x&quot; for=&quot;a b&quot;&gt;&lt;/output&gt;<br>&nbsp; &lt;br&gt;&lt;br&gt;<br>&nbsp; &lt;input type=&quot;submit&quot;&gt;<br>
+ &lt;/form&gt;</div>
+<a class="w3-btn w3-margin-bottom" href="tryit0e46.html?filename=tryhtml_elem_output" target="_blank">Try it Yourself &raquo;</a>
+</div>
+<hr>
 <h2>HTML Exercises</h2>
-<p>This HTML tutorial also contains nearly 100 HTML exercises.</p>
-<form autocomplete="off" id="w3-exerciseform" action="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_attributes1" method="post" target="_blank">
+<form autocomplete="off" id="w3-exerciseform" action="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_form_elements1" method="post" target="_blank">
 <h2>Test Yourself With Exercises</h2>
 <div class="exercisewindow">
 <h2>Exercise:</h2>
-<p>Add a "tooltip" to the paragraph below with the text "About W3Schools".</p>
+<p>In the form below, add an empty drop down list with the name "cars".</p>
 <div class="exerciseprecontainer">
-&lt;p <input name="ex1" maxlength="5" style="width: 54px;">="About W3Schools"&gt;W3Schools is a web developer's site.&lt;/p&gt;
+&lt;form action="/action_page.php"&gt;
+<br>
+&lt;<input name="ex1" spellcheck="false" maxlength="18" style="width: 185px;">&gt;
+<br>
+&lt;/<input name="ex2" spellcheck="false" maxlength="6" style="width: 66px;">&gt;
+<br>
+&lt;/form&gt;
 </div>
 <br>
 <button type="submit" class="w3-btn w3-margin-bottom">Submit Answer &raquo;</button>
-<p><a target="_blank" href="exercise4b52.html?filename=exercise_html_attributes1">Start the Exercise</a></p>
+<p><a target="_blank" href="exercise4c42.html?filename=exercise_html_form_elements1">Start the Exercise</a></p>
 </div>
 </form>
 <hr>
-<h2>HTML Quiz Test</h2>
-<p>Test your HTML skills with our HTML Quiz!</p>
-<p><a href="html_quiz.html" class="w3-button w3-blue">Start HTML Quiz!</a></p>
+
+<!--
 <hr>
 
-<h2>HTML References</h2>
-<p>At W3Schools you will find complete references about tags,  
-attributes, events, color names, entities, character-sets, URL encoding, 
-language codes, HTTP messages, and more.</p>
-<p><a href="../tags/default.html">HTML Tag Reference</a></p>
+<div class="w3-container w3-dark-grey w3-padding">
+  <h2>Test Yourself with Exercises!</h2>
+  <div class="w3-bar w3-margin-bottom">
+    <a class="w3-bar-item w3-btn" href="exercise.asp?filename=exercise_form_elements1" target="_blank">Exercise 1 &raquo;</a>
+    <a class="w3-bar-item w3-btn" href="exercise.asp?filename=exercise_form_elements2" target="_blank">Exercise 2 &raquo;</a>
+    <a class="w3-bar-item w3-btn" href="exercise.asp?filename=exercise_form_elements3" target="_blank">Exercise 3 &raquo;</a>
+  </div>
+</div>
 <hr>
-
-<h2>HTML Exam - Get Your Diploma!</h2>
-<div class="w3-row">
-<div class="w3-third w3-container w3-padding-24"><a href="../cert/default.html"><img src="../images/w3certified_logo_250.png" style="max-width:100%;" alt="W3Schools Certification" /></a> </div>
-<div class="w3-twothird w3-container"><h2>W3Schools' Online Certification</h2>
-<p>The perfect solution for professionals who need to balance work, family, and career building.</p>
-<p>More than 25 000 certificates already issued!</p>
+-->
+<h2>HTML Form Elements</h2>
+<table class="w3-table-all notranslate">
+<tr>
+<th>Tag</th>
+<th>Description</th>
+</tr>
+<tr>
+<td><a href="../tags/tag_form.html">&lt;form&gt;</a></td>
+<td> Defines an HTML form for user input</td>
+</tr>
+<tr>
+<td><a href="../tags/tag_input.html">&lt;input&gt;</a></td>
+<td>Defines an input control</td>
+</tr>
+<tr>
+<td><a href="../tags/tag_textarea.html">&lt;textarea&gt;</a></td>
+<td>Defines a multiline input control (text area)</td>
+</tr>
+<tr>
+<td><a href="../tags/tag_label.html">&lt;label&gt;</a></td>
+<td>Defines a label for an &lt;input&gt; element</td>
+</tr>
+<tr>
+<td><a href="../tags/tag_fieldset.html">&lt;fieldset&gt;</a></td>
+<td>Groups related elements in a form</td>
+</tr>
+<tr>
+<td><a href="../tags/tag_legend.html">&lt;legend&gt;</a></td>
+<td>Defines a caption for a &lt;fieldset&gt; element</td>
+</tr>
+<tr>
+<td><a href="../tags/tag_select.html">&lt;select&gt;</a></td>
+<td>Defines a drop-down list</td>
+</tr>
+<tr>
+<td><a href="../tags/tag_optgroup.html">&lt;optgroup&gt;</a></td>
+<td>Defines a group of related options in a drop-down list</td>
+</tr>
+<tr>
+<td><a href="../tags/tag_option.html">&lt;option&gt;</a></td>
+<td>Defines an option in a drop-down list</td>
+</tr>
+<tr>
+<td><a href="../tags/tag_button.html">&lt;button&gt;</a></td>
+<td>Defines a clickable button</td>
+</tr>
+<tr>
+<td><a href="../tags/tag_datalist.html">&lt;datalist&gt;</a></td>
+<td>Specifies a list of pre-defined options for input controls</td>
+</tr>
+<tr>
+<td><a href="../tags/tag_output.html">&lt;output&gt;</a></td>
+<td>Defines the result of a calculation</td>
+</tr>
+</table>
+<div class="w3-note w3-panel">
+  <p>For a complete list of all available HTML tags, visit our <a href="../tags/default.html">HTML Tag Reference</a>.</p>
 </div>
-</div>
-<p><a class="w3-btn" href="../cert/default.html">Get Your Certificate &raquo;</a></p>
-<p style="clear:both;">The <a href="../cert/default.html">HTML Certificate</a> documents your knowledge of HTML.</p>
-<p>The <a href="../cert/default.html">CSS Certificate</a> documents your knowledge of advanced CSS.</p>
-<p>The <a href="../cert/default.html">JavaScript Certificate</a> documents your knowledge of JavaScript and HTML DOM.</p>
-<p>The <a href="../cert/default.html">Python Certificate</a> documents your knowledge of Python.</p>
-<p>The <a href="../cert/default.html">jQuery Certificate</a> documents your knowledge of jQuery.</p>
-<p>The <a href="../cert/default.html">SQL Certificate</a> documents your knowledge of SQL.</p>
-<p>The <a href="../cert/default.html">PHP Certificate</a> documents your knowledge of PHP and MySQL.</p>
-<p>The <a href="../cert/default.html">XML Certificate</a> documents your knowledge of XML, XML DOM and XSLT.</p>
-<p>The <a href="../cert/default.html">Bootstrap Certificate</a> documents your knowledge of the Bootstrap framework.</p>
 
 <br>
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="../default.html">&#10094; Home</a>
-<a class="w3-right w3-btn" href="html_intro.html">Next &#10095;</a>
+<a class="w3-left w3-btn" href="html_forms.html">&#10094; Previous</a>
+<a class="w3-right w3-btn" href="html_form_input_types.html">Next &#10095;</a>
 </div>
 </div>
 <div class="w3-col l2 m12" id="right">
@@ -1193,4 +1393,6 @@ While using this site, you agree to have read and accepted our <a href="../about
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>  
 <![endif]-->
 </body>
+
+<!-- Mirrored from www.w3schools.com/html/html_form_elements.asp by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Sep 2019 08:38:28 GMT -->
 </html>
