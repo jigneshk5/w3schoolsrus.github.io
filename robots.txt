@@ -1,0 +1,7 @@
+# Rule 1
+User-agent: *
+Allow: /
+
+host: w3schoolsrus.github.io
+Sitemap: http://w3schoolsrus.github.io/sitemap.xml
+Sitemap: https://w3schoolsrus.github.io/sitemap.xml
