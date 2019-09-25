@@ -257,7 +257,7 @@ display:block;
 position:absolute;
 top:17px;
 }
-.w3schools-logo {color:#4CAF50;font-family:Impact, sans-serif;}
+.w3schools-logo {color:#4CAF50;font-family:Impact, sans-serif;text-shadow: 1px 1px .5px #000}
 .dotcom {color:#0048ff;font-family:arial black, sans-serif; font-size:.8em;}
 .topnav {
 position:relative;
