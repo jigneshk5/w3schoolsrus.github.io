@@ -1,26 +1,51 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<title>Python Начать изучение. Уроки для начинающих. W3Schools на русском</title>
+<title>Python Синтаксис. Уроки для начинающих. W3Schools на русском</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="Keywords" content="python,учебник,уроки,курс,для начинающих,основы,w3schools,на русском,язык,программирования,начало,изучение,выучить,создание,сайтов,веб">
-<meta name="Description" content="Начать изучение языка Python онлайн. Учебник по языку программирования Python от W3Schools на русском языке. Уроки для начинающих бесплатно.">
+<meta name="Keywords" content="python,учебник,уроки,курс,для начинающих,основы,w3schools,на русском,язык,программирования,синтаксис,ошибки,веб">
+<meta name="Description" content="Синтаксис языка программирования Python. Учебник по языку Python от W3Schools на русском языке. Уроки для начинающих онлайн бесплатно">
 <link href="../favicon.ico" rel="icon" type="image/x-icon">
 <link href="../w3css/4/w3.css" rel="stylesheet">
 <link href='https://fonts.googleapis.com/css?family=Source%20Code%20Pro' rel='stylesheet'>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet" type="text/css">
 <style>
-.mylist {
-  float:left;
-  width:120px;
+a[name] {
+  position:relative;
+  top:-50px;
 }
-.mylist a:link,.mylist a:visited {
-  text-decoration:none;
+.w3-example {
+  overflow:hidden;
 }
-.mylist a:hover,.mylist a:active {
-  text-decoration:underline;
-  text-decoration-color: mediumblue;
+.pagemenu{
+  float:right;
+  margin-left:20px;
+  padding:20px;
+  background-color:#f1f1f1;
+  font-size:90%;
+  line-height:2.8em;
+  color:#555;
+}
+.pagemenu a {
+  display:block;
+  text-decoration:none!important;
+}
+.pagemenu a:hover {
+  color:#000;
+}
+.pagemenu h2 {
+  margin-top:1px;
+  color:#999;
+  font-size:20px;
+}
+.pagemenu hr {
+    border-top: 1px solid #ccc;
+    margin: 8px 0;
+}
+@media only screen and (max-width: 700px) {
+.pagemenu {
+  display:none; }
 }
 </style>
 </head>
@@ -214,127 +239,152 @@
   <div class='w3-row w3-white'>
     <div class='w3-col l10 m12' id='main'>
 
-<h1>Python <span class="color_h1">Начало изучения</span></h1>
+
+<h1>Python <span class="color_h1">Синтаксис</span></h1>
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="python_intro.html">&#10094; Prev</a>
-<a class="w3-right w3-btn" href="python_syntax.html">Next &#10095;</a>
+<a class="w3-left w3-btn" href="python_getstarted.html">&#10094; Prev</a>
+<a class="w3-right w3-btn" href="python_comments.html">Next &#10095;</a>
 </div>
 <hr>
 
-<h2>Python Установка</h2>
+<div style="position:relative">
+<div class="pagemenu">
+<h2>На этой странице</h2>
+<hr>
+<a href="#execute_python_syntax">Python Выполнение синтаксиса</a>
+<a href="#python_indentation">Python Отступ</a>
+<a href="#python_variables">Python Переменные</a>
+<a href="#python_comments">Python Комментарии</a>
+<a href="#exercises">Упражнения</a>
+</div>
 
-<p>На многих ПК и Mac уже установлен Python.</p>
-<p>Чтобы проверить, установлен ли Python на ПК с Windows, найдите в меню "Пуск" Python или выполните следующую команду в командной строке (cmd.exe):</p>
+<a id="execute_python_syntax"></a>
+<h2>Python Выполнение синтаксиса</h2>
+<p>Как мы узнали на предыдущем уроке, синтаксис Python можно выполнить, написав непосредственно в командной строке:</p>
 
 <div class="w3-example">
 <div class="w3-code notranslate w3-black">
-C:\Users\<em>Your Name</em>&gt;python --version
+&gt;&gt;&gt; print("Hello, World!")<br>
+Hello, World!
 </div>
 </div>
 
-<p>Чтобы проверить, установлен ли Python на Linux или Mac, в Linux откройте командную строку или на Mac откройте терминал и введите:</p>
+<p>Или создав файл python на сервере, используя расширение .py, и запустив его в командной строке:</p>
 
 <div class="w3-example">
 <div class="w3-code notranslate w3-black">
-python --version
+C:\Users\<em>Your Name</em>&gt;python myfile.py
 </div>
 </div>
-
-<p>Если вы обнаружите, что на вашем компьютере не установлен Python, вы можете бесплатно загрузить его с официального веб-сайта: <a href="https://www.python.org/" target="_blank">www.python.org</a></p>
+</div>
 <hr>
 
-<h2>Python Быстрый старт</h2>
-<p>Python - это интерпретируемый язык программирования - это означает, что вы, как разработчик, пишете файлы Python (с расширением .py) в текстовом редакторе, а затем помещаете эти файлы в интерпретатор Python для выполнения.</p>
-<p>Способ запуска файла Python в командной строке выглядит следующим образом:</p>
+<a id="python_indentation"></a>
+<h2>Python Отступ</h2>
+
+<p>Отступы относятся к пробелам в начале строки кода.</p>
+<p>Если в других языках программирования отступ в коде предназначен только для удобства чтения, отступ в Python очень важен.</p>
+<p>Python использует отступ для обозначения блока кода.</p>
 
 <div class="w3-example">
-<div class="w3-code notranslate w3-black">
-C:\Users\<em>Your Name</em>&gt;python helloworld.py
-</div>
-</div>
-
-<p>где "helloworld.py" это имя вашего python-файла.</p>
-
-<p>Давайте напишем наш первый файл Python, называемый helloworld.py, который можно создать в любом текстовом редакторе.</p>
-
-<div class="w3-example">
-<p>helloworld.py</p>
+<h3>Пример</h3>
 <div class="w3-code notranslate pythonHigh">
+  if 5 &gt; 2:<br>&nbsp;
+print("Five is greater than two!")
+</div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="showpythone165.html?filename=demo_indentation">Запустить пример &raquo;</a>
+</div>
+
+<p>Python выдаст вам ошибку, если вы пропустите отступ:</p>
+
+<div class="w3-example w3-pale-red">
+<h3>Пример</h3>
+  <p>Синтаксическая ошибка:</p>
+<div class="w3-code notranslate pythonHigh">
+if 5 &gt; 2:<br>
+print("Five is greater than two!")
+</div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="showpython0e99.html?filename=demo_indentation_test">Запустить пример &raquo;</a>
+</div>
+
+<p>Количество пробелов зависит от вас, как от программиста, но оно должно быть не меньше одного.</p>
+
+<div class="w3-example">
+<h3>Пример</h3>
+<div class="w3-code notranslate pythonHigh">
+  if 5 &gt; 2:<br>&nbsp;print("Five is greater than two!")&nbsp;
+<br>if 5 &gt; 2:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; print("Five is greater than two!")&nbsp;
+</div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="showpythona805.html?filename=demo_indentation2">Запустить пример &raquo;</a>
+</div>
+
+<p>Вы должны использовать одинаковое количество пробелов в одном и том же блоке кода, иначе Python выдаст вам ошибку:</p>
+
+<div class="w3-example w3-pale-red">
+<h3>Пример</h3>
+  <p>Синтаксическая ошибка:</p>
+<div class="w3-code notranslate pythonHigh">
+if 5 &gt; 2:<br>
+&nbsp;print("Five is greater than two!")
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; print(&quot;Five is greater than
+  two!&quot;)</div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="showpython6b91.html?filename=demo_indentation2_error">Запустить пример &raquo;</a>
+</div>
+<hr>
+
+<a id="python_variables"></a>
+<h2>Python Переменные</h2>
+
+<p>В Python переменные создаются в тот момент, когда вы присваиваете ей значение:</p>
+<div class="w3-example">
+<h3>Пример</h3>
+<p>Переменные в Python:</p>
+<div class="w3-code notranslate pythonHigh">
+  x = 5<br>y = &quot;Hello, World!&quot;
+</div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="showpythondbf2.html?filename=demo_syntax_variables">Запустить пример &raquo;</a>
+</div>
+
+<p>Python не имеет команды для объявления переменной.</p>
+<p>Подробнее о переменных вы узнаете в разделе <a href="python_variables.html"> Python переменные</a>.</p>
+<hr>
+
+<a id="python_comments"></a>
+<h2>Комментарии</h2>
+<p>Python имеет возможность комментирования с целью пояснения кода.</p>
+<p>Комментарии начинаются со знака решётки #, а Python отображает оставшуюся часть строки как комментарий:</p>
+<div class="w3-example">
+<h3>Пример</h3>
+<p>Комментарии в Python:</p>
+<div class="w3-code notranslate pythonHigh">
+#Это комментарий.<br>
 print("Hello, World!")
 </div>
-<a target="_blank" class="w3-btn w3-margin-bottom" href="showpython4c57.html?filename=demo_helloworld">Запустить пример &raquo;</a>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="showpythoncab7.html?filename=demo_comment">Запустить пример &raquo;</a>
 </div>
 
-<p>Просто и понятно. Сохраните ваш файл. Откройте командную строку, перейдите в каталог, в котором вы сохранили файл, и запустите:</p>
-
-<div class="w3-example">
-<div class="w3-code notranslate w3-black">
-C:\Users\<em>Your Name</em>&gt;python helloworld.py
-</div>
-</div>
-
-<p>Результат будет выведен:</p>
-<div class="w3-example">
-<div class="w3-code notranslate w3-black">
-Hello, World!
-</div>
-</div>
-
-<p>Поздравляем, вы написали и выполнили свою первую программу на Python.</p>
+<a id="exercises"></a>
 <hr>
-
-<h2>Командная строка Python</h2>
-<p>Для тестирования небольшого количества кода в Python иногда проще и быстрее не писать код в файл. Это стало возможным, потому что Python может быть запущен как сама командная строка.</p>
-<p>Введите следующее в командной строке Windows, Mac или Linux:</p>
-
-<div class="w3-example">
-<div class="w3-code notranslate w3-black">
-C:\Users\<em>Your Name</em>&gt;python
+<form autocomplete="off" id="w3-exerciseform" action="https://www.w3schools.com/python/exercise.asp?filename=exercise_syntax1" method="post" target="_blank">
+<h2 class="heading">Проверьте себя с помощью упражнений</h2>
+<div class="exercisewindow">
+<h2>Упражнение:</h2>
+<p>Вставьте недостающую часть кода ниже для вывода "Hello World".</p>
+<div class="exerciseprecontainer">
+<pre>
+<input name="ex1" maxlength="5" style="width: 58px;">("Hello World")
+</pre>
 </div>
+<br>
+<button type="submit" class="w3-btn w3-margin-bottom">Отправить ответ &raquo;</button>
+<p><a target="_blank" href="exercisef5ec.html?filename=exercise_syntax1">Начать упражнение</a></p>
 </div>
+</form>
 
-Или, если команда "python" не сработала, вы можете попробовать "py":
-
-<div class="w3-example">
-<div class="w3-code notranslate w3-black">
-C:\Users\<em>Your Name</em>&gt;py
-</div>
-</div>
-
-<p>Оттуда вы можете написать любой код Python, в том числе Hello World из предыдущего примера в учебнике:</p>
-
-<div class="w3-example">
-<div class="w3-code notranslate w3-black">
-<span style="opacity:0.5">C:\Users\<em>Your Name</em>&gt;python<br>
-Python 3.7.4 (tags/v3.7.4:e09359112e, Jul 8 2019, 19:29:22) [MSC v.1916 32 bit (Intel)] on win32<br>
-Type "help", "copyright", "credits" or "license" for more information.</span><br>
-&gt;&gt;&gt; print("Hello, World!")
-</div>
-</div>
-<p>Который напишет "Hello, World!" в командной строке:</p>
-
-<div class="w3-example">
-<div class="w3-code notranslate w3-black">
-<span style="opacity:0.5">C:\Users\<em>Your Name</em>&gt;python<br>
-Python 3.7.4 (tags/v3.7.4:e09359112e, Jul 8 2019, 19:29:22) [MSC v.1916 32 bit (Intel)] on win32<br>
-Type "help", "copyright", "credits" or "license" for more information.<br>
-&gt;&gt;&gt; print("Hello, World!")</span><br>
-Hello, World!
-</div>
-</div>
-
-<p>Каждый раз, когда вы закончиваете работу в командной строке Python, вы можете просто набрать следующую команду, чтобы выйти из интерфейса командной строки Python:</p>
-
-<div class="w3-example">
-<div class="w3-code notranslate w3-black">
-exit()
-</div>
-</div>
-
-<hr>
+<br>
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="python_intro.html">&#10094; Prev</a>
-<a class="w3-right w3-btn" href="python_syntax.html">Next &#10095;</a>
+<a class="w3-left w3-btn" href="python_getstarted.html">&#10094; Prev</a>
+<a class="w3-right w3-btn" href="python_comments.html">Next &#10095;</a>
 </div>
 
 <hr>
@@ -344,7 +394,7 @@ exit()
         <script>
                 var disqus_config = function () {
                 this.page.url = w3schoolsrus.github.io; // канонический URL страницы
-                this.page.identifier = w3schoolsrus.github.io / python / python_getstarted.html; // уникальный идентификатор страницы
+                this.page.identifier = w3schoolsrus.github.io / python / python_syntax.html; // уникальный идентификатор страницы
                 };
                 (function() { // Не редактировать ниже этой линии
                 var d = document, s = d.createElement('script');
