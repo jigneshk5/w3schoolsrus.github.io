@@ -1,1517 +1,2504 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
+﻿<?xml version="1.0" encoding="UTF-8"?>
+		<!--	created with www.mysitemapgenerator.com	-->
+		<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <url>
-  <loc>https://w3schoolsrus.github.io/</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>1.00</priority>
+	<loc>https://w3schoolsrus.github.io/</loc>
+	<lastmod>2019-10-06T16:00:29+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/index.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://w3schoolsrus.github.io/index.html</loc>
+	<lastmod>2019-10-06T16:00:32+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/default.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://w3schoolsrus.github.io/html/default.html</loc>
+	<lastmod>2019-10-06T16:00:34+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/w3css/default.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://w3schoolsrus.github.io/w3css/default.html</loc>
+	<lastmod>2019-10-06T16:00:35+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/w3css/w3css_templates.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://w3schoolsrus.github.io/howto/default.html</loc>
+	<lastmod>2019-10-06T16:00:36+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/w3css/w3css_references.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://w3schoolsrus.github.io/python/default.html</loc>
+	<lastmod>2019-10-06T16:00:38+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/html_exercises.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://w3schoolsrus.github.io/w3css/w3css_templates.html</loc>
+	<lastmod>2019-10-06T16:00:38+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/html_examples.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://w3schoolsrus.github.io/xml/ajax_intro.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/w3css/w3css_examples.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://w3schoolsrus.github.io/xml/dom_intro.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/html_quiz.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://w3schoolsrus.github.io/xml/xml_dtd_intro.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/default.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/xml/schema_intro.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/html_intro.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/xml/xsl_intro.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/html_editors.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/xml/xpath_intro.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/html_basic.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/xml/xquery_intro.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/html_elements.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/tags/default.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/html_attributes.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/cssref/default.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/html_headings.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/jsref/default.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/html_paragraphs.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/sql/sql_ref_keywords.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/html_styles.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/php/php_ref_overview.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/html_formatting.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/jquery/jquery_ref_overview.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/html_quotation_elements.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/python/python_reference.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/html_comments.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/bootstrap/bootstrap_ref_all_classes.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/html_colors.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/bootstrap4/bootstrap_ref_all_classes.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/html_css.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/w3css/w3css_references.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/html_links.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/java/java_ref_keywords.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/html_images.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/angular/angular_ref_directives.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/html_images_imagemap.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/sass/sass_functions_string.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/html_images_background.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/charsets/default.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/html_images_picture.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/html/html_exercises.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/html_tables.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/css/css_exercises.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/html_lists.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/js/js_exercises.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/html_blocks.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/sql/sql_exercises.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/html_classes.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/php/php_exercises.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/html_id.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/python/python_exercises.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/html_iframe.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/java/java_exercises.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/html_scripts.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/cpp/cpp_exercises.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/html_filepaths.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/bootstrap/bootstrap_exercises.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/html_head.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/graphics/svg_intro.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/html_layout.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/graphics/canvas_intro.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/html_responsive.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/tags/ref_eventattributes.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/html_computercode_elements.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/tags/ref_attributes.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/html_entities.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/tags/ref_canvas.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/html_symbols.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/graphics/svg_reference.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/html_charset.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/graphics/google_maps_reference.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/html_urlencode.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/cssref/css3_browsersupport.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/html_xhtml.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/cssref/css_selectors.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/html_forms.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/icons/icons_reference.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/html_form_elements.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/w3js/w3js_references.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/html_form_input_types.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/asp/asp_ref_response.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/html_form_attributes.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/xml/dom_nodetype.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/html5_intro.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/xml/dom_http.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/html5_browsers.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/xml/xsl_elementref.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/html5_new_elements.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/xml/schema_elements_ref.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/html5_semantic_elements.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/charsets/ref_html_ascii.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/html5_migration.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/charsets/ref_html_ansi.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/html5_syntax.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/charsets/ref_html_8859.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/html5_canvas.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/charsets/ref_html_symbols.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/html5_svg.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/charsets/ref_html_utf8.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/html_media.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/html/html_examples.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/html5_video.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/css/css_examples.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/html5_audio.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/w3css/w3css_examples.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/html_object.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/bootstrap/bootstrap_examples.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/html_youtube.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/graphics/svg_examples.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/html5_geolocation.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/html/html_quiz.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/html5_draganddrop.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/css/css_quiz.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/html5_webstorage.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/js/js_quiz.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/html5_webworkers.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/sql/sql_quiz.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/html5_serversentevents.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/php/php_quiz.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/html_exam.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/python/python_quiz.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/html_summary.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/bootstrap/bootstrap_quiz.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/html_accessibility.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/jquery/jquery_quiz.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/exercise4b52.html?filename=exercise_html_attributes1</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/xml/xml_quiz.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/w3css/index.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/js/js_examples.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/w3css/w3css_intro.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/js/js_dom_examples.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/w3css/w3css_colors.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/jquery/jquery_examples.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/w3css/w3css_containers.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/angular/angular_examples.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/w3css/w3css_panels.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/js/js_ajax_examples.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/w3css/w3css_borders.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/w3js/w3js_examples.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/w3css/w3css_cards.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/python/python_examples.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/w3css/w3css_fonts.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/java/java_examples.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/w3css/w3css_text.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/cpp/cpp_examples.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/w3css/w3css_round.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/sql/sql_examples.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/w3css/w3css_padding.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/php/php_examples.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/w3css/w3css_margins.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/asp/asp_examples.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/w3css/w3css_display.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/xml/xml_examples.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/w3css/w3css_buttons.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/xml/xsl_examples.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/w3css/w3css_notes.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/xml/xpath_examples.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/w3css/w3css_quotes.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/xml/schema_example.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/w3css/w3css_alerts.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/xml/ajax_examples.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/w3css/w3css_tables.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/jquery/jquery_exercises.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/w3css/w3css_lists.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/cert/cert_html_new.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/w3css/w3css_images.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/cert/cert_css.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/w3css/w3css_input.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/cert/cert_javascript.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/w3css/w3css_badges.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/cert/cert_sql.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/w3css/w3css_tags.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/cert/cert_php.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/w3css/w3css_icons.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/cert/cert_python.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/w3css/w3css_responsive.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/cert/cert_bootstrap.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/w3css/w3css_layout.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/cert/cert_jquery.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/w3css/w3css_animate.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/cert/cert_xml.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/w3css/w3css_effects.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/css/tryit438d.html?filename=trycss_default</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/w3css/w3css_bars.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/colors/colors_picker.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/w3css/w3css_dropdowns.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/bootstrap/default.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/w3css/w3css_accordions.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/bootstrap4/default.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/w3css/w3css_navigation.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/quiztest/default.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/w3css/w3css_sidebar.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/about/default.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/w3css/w3css_tabulators.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/about/about_copyright.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/w3css/w3css_pagination.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/about/about_privacy.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/w3css/w3css_progressbar.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/default.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/w3css/w3css_slideshow.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/html/html_intro.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/w3css/w3css_modal.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/html/html_editors.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/w3css/w3css_tooltips.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/html/html_basic.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/w3css/w3css_grid.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/html/html_elements.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/w3css/w3css_code.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/html/html_attributes.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/w3css/w3css_filters.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/html/html_headings.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/w3css/w3css_trends.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/html/html_paragraphs.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/w3css/w3css_case.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/html/html_styles.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/w3css/w3css_material.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/html/html_formatting.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/w3css/w3css_validation.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/html/html_quotation_elements.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/w3css/w3css_versions.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/html/html_comments.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/w3css/w3css_mobile.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/html/html_colors.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/w3css/w3css_color_classes.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/html/html_css.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/w3css/w3css_color_material.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/html/html_links.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/w3css/w3css_color_flat.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/html/html_images.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/w3css/w3css_color_metro.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/html/html_images_imagemap.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/w3css/w3css_color_win8.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/html/html_images_background.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/w3css/w3css_color_ios.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/html/html_images_picture.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/w3css/w3css_color_libraries.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/html/html_tables.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/w3css/w3css_color_schemes.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/html/html_lists.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/exercise.html</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/html/html_blocks.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit86f8.html?filename=tryhtml_basic_document</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/html/html_classes.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryitb3f8.html?filename=tryhtml_basic_paragraphs</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/html/html_id.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit6dd1.html?filename=tryhtml_basic_link</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/html/html_iframe.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryita61a.html?filename=tryhtml_basic_img</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/html/html_scripts.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryitc136.html?filename=tryhtml_button_basic</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/html/html_filepaths.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit02f9.html?filename=tryhtml_lists_intro</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/html/html_head.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit9089.html?filename=tryhtml_attributes_link</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/html/html_layout.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit2a16.html?filename=tryhtml_attributes_img</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/html/html_responsive.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit0248.html?filename=tryhtml_attributes_alt</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/html/html_computercode_elements.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit37e4.html?filename=tryhtml_attributes_noquotes</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/html/html_entities.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit7640.html?filename=tryhtml_attributes_error</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/html/html_symbols.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryitbe80.html?filename=tryhtml_headings</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/html/html_charset.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit47e8.html?filename=tryhtml_headings_hr</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/html/html_urlencode.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit34a5.html?filename=tryhtml_headings_head</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/html/html_xhtml.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit7f09.html?filename=tryhtml_paragraphs2</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/html/html_forms.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit7d53.html?filename=tryhtml_paragraphs</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/html/html_form_elements.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit36b9.html?filename=tryhtml_poem</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/html/html_form_input_types.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryitb8e5.html?filename=tryhtml_pre</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/html/html_form_attributes.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryitbed5.html?filename=tryhtml_styles_intro</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/html/html5_intro.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit0aac.html?filename=tryhtml_styles_background-color</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/html/html5_browsers.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit9990.html?filename=tryhtml_styles_color</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/html/html5_new_elements.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit114d.html?filename=tryhtml_styles_font-family</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/html/html5_semantic_elements.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit3d6d.html?filename=tryhtml_styles_font-size</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/html/html5_migration.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryitb09f.html?filename=tryhtml_styles_text-align</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/html/html5_syntax.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit82ae.html?filename=tryhtml_formatting_b</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/html/html5_canvas.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit2a85.html?filename=tryhtml_formatting_strong</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/html/html5_svg.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit4646.html?filename=tryhtml_formatting_i</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/html/html_media.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit7dea.html?filename=tryhtml_formatting_em</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/html/html5_video.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit16b4.html?filename=tryhtml_formatting_mark</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/html/html5_audio.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit9844.html?filename=tryhtml_formatting_ins</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/html/html_object.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit9467.html?filename=tryhtml_formatting_del_ins</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/html/html_youtube.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit78e9.html?filename=tryhtml_formatting_sub</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/html/html5_geolocation.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit7b21.html?filename=tryhtml_formatting_sup</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/html/html5_draganddrop.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryitcb56.html?filename=tryhtml_formatting_blockquote</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/html/html5_webstorage.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit4e4b.html?filename=tryhtml_formatting_address</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/html/html5_webworkers.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit1a23.html?filename=tryhtml_formatting_abbr</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/html/html5_serversentevents.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit0e3d.html?filename=tryhtml_formatting_cite</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/html/html_exam.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit8e4a.html?filename=tryhtml_formatting_bdo</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/html/html_summary.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit79fa.html?filename=tryhtml_comment</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/html/html_accessibility.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit9dec.html?filename=tryhtml_ie_conditional</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/tags/ref_standardattributes.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryitb989.html?filename=tryhtml_css_internal</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/tags/ref_colornames.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit7dcc.html?filename=tryhtml_css_external</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/tags/ref_av_dom.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit97d9.html?filename=tryhtml_css_id</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/tags/ref_html_dtd.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit8442.html?filename=tryhtml_css_class</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/tags/ref_charactersets.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit19b0.html?filename=tryhtml_css_borders</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/tags/ref_urlencode.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit9728.html?filename=tryhtml_css_padding</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/tags/ref_language_codes.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryitcbf5.html?filename=tryhtml_css_margin</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/tags/ref_httpmessages.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit082c.html?filename=tryhtml_links_w3schools</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/tags/ref_httpmethods.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit2507.html?filename=tryhtml_links</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/tags/ref_pxtoemconversion.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit5394.html?filename=tryhtml_links_colors</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/tags/ref_keyboardshortcuts.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit2856.html?filename=tryhtml_links_noline</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/html/index.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryitb165.html?filename=tryhtml_links_target</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/html/tryitfb35.html?filename=tryhtml_default</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit45fc.html?filename=tryhtml_links_image</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/html/exercise4b52.html?filename=exercise_html_attributes1</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit3864.html?filename=tryhtml_links_bookmark</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/html/howto_js_tabs.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit442e.html?filename=tryhtml_links_mailto_subject</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/html/howto_css_dropdown.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit46dc.html?filename=tryhtml_images</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/html/howto_js_accordion.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit6935.html?filename=tryhtml_images_attributes</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/html/howto_js_sidenav.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit975c.html?filename=tryhtml_images_size</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/html/howto_js_topnav.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit19ca.html?filename=tryhtml_images_style</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/html/howto_css_modals.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit212b.html?filename=tryhtml_images_wrong</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/html/howto_js_progressbar.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryitb021.html?filename=tryhtml_images_w3schools</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/html/howto_css_parallax.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit991b.html?filename=tryhtml_images_link</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/html/howto_css_login_form.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit6722.html?filename=tryhtml_images_map</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/html/howto_html_include.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit928b.html?filename=tryhtml_table_basic</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/graphics/google_maps_intro.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit046c.html?filename=tryhtml_table_border</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/html/howto_js_rangeslider.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit7de9.html?filename=tryhtml_table_cellpadding</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/html/howto_css_tooltip.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit5052.html?filename=tryhtml_table_headings_left</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/html/howto_js_slideshow.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryitb403.html?filename=tryhtml_table_headers</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/html/howto_js_filter_lists.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryitaabb.html?filename=tryhtml_tables2</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/html/howto_js_sort_list.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit66d3.html?filename=tryhtml_table_colspan</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/colors/colors_names.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit914a.html?filename=tryhtml_table_rowspan</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/w3css/index.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit0721.html?filename=tryhtml_table_elements</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/w3css/w3css_intro.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryitaf7e.html?filename=tryhtml_table_class1</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/w3css/w3css_colors.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit035c.html?filename=tryhtml_table_class2</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/w3css/w3css_containers.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit56b2.html?filename=tryhtml_lists_unordered</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/w3css/w3css_panels.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit678a.html?filename=tryhtml_lists_unordered_disc</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/w3css/w3css_borders.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit0e3c.html?filename=tryhtml_lists_unordered_square</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/w3css/w3css_cards.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit023a.html?filename=tryhtml_lists_unordered_none</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/w3css/w3css_fonts.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit2865.html?filename=tryhtml_lists_ordered</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/w3css/w3css_text.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit1046.html?filename=tryhtml_lists_ordered_numbers</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/w3css/w3css_round.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryitbc1a.html?filename=tryhtml_lists_ordered_ucase</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/w3css/w3css_padding.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryitbb71.html?filename=tryhtml_lists_ordered_lcase</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/w3css/w3css_margins.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit2272.html?filename=tryhtml_lists_ordered_roman_ucase</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/w3css/w3css_display.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryitb795.html?filename=tryhtml_lists_ordered_roman_lcase</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/w3css/w3css_buttons.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryita055.html?filename=tryhtml_lists_description</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/w3css/w3css_notes.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit4479.html?filename=tryhtml_lists_nested</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/w3css/w3css_quotes.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit38b2.html?filename=tryhtml_lists_nested2</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/w3css/w3css_alerts.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit209d.html?filename=tryhtml_lists_horizontal</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/w3css/w3css_tables.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit0464.html?filename=tryhtml_lists_menu</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/w3css/w3css_lists.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit78bc.html?filename=tryhtml_div_capitals</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/w3css/w3css_images.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit1fcd.html?filename=tryhtml_span_red</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/w3css/w3css_input.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit794f.html?filename=tryhtml_classes_tags</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/w3css/w3css_badges.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit89a7.html?filename=tryhtml_id_css</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/w3css/w3css_tags.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit16e1.html?filename=tryhtml_id_js</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/w3css/w3css_icons.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit11ad.html?filename=tryhtml_layout_flexbox</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/w3css/w3css_responsive.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit4c44.html?filename=tryhtml_layout_flexbox2</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/w3css/w3css_layout.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit0acf.html?filename=tryhtml_layout_flexbox3</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/w3css/w3css_animate.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryitcbb3.html?filename=tryhtml_iframe</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/w3css/w3css_effects.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit5ade.html?filename=tryhtml_head_none</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/w3css/w3css_bars.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit9ab2.html?filename=tryhtml_head_no_head</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/w3css/w3css_dropdowns.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit7501.html?filename=tryhtml_head_title</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/w3css/w3css_accordions.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit2966.html?filename=tryhtml_head_style</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/w3css/w3css_navigation.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit0343.html?filename=tryhtml_head_link</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/w3css/w3css_sidebar.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit43c5.html?filename=tryhtml_head_meta</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/w3css/w3css_tabulators.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit0896.html?filename=tryhtml_head_script</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/w3css/w3css_pagination.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit55a3.html?filename=tryhtml_head_base</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/w3css/w3css_progressbar.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryita3c7.html?filename=tryhtml_script</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/w3css/w3css_slideshow.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit80c0.html?filename=tryhtml_noscript</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/w3css/w3css_modal.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit434d.html?filename=tryhtml_formatting_kbd</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/w3css/w3css_tooltips.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit66ad.html?filename=tryhtml_formatting_samp</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/w3css/w3css_grid.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit1b5a.html?filename=tryhtml_formatting_code</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/w3css/w3css_code.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryita294.html?filename=tryhtml_formatting_codepre</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/w3css/w3css_filters.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit5852.html?filename=tryhtml_form_text</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/w3css/w3css_trends.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit1082.html?filename=tryhtml_form_radio</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/w3css/w3css_case.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit1c32.html?filename=tryhtml_form_submit_id</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/w3css/w3css_material.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit4436.html?filename=tryhtml_form_legend</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/w3css/w3css_validation.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryitc4f4.html?filename=tryhtml_elem_select</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/w3css/w3css_versions.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryitc971.html?filename=tryhtml_elem_select_pre</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/w3css/w3css_mobile.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryitb083.html?filename=tryhtml_elem_textarea</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/w3css/w3css_color_classes.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit13bd.html?filename=tryhtml_elem_button</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/w3css/w3css_color_material.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit13d9.html?filename=tryhtml_elem_datalist</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/w3css/w3css_color_flat.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit0e46.html?filename=tryhtml_elem_output</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/w3css/w3css_color_metro.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit8bdc.html?filename=tryhtml_input_text</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/w3css/w3css_color_win8.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit8a85.html?filename=tryhtml_input_password</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/w3css/w3css_color_ios.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryitbeba.html?filename=tryhtml_input_radio</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/w3css/w3css_color_libraries.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit6096.html?filename=tryhtml_input_checkbox</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/w3css/w3css_color_schemes.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit1312.html?filename=tryhtml_input_button</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/w3css/w3css_color_themes.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit005b.html?filename=tryhtml_input_number</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/w3css/w3css_color_generator.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit2510.html?filename=tryhtml_input_number_step</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/w3css/w3css_demo.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit6025.html?filename=tryhtml_input_date</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/w3css/w3css_downloads.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit5141.html?filename=tryhtml_input_date_max_min</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/w3css/tryit5ae0.html?filename=tryw3css_default_intro</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryita532.html?filename=tryhtml_input_color</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/w3css/tryitdb49.html?filename=tryw3css_default_howto</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryita992.html?filename=tryhtml_input_month</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/howto/howto_js_tabs.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit04de.html?filename=tryhtml_input_time</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_dropdown.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit8960.html?filename=tryhtml_input_datetime</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/howto/howto_js_accordion.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryitc3bb.html?filename=tryhtml_input_datetime-local</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/howto/howto_js_sidenav.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit2949.html?filename=tryhtml_input_search</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/howto/howto_js_topnav.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit28c7.html?filename=tryhtml_input_url</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_modals.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit73ef.html?filename=tryhtml5_input_autocomplete</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/howto/howto_js_progressbar.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit7b60.html?filename=tryhtml5_form_novalidate</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_parallax.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit7c56.html?filename=tryhtml5_input_autofocus</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_login_form.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit1577.html?filename=tryhtml5_input_form</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/howto/howto_html_include.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryita145.html?filename=tryhtml5_input_formaction</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/howto/howto_js_rangeslider.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit339d.html?filename=tryhtml5_input_formenctype</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_tooltip.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit0d88.html?filename=tryhtml5_input_formmethod</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/howto/howto_js_slideshow.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryitaffe.html?filename=tryhtml5_input_formnovalidate</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/howto/howto_js_filter_lists.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryitc29f.html?filename=tryhtml5_input_height_width</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/howto/howto_js_sort_list.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit601f.html?filename=tryhtml5_input_list</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_icon_bar.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryitb14e.html?filename=tryhtml5_input_max_min</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_menu_icon.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit4ebe.html?filename=tryhtml5_input_multiple</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/howto/howto_js_vertical_tabs.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit64dc.html?filename=tryhtml5_input_pattern</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/howto/howto_js_tab_header.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit9755.html?filename=tryhtml5_canvas_first</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/howto/howto_js_full_page_tabs.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryitabb9.html?filename=tryhtml5_canvas_tut_path2</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/howto/howto_js_hover_tabs.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit99c3.html?filename=tryhtml5_canvas_tut_text</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/howto/howto_js_topnav_responsive.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit4412.html?filename=tryhtml5_canvas_tut_grad</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_navbar_icon.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryitb560.html?filename=tryhtml5_canvas_tut_grad2</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/howto/howto_js_search_menu.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit3ad8.html?filename=tryhtml5_canvas_tut_img</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_searchbar.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit9978.html?filename=tryhtml_svg_circle</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_fixed_sidebar.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit7edc.html?filename=tryhtml_svg_rect</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_sidebar_responsive.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit2a3b.html?filename=tryhtml_svg_rect_round</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/howto/howto_js_fullscreen_overlay.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit028e.html?filename=tryhtml_svg_star</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/howto/howto_js_off-canvas.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryitc8dd.html?filename=tryhtml_svg_logo</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_sidenav_buttons.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit420a.html?filename=tryhtml5_video</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_sidebar_icons.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit8456.html?filename=tryhtml5_video_all</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_menu_horizontal_scroll.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit7842.html?filename=tryhtml5_video_autoplay</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_vertical_menu.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit19ba.html?filename=tryhtml5_audio_all</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_bottom_nav.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit6329.html?filename=tryhtml5_geolocation</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/howto/howto_js_bottom_nav_responsive.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit67d4.html?filename=tryhtml5_geolocation_watchposition</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_navbar_border.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryitba72.html?filename=tryhtml5_webstorage_local</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_topnav_right.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit681b.html?filename=tryhtml5_webstorage_session</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_topnav_centered.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit2b2d.html?filename=tryhtml_youtubeiframe</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_topnav_equal_width.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://w3schoolsrus.github.io/html/tryit01c2.html?filename=tryhtml5_draganddrop</loc>
-  <lastmod>2019-09-23T17:04:22+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_fixed_menu.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
-
-
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_js_navbar_slide.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_js_navbar_hide_scroll.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_js_navbar_shrink_scroll.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_js_navbar_sticky.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_navbar_image.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_js_dropdown.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_dropdown_navbar.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_js_dropdown_sidenav.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_js_responsive_navbar_dropdown.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_subnav.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_dropup.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_mega_menu.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_js_mobile_navbar.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_js_curtain_menu.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_js_collapse_sidebar.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_js_collapse_sidepanel.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_pagination.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_breadcrumbs.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_button_group.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_button_group_vertical.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_sticky_social_bar.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_pill_nav.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_responsive_header.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_js_slideshow_gallery.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_modal_images.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_js_lightbox.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_image_grid_responsive.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_js_image_grid.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_js_tab_img_gallery.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_image_overlay.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_image_overlay_slide.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_image_overlay_zoom.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_image_overlay_title.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_image_overlay_icon.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_image_effects.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_image_bw.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_image_text.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_image_text_blocks.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_image_transparent.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_full_page.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_form_on_image.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_hero_image.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_blurred_background.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_bg_change_scroll.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_images_side_by_side.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_rounded_images.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_image_avatar.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_image_responsive.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_image_center.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_thumbnail.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_team.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_image_sticky.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_flip_image.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_shake_image.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_portfolio_gallery.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_js_portfolio_filter.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_js_image_zoom.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_js_image_magnifier_glass.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_js_image_comparison.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_alert_buttons.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_outline_buttons.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_button_split.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_animate_buttons.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_fading_buttons.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_button_on_image.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_social_media_buttons.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_js_read_more.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_loading_buttons.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_download_button.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_pill_button.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_notification_button.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_icon_buttons.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_next_prev.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_more_button.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_block_buttons.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_text_buttons.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_round_buttons.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_js_scroll_to_top.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_signup_form.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_checkout_form.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_contact_form.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_social_login.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_register_form.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_form_icon.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_newsletter.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_stacked_form.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_responsive_form.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_js_popup_form.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_inline_form.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_html_clear_input.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_js_copy_clipboard.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_animated_search.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_search_button.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_fullscreen_search.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_input_navbar.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_login_form_navbar.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_custom_checkbox.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_custom_select.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_switch.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_js_display_checkbox_text.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_js_detect_capslock.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_js_trigger_button_enter.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_js_password_validation.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_js_toggle_password.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_js_form_steps.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_js_autocomplete.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_js_filter_table.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_js_filter_elements.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_js_filter_dropdown.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_js_sort_table.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_table_zebra.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_table_responsive.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_comparison_table.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_fullscreen_video.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_timeline.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_js_scroll_indicator.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_skill_bar.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_js_popup.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_js_collapsible.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_calendar.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_js_todolist.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_loader.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_star_rating.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_user_rating.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_overlay.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_contact_chips.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_cards.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_flip_card.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_profile_card.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_product_card.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_js_alert.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_js_callout.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_notes.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_labels.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_circles.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_style_hr.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_coupon.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_list_group.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_responsive_text.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_cutout_text.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_glowing_text.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_fixed_footer.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_sticky_element.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_equal_height.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_clearfix.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_responsive_floats.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_js_snackbar.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_js_fullscreen.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_js_scrolldrawing.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_smooth_scroll.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_bg_gradient_scroll.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_js_sticky_header.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_js_shrink_header_scroll.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_pricing_table.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_aspect_ratio.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_js_toggle_like.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_js_toggle_hide_show.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_js_toggle_text.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_js_toggle_class.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_js_add_class.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_js_remove_class.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_js_active_element.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_js_treeview.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_js_remove_property_object.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_js_offline_detection.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_js_check_hidden.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_js_redirect_webpage.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_zoom_hover.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_flip_box.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_center-vertical.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_transition_hover.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_arrows.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_shapes.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_html_download_link.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_div_full_height.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_browser_window.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_custom_scrollbar.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_devices.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_placeholder.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_text_selection.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_bullet_color.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_vertical_line.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_js_animate_icons.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_js_countdown.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_js_typewriter.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_coming_soon.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_chat.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_js_popup_chat.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_split_screen.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_testimonials.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_section_counter.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_js_quotes_slideshow.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_js_close_list_items.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_css_media_query_breakpoints.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_js_draggable.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_js_media_queries.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_syntax_highlight.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_js_animate.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://w3schoolsrus.github.io/howto/howto_js_element_iframe.html</loc>
+	<lastmod>2019-10-06T16:00:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
 </urlset>
