@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <title>Какие бывают сайты? Основы веб-верстки. Уроки для начинающих. Блог W3Schools на русском</title>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="w3schools,html,css,школа,уроки,на русском,html5,css3,основы,язык,веб,блог,какие,сайты,виды" name="Keywords">
+  <meta content="Какие бывают сайты? Разновидности сайтов. С помощью каких программ создают сайты в сети? Блог W3Schools на русском." name="Description">
+  <link href="../favicon.ico" rel="icon" type="image/x-icon">
+  <link href="../w3css/4/w3.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Source%20Code%20Pro' rel='stylesheet'>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <!-- HEADER -->
+  <div class='w3-container top'>
+    <a class='w3schools-logo notranslate' href='../index.html'>w3schools<span class='dotcom'>.на русском</span></a>
+    <div class='w3-right w3-hide-small w3-wide toptext' style="font-family:'Segoe UI',Arial,sans-serif">
+      ЛУЧШИЙ САЙТ ДЛЯ ВЕБ-РАЗРАБОТЧИКОВ
+    </div>
+  </div><!-- HEADER / -->
+  <!-- Top menu  -->
+  <div class='w3-card-2 topnav notranslate' id='topnav'>
+    <div style="overflow:auto;">
+      <div class="w3-bar w3-left" style="width:100%;overflow:hidden;height:44px">
+        <a class='topnav-icons fa fa-menu w3-hide-large w3-left w3-bar-item w3-button' href='javascript:void(0);' onclick='open_menu()' title='Menu'></a> <a class='topnav-icons fa fa-home w3-left w3-bar-item w3-button' href='../default.html' title='Home'></a> <a class="w3-bar-item w3-button" href='../html/default.html' title='HTML Tutorial'>HTML</a> <a class="w3-bar-item w3-button" href='../css/default.html' title='CSS Tutorial'>CSS</a> <a class="w3-bar-item w3-button" href='../js/default.html' title='JavaScript Tutorial'>JAVASCRIPT</a> <a class="w3-bar-item w3-button" href='../sql/default.html' title='SQL Tutorial'>SQL</a> <a class="w3-bar-item w3-button" href='../python/default.html' title='Python Tutorial'>PYTHON</a> <a class="w3-bar-item w3-button" href='../php/default.html' title='PHP Tutorial'>PHP</a> <a class="w3-bar-item w3-button" href='../bootstrap/bootstrap_ver.html' title='Bootstrap Tutorial'>BOOTSTRAP</a> <a class="w3-bar-item w3-button" href='../howto/default.html' title='How To'>КАК СДЕЛАТЬ</a> <a class="w3-bar-item w3-button" href='../w3css/default.html' title='W3.CSS Tutorial'>W3.CSS</a> <a class="w3-bar-item w3-button" href='../jquery/default.html' title='jQuery Tutorial'>JQUERY</a> <a class="w3-bar-item w3-button" href='../xml/default.html' title='XML Tutorial'>XML</a> <a class="w3-bar-item w3-button" href='javascript:void(0);' id='topnavbtn_tutorials' onclick='w3_open_nav("tutorials")' title='Tutorials'>БОЛЬШЕ <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style='display:none'></i></a> <a class="w3-bar-item w3-button w3-right" href='default.html' target="_blank">БЛОГ</a> <a class="w3-bar-item w3-button w3-right" href='https://drive.google.com/open?id=1fddM8chCC273SbiTEYVNLorbZ2qij7fp' target="_blank">КНИГИ</a> <a class="w3-bar-item w3-button w3-right" href='javascript:void(0);' id='topnavbtn_exercises' onclick='w3_open_nav("exercises")' title='Exercises'>УПРАЖНЕНИЯ <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style='display:none'></i></a> <a class="w3-bar-item w3-button w3-right" href='javascript:void(0);' id='topnavbtn_references' onclick='w3_open_nav("references")' title='References'>СПРАВОЧНИКИ <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style='display:none'></i></a>
+      </div>
+      <div class='w3-bar-block w3-card-2' id='nav_tutorials' style="display:none;">
+        <span class='w3-button w3-xlarge w3-right' onclick='w3_close_nav("tutorials")' style="position:absolute;right:0;font-weight:bold;">&times;</span>
+        <div class='w3-row-padding' style="padding:24px 48px">
+          <div class='w3-col l3 m6'>
+            <h3>HTML и CSS</h3><a class="w3-bar-item w3-button" href='default.html'>Выучить HTML</a> <a class="w3-bar-item w3-button" href='../css/default.html'>Выучить CSS</a> <a class="w3-bar-item w3-button" href='../bootstrap/bootstrap_ver.html'>Выучить Bootstrap</a> <a class="w3-bar-item w3-button" href='../w3css/default.html'>Выучить W3.CSS</a> <a class="w3-bar-item w3-button" href='../colors/default.html'>Выучить Colors</a> <a class="w3-bar-item w3-button" href='../icons/default.html'>Выучить Icons</a> <a class="w3-bar-item w3-button" href='../graphics/default.html'>Выучить Graphics</a> <a class="w3-bar-item w3-button" href='../graphics/svg_intro.html'>Выучить SVG</a> <a class="w3-bar-item w3-button" href='../graphics/canvas_intro.html'>Выучить Canvas</a> <a class="w3-bar-item w3-button" href='../howto/default.html'>Выучить Как сделать</a> <a class="w3-bar-item w3-button" href='../sass/default.html'>Выучить Sass</a>
+            <div class="w3-hide-large w3-hide-small">
+              <h3>XML</h3><a class="w3-bar-item w3-button" href='../xml/default.html'>Выучить XML</a> <a class="w3-bar-item w3-button" href='../xml/ajax_intro.html'>Выучить XML AJAX</a> <a class="w3-bar-item w3-button" href="../xml/dom_intro.html">Выучить XML DOM</a> <a class="w3-bar-item w3-button" href='../xml/xml_dtd_intro.html'>Выучить XML DTD</a> <a class="w3-bar-item w3-button" href='../xml/schema_intro.html'>Выучить XML Schema</a> <a class="w3-bar-item w3-button" href='../xml/xsl_intro.html'>Выучить XSLT</a> <a class="w3-bar-item w3-button" href='../xml/xpath_intro.html'>Выучить XPath</a> <a class="w3-bar-item w3-button" href='../xml/xquery_intro.html'>Выучить XQuery</a>
+            </div>
+          </div>
+          <div class='w3-col l3 m6'>
+            <h3>JavaScript</h3><a class="w3-bar-item w3-button" href='../js/default.html'>Выучить JavaScript</a> <a class="w3-bar-item w3-button" href='../jquery/default.html'>Выучить jQuery</a> <a class="w3-bar-item w3-button" href='../react/default.html'>Выучить React</a> <a class="w3-bar-item w3-button" href='../angular/default.html'>Выучить AngularJS</a> <a class="w3-bar-item w3-button" href="../js/js_json_intro.html">Выучить JSON</a> <a class="w3-bar-item w3-button" href='../js/js_ajax_intro.html'>Выучить AJAX</a> <a class="w3-bar-item w3-button" href="../w3js/default.html">Выучить W3.JS</a>
+            <h3>Программирование</h3><a class="w3-bar-item w3-button" href='../python/default.html'>Выучить Python</a> <a class="w3-bar-item w3-button" href='../java/default.html'>Выучить Java</a> <a class="w3-bar-item w3-button" href='../cpp/default.html'>Выучить C++</a>
+            <div class="w3-hide-small">
+              <br class="w3-hide-medium w3_hide-small">
+              <br class="w3-hide-medium w3_hide-small">
+            </div>
+          </div>
+          <div class='w3-col l3 m6'>
+            <h3>Серверная сторона</h3><a class="w3-bar-item w3-button" href='../sql/default.html'>Выучить SQL</a> <a class="w3-bar-item w3-button" href='../php/default.html'>Выучить PHP</a> <a class="w3-bar-item w3-button" href='../asp/default.html'>Выучить ASP</a> <a class="w3-bar-item w3-button" href='../nodejs/default.html'>Выучить Node.js</a> <a class="w3-bar-item w3-button" href='../nodejs/nodejs_raspberrypi.html'>Выучить Raspberry Pi</a>
+            <h3>Веб-строительство</h3><a class="w3-bar-item w3-button" href="../w3css/w3css_templates.html">Веб шаблоны</a> <a class="w3-bar-item w3-button" href='../browsers/default.html'>Веб статистика</a> <a class="w3-bar-item w3-button" href='../cert/default.html'>Веб сертификаты</a> <a class="w3-bar-item w3-button" href='../tryit/default.html'>Веб редактор</a> <a class="w3-bar-item w3-button" href="../whatis/default.html">Веб разработка</a>
+          </div>
+          <div class='w3-col l3 m6 w3-hide-medium'>
+            <h3>XML</h3><a class="w3-bar-item w3-button" href='../xml/default.html'>Выучить XML</a> <a class="w3-bar-item w3-button" href='../xml/ajax_intro.html'>Выучить XML AJAX</a> <a class="w3-bar-item w3-button" href="../xml/dom_intro.html">Выучить XML DOM</a> <a class="w3-bar-item w3-button" href='../xml/xml_dtd_intro.html'>Выучить XML DTD</a> <a class="w3-bar-item w3-button" href='../xml/schema_intro.html'>Выучить XML Schema</a> <a class="w3-bar-item w3-button" href='../xml/xsl_intro.html'>Выучить XSLT</a> <a class="w3-bar-item w3-button" href='../xml/xpath_intro.html'>Выучить XPath</a> <a class="w3-bar-item w3-button" href='../xml/xquery_intro.html'>Выучить XQuery</a>
+          </div>
+        </div><br>
+      </div>
+      <div class='w3-bar-block w3-card-2' id='nav_references'>
+        <span class='w3-button w3-xlarge w3-right' onclick='w3_close_nav("references")' style="position:absolute;right:0;font-weight:bold;">&times;</span>
+        <div class='w3-row-padding' style="padding:24px 48px">
+          <div class='w3-col l3 m6'>
+            <h3>HTML</h3><a class="w3-bar-item w3-button" href='../tags/default.html'>HTML Справочник тегов</a> <a class="w3-bar-item w3-button" href='../tags/ref_eventattributes.html'>HTML Справочник событий</a> <a class="w3-bar-item w3-button" href='../colors/default.html'>HTML Справочник цветов</a> <a class="w3-bar-item w3-button" href='../tags/ref_attributes.html'>HTML Справочник атрибутов</a> <a class="w3-bar-item w3-button" href='../tags/ref_canvas.html'>HTML Canvas справочник</a> <a class="w3-bar-item w3-button" href='../graphics/svg_reference.html'>HTML SVG Справочник</a> <a class="w3-bar-item w3-button" href='../charsets/default.html'>HTML Наборы символов</a> <a class="w3-bar-item w3-button" href='../graphics/google_maps_reference.html'>Google карты Справочник</a>
+            <h3>CSS</h3><a class="w3-bar-item w3-button" href='../cssref/default.html'>CSS Справочник</a> <a class="w3-bar-item w3-button" href='../cssref/css3_browsersupport.html'>CSS Поддержка браузерами</a> <a class="w3-bar-item w3-button" href='../cssref/css_selectors.html'>CSS Справочник селекторов</a> <a class="w3-bar-item w3-button" href='../bootstrap/bootstrap_ref_all_classes.html'>Bootstrap 3 Справочник</a> <a class="w3-bar-item w3-button" href='../bootstrap4/bootstrap_ref_all_classes.html'>Bootstrap 4 Справочник</a> <a class="w3-bar-item w3-button" href='../w3css/w3css_references.html'>W3.CSS Справочник</a> <a class="w3-bar-item w3-button" href='../icons/icons_reference.html'>Icon Справочник</a> <a class="w3-bar-item w3-button" href='../sass/sass_functions_string.html'>Sass Справочник</a>
+          </div>
+          <div class='w3-col l3 m6'>
+            <h3>JavaScript</h3><a class="w3-bar-item w3-button" href='../jsref/default.html'>JavaScript Справочник</a> <a class="w3-bar-item w3-button" href='../jsref/default.html'>HTML DOM Справочник</a> <a class="w3-bar-item w3-button" href='../jquery/jquery_ref_overview.html'>jQuery Справочник</a> <a class="w3-bar-item w3-button" href='../angular/angular_ref_directives.html'>AngularJS Справочник</a> <a class="w3-bar-item w3-button" href="../w3js/w3js_references.html">W3.JS Справочник</a>
+            <h3>Программирование</h3><a class="w3-bar-item w3-button" href='../python/python_reference.html'>Python Справочник</a> <a class="w3-bar-item w3-button" href='../java/java_ref_keywords.html'>Java Справочник</a>
+          </div>
+          <div class='w3-col l3 m6'>
+            <h3>Серверная сторона</h3><a class="w3-bar-item w3-button" href='../sql/sql_ref_keywords.html'>SQL Справочник</a> <a class="w3-bar-item w3-button" href='../php/php_ref_overview.html'>PHP Справочник</a> <a class="w3-bar-item w3-button" href='../asp/asp_ref_response.html'>ASP Справочник</a>
+            <h3>XML</h3><a class="w3-bar-item w3-button" href='../xml/dom_nodetype.html'>XML Справочник</a> <a class="w3-bar-item w3-button" href='../xml/dom_http.html'>XML Http Справочник</a> <a class="w3-bar-item w3-button" href='../xml/xsl_elementref.html'>XSLT Справочник</a> <a class="w3-bar-item w3-button" href='../xml/schema_elements_ref.html'>XML Schema Справочник</a>
+          </div>
+          <div class='w3-col l3 m6 w3-hide-medium w3-hide-small'>
+            <h3>Наборы символов</h3><a class="w3-bar-item w3-button" href='../charsets/default.html'>HTML Наборы символов</a> <a class="w3-bar-item w3-button" href='../charsets/ref_html_ascii.html'>HTML ASCII</a> <a class="w3-bar-item w3-button" href='../charsets/ref_html_ansi.html'>HTML ANSI</a> <a class="w3-bar-item w3-button" href='../charsets/ref_html_ansi.html'>HTML Windows-1252</a> <a class="w3-bar-item w3-button" href='../charsets/ref_html_8859.html'>HTML ISO-8859-1</a> <a class="w3-bar-item w3-button" href='../charsets/ref_html_symbols.html'>HTML Символы</a> <a class="w3-bar-item w3-button" href='../charsets/ref_html_utf8.html'>HTML UTF-8</a>
+          </div>
+        </div><br>
+      </div>
+      <div class='w3-bar-block w3-card-2' id='nav_exercises'>
+        <span class='w3-button w3-xlarge w3-right' onclick='w3_close_nav("exercises")' style="position:absolute;right:0;font-weight:bold;">&times;</span>
+        <div class='w3-row-padding' style="padding:24px 48px">
+          <div class='w3-col l4 m6'>
+            <h3>Упражнения</h3><a class="w3-bar-item w3-button" href="html_exercises.html">HTML Упражнения</a> <a class="w3-bar-item w3-button" href="../css/css_exercises.html">CSS Упражнения</a> <a class="w3-bar-item w3-button" href="../js/js_exercises.html">JavaScript Упражнения</a> <a class="w3-bar-item w3-button" href="../sql/sql_exercises.html">SQL Упражнения</a> <a class="w3-bar-item w3-button" href="../php/php_exercises.html">PHP Упражнения</a> <a class="w3-bar-item w3-button" href="../python/python_exercises.html">Python Упражнения</a> <a class="w3-bar-item w3-button" href="../jquery/jquery_exercises.html">jQuery Упражнения</a> <a class="w3-bar-item w3-button" href="../bootstrap/bootstrap_exercises.html">Bootstrap Упражнения</a> <a class="w3-bar-item w3-button" href="../java/java_exercises.html">Java Упражнения</a> <a class="w3-bar-item w3-button" href="../cpp/cpp_exercises.html">C++ Упражнения</a>
+          </div>
+          <div class='w3-col l4 m6'>
+            <h3>Викторины</h3><a class="w3-bar-item w3-button" href='html_quiz.html' target='_top'>HTML Викторина</a> <a class="w3-bar-item w3-button" href='../css/css_quiz.html' target='_top'>CSS Викторина</a> <a class="w3-bar-item w3-button" href='../js/js_quiz.html' target='_top'>JavaScript Викторина</a> <a class="w3-bar-item w3-button" href="../sql/sql_quiz.html" target="_top">SQL Викторина</a> <a class="w3-bar-item w3-button" href='../php/php_quiz.html' target='_top'>PHP Викторина</a> <a class="w3-bar-item w3-button" href='../python/python_quiz.html' target='_top'>Python Викторина</a> <a class="w3-bar-item w3-button" href='../jquery/jquery_quiz.html' target='_top'>jQuery Викторина</a> <a class="w3-bar-item w3-button" href='../bootstrap/bootstrap_quiz.html' target='_top'>Bootstrap Викторина</a> <a class="w3-bar-item w3-button" href='../xml/xml_quiz.html' target='_top'>XML Викторина</a>
+          </div>
+          <div class='w3-col l4 m12'>
+            <h3>Сертификаты</h3><a class="w3-bar-item w3-button" href="../cert/cert_html_new.html" target="_top">HTML Сертификат</a> <a class="w3-bar-item w3-button" href="../cert/cert_css.html" target="_top">CSS Сертификат</a> <a class="w3-bar-item w3-button" href="../cert/cert_javascript.html" target="_top">JavaScript Сертификат</a> <a class="w3-bar-item w3-button" href="../cert/cert_sql.html" target="_top">SQL Сертификат</a> <a class="w3-bar-item w3-button" href="../cert/cert_php.html" target="_top">PHP Сертификат</a> <a class="w3-bar-item w3-button" href="../cert/cert_python.html" target="_top">Python Сертификат</a> <a class="w3-bar-item w3-button" href="../cert/cert_jquery.html" target="_top">jQuery Сертификат</a> <a class="w3-bar-item w3-button" href="../cert/cert_bootstrap.html" target="_top">Bootstrap Сертификат</a> <a class="w3-bar-item w3-button" href="../cert/cert_xml.html" target="_top">XML Сертификат</a>
+          </div>
+        </div><br>
+      </div>
+    </div>
+  </div><!-- Top menu / -->
+  <!-- Left Sidebar -->
+  <div class='w3-sidebar w3-collapse' id='sidenav'>
+    <div id='leftmenuinner'>
+      <div class='w3-light-grey' id='leftmenuinnerinner'>
+        <h2 class="left"><span class="left_h2">Блог</span> админа</h2><a href="default.html" target="_top">Блог W3Schools на русском</a> <a href="whatsites.html" target="_top">Какие бывают сайты?</a> <a href="" target="_top">SEO. Поисковая оптимизация</a><br>
+      </div>
+    </div>
+  </div><!-- / Left Sidebar -->
+  <div class='w3-main w3-light-grey' id='belowtopnav' style='margin-left:220px;'>
+    <div class='w3-row w3-white'>
+      <div class='w3-col l10 m12' id='main'>
+        <h1>Какие бывают сайты? Типы сайтов</h1>
+        <div class="w3-clear nextprev">
+          <a class="w3-left w3-btn" href="default.html">&#10094; Prev</a> <a class="w3-right w3-btn" href="seo_optimization.html">Next &#10095;</a>
+        </div>
+        <hr>
+        <div class="w3-panel w3-info intro">
+          <blockquote cite="https://uk.wikipedia.org/wiki/%D0%92%D0%B5%D0%B1-%D1%81%D0%B0%D0%B9%D1%82">
+            <p><strong>Сайт</strong>, или <strong>веб-сайт</strong> (от англ. <em>website</em>, место, площадка в Интернете) — совокупность веб-страниц, доступных в сети Интернет, которые объединены как по содержанию, так и навигацией под единым доменным именем. Физически сайт может размещаться как на одном, так и на нескольких серверах.</p>
+            <p><strong>Сайтом</strong> также называют узел сети Интернет, компьютер, за которым закреплен уникальный IP-адрес, и вообще - какой-то объект в Интернете, за которым закреплен адрес, идентифицирующий его в сети (FTP-site, WWW-site и т.д.).</p>
+            <p style="text-align: right">(<i>из Википедии</i>)</p>
+          </blockquote>
+        </div>
+        <hr>
+        <a href="typesites.png" target="_blank"><img alt='Типы сайтов' src="typesites.png" style="width:90%;display:block;margin: auto;"></a>
+        <hr>
+        <h2>Разновидности сайтов</h2>
+        <p>В данной статье вы узнаете, какие бывают сайты.</p>
+        <h3>Какие бывают виды сайтов?</h3>
+        <p>Сейчас, с развитием новых технологий, видов сайтов достаточно много. Как правило, вид сайта практически всегда определяется его целями и задачами. Например, вы хотите сделать сайт о себе любимом. Такой сайт будет иметь вид <strong>Персонального (личного) сайта</strong> . Или же - сайт-визитка, который может быть создан не только об одном человеке, но и о небольшой компании, организации или предприятии. Такие сайты, как правило, состоят всего лишь из одной или нескольких страниц (обычно до 10 страниц), которые могут быть написаны только с использованием <strong>HTML/CSS</strong>. Это самые простые сайты, состоящие из статических (не меняющихся) страниц. Сайты такого вида как правило включают в себя общую информацию о владельце сайта и его контактные данные. Такие сайты обычно самые дешёвые для заказчика и создаются достаточно быстро.</p>
+        <p><strong>Корпоративные сайты</strong> - это более полнофункциональные представительства компаний в Интернете. Этот тип сайта подходит уже для средних и крупных компаний. Корпоративные сайты содержат полную информацию о компании и её деятельности, и соответственно, предназначены для продвижения какого-то бизнеса и зарабатывания денег.</p>
+        <p><strong>Интернет-витрины</strong> , <strong>интернет-магазины</strong> , <strong>промо-сайты</strong> - это виды сайтов, основная задача которых - продавать (товары, услуги, информацию), популяризировать некую торговую марку, товар, услугу или даже человека (например, "звезду" кино или шоу-бизнеса).</p>
+        <p><strong>Тематические сайты</strong> обычно содержат некоторую информацию любой конкретной тематики. Сюда же можно отнести и интернет-энциклопедии (например, <em>Википедию</em>).</p>
+        <p><strong>Интернет-порталы</strong> - это тип сайтов, содержащих большое количество разнообразной информации. Как правило, порталы похожи по структуре с тематическими сайтами, но имеют более развитый функционал и большее количество сервисов и разделов. Также на порталах часто бывают разделы для общения пользователей: чаты, блоги и форумы.</p>
+        <p><strong>Блоги</strong> - это тип сайтов, на которых владелец (обычно он же - администратор сайта) или редактор блога пишет посты со своими новостями, идеями, мыслями или другой информацией, которая постоянно обновляется. Отличительной особенностью блогов является актуальность публикуемой информации, так как устаревшая информация становится неактуальной и неинтересной посетителям. Блоги обычно делаются на какой-то <strong>CMS</strong> (от английского <em>Content Management System</em> ) - системе управления содержимым (контентом). Это компьютерная программа или информационная система, используемая для организации и обеспечения процесса относительно общего создания, управления и редактирования содержимого сайта. Такие системы еще называют "движками" сайтов. Самая популярная <strong>CMS</strong> в мире - это <em>Wordpress</em>. Есть и другие известные движки сайтов, такие как <em>Joomla</em>, <em>Drupal</em>, <em>DataLife Engine</em>, <em>MODX</em> и многие другие.</p>
+        <p><strong>Каталоги сайтов</strong> - это вид сайтов, основным содержанием которых являются структурированные ссылки на другие сайты, а также их краткие описания.</p>
+        <p><strong>Поисковые системы</strong> - вид сайтов, придназначенных для поиска страниц (сайтов) в Интернете по определённым запросам. Самые популярные поисковые системы: <em><a href="https://www.google.com/" rel="nofollow" target="_blank">Google.com</a></em>, <em><a href="https://www.yahoo.com/" rel="nofollow" target="_blank">Yahoo.com</a></em>, <em><a href="https://www.bing.com/" rel="nofollow" target="_blank">Bing.com</a></em>, <em><a href="https://www.aol.com/" rel="nofollow" target="_blank">AOL</a></em> (американские), <em><a href="https://www.yandex.com/" rel="nofollow" target="_blank">Yandex</a></em>, <em><a href="https://www.rambler.ru/" rel="nofollow" target="_blank">Rambler</a></em> (российские), <em><a href="http://www.baidu.com/" rel="nofollow" target="_blank">Baidu.com</a></em>, <em><a href="https://www.so.com/" rel="nofollow" target="_blank">360 Seach</a></em> (китайские), <em><a href="https://meta.ua/ua/" rel="nofollow" target="_blank">Meta</a></em>, <em><a href="https://www.ukr.net/" rel="nofollow" target="_blank">Ukr.net</a></em> (украинские) и др.</p>
+        <p><strong>Почтовые сервисы</strong> - этот тип сайтов предоставляет интерфейс для работы с электронной почтой.</p>
+        <p><strong>Интернет-форумы</strong> - на сайтах этого вида пользователи могут создавать темы, а также комментировать их. Как правило, форумы ограничены одной специфической тематикой, хотя встречаются и форумы «обо всем».</p>
+        <p><strong>Сайты-хостинги</strong> - на сайтах этого типа реализована функция хранения любых файлов. Также часто встречаются сайты-хостинги с возможностью просмотра загруженных файлов прямо через браузер. В зависимости от типа файлов отображаются соответствующие значки. Если это видео-файлы, то иногда можно просматривать и само видео. Самый большой и самый популярный сайт-хостинг видео-файлов - <em><a href="https://www.youtube.com/" rel="nofollow" target="_blank">YouTube.com</a></em>. В Рунете также популярными являются такие видеохостинги, как <em><a href="https://rutube.ru/" rel="nofollow" target="_blank">Rutube.ru</a></em>, <em><a href="https://www.myvi.ru/" rel="nofollow" target="_blank">Myvi.ru</a></em>, <em><a href="http://rt.smotri.com/" rel="nofollow" target="_blank">Smotri.com</a></em> и др. Также к сайтам-хостингам относятся сайты для создания и хранения самих сайтов. Некоторые из них также являются и конструкторами сайтов. Например, один из популярных сайтов в Рунете - бесплатный хостинг и конструктор <em><a href="https://www.ucoz.com/" rel="nofollow" target="_blank">Ucoz.com</a></em>. Некоторые как платные, так и бесплатные хостинг-сервисы также предоставляют готовые движки сайтов (<strong>CMS</strong>) для сайтов-блогов, например, популярные <em><a href="https://www.blogger.com/" rel="nofollow" target="_blank">Blogger.com</a></em>, <em><a href="https://www.livejournal.com/" rel="nofollow" target="_blank">LiveJournal.com</a></em> (Живой Журнал), <em><a href="https://wordpress.com/" rel="nofollow" target="_blank">Wordpress.com</a></em> и другие.</p>
+        <p><strong>Доска объявлений</strong> - на таких сайтах пользователи могут размещать или искать информацию в виде каких-либо объявлений, например - о купле-продаже товаров или услуг. Также к этому типу относятся сайты о поиске и предложения работы или сайты знакомств.</p>
+        <p><strong>Социальные сети</strong> - тип сайтов, созданных для общения пользователей между собой. Это интерактивные сайты, на которых можно просматривать страницы других пользователей, общаться, комментировать, создавать группы по интересам и множество других сервисов. Также некоторые соц.сети ещё являются и большими файлообменными сервисами, на которых можно загружать, хранить и обмениваться различными типами файлов. Крупнейшие соцсети: <em><a href="https://www.facebook.com/" rel="nofollow" target="_blank">Facebook.com</a></em>, <em><a href="https://twitter.com/" rel="nofollow" target="_blank">Twitter.com</a></em>, <em><a href="https://www.instagram.com/" rel="nofollow" target="_blank">Instagram.com</a></em>, <em><a href="https://vk.com" rel="nofollow" target="_blank">VK.com</a></em>, <em><a href="https://ok.ru/" rel="nofollow" target="_blank">Одноклассники.ru</a></em>, <em><a href="https://i.qq.com/" rel="nofollow" target="_blank">Qzone.com</a></em> (самая большая китайская соц.сеть) и др.</p>
+        <p>Некоторые сайты являются также и приложениями (обычно для мобильных устройств). Такие сайты уже создаются с помощью языков программирования (например, на языке <em>PHP</em>, <em>Python</em> (Питон), <em>Ruby</em> и др.).</p>
+        <hr>
+        <div class="w3-clear nextprev">
+          <a class="w3-left w3-btn" href="default.html">&#10094; Prev</a>
+          <a class="w3-right w3-btn" href="seo_optimization.html">Next &#10095;</a>
+        </div>
+
+
+        <hr>
+        <!--Комментарии от Disqus-->
+        <iframe class="predisqus" src="../pages/predisqus.html"></iframe>
+        <div id="disqus_thread"></div>
+        <script>
+        var disqus_config = function () {
+        this.page.url = w3schoolsrus.github.io; // канонический URL страницы
+        this.page.identifier = w3schoolsrus.github.io / blog / whatsites.html; // уникальный идентификатор страницы
+        };
+        (function() { // Не редактировать ниже этой линии
+        var d = document, s = d.createElement('script');
+        s.src = 'https://w3schoolsrus-github-io.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+        </script> <noscript>Пожалуйста, включите JavaScript для просмотра <a href="https://disqus.com/?ref_noscript">комментариев, предоставленных Disqus.</a></noscript> <!--/ Комментарии от Disqus-->
+        <hr>
+      </div>
+      <div class="w3-col l2 m12" id="right">
+        <div class="sidesection g-search">
+          Поиск на сайте<br>
+          <script async src="https://cse.google.com/cse.js?cx=018292901867315999508:nszv7kx6uzc">
+          </script>
+          <div class="gcse-search"></div>
+        </div>
+        <div class="sidesection">
+          <h4><a href="../colors/colors_picker.html">ПАЛИТРА ЦВЕТОВ</a></h4><a href="../colors/colors_picker.html"><img alt="colorpicker" src="../images/colorpicker.gif"></a>
+        </div>
+        <div class="sidesection w3-light-grey" style="margin-left:auto;margin-right:auto;max-width:230px">
+          <div class="w3-container w3-dark-grey">
+            <h4><a class="w3-hover-text-white" href="../howto/default.html">КАК СДЕЛАТЬ</a></h4>
+          </div>
+          <div class="w3-container w3-left-align w3-padding-16">
+            <a href="howto_js_tabs.html">Вкладки</a><br>
+            <a href="howto_css_dropdown.html">Выпадающее меню</a><br>
+            <a href="howto_js_accordion.html">Меню аккордеон</a><br>
+            <a href="howto_js_sidenav.html">Боковая навигация</a><br>
+            <a href="howto_js_topnav.html">Верхняя навигация</a><br>
+            <a href="howto_css_modals.html">Модальные блоки</a><br>
+            <a href="howto_js_progressbar.html">Прогресс-бары</a><br>
+            <a href="howto_css_parallax.html">Паралакс</a><br>
+            <a href="howto_css_login_form.html">Форма входа</a><br>
+            <a href="howto_html_include.html">HTML сниппеты</a><br>
+            <a href="../graphics/google_maps_intro.html">Google карты</a><br>
+            <a href="howto_js_rangeslider.html">Ползунки диапазона</a><br>
+            <a href="howto_css_tooltip.html">Всплывающие подсказки</a><br>
+            <a href="howto_js_slideshow.html">Слайдшоу</a><br>
+            <a href="howto_js_filter_lists.html">Список фильтров</a><br>
+            <a href="howto_js_sort_list.html">Отсортированный список</a><br>
+          </div>
+          <div class="w3-container w3-dark-grey">
+            <h4><a class="w3-hover-text-white" href="../pages/source.html">РЕСУРСЫ</a></h4>
+          </div><iframe class="frame-source" src="../pages/source.html"></iframe>
+        </div>
+      </div>
+    </div>
+    <div class="footer w3-container w3-white" id="footer">
+      <hr>
+      <!-- Место для рекламы -->
+      <hr>
+      <div class="w3-row-padding w3-center w3-small" style="margin:0 -16px">
+        <div class="w3-col l3 m3 s12">
+          <a class="w3-button w3-light-grey w3-block" href="javascript:void(0);" onclick="displayError();return false" style="white-space:nowrap;text-decoration:none;margin-top:1px;margin-bottom:1px">СООБЩИТЬ ПРО ОШИБКУ</a>
+        </div>
+        <div class="w3-col l3 m3 s12">
+          <a class="w3-button w3-light-grey w3-block" href="javascript:void(0);" onclick="printPage();return false;" style="text-decoration:none;margin-top:1px;margin-bottom:1px" target="_blank">ПЕЧАТЬ СТРАНИЦЫ</a>
+        </div>
+        <div class="w3-col l3 m3 s12">
+          <a class="w3-button w3-light-grey w3-block" href="http://w3schools.invisionzone.com/" style="text-decoration:none;margin-top:1px;margin-bottom:1px" target="_blank">ФОРУМ</a>
+        </div>
+        <div class="w3-col l3 m3 s12">
+          <a class="w3-button w3-light-grey w3-block" href="../about/default.html" style="text-decoration:none;margin-top:1px;margin-bottom:1px" target="_top">ПРО САЙТ</a>
+        </div>
+      </div>
+      <hr>
+      <div class="w3-light-grey w3-padding w3-margin-bottom" id="err_form" style="display:none;position:relative">
+        <span class="w3-button w3-display-topright w3-large" onclick="this.parentElement.style.display='none'">&times;</span>
+        <h2>Ваше предложение:</h2>
+        <form>
+          <div class="w3-section">
+            <label for="err_email">Ваш E-mail:</label> <input class="w3-input w3-border" id="err_email" name="err_email" style="margin-top:5px;width:100%" type="text">
+          </div>
+          <div class="w3-section">
+            <label for="err_email">Адрес страницы:</label> <input class="w3-input w3-border" disabled="disabled" id="err_url" name="err_url" style="width:100%;margin-top:5px" type="text">
+          </div>
+          <div class="w3-section">
+            <label for="err_email">Описание:</label>
+            <textarea class="w3-input w3-border" id="err_desc" name="err_desc" rows="10" style="width:100%;margin-top:5px;resize:vertical;"></textarea>
+          </div>
+          <div class="form-group">
+            <button class="w3-button w3-dark-grey" onclick="sendErr()" type="button">Отправить</button>
+          </div><br>
+        </form>
+      </div>
+      <div class="w3-container w3-light-grey w3-padding" id="err_sent" style="display:none;position:relative">
+        <span class="w3-button w3-display-topright" onclick="this.parentElement.style.display='none'">&times;</span>
+        <h2>Спасибо за вашу помощь!</h2>
+        <p>Ваше сообщение было отправлено в W3Schools.</p>
+      </div>
+      <div class="w3-row w3-center w3-small">
+        <div class="w3-col l3 m6 s12">
+          <div class="top10">
+            <h4>Топ Учебники</h4><a href="default.html">HTML Учебник</a><br>
+            <a href="../css/default.html">CSS Учебник</a><br>
+            <a href="../js/default.html">JavaScript Учебник</a><br>
+            <a href="../howto/default.html">Как сделать Учебник</a><br>
+            <a href="../sql/default.html">SQL Учебник</a><br>
+            <a href="../python/default.html">Python Учебник</a><br>
+            <a href="../w3css/default.html">W3.CSS Учебник</a><br>
+            <a href="../bootstrap/bootstrap_ver.html">Bootstrap Учебник</a><br>
+            <a href="../php/default.html">PHP Учебник</a><br>
+            <a href="../jquery/default.html">jQuery Учебник</a><br>
+            <a href="../java/default.html">Java Учебник</a><br>
+            <a href="../cpp/default.html">C++ Учебник</a><br>
+          </div>
+        </div>
+        <div class="w3-col l3 m6 s12">
+          <div class="top10">
+            <h4>Топ Справочники</h4><a href="../tags/default.html">HTML Справочник</a><br>
+            <a href="../cssref/default.html">CSS Справочник</a><br>
+            <a href="../jsref/default.html">JavaScript Справочник</a><br>
+            <a href="../sql/sql_ref_keywords.html">SQL Справочник</a><br>
+            <a href="../python/python_reference.html">Python Справочник</a><br>
+            <a href="../w3css/w3css_references.html">W3.CSS Справочник</a><br>
+            <a href="../bootstrap/bootstrap_ref_all_classes.html">Bootstrap Справочник</a><br>
+            <a href="../php/php_ref_overview.html">PHP Справочник</a><br>
+            <a href="../colors/colors_names.html">HTML Цвета</a><br>
+            <a href="../jquery/jquery_ref_overview.html">jQuery Справочник</a><br>
+            <a href="../java/java_ref_keywords.html">Java Справочник</a><br>
+            <a href="../angular/angular_ref_directives.html">Angular Справочник</a><br>
+          </div>
+        </div>
+        <div class="w3-col l3 m6 s12">
+          <div class="top10">
+            <h4>Топ Примеры</h4><a href="html_examples.html">HTML Примеры</a><br>
+            <a href="../css/css_examples.html">CSS Примеры</a><br>
+            <a href="../js/js_examples.html">JavaScript Примеры</a><br>
+            <a href="../howto/default.html">Как сделать Примеры</a><br>
+            <a href="../sql/sql_examples.html">SQL Примеры</a><br>
+            <a href="../python/python_examples.html">Python Примеры</a><br>
+            <a href="../w3css/w3css_examples.html">W3.CSS Примеры</a><br>
+            <a href="../bootstrap/bootstrap_examples.html">Bootstrap Примеры</a><br>
+            <a href="../php/php_examples.html">PHP Примеры</a><br>
+            <a href="../jquery/jquery_examples.html">jQuery Примеры</a><br>
+            <a href="../java/java_examples.html">Java Примеры</a><br>
+            <a href="../xml/xml_examples.html">XML Примеры</a><br>
+          </div>
+        </div>
+        <div class="w3-col l3 m6 s12">
+          <div class="top10">
+            <h4>Web Сертификаты</h4><a href="../cert/default.html">HTML Сертификат</a><br>
+            <a href="../cert/default.html">CSS Сертификат</a><br>
+            <a href="../cert/default.html">JavaScript Сертификат</a><br>
+            <a href="../cert/default.html">SQL Сертификат</a><br>
+            <a href="../cert/default.html">Python Сертификат</a><br>
+            <a href="../cert/default.html">jQuery Сертификат</a><br>
+            <a href="../cert/default.html">PHP Сертификат</a><br>
+            <a href="../cert/default.html">Bootstrap Сертификат</a><br>
+            <a href="../cert/default.html">XML Сертификат</a><br>
+            <a class="w3-button w3-margin-top w3-dark-grey" href="../cert/default.html" style="text-decoration:none">Получить Сертификацию &raquo;</a>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="w3-center w3-small w3-opacity">Этот сайт оптимизирован для обучения, тестирования и обучения. Примеры могут быть упрощены для улучшения чтения и базового понимания. Учебные пособия, ссылки и примеры постоянно пересматриваются, чтобы избежать ошибок, но мы не можем гарантировать полную правильность и работоспособность всего контента. Используя этот сайт, вы соглашаетесь с тем, что прочитали и приняли <a href="../about/about_copyright.html">условия использования.</a>, <a href="../about/about_privacy.html">cookie и политики конфиденциальности</a>. <a href="../about/about_copyright.html">Copyright 1999-2019</a> by Refsnes Data. All Rights Reserved.<br>
+      <a href="../w3css/index.html">Сайт работает на фреймворке W3.CSS</a>.<br>
+      Перевод на русский язык - <em>Websunsey</em><br>
+      <img alt="W3Schools.com" src="../images/w3schoolscom_gray.gif" style="width:150px;height:28px;border:0"></div><br>
+    </div>
+  </div>
+  <script src="../lib/w3schools_footer.js"></script>
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</body>
+</html>
