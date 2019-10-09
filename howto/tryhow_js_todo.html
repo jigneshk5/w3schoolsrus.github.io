@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
-
-<!-- Mirrored from www.w3schools.com/howto/tryhow_js_todo.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Sep 2019 08:50:29 GMT -->
+<html lang="ru">
 <head>
+  <meta charset="utf-8">
+  <title>Пример Список дел. HTML, CSS, JavaScript</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 body {
@@ -10,18 +10,18 @@ body {
   min-width: 250px;
 }
 
-/* Include the padding and border in an element's total width and height */
+/* Включить отступы и границы в общую ширину и высоту элемента */
 * {
   box-sizing: border-box;
 }
 
-/* Remove margins and padding from the list */
+/* Удалить поля и отступы из списка */
 ul {
   margin: 0;
   padding: 0;
 }
 
-/* Style the list items */
+/* Стиль элементов списка */
 ul li {
   cursor: pointer;
   position: relative;
@@ -30,32 +30,32 @@ ul li {
   background: #eee;
   font-size: 18px;
   transition: 0.2s;
-  
-  /* make the list items unselectable */
+
+  /* сделать элементы списка недоступными для выбора */
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
 }
 
-/* Set all odd list items to a different color (zebra-stripes) */
+/* Установить все нечетные элементы списка в другой цвет (полоски зебры) */
 ul li:nth-child(odd) {
   background: #f9f9f9;
 }
 
-/* Darker background-color on hover */
+/* Более темный цвет фона при наведении */
 ul li:hover {
   background: #ddd;
 }
 
-/* When clicked on, add a background color and strike out text */
+/* При нажатии добавить цвет фона и вычеркнуть текст */
 ul li.checked {
   background: #888;
   color: #fff;
   text-decoration: line-through;
 }
 
-/* Add a "checked" mark when clicked on */
+/* Добавить отметку «проверено» при нажатии на элементе */
 ul li.checked::before {
   content: '';
   position: absolute;
@@ -69,7 +69,7 @@ ul li.checked::before {
   width: 7px;
 }
 
-/* Style the close button */
+/* Стиль кнопки закрытия */
 .close {
   position: absolute;
   right: 0;
@@ -82,7 +82,7 @@ ul li.checked::before {
   color: white;
 }
 
-/* Style the header */
+/* Стиль заголовка */
 .header {
   background-color: #f44336;
   padding: 30px 40px;
@@ -90,14 +90,14 @@ ul li.checked::before {
   text-align: center;
 }
 
-/* Clear floats after the header */
+/* Очистить float после заголовка */
 .header:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* Style the input */
+/* Стиль ввода */
 input {
   margin: 0;
   border: none;
@@ -108,7 +108,7 @@ input {
   font-size: 16px;
 }
 
-/* Style the "Add" button */
+/* Стиль кнопки «Добавить» */
 .addBtn {
   padding: 10px;
   width: 25%;
@@ -130,22 +130,22 @@ input {
 <body>
 
 <div id="myDIV" class="header">
-  <h2 style="margin:5px">My To Do List</h2>
-  <input type="text" id="myInput" placeholder="Title...">
-  <span onclick="newElement()" class="addBtn">Add</span>
+  <h2 style="margin:5px">Мой список дел</h2>
+  <input type="text" id="myInput" placeholder="Заголовок...">
+  <span onclick="newElement()" class="addBtn">Добавить</span>
 </div>
 
 <ul id="myUL">
-  <li>Hit the gym</li>
-  <li class="checked">Pay bills</li>
-  <li>Meet George</li>
-  <li>Buy eggs</li>
-  <li>Read a book</li>
-  <li>Organize office</li>
+  <li>Позавтракать</li>
+  <li class="checked">Взять денег в долг у соседа</li>
+  <li>Купить бутылку вина и шоколадку</li>
+  <li>Познакомиться с новой соседкой</li>
+  <li>Пригласить соседку в ночной клуб</li>
+  <li>Гулять из соседкой до утра</li>
 </ul>
 
 <script>
-// Create a "close" button and append it to each list item
+// Создайте кнопку «Закрыть» и добавьте ее к каждому элементу списка
 var myNodelist = document.getElementsByTagName("LI");
 var i;
 for (i = 0; i < myNodelist.length; i++) {
@@ -156,7 +156,7 @@ for (i = 0; i < myNodelist.length; i++) {
   myNodelist[i].appendChild(span);
 }
 
-// Click on a close button to hide the current list item
+// Нажмите на кнопку закрытия, чтобы скрыть текущий элемент списка
 var close = document.getElementsByClassName("close");
 var i;
 for (i = 0; i < close.length; i++) {
@@ -166,7 +166,7 @@ for (i = 0; i < close.length; i++) {
   }
 }
 
-// Add a "checked" symbol when clicking on a list item
+// Добавьте символ «отмечено» при нажатии на элемент списка
 var list = document.querySelector('ul');
 list.addEventListener('click', function(ev) {
   if (ev.target.tagName === 'LI') {
@@ -174,7 +174,7 @@ list.addEventListener('click', function(ev) {
   }
 }, false);
 
-// Create a new list item when clicking on the "Add" button
+// Создать новый элемент списка при нажатии на кнопку «Добавить»
 function newElement() {
   var li = document.createElement("li");
   var inputValue = document.getElementById("myInput").value;
@@ -203,6 +203,4 @@ function newElement() {
 </script>
 
 </body>
-
-<!-- Mirrored from www.w3schools.com/howto/tryhow_js_todo.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Sep 2019 08:50:29 GMT -->
 </html>
