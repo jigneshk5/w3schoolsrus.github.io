@@ -227,9 +227,9 @@
 <!-- Search in menu left -->
 <style>
 .searchinput {
-  xbackground-image: url('../css/searchicon.png');
-  xbackground-position: 8px 6px;
-  xbackground-repeat: no-repeat;
+  background-image: url('../css/searchicon.png');
+  background-position: 8px 6px;
+  background-repeat: no-repeat;
   width: 91%;
   font-size: 14px;
   padding: 6px 6px 6px 40px;
@@ -603,17 +603,16 @@ function filterContent(elmnt) {
 
 
 
-<h1>How TO - Tabs</h1>
+<h1>Как сделать - Вкладки</h1>
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="howto_js_accordion.html">&#10094; Previous</a>
+<a class="w3-left w3-btn" href="howto_js_accordion.html">&#10094; Prev</a>
   <a class="w3-right w3-btn" href="howto_js_vertical_tabs.html">Next &#10095;</a>
 </div>
 <hr>
-<p class="intro">Learn how to create tabs with CSS and JavaScript.</p>
+<p class="intro">Узнайте, как создавать вкладки с помощью <strong>CSS</strong> и <strong>JavaScript</strong>.</p>
 <hr>
-<h2>Tabs</h2>
-<p>Tabs are perfect for single page web applications, or for web pages capable
-of displaying different subjects:</p>
+<h2>Вкладки</h2>
+<p>Вкладки идеально подходят для одностраничных веб-приложений или для веб-страниц, способных отображать различные темы:</p>
 
 <ul class="tab">
   <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'London')">London</a></li>
@@ -637,7 +636,7 @@ of displaying different subjects:</p>
   <p>Tokyo is the capital of Japan.</p>
 </div>
 </div>
-<p><a target="_blank" href="tryit135f.html?filename=tryhow_js_tabs" class="w3-btn">Try it Yourself &raquo;</a></p>
+<p><a target="_blank" href="tryit135f.html?filename=tryhow_js_tabs" class="w3-btn">Попробуйте сами &raquo;</a></p>
 
 <script>
 openCity(event, "London")
@@ -661,116 +660,100 @@ mybtn.click();
 </script>
 <hr>
 
-<h2>Create Toggleable Tabs</h2>
-<h5>Step 1) Add HTML:</h5>
+<h2>Создать вкладки с возможностью переключения</h2>
+<h5>Шаг 1) Добавить HTML:</h5>
 <div class="w3-example">
-<h3>Example</h3>
+<h3>Пример</h3>
 <div class="w3-code notranslate htmlHigh">
-  &lt;!-- Tab links --&gt;<br>&lt;div class=&quot;tab&quot;&gt;<br>&nbsp; &lt;button class=&quot;tablinks&quot; onclick=&quot;openCity(event,
+  &lt;!-- Ссылки вкладок --&gt;<br>&lt;div class=&quot;tab&quot;&gt;<br>&nbsp; &lt;button class=&quot;tablinks&quot; onclick=&quot;openCity(event,
   'London')&quot;&gt;London&lt;/button&gt;<br>&nbsp; &lt;button class=&quot;tablinks&quot; onclick=&quot;openCity(event,
   'Paris')&quot;&gt;Paris&lt;/button&gt;<br>&nbsp; &lt;button class=&quot;tablinks&quot; onclick=&quot;openCity(event,
   'Tokyo')&quot;&gt;Tokyo&lt;/button&gt;<br>
-&lt;/div&gt;<br><br>&lt;!-- Tab content --&gt;<br>&lt;div id=&quot;London&quot; class=&quot;tabcontent&quot;&gt;<br>&nbsp; &lt;h3&gt;London&lt;/h3&gt;<br>&nbsp;
+&lt;/div&gt;<br><br>&lt;!-- Контент вкладок --&gt;<br>&lt;div id=&quot;London&quot; class=&quot;tabcontent&quot;&gt;<br>&nbsp; &lt;h3&gt;London&lt;/h3&gt;<br>&nbsp;
 &lt;p&gt;London is the capital city of England.&lt;/p&gt;<br>&lt;/div&gt;<br><br>&lt;div
 id=&quot;Paris&quot; class=&quot;tabcontent&quot;&gt;<br>&nbsp; &lt;h3&gt;Paris&lt;/h3&gt;<br>&nbsp; &lt;p&gt;Paris
 is the capital of France.&lt;/p&gt; <br>&lt;/div&gt;<br><br>&lt;div id=&quot;Tokyo&quot; class=&quot;tabcontent&quot;&gt;<br>&nbsp;
 &lt;h3&gt;Tokyo&lt;/h3&gt;<br>&nbsp; &lt;p&gt;Tokyo is the capital of Japan.&lt;/p&gt;<br>&lt;/div&gt;</div>
 </div>
-<p>Create buttons to open specific
-tab content. All &lt;div&gt; elements with <code class="w3-codespan">class=&quot;tabcontent&quot;</code> are hidden by default
-(with CSS &amp; JS). When the user clicks on a button - it will open the tab content
-that &quot;matches&quot; this button.</p>
+<p>Создавайте кнопки для открытия определенного содержимого вкладки. Все &lt;div&gt; элементы с <code class="w3-codespan">class=&quot;tabcontent&quot;</code> скрыты по умолчанию (с помощью CSS &amp; JS). Когда пользователь нажимает на кнопку - он открывает вкладку с контентом, &quot;соответствующим&quot; этой кнопке.</p>
 <hr>
-<h5>Step 2) Add CSS:</h5>
-<p>Style the buttons and the tab content:</p>
+<h5>Шаг 2) Добавить CSS:</h5>
+<p>Стиль кнопок и содержимого вкладки:</p>
 <div class="w3-example">
-<h3>Example</h3>
+<h3>Пример</h3>
 <div class="w3-code notranslate cssHigh">
-  /* Style the tab */<br>.tab {<br>&nbsp; overflow: hidden;<br>&nbsp;
+  /* Стиль вкладки */<br>.tab {<br>&nbsp; overflow: hidden;<br>&nbsp;
   border: 1px solid #ccc;<br>&nbsp; background-color: #f1f1f1;<br>}<br>
-  <br>/* Style the buttons that are used to open the tab content */<br>.tab button {<br>
+  <br>/* Стиль кнопок, используемых для открытия содержимого вкладки */<br>.tab button {<br>
   &nbsp;
   background-color: inherit;<br>&nbsp; float: left;<br>&nbsp;
-  border: none;<br>&nbsp;&nbsp;outline: none;<br>&nbsp;&nbsp;cursor: pointer;<br>&nbsp;&nbsp;padding: 14px 16px;<br>&nbsp;&nbsp;transition: 0.3s;<br>}<br><br>/* Change background color of buttons on hover
+  border: none;<br>&nbsp;&nbsp;outline: none;<br>&nbsp;&nbsp;cursor: pointer;<br>&nbsp;&nbsp;padding: 14px 16px;<br>&nbsp;&nbsp;transition: 0.3s;<br>}<br><br>/* Изменить цвет фона кнопок при наведении
   */<br>.tab button:hover {<br>&nbsp; background-color: #ddd;<br>
-  }<br><br>/* Create an active/current tablink class */<br>.tab button.active
+  }<br><br>/* Создать активный / текущий класс tablink */<br>.tab button.active
   {<br>&nbsp;&nbsp;background-color: #ccc;<br>}<br><br>/* Style the tab content */<br>.tabcontent {<br>
   &nbsp;
   display: none;<br>&nbsp; padding: 6px 12px;<br>&nbsp;&nbsp;border: 1px solid #ccc;<br>&nbsp;&nbsp;border-top: none;<br>}</div>
 </div>
 <hr>
-<div id="midcontentadcontainer" style="overflow:auto;text-align:center">
-<!-- MidContent -->
 
-  <!--<pre>mid_content, all: [300,250][336,280][728,90][970,250][970,90][320,50][468,60]</pre>-->
-  <div id="snhb-mid_content-0"></div>
-
-</div>
-<hr>
-
-<h5>Step 3) Add JavaScript:</h5>
+<h5>Шаг 3) Добавить JavaScript:</h5>
 <div class="w3-example">
 <h3>Example</h3>
 <div class="w3-code notranslate jsHigh">
-function openCity(evt, cityName) {<br>&nbsp;&nbsp;// Declare all
-variables<br>&nbsp; var i, tabcontent, tablinks;<br><br>&nbsp;
-// Get all elements with class=&quot;tabcontent&quot; and hide them<br>&nbsp; tabcontent
+function openCity(evt, cityName) {<br>&nbsp;&nbsp;// Объявить все переменные <br>&nbsp; var i, tabcontent, tablinks;<br><br>&nbsp;
+// Получить все элементы с class=&quot;tabcontent&quot; и скрыть их<br>&nbsp; tabcontent
 = document.getElementsByClassName(&quot;tabcontent&quot;);<br>&nbsp; for (i = 0; i &lt; tabcontent.length; i++) {<br>
   &nbsp;&nbsp;&nbsp; tabcontent[i].style.display = &quot;none&quot;;<br>&nbsp;&nbsp;}<br>
-<br>&nbsp; // Get all elements with class=&quot;tablinks&quot; and remove
-the class &quot;active&quot;<br>
+<br>&nbsp; // Получить все элементы с class=&quot;tablinks&quot; и удалить class &quot;active&quot;<br>
 &nbsp;&nbsp;tablinks = document.getElementsByClassName(&quot;tablinks&quot;);<br>&nbsp;&nbsp;for (i = 0; i &lt;
 tablinks.length; i++) {<br>&nbsp;&nbsp;&nbsp;
 tablinks[i].className = tablinks[i].className.replace(&quot; active&quot;, &quot;&quot;);<br>
   &nbsp; }<br>
-<br>&nbsp;&nbsp;// Show the current tab, and add an &quot;active&quot; class to
-the button that opened the tab<br>
+<br>&nbsp;&nbsp;// Показать текущую вкладку и добавить &quot;active&quot; класс для кнопки, открывшей вкладку<br>
 &nbsp;&nbsp;document.getElementById(cityName).style.display = &quot;block&quot;;<br>
 &nbsp;&nbsp;evt.currentTarget.className += &quot; active&quot;;<br>}</div>
-<a target="_blank" href="tryit135f.html?filename=tryhow_js_tabs" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
+<a target="_blank" href="tryit135f.html?filename=tryhow_js_tabs" class="w3-btn w3-margin-bottom">Попробуйте сами &raquo;</a>
 </div>
 <hr>
 
-<h2>Fade in Tabs:</h2>
-<p>If you want to fade in the tab content, add the following CSS:</p>
+<h2>Исчезать во вкладках:</h2>
+<p>Если вы хотите добавить содержимое вкладки, добавьте следующий CSS:</p>
 <div class="w3-example">
-<h3>Example</h3>
+<h3>Пример</h3>
 <div class="w3-code notranslate cssHigh">
-.tabcontent {<br>&nbsp;&nbsp;animation: fadeEffect 1s; /* Fading effect takes 1 second */<br>}<br><br>/* Go
-  from zero to full opacity */<br>@keyframes fadeEffect {<br>&nbsp;&nbsp;from
+.tabcontent {<br>&nbsp;&nbsp;animation: fadeEffect 1s; /* Эффект затухания занимает 1 секунду */<br>}<br><br>/* Перейти от нуля до полной непрозрачности */<br>@keyframes fadeEffect {<br>&nbsp;&nbsp;from
 {opacity: 0;}<br>&nbsp; to {opacity: 1;}<br>}</div>
-<a target="_blank" href="tryitab09.html?filename=tryhow_js_tabs_fade" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
+<a target="_blank" href="tryitab09.html?filename=tryhow_js_tabs_fade" class="w3-btn w3-margin-bottom">Попробуйте сами &raquo;</a>
 </div>
 <hr>
 
-<h2>Show a tab by default</h2>
-<p>To open a specific tab on page load, use JavaScript to "click" on the specified tab
-button:</p>
+<h2>Показать вкладку по умолчанию</h2>
+<p>Чтобы открыть конкретную вкладку при загрузке страницы, используйте JavaScript, чтобы "кликнуть" по кнопке указанной вкладки:</p>
 <div class="w3-example">
-<h3>Example</h3>
+<h3>Пример</h3>
 <div class="w3-code notranslate htmlHigh">
   &lt;button class=&quot;tablinks&quot; onclick=&quot;openCity(event, 'London')&quot; id=&quot;defaultOpen&quot;&gt;London&lt;/button&gt;<br><br>&lt;script&gt;<br>
  // Get the element with id=&quot;defaultOpen&quot; and click on it<br>
  document.getElementById(&quot;defaultOpen&quot;).click();<br>&lt;/script&gt;</div>
-<a target="_blank" href="tryita7e5.html?filename=tryhow_js_tabs_open" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
+<a target="_blank" href="tryita7e5.html?filename=tryhow_js_tabs_open" class="w3-btn w3-margin-bottom">Попробуйте сами &raquo;</a>
 </div>
 <hr>
 
-<h2>Close a tab</h2>
-<p>If you want to close a specific tab, use JavaScript to hide the tab with a click of a button:</p>
+<h2>Закрыть вкладку</h2>
+<p>Если вы хотите закрыть определенную вкладку, используйте JavaScript, чтобы скрыть вкладку одним нажатием кнопки:</p>
 <div class="w3-example">
-<h3>Example</h3>
+<h3>Пример</h3>
 <div class="w3-code notranslate htmlHigh">
- &lt;!-- Click on the &lt;span&gt; element to close the tab --&gt;<br><br>&lt;div id=&quot;London&quot; class=&quot;tabcontent&quot;&gt;<br>&nbsp; &lt;h3&gt;London&lt;/h3&gt;<br>&nbsp; &lt;p&gt;London is the capital city of England.&lt;/p&gt;<br>&nbsp; &lt;span onclick=&quot;this.parentElement.style.display='none'&quot;&gt;x&lt;/span&gt;
+ &lt;!-- Кликните на &lt;span&gt; элементе, чтобы закрыть вкладку --&gt;<br><br>&lt;div id=&quot;London&quot; class=&quot;tabcontent&quot;&gt;<br>&nbsp; &lt;h3&gt;London&lt;/h3&gt;<br>&nbsp; &lt;p&gt;London is the capital city of England.&lt;/p&gt;<br>&nbsp; &lt;span onclick=&quot;this.parentElement.style.display='none'&quot;&gt;x&lt;/span&gt;
  <br>&lt;/div&gt;</div>
-<a target="_blank" href="tryit245a.html?filename=tryhow_js_tabs_close" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
+<a target="_blank" href="tryit245a.html?filename=tryhow_js_tabs_close" class="w3-btn w3-margin-bottom">Попробуйте сами &raquo;</a>
 </div>
 
-<p><strong>Tip:</strong> Also check out <a href="howto_js_vertical_tabs.html">How To - Vertical Tabs</a>.</p>
+<p><strong>Совет:</strong> Также посмотрите <a href="howto_js_vertical_tabs.html">Как сделать - Вертикальные вкладки</a>.</p>
 
 <br>
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="howto_js_accordion.html">&#10094; Previous</a>
+<a class="w3-left w3-btn" href="howto_js_accordion.html">&#10094; Prev</a>
   <a class="w3-right w3-btn" href="howto_js_vertical_tabs.html">Next &#10095;</a>
 </div>
 </div>
