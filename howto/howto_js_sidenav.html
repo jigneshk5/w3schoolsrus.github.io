@@ -122,6 +122,7 @@ body {
 }
 </style>
 </head>
+
 <body>
 <div id="mainContent">
 <div class='w3-container top'>
@@ -129,11 +130,14 @@ body {
   <div class='w3-right w3-hide-small w3-wide toptext' style="font-family:'Segoe UI',Arial,sans-serif">ЛУЧШИЙ САЙТ ДЛЯ ВЕБ-РАЗРАБОТЧИКОВ</div>
 </div>
 
+<!--GoogleSearch-->
 <div style='display:none;position:absolute;z-index:4;right:52px;height:44px;background-color:#5f5f5f;letter-spacing:normal;' id='googleSearch'>
   <script async src="https://cse.google.com/cse.js?cx=018292901867315999508:nszv7kx6uzc"></script>
   <div class='gcse-search'></div>
 </div>
+<!--/GoogleSearch-->
 
+<!--Top menu-->
 <div class='w3-card-2 topnav notranslate' id='topnav'>
   <div style="overflow:auto;">
     <div class="w3-bar w3-left" style="width:100%;overflow:hidden;height:44px">
@@ -160,11 +164,8 @@ body {
       <a class="w3-bar-item w3-button w3-right" id='topnavbtn_references' href='javascript:void(0);' onclick='w3_open_nav("references")' title='References'>СПРАВОЧНИКИ <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style='display:none'></i></a>
 
     </div>
-
-    <div id='nav_tutorials' class='w3-bar-block w3-card-2' style="display:none;">
-      
+    <div id='nav_tutorials' class='w3-bar-block w3-card-2' style="display:none;">   
       <span onclick='w3_close_nav("tutorials")' class='w3-button w3-xlarge w3-right' style="position:absolute;right:0;font-weight:bold;">&times;</span>
-
       <div class='w3-row-padding' style="padding:24px 48px">
         <div class='w3-col l3 m6'>
           <h3>HTML и CSS</h3>
@@ -337,7 +338,9 @@ body {
     </div>
   </div>
 </div>
+<!--/Top menu-->
 
+<!--Left menu-->
 <div class='w3-sidebar w3-collapse' id='sidenav'>
   <div id='leftmenuinner'>
     <div class='w3-light-grey' id='leftmenuinnerinner'>
@@ -444,9 +447,12 @@ function filterContent(elmnt) {
     </div>
   </div>
 </div>
+<!--/Left menu-->
+
 <div class='w3-main w3-light-grey' id='belowtopnav' style='margin-left:220px;'>
   <div class='w3-row w3-white'>
     <div class='w3-col l10 m12' id='main'>
+    	<a href="default.html"><img alt="HTML, CSS, JavaScript. Уроки для начинающих" class="w3-left" src="../images/html_css_js.jpg" style="width:190px;height:90px;padding:10px" title="HTML, CSS, JavaScript для начинающих. Готовые решения"></a>
 
 <h1>How TO - Side Navigation</h1>
 <div class="w3-clear nextprev">
@@ -668,14 +674,16 @@ document.getElementById(&quot;mySidenav&quot;).style.display = &quot;none&quot;;
 
 <br>
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="howto_css_fixed_sidebar.html">&#10094; Previous</a>
+<a class="w3-left w3-btn" href="howto_css_fixed_sidebar.html">&#10094; Prev</a>
 <a class="w3-right w3-btn" href="howto_css_sidebar_responsive.html">Next &#10095;</a>
 </div>
 </div>
+
+<!--Right sidebar-->
 <div class="w3-col l2 m12" id="right">
 
-<div class="sidesection">
-<h4><a href="../colors/colors_picker.html">COLOR PICKER</a></h4>
+<div class="sidesection w3-light-grey" style="padding-bottom: 5px">
+<h4><a href="../colors/colors_picker.html">ПАЛИТРА ЦВЕТОВ</a></h4>
 <a href="../colors/colors_picker.html">
 <img src="../images/colorpicker.gif" alt="colorpicker"></a>
 </div>
@@ -708,9 +716,11 @@ document.getElementById(&quot;mySidenav&quot;).style.display = &quot;none&quot;;
 </div>
 
 </div>
-</div>
-<div id="footer" class="footer w3-container w3-white">
+<!--/Right sidebar-->
 
+</div>
+
+<div id="footer" class="footer w3-container w3-white">
 <hr>
 
 <div class="w3-row-padding w3-center w3-small" style="margin:0 -16px">
@@ -721,7 +731,7 @@ document.getElementById(&quot;mySidenav&quot;).style.display = &quot;none&quot;;
 <a class="w3-button w3-light-grey w3-block" href="javascript:void(0);" target="_blank" onclick="printPage();return false;" style="text-decoration:none;margin-top:1px;margin-bottom:1px">ПЕЧАТЬ СТРАНИЦЫ</a>
 </div>
 <div class="w3-col l3 m3 s12">
-<a class="w3-button w3-light-grey w3-block" href="http://w3schools.invisionzone.com/" target="_blank" style="text-decoration:none;margin-top:1px;margin-bottom:1px">ФОРУМ</a>
+<a class="w3-button w3-light-grey w3-block" href="../blog/default.html" target="_top" style="text-decoration:none;margin-top:1px;margin-bottom:1px">БЛОГ</a>
 </div>
 <div class="w3-col l3 m3 s12">
 <a class="w3-button w3-light-grey w3-block" href="../about/default.html" target="_top" style="text-decoration:none;margin-top:1px;margin-bottom:1px">ПРО САЙТ</a>
