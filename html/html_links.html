@@ -9,7 +9,6 @@
 <link rel="icon" href="../favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="../w3css/4/w3.css">
 <link href='https://fonts.googleapis.com/css?family=Source%20Code%20Pro' rel='stylesheet'>
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 <style>
 .mytestbtn {background-color: #f44336 !important;color: white;padding: 15px 25px;text-align: center;text-decoration: none;display:inline-block;
 }
@@ -18,43 +17,49 @@
 </head>
 
 <body>
-
-<!-- HEADER -->
+<div id="mainContent">
 <div class='w3-container top'>
   <a class='w3schools-logo notranslate' href='../index.html'>w3schools<span class='dotcom'>.на русском</span></a>
   <div class='w3-right w3-hide-small w3-wide toptext' style="font-family:'Segoe UI',Arial,sans-serif">ЛУЧШИЙ САЙТ ДЛЯ ВЕБ-РАЗРАБОТЧИКОВ</div>
 </div>
-<!-- HEADER / -->
 
-<!-- Top menu  -->
+<!--GoogleSearch-->
+<div style='display:none;position:absolute;z-index:4;right:52px;height:44px;background-color:#5f5f5f;letter-spacing:normal;' id='googleSearch'>
+  <script async src="https://cse.google.com/cse.js?cx=018292901867315999508:nszv7kx6uzc"></script>
+  <div class='gcse-search'></div>
+</div>
+<!--/GoogleSearch-->
+
+<!--Top menu-->
 <div class='w3-card-2 topnav notranslate' id='topnav'>
   <div style="overflow:auto;">
     <div class="w3-bar w3-left" style="width:100%;overflow:hidden;height:44px">
       <a href='javascript:void(0);' class='topnav-icons fa fa-menu w3-hide-large w3-left w3-bar-item w3-button' onclick='open_menu()' title='Menu'></a>
       <a href='../default.html' class='topnav-icons fa fa-home w3-left w3-bar-item w3-button' title='Home'></a>
-      <a class="w3-bar-item w3-button" href='default.html' title='HTML Tutorial'>HTML</a>
+      <a class="w3-bar-item w3-button" href='../html/default.html' title='HTML Tutorial'>HTML</a>
       <a class="w3-bar-item w3-button" href='../css/default.html' title='CSS Tutorial'>CSS</a>
       <a class="w3-bar-item w3-button" href='../js/default.html' title='JavaScript Tutorial'>JAVASCRIPT</a>
       <a class="w3-bar-item w3-button" href='../sql/default.html' title='SQL Tutorial'>SQL</a>
       <a class="w3-bar-item w3-button" href='../python/default.html' title='Python Tutorial'>PYTHON</a>
       <a class="w3-bar-item w3-button" href='../php/default.html' title='PHP Tutorial'>PHP</a>
       <a class="w3-bar-item w3-button" href='../bootstrap/bootstrap_ver.html' title='Bootstrap Tutorial'>BOOTSTRAP</a>
-      <a class="w3-bar-item w3-button" href='../howto/default.html' title='How To'>КАК СДЕЛАТЬ</a>
+      <a class="w3-bar-item w3-button" href='default.html' title='How To'>КАК СДЕЛАТЬ</a>
       <a class="w3-bar-item w3-button" href='../w3css/default.html' title='W3.CSS Tutorial'>W3.CSS</a>
       <a class="w3-bar-item w3-button" href='../jquery/default.html' title='jQuery Tutorial'>JQUERY</a>
       <a class="w3-bar-item w3-button" href='../xml/default.html' title='XML Tutorial'>XML</a>
       <a class="w3-bar-item w3-button" id='topnavbtn_tutorials' href='javascript:void(0);' onclick='w3_open_nav("tutorials")' title='Tutorials'>БОЛЬШЕ <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style='display:none'></i></a>
-      <a class="w3-bar-item w3-button w3-right" href='../blog/default.html'>БЛОГ</a>
+      <a href='javascript:void(0);' class='topnav-icons fa w3-right w3-bar-item w3-button' onclick='open_search(this)' title='Поиск на сайте'>&#xe802;</a>
       <a class="w3-bar-item w3-button w3-right" target="_blank" href='https://drive.google.com/open?id=1fddM8chCC273SbiTEYVNLorbZ2qij7fp'>КНИГИ</a>
-      <a class="w3-bar-item w3-button w3-right" id='topnavbtn_exercises' href='javascript:void(0);' onclick='w3_open_nav("exercises")' title='Exercises'>УПРАЖНЕНИЯ <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style='display:none'></i></a>
+      <a class="w3-bar-item w3-button w3-right" id='topnavbtn_exercises' href='javascript:void(0);' onclick='w3_open_nav("exercises")' title='Exercises'>УПРАЖНЕНИЯ <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style='display:none'></i></a>     
       <a class="w3-bar-item w3-button w3-right" id='topnavbtn_references' href='javascript:void(0);' onclick='w3_open_nav("references")' title='References'>СПРАВОЧНИКИ <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style='display:none'></i></a>
+
     </div>
-    <div id='nav_tutorials' class='w3-bar-block w3-card-2' style="display:none;">
+    <div id='nav_tutorials' class='w3-bar-block w3-card-2' style="display:none;">   
       <span onclick='w3_close_nav("tutorials")' class='w3-button w3-xlarge w3-right' style="position:absolute;right:0;font-weight:bold;">&times;</span>
       <div class='w3-row-padding' style="padding:24px 48px">
         <div class='w3-col l3 m6'>
           <h3>HTML и CSS</h3>
-          <a class="w3-bar-item w3-button" href='default.html'>Выучить HTML</a>
+          <a class="w3-bar-item w3-button" href='../html/default.html'>Выучить HTML</a>
           <a class="w3-bar-item w3-button" href='../css/default.html'>Выучить CSS</a>
           <a class="w3-bar-item w3-button" href='../bootstrap/bootstrap_ver.html'>Выучить Bootstrap</a>
           <a class="w3-bar-item w3-button" href='../w3css/default.html'>Выучить W3.CSS</a>
@@ -63,7 +68,7 @@
           <a class="w3-bar-item w3-button" href='../graphics/default.html'>Выучить Graphics</a>
           <a class="w3-bar-item w3-button" href='../graphics/svg_intro.html'>Выучить SVG</a>
           <a class="w3-bar-item w3-button" href='../graphics/canvas_intro.html'>Выучить Canvas</a>
-          <a class="w3-bar-item w3-button" href='../howto/default.html'>Выучить Как сделать</a>
+          <a class="w3-bar-item w3-button" href='default.html'>Выучить How To</a>
           <a class="w3-bar-item w3-button" href='../sass/default.html'>Выучить Sass</a>
           <div class="w3-hide-large w3-hide-small">
             <h3>XML</h3>
@@ -100,11 +105,11 @@
           <a class="w3-bar-item w3-button" href='../nodejs/default.html'>Выучить Node.js</a>
           <a class="w3-bar-item w3-button" href='../nodejs/nodejs_raspberrypi.html'>Выучить Raspberry Pi</a>
           <h3>Веб-строительство</h3>
-          <a class="w3-bar-item w3-button" href="../w3css/w3css_templates.html">Веб шаблоны</a>
-          <a class="w3-bar-item w3-button" href='../browsers/default.html'>Веб статистика</a>
-          <a class="w3-bar-item w3-button" href='../cert/default.html'>Веб сертификаты</a>
-          <a class="w3-bar-item w3-button" href='../tryit/default.html'>Веб редактор</a>
-          <a class="w3-bar-item w3-button" href="../whatis/default.html">Веб разработка</a>
+          <a class="w3-bar-item w3-button" href="../w3css/w3css_templates.html">Веб-шаблоны</a>
+          <a class="w3-bar-item w3-button" href='../browsers/default.html'>Веб-статистика</a>
+          <a class="w3-bar-item w3-button" href='../cert/default.html'>Веб-сертификаты</a>
+          <a class="w3-bar-item w3-button" href='../tryit/default.html'>Веб-редактор</a>
+          <a class="w3-bar-item w3-button" href="../whatis/default.html">Веб-разработка</a>
         </div>
         <div class='w3-col l3 m6 w3-hide-medium'>
           <h3>XML</h3>
@@ -129,14 +134,14 @@
           <a class="w3-bar-item w3-button" href='../tags/ref_eventattributes.html'>HTML Справочник событий</a>
           <a class="w3-bar-item w3-button" href='../colors/default.html'>HTML Справочник цветов</a>
           <a class="w3-bar-item w3-button" href='../tags/ref_attributes.html'>HTML Справочник атрибутов</a>
-          <a class="w3-bar-item w3-button" href='../tags/ref_canvas.html'>HTML Canvas справочник</a>
+          <a class="w3-bar-item w3-button" href='../tags/ref_canvas.html'>HTML Canvas Справочник</a>
           <a class="w3-bar-item w3-button" href='../graphics/svg_reference.html'>HTML SVG Справочник</a>
           <a class="w3-bar-item w3-button" href='../charsets/default.html'>HTML Наборы символов</a>
-          <a class="w3-bar-item w3-button" href='../graphics/google_maps_reference.html'>Google карты Справочник</a>
+          <a class="w3-bar-item w3-button" href='../graphics/google_maps_reference.html'>Google-карты Справочник</a>
           <h3>CSS</h3>
           <a class="w3-bar-item w3-button" href='../cssref/default.html'>CSS Справочник</a>
           <a class="w3-bar-item w3-button" href='../cssref/css3_browsersupport.html'>CSS Поддержка браузерами</a>
-          <a class="w3-bar-item w3-button" href='../cssref/css_selectors.html'>CSS Справочник селекторов</a>
+          <a class="w3-bar-item w3-button" href='../cssref/css_selectors.html'>CSS Selector Справочник</a>
           <a class="w3-bar-item w3-button" href='../bootstrap/bootstrap_ref_all_classes.html'>Bootstrap 3 Справочник</a>
           <a class="w3-bar-item w3-button" href='../bootstrap4/bootstrap_ref_all_classes.html'>Bootstrap 4 Справочник</a>
           <a class="w3-bar-item w3-button" href='../w3css/w3css_references.html'>W3.CSS Справочник</a>
@@ -183,7 +188,7 @@
       <div class='w3-row-padding' style="padding:24px 48px">
         <div class='w3-col l4 m6'>
           <h3>Упражнения</h3>
-          <a class="w3-bar-item w3-button" href="html_exercises.html">HTML Упражнения</a>
+          <a class="w3-bar-item w3-button" href="../html/html_exercises.html">HTML Упражнения</a>
           <a class="w3-bar-item w3-button" href="../css/css_exercises.html">CSS Упражнения</a>
           <a class="w3-bar-item w3-button" href="../js/js_exercises.html">JavaScript Упражнения</a>
           <a class="w3-bar-item w3-button" href="../sql/sql_exercises.html">SQL Упражнения</a>
@@ -196,7 +201,7 @@
         </div>
         <div class='w3-col l4 m6'>
           <h3>Викторины</h3>
-          <a class="w3-bar-item w3-button" href='html_quiz.html' target='_top'>HTML Викторина</a>
+          <a class="w3-bar-item w3-button" href='../html/html_quiz.html' target='_top'>HTML Викторина</a>
           <a class="w3-bar-item w3-button" href='../css/css_quiz.html' target='_top'>CSS Викторина</a>
           <a class="w3-bar-item w3-button" href='../js/js_quiz.html' target='_top'>JavaScript Викторина</a>
           <a class="w3-bar-item w3-button" href="../sql/sql_quiz.html" target="_top">SQL Викторина</a>
@@ -223,9 +228,9 @@
     </div>
   </div>
 </div>
-<!-- Top menu / -->
+<!--/Top menu-->
 
-
+<!--Left menu sidebar -->
 <div class='w3-sidebar w3-collapse' id='sidenav'>
   <div id='leftmenuinner'>
     <div class='w3-light-grey' id='leftmenuinnerinner'>
@@ -332,13 +337,13 @@
     </div>
   </div>
 </div>
+<!--/Left menu sidebar -->
 
+<!--CONTENT-->
 <div class='w3-main w3-light-grey' id='belowtopnav' style='margin-left:220px;'>
   <div class='w3-row w3-white'>
     <div class='w3-col l10 m12' id='main'>
 <a href="index.html"><img src="../svg/HTML5_icon.svg" alt="HTML5. Уроки для начинающих" class="w3-left" title="HTML5 для начинающих" width="90"></a>
-
-
 
 <h1>HTML <span class="color_h1">Ссылки</span></h1>
 <div class="w3-clear nextprev">
@@ -616,16 +621,10 @@ s.setAttribute('data-timestamp', +new Date());
 
 </div>
 
-
+<!--Right sidebar-->
 <div class="w3-col l2 m12" id="right">
 
-<div class="sidesection g-search">
-	Поиск на сайте<br>
-	<script async src="https://cse.google.com/cse.js?cx=018292901867315999508:nszv7kx6uzc"></script>
-	<div class="gcse-search"></div>
-</div>
-
-<div class="sidesection">
+<div class="sidesection w3-light-grey" style="padding-bottom: 5px">
 <h4><a href="../colors/colors_picker.html">ПАЛИТРА ЦВЕТОВ</a></h4>
 <a href="../colors/colors_picker.html">
 <img src="../images/colorpicker.gif" alt="colorpicker"></a>
@@ -633,10 +632,10 @@ s.setAttribute('data-timestamp', +new Date());
 
 <div class="sidesection w3-light-grey" style="margin-left:auto;margin-right:auto;max-width:230px">
   <div class="w3-container w3-dark-grey">
-    <h4><a href="../howto/default.html" class="w3-hover-text-white">КАК СДЕЛАТЬ</a></h4>
+    <h4><a href="default.html" class="w3-hover-text-white">КАК СДЕЛАТЬ</a></h4>
   </div>
   <div class="w3-container w3-left-align w3-padding-16">
-    <a href="../howto/howto_js_tabs.html">Вкладки</a><br>
+    <a href="../howto/howto_js_tabs.html">Вкладки</a><br>    
     <a href="../howto/howto_css_dropdown.html">Выпадающее меню</a><br>
     <a href="../howto/howto_js_accordion.html">Меню аккордеон</a><br>
     <a href="../howto/howto_js_sidenav.html">Боковая навигация</a><br>
@@ -656,11 +655,12 @@ s.setAttribute('data-timestamp', +new Date());
 </div>
 
 </div>
-</div>
-<div id="footer" class="footer w3-container w3-white">
+<!--/Right sidebar-->
 
-<hr>
-<!-- Место для рекламы -->
+</div>
+
+<!--FOOTER-->
+<div id="footer" class="footer w3-container w3-white">
 <hr>
 
 <div class="w3-row-padding w3-center w3-small" style="margin:0 -16px">
@@ -671,7 +671,7 @@ s.setAttribute('data-timestamp', +new Date());
 <a class="w3-button w3-light-grey w3-block" href="javascript:void(0);" target="_blank" onclick="printPage();return false;" style="text-decoration:none;margin-top:1px;margin-bottom:1px">ПЕЧАТЬ СТРАНИЦЫ</a>
 </div>
 <div class="w3-col l3 m3 s12">
-<a class="w3-button w3-light-grey w3-block" href="http://w3schools.invisionzone.com/" target="_blank" style="text-decoration:none;margin-top:1px;margin-bottom:1px">ФОРУМ</a>
+<a class="w3-button w3-light-grey w3-block" href="../blog/default.html" target="_top" style="text-decoration:none;margin-top:1px;margin-bottom:1px">БЛОГ</a>
 </div>
 <div class="w3-col l3 m3 s12">
 <a class="w3-button w3-light-grey w3-block" href="../about/default.html" target="_top" style="text-decoration:none;margin-top:1px;margin-bottom:1px">ПРО САЙТ</a>
@@ -702,14 +702,14 @@ s.setAttribute('data-timestamp', +new Date());
 </div>
 <div class="w3-container w3-light-grey w3-padding" id="err_sent" style="display:none;position:relative">
 <span onclick="this.parentElement.style.display='none'" class="w3-button w3-display-topright">&times;</span>
-<h2>Спасибо за вашу помощь!</h2>
+<h2>Спасибо за Вашу помощь!</h2>
 <p>Ваше сообщение было отправлено в W3Schools.</p>
 </div>
 
 <div class="w3-row w3-center w3-small">
 <div class="w3-col l3 m6 s12">
 <div class="top10">
-<h4>Top Учебники</h4>
+<h4>Топ Учебники</h4>
 <a href="default.html">HTML Учебник</a><br>
 <a href="../css/default.html">CSS Учебник</a><br>
 <a href="../js/default.html">JavaScript Учебник</a><br>
@@ -726,7 +726,7 @@ s.setAttribute('data-timestamp', +new Date());
 </div>
 <div class="w3-col l3 m6 s12">
 <div class="top10">
-<h4>Top Справочники</h4>
+<h4>Топ Справочники</h4>
 <a href="../tags/default.html">HTML Справочник</a><br>
 <a href="../cssref/default.html">CSS Справочник</a><br>
 <a href="../jsref/default.html">JavaScript Справочник</a><br>
@@ -743,7 +743,7 @@ s.setAttribute('data-timestamp', +new Date());
 </div>
 <div class="w3-col l3 m6 s12">
 <div class="top10">
-<h4>Top Примеры</h4>
+<h4>Топ Примеры</h4>
 <a href="html_examples.html">HTML Примеры</a><br>
 <a href="../css/css_examples.html">CSS Примеры</a><br>
 <a href="../js/js_examples.html">JavaScript Примеры</a><br>
@@ -760,7 +760,7 @@ s.setAttribute('data-timestamp', +new Date());
 </div>
 <div class="w3-col l3 m6 s12">
 <div class="top10">
-<h4>Web Сертификаты</h4>
+<h4>Веб Сертификаты</h4>
 <a href="../cert/default.html">HTML Сертификат</a><br>
 <a href="../cert/default.html">CSS Сертификат</a><br>
 <a href="../cert/default.html">JavaScript Сертификат</a><br>
@@ -770,21 +770,20 @@ s.setAttribute('data-timestamp', +new Date());
 <a href="../cert/default.html">PHP Сертификат</a><br>
 <a href="../cert/default.html">Bootstrap Сертификат</a><br>
 <a href="../cert/default.html">XML Сертификат</a><br>
-<a href="../cert/default.html" class="w3-button w3-margin-top w3-dark-grey" style="text-decoration:none">
-Получить Сертификацию &raquo;</a>
-
+<a class="w3-button w3-margin-top w3-dark-grey" href="../cert/default.html" style="text-decoration:none">Получить Сертификацию &raquo;</a>
 </div>
 </div>
 </div>
 
 <hr>
 <div class="w3-center w3-small w3-opacity">
-Этот сайт оптимизирован для обучения, тестирования и обучения. Примеры могут быть упрощены для улучшения чтения и базового понимания. Учебные пособия, ссылки и примеры постоянно пересматриваются, чтобы избежать ошибок, но мы не можем гарантировать полную правильность и работоспособность всего контента. Используя этот сайт, вы соглашаетесь с тем, что прочитали и приняли <a href="../about/about_copyright.html"> условия использования.</a>, <a href="../about/about_privacy.html">cookie и политики конфиденциальности</a>.
+Этот сайт оптимизирован для обучения, тестирования и обучения. Примеры могут быть упрощены для улучшения чтения и базового понимания. Учебные пособия, ссылки и примеры постоянно пересматриваются, чтобы избежать ошибок, но мы не можем гарантировать полную правильность и работоспособность всего контента. Используя этот сайт, вы соглашаетесь с тем, что прочитали и приняли <a href="../about/about_copyright.html">условия использования</a>, <a href="../about/about_privacy.html">cookie и политики конфиденциальности</a>.
 <a href="../about/about_copyright.html">Copyright 1999-2019</a> by Refsnes Data. All Rights Reserved.<br>
- <a href="../w3css/index.html">Сайт работает на фреймворке W3.CSS</a>.<br>Перевод на русский язык - <em>Websunsey</em><br>
- <img style="width:150px;height:28px;border:0" src="../images/w3schoolscom_gray.gif" alt="W3Schools.com">
+ <a href="../w3css/default.html">Сайт работает на фреймворке W3.CSS</a>.<br><br>
+<a href="../index.html">
+<img style="width:150px;height:28px;border:0" src="../images/w3schoolscom_gray.gif" alt="W3Schools.com"></a>
 </div>
-<br>
+<br><br>
 </div>
 
 </div>
@@ -793,5 +792,7 @@ s.setAttribute('data-timestamp', +new Date());
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
+</div>
+
 </body>
 </html>
