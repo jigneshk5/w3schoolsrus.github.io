@@ -1,7 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en-US">
+
+<!-- Mirrored from www.w3schools.com/charsets/ref_html_entities_i.asp by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Sep 2019 08:47:12 GMT -->
 <head>
-<title>HTML Character Sets</title>
+<title>HTML Entities</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="Keywords" content="HTML,CSS,JavaScript,SQL,PHP,jQuery,XML,DOM,Bootstrap,Python,Java,Web development,W3C,tutorials,programming,training,learning,quiz,primer,lessons,references,examples,exercises,source code,colors,demos,tips">
@@ -479,7 +482,12 @@ function w3_getStyleValue(elmnt,style) {
   }
 }
 </script>
-</head><body>
+<style>
+.w3-table-all td:first-child {
+font-size:22px; padding-top:0; padding-bottom:0;}
+</style>
+</head>
+<body>
 <div class='w3-container top'>
   <a class='w3schools-logo notranslate' href='../index.html'>w3schools<span class='dotcom'>.com</span></a>
   <div class='w3-right w3-hide-small w3-wide toptext' style="font-family:'Segoe UI',Arial,sans-serif">THE WORLD'S LARGEST WEB DEVELOPER SITE</div>
@@ -771,124 +779,108 @@ function w3_getStyleValue(elmnt,style) {
         <!-- adspace leaderboard -->
        
       </div>
-<h1>HTML Character Sets</h1>
+<h1>HTML5  <span class="color_h1">Entity Names by Alphabet - I</span></h1>
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="../default.html">&#10094; Home</a>
-<a class="w3-right w3-btn" href="ref_html_ascii.html">Next &#10095;</a>
+<a class="w3-left w3-btn" href="ref_html_entities_h.html">&#10094; Previous</a>
+<a class="w3-right w3-btn" href="ref_html_entities_j.html">Next &#10095;</a>
 </div>
 <hr>
-<p>To display an HTML page correctly, the browser must know what character-set (encoding) to use:</p>
-<div class="w3-example">
-<h3>Example</h3>
-<div class="w3-code htmlHigh notranslate">
-&lt;meta charset=&quot;UTF-8&quot;&gt;
-</div>
-</div>
-
-<hr>
-<h2>HTML Character Sets</h2>
-<p>For HTML5, the default character encoding is UTF-8.</p>
-<p>This has not always been the case. The character encoding for the early web was ASCII.</p>
-<p>Later, from HTML 2.0 to HTML 4.01, ISO-8859-1 was 
-considered the standard.</p>
-<p>With XML and HTML5, UTF-8 finally arrived and solved a lot of character encoding problems.</p>
-
-<hr>
-<h2>In the Beginning: ASCII</h2>
-<p>Computer data is stored as binary codes (01000101) in the electronics.</p>
-<p>To standardize the storing of text, the American Standard Code for Information 
-Interchange (ASCII) was created. It defined a unique binary number for 
-each storable character to support the numbers from 0-9, the upper and lower case alphabet (a-z, A-Z), and special 
-characters like ! $ + - ( ) @ &lt; &gt; , .</p>
-<p>Since ASCII used 7 bits for the character, it could only represent 128 different characters.</p>
-<p>The biggest weakness with ASCII, was that it excluded non English letters.</p>
-<p>ASCII is still in use today, especially in large mainframe computer systems.</p>
-<p>For a closer look, please study our <a href="ref_html_ascii.html">Complete ASCII 
-Reference</a>.</p>
-<hr>
-<h2>In Windows: Windows-1252</h2>
-<p>Windows-1252 was the default character-set in Windows, up to Windows 95.</p>
-
-<p>It is an extension to ASCII, with added international characters.</p>
-<p>It 
-uses a full byte (8-bits) to represent 256 different characters. </p>
-<p>Since Windows-1252 has been the default in Windows, it is supported by all browsers.</p>
-<p>For a closer look, please study: <a href="ref_html_ansi.html">The Complete Windows-1252 Reference</a>.</p>
-<hr>
-<div id="midcontentadcontainer" style="overflow:auto;text-align:center">
-<!-- MidContent -->
-
-  <!--<pre>mid_content, all: [300,250][336,280][728,90][970,250][970,90][320,50][468,60]</pre>-->
-  <div id="snhb-mid_content-0"></div>
-    
-</div>
-<hr>
-<h2>In HTML 4: ISO-8859-1</h2>
-<p>The default character-set in HTML 4 is ISO-8859-1.</p>
-<p>ISO-8859-1 is an extension to ASCII, with added international characters.</p>
-<div class="w3-example">
-<h3>Example</h3>
-<div class="w3-code htmlHigh notranslate">
-&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html;charset=ISO-8859-1&quot;&gt;
-</div>
-</div>
-
-<p>In HTML 4, a character-set different from ISO-8859-1 can be specified in the &lt;meta&gt; tag:</p>
-<div class="w3-example">
-<h3>Example</h3>
-<div class="w3-code htmlHigh notranslate">
-&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html;charset=ISO-8859-8&quot;&gt;
-</div>
-</div>
-<p>All HTML 4 processors also support UTF-8:</p>
-
-<div class="w3-example">
-<h3>Example</h3>
-<div class="w3-code htmlHigh notranslate">
-&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html;charset=UTF-8&quot;&gt;
-</div>
-</div>
-<div class="w3-panel w3-note">
-<p>When a browser detects ISO-8859-1 it normally defaults to Windows-1252,
-because Windows-1252 has 32 more international characters.</p>
-</div>
-
-<p>For a closer look, please study: <a href="ref_html_8859.html">The Complete ISO-8859-1 Reference</a></p>
-<hr>
-
-<h2>In HTML5: Unicode UTF-8</h2>
-
-<p>The default character-set for HTML5 is UTF-8.</p>
-
-<div class="w3-example">
-<h3>Example</h3>
-<div class="w3-code htmlHigh notranslate">
-&lt;meta charset=&quot;UTF-8&quot;&gt;
-</div>
-</div>
-
-<p>A character-set different from UTF-8 can be specified in the &lt;meta&gt; tag:</p>
-<div class="w3-example">
-<h3>Example</h3>
-<div class="w3-code htmlHigh notranslate">
-&lt;meta charset=&quot;ISO-8859-1&quot;&gt;
-</div>
-</div>
-
-<p>The Unicode Consortium developed the UTF-8 and UTF-16 standards, because the ISO-8859 character-sets are 
-limited, and not compatible a multilingual environment.</p>
-
-<p>The Unicode Standard covers (almost) all the characters, punctuations, and symbols in the world.</p>
 
 <div class="w3-panel w3-note">
-<p>All HTML5 and XML processors support UTF-8, UTF-16, Windows-1252, and ISO-8859.</p>
+<p>Older browsers may not support all the HTML5 entities in the table below.<br>
+Chrome has good support. But (currently) only IE 11+ and Firefox 35+ support all the entities.
+</p>
 </div>
-
-<p>For a closer look, please study: <a href="ref_html_utf8.html">The Complete Unicode Reference</a>.</p>
+<div class="w3-responsive">
+<table class="w3-table-all charset-tryit">
+<tr>
+<th style="width:20%">Character</th>
+<th style="width:40%">Entity Name</th>
+<th style="width:20%">Hex</th>
+<th>Dec</th>
+</tr>
+<tr><td>&Iacute;</td><td>Iacute</td><td>000CD</td><td>205</td></tr>
+<tr><td>&iacute;</td><td>iacute</td><td>000ED</td><td>237</td></tr>
+<tr><td>&ic;</td><td>ic</td><td>02063</td><td>8291</td></tr>
+<tr><td>&Icirc;</td><td>Icirc</td><td>000CE</td><td>206</td></tr>
+<tr><td>&icirc;</td><td>icirc</td><td>000EE</td><td>238</td></tr>
+<tr><td>&Icy;</td><td>Icy</td><td>00418</td><td>1048</td></tr>
+<tr><td>&icy;</td><td>icy</td><td>00438</td><td>1080</td></tr>
+<tr><td>&Idot;</td><td>Idot</td><td>00130</td><td>304</td></tr>
+<tr><td>&IEcy;</td><td>IEcy</td><td>00415</td><td>1045</td></tr>
+<tr><td>&iecy;</td><td>iecy</td><td>00435</td><td>1077</td></tr>
+<tr><td>&iexcl;</td><td>iexcl</td><td>000A1</td><td>161</td></tr>
+<tr><td>&iff;</td><td>iff</td><td>021D4</td><td>8660</td></tr>
+<tr><td>&Ifr;</td><td>Ifr</td><td>02111</td><td>8465</td></tr>
+<tr><td>&ifr;</td><td>ifr</td><td>1D526</td><td>120102</td></tr>
+<tr><td>&Igrave;</td><td>Igrave</td><td>000CC</td><td>204</td></tr>
+<tr><td>&igrave;</td><td>igrave</td><td>000EC</td><td>236</td></tr>
+<tr><td>&ii;</td><td>ii</td><td>02148</td><td>8520</td></tr>
+<tr><td>&iiiint;</td><td>iiiint</td><td>02A0C</td><td>10764</td></tr>
+<tr><td>&iiint;</td><td>iiint</td><td>0222D</td><td>8749</td></tr>
+<tr><td>&iinfin;</td><td>iinfin</td><td>029DC</td><td>10716</td></tr>
+<tr><td>&iiota;</td><td>iiota</td><td>02129</td><td>8489</td></tr>
+<tr><td>&IJlig;</td><td>IJlig</td><td>00132</td><td>306</td></tr>
+<tr><td>&ijlig;</td><td>ijlig</td><td>00133</td><td>307</td></tr>
+<tr><td>&Im;</td><td>Im</td><td>02111</td><td>8465</td></tr>
+<tr><td>&Imacr;</td><td>Imacr</td><td>0012A</td><td>298</td></tr>
+<tr><td>&imacr;</td><td>imacr</td><td>0012B</td><td>299</td></tr>
+<tr><td>&image;</td><td>image</td><td>02111</td><td>8465</td></tr>
+<tr><td>&ImaginaryI;</td><td>ImaginaryI</td><td>02148</td><td>8520</td></tr>
+<tr><td>&imagline;</td><td>imagline</td><td>02110</td><td>8464</td></tr>
+<tr><td>&imagpart;</td><td>imagpart</td><td>02111</td><td>8465</td></tr>
+<tr><td>&imath;</td><td>imath</td><td>00131</td><td>305</td></tr>
+<tr><td>&imof;</td><td>imof</td><td>022B7</td><td>8887</td></tr>
+<tr><td>&imped;</td><td>imped</td><td>001B5</td><td>437</td></tr>
+<tr><td>&Implies;</td><td>Implies</td><td>021D2</td><td>8658</td></tr>
+<tr><td>&in;</td><td>in</td><td>02208</td><td>8712</td></tr>
+<tr><td>&incare;</td><td>incare</td><td>02105</td><td>8453</td></tr>
+<tr><td>&infin;</td><td>infin</td><td>0221E</td><td>8734</td></tr>
+<tr><td>&infintie;</td><td>infintie</td><td>029DD</td><td>10717</td></tr>
+<tr><td>&inodot;</td><td>inodot</td><td>00131</td><td>305</td></tr>
+<tr><td>&Int;</td><td>Int</td><td>0222C</td><td>8748</td></tr>
+<tr><td>&int;</td><td>int</td><td>0222B</td><td>8747</td></tr>
+<tr><td>&intcal;</td><td>intcal</td><td>022BA</td><td>8890</td></tr>
+<tr><td>&integers;</td><td>integers</td><td>02124</td><td>8484</td></tr>
+<tr><td>&Integral;</td><td>Integral</td><td>0222B</td><td>8747</td></tr>
+<tr><td>&intercal;</td><td>intercal</td><td>022BA</td><td>8890</td></tr>
+<tr><td>&Intersection;</td><td>Intersection</td><td>022C2</td><td>8898</td></tr>
+<tr><td>&intlarhk;</td><td>intlarhk</td><td>02A17</td><td>10775</td></tr>
+<tr><td>&intprod;</td><td>intprod</td><td>02A3C</td><td>10812</td></tr>
+<tr><td>&InvisibleComma;</td><td>InvisibleComma</td><td>02063</td><td>8291</td></tr>
+<tr><td>&InvisibleTimes;</td><td>InvisibleTimes</td><td>02062</td><td>8290</td></tr>
+<tr><td>&IOcy;</td><td>IOcy</td><td>00401</td><td>1025</td></tr>
+<tr><td>&iocy;</td><td>iocy</td><td>00451</td><td>1105</td></tr>
+<tr><td>&Iogon;</td><td>Iogon</td><td>0012E</td><td>302</td></tr>
+<tr><td>&iogon;</td><td>iogon</td><td>0012F</td><td>303</td></tr>
+<tr><td>&Iopf;</td><td>Iopf</td><td>1D540</td><td>120128</td></tr>
+<tr><td>&iopf;</td><td>iopf</td><td>1D55A</td><td>120154</td></tr>
+<tr><td>&Iota;</td><td>Iota</td><td>00399</td><td>921</td></tr>
+<tr><td>&iota;</td><td>iota</td><td>003B9</td><td>953</td></tr>
+<tr><td>&iprod;</td><td>iprod</td><td>02A3C</td><td>10812</td></tr>
+<tr><td>&iquest;</td><td>iquest</td><td>000BF</td><td>191</td></tr>
+<tr><td>&Iscr;</td><td>Iscr</td><td>02110</td><td>8464</td></tr>
+<tr><td>&iscr;</td><td>iscr</td><td>1D4BE</td><td>119998</td></tr>
+<tr><td>&isin;</td><td>isin</td><td>02208</td><td>8712</td></tr>
+<tr><td>&isindot;</td><td>isindot</td><td>022F5</td><td>8949</td></tr>
+<tr><td>&isinE;</td><td>isinE</td><td>022F9</td><td>8953</td></tr>
+<tr><td>&isins;</td><td>isins</td><td>022F4</td><td>8948</td></tr>
+<tr><td>&isinsv;</td><td>isinsv</td><td>022F3</td><td>8947</td></tr>
+<tr><td>&isinv;</td><td>isinv</td><td>02208</td><td>8712</td></tr>
+<tr><td>&it;</td><td>it</td><td>02062</td><td>8290</td></tr>
+<tr><td>&Itilde;</td><td>Itilde</td><td>00128</td><td>296</td></tr>
+<tr><td>&itilde;</td><td>itilde</td><td>00129</td><td>297</td></tr>
+<tr><td>&Iukcy;</td><td>Iukcy</td><td>00406</td><td>1030</td></tr>
+<tr><td>&iukcy;</td><td>iukcy</td><td>00456</td><td>1110</td></tr>
+<tr><td>&Iuml;</td><td>Iuml</td><td>000CF</td><td>207</td></tr>
+<tr><td>&iuml;</td><td>iuml</td><td>000EF</td><td>239</td></tr>
+</table>
+</div>
+<br>
 <br>
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="../default.html">&#10094; Home</a>
-<a class="w3-right w3-btn" href="ref_html_ascii.html">Next &#10095;</a>
+<a class="w3-left w3-btn" href="ref_html_entities_h.html">&#10094; Previous</a>
+<a class="w3-right w3-btn" href="ref_html_entities_j.html">Next &#10095;</a>
 </div>
 </div>
 <div class="w3-col l2 m12" id="right">
@@ -1180,5 +1172,13 @@ While using this site, you agree to have read and accepted our <a href="../about
 <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>  
-<![endif]--></body>
+<![endif]-->
+<script src="tryit_script.js"></script>
+<script>
+charsetTryit(3, 3, 1, 2);
+</script>
+</body>
+
+<!-- Mirrored from www.w3schools.com/charsets/ref_html_entities_i.asp by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Sep 2019 08:47:12 GMT -->
 </html>
+

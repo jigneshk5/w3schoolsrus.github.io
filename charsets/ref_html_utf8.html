@@ -1,7 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en-US">
+
+<!-- Mirrored from www.w3schools.com/charsets/ref_html_utf8.asp by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Sep 2019 08:37:19 GMT -->
 <head>
-<title>HTML Character Sets</title>
+<title>HTML UTF-8 Reference</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="Keywords" content="HTML,CSS,JavaScript,SQL,PHP,jQuery,XML,DOM,Bootstrap,Python,Java,Web development,W3C,tutorials,programming,training,learning,quiz,primer,lessons,references,examples,exercises,source code,colors,demos,tips">
@@ -771,49 +774,83 @@ function w3_getStyleValue(elmnt,style) {
         <!-- adspace leaderboard -->
        
       </div>
-<h1>HTML Character Sets</h1>
+<h1>HTML <span class="color_h1">Unicode (UTF-8) Reference</span></h1>
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="../default.html">&#10094; Home</a>
-<a class="w3-right w3-btn" href="ref_html_ascii.html">Next &#10095;</a>
+<a class="w3-left w3-btn" href="ref_html_symbols.html">&#10094; Previous</a>
+<a class="w3-right w3-btn" href="ref_utf_basic_latin.html">Next &#10095;</a>
 </div>
 <hr>
-<p>To display an HTML page correctly, the browser must know what character-set (encoding) to use:</p>
+
+<h2>The Unicode Consortium</h2>
+<p>
+The Unicode Consortium develops the Unicode Standard.
+Their goal is to replace the existing character sets with its standard Unicode 
+Transformation Format (UTF).</p>
+<p>
+The Unicode Standard has become a success and is implemented in 
+HTML, XML, Java, JavaScript, E-mail, ASP, PHP, etc. The Unicode standard is also 
+supported in many operating systems and all modern browsers.</p>
+<p>
+The Unicode Consortium cooperates with the leading standards development 
+organizations, like ISO, W3C, and ECMA.</p>
+<hr>
+
+<h2>
+The Unicode Character Sets</h2>
+<p>
+Unicode can be implemented by different character sets. The most commonly used 
+encodings are UTF-8 and UTF-16:</p>
+
+<div class="w3-responsive">
+<table class="w3-table-all notranslate">
+    <tr>
+      <th style="width:20%">Character-set</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td>UTF-8</td>
+      <td>A character in UTF8 can be from 1 to 4  bytes long. UTF-8 can represent any character in the Unicode standard.  UTF-8 is backwards compatible with ASCII. UTF-8 is the preferred  encoding for e-mail and web pages</td>
+    </tr>
+    <tr>
+      <td>UTF-16</td>
+      <td>16-bit Unicode Transformation Format is a variable-length  character encoding for Unicode, capable of encoding the entire Unicode  repertoire. UTF-16 is used in major operating systems and environments,  like Microsoft Windows, Java and .NET.</td>
+    </tr>
+    </table>
+</div>
+<p>
+<b>Tip:</b> 
+The first 128 characters of Unicode (which correspond one-to-one with ASCII) are 
+encoded using a single octet with the same binary value as ASCII, making valid 
+ASCII text valid UTF-8-encoded Unicode as well.</p>
+<div class="w3-panel w3-note">
+  <p>HTML 4 supports UTF-8. HTML 5 supports 
+both UTF-8 and UTF-16!</p>
+</div>
+
+<hr>
+<h2>The HTML5 Standard: Unicode UTF-8</h2>
+
+<p>Because the character sets in ISO-8859 were 
+limited in size, and not compatible in multilingual environments, the 
+Unicode Consortium developed the Unicode Standard.</p>
+
+<p>
+The Unicode Standard covers (almost) all the characters, punctuations, and symbols in the 
+world.</p>
+<p>
+Unicode enables processing, storage, and 
+transport of text independent of platform and language.</p>
+
+<p><strong>The default character encoding in HTML-5 is UTF-8.</strong></p>
+
+<p>If an HTML5 web page uses a different character set than UTF-8, it should be 
+specified in the &lt;meta&gt; tag like:</p>
 <div class="w3-example">
 <h3>Example</h3>
-<div class="w3-code htmlHigh notranslate">
-&lt;meta charset=&quot;UTF-8&quot;&gt;
+<div class="w3-code notranslate">
+&lt;meta charset=&quot;ISO-8859-1&quot;&gt;
 </div>
 </div>
-
-<hr>
-<h2>HTML Character Sets</h2>
-<p>For HTML5, the default character encoding is UTF-8.</p>
-<p>This has not always been the case. The character encoding for the early web was ASCII.</p>
-<p>Later, from HTML 2.0 to HTML 4.01, ISO-8859-1 was 
-considered the standard.</p>
-<p>With XML and HTML5, UTF-8 finally arrived and solved a lot of character encoding problems.</p>
-
-<hr>
-<h2>In the Beginning: ASCII</h2>
-<p>Computer data is stored as binary codes (01000101) in the electronics.</p>
-<p>To standardize the storing of text, the American Standard Code for Information 
-Interchange (ASCII) was created. It defined a unique binary number for 
-each storable character to support the numbers from 0-9, the upper and lower case alphabet (a-z, A-Z), and special 
-characters like ! $ + - ( ) @ &lt; &gt; , .</p>
-<p>Since ASCII used 7 bits for the character, it could only represent 128 different characters.</p>
-<p>The biggest weakness with ASCII, was that it excluded non English letters.</p>
-<p>ASCII is still in use today, especially in large mainframe computer systems.</p>
-<p>For a closer look, please study our <a href="ref_html_ascii.html">Complete ASCII 
-Reference</a>.</p>
-<hr>
-<h2>In Windows: Windows-1252</h2>
-<p>Windows-1252 was the default character-set in Windows, up to Windows 95.</p>
-
-<p>It is an extension to ASCII, with added international characters.</p>
-<p>It 
-uses a full byte (8-bits) to represent 256 different characters. </p>
-<p>Since Windows-1252 has been the default in Windows, it is supported by all browsers.</p>
-<p>For a closer look, please study: <a href="ref_html_ansi.html">The Complete Windows-1252 Reference</a>.</p>
 <hr>
 <div id="midcontentadcontainer" style="overflow:auto;text-align:center">
 <!-- MidContent -->
@@ -823,72 +860,137 @@ uses a full byte (8-bits) to represent 256 different characters. </p>
     
 </div>
 <hr>
-<h2>In HTML 4: ISO-8859-1</h2>
-<p>The default character-set in HTML 4 is ISO-8859-1.</p>
-<p>ISO-8859-1 is an extension to ASCII, with added international characters.</p>
-<div class="w3-example">
-<h3>Example</h3>
-<div class="w3-code htmlHigh notranslate">
-&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html;charset=ISO-8859-1&quot;&gt;
-</div>
-</div>
 
-<p>In HTML 4, a character-set different from ISO-8859-1 can be specified in the &lt;meta&gt; tag:</p>
-<div class="w3-example">
-<h3>Example</h3>
-<div class="w3-code htmlHigh notranslate">
-&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html;charset=ISO-8859-8&quot;&gt;
-</div>
-</div>
-<p>All HTML 4 processors also support UTF-8:</p>
+<h2>The Difference Between Unicode and UTF-8</h2>
 
-<div class="w3-example">
-<h3>Example</h3>
-<div class="w3-code htmlHigh notranslate">
-&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html;charset=UTF-8&quot;&gt;
-</div>
-</div>
+<p>Unicode is a <strong>character set</strong>. UTF-8 is <strong>encoding</strong>.</p>
+<p>Unicode is a list of characters with unique decimal numbers (code points). A = 
+65, B 
+= 66, C = 67, ....</p>
+<p>This list of decimal numbers represent the string &quot;hello&quot;: 104 101 108 108 111</p>
+<p>Encoding is how these numbers are translated into binary numbers to be stored 
+in a computer:</p>
+<p>UTF-8 encoding will store &quot;hello&quot; like this (binary): 01101000 01100101 01101100 
+01101100&nbsp; 01101111</p>
 <div class="w3-panel w3-note">
-<p>When a browser detects ISO-8859-1 it normally defaults to Windows-1252,
-because Windows-1252 has 32 more international characters.</p>
+  <p><strong>Encoding</strong> translates numbers into binary. <strong>Character 
+sets</strong> translates characters to numbers.</p>
 </div>
 
-<p>For a closer look, please study: <a href="ref_html_8859.html">The Complete ISO-8859-1 Reference</a></p>
 <hr>
 
-<h2>In HTML5: Unicode UTF-8</h2>
+<h2>HTML5 UTF-8 Character Codes</h2>
 
-<p>The default character-set for HTML5 is UTF-8.</p>
+<p>Below is a list of some of the UTF-8 character codes supported by HTML5: </p>
 
-<div class="w3-example">
-<h3>Example</h3>
-<div class="w3-code htmlHigh notranslate">
-&lt;meta charset=&quot;UTF-8&quot;&gt;
+<div class="w3-responsive">
+<table class="w3-table-all notranslate">
+<tr>
+  <th>Character codes</th>
+  <th>Decimal</th>
+  <th>Hexadecimal</th>
+</tr>
+<tr>
+  <td><a href="ref_utf_basic_latin.html">C0 Controls and Basic Latin</a></td>
+  <td>0-127</td>
+  <td>0000-007F</td>
+</tr>
+<tr>
+  <td><a href="ref_utf_latin1_supplement.html">C1 Controls and Latin-1 Supplement</a></td>
+  <td>128-255</td>
+  <td>0080-00FF</td>
+</tr>
+<tr>
+  <td><a href="ref_utf_latin_extended_a.html">Latin Extended-A</a></td>
+  <td>256-383</td>
+  <td>0100-017F</td>
+</tr>
+<tr>
+  <td><a href="ref_utf_latin_extended_b.html">Latin Extended-B</a></td>
+  <td>384-591</td>
+  <td>0180-024F</td>
+</tr>
+<tr>
+  <td><a href="ref_utf_modifiers.html">Spacing Modifiers</a></td>
+  <td>688-767</td>
+  <td>02B0-02FF</td>
+</tr>
+<tr>
+  <td><a href="ref_utf_diacritical.html">Diacritical Marks</a></td>
+  <td>768-879</td>
+  <td>0300-036F</td>
+</tr>
+<tr>
+  <td><a href="ref_utf_greek.html">Greek and Coptic</a></td>
+  <td>880-1023</td>
+  <td>0370-03FF</td>
+</tr>
+<tr>
+  <td><a href="ref_utf_cyrillic.html">Cyrillic Basic</a></td>
+  <td>1024-1279</td>
+  <td>0400-04FF</td>
+</tr>
+<tr>
+  <td><a href="ref_utf_cyrillic_supplement.html">Cyrillic Supplement</a></td>
+  <td>1280-1327</td>
+  <td>0500-052F</td>
+</tr>
+<tr>
+  <td><a href="ref_utf_punctuation.html">General Punctuation</a></td>
+  <td>8192-8303</td>
+  <td>2000-206F</td>
+</tr>
+<tr>
+  <td><a href="ref_utf_currency.html">Currency Symbols</a></td>
+  <td>8352-8399</td>
+  <td>20A0-20CF</td>
+</tr>
+<tr>
+  <td><a href="ref_utf_letterlike.html">Letterlike Symbols</a></td>
+  <td>8448-8527</td>
+  <td>2100-214F</td>
+</tr>
+<tr>
+  <td><a href="ref_utf_arrows.html">Arrows</a></td>
+  <td>8592-8703</td>
+  <td>2190-21FF</td>
+</tr>
+<tr>
+  <td><a href="ref_utf_math.html">Mathematical Operators</a></td>
+  <td>8704-8959</td>
+  <td>2200-22FF</td>
+</tr>
+<tr>
+  <td><a href="ref_utf_box.html">Box Drawings</a></td>
+  <td>9472-9599</td>
+  <td>2500-257F</td>
+</tr>
+<tr>
+  <td><a href="ref_utf_block.html">Block Elements</a></td>
+  <td>9600-9631</td>
+  <td>2580-259F</td>
+</tr>
+<tr>
+  <td><a href="ref_utf_geometric.html">Geometric Shapes</a></td>
+  <td>9632-9727</td>
+  <td>25A0-25FF</td>
+</tr>
+<tr>
+  <td><a href="ref_utf_symbols.html">Miscellaneous Symbols</a></td>
+  <td>9728-9983</td>
+  <td>2600-26FF</td>
+</tr>
+<tr>
+  <td><a href="ref_utf_dingbats.html">Dingbats</a></td>
+  <td>9984-10175</td>
+  <td>2700-27BF</td>
+</tr>
+</table>
 </div>
-</div>
-
-<p>A character-set different from UTF-8 can be specified in the &lt;meta&gt; tag:</p>
-<div class="w3-example">
-<h3>Example</h3>
-<div class="w3-code htmlHigh notranslate">
-&lt;meta charset=&quot;ISO-8859-1&quot;&gt;
-</div>
-</div>
-
-<p>The Unicode Consortium developed the UTF-8 and UTF-16 standards, because the ISO-8859 character-sets are 
-limited, and not compatible a multilingual environment.</p>
-
-<p>The Unicode Standard covers (almost) all the characters, punctuations, and symbols in the world.</p>
-
-<div class="w3-panel w3-note">
-<p>All HTML5 and XML processors support UTF-8, UTF-16, Windows-1252, and ISO-8859.</p>
-</div>
-
-<p>For a closer look, please study: <a href="ref_html_utf8.html">The Complete Unicode Reference</a>.</p>
 <br>
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="../default.html">&#10094; Home</a>
-<a class="w3-right w3-btn" href="ref_html_ascii.html">Next &#10095;</a>
+<a class="w3-left w3-btn" href="ref_html_symbols.html">&#10094; Previous</a>
+<a class="w3-right w3-btn" href="ref_utf_basic_latin.html">Next &#10095;</a>
 </div>
 </div>
 <div class="w3-col l2 m12" id="right">
@@ -1180,5 +1282,8 @@ While using this site, you agree to have read and accepted our <a href="../about
 <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>  
-<![endif]--></body>
+<![endif]-->
+</body>
+
+<!-- Mirrored from www.w3schools.com/charsets/ref_html_utf8.asp by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Sep 2019 08:37:19 GMT -->
 </html>

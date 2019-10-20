@@ -1,7 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en-US">
+
+<!-- Mirrored from www.w3schools.com/charsets/ref_html_entities_r.asp by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Sep 2019 08:47:12 GMT -->
 <head>
-<title>HTML Character Sets</title>
+<title>HTML Entities</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="Keywords" content="HTML,CSS,JavaScript,SQL,PHP,jQuery,XML,DOM,Bootstrap,Python,Java,Web development,W3C,tutorials,programming,training,learning,quiz,primer,lessons,references,examples,exercises,source code,colors,demos,tips">
@@ -479,7 +482,12 @@ function w3_getStyleValue(elmnt,style) {
   }
 }
 </script>
-</head><body>
+<style>
+.w3-table-all td:first-child {
+font-size:22px; padding-top:0; padding-bottom:0;}
+</style>
+</head>
+<body>
 <div class='w3-container top'>
   <a class='w3schools-logo notranslate' href='../index.html'>w3schools<span class='dotcom'>.com</span></a>
   <div class='w3-right w3-hide-small w3-wide toptext' style="font-family:'Segoe UI',Arial,sans-serif">THE WORLD'S LARGEST WEB DEVELOPER SITE</div>
@@ -771,124 +779,178 @@ function w3_getStyleValue(elmnt,style) {
         <!-- adspace leaderboard -->
        
       </div>
-<h1>HTML Character Sets</h1>
+<h1>HTML5  <span class="color_h1">Entity Names by Alphabet - R</span></h1>
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="../default.html">&#10094; Home</a>
-<a class="w3-right w3-btn" href="ref_html_ascii.html">Next &#10095;</a>
+<a class="w3-left w3-btn" href="ref_html_entities_q.html">&#10094; Previous</a>
+<a class="w3-right w3-btn" href="ref_html_entities_s.html">Next &#10095;</a>
 </div>
 <hr>
-<p>To display an HTML page correctly, the browser must know what character-set (encoding) to use:</p>
-<div class="w3-example">
-<h3>Example</h3>
-<div class="w3-code htmlHigh notranslate">
-&lt;meta charset=&quot;UTF-8&quot;&gt;
-</div>
-</div>
-
-<hr>
-<h2>HTML Character Sets</h2>
-<p>For HTML5, the default character encoding is UTF-8.</p>
-<p>This has not always been the case. The character encoding for the early web was ASCII.</p>
-<p>Later, from HTML 2.0 to HTML 4.01, ISO-8859-1 was 
-considered the standard.</p>
-<p>With XML and HTML5, UTF-8 finally arrived and solved a lot of character encoding problems.</p>
-
-<hr>
-<h2>In the Beginning: ASCII</h2>
-<p>Computer data is stored as binary codes (01000101) in the electronics.</p>
-<p>To standardize the storing of text, the American Standard Code for Information 
-Interchange (ASCII) was created. It defined a unique binary number for 
-each storable character to support the numbers from 0-9, the upper and lower case alphabet (a-z, A-Z), and special 
-characters like ! $ + - ( ) @ &lt; &gt; , .</p>
-<p>Since ASCII used 7 bits for the character, it could only represent 128 different characters.</p>
-<p>The biggest weakness with ASCII, was that it excluded non English letters.</p>
-<p>ASCII is still in use today, especially in large mainframe computer systems.</p>
-<p>For a closer look, please study our <a href="ref_html_ascii.html">Complete ASCII 
-Reference</a>.</p>
-<hr>
-<h2>In Windows: Windows-1252</h2>
-<p>Windows-1252 was the default character-set in Windows, up to Windows 95.</p>
-
-<p>It is an extension to ASCII, with added international characters.</p>
-<p>It 
-uses a full byte (8-bits) to represent 256 different characters. </p>
-<p>Since Windows-1252 has been the default in Windows, it is supported by all browsers.</p>
-<p>For a closer look, please study: <a href="ref_html_ansi.html">The Complete Windows-1252 Reference</a>.</p>
-<hr>
-<div id="midcontentadcontainer" style="overflow:auto;text-align:center">
-<!-- MidContent -->
-
-  <!--<pre>mid_content, all: [300,250][336,280][728,90][970,250][970,90][320,50][468,60]</pre>-->
-  <div id="snhb-mid_content-0"></div>
-    
-</div>
-<hr>
-<h2>In HTML 4: ISO-8859-1</h2>
-<p>The default character-set in HTML 4 is ISO-8859-1.</p>
-<p>ISO-8859-1 is an extension to ASCII, with added international characters.</p>
-<div class="w3-example">
-<h3>Example</h3>
-<div class="w3-code htmlHigh notranslate">
-&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html;charset=ISO-8859-1&quot;&gt;
-</div>
-</div>
-
-<p>In HTML 4, a character-set different from ISO-8859-1 can be specified in the &lt;meta&gt; tag:</p>
-<div class="w3-example">
-<h3>Example</h3>
-<div class="w3-code htmlHigh notranslate">
-&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html;charset=ISO-8859-8&quot;&gt;
-</div>
-</div>
-<p>All HTML 4 processors also support UTF-8:</p>
-
-<div class="w3-example">
-<h3>Example</h3>
-<div class="w3-code htmlHigh notranslate">
-&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html;charset=UTF-8&quot;&gt;
-</div>
-</div>
-<div class="w3-panel w3-note">
-<p>When a browser detects ISO-8859-1 it normally defaults to Windows-1252,
-because Windows-1252 has 32 more international characters.</p>
-</div>
-
-<p>For a closer look, please study: <a href="ref_html_8859.html">The Complete ISO-8859-1 Reference</a></p>
-<hr>
-
-<h2>In HTML5: Unicode UTF-8</h2>
-
-<p>The default character-set for HTML5 is UTF-8.</p>
-
-<div class="w3-example">
-<h3>Example</h3>
-<div class="w3-code htmlHigh notranslate">
-&lt;meta charset=&quot;UTF-8&quot;&gt;
-</div>
-</div>
-
-<p>A character-set different from UTF-8 can be specified in the &lt;meta&gt; tag:</p>
-<div class="w3-example">
-<h3>Example</h3>
-<div class="w3-code htmlHigh notranslate">
-&lt;meta charset=&quot;ISO-8859-1&quot;&gt;
-</div>
-</div>
-
-<p>The Unicode Consortium developed the UTF-8 and UTF-16 standards, because the ISO-8859 character-sets are 
-limited, and not compatible a multilingual environment.</p>
-
-<p>The Unicode Standard covers (almost) all the characters, punctuations, and symbols in the world.</p>
 
 <div class="w3-panel w3-note">
-<p>All HTML5 and XML processors support UTF-8, UTF-16, Windows-1252, and ISO-8859.</p>
+<p>Older browsers may not support all the HTML5 entities in the table below.<br>
+Chrome has good support. But (currently) only IE 11+ and Firefox 35+ support all the entities.
+</p>
 </div>
-
-<p>For a closer look, please study: <a href="ref_html_utf8.html">The Complete Unicode Reference</a>.</p>
+<div class="w3-responsive">
+<table class="w3-table-all charset-tryit">
+<tr>
+<th style="width:20%">Character</th>
+<th style="width:40%">Entity Name</th>
+<th style="width:20%">Hex</th>
+<th>Dec</th>
+</tr>
+<tr><td>&rAarr;</td><td>rAarr</td><td>021DB</td><td>8667</td></tr>
+<tr><td>&race;</td><td>race</td><td>0223D + 00331</td><td></td></tr>
+<tr><td>&Racute;</td><td>Racute</td><td>00154</td><td>340</td></tr>
+<tr><td>&racute;</td><td>racute</td><td>00155</td><td>341</td></tr>
+<tr><td>&radic;</td><td>radic</td><td>0221A</td><td>8730</td></tr>
+<tr><td>&raemptyv;</td><td>raemptyv</td><td>029B3</td><td>10675</td></tr>
+<tr><td>&Rang;</td><td>Rang</td><td>027EB</td><td>10219</td></tr>
+<tr><td>&rang;</td><td>rang</td><td>027E9</td><td>10217</td></tr>
+<tr><td>&rangd;</td><td>rangd</td><td>02992</td><td>10642</td></tr>
+<tr><td>&range;</td><td>range</td><td>029A5</td><td>10661</td></tr>
+<tr><td>&rangle;</td><td>rangle</td><td>027E9</td><td>10217</td></tr>
+<tr><td>&raquo;</td><td>raquo</td><td>000BB</td><td>187</td></tr>
+<tr><td>&Rarr;</td><td>Rarr</td><td>021A0</td><td>8608</td></tr>
+<tr><td>&rArr;</td><td>rArr</td><td>021D2</td><td>8658</td></tr>
+<tr><td>&rarr;</td><td>rarr</td><td>02192</td><td>8594</td></tr>
+<tr><td>&rarrap;</td><td>rarrap</td><td>02975</td><td>10613</td></tr>
+<tr><td>&rarrb;</td><td>rarrb</td><td>021E5</td><td>8677</td></tr>
+<tr><td>&rarrbfs;</td><td>rarrbfs</td><td>02920</td><td>10528</td></tr>
+<tr><td>&rarrc;</td><td>rarrc</td><td>02933</td><td>10547</td></tr>
+<tr><td>&rarrfs;</td><td>rarrfs</td><td>0291E</td><td>10526</td></tr>
+<tr><td>&rarrhk;</td><td>rarrhk</td><td>021AA</td><td>8618</td></tr>
+<tr><td>&rarrlp;</td><td>rarrlp</td><td>021AC</td><td>8620</td></tr>
+<tr><td>&rarrpl;</td><td>rarrpl</td><td>02945</td><td>10565</td></tr>
+<tr><td>&rarrsim;</td><td>rarrsim</td><td>02974</td><td>10612</td></tr>
+<tr><td>&Rarrtl;</td><td>Rarrtl</td><td>02916</td><td>10518</td></tr>
+<tr><td>&rarrtl;</td><td>rarrtl</td><td>021A3</td><td>8611</td></tr>
+<tr><td>&rarrw;</td><td>rarrw</td><td>0219D</td><td>8605</td></tr>
+<tr><td>&rAtail;</td><td>rAtail</td><td>0291C</td><td>10524</td></tr>
+<tr><td>&ratail;</td><td>ratail</td><td>0291A</td><td>10522</td></tr>
+<tr><td>&ratio;</td><td>ratio</td><td>02236</td><td>8758</td></tr>
+<tr><td>&rationals;</td><td>rationals</td><td>0211A</td><td>8474</td></tr>
+<tr><td>&RBarr;</td><td>RBarr</td><td>02910</td><td>10512</td></tr>
+<tr><td>&rBarr;</td><td>rBarr</td><td>0290F</td><td>10511</td></tr>
+<tr><td>&rbarr;</td><td>rbarr</td><td>0290D</td><td>10509</td></tr>
+<tr><td>&rbbrk;</td><td>rbbrk</td><td>02773</td><td>10099</td></tr>
+<tr><td>&rbrace;</td><td>rbrace</td><td>0007D</td><td>125</td></tr>
+<tr><td>&rbrack;</td><td>rbrack</td><td>0005D</td><td>93</td></tr>
+<tr><td>&rbrke;</td><td>rbrke</td><td>0298C</td><td>10636</td></tr>
+<tr><td>&rbrksld;</td><td>rbrksld</td><td>0298E</td><td>10638</td></tr>
+<tr><td>&rbrkslu;</td><td>rbrkslu</td><td>02990</td><td>10640</td></tr>
+<tr><td>&Rcaron;</td><td>Rcaron</td><td>00158</td><td>344</td></tr>
+<tr><td>&rcaron;</td><td>rcaron</td><td>00159</td><td>345</td></tr>
+<tr><td>&Rcedil;</td><td>Rcedil</td><td>00156</td><td>342</td></tr>
+<tr><td>&rcedil;</td><td>rcedil</td><td>00157</td><td>343</td></tr>
+<tr><td>&rceil;</td><td>rceil</td><td>02309</td><td>8969</td></tr>
+<tr><td>&rcub;</td><td>rcub</td><td>0007D</td><td>125</td></tr>
+<tr><td>&Rcy;</td><td>Rcy</td><td>00420</td><td>1056</td></tr>
+<tr><td>&rcy;</td><td>rcy</td><td>00440</td><td>1088</td></tr>
+<tr><td>&rdca;</td><td>rdca</td><td>02937</td><td>10551</td></tr>
+<tr><td>&rdldhar;</td><td>rdldhar</td><td>02969</td><td>10601</td></tr>
+<tr><td>&rdquo;</td><td>rdquo</td><td>0201D</td><td>8221</td></tr>
+<tr><td>&rdquor;</td><td>rdquor</td><td>0201D</td><td>8221</td></tr>
+<tr><td>&rdsh;</td><td>rdsh</td><td>021B3</td><td>8627</td></tr>
+<tr><td>&Re;</td><td>Re</td><td>0211C</td><td>8476</td></tr>
+<tr><td>&real;</td><td>real</td><td>0211C</td><td>8476</td></tr>
+<tr><td>&realine;</td><td>realine</td><td>0211B</td><td>8475</td></tr>
+<tr><td>&realpart;</td><td>realpart</td><td>0211C</td><td>8476</td></tr>
+<tr><td>&reals;</td><td>reals</td><td>0211D</td><td>8477</td></tr>
+<tr><td>&rect;</td><td>rect</td><td>025AD</td><td>9645</td></tr>
+<tr><td>&reg;</td><td>reg</td><td>000AE</td><td>174</td></tr>
+<tr><td>&ReverseElement;</td><td>ReverseElement</td><td>0220B</td><td>8715</td></tr>
+<tr><td>&ReverseEquilibrium;</td><td>ReverseEquilibrium</td><td>021CB</td><td>8651</td></tr>
+<tr><td>&ReverseUpEquilibrium;</td><td>ReverseUpEquilibrium</td><td>0296F</td><td>10607</td></tr>
+<tr><td>&rfisht;</td><td>rfisht</td><td>0297D</td><td>10621</td></tr>
+<tr><td>&rfloor;</td><td>rfloor</td><td>0230B</td><td>8971</td></tr>
+<tr><td>&Rfr;</td><td>Rfr</td><td>0211C</td><td>8476</td></tr>
+<tr><td>&rfr;</td><td>rfr</td><td>1D52F</td><td>120111</td></tr>
+<tr><td>&rHar;</td><td>rHar</td><td>02964</td><td>10596</td></tr>
+<tr><td>&rhard;</td><td>rhard</td><td>021C1</td><td>8641</td></tr>
+<tr><td>&rharu;</td><td>rharu</td><td>021C0</td><td>8640</td></tr>
+<tr><td>&rharul;</td><td>rharul</td><td>0296C</td><td>10604</td></tr>
+<tr><td>&Rho;</td><td>Rho</td><td>003A1</td><td>929</td></tr>
+<tr><td>&rho;</td><td>rho</td><td>003C1</td><td>961</td></tr>
+<tr><td>&rhov;</td><td>rhov</td><td>003F1</td><td>1009</td></tr>
+<tr><td>&RightAngleBracket;</td><td>RightAngleBracket</td><td>027E9</td><td>10217</td></tr>
+<tr><td>&RightArrow;</td><td>RightArrow</td><td>02192</td><td>8594</td></tr>
+<tr><td>&Rightarrow;</td><td>Rightarrow</td><td>021D2</td><td>8658</td></tr>
+<tr><td>&rightarrow;</td><td>rightarrow</td><td>02192</td><td>8594</td></tr>
+<tr><td>&RightArrowBar;</td><td>RightArrowBar</td><td>021E5</td><td>8677</td></tr>
+<tr><td>&RightArrowLeftArrow;</td><td>RightArrowLeftArrow</td><td>021C4</td><td>8644</td></tr>
+<tr><td>&rightarrowtail;</td><td>rightarrowtail</td><td>021A3</td><td>8611</td></tr>
+<tr><td>&RightCeiling;</td><td>RightCeiling</td><td>02309</td><td>8969</td></tr>
+<tr><td>&RightDoubleBracket;</td><td>RightDoubleBracket</td><td>027E7</td><td>10215</td></tr>
+<tr><td>&RightDownTeeVector;</td><td>RightDownTeeVector</td><td>0295D</td><td>10589</td></tr>
+<tr><td>&RightDownVector;</td><td>RightDownVector</td><td>021C2</td><td>8642</td></tr>
+<tr><td>&RightDownVectorBar;</td><td>RightDownVectorBar</td><td>02955</td><td>10581</td></tr>
+<tr><td>&RightFloor;</td><td>RightFloor</td><td>0230B</td><td>8971</td></tr>
+<tr><td>&rightharpoondown;</td><td>rightharpoondown</td><td>021C1</td><td>8641</td></tr>
+<tr><td>&rightharpoonup;</td><td>rightharpoonup</td><td>021C0</td><td>8640</td></tr>
+<tr><td>&rightleftarrows;</td><td>rightleftarrows</td><td>021C4</td><td>8644</td></tr>
+<tr><td>&rightleftharpoons;</td><td>rightleftharpoons</td><td>021CC</td><td>8652</td></tr>
+<tr><td>&rightrightarrows;</td><td>rightrightarrows</td><td>021C9</td><td>8649</td></tr>
+<tr><td>&rightsquigarrow;</td><td>rightsquigarrow</td><td>0219D</td><td>8605</td></tr>
+<tr><td>&RightTee;</td><td>RightTee;</td><td>022A2</td><td>8866</td></tr>
+<tr><td>&RightTeeArrow;</td><td>RightTeeArrow</td><td>021A6</td><td>8614</td></tr>
+<tr><td>&RightTeeVector;</td><td>RightTeeVector</td><td>0295B</td><td>10587</td></tr>
+<tr><td>&rightthreetimes;</td><td>rightthreetimes</td><td>022CC</td><td>8908</td></tr>
+<tr><td>&RightTriangle;</td><td>RightTriangle</td><td>022B3</td><td>8883</td></tr>
+<tr><td>&RightTriangleBar;</td><td>RightTriangleBar</td><td>029D0</td><td>10704</td></tr>
+<tr><td>&RightTriangleEqual;</td><td>RightTriangleEqual</td><td>022B5</td><td>8885</td></tr>
+<tr><td>&RightUpDownVector;</td><td>RightUpDownVector</td><td>0294F</td><td>10575</td></tr>
+<tr><td>&RightUpTeeVector;</td><td>RightUpTeeVector</td><td>0295C</td><td>10588</td></tr>
+<tr><td>&RightUpVector;</td><td>RightUpVector</td><td>021BE</td><td>8638</td></tr>
+<tr><td>&RightUpVectorBar;</td><td>RightUpVectorBar</td><td>02954</td><td>10580</td></tr>
+<tr><td>&RightVector;</td><td>RightVector</td><td>021C0</td><td>8640</td></tr>
+<tr><td>&RightVectorBar;</td><td>RightVectorBar</td><td>02953</td><td>10579</td></tr>
+<tr><td>&ring;</td><td>ring</td><td>002DA</td><td>730</td></tr>
+<tr><td>&risingdotseq;</td><td>risingdotseq</td><td>02253</td><td>8787</td></tr>
+<tr><td>&rlarr;</td><td>rlarr</td><td>021C4</td><td>8644</td></tr>
+<tr><td>&rlhar;</td><td>rlhar</td><td>021CC</td><td>8652</td></tr>
+<tr><td>&rlm;</td><td>rlm</td><td>0200F</td><td>8207</td></tr>
+<tr><td>&rmoust;</td><td>rmoust</td><td>023B1</td><td>9137</td></tr>
+<tr><td>&rmoustache;</td><td>rmoustache</td><td>023B1</td><td>9137</td></tr>
+<tr><td>&rnmid;</td><td>rnmid</td><td>02AEE</td><td>10990</td></tr>
+<tr><td>&roang;</td><td>roang</td><td>027ED</td><td>10221</td></tr>
+<tr><td>&roarr;</td><td>roarr</td><td>021FE</td><td>8702</td></tr>
+<tr><td>&robrk;</td><td>robrk</td><td>027E7</td><td>10215</td></tr>
+<tr><td>&ropar;</td><td>ropar</td><td>02986</td><td>10630</td></tr>
+<tr><td>&Ropf;</td><td>Ropf</td><td>0211D</td><td>8477</td></tr>
+<tr><td>&ropf;</td><td>ropf</td><td>1D563</td><td>120163</td></tr>
+<tr><td>&roplus;</td><td>roplus</td><td>02A2E</td><td>10798</td></tr>
+<tr><td>&rotimes;</td><td>rotimes</td><td>02A35</td><td>10805</td></tr>
+<tr><td>&RoundImplies;</td><td>RoundImplies</td><td>02970</td><td>10608</td></tr>
+<tr><td>&rpar;</td><td>rpar</td><td>00029</td><td>41</td></tr>
+<tr><td>&rpargt;</td><td>rpargt</td><td>02994</td><td>10644</td></tr>
+<tr><td>&rppolint;</td><td>rppolint</td><td>02A12</td><td>10770</td></tr>
+<tr><td>&rrarr;</td><td>rrarr</td><td>021C9</td><td>8649</td></tr>
+<tr><td>&Rrightarrow;</td><td>Rrightarrow</td><td>021DB</td><td>8667</td></tr>
+<tr><td>&rsaquo;</td><td>rsaquo</td><td>0203A</td><td>8250</td></tr>
+<tr><td>&Rscr;</td><td>Rscr</td><td>0211B</td><td>8475</td></tr>
+<tr><td>&rscr;</td><td>rscr</td><td>1D4C7</td><td>120007</td></tr>
+<tr><td>&Rsh;</td><td>Rsh</td><td>021B1</td><td>8625</td></tr>
+<tr><td>&rsh;</td><td>rsh</td><td>021B1</td><td>8625</td></tr>
+<tr><td>&rsqb;</td><td>rsqb</td><td>0005D</td><td>93</td></tr>
+<tr><td>&rsquo;</td><td>rsquo</td><td>02019</td><td>8217</td></tr>
+<tr><td>&rsquor;</td><td>rsquor</td><td>02019</td><td>8217</td></tr>
+<tr><td>&rthree;</td><td>rthree</td><td>022CC</td><td>8908</td></tr>
+<tr><td>&rtimes;</td><td>rtimes</td><td>022CA</td><td>8906</td></tr>
+<tr><td>&rtri;</td><td>rtri</td><td>025B9</td><td>9657</td></tr>
+<tr><td>&rtrie;</td><td>rtrie</td><td>022B5</td><td>8885</td></tr>
+<tr><td>&rtrif;</td><td>rtrif</td><td>025B8</td><td>9656</td></tr>
+<tr><td>&rtriltri;</td><td>rtriltri</td><td>029CE</td><td>10702</td></tr>
+<tr><td>&RuleDelayed;</td><td>RuleDelayed</td><td>029F4</td><td>10740</td></tr>
+<tr><td>&ruluhar;</td><td>ruluhar</td><td>02968</td><td>10600</td></tr>
+<tr><td>&rx;</td><td>rx</td><td>0211E</td><td>8478</td></tr>
+</table>
+</div>
+<br>
 <br>
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="../default.html">&#10094; Home</a>
-<a class="w3-right w3-btn" href="ref_html_ascii.html">Next &#10095;</a>
+<a class="w3-left w3-btn" href="ref_html_entities_q.html">&#10094; Previous</a>
+<a class="w3-right w3-btn" href="ref_html_entities_s.html">Next &#10095;</a>
 </div>
 </div>
 <div class="w3-col l2 m12" id="right">
@@ -1180,5 +1242,12 @@ While using this site, you agree to have read and accepted our <a href="../about
 <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>  
-<![endif]--></body>
+<![endif]-->
+<script src="tryit_script.js"></script>
+<script>
+charsetTryit(3, 3, 1, 2);
+</script>
+</body>
+
+<!-- Mirrored from www.w3schools.com/charsets/ref_html_entities_r.asp by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Sep 2019 08:47:12 GMT -->
 </html>

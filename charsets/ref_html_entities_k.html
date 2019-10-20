@@ -1,7 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en-US">
+
+<!-- Mirrored from www.w3schools.com/charsets/ref_html_entities_k.asp by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Sep 2019 08:47:12 GMT -->
 <head>
-<title>HTML Character Sets</title>
+<title>HTML Entities</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="Keywords" content="HTML,CSS,JavaScript,SQL,PHP,jQuery,XML,DOM,Bootstrap,Python,Java,Web development,W3C,tutorials,programming,training,learning,quiz,primer,lessons,references,examples,exercises,source code,colors,demos,tips">
@@ -375,14 +378,18 @@ ga('require', 'displayfeatures');
 ga('send', 'pageview');
 </script>
 
-<script src="../../snigelweb-com.videoplayerhub.com/videoloader.js" async></script>
-
 <script type='text/javascript'>
 var k42 = false;
 var googletag = googletag || {}; googletag.cmd = googletag.cmd || [];
 
-k42 = true;
-(adsbygoogle=window.adsbygoogle||[]).pauseAdRequests=1;
+(function() {
+  var gads = document.createElement('script');
+  gads.async = true;
+  gads.type = 'text/javascript';
+  gads.src = '../../www.googletagservices.com/tag/js/gpt.js';
+  var node = document.getElementsByTagName('script')[0];
+  node.parentNode.insertBefore(gads, node);
+})();
 
 var snhb = snhb || {}; snhb.queue = snhb.queue || [];
 snhb.options = {
@@ -393,6 +400,85 @@ snhb.options = {
                      reconsiderationAppealIntervalSeconds: 0
                      }
                };
+
+// GPT slots
+var gptAdSlots = [];
+googletag.cmd.push(function() {
+  googletag.pubads().disableInitialLoad();               
+  googletag.pubads().enableSingleRequest();
+  var leaderMapping = googletag.sizeMapping().
+    // Mobile ad
+    addSize([0, 0], [320, 50]). 
+    // Vertical Tablet ad
+    addSize([480, 0], [468, 60]). 
+    // Horizontal Tablet
+    addSize([780, 0], [728, 90]).
+    // Small Desktop
+    addSize([993, 0], [468, 60]).
+    // Normal Desktop
+    addSize([1150, 0], [728, 90]).
+    // Large Desktop and bigger ad
+    addSize([1425, 0], [[728, 90], [970, 90]]).build();
+  gptAdSlots[0] = googletag.defineSlot('/16833175/MainLeaderboard', [[728, 90], [970, 90]], 'div-gpt-ad-1422003450156-2').
+    defineSizeMapping(leaderMapping).addService(googletag.pubads());
+  var skyMapping = googletag.sizeMapping().
+    // Mobile ad
+    addSize([0, 0], [320, 50]). 
+    // Tablet ad
+    addSize([975, 0], [120, 600]). 
+    // Desktop
+    addSize([1135, 0], [160, 600]).   
+    // Large Desktop
+    addSize([1675, 0], [[160, 600], [300, 600], [300, 1050]]).build();
+  gptAdSlots[1] = googletag.defineSlot('/16833175/WideSkyScraper', [[160, 600], [300, 600], [300, 1050]], 'div-gpt-ad-1422003450156-5').
+    defineSizeMapping(skyMapping).addService(googletag.pubads());
+  var stickyMapping = googletag.sizeMapping().
+    // Mobile ad
+    addSize([0, 0], []). 
+    // Tablet ad
+    addSize([975, 0], [120, 600]). 
+    // Desktop
+    addSize([1135, 0], [160, 600]).   
+    // Large Desktop
+    addSize([1675, 0], [[160, 600], [300, 600], [300, 250]]).build();
+  gptAdSlots[4] = googletag.defineSlot('/16833175/StickySkyScraper', [[300, 600], [120, 600], [300, 250], [160, 600]], 'div-gpt-ad-1472547360578-0').
+    defineSizeMapping(stickyMapping).addService(googletag.pubads());
+  var mcontMapping = googletag.sizeMapping().
+    // Mobile ad
+    addSize([0, 0], [[300, 250], [336, 280], [320, 50]]). 
+    // Vertical Tablet ad
+    addSize([490, 0], [[300, 250], [336, 280], [468, 60]]). 
+    // Horizontal Tablet
+    addSize([750, 0], [728, 90]).
+    // Small Desktop
+    addSize([993, 0], [[300, 250], [336, 280], [468, 60]]).
+    // Normal Desktop
+    addSize([1135, 0], [728, 90]).
+    // Large Desktop and bigger ad
+    addSize([1440, 0], [[728, 90], [970, 90], [970, 250]]).build();
+  gptAdSlots[5] = googletag.defineSlot('/16833175/MidContent', [[300, 250], [336, 280]], 'div-gpt-ad-1493883843099-0').
+    defineSizeMapping(mcontMapping).setCollapseEmptyDiv(true).addService(googletag.pubads());
+  var bmrMapping = googletag.sizeMapping().
+    // Smaller
+    addSize([0, 0], [[300, 250], [336, 280]]). 
+    // Large Desktop
+    addSize([1240, 0], [[300, 250], [336, 280], [970, 250]]).build();
+    gptAdSlots[2] = googletag.defineSlot('/16833175/BottomMediumRectangle', [[300, 250], [336, 280], [970, 250]], 'div-gpt-ad-1422003450156-0').
+    defineSizeMapping(bmrMapping).setCollapseEmptyDiv(true).addService(googletag.pubads());
+  var rbmrMapping = googletag.sizeMapping().
+    // Smaller
+    addSize([0, 0], []). 
+    // Large Desktop
+    addSize([975, 0], [[300, 250], [336, 280]]).build();
+  gptAdSlots[3] = googletag.defineSlot('/16833175/RightBottomMediumRectangle', [[300, 250], [336, 280]], 'div-gpt-ad-1422003450156-3').
+    defineSizeMapping(rbmrMapping).setCollapseEmptyDiv(true).addService(googletag.pubads());
+  googletag.pubads().setTargeting("content",(function () {
+    var folder = location.pathname;
+    folder = folder.replace("../index.html", "");
+    folder = folder.substr(0, folder.indexOf("../index.html"));
+    return folder;
+  })());
+});  
 
 </script>
 <script src="../../static.h-bid.com/sncmp/sncmp_stub.min.js" type="text/javascript"></script>
@@ -417,7 +503,7 @@ snhb.options = {
 <script>
   snhb.queue.push(function(){
 
-    snhb.startAuction(["main_leaderboard", "wide_skyscraper", "bottom_medium_rectangle", "right_bottom_medium_rectangle"]);
+    snhb.addAdditionalAdSlotsToRefresh(gptAdSlots);
 
   });
 </script>
@@ -479,7 +565,12 @@ function w3_getStyleValue(elmnt,style) {
   }
 }
 </script>
-</head><body>
+<style>
+.w3-table-all td:first-child {
+font-size:22px; padding-top:0; padding-bottom:0;}
+</style>
+</head>
+<body>
 <div class='w3-container top'>
   <a class='w3schools-logo notranslate' href='../index.html'>w3schools<span class='dotcom'>.com</span></a>
   <div class='w3-right w3-hide-small w3-wide toptext' style="font-family:'Segoe UI',Arial,sans-serif">THE WORLD'S LARGEST WEB DEVELOPER SITE</div>
@@ -765,130 +856,57 @@ function w3_getStyleValue(elmnt,style) {
     <div class='w3-col l10 m12' id='main'>
       <div id='mainLeaderboard' style='overflow:hidden;'>
         <!-- MainLeaderboard-->
-
-        <!--<pre>main_leaderboard, all: [728,90][970,90][320,50][468,60]</pre>-->
-        <div id="snhb-main_leaderboard-0"></div>
-        <!-- adspace leaderboard -->
+        
+        <div id='div-gpt-ad-1422003450156-2'>
+          <script type='text/javascript'>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1422003450156-2'); });</script>
+        </div>
        
       </div>
-<h1>HTML Character Sets</h1>
+<h1>HTML5  <span class="color_h1">Entity Names by Alphabet - K</span></h1>
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="../default.html">&#10094; Home</a>
-<a class="w3-right w3-btn" href="ref_html_ascii.html">Next &#10095;</a>
+<a class="w3-left w3-btn" href="ref_html_entities_j.html">&#10094; Previous</a>
+<a class="w3-right w3-btn" href="ref_html_entities_l.html">Next &#10095;</a>
 </div>
 <hr>
-<p>To display an HTML page correctly, the browser must know what character-set (encoding) to use:</p>
-<div class="w3-example">
-<h3>Example</h3>
-<div class="w3-code htmlHigh notranslate">
-&lt;meta charset=&quot;UTF-8&quot;&gt;
-</div>
-</div>
-
-<hr>
-<h2>HTML Character Sets</h2>
-<p>For HTML5, the default character encoding is UTF-8.</p>
-<p>This has not always been the case. The character encoding for the early web was ASCII.</p>
-<p>Later, from HTML 2.0 to HTML 4.01, ISO-8859-1 was 
-considered the standard.</p>
-<p>With XML and HTML5, UTF-8 finally arrived and solved a lot of character encoding problems.</p>
-
-<hr>
-<h2>In the Beginning: ASCII</h2>
-<p>Computer data is stored as binary codes (01000101) in the electronics.</p>
-<p>To standardize the storing of text, the American Standard Code for Information 
-Interchange (ASCII) was created. It defined a unique binary number for 
-each storable character to support the numbers from 0-9, the upper and lower case alphabet (a-z, A-Z), and special 
-characters like ! $ + - ( ) @ &lt; &gt; , .</p>
-<p>Since ASCII used 7 bits for the character, it could only represent 128 different characters.</p>
-<p>The biggest weakness with ASCII, was that it excluded non English letters.</p>
-<p>ASCII is still in use today, especially in large mainframe computer systems.</p>
-<p>For a closer look, please study our <a href="ref_html_ascii.html">Complete ASCII 
-Reference</a>.</p>
-<hr>
-<h2>In Windows: Windows-1252</h2>
-<p>Windows-1252 was the default character-set in Windows, up to Windows 95.</p>
-
-<p>It is an extension to ASCII, with added international characters.</p>
-<p>It 
-uses a full byte (8-bits) to represent 256 different characters. </p>
-<p>Since Windows-1252 has been the default in Windows, it is supported by all browsers.</p>
-<p>For a closer look, please study: <a href="ref_html_ansi.html">The Complete Windows-1252 Reference</a>.</p>
-<hr>
-<div id="midcontentadcontainer" style="overflow:auto;text-align:center">
-<!-- MidContent -->
-
-  <!--<pre>mid_content, all: [300,250][336,280][728,90][970,250][970,90][320,50][468,60]</pre>-->
-  <div id="snhb-mid_content-0"></div>
-    
-</div>
-<hr>
-<h2>In HTML 4: ISO-8859-1</h2>
-<p>The default character-set in HTML 4 is ISO-8859-1.</p>
-<p>ISO-8859-1 is an extension to ASCII, with added international characters.</p>
-<div class="w3-example">
-<h3>Example</h3>
-<div class="w3-code htmlHigh notranslate">
-&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html;charset=ISO-8859-1&quot;&gt;
-</div>
-</div>
-
-<p>In HTML 4, a character-set different from ISO-8859-1 can be specified in the &lt;meta&gt; tag:</p>
-<div class="w3-example">
-<h3>Example</h3>
-<div class="w3-code htmlHigh notranslate">
-&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html;charset=ISO-8859-8&quot;&gt;
-</div>
-</div>
-<p>All HTML 4 processors also support UTF-8:</p>
-
-<div class="w3-example">
-<h3>Example</h3>
-<div class="w3-code htmlHigh notranslate">
-&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html;charset=UTF-8&quot;&gt;
-</div>
-</div>
-<div class="w3-panel w3-note">
-<p>When a browser detects ISO-8859-1 it normally defaults to Windows-1252,
-because Windows-1252 has 32 more international characters.</p>
-</div>
-
-<p>For a closer look, please study: <a href="ref_html_8859.html">The Complete ISO-8859-1 Reference</a></p>
-<hr>
-
-<h2>In HTML5: Unicode UTF-8</h2>
-
-<p>The default character-set for HTML5 is UTF-8.</p>
-
-<div class="w3-example">
-<h3>Example</h3>
-<div class="w3-code htmlHigh notranslate">
-&lt;meta charset=&quot;UTF-8&quot;&gt;
-</div>
-</div>
-
-<p>A character-set different from UTF-8 can be specified in the &lt;meta&gt; tag:</p>
-<div class="w3-example">
-<h3>Example</h3>
-<div class="w3-code htmlHigh notranslate">
-&lt;meta charset=&quot;ISO-8859-1&quot;&gt;
-</div>
-</div>
-
-<p>The Unicode Consortium developed the UTF-8 and UTF-16 standards, because the ISO-8859 character-sets are 
-limited, and not compatible a multilingual environment.</p>
-
-<p>The Unicode Standard covers (almost) all the characters, punctuations, and symbols in the world.</p>
 
 <div class="w3-panel w3-note">
-<p>All HTML5 and XML processors support UTF-8, UTF-16, Windows-1252, and ISO-8859.</p>
+<p>Older browsers may not support all the HTML5 entities in the table below.<br>
+Chrome has good support. But (currently) only IE 11+ and Firefox 35+ support all the entities.
+</p>
 </div>
-
-<p>For a closer look, please study: <a href="ref_html_utf8.html">The Complete Unicode Reference</a>.</p>
+<div class="w3-responsive">
+<table class="w3-table-all charset-tryit">
+<tr>
+<th style="width:20%">Character</th>
+<th style="width:40%">Entity Name</th>
+<th style="width:20%">Hex</th>
+<th>Dec</th>
+</tr>
+<tr><td>&Kappa;</td><td>Kappa</td><td>0039A</td><td>922</td></tr>
+<tr><td>&kappa;</td><td>kappa</td><td>003BA</td><td>954</td></tr>
+<tr><td>&kappav;</td><td>kappav</td><td>003F0</td><td>1008</td></tr>
+<tr><td>&Kcedil;</td><td>Kcedil</td><td>00136</td><td>310</td></tr>
+<tr><td>&kcedil;</td><td>kcedil</td><td>00137</td><td>311</td></tr>
+<tr><td>&Kcy;</td><td>Kcy</td><td>0041A</td><td>1050</td></tr>
+<tr><td>&kcy;</td><td>kcy</td><td>0043A</td><td>1082</td></tr>
+<tr><td>&Kfr;</td><td>Kfr</td><td>1D50E</td><td>120078</td></tr>
+<tr><td>&kfr;</td><td>kfr</td><td>1D528</td><td>120104</td></tr>
+<tr><td>&kgreen;</td><td>kgreen</td><td>00138</td><td>312</td></tr>
+<tr><td>&KHcy;</td><td>KHcy</td><td>00425</td><td>1061</td></tr>
+<tr><td>&khcy;</td><td>khcy</td><td>00445</td><td>1093</td></tr>
+<tr><td>&KJcy;</td><td>KJcy</td><td>0040C</td><td>1036</td></tr>
+<tr><td>&kjcy;</td><td>kjcy</td><td>0045C</td><td>1116</td></tr>
+<tr><td>&Kopf;</td><td>Kopf</td><td>1D542</td><td>120130</td></tr>
+<tr><td>&kopf;</td><td>kopf</td><td>1D55C</td><td>120156</td></tr>
+<tr><td>&Kscr;</td><td>Kscr</td><td>1D4A6</td><td>119974</td></tr>
+<tr><td>&kscr;</td><td>kscr</td><td>1D4C0</td><td>120000</td></tr>
+</table>
+</div>
+<br>
 <br>
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="../default.html">&#10094; Home</a>
-<a class="w3-right w3-btn" href="ref_html_ascii.html">Next &#10095;</a>
+<a class="w3-left w3-btn" href="ref_html_entities_j.html">&#10094; Previous</a>
+<a class="w3-right w3-btn" href="ref_html_entities_l.html">Next &#10095;</a>
 </div>
 </div>
 <div class="w3-col l2 m12" id="right">
@@ -896,9 +914,13 @@ limited, and not compatible a multilingual environment.</p>
 <div class="sidesection">
   <div id="skyscraper">
   
-    <!--<pre>wide_skyscraper, all: [160,600][300,600][320,50][120,600][300,1050]</pre>-->
-    <div id="snhb-wide_skyscraper-0"></div>
-    <!-- adspace wide-->
+    <div id="div-gpt-ad-1422003450156-5">
+      <script>
+      googletag.cmd.push(function() {
+      googletag.display('div-gpt-ad-1422003450156-5');
+      });
+      </script> 
+    </div>
   
   </div>
 </div>
@@ -999,24 +1021,13 @@ Read More &raquo;</a>
   <div id="stickyadcontainer">
     <div style="position:relative;margin:auto;">
       
-      <!--<pre>sidebar_sticky, desktop: [120,600][160,600][300,600][300,250]</pre>-->
-      <div id="snhb-sidebar_sticky-0"></div>
-      <script>
-          if (Number(w3_getStyleValue(document.getElementById("main"), "height").replace("px", "")) > 2200) {
-            // adspace sticky
-            if (document.getElementById("snhb-mid_content-0")) {
-              snhb.queue.push(function(){  snhb.startAuction(["sidebar_sticky", "mid_content" ]); });
-            }
-            else {
-              snhb.queue.push(function(){  snhb.startAuction(["sidebar_sticky"]); });
-            }
-          }
-          else {
-              if (document.getElementById("snhb-mid_content-0")) {
-                snhb.queue.push(function(){  snhb.startAuction(["mid_content"]); });
-              }
-          }
-      </script>  
+        <script>
+        if (Number(w3_getStyleValue(document.getElementById("main"), "height").replace("px", "")) > 2200) {
+        document.write("<div id='div-gpt-ad-1472547360578-0'>");
+        googletag.cmd.push(function() { googletag.display('div-gpt-ad-1472547360578-0'); });
+        document.write("</div>");
+        }
+        </script>
       
     </div>
   </div>
@@ -1034,14 +1045,17 @@ Read More &raquo;</a>
 <hr>
 
 <div style="overflow:auto">
-  <div class="bottomad">
-    <!-- BottomMediumRectangle -->
-    <!--<pre>bottom_medium_rectangle, all: [970,250][300,250][336,280]</pre>-->
-    <div id="snhb-bottom_medium_rectangle-0" style="padding:0 10px 10px 0;float:left;width:auto;"></div>
-    <!-- adspace bmr -->
-    <!-- RightBottomMediumRectangle -->
-    <!--<pre>right_bottom_medium_rectangle, desktop: [300,250][336,280]</pre>-->
-    <div id="snhb-right_bottom_medium_rectangle-0" style="padding:0 10px 10px 0;float:left;width:auto;"></div>
+  <!-- BottomMediumRectangle -->
+  <div class="bottomad" id='div-gpt-ad-1422003450156-0'>
+    <script type='text/javascript'>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1422003450156-0'); });
+    </script>
+  </div>
+  <!-- RightBottomMediumRectangle -->
+  <div class="bottomad" id='div-gpt-ad-1422003450156-3'>
+    <script type='text/javascript'>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1422003450156-3'); });
+    </script>
   </div>
 </div>
 
@@ -1180,5 +1194,13 @@ While using this site, you agree to have read and accepted our <a href="../about
 <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>  
-<![endif]--></body>
+<![endif]-->
+<script src="tryit_script.js"></script>
+<script>
+charsetTryit(3, 3, 1, 2);
+</script>
+</body>
+
+<!-- Mirrored from www.w3schools.com/charsets/ref_html_entities_k.asp by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Sep 2019 08:47:12 GMT -->
 </html>
+

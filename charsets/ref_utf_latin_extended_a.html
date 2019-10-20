@@ -1,7 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en-US">
+
+<!-- Mirrored from www.w3schools.com/charsets/ref_utf_latin_extended_a.asp by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Sep 2019 08:47:11 GMT -->
 <head>
-<title>HTML Character Sets</title>
+<title>HTML Unicode UTF-8</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="Keywords" content="HTML,CSS,JavaScript,SQL,PHP,jQuery,XML,DOM,Bootstrap,Python,Java,Web development,W3C,tutorials,programming,training,learning,quiz,primer,lessons,references,examples,exercises,source code,colors,demos,tips">
@@ -479,7 +482,12 @@ function w3_getStyleValue(elmnt,style) {
   }
 }
 </script>
-</head><body>
+<style>
+.w3-table-all td:first-child {
+font-size:22px; padding-top:0; padding-bottom:0;}
+</style>
+</head>
+<body>
 <div class='w3-container top'>
   <a class='w3schools-logo notranslate' href='../index.html'>w3schools<span class='dotcom'>.com</span></a>
   <div class='w3-right w3-hide-small w3-wide toptext' style="font-family:'Segoe UI',Arial,sans-serif">THE WORLD'S LARGEST WEB DEVELOPER SITE</div>
@@ -771,124 +779,181 @@ function w3_getStyleValue(elmnt,style) {
         <!-- adspace leaderboard -->
        
       </div>
-<h1>HTML Character Sets</h1>
+<h1>UTF-8 <span class="color_h1">Latin Extended A </span></h1>
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="../default.html">&#10094; Home</a>
-<a class="w3-right w3-btn" href="ref_html_ascii.html">Next &#10095;</a>
+<a class="w3-left w3-btn" href="ref_utf_latin1_supplement.html">&#10094; Previous</a>
+<a class="w3-right w3-btn" href="ref_utf_latin_extended_b.html">Next &#10095;</a>
 </div>
 <hr>
-<p>To display an HTML page correctly, the browser must know what character-set (encoding) to use:</p>
-<div class="w3-example">
-<h3>Example</h3>
-<div class="w3-code htmlHigh notranslate">
-&lt;meta charset=&quot;UTF-8&quot;&gt;
-</div>
-</div>
-
-<hr>
-<h2>HTML Character Sets</h2>
-<p>For HTML5, the default character encoding is UTF-8.</p>
-<p>This has not always been the case. The character encoding for the early web was ASCII.</p>
-<p>Later, from HTML 2.0 to HTML 4.01, ISO-8859-1 was 
-considered the standard.</p>
-<p>With XML and HTML5, UTF-8 finally arrived and solved a lot of character encoding problems.</p>
-
-<hr>
-<h2>In the Beginning: ASCII</h2>
-<p>Computer data is stored as binary codes (01000101) in the electronics.</p>
-<p>To standardize the storing of text, the American Standard Code for Information 
-Interchange (ASCII) was created. It defined a unique binary number for 
-each storable character to support the numbers from 0-9, the upper and lower case alphabet (a-z, A-Z), and special 
-characters like ! $ + - ( ) @ &lt; &gt; , .</p>
-<p>Since ASCII used 7 bits for the character, it could only represent 128 different characters.</p>
-<p>The biggest weakness with ASCII, was that it excluded non English letters.</p>
-<p>ASCII is still in use today, especially in large mainframe computer systems.</p>
-<p>For a closer look, please study our <a href="ref_html_ascii.html">Complete ASCII 
-Reference</a>.</p>
-<hr>
-<h2>In Windows: Windows-1252</h2>
-<p>Windows-1252 was the default character-set in Windows, up to Windows 95.</p>
-
-<p>It is an extension to ASCII, with added international characters.</p>
-<p>It 
-uses a full byte (8-bits) to represent 256 different characters. </p>
-<p>Since Windows-1252 has been the default in Windows, it is supported by all browsers.</p>
-<p>For a closer look, please study: <a href="ref_html_ansi.html">The Complete Windows-1252 Reference</a>.</p>
-<hr>
-<div id="midcontentadcontainer" style="overflow:auto;text-align:center">
-<!-- MidContent -->
-
-  <!--<pre>mid_content, all: [300,250][336,280][728,90][970,250][970,90][320,50][468,60]</pre>-->
-  <div id="snhb-mid_content-0"></div>
-    
-</div>
-<hr>
-<h2>In HTML 4: ISO-8859-1</h2>
-<p>The default character-set in HTML 4 is ISO-8859-1.</p>
-<p>ISO-8859-1 is an extension to ASCII, with added international characters.</p>
-<div class="w3-example">
-<h3>Example</h3>
-<div class="w3-code htmlHigh notranslate">
-&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html;charset=ISO-8859-1&quot;&gt;
-</div>
-</div>
-
-<p>In HTML 4, a character-set different from ISO-8859-1 can be specified in the &lt;meta&gt; tag:</p>
-<div class="w3-example">
-<h3>Example</h3>
-<div class="w3-code htmlHigh notranslate">
-&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html;charset=ISO-8859-8&quot;&gt;
-</div>
-</div>
-<p>All HTML 4 processors also support UTF-8:</p>
+<h2>Range: Decimal 256-383. Hex 0100-017F.</h2>
+<p>If you want any of these characters displayed in HTML, you can use the HTML entity found in the table below.</p>
+<p>If the character does not have an HTML entity, you can use the decimal (dec) or hexadecimal (hex) reference.</p>
 
 <div class="w3-example">
 <h3>Example</h3>
-<div class="w3-code htmlHigh notranslate">
-&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html;charset=UTF-8&quot;&gt;
-</div>
-</div>
-<div class="w3-panel w3-note">
-<p>When a browser detects ISO-8859-1 it normally defaults to Windows-1252,
-because Windows-1252 has 32 more international characters.</p>
+
+<div class="w3-code notranslate htmlHigh">
+&lt;p&gt;I will display &amp;Dstrok;&lt;/p&gt;<br>
+&lt;p&gt;I will display &amp;#272;&lt;/p&gt;<br>
+&lt;p&gt;I will display &amp;#x0110;&lt;/p&gt;
 </div>
 
-<p>For a closer look, please study: <a href="ref_html_8859.html">The Complete ISO-8859-1 Reference</a></p>
-<hr>
+<h3>Will display as:</h3>
 
-<h2>In HTML5: Unicode UTF-8</h2>
-
-<p>The default character-set for HTML5 is UTF-8.</p>
-
-<div class="w3-example">
-<h3>Example</h3>
-<div class="w3-code htmlHigh notranslate">
-&lt;meta charset=&quot;UTF-8&quot;&gt;
-</div>
+<div class="w3-code notranslate">
+ I will display &Dstrok;<br><br>
+ I will display &#272;<br>
+ <br>I will display &#x0110;
 </div>
 
-<p>A character-set different from UTF-8 can be specified in the &lt;meta&gt; tag:</p>
-<div class="w3-example">
-<h3>Example</h3>
-<div class="w3-code htmlHigh notranslate">
-&lt;meta charset=&quot;ISO-8859-1&quot;&gt;
-</div>
+<a class="w3-btn w3-margin-bottom" href="tryit0efe.html?filename=tryutf_dstrok" target="_blank">Try it Yourself &raquo;</a>
 </div>
 
-<p>The Unicode Consortium developed the UTF-8 and UTF-16 standards, because the ISO-8859 character-sets are 
-limited, and not compatible a multilingual environment.</p>
+<div class="w3-responsive">
+<table class="w3-table-all charset-tryit">
+<tr>
+<th style="width:7%">Char</th>
+<th style="width:7%">Dec</th>
+<th style="width:7%">Hex</th>
+<th style="width:15%">Entity</th>
+<th>Name</th>
+</tr>
 
-<p>The Unicode Standard covers (almost) all the characters, punctuations, and symbols in the world.</p>
-
-<div class="w3-panel w3-note">
-<p>All HTML5 and XML processors support UTF-8, UTF-16, Windows-1252, and ISO-8859.</p>
+<tr><td>&#256;</td><td>256</td><td>0100</td><td>&amp;Amacr;</td><td>LATIN CAPITAL LETTER A WITH MACRON</td></tr>
+<tr><td>&#257;</td><td>257</td><td>0101</td><td>&amp;amacr;</td><td>LATIN SMALL LETTER A WITH MACRON</td></tr>
+<tr><td>&#258;</td><td>258</td><td>0102</td><td>&amp;Abreve;</td><td>LATIN CAPITAL LETTER A WITH BREVE</td></tr>
+<tr><td>&#259;</td><td>259</td><td>0103</td><td>&amp;abreve;</td><td>LATIN SMALL LETTER A WITH BREVE</td></tr>
+<tr><td>&#260;</td><td>260</td><td>0104</td><td>&amp;Aogon;</td><td>LATIN CAPITAL LETTER A WITH OGONEK</td></tr>
+<tr><td>&#261;</td><td>261</td><td>0105</td><td>&amp;aogon;</td><td>LATIN SMALL LETTER A WITH OGONEK</td></tr>
+<tr><td>&#262;</td><td>262</td><td>0106</td><td>&amp;Cacute;</td><td>LATIN CAPITAL LETTER C WITH ACUTE</td></tr>
+<tr><td>&#263;</td><td>263</td><td>0107</td><td>&amp;cacute;</td><td>LATIN SMALL LETTER C WITH ACUTE</td></tr>
+<tr><td>&#264;</td><td>264</td><td>0108</td><td>&amp;Ccirc;</td><td>LATIN CAPITAL LETTER C WITH CIRCUMFLEX</td></tr>
+<tr><td>&#265;</td><td>265</td><td>0109</td><td>&amp;ccirc;</td><td>LATIN SMALL LETTER C WITH CIRCUMFLEX</td></tr>
+<tr><td>&#266;</td><td>266</td><td>010A</td><td>&amp;Cdod;</td><td>LATIN CAPITAL LETTER C WITH DOT ABOVE</td></tr>
+<tr><td>&#267;</td><td>267</td><td>010B</td><td>&amp;cdot;</td><td>LATIN SMALL LETTER C WITH DOT ABOVE</td></tr>
+<tr><td>&#268;</td><td>268</td><td>010C</td><td>&amp;Ccaron;</td><td>LATIN CAPITAL LETTER C WITH CARON</td></tr>
+<tr><td>&#269;</td><td>269</td><td>010D</td><td>&amp;ccaron;</td><td>LATIN SMALL LETTER C WITH CARON</td></tr>
+<tr><td>&#270;</td><td>270</td><td>010E</td><td>&amp;Dcaron;</td><td>LATIN CAPITAL LETTER D WITH CARON</td></tr>
+<tr><td>&#271;</td><td>271</td><td>010F</td><td>&amp;dcaron;</td><td>LATIN SMALL LETTER D WITH CARON</td></tr>
+<tr><td>&#272;</td><td>272</td><td>0110</td><td>&amp;Dstrok;</td><td>LATIN CAPITAL LETTER D WITH STROKE</td></tr>
+<tr><td>&#273;</td><td>273</td><td>0111</td><td>&amp;dstrok;</td><td>LATIN SMALL LETTER D WITH STROKE</td></tr>
+<tr><td>&#274;</td><td>274</td><td>0112</td><td>&amp;Emacr;</td><td>LATIN CAPITAL LETTER E WITH MACRON</td></tr>
+<tr><td>&#275;</td><td>275</td><td>0113</td><td>&amp;emacr;</td><td>LATIN SMALL LETTER E WITH MACRON</td></tr>
+<tr><td>&#276;</td><td>276</td><td>0114</td><td>&nbsp;</td><td>LATIN CAPITAL LETTER E WITH BREVE</td></tr>
+<tr><td>&#277;</td><td>277</td><td>0115</td><td>&nbsp;</td><td>LATIN SMALL LETTER E WITH BREVE</td></tr>
+<tr><td>&#278;</td><td>278</td><td>0116</td><td>&amp;Edot;</td><td>LATIN CAPITAL LETTER E WITH DOT ABOVE</td></tr>
+<tr><td>&#279;</td><td>279</td><td>0117</td><td>&amp;edot;</td><td>LATIN SMALL LETTER E WITH DOT ABOVE</td></tr>
+<tr><td>&#280;</td><td>280</td><td>0118</td><td>&amp;Eogon;</td><td>LATIN CAPITAL LETTER E WITH OGONEK</td></tr>
+<tr><td>&#281;</td><td>281</td><td>0119</td><td>&amp;eogon;</td><td>LATIN SMALL LETTER E WITH OGONEK</td></tr>
+<tr><td>&#282;</td><td>282</td><td>011A</td><td>&amp;Ecaron;</td><td>LATIN CAPITAL LETTER E WITH CARON</td></tr>
+<tr><td>&#283;</td><td>283</td><td>011B</td><td>&amp;ecaron;</td><td>LATIN SMALL LETTER E WITH CARON</td></tr>
+<tr><td>&#284;</td><td>284</td><td>011C</td><td>&amp;Gcirc;</td><td>LATIN CAPITAL LETTER G WITH CIRCUMFLEX</td></tr>
+<tr><td>&#285;</td><td>285</td><td>011D</td><td>&amp;gcirc;</td><td>LATIN SMALL LETTER G WITH CIRCUMFLEX</td></tr>
+<tr><td>&#286;</td><td>286</td><td>011E</td><td>&amp;Gbreve;</td><td>LATIN CAPITAL LETTER G WITH BREVE</td></tr>
+<tr><td>&#287;</td><td>287</td><td>011F</td><td>&amp;gbreve;</td><td>LATIN SMALL LETTER G WITH BREVE</td></tr>
+<tr><td>&#288;</td><td>288</td><td>0120</td><td>&amp;Gdot;</td><td>LATIN CAPITAL LETTER G WITH DOT ABOVE</td></tr>
+<tr><td>&#289;</td><td>289</td><td>0121</td><td>&amp;gdot;</td><td>LATIN SMALL LETTER G WITH DOT ABOVE</td></tr>
+<tr><td>&#290;</td><td>290</td><td>0122</td><td>&amp;Gcedil;</td><td>LATIN CAPITAL LETTER G WITH CEDILLA</td></tr>
+<tr><td>&#291;</td><td>291</td><td>0123</td><td>&amp;gcedil;</td><td>LATIN SMALL LETTER G WITH CEDILLA</td></tr>
+<tr><td>&#292;</td><td>292</td><td>0124</td><td>&amp;Hcirc;</td><td>LATIN CAPITAL LETTER H WITH CIRCUMFLEX</td></tr>
+<tr><td>&#293;</td><td>293</td><td>0125</td><td>&amp;hcirc;</td><td>LATIN SMALL LETTER H WITH CIRCUMFLEX</td></tr>
+<tr><td>&#294;</td><td>294</td><td>0126</td><td>&amp;Hstrok;</td><td>LATIN CAPITAL LETTER H WITH STROKE</td></tr>
+<tr><td>&#295;</td><td>295</td><td>0127</td><td>&amp;hstrok;</td><td>LATIN SMALL LETTER H WITH STROKE</td></tr>
+<tr><td>&#296;</td><td>296</td><td>0128</td><td>&amp;Itilde;</td><td>LATIN CAPITAL LETTER I WITH TILDE</td></tr>
+<tr><td>&#297;</td><td>297</td><td>0129</td><td>&amp;itilde;</td><td>LATIN SMALL LETTER I WITH TILDE</td></tr>
+<tr><td>&#298;</td><td>298</td><td>012A</td><td>&amp;Imacr;</td><td>LATIN CAPITAL LETTER I WITH MACRON</td></tr>
+<tr><td>&#299;</td><td>299</td><td>012B</td><td>&amp;imacr;</td><td>LATIN SMALL LETTER I WITH MACRON</td></tr>
+<tr><td>&#300;</td><td>300</td><td>012C</td><td>&nbsp;</td><td>LATIN CAPITAL LETTER I WITH BREVE</td></tr>
+<tr><td>&#301;</td><td>301</td><td>012D</td><td>&nbsp;</td><td>LATIN SMALL LETTER I WITH BREVE</td></tr>
+<tr><td>&#302;</td><td>302</td><td>012E</td><td>&amp;Iogon;</td><td>LATIN CAPITAL LETTER I WITH OGONEK</td></tr>
+<tr><td>&#303;</td><td>303</td><td>012F</td><td>&amp;iogon;</td><td>LATIN SMALL LETTER I WITH OGONEK</td></tr>
+<tr><td>&#304;</td><td>304</td><td>0130</td><td>&amp;Idot;</td><td>LATIN CAPITAL LETTER I WITH DOT ABOVE</td></tr>
+<tr><td>&#305;</td><td>305</td><td>0131</td><td>&amp;inodot;</td><td>LATIN SMALL LETTER DOTLESS I</td></tr>
+<tr><td>&#306;</td><td>306</td><td>0132</td><td>&amp;IJlog;</td><td>LATIN CAPITAL LIGATURE IJ</td></tr>
+<tr><td>&#307;</td><td>307</td><td>0133</td><td>&amp;ijlig;</td><td>LATIN SMALL LIGATURE IJ</td></tr>
+<tr><td>&#308;</td><td>308</td><td>0134</td><td>&amp;Jcirc;</td><td>LATIN CAPITAL LETTER J WITH CIRCUMFLEX</td></tr>
+<tr><td>&#309;</td><td>309</td><td>0135</td><td>&amp;jcirc;</td><td>LATIN SMALL LETTER J WITH CIRCUMFLEX</td></tr>
+<tr><td>&#310;</td><td>310</td><td>0136</td><td>&amp;Kcedil;</td><td>LATIN CAPITAL LETTER K WITH CEDILLA</td></tr>
+<tr><td>&#311;</td><td>311</td><td>0137</td><td>&amp;kcedli;</td><td>LATIN SMALL LETTER K WITH CEDILLA</td></tr>
+<tr><td>&#312;</td><td>312</td><td>0138</td><td>&amp;kgreen;</td><td>LATIN SMALL LETTER KRA</td></tr>
+<tr><td>&#313;</td><td>313</td><td>0139</td><td>&amp;Lacute;</td><td>LATIN CAPITAL LETTER L WITH ACUTE</td></tr>
+<tr><td>&#314;</td><td>314</td><td>013A</td><td>&amp;lacute;</td><td>LATIN SMALL LETTER L WITH ACUTE</td></tr>
+<tr><td>&#315;</td><td>315</td><td>013B</td><td>&amp;Lcedil;</td><td>LATIN CAPITAL LETTER L WITH CEDILLA</td></tr>
+<tr><td>&#316;</td><td>316</td><td>013C</td><td>&amp;lcedil;</td><td>LATIN SMALL LETTER L WITH CEDILLA</td></tr>
+<tr><td>&#317;</td><td>317</td><td>013D</td><td>&amp;Lcaron;</td><td>LATIN CAPITAL LETTER L WITH CARON</td></tr>
+<tr><td>&#318;</td><td>318</td><td>013E</td><td>&amp;lcaron;</td><td>LATIN SMALL LETTER L WITH CARON</td></tr>
+<tr><td>&#319;</td><td>319</td><td>013F</td><td>&amp;Lmodot;</td><td>LATIN CAPITAL LETTER L WITH MIDDLE DOT</td></tr>
+<tr><td>&#320;</td><td>320</td><td>0140</td><td>&amp;lmidot;</td><td>LATIN SMALL LETTER L WITH MIDDLE DOT</td></tr>
+<tr><td>&#321;</td><td>321</td><td>0141</td><td>&amp;Lstrok;</td><td>LATIN CAPITAL LETTER L WITH STROKE</td></tr>
+<tr><td>&#322;</td><td>322</td><td>0142</td><td>&amp;lstrok;</td><td>LATIN SMALL LETTER L WITH STROKE</td></tr>
+<tr><td>&#323;</td><td>323</td><td>0143</td><td>&amp;Nacute;</td><td>LATIN CAPITAL LETTER N WITH ACUTE</td></tr>
+<tr><td>&#324;</td><td>324</td><td>0144</td><td>&amp;nacute;</td><td>LATIN SMALL LETTER N WITH ACUTE</td></tr>
+<tr><td>&#325;</td><td>325</td><td>0145</td><td>&amp;Ncedil;</td><td>LATIN CAPITAL LETTER N WITH CEDILLA</td></tr>
+<tr><td>&#326;</td><td>326</td><td>0146</td><td>&amp;ncedil;</td><td>LATIN SMALL LETTER N WITH CEDILLA</td></tr>
+<tr><td>&#327;</td><td>327</td><td>0147</td><td>&amp;Ncaron;</td><td>LATIN CAPITAL LETTER N WITH CARON</td></tr>
+<tr><td>&#328;</td><td>328</td><td>0148</td><td>&amp;ncaron;</td><td>LATIN SMALL LETTER N WITH CARON</td></tr>
+<tr><td>&#329;</td><td>329</td><td>0149</td><td>&amp;napos;</td><td>LATIN SMALL LETTER N PRECEDED BY APOSTROPHE</td></tr>
+<tr><td>&#330;</td><td>330</td><td>014A</td><td>&amp;ENG;</td><td>LATIN CAPITAL LETTER ENG</td></tr>
+<tr><td>&#331;</td><td>331</td><td>014B</td><td>&amp;eng;</td><td>LATIN SMALL LETTER ENG</td></tr>
+<tr><td>&#332;</td><td>332</td><td>014C</td><td>&amp;Omacr;</td><td>LATIN CAPITAL LETTER O WITH MACRON</td></tr>
+<tr><td>&#333;</td><td>333</td><td>014D</td><td>&amp;omacr;</td><td>LATIN SMALL LETTER O WITH MACRON</td></tr>
+<tr><td>&#334;</td><td>334</td><td>014E</td><td>&nbsp;</td><td>LATIN CAPITAL LETTER O WITH BREVE</td></tr>
+<tr><td>&#335;</td><td>335</td><td>014F</td><td>&nbsp;</td><td>LATIN SMALL LETTER O WITH BREVE</td></tr>
+<tr><td>&#336;</td><td>336</td><td>0150</td><td>&amp;Odblac;</td><td>LATIN CAPITAL LETTER O WITH DOUBLE ACUTE</td></tr>
+<tr><td>&#337;</td><td>337</td><td>0151</td><td>&amp;odblac;</td><td>LATIN SMALL LETTER O WITH DOUBLE ACUTE</td></tr>
+<tr><td>&#338;</td><td>338</td><td>0152</td><td>&amp;OElig;</td><td>LATIN CAPITAL LIGATURE OE</td></tr>
+<tr><td>&#339;</td><td>339</td><td>0153</td><td>&amp;oelig;</td><td>LATIN SMALL LIGATURE OE</td></tr>
+<tr><td>&#340;</td><td>340</td><td>0154</td><td>&amp;Racute;</td><td>LATIN CAPITAL LETTER R WITH ACUTE</td></tr>
+<tr><td>&#341;</td><td>341</td><td>0155</td><td>&amp;racute;</td><td>LATIN SMALL LETTER R WITH ACUTE</td></tr>
+<tr><td>&#342;</td><td>342</td><td>0156</td><td>&amp;Rcedil;</td><td>LATIN CAPITAL LETTER R WITH CEDILLA</td></tr>
+<tr><td>&#343;</td><td>343</td><td>0157</td><td>&amp;rcedil;</td><td>LATIN SMALL LETTER R WITH CEDILLA</td></tr>
+<tr><td>&#344;</td><td>344</td><td>0158</td><td>&amp;Rcaron;</td><td>LATIN CAPITAL LETTER R WITH CARON</td></tr>
+<tr><td>&#345;</td><td>345</td><td>0159</td><td>&amp;rcaron;</td><td>LATIN SMALL LETTER R WITH CARON</td></tr>
+<tr><td>&#346;</td><td>346</td><td>015A</td><td>&amp;Sacute;</td><td>LATIN CAPITAL LETTER S WITH ACUTE</td></tr>
+<tr><td>&#347;</td><td>347</td><td>015B</td><td>&amp;sacute;</td><td>LATIN SMALL LETTER S WITH ACUTE</td></tr>
+<tr><td>&#348;</td><td>348</td><td>015C</td><td>&amp;Scirc;</td><td>LATIN CAPITAL LETTER S WITH CIRCUMFLEX</td></tr>
+<tr><td>&#349;</td><td>349</td><td>015D</td><td>&amp;scirc;</td><td>LATIN SMALL LETTER S WITH CIRCUMFLEX</td></tr>
+<tr><td>&#350;</td><td>350</td><td>015E</td><td>&amp;Scedil;</td><td>LATIN CAPITAL LETTER S WITH CEDILLA</td></tr>
+<tr><td>&#351;</td><td>351</td><td>015F</td><td>&amp;scedil;</td><td>LATIN SMALL LETTER S WITH CEDILLA</td></tr>
+<tr><td>&#352;</td><td>352</td><td>0160</td><td>&amp;Scaron;</td><td>LATIN CAPITAL LETTER S WITH CARON</td></tr>
+<tr><td>&#353;</td><td>353</td><td>0161</td><td>&amp;scaron;</td><td>LATIN SMALL LETTER S WITH CARON</td></tr>
+<tr><td>&#354;</td><td>354</td><td>0162</td><td>&amp;Tcedil;</td><td>LATIN CAPITAL LETTER T WITH CEDILLA</td></tr>
+<tr><td>&#355;</td><td>355</td><td>0163</td><td>&amp;tcedil;</td><td>LATIN SMALL LETTER T WITH CEDILLA</td></tr>
+<tr><td>&#356;</td><td>356</td><td>0164</td><td>&amp;Tcaron;</td><td>LATIN CAPITAL LETTER T WITH CARON</td></tr>
+<tr><td>&#357;</td><td>357</td><td>0165</td><td>&amp;tcaron;</td><td>LATIN SMALL LETTER T WITH CARON</td></tr>
+<tr><td>&#358;</td><td>358</td><td>0166</td><td>&amp;Tstrok;</td><td>LATIN CAPITAL LETTER T WITH STROKE</td></tr>
+<tr><td>&#359;</td><td>359</td><td>0167</td><td>&amp;tstrok;</td><td>LATIN SMALL LETTER T WITH STROKE</td></tr>
+<tr><td>&#360;</td><td>360</td><td>0168</td><td>&amp;Utilde;</td><td>LATIN CAPITAL LETTER U WITH TILDE</td></tr>
+<tr><td>&#361;</td><td>361</td><td>0169</td><td>&amp;utilde;</td><td>LATIN SMALL LETTER U WITH TILDE</td></tr>
+<tr><td>&#362;</td><td>362</td><td>016A</td><td>&amp;Umacr;</td><td>LATIN CAPITAL LETTER U WITH MACRON</td></tr>
+<tr><td>&#363;</td><td>363</td><td>016B</td><td>&amp;umacr;</td><td>LATIN SMALL LETTER U WITH MACRON</td></tr>
+<tr><td>&#364;</td><td>364</td><td>016C</td><td>&amp;Ubreve;</td><td>LATIN CAPITAL LETTER U WITH BREVE</td></tr>
+<tr><td>&#365;</td><td>365</td><td>016D</td><td>&amp;ubreve;</td><td>LATIN SMALL LETTER U WITH BREVE</td></tr>
+<tr><td>&#366;</td><td>366</td><td>016E</td><td>&amp;Uring;</td><td>LATIN CAPITAL LETTER U WITH RING ABOVE</td></tr>
+<tr><td>&#367;</td><td>367</td><td>016F</td><td>&amp;uring;</td><td>LATIN SMALL LETTER U WITH RING ABOVE</td></tr>
+<tr><td>&#368;</td><td>368</td><td>0170</td><td>&amp;Udblac;</td><td>LATIN CAPITAL LETTER U WITH DOUBLE ACUTE</td></tr>
+<tr><td>&#369;</td><td>369</td><td>0171</td><td>&amp;udblac;</td><td>LATIN SMALL LETTER U WITH DOUBLE ACUTE</td></tr>
+<tr><td>&#370;</td><td>370</td><td>0172</td><td>&amp;Uogon;</td><td>LATIN CAPITAL LETTER U WITH OGONEK</td></tr>
+<tr><td>&#371;</td><td>371</td><td>0173</td><td>&amp;uogon;</td><td>LATIN SMALL LETTER U WITH OGONEK</td></tr>
+<tr><td>&#372;</td><td>372</td><td>0174</td><td>&amp;Wcirc;</td><td>LATIN CAPITAL LETTER W WITH CIRCUMFLEX</td></tr>
+<tr><td>&#373;</td><td>373</td><td>0175</td><td>&amp;wcirc;</td><td>LATIN SMALL LETTER W WITH CIRCUMFLEX</td></tr>
+<tr><td>&#374;</td><td>374</td><td>0176</td><td>&amp;Ycirc;</td><td>LATIN CAPITAL LETTER Y WITH CIRCUMFLEX</td></tr>
+<tr><td>&#375;</td><td>375</td><td>0177</td><td>&amp;ycirc;</td><td>LATIN SMALL LETTER Y WITH CIRCUMFLEX</td></tr>
+<tr><td>&#376;</td><td>376</td><td>0178</td><td>&amp;Yuml;</td><td>LATIN CAPITAL LETTER Y WITH DIAERESIS</td></tr>
+<tr><td>&#377;</td><td>377</td><td>0179</td><td>&amp;Zacute;</td><td>LATIN CAPITAL LETTER Z WITH ACUTE</td></tr>
+<tr><td>&#378;</td><td>378</td><td>017A</td><td>&amp;zacute;</td><td>LATIN SMALL LETTER Z WITH ACUTE</td></tr>
+<tr><td>&#379;</td><td>379</td><td>017B</td><td>&amp;Zdot;</td><td>LATIN CAPITAL LETTER Z WITH DOT ABOVE</td></tr>
+<tr><td>&#380;</td><td>380</td><td>017C</td><td>&amp;zdot;</td><td>LATIN SMALL LETTER Z WITH DOT ABOVE</td></tr>
+<tr><td>&#381;</td><td>381</td><td>017D</td><td>&amp;Zcaron;</td><td>LATIN CAPITAL LETTER Z WITH CARON</td></tr>
+<tr><td>&#382;</td><td>382</td><td>017E</td><td>&amp;zcaron;</td><td>LATIN SMALL LETTER Z WITH CARON</td></tr>
+<tr><td>&#383;</td><td>383</td><td>017F</td><td>&nbsp;</td><td>LATIN SMALL LETTER LONG S</td></tr>
+</table>
 </div>
-
-<p>For a closer look, please study: <a href="ref_html_utf8.html">The Complete Unicode Reference</a>.</p>
+<br>
 <br>
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="../default.html">&#10094; Home</a>
-<a class="w3-right w3-btn" href="ref_html_ascii.html">Next &#10095;</a>
+<a class="w3-left w3-btn" href="ref_utf_latin1_supplement.html">&#10094; Previous</a>
+<a class="w3-right w3-btn" href="ref_utf_latin_extended_b.html">Next &#10095;</a>
 </div>
 </div>
 <div class="w3-col l2 m12" id="right">
@@ -1180,5 +1245,13 @@ While using this site, you agree to have read and accepted our <a href="../about
 <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>  
-<![endif]--></body>
+<![endif]-->
+<script src="tryit_script.js"></script>
+<script>
+charsetTryit(4, 1, 3, 2);
+</script>
+
+</body>
+
+<!-- Mirrored from www.w3schools.com/charsets/ref_utf_latin_extended_a.asp by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Sep 2019 08:47:11 GMT -->
 </html>
