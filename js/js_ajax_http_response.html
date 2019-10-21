@@ -1,7 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en-US">
+
+<!-- Mirrored from www.w3schools.com/js/js_ajax_http_response.asp by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Sep 2019 08:41:51 GMT -->
 <head>
-<title>JavaScript Tutorial</title>
+<title>AJAX XMLHttpRequest Server Response</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="Keywords" content="HTML,CSS,JavaScript,SQL,PHP,jQuery,XML,DOM,Bootstrap,Python,Java,Web development,W3C,tutorials,programming,training,learning,quiz,primer,lessons,references,examples,exercises,source code,colors,demos,tips">
@@ -859,145 +862,70 @@ function w3_getStyleValue(elmnt,style) {
         <!-- adspace leaderboard -->
        
       </div>
-<h1>JavaScript <span class="color_h1">Tutorial</span></h1>
+<h1>AJAX - Server <span class="color_h1">Response</span></h1>
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="../default.html">&#10094; Home</a>
-<a class="w3-right w3-btn" href="js_intro.html">Next &#10095;</a>
+<a class="w3-left w3-btn" href="js_ajax_http_send.html">&#10094; Previous</a>
+<a class="w3-right w3-btn" href="js_ajax_xmlfile.html">Next &#10095;</a>
 </div>
-
-<div class="w3-panel w3-info intro">
-<p>JavaScript is the programming language of HTML and the Web.</p>
-<p>JavaScript is easy to learn.</p>
-<p>This tutorial will teach you JavaScript from basic to advanced.</p>
-</div>
-<!--
 <hr>
-<h2>Dynamically Update HTML</h2>
-<p>JavaScript can perform programming tasks and dynamically change the content 
-of a web page.</p>
-<style>
-#clickgame {
-  overflow:auto;
-}
-#clickgame div{
-  color: #fff;
-  background-color: #2196F3;
-  line-height:120px;
-  text-align:center;
-  margin:5px;
-  width:130px;
-  float:left;
-  cursor:pointer;
-}
-#clickgame .redbtn{
-  background-color: #dc3545;
-}
-#clickgame .timediv{
-  background-color:transparent;
-  color: #000;
-  font-size:20px;
-}
-</style>
-<div class="w3-example">
-<h3>Example</h3>
-<p><span id="exampletext">Click the blue button:</span></p>
-<div class="w3-padding w3-white notranslate">
-<div id="clickgame">
-  <div id="bluebtn">Click Me</div>
-</div>
-</div>
-<br>
-</div>
 
-<script>
-document.getElementById("bluebtn").addEventListener("click", addbtn);
-function addbtn() {
-  var el, x;
-  el = document.createElement("div");
-  el.innerText = "Click Me";
-  el.setAttribute("class", "redbtn");
-  el.addEventListener("click", displaytime);
-  x = document.getElementById("bluebtn");
-  x.parentNode.appendChild(el);
-  x.innerHTML = "&nbsp;";
-  x.style.cursor = "auto";
-  x.removeEventListener("click", addbtn);
-  document.getElementById("exampletext").innerHTML = "Click the red button:";
-}
-function formatnumber(n) {
-  if (n <= 9) n = "0" + n;
-  return n;
-}
-function displaytime() {
-  var ct, h, m, s, d = new Date();
-  h = d.getHours();
-  m = formatnumber(d.getMinutes());
-  s = formatnumber(d.getSeconds());
-  ct =  h + ":" + m + ":" + s;
-  document.getElementById("clickgame").innerHTML = "<div class='timediv'>" + ct + "</div>";
-  document.getElementById("exampletext").innerHTML = "Current Time:";
-  window.setTimeout(displaytime, 1000);
-}
-</script>
+<h2>The onreadystatechange Property</h2>
+<p>The <code class="w3-codespan">readyState</code> property holds the status of the XMLHttpRequest.</p>
+<p>The <code class="w3-codespan">onreadystatechange</code> property defines a function to be executed when the readyState changes.</p>
+<p>The <code class="w3-codespan">status</code> property and the <code class="w3-codespan">statusText</code> property holds the status of the XMLHttpRequest object.</p>
+<table class="w3-table-all notranslate"> 
+  <tr>
+    <th style="width:20%">Property</th>
+    <th>Description</th>
+  </tr>  
+  <tr>
+    <td>onreadystatechange</td>
+    <td>Defines a function to be called when the readyState property changes</td>
+  </tr>
+  <tr>
+    <td>readyState</td>
+    <td>Holds the status of the XMLHttpRequest. <br>
+ 0: request not initialized <br>
+ 1: server connection established<br>
+ 2: request received <br>
+ 3: processing request <br>
+ 4: request finished and response is ready</td>
+  </tr>
+  <tr>
+    <td>status</td>
+    <td>200: &quot;OK&quot;<br>403: &quot;Forbidden&quot;<br>
+ 404: &quot;Page not found&quot;<br>For a complete list go to the
+    <a href="../tags/ref_httpmessages.html">Http Messages Reference</a></td>
+  </tr>
+  <tr>
+    <td>statusText</td>
+    <td>Returns the status-text (e.g. "OK" or "Not Found")</td>
+  </tr>
+</table>
 
-<hr>
-<h2>Examples in Each Chapter</h2>
-<p>With our &quot;Try it Yourself&quot; editor, you can edit the source code and view 
-the result.</p>
+<p>The <code class="w3-codespan">onreadystatechange</code> function is called every time the readyState changes. </p>
+<p>When <code class="w3-codespan">readyState</code> is 4 and status is 200, the response is ready:</p>
+
 <div class="w3-example">
 <h3>Example</h3>
 <div class="w3-code notranslate jsHigh">
-function myFunction() {<br>
-&nbsp;&nbsp;document.getElementById("demo").innerHTML = Date();<br>
-}
+function loadDoc() {<br>
+&nbsp;&nbsp;var xhttp = new XMLHttpRequest();<br>
+&nbsp;&nbsp;xhttp.onreadystatechange = function() {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;if (this.readyState == 4 &amp;&amp; this.status == 200) {<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; document.getElementById(&quot;demo&quot;).innerHTML =<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; this.responseText;<br>
+  &nbsp;&nbsp;&nbsp; }<br>
+&nbsp;&nbsp;};<br>
+&nbsp;&nbsp;xhttp.open(&quot;GET&quot;, &quot;ajax_info.txt&quot;, true);<br>
+&nbsp;&nbsp;xhttp.send();
+<br>}
 </div>
-<p>
-<a target="_blank" class="w3-btn" href="tryit.asp?filename=tryjs_currentdate">Try it Yourself &raquo;</a>
-</p>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="tryitc969.html?filename=tryjs_ajax_first">Try it Yourself &raquo;</a>
 </div>
--->
-<hr>
-<h2>Examples in Each Chapter</h2>
-<p>With our &quot;Try it Yourself&quot; editor, you can edit the source code and view 
-the result.</p>
-<div class="w3-example">
-<h3>Example</h3>
-<div class="w3-padding w3-white notranslate">
-<h2>My First JavaScript</h2>
-<button type="button" onclick="document.getElementById('demo').innerHTML=Date()">
-Click me to display Date and Time</button>
-<p id="demo"></p>
-</div>
-<p>
-<a target="_blank" class="w3-btn" href="tryit5b9b.html?filename=tryjs_myfirst">Try it Yourself &raquo;</a>
-</p>
-</div>
-
 <div class="w3-panel w3-note">
-<p>We recommend reading this tutorial, in the sequence listed in the left menu.</p>
+<p>The <code class="w3-codespan">onreadystatechange</code> event is triggered four times (1-4), one time for each change in the readyState.</p>
 </div>
-
-<hr>
-<h2>Learn by Examples</h2>
-<p>Examples are better than 1000 words. Examples are often easier to understand 
-than text explanations.</p>
-<p>This tutorial supplements all explanations with clarifying &quot;Try it Yourself&quot; examples.</p>
-<p><a href="js_examples.html">JavaScript Examples</a></p>
-<div class="w3-panel w3-note">
-<p>If you try all the examples, you will learn a lot about JavaScript, in a very short time!</p>
-</div>
-
-<hr>
-<h2>Why Study JavaScript?</h2>
-<p>JavaScript is one of the <strong>3 languages</strong> all web developers <strong>
-must</strong> 
-learn:</p>
-<p>&nbsp;&nbsp; 1. <strong>HTML</strong> to define the content of web pages</p>
-<p>&nbsp;&nbsp; 2. <strong>CSS</strong> to specify the layout of web pages</p>
-<p>&nbsp;&nbsp; 3. <strong>JavaScript</strong> to program the behavior of web pages </p>
-<p>Web pages are not the only place where JavaScript is used.
-Many desktop and server programs use JavaScript. Node.js is the best known. 
-Some databases, like MongoDB and CouchDB, also use JavaScript as their programming language.</p>
 
 <hr>
 <div id="midcontentadcontainer" style="overflow:auto;text-align:center">
@@ -1008,75 +936,146 @@ Some databases, like MongoDB and CouchDB, also use JavaScript as their programmi
     
 </div>
 <hr>
-<div class="w3-panel w3-note">
-<h3>Did You Know?</h3>
-<p>JavaScript and <a href="../java/default.html">Java</a> are completely different languages, both in concept 
-and design.</p>
-<p>JavaScript was invented by Brendan Eich in 1995, and became an ECMA standard  
-in 1997.<br>ECMA-262 is the official name of the standard. ECMAScript is the official name of the language.
-</p>
-<p>You can read more about the different JavaScript versions in the chapter 
-<a href="js_versions.html">JS Versions</a>.</p>
-</div>
 
-<h2>Learning Speed</h2>
-<p>In this tutorial, the learning speed is your choice.</p>
-<p>Everything is up to you.</p>
-<p>If you are struggling, take a break, or reread the material.</p>
-<p><strong>Always</strong> make sure you understand <strong>all</strong> the &quot;Try-it-Yourself&quot; 
-examples.</p>
-<hr>
-<h2>JavaScript References</h2>
-<p>W3Schools maintains a complete JavaScript reference, including all HTML and browser objects.</p>
-<p>The reference contains examples for all properties, methods and events, and 
-is continuously updated according to the latest web standards.</p>
-<p><a href="../jsref/default.html">Complete JavaScript Reference</a></p>
-<hr>
-<h2>JavaScript Exercises</h2>
-<form autocomplete="off" spellcheck="false" id="w3-exerciseform" action="https://www.w3schools.com/js/exercise_js.asp?filename=exercise_js_variables1" method="post" target="_blank">
-<h2>Test Yourself With Exercises</h2>
-<div class="exercisewindow">
-<h2>Exercise:</h2>
-<p>Create a variable called <code class="w3-codespan">carName</code> and assign the value <code class="w3-codespan">Volvo</code> to it.</p>
-<div class="exerciseprecontainer">
-<pre>
-var <input name="ex1" maxlength="7" style="width: 75px;"> = "<input name="ex2" maxlength="5" style="width: 54px;">";
-</pre>
-</div>
+<h2>Using a Callback Function</h2>
+
+<p>A callback function is a function passed as a parameter to another function.</p>
+<p>If you have more than one AJAX task in a website, you should create one function for 
+executing the <code class="w3-codespan">XMLHttpRequest</code> object, and one callback function for each 
+AJAX task.</p>
+<p>The function call should contain the URL and what function to call when the 
+response is ready.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+loadDoc(&quot;<em>url-1</em>&quot;, myFunction1);<br>
 <br>
-<button type="submit" class="w3-btn w3-margin-bottom">Submit Answer &raquo;</button>
-<p><a target="_blank" href="exercise_jsbf69.html?filename=exercise_js_variables1">Start the Exercise</a></p>
+loadDoc(&quot;<em>url-2</em>&quot;, myFunction2);<br><br>
+function loadDoc(url, cFunction) {<br>
+&nbsp; var xhttp;<br>
+&nbsp; xhttp = new XMLHttpRequest();<br>
+&nbsp; xhttp.onreadystatechange = function() {<br>
+&nbsp;&nbsp;&nbsp; if (this.readyState == 4 &amp;&amp; this.status == 200) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cFunction(this);<br>&nbsp;&nbsp;&nbsp; }<br>
+&nbsp; };<br>
+&nbsp;&nbsp;xhttp.open(&quot;GET&quot;, url, true);<br>
+&nbsp;&nbsp;xhttp.send();<br>
+}<br><br>
+function myFunction1(xhttp) {<br>
+&nbsp; // action goes here<br>
+}
+<br>
+function myFunction2(xhttp) {<br>
+&nbsp; // action goes here<br>
+}
 </div>
-</form>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="tryitab22.html?filename=tryjs_ajax_callback">Try it Yourself &raquo;</a>
+</div>
+
+<hr>
+<h2>Server Response Properties</h2>
+<table class="w3-table-all notranslate"> 
+  <tr>
+    <th style="width:230px">Property</th>
+    <th>Description</th>
+  </tr>  
+  <tr>
+    <td>responseText</td>
+    <td>get the response data as a string</td>
+  </tr>
+  <tr>
+    <td>responseXML</td>
+    <td>get the response data as XML data</td>
+  </tr>
+</table>
 <hr>
 
-<h2>JavaScript Quiz Test</h2>
-<p>Test your JavaScript skills at W3Schools!</p>
-<p><a href="js_quiz.html" class="w3-button w3-blue">Start JavaScript Quiz!</a></p>
+<h2>Server Response Methods</h2>
+<table class="w3-table-all notranslate"> 
+  <tr>
+    <th style="width:230px">Method</th>
+    <th>Description</th>
+  </tr>  
+  <tr>
+    <td>getResponseHeader()</td>
+    <td>Returns specific header information from the server resource</td>
+  </tr>
+  <tr>
+    <td>getAllResponseHeaders()</td>
+    <td>Returns all the header information from the server resource</td>
+  </tr>
+</table>
+
+<hr>
+<h2>The responseText Property</h2>
+<p>The <code class="w3-codespan">responseText</code> property returns the server response as a 
+JavaScript string, and you can use it accordingly:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+document.getElementById(&quot;demo&quot;).innerHTML = xhttp.responseText;</div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="tryitc969.html?filename=tryjs_ajax_first">Try it Yourself &raquo;</a>
+</div>
+<hr>
+<h2>The responseXML Property</h2>
+<p>The XMLHttpRequest object has an in-built XML parser.</p>
+<p>The <code class="w3-codespan">responseXML</code> property returns the server response as an XML DOM object.</p>
+<p>Using this property you can parse the response as an XML DOM object:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Request the file <a target="_blank" href="cd_catalog.xml">cd_catalog.xml</a> and parse the response:</p>
+<div class="w3-code notranslate jsHigh">
+xmlDoc = xhttp.responseXML;<br>
+txt = &quot;&quot;;<br>
+x = xmlDoc.getElementsByTagName(&quot;ARTIST&quot;);<br>
+for (i = 0; i &lt; x.length; i++) {<br>
+&nbsp; txt += x[i].childNodes[0].nodeValue + &quot;&lt;br&gt;&quot;;<br>
+  }<br>
+document.getElementById(&quot;demo&quot;).innerHTML = txt;<br>xhttp.open(&quot;GET&quot;, 
+ &quot;cd_catalog.xml&quot;, true);<br>xhttp.send();</div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="tryitd6d3.html?filename=tryjs_ajax_responsexml">Try it Yourself &raquo;</a>
+</div>
+<div class="w3-panel w3-note">
+<p>You will learn a lot more about XML DOM in the DOM chapters of this tutorial.</p>
+</div>
 <hr>
 
-<h2>JavaScript Exam - Get Your Diploma!</h2>
-<div class="w3-row">
-<div class="w3-third w3-container w3-padding-24"><a href="../cert/default.html"><img src="../images/w3certified_logo_250.png" style="max-width:100%;" alt="W3Schools Certification" /></a> </div>
-<div class="w3-twothird w3-container"><h2>W3Schools' Online Certification</h2>
-<p>The perfect solution for professionals who need to balance work, family, and career building.</p>
-<p>More than 25 000 certificates already issued!</p>
+<h2>The getAllResponseHeaders() Method</h2>
+<p>The <code class="w3-codespan">getAllResponseHeaders()</code> method returns all header information from the server response.</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+var xhttp = new XMLHttpRequest();<br>xhttp.onreadystatechange = function() {<br>
+&nbsp; if (this.readyState == 4 &amp;&amp; this.status == 200) {<br>
+&nbsp;&nbsp;&nbsp; document.getElementById(&quot;demo&quot;).innerHTML =<br>&nbsp;&nbsp;&nbsp; this.getAllResponseHeaders();<br>
+&nbsp; }<br>
+};</div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="tryit51b2.html?filename=tryjs_ajax_header">Try it Yourself &raquo;</a>
 </div>
+<hr>
+
+<h2>The getResponseHeader() Method</h2>
+<p>The <code class="w3-codespan">getResponseHeader()</code> method returns specific header information from the server response.</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+var xhttp = new XMLHttpRequest();<br>xhttp.onreadystatechange = function() {<br>
+&nbsp; if (this.readyState == 4 &amp;&amp; this.status == 200) {<br>
+&nbsp;&nbsp;&nbsp; document.getElementById(&quot;demo&quot;).innerHTML =<br>&nbsp;&nbsp;&nbsp; this.getResponseHeader("Last-Modified");<br>
+&nbsp; }<br>
+};<br>
+xhttp.open(&quot;GET&quot;, &quot;ajax_info.txt&quot;, true);<br>
+xhttp.send();
 </div>
-<p><a class="w3-btn" href="../cert/default.html">Get Your Certificate &raquo;</a></p>
-<p style="clear:both;">The <a href="../cert/default.html">HTML Certificate</a> documents your knowledge of HTML.</p>
-<p>The <a href="../cert/default.html">CSS Certificate</a> documents your knowledge of advanced CSS.</p>
-<p>The <a href="../cert/default.html">JavaScript Certificate</a> documents your knowledge of JavaScript and HTML DOM.</p>
-<p>The <a href="../cert/default.html">Python Certificate</a> documents your knowledge of Python.</p>
-<p>The <a href="../cert/default.html">jQuery Certificate</a> documents your knowledge of jQuery.</p>
-<p>The <a href="../cert/default.html">SQL Certificate</a> documents your knowledge of SQL.</p>
-<p>The <a href="../cert/default.html">PHP Certificate</a> documents your knowledge of PHP and MySQL.</p>
-<p>The <a href="../cert/default.html">XML Certificate</a> documents your knowledge of XML, XML DOM and XSLT.</p>
-<p>The <a href="../cert/default.html">Bootstrap Certificate</a> documents your knowledge of the Bootstrap framework.</p>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="tryit6177.html?filename=tryjs_ajax_lastmodified">Try it Yourself &raquo;</a>
+</div>
+
 <br>
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="../default.html">&#10094; Home</a>
-<a class="w3-right w3-btn" href="js_intro.html">Next &#10095;</a>
+<a class="w3-left w3-btn" href="js_ajax_http_send.html">&#10094; Previous</a>
+<a class="w3-right w3-btn" href="js_ajax_xmlfile.html">Next &#10095;</a>
 </div>
 </div>
 <div class="w3-col l2 m12" id="right">
@@ -1370,4 +1369,6 @@ While using this site, you agree to have read and accepted our <a href="../about
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>  
 <![endif]-->
 </body>
+
+<!-- Mirrored from www.w3schools.com/js/js_ajax_http_response.asp by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Sep 2019 08:41:51 GMT -->
 </html>

@@ -1,7 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en-US">
+
+<!-- Mirrored from www.w3schools.com/js/js_ajax_asp.asp by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Sep 2019 08:41:51 GMT -->
 <head>
-<title>JavaScript Tutorial</title>
+<title>AJAX ASP</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="Keywords" content="HTML,CSS,JavaScript,SQL,PHP,jQuery,XML,DOM,Bootstrap,Python,Java,Web development,W3C,tutorials,programming,training,learning,quiz,primer,lessons,references,examples,exercises,source code,colors,demos,tips">
@@ -479,7 +482,27 @@ function w3_getStyleValue(elmnt,style) {
   }
 }
 </script>
-</head><body>
+<script>
+function showHintASP(str)
+{
+if (str.length==0)
+  { 
+  document.getElementById("txtHint").innerHTML="";
+  return;
+  }
+var xmlhttp=new XMLHttpRequest();
+xmlhttp.onreadystatechange = function() {
+  if (this.readyState==4 && this.status==200)
+    {
+    document.getElementById("txtHint").innerHTML=this.responseText;
+    }
+  };
+xmlhttp.open("GET.html","gethint03d2-2.html?q="+str,true);
+xmlhttp.send();
+}
+</script>
+</head>
+<body>
 <div class='w3-container top'>
   <a class='w3schools-logo notranslate' href='../index.html'>w3schools<span class='dotcom'>.com</span></a>
   <div class='w3-right w3-hide-small w3-wide toptext' style="font-family:'Segoe UI',Arial,sans-serif">THE WORLD'S LARGEST WEB DEVELOPER SITE</div>
@@ -859,146 +882,58 @@ function w3_getStyleValue(elmnt,style) {
         <!-- adspace leaderboard -->
        
       </div>
-<h1>JavaScript <span class="color_h1">Tutorial</span></h1>
+<h1>AJAX <span class="color_h1">ASP Example</span></h1>
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="../default.html">&#10094; Home</a>
-<a class="w3-right w3-btn" href="js_intro.html">Next &#10095;</a>
+<a class="w3-left w3-btn" href="js_ajax_php.html">&#10094; Previous</a>
+<a class="w3-right w3-btn" href="js_ajax_database.html">Next &#10095;</a>
 </div>
-
-<div class="w3-panel w3-info intro">
-<p>JavaScript is the programming language of HTML and the Web.</p>
-<p>JavaScript is easy to learn.</p>
-<p>This tutorial will teach you JavaScript from basic to advanced.</p>
-</div>
-<!--
 <hr>
-<h2>Dynamically Update HTML</h2>
-<p>JavaScript can perform programming tasks and dynamically change the content 
-of a web page.</p>
-<style>
-#clickgame {
-  overflow:auto;
-}
-#clickgame div{
-  color: #fff;
-  background-color: #2196F3;
-  line-height:120px;
-  text-align:center;
-  margin:5px;
-  width:130px;
-  float:left;
-  cursor:pointer;
-}
-#clickgame .redbtn{
-  background-color: #dc3545;
-}
-#clickgame .timediv{
-  background-color:transparent;
-  color: #000;
-  font-size:20px;
-}
-</style>
+<p class="intro">AJAX is used to create more interactive applications.</p>
+<hr>
+
+<h2>AJAX ASP Example</h2>
+<p>The following example will demonstrate how a web page can communicate with a 
+web server while a user type characters in an input field:</p>
+
 <div class="w3-example">
 <h3>Example</h3>
-<p><span id="exampletext">Click the blue button:</span></p>
 <div class="w3-padding w3-white notranslate">
-<div id="clickgame">
-  <div id="bluebtn">Click Me</div>
-</div>
+<p><b>Start typing a name in the input field below:</b></p>
+<p>Suggestions: <span id="txtHint"></span></p>
+<p>First name: <input type="text" id="txt1" onkeyup="showHintASP(this.value)" /></p>
 </div>
 <br>
 </div>
-
-<script>
-document.getElementById("bluebtn").addEventListener("click", addbtn);
-function addbtn() {
-  var el, x;
-  el = document.createElement("div");
-  el.innerText = "Click Me";
-  el.setAttribute("class", "redbtn");
-  el.addEventListener("click", displaytime);
-  x = document.getElementById("bluebtn");
-  x.parentNode.appendChild(el);
-  x.innerHTML = "&nbsp;";
-  x.style.cursor = "auto";
-  x.removeEventListener("click", addbtn);
-  document.getElementById("exampletext").innerHTML = "Click the red button:";
-}
-function formatnumber(n) {
-  if (n <= 9) n = "0" + n;
-  return n;
-}
-function displaytime() {
-  var ct, h, m, s, d = new Date();
-  h = d.getHours();
-  m = formatnumber(d.getMinutes());
-  s = formatnumber(d.getSeconds());
-  ct =  h + ":" + m + ":" + s;
-  document.getElementById("clickgame").innerHTML = "<div class='timediv'>" + ct + "</div>";
-  document.getElementById("exampletext").innerHTML = "Current Time:";
-  window.setTimeout(displaytime, 1000);
-}
-</script>
-
 <hr>
-<h2>Examples in Each Chapter</h2>
-<p>With our &quot;Try it Yourself&quot; editor, you can edit the source code and view 
-the result.</p>
+
+<h2>Example Explained</h2>
+<p>In the example above, when a user types a character in the input field, a function 
+called <code class="w3-codespan">showHint()</code> is executed.</p>
+<p>The function is triggered by the <code class="w3-codespan">onkeyup</code> event.</p>
+<p>Here is the HTML code:</p>
+
 <div class="w3-example">
 <h3>Example</h3>
-<div class="w3-code notranslate jsHigh">
-function myFunction() {<br>
-&nbsp;&nbsp;document.getElementById("demo").innerHTML = Date();<br>
-}
-</div>
-<p>
-<a target="_blank" class="w3-btn" href="tryit.asp?filename=tryjs_currentdate">Try it Yourself &raquo;</a>
-</p>
-</div>
--->
-<hr>
-<h2>Examples in Each Chapter</h2>
-<p>With our &quot;Try it Yourself&quot; editor, you can edit the source code and view 
-the result.</p>
-<div class="w3-example">
-<h3>Example</h3>
-<div class="w3-padding w3-white notranslate">
-<h2>My First JavaScript</h2>
-<button type="button" onclick="document.getElementById('demo').innerHTML=Date()">
-Click me to display Date and Time</button>
-<p id="demo"></p>
-</div>
-<p>
-<a target="_blank" class="w3-btn" href="tryit5b9b.html?filename=tryjs_myfirst">Try it Yourself &raquo;</a>
-</p>
+<div class="w3-code notranslate htmlHigh">
+ &lt;html&gt;<br>&lt;head&gt;<br>&lt;script&gt;<br>function showHint(str) {<br>&nbsp; if (str.length == 0) { <br>&nbsp;&nbsp;&nbsp;&nbsp;document.getElementById(&quot;txtHint&quot;).innerHTML = &quot;&quot;;<br>&nbsp;&nbsp;&nbsp;&nbsp;return;<br>&nbsp;&nbsp;} else {<br>&nbsp;&nbsp;&nbsp; var xmlhttp = new XMLHttpRequest();<br>&nbsp;&nbsp;&nbsp; xmlhttp.onreadystatechange = function() {<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (this.readyState == 4 &amp;&amp; this.status == 200) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.getElementById(&quot;txtHint&quot;).innerHTML = this.responseText;<br>
+  &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;};<br>&nbsp;&nbsp;&nbsp; xmlhttp.open(&quot;GET&quot;, &quot;gethint.asp?q=&quot; + str, true);<br>&nbsp;&nbsp;&nbsp;&nbsp;xmlhttp.send();<br>
+  &nbsp;&nbsp;}<br>}<br>&lt;/script&gt;<br>&lt;/head&gt;<br>&lt;body&gt;<br><br>&lt;p&gt;&lt;b&gt;Start typing a name in the input field below:&lt;/b&gt;&lt;/p&gt;<br>&lt;form&gt; <br>First name: &lt;input type=&quot;text&quot; onkeyup=&quot;showHint(this.value)&quot;&gt;<br>&lt;/form&gt;<br>&lt;p&gt;Suggestions: &lt;span id=&quot;txtHint&quot;&gt;&lt;/span&gt;&lt;/p&gt;<br>
+ &lt;/body&gt;<br>&lt;/html&gt;</div>
+<a target="_blank" href="tryitb82b.html?filename=tryjs_ajax_suggest_asp" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
 </div>
 
-<div class="w3-panel w3-note">
-<p>We recommend reading this tutorial, in the sequence listed in the left menu.</p>
-</div>
-
-<hr>
-<h2>Learn by Examples</h2>
-<p>Examples are better than 1000 words. Examples are often easier to understand 
-than text explanations.</p>
-<p>This tutorial supplements all explanations with clarifying &quot;Try it Yourself&quot; examples.</p>
-<p><a href="js_examples.html">JavaScript Examples</a></p>
-<div class="w3-panel w3-note">
-<p>If you try all the examples, you will learn a lot about JavaScript, in a very short time!</p>
-</div>
-
-<hr>
-<h2>Why Study JavaScript?</h2>
-<p>JavaScript is one of the <strong>3 languages</strong> all web developers <strong>
-must</strong> 
-learn:</p>
-<p>&nbsp;&nbsp; 1. <strong>HTML</strong> to define the content of web pages</p>
-<p>&nbsp;&nbsp; 2. <strong>CSS</strong> to specify the layout of web pages</p>
-<p>&nbsp;&nbsp; 3. <strong>JavaScript</strong> to program the behavior of web pages </p>
-<p>Web pages are not the only place where JavaScript is used.
-Many desktop and server programs use JavaScript. Node.js is the best known. 
-Some databases, like MongoDB and CouchDB, also use JavaScript as their programming language.</p>
-
+<p>Code explanation:</p>
+<p>First, check if the input field is empty (str.length == 0). If it is, clear the 
+content of the txtHint placeholder and exit the function.</p>
+<p>However, if the input field is not empty, do the following:</p>
+<ul>
+  <li>Create an XMLHttpRequest object</li>
+  <li>Create the function to be executed when the server response is ready</li>
+  <li>Send the request off to an ASP file (gethint.asp) on the server</li>
+  <li>Notice that q parameter is added gethint.asp?q=&quot;+str</li>
+  <li>The str variable holds the content of the input field</li>
+</ul>
 <hr>
 <div id="midcontentadcontainer" style="overflow:auto;text-align:center">
 <!-- MidContent -->
@@ -1008,75 +943,86 @@ Some databases, like MongoDB and CouchDB, also use JavaScript as their programmi
     
 </div>
 <hr>
-<div class="w3-panel w3-note">
-<h3>Did You Know?</h3>
-<p>JavaScript and <a href="../java/default.html">Java</a> are completely different languages, both in concept 
-and design.</p>
-<p>JavaScript was invented by Brendan Eich in 1995, and became an ECMA standard  
-in 1997.<br>ECMA-262 is the official name of the standard. ECMAScript is the official name of the language.
-</p>
-<p>You can read more about the different JavaScript versions in the chapter 
-<a href="js_versions.html">JS Versions</a>.</p>
-</div>
 
-<h2>Learning Speed</h2>
-<p>In this tutorial, the learning speed is your choice.</p>
-<p>Everything is up to you.</p>
-<p>If you are struggling, take a break, or reread the material.</p>
-<p><strong>Always</strong> make sure you understand <strong>all</strong> the &quot;Try-it-Yourself&quot; 
-examples.</p>
-<hr>
-<h2>JavaScript References</h2>
-<p>W3Schools maintains a complete JavaScript reference, including all HTML and browser objects.</p>
-<p>The reference contains examples for all properties, methods and events, and 
-is continuously updated according to the latest web standards.</p>
-<p><a href="../jsref/default.html">Complete JavaScript Reference</a></p>
-<hr>
-<h2>JavaScript Exercises</h2>
-<form autocomplete="off" spellcheck="false" id="w3-exerciseform" action="https://www.w3schools.com/js/exercise_js.asp?filename=exercise_js_variables1" method="post" target="_blank">
-<h2>Test Yourself With Exercises</h2>
-<div class="exercisewindow">
-<h2>Exercise:</h2>
-<p>Create a variable called <code class="w3-codespan">carName</code> and assign the value <code class="w3-codespan">Volvo</code> to it.</p>
-<div class="exerciseprecontainer">
-<pre>
-var <input name="ex1" maxlength="7" style="width: 75px;"> = "<input name="ex2" maxlength="5" style="width: 54px;">";
-</pre>
-</div>
-<br>
-<button type="submit" class="w3-btn w3-margin-bottom">Submit Answer &raquo;</button>
-<p><a target="_blank" href="exercise_jsbf69.html?filename=exercise_js_variables1">Start the Exercise</a></p>
-</div>
-</form>
-<hr>
+<h2>The ASP File - &quot;gethint.asp&quot;</h2>
+<p>The ASP file checks an array of names, and returns the corresponding name(s) to the 
+browser:</p>
 
-<h2>JavaScript Quiz Test</h2>
-<p>Test your JavaScript skills at W3Schools!</p>
-<p><a href="js_quiz.html" class="w3-button w3-blue">Start JavaScript Quiz!</a></p>
-<hr>
+<div class="w3-code w3-border notranslate"><div>
+&lt;%<br>
+response.expires=-1<br>
+dim a(30)<br>
+'Fill up array with names<br>
+a(1)=&quot;Anna&quot;<br>
+a(2)=&quot;Brittany&quot;<br>
+a(3)=&quot;Cinderella&quot;<br>
+a(4)=&quot;Diana&quot;<br>
+a(5)=&quot;Eva&quot;<br>
+a(6)=&quot;Fiona&quot;<br>
+a(7)=&quot;Gunda&quot;<br>
+a(8)=&quot;Hege&quot;<br>
+a(9)=&quot;Inga&quot;<br>
+a(10)=&quot;Johanna&quot;<br>
+a(11)=&quot;Kitty&quot;<br>
+a(12)=&quot;Linda&quot;<br>
+a(13)=&quot;Nina&quot;<br>
+a(14)=&quot;Ophelia&quot;<br>
+a(15)=&quot;Petunia&quot;<br>
+a(16)=&quot;Amanda&quot;<br>
+a(17)=&quot;Raquel&quot;<br>
+a(18)=&quot;Cindy&quot;<br>
+a(19)=&quot;Doris&quot;<br>
+a(20)=&quot;Eve&quot;<br>
+a(21)=&quot;Evita&quot;<br>
+a(22)=&quot;Sunniva&quot;<br>
+a(23)=&quot;Tove&quot;<br>
+a(24)=&quot;Unni&quot;<br>
+a(25)=&quot;Violet&quot;<br>
+a(26)=&quot;Liza&quot;<br>
+a(27)=&quot;Elizabeth&quot;<br>
+a(28)=&quot;Ellen&quot;<br>
+a(29)=&quot;Wenche&quot;<br>
+a(30)=&quot;Vicky&quot;<br><br>
+'get the q parameter from URL<br>
+q=ucase(request.querystring(&quot;q&quot;))<br><br>
+'lookup all hints from array if length of q&gt;0<br>
+if len(q)&gt;0 then<br>
+  &nbsp;
+  hint=&quot;&quot;<br>
+  &nbsp;
+  for i=1 to 30<br>
+    &nbsp;&nbsp;&nbsp;
+    if q=ucase(mid(a(i),1,len(q))) then<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      if hint=&quot;&quot; then<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        hint=a(i)<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      else<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        hint=hint &amp; &quot; , &quot; &amp; a(i)<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      end if<br>
+    &nbsp;&nbsp;&nbsp;
+    end if<br>
+  &nbsp;
+  next<br>
+end if<br><br>
+'Output &quot;no suggestion&quot; if no hint were found<br>
+'or output the correct values<br>
+if hint=&quot;&quot; then<br>
+  &nbsp;
+  response.write(&quot;no suggestion&quot;)<br>
+else<br>
+  &nbsp;
+  response.write(hint)<br>
+end if<br>
+%&gt;</div></div>
 
-<h2>JavaScript Exam - Get Your Diploma!</h2>
-<div class="w3-row">
-<div class="w3-third w3-container w3-padding-24"><a href="../cert/default.html"><img src="../images/w3certified_logo_250.png" style="max-width:100%;" alt="W3Schools Certification" /></a> </div>
-<div class="w3-twothird w3-container"><h2>W3Schools' Online Certification</h2>
-<p>The perfect solution for professionals who need to balance work, family, and career building.</p>
-<p>More than 25 000 certificates already issued!</p>
-</div>
-</div>
-<p><a class="w3-btn" href="../cert/default.html">Get Your Certificate &raquo;</a></p>
-<p style="clear:both;">The <a href="../cert/default.html">HTML Certificate</a> documents your knowledge of HTML.</p>
-<p>The <a href="../cert/default.html">CSS Certificate</a> documents your knowledge of advanced CSS.</p>
-<p>The <a href="../cert/default.html">JavaScript Certificate</a> documents your knowledge of JavaScript and HTML DOM.</p>
-<p>The <a href="../cert/default.html">Python Certificate</a> documents your knowledge of Python.</p>
-<p>The <a href="../cert/default.html">jQuery Certificate</a> documents your knowledge of jQuery.</p>
-<p>The <a href="../cert/default.html">SQL Certificate</a> documents your knowledge of SQL.</p>
-<p>The <a href="../cert/default.html">PHP Certificate</a> documents your knowledge of PHP and MySQL.</p>
-<p>The <a href="../cert/default.html">XML Certificate</a> documents your knowledge of XML, XML DOM and XSLT.</p>
-<p>The <a href="../cert/default.html">Bootstrap Certificate</a> documents your knowledge of the Bootstrap framework.</p>
 <br>
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="../default.html">&#10094; Home</a>
-<a class="w3-right w3-btn" href="js_intro.html">Next &#10095;</a>
+<a class="w3-left w3-btn" href="js_ajax_php.html">&#10094; Previous</a>
+<a class="w3-right w3-btn" href="js_ajax_database.html">Next &#10095;</a>
 </div>
 </div>
 <div class="w3-col l2 m12" id="right">
@@ -1370,4 +1316,6 @@ While using this site, you agree to have read and accepted our <a href="../about
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>  
 <![endif]-->
 </body>
+
+<!-- Mirrored from www.w3schools.com/js/js_ajax_asp.asp by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Sep 2019 08:41:52 GMT -->
 </html>
