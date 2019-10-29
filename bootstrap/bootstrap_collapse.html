@@ -1,10 +1,13 @@
+
 <!DOCTYPE html>
 <html lang="en-US">
+
+<!-- Mirrored from www.w3schools.com/bootstrap/bootstrap_collapse.asp by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Sep 2019 08:46:37 GMT -->
 <head>
-<title>Bootstrap 3 Учебник</title>
-<link rel="stylesheet" href="../../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<title>Bootstrap Collapse</title>
+<link rel="stylesheet" href="../../maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 <script src="../../ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-<script src="../../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="../../maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="Keywords" content="HTML,CSS,JavaScript,SQL,PHP,jQuery,XML,DOM,Bootstrap,Python,Java,Web development,W3C,tutorials,programming,training,learning,quiz,primer,lessons,references,examples,exercises,source code,colors,demos,tips">
@@ -484,8 +487,12 @@ function w3_getStyleValue(elmnt,style) {
 </script>
 <link rel="stylesheet" href="w3-fix.css">
 <style>
-.w3-ul li a {
-  text-decoration:none;
+.panel-title a {
+ text-decoration:none !important;
+}
+.panel-title a:hover {
+ text-decoration:underline !important;
+ color:#000;
 }
 </style>
 </head>
@@ -805,37 +812,54 @@ function w3_getStyleValue(elmnt,style) {
         <!-- adspace leaderboard -->
        
       </div>
-<h1>Bootstrap 3 <span class="color_h1">Tutorial</span></h1>
+<h1>Bootstrap <span class="color_h1">Collapse</span></h1>
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="../default.html">&#10094; Home</a>
-<a class="w3-right w3-btn" href="bootstrap_get_started.html">Next &#10095;</a>
+<a class="w3-left w3-btn" href="bootstrap_dropdowns.html">&#10094; Previous</a>
+<a class="w3-right w3-btn" href="bootstrap_tabs_pills.html">Next &#10095;</a>
 </div>
-
-<div class="w3-panel w3-info intro w3-padding-16">
-<p>Bootstrap is the most popular HTML, CSS, and JavaScript framework for developing responsive, mobile-first websites.</p>
-<p>Bootstrap is completely free to download and use!</p>
-<a href="bootstrap_get_started.html" class="w3-btn w3-padding-large w3-hide-small" style="margin-top:5px">Start learning Bootstrap now &raquo;</a>
-<a href="bootstrap_get_started.html" class="w3-btn w3-block w3-hide-large w3-hide-medium" style="margin-top:5px;padding:8px 16px">Learn Bootstrap</a>
-</div>
-
 <hr>
 
-<h2>Try it Yourself Examples</h2>
-<p>This Bootstrap tutorial contains hundreds of Bootstrap examples.</p>
-<p>With our online editor, you can edit the code, and click on a button to view the result.</p>
-<img src="imgdefault.jpg" alt="Responsive Bootstrap Page" style="width:95%;margin:16px auto;display:block">
+<h2>Basic Collapsible</h2>
+<p>Collapsibles are useful when you want to hide and show large amount of content:</p>
 
-<div class="w3-example">
-<h3>Bootstrap Example</h3>
+<div style="margin:16px 0">
+  <button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#demo">Click Me</button>
+  <div id="demo" class="collapse">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  </div>
+</div>
+  <div class="w3-example">
+ <h3>Example</h3>
 <div class="w3-code notranslate htmlHigh">
-  &lt;div class=&quot;jumbotron text-center&quot;&gt;<br>&nbsp;&nbsp;&lt;h1&gt;My First Bootstrap Page&lt;/h1&gt;<br>&nbsp; &lt;p&gt;Resize this responsive page to see the effect!&lt;/p&gt; <br>&lt;/div&gt;<br><br>&lt;div class=&quot;container&quot;&gt;<br>&nbsp; &lt;div class=&quot;row&quot;&gt;<br>
-  &nbsp;&nbsp;&nbsp; &lt;div class=&quot;col-sm-4&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h3&gt;Column 1&lt;/h3&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;Lorem ipsum 
-  dolor..&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp;&nbsp;&nbsp; &lt;div class=&quot;col-sm-4&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h3&gt;Column 2&lt;/h3&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;Lorem ipsum 
-  dolor..&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp;&nbsp;&nbsp; &lt;div class=&quot;col-sm-4&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h3&gt;Column 3&lt;/h3&gt; <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;Lorem ipsum 
-  dolor..&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp; &lt;/div&gt;<br>&lt;/div&gt;</div>
-<a target="_blank" href="tryit689b.html?filename=trybs_default&amp;stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a></div>
-<div class="w3-panel w3-note">
-  <p>Click on the &quot;Try it Yourself&quot; button to see how it works.</p>
+ &lt;button data-toggle=&quot;collapse&quot; data-target=&quot;#demo&quot;&gt;Collapsible&lt;/button&gt;<br><br>&lt;div id=&quot;demo&quot; class=&quot;collapse&quot;&gt;<br>Lorem ipsum dolor text....<br>&lt;/div&gt;</div>
+<a target="_blank" href="tryitcf8c.html?filename=trybs_collapsible&amp;stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
+</div>
+
+<h3>Example Explained</h3>
+<p>The <code class="w3-codespan">.collapse</code> class indicates a collapsible element (a &lt;div&gt; in our example); 
+this is the content that will be shown or hidden with a click of a button.</p>
+
+<p>To control (show/hide) the collapsible content, add the <code class="w3-codespan">data-toggle=&quot;collapse&quot;</code> attribute to an &lt;a&gt; or a &lt;button&gt; element. 
+Then add the <code class="w3-codespan">data-target=&quot;#id&quot;</code> attribute to 
+connect the button with the collapsible content (&lt;div id="demo"&gt;).</p>
+<p><strong>Note:</strong> For &lt;a&gt; 
+elements, you can use the <code class="w3-codespan">href</code> attribute instead of the <code class="w3-codespan">data-target</code> 
+attribute:</p>
+  <div class="w3-example">
+ <h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;a href=&quot;#demo&quot; data-toggle=&quot;collapse&quot;&gt;Collapsible&lt;/a&gt;<br><br>&lt;div id=&quot;demo&quot; class=&quot;collapse&quot;&gt;<br>Lorem ipsum dolor text....<br>&lt;/div&gt;</div>
+<a target="_blank" href="tryit083a.html?filename=trybs_collapsible2&amp;stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
+</div>
+
+<p>By default, the collapsible content is hidden. However, you can add the <code class="w3-codespan">.in</code> class to show the content by default:</p>
+  <div class="w3-example">
+ <h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;div id=&quot;demo&quot; class=&quot;collapse in&quot;&gt;<br>Lorem ipsum dolor text....<br>&lt;/div&gt;</div>
+<a target="_blank" href="tryita784.html?filename=trybs_collapsible_in&amp;stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
 </div>
 <hr>
 <div id="midcontentadcontainer" style="overflow:auto;text-align:center">
@@ -847,108 +871,113 @@ function w3_getStyleValue(elmnt,style) {
 </div>
 <hr>
 
-<h2>Bootstrap Exercises</h2>
-<form autocomplete="off" id="w3-exerciseform" action="https://www.w3schools.com/bootstrap/exercise_bs3.asp?filename=exercise_bs3_pagination1" method="post" target="_blank">
-<h2>Test Yourself With Exercises</h2>
-<div class="exercisewindow">
-<h2>Exercise:</h2>
-<p>Add the correct class name to transform the list below into a pagination menu.</p>
-<div class="exerciseprecontainer">
-<pre style="background-color:transparent;border:none;">
-&lt;ul class="<input name="ex1" maxlength="10" style="width: 107px;">"&gt;
-  &lt;li&gt;&lt;a href="#"&gt;1&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="#"&gt;2&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="#"&gt;3&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="#"&gt;4&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="#"&gt;5&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</pre>
-</div>
-<br>
-<button type="submit" class="w3-btn w3-margin-bottom">Submit Answer &raquo;</button>
-<p><a target="_blank" href="exercise_bs368e1.html?filename=exercise_bs3_pagination1">Start the Exercise</a></p>
-</div>
-</form>
-
-<hr>
-
-<h2>Bootstrap Quiz Test</h2>
-<p>Test your Bootstrap skills at W3Schools!</p>
-<p><a href="bootstrap_quiz.html" class="w3-button w3-blue">Start Bootstrap Quiz!</a></p>
-<hr>
-
-<h2>Bootstrap References</h2>
-<p>At W3Schools you will find a complete Bootstrap reference of all CSS classes, 
-Components, and JavaScript plugins - all with &quot;Try it Yourself&quot; examples:</p>
-
-<div class="w3-bar-block">
-<a class="w3-button w3-bar-item w3-light-grey" href="bootstrap_ref_all_classes.html">Complete List of All Bootstrap Classes<span class="w3-margin-left w3-tag w3-blue">Popular</span></a>
-<br>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_css_text.html">Bootstrap CSS Text/Typography</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_css_buttons.html">Bootstrap CSS Buttons</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_css_forms.html">Bootstrap CSS Forms</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_css_helpers.html">Bootstrap CSS Helpers</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_css_images.html">Bootstrap CSS Images</a>
-<a class="w3-button w3-bar-item w3-light-grey" href="bootstrap_ref_css_tables.html">Bootstrap CSS Tables</a>
-  <br>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_comp_dropdowns.html">Bootstrap Components Dropdowns</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_comp_navs.html">Bootstrap Components Navs</a>
-<a class="w3-button w3-bar-item w3-light-grey" href="bootstrap_ref_comp_glyphs.html">Bootstrap Components Glyphicons</a>
-  <br>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_affix.html">Bootstrap JS Affix</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_alert.html">Bootstrap JS Alert</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_button.html">Bootstrap JS Button</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_carousel.html">Bootstrap JS Carousel</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_collapse.html">Bootstrap JS Collapse</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_dropdown.html">Bootstrap JS Dropdown</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_modal.html">Bootstrap JS Modal</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_popover.html">Bootstrap JS Popover</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_scrollspy.html">Bootstrap JS Scrollspy</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_tab.html">Bootstrap JS Tab</a>
-<a class="w3-button w3-bar-item w3-light-grey" href="bootstrap_ref_js_tooltip.html">Bootstrap JS Tooltip</a>
-
-</div>
-
-<hr>
-
-<h2>Bootstrap Themes / Templates</h2>
-<p>We have made some Bootstrap Templates you can play around with. They are completely free to use:</p>
-<div class="w3-row-padding w3-stretch">
-<div class="w3-half">
-<a href="trybs_theme_company_full.html" target="_blank" title="Theme Company Demo">
-<img src="bs_themes.jpg" style="width:98%;margin:20px 0" alt="Theme Company"></a>
-<p class="w3-center"><a href="bootstrap_theme_me.html" class="w3-button w3-block w3-padding-large w3-dark-grey w3-margin-top">Browse Themes</a></p>
-</div>
-<div class="w3-half">
-<a href="bootstrap_templates.html" title="Templates Demo">
-<img src="bs_templates2.jpg" style="width:98%;margin:20px 0" alt="Templates"></a>
-<p class="w3-center"><a href="bootstrap_templates.html" class="w3-button w3-block w3-padding-large w3-dark-grey w3-margin-top">Browse Basic Templates</a></p>
-</div>
-
+<h2>Collapsible Panel</h2>
+  <div class="panel-group" style="margin:25px 0">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" href="#collapse1">Collapsible panel</a>
+        </h4>
+      </div>
+      <div id="collapse1" class="panel-collapse collapse">
+        <div class="panel-body">Panel Body</div>
+        <div class="panel-footer">Panel Footer</div>
+      </div>
+    </div>
+  </div>
+<p>The following example shows a collapsible panel:</p>
+<div class="w3-example">
+ <h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;div class=&quot;panel-group&quot;&gt;<br>&nbsp; &lt;div class=&quot;panel panel-default&quot;&gt;<br>&nbsp;&nbsp;&nbsp; &lt;div class=&quot;panel-heading&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h4 class=&quot;panel-title&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;a data-toggle=&quot;collapse&quot; href=&quot;#collapse1&quot;&gt;Collapsible panel&lt;/a&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/h4&gt;<br>&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp;&nbsp;&nbsp; &lt;div id=&quot;collapse1&quot; class=&quot;panel-collapse collapse&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class=&quot;panel-body&quot;&gt;Panel Body&lt;/div&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class=&quot;panel-footer&quot;&gt;Panel Footer&lt;/div&gt;<br>&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp; &lt;/div&gt;<br>&lt;/div&gt;</div>
+<a target="_blank" href="tryit18a1.html?filename=trybs_collapsible_panel&amp;stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
 </div>
 <hr>
 
-<h2>Bootstrap 3 vs. Bootstrap 4</h2>
-<p><a href="../bootstrap4/default.html">Bootstrap 4</a> is the newest version of Bootstrap; with new components, faster stylesheet and more responsiveness.</p>
-<p>Bootstrap 4 supports the latest, stable releases of all major browsers and 
-platforms. However, Internet Explorer 9 and down is not supported. </p>
-<div class="w3-panel w3-note">
-<p class="margin-bottom-remove"><strong>If you require IE8-9 support, use Bootstrap 3.</strong> It is the most 
-stable version of Bootstrap, and it is still supported by the team for critical bugfixes and documentation changes. However, no new features will be added to 
-it.</p>
+<h2>Collapsible List Group</h2>
+<div class="panel-group" style="margin:25px 0">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" href="#collapse2">Collapsible list group</a>
+        </h4>
+      </div>
+      <div id="collapse2" class="panel-collapse collapse">
+        <ul class="list-group">
+          <li class="list-group-item">One</li>
+          <li class="list-group-item">Two</li>
+          <li class="list-group-item">Three</li>
+        </ul>
+        <div class="panel-footer">Footer</div>
+      </div>
+    </div>
 </div>
-<a href="../bootstrap4/default.html" class="w3-button w3-dark-grey">Go To Bootstrap 4 &raquo;</a>
+<p>The following shows a collapsible panel with a list group inside:</p>
+<div class="w3-example">
+ <h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;div class=&quot;panel-group&quot;&gt;<br>&nbsp; &lt;div class=&quot;panel panel-default&quot;&gt;<br>&nbsp;&nbsp;&nbsp; &lt;div class=&quot;panel-heading&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h4 class=&quot;panel-title&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;a data-toggle=&quot;collapse&quot; href=&quot;#collapse1&quot;&gt;Collapsible list group&lt;/a&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/h4&gt;<br>&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp;&nbsp;&nbsp; &lt;div id=&quot;collapse1&quot; class=&quot;panel-collapse collapse&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;ul class=&quot;list-group&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li class=&quot;list-group-item&quot;&gt;One&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li class=&quot;list-group-item&quot;&gt;Two&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li class=&quot;list-group-item&quot;&gt;Three&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/ul&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class=&quot;panel-footer&quot;&gt;Footer&lt;/div&gt;<br>&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp; &lt;/div&gt;<br>&lt;/div&gt;</div>
+<a target="_blank" href="tryit6d5d.html?filename=trybs_collapsible_listgroup&amp;stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
+</div>
 <hr>
 
-<h2>Did You Know?</h2>
-<p>W3.CSS is an excellent alternative to Bootstrap.</p>
-<p>W3.CSS is smaller, faster, and easier to use.</p>
-<p>If you want to learn W3.CSS, go to our <a href="../w3css/default.html">W3.CSS 
-Tutorial</a>.</p>
+<h2>Accordion</h2>
+  <div class="panel-group" id="accordion" style="margin:25px 0">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">Collapsible Group 1</a>
+        </h4>
+      </div>
+      <div id="collapse4" class="panel-collapse collapse in">
+        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">Collapsible Group 2</a>
+        </h4>
+      </div>
+      <div id="collapse5" class="panel-collapse collapse">
+        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">Collapsible Group 3</a>
+        </h4>
+      </div>
+      <div id="collapse6" class="panel-collapse collapse">
+        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+      </div>
+    </div>
+  </div> 
+<p>The following example shows a simple accordion by extending the panel component.</p>
+<p><strong>Note:</strong> Use the <code class="w3-codespan">data-parent</code> attribute to make 
+sure that all collapsible elements under the specified parent will be closed when one of the collapsible item is shown.</p>
+<div class="w3-example">
+ <h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;div class=&quot;panel-group&quot; id=&quot;accordion&quot;&gt;<br>&nbsp; &lt;div class=&quot;panel panel-default&quot;&gt;<br>&nbsp;&nbsp;&nbsp; &lt;div class=&quot;panel-heading&quot;&gt;<br>&nbsp;&nbsp;&nbsp; &nbsp; &lt;h4 class=&quot;panel-title&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &lt;a data-toggle=&quot;collapse&quot; data-parent=&quot;#accordion&quot; href=&quot;#collapse1&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Collapsible Group 1&lt;/a&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/h4&gt;<br>&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp; &nbsp; &lt;div id=&quot;collapse1&quot; class=&quot;panel-collapse collapse in&quot;&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp; &lt;div class=&quot;panel-body&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit,<br>&nbsp;&nbsp;&nbsp; &nbsp; sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; commodo consequat.&lt;/div&gt;<br>&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp; &lt;/div&gt;<br>&nbsp; &lt;div class=&quot;panel panel-default&quot;&gt;<br>&nbsp; &nbsp; &lt;div class=&quot;panel-heading&quot;&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp; &lt;h4 class=&quot;panel-title&quot;&gt;<br>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &lt;a data-toggle=&quot;collapse&quot; data-parent=&quot;#accordion&quot; href=&quot;#collapse2&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Collapsible Group 2&lt;/a&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/h4&gt;<br>&nbsp; &nbsp; &lt;/div&gt;<br>&nbsp;&nbsp;&nbsp; &lt;div id=&quot;collapse2&quot; class=&quot;panel-collapse collapse&quot;&gt;<br>&nbsp;&nbsp;&nbsp; &nbsp; &lt;div class=&quot;panel-body&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; commodo consequat.&lt;/div&gt;<br>&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp; &lt;/div&gt;<br>&nbsp; &lt;div class=&quot;panel panel-default&quot;&gt;<br>&nbsp;&nbsp;&nbsp; &lt;div class=&quot;panel-heading&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h4 class=&quot;panel-title&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;a data-toggle=&quot;collapse&quot; data-parent=&quot;#accordion&quot; href=&quot;#collapse3&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Collapsible Group 3&lt;/a&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/h4&gt;<br>&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp;&nbsp;&nbsp; &lt;div id=&quot;collapse3&quot; class=&quot;panel-collapse collapse&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class=&quot;panel-body&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; commodo consequat.&lt;/div&gt;<br>&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp; &lt;/div&gt;<br>&lt;/div&gt; </div>
+<a target="_blank" href="tryit13ec.html?filename=trybs_collapsible_accordion&amp;stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
+</div>
+<hr>
+
+<h2>Complete Bootstrap Collapse Reference</h2>
+<p>For a complete reference of all collapse options, methods and events, go to our
+<a href="bootstrap_ref_js_collapse.html">Bootstrap JS Collapse Reference</a>.</p>
 <br>
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="../default.html">&#10094; Home</a>
-<a class="w3-right w3-btn" href="bootstrap_get_started.html">Next &#10095;</a>
+<a class="w3-left w3-btn" href="bootstrap_dropdowns.html">&#10094; Previous</a>
+<a class="w3-right w3-btn" href="bootstrap_tabs_pills.html">Next &#10095;</a>
 </div>
 </div>
 <div class="w3-col l2 m12" id="right">
@@ -1242,4 +1271,6 @@ While using this site, you agree to have read and accepted our <a href="../about
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>  
 <![endif]-->
 </body>
+
+<!-- Mirrored from www.w3schools.com/bootstrap/bootstrap_collapse.asp by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Sep 2019 08:46:37 GMT -->
 </html>

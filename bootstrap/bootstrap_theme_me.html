@@ -1,10 +1,14 @@
+
 <!DOCTYPE html>
 <html lang="en-US">
+
+<!-- Mirrored from www.w3schools.com/bootstrap/bootstrap_theme_me.asp by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Sep 2019 08:46:41 GMT -->
 <head>
-<title>Bootstrap 3 Учебник</title>
-<link rel="stylesheet" href="../../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<title>Bootstrap Theme "Simply Me"</title>
+<link rel="stylesheet" href="../../maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 <script src="../../ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-<script src="../../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="../../maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="Keywords" content="HTML,CSS,JavaScript,SQL,PHP,jQuery,XML,DOM,Bootstrap,Python,Java,Web development,W3C,tutorials,programming,training,learning,quiz,primer,lessons,references,examples,exercises,source code,colors,demos,tips">
@@ -484,9 +488,21 @@ function w3_getStyleValue(elmnt,style) {
 </script>
 <link rel="stylesheet" href="w3-fix.css">
 <style>
-.w3-ul li a {
-  text-decoration:none;
+.glyphicon {vertical-align:0 !important;}
+.btncon .btn-default {padding:12px;text-decoration:none !important;background-color:#555;color:#f5f5f5 !important;width:49%;transition:.3s;}
+.btncon .btn-default:hover {background-color:#f1f1f1; !important;color:#222 !important;}
+
+.testnav {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 0;
+  border-radius: 0;
+  margin-bottom: 0;
+  font-size: 12px;
+  letter-spacing: 5px;
 }
+.testnav a {text-decoration:none !important;}
+.testnav li a:hover {color: #1abc9c !important;}
 </style>
 </head>
 <body>
@@ -805,37 +821,23 @@ function w3_getStyleValue(elmnt,style) {
         <!-- adspace leaderboard -->
        
       </div>
-<h1>Bootstrap 3 <span class="color_h1">Tutorial</span></h1>
+<h1>Bootstrap Theme<span class="color_h1"> "Simply Me"</span></h1>
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="../default.html">&#10094; Home</a>
-<a class="w3-right w3-btn" href="bootstrap_get_started.html">Next &#10095;</a>
+<a class="w3-left w3-btn" href="bootstrap_templates.html">&#10094; Previous</a>
+<a class="w3-right w3-btn" href="bootstrap_theme_company.html">Next &#10095;</a>
 </div>
-
-<div class="w3-panel w3-info intro w3-padding-16">
-<p>Bootstrap is the most popular HTML, CSS, and JavaScript framework for developing responsive, mobile-first websites.</p>
-<p>Bootstrap is completely free to download and use!</p>
-<a href="bootstrap_get_started.html" class="w3-btn w3-padding-large w3-hide-small" style="margin-top:5px">Start learning Bootstrap now &raquo;</a>
-<a href="bootstrap_get_started.html" class="w3-btn w3-block w3-hide-large w3-hide-medium" style="margin-top:5px;padding:8px 16px">Learn Bootstrap</a>
-</div>
-
 <hr>
-
-<h2>Try it Yourself Examples</h2>
-<p>This Bootstrap tutorial contains hundreds of Bootstrap examples.</p>
-<p>With our online editor, you can edit the code, and click on a button to view the result.</p>
-<img src="imgdefault.jpg" alt="Responsive Bootstrap Page" style="width:95%;margin:16px auto;display:block">
-
+<h2>Create a Theme: &quot;Simply Me&quot;</h2>
+<p>This page will show you how to build a Bootstrap theme from scratch.</p>
+<p>We will start with a simple HTML page, and then add more and more components, 
+until we have a fully functional, personal and responsive website.</p>
+<p>The result will look like this, and you are free to modify, save, share, use or do whatever you want with it:</p>
 <div class="w3-example">
-<h3>Bootstrap Example</h3>
-<div class="w3-code notranslate htmlHigh">
-  &lt;div class=&quot;jumbotron text-center&quot;&gt;<br>&nbsp;&nbsp;&lt;h1&gt;My First Bootstrap Page&lt;/h1&gt;<br>&nbsp; &lt;p&gt;Resize this responsive page to see the effect!&lt;/p&gt; <br>&lt;/div&gt;<br><br>&lt;div class=&quot;container&quot;&gt;<br>&nbsp; &lt;div class=&quot;row&quot;&gt;<br>
-  &nbsp;&nbsp;&nbsp; &lt;div class=&quot;col-sm-4&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h3&gt;Column 1&lt;/h3&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;Lorem ipsum 
-  dolor..&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp;&nbsp;&nbsp; &lt;div class=&quot;col-sm-4&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h3&gt;Column 2&lt;/h3&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;Lorem ipsum 
-  dolor..&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp;&nbsp;&nbsp; &lt;div class=&quot;col-sm-4&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h3&gt;Column 3&lt;/h3&gt; <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;Lorem ipsum 
-  dolor..&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp; &lt;/div&gt;<br>&lt;/div&gt;</div>
-<a target="_blank" href="tryit689b.html?filename=trybs_default&amp;stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a></div>
-<div class="w3-panel w3-note">
-  <p>Click on the &quot;Try it Yourself&quot; button to see how it works.</p>
+<iframe src="trybs_theme_me_complete.html" style="margin:25px 0;height:750px;border:none;width:100%;"></iframe>
+</div>
+<div class="btncon">
+<a href="trybs_theme_me_complete.html" target="_blank" class="btn btn-default">Full Page Demo <i class="fa fa-file-text"></i></a>
+<a href="tryit31b2.html?filename=trybs_theme_me_complete&amp;stacked=h" target="_blank" class="btn btn-default">Full Source Code <i class="fa fa-file-text-o"></i></a>
 </div>
 <hr>
 <div id="midcontentadcontainer" style="overflow:auto;text-align:center">
@@ -846,109 +848,363 @@ function w3_getStyleValue(elmnt,style) {
     
 </div>
 <hr>
-
-<h2>Bootstrap Exercises</h2>
-<form autocomplete="off" id="w3-exerciseform" action="https://www.w3schools.com/bootstrap/exercise_bs3.asp?filename=exercise_bs3_pagination1" method="post" target="_blank">
-<h2>Test Yourself With Exercises</h2>
-<div class="exercisewindow">
-<h2>Exercise:</h2>
-<p>Add the correct class name to transform the list below into a pagination menu.</p>
-<div class="exerciseprecontainer">
-<pre style="background-color:transparent;border:none;">
-&lt;ul class="<input name="ex1" maxlength="10" style="width: 107px;">"&gt;
-  &lt;li&gt;&lt;a href="#"&gt;1&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="#"&gt;2&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="#"&gt;3&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="#"&gt;4&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="#"&gt;5&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</pre>
+<h2>HTML Start Page</h2>
+<p>We will start with the following HTML page:</p>
+<div class="w3-example">
+<div class="w3-code notranslate htmlHigh">
+ &lt;!DOCTYPE html&gt;<br>&lt;html lang=&quot;en&quot;&gt;<br>&lt;head&gt;<br>&nbsp; &lt;title&gt;Bootstrap Theme Simply Me&lt;/title&gt;<br>&nbsp; &lt;meta charset=&quot;utf-8&quot;&gt;<br>&nbsp; &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;<br>&lt;/head&gt;<br>&lt;body&gt;<br><br>
+ &lt;h3&gt;Who Am I?&lt;/h3&gt;<br>&lt;img src="bird.jpg" alt="Bird"&gt;<br>&lt;h3&gt;I'm an adventurer&lt;/h3&gt;<br><br>&lt;/body&gt;<br>&lt;/html&gt;</div>
 </div>
+<hr>
+
+<h2>Add Bootstrap CDN and Put Elements in Container</h2>
+<p>Add Bootstrap CDN and a link to jQuery and put HTML elements inside a 
+container:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;!DOCTYPE html&gt;<br>&lt;html lang=&quot;en&quot;&gt;<br>&lt;head&gt;<br>&nbsp; &lt;title&gt;Bootstrap Theme Simply Me&lt;/title&gt;<br>&nbsp; &lt;meta charset=&quot;utf-8&quot;&gt;<br>&nbsp; &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;<br>&nbsp; &lt;link rel=&quot;stylesheet&quot; href=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css&quot;&gt;<br>&nbsp; &lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js&quot;&gt;&lt;/script&gt;<br>&nbsp; &lt;script src=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;<br>
+ &lt;/head&gt;<br>&lt;body&gt;<br><br>&lt;div class=&quot;container-fluid&quot;&gt;<br>&nbsp;
+ &lt;h3&gt;Who Am I?&lt;/h3&gt;<br>&nbsp; &lt;img src="bird.jpg" alt="Bird"&gt;<br>&nbsp; &lt;h3&gt;I'm an adventurer&lt;/h3&gt;<br>&lt;/div&gt;<br><br>&lt;/body&gt;<br>&lt;/html&gt;</div>
+<p>Result:</p>
+<div class="w3-padding w3-white">
+  <h3>Who Am I?</h3>
+  <img src="bird150.jpg" alt="Bird">
+  <h3>I'm an adventurer</h3>
+</div>
+<a target="_blank" href="tryit1058.html?filename=trybs_theme_me_container&amp;stacked=h" class="w3-btn w3-margin-bottom w3-margin-top">Try it Yourself &raquo;</a>
+</div>
+<hr>
+
+<h2>Add Background Color and Center Text</h2>
+
+<p>1. Add a custom class (.bg-1) to the container to add a background color.</p>
+<p>2. Add the <code class="w3-codespan">.text-center</code> class to center the text inside the 
+container:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &nbsp;&lt;head&gt;<br>&nbsp;
+ &lt;style&gt;<br>&nbsp; .bg-1 { <br>&nbsp;&nbsp;&nbsp;&nbsp;background-color: #1abc9c; /* Green */<br>
+  &nbsp;&nbsp;&nbsp; color: #ffffff;<br>&nbsp;&nbsp;}<br>&nbsp; &lt;/style&gt;<br>
+  &lt;/head&gt;<br><br>&lt;body&gt;<br>&nbsp;&nbsp;&lt;div class=&quot;container-fluid bg-1 text-center&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;Who Am I?&lt;/h3&gt;<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="bird.jpg" alt="Bird"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;I'm an adventurer&lt;/h3&gt;<br>&nbsp; &lt;/div&gt;<br>&lt;/body&gt;</div>
+<p>Result:</p>
+<div style="background-color: #1abc9c;color:#fff;">
+<div class="text-center">
+  <h3>Who Am I?</h3>
+  <img src="bird150.jpg" alt="Bird">
+  <h3>I'm an adventurer</h3>
+</div>
+</div>
+<a target="_blank" href="tryit5cfd.html?filename=trybs_theme_me_container2&amp;stacked=h" class="w3-btn w3-margin-bottom w3-margin-top">Try it Yourself &raquo;</a>
+</div>
+<hr>
+
+<h2>Circle Image</h2>
+<p>Shape the image to a circle with the <code class="w3-codespan">.img-circle</code> class:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;img src="bird.jpg" class=&quot;img-circle&quot; alt="Bird"&gt;<br></div>
+<p>Result:</p>
+<div style="background-color: #1abc9c;color:#fff;">
+<div class="text-center">
+  <h3>Who Am I?</h3>
+  <img src="bird150.jpg" alt="Bird" class="img-circle">
+  <h3>I'm an adventurer</h3>
+</div>
+</div>
+<a target="_blank" href="tryit73f7.html?filename=trybs_theme_me_img_circle&amp;stacked=h" class="w3-btn w3-margin-bottom w3-margin-top">Try it Yourself &raquo;</a>
+</div>
+<hr>
+
+<h2>More Content</h2>
+<p>Add more content and put it inside new containers:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+  &lt;head&gt;<br>&nbsp;
+ &lt;style&gt;<br>&nbsp; .bg-1 { <br>&nbsp;&nbsp;&nbsp; background-color: #1abc9c; /* Green */<br>&nbsp;&nbsp;&nbsp;&nbsp;color: #ffffff;<br>&nbsp; }<br>&nbsp; .bg-2 { <br>&nbsp;&nbsp;&nbsp; background-color: #474e5d; /* Dark Blue */<br>
+  &nbsp;&nbsp;&nbsp; color: #ffffff;<br>&nbsp; }<br>&nbsp; .bg-3 { <br>&nbsp;&nbsp;&nbsp; background-color: #ffffff; /* White */<br>
+  &nbsp;&nbsp;&nbsp; color: #555555;<br>&nbsp; }<br>&nbsp; &lt;/style&gt;<br>
+  &lt;/head&gt;<br><br>&lt;body&gt;<br><br>&lt;div class=&quot;container-fluid bg-1 text-center&quot;&gt;<br>&nbsp;&nbsp;&lt;h3&gt;Who Am I?&lt;/h3&gt;<br>
+ &nbsp;&nbsp;&lt;img src=&quot;bird.jpg&quot; class=&quot;img-circle&quot; alt=&quot;Bird&quot;&gt;<br>&nbsp;&nbsp;&lt;h3&gt;I'm an adventurer&lt;/h3&gt;<br>&lt;/div&gt;<br>
+ <br>&lt;div class=&quot;container-fluid bg-2 text-center&quot;&gt;<br>&nbsp;&nbsp;&lt;h3&gt;What Am I?&lt;/h3&gt;<br>
+ &nbsp;&nbsp;&lt;p&gt;Lorem ipsum..&lt;/p&gt;<br>&lt;/div&gt;<br>
+ <br>&lt;div class=&quot;container-fluid bg-3 text-center&quot;&gt;<br>&nbsp;&nbsp;&lt;h3&gt;Where To Find Me?&lt;/h3&gt;<br>
+ &nbsp;&nbsp;&lt;p&gt;Lorem ipsum..&lt;/p&gt;<br>&lt;/div&gt;<br><br>&lt;/body&gt;</div>
+<p>Result:</p>
+<div style="background-color:#1abc9c;color:#fff;">
+  <div class="text-center">
+    <h3 style="padding-top:15px;">Who Am I?</h3>
+    <img src="bird150.jpg" class="img-circle" alt="Bird" width="150" height="150">
+    <h3 style="padding-bottom:15px;">I'm an adventurer</h3>
+  </div>
+</div>
+
+<div style="background-color:#474e5d;color:#fff;margin-top:-10px;padding-right:15px;padding-left: 15px;">
+  <div class="text-center">
+    <h3 style="padding-top:15px;">What Am I?</h3>
+    <p style="padding-bottom:15px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+  </div>
+</div>
+<div style="background-color:#fff;color:#555;margin-top:-10px;padding-right: 15px;padding-left: 15px;">
+  <div class="text-center">
+    <h3 style="padding-top:15px;">Where To Find Me?</h3>
+    <p style="padding-bottom:15px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+  </div>
+</div>
+<a target="_blank" href="tryit01f3.html?filename=trybs_theme_me_containers&amp;stacked=h" class="w3-btn w3-margin-bottom w3-margin-top">Try it Yourself &raquo;</a>
+</div>
+<hr>
+
+<h2>Add Padding</h2>
+
+<p>Lets make the containers look good by adding some padding:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;style&gt;<br>.container-fluid {<br>&nbsp;&nbsp;padding-top: 70px;<br>&nbsp; padding-bottom: 70px;<br>}<br>&lt;/style&gt;</div>
+<p>Result:</p>
+<div style="background-color:#1abc9c;color:#fff;padding-top:70px;padding-bottom:70px;">
+  <div class="text-center">
+    <h3 style="padding-top:15px;">Who Am I?</h3>
+    <img src="bird150.jpg" class="img-circle" alt="Bird" width="150" height="150">
+    <h3 style="padding-bottom:15px;">I'm an adventurer</h3>
+  </div>
+</div>
+
+<div style="background-color:#474e5d;color:#fff;margin-top:-10px;padding-top:70px;padding-bottom:70px;padding-right:15px;padding-left: 15px;">
+  <div class="text-center">
+    <h3 style="padding-top:15px;">What Am I?</h3>
+    <p style="padding-bottom:15px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+  </div>
+</div>
+
+<div style="background-color:#fff;color:#555;margin-top:-10px;padding-top:70px;padding-bottom:70px;padding-right: 15px;padding-left: 15px;">
+  <div class="text-center">
+    <h3 style="padding-top:15px;">Where To Find Me?</h3>
+    <p style="padding-bottom:15px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+  </div>
+</div>
+<a target="_blank" href="tryit1525.html?filename=trybs_theme_me_containers_padding&amp;stacked=h" class="w3-btn w3-margin-bottom w3-margin-top">Try it Yourself &raquo;</a>
+</div>
+<hr>
+
+<h2>Add a Button</h2>
+<p>Add a button to the mid container:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;div class=&quot;container-fluid bg-2 text-center&quot;&gt;<br>&nbsp;&nbsp;&lt;h3&gt;What Am I?&lt;/h3&gt;<br>
+ &nbsp;&nbsp;&lt;p&gt;Lorem ipsum..&lt;/p&gt;<br>&nbsp;&nbsp;&lt;a href=&quot;#&quot; class=&quot;btn btn-default btn-lg&quot;&gt;Search&lt;/a&gt;<br>&lt;/div&gt;<br></div>
+<p>Result:</p>
+<div style="background-color:#474e5d;color:#fff;padding-top:70px;padding-bottom:70px;padding-right:15px;padding-left: 15px;">
+  <div class="text-center">
+    <h3 style="padding-top:15px;">What Am I?</h3>
+    <p style="padding-bottom:15px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+    <a style="text-decoration:none;" href="#" class="btn btn-default btn-lg">Search</a>
+  </div>
+</div>
+<a target="_blank" href="tryit4107.html?filename=trybs_theme_me_button&amp;stacked=h" class="w3-btn w3-margin-bottom w3-margin-top">Try it Yourself &raquo;</a>
+</div>
+<hr>
+
+<h2>Add an Icon</h2>
+<p>Add a Search icon on the &quot;Search&quot; button:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;a href=&quot;#&quot; class=&quot;btn btn-default btn-lg&quot;&gt;<br>&nbsp; &lt;span class=&quot;glyphicon glyphicon-search&quot;&gt;&lt;/span&gt; Search<br>&lt;/a&gt;<br></div>
+<p>Result:</p>
+<div style="background-color:#474e5d;color:#fff;padding-top:70px;padding-bottom:70px;padding-right:15px;padding-left: 15px;">
+  <div class="text-center">
+    <a style="text-decoration:none;" href="#" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-search"></span> Search</a>
+  </div>
+</div>
+<a target="_blank" href="tryit9022.html?filename=trybs_theme_me_icon&amp;stacked=h" class="w3-btn w3-margin-bottom w3-margin-top">Try it Yourself &raquo;</a>
+</div>
+<hr>
+<h2>Modify The Third Container (Add Grid)</h2>
+<p>Add three columns of equal width inside the third container (<code class="w3-codespan">.col-sm-4</code>):</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;div class=&quot;container-fluid bg-3 text-center&quot;&gt; <br>&nbsp;&nbsp;&lt;h3&gt;Where To Find Me?&lt;/h3&gt;<br>&nbsp;&nbsp;&lt;div class=&quot;row&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;col-sm-4&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;Lorem ipsum..&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;img src=&quot;birds1.jpg&quot; alt=&quot;Image&quot;&gt;<br>&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>
+ &nbsp;&nbsp;&nbsp; &lt;div class=&quot;col-sm-4&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;Lorem ipsum..&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;img src=&quot;birds2.jpg&quot; alt=&quot;Image&quot;&gt;<br>&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>
+ &nbsp;&nbsp;&nbsp; &lt;div class=&quot;col-sm-4&quot;&gt; <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;Lorem ipsum..&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;img src=&quot;birds3.jpg&quot; alt=&quot;Image&quot;&gt;<br>
+ &nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp; &lt;/div&gt;<br>&lt;/div&gt;</div>
+<p>Result:</p>
+<div style="background-color:#fff;color:#555;padding-top:70px;padding-bottom:70px;padding-right:15px;padding-left:15px;">
+  <div class="text-center">
+    <h3 style="padding-top:15px;">Where To Find Me?</h3>
+    <div class="row" style="padding-bottom:15px;">
+      <div class="col-md-4">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <img src="birds1.jpg" class="img-responsive" style="width:100%" alt="Image">
+      </div>
+      <div class="col-md-4"> 
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <img src="birds2.jpg" class="img-responsive" style="width:100%" alt="Image">
+      </div>
+      <div class="col-md-4"> 
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <img src="birds3.jpg" class="img-responsive" style="width:100%" alt="Image">
+      </div>
+    </div>
+  </div>
+</div>
+<a target="_blank" href="tryit1627.html?filename=trybs_theme_me_grid&amp;stacked=h" class="w3-btn w3-margin-bottom w3-margin-top">Try it Yourself &raquo;</a>
+</div>
+<hr>
+
+<h2>Make The Images Responsive</h2>
+<p>Add the <code class="w3-codespan">.img-responsive</code> class to all images.</p>
+<p>Add <code class="w3-codespan">display:inline</code> to the first image to force it to be centered 
+(the <code class="w3-codespan">.img-responsive</code> class adds <code class="w3-codespan">display:block</code> 
+to the image, which makes it jump to the left of the screen).</p>
+<p>If you want the image to span the entire width of the screen 
+when it starts to stack, add <code class="w3-codespan">width:100%</code> to the image.</p>
+<p>When opening the example, remember to resize the screen to see the responsive 
+effect:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;!-- The circular bird --&gt;<br>&lt;img src=&quot;bird.jpg&quot; class=&quot;img-responsive img-circle&quot; style=&quot;display:inline&quot; alt=&quot;Bird&quot;&gt;<br>
+ <br>&lt;!-- The birds in our grid: --&gt;<br>&lt;img src=&quot;birds1.jpg&quot; class=&quot;img-responsive&quot; style=&quot;width:100%&quot; alt=&quot;Image&quot;&gt;<br>
+ &lt;img src=&quot;birds2.jpg&quot; class=&quot;img-responsive&quot; style=&quot;width:100%&quot; alt=&quot;Image&quot;&gt;<br>&lt;img src=&quot;birds3.jpg&quot; class=&quot;img-responsive&quot; style=&quot;width:100%&quot; alt=&quot;Image&quot;&gt;</div>
+<a target="_blank" href="tryitd5cf.html?filename=trybs_theme_me_grid_img&amp;stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
+</div>
+<hr>
+
+<h2>Add a Navbar</h2>
+<p>Add a standard navigation bar at the top of the page with and make it 
+collapsible on smaller screens:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;nav class=&quot;navbar navbar-default&quot;&gt;<br>&nbsp; &lt;div class=&quot;container&quot;&gt;<br>
+ &nbsp;&nbsp;&nbsp;
+ &lt;div class=&quot;navbar-header&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;button type=&quot;button&quot; class=&quot;navbar-toggle&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#myNavbar&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt; <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/button&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;Me&lt;/a&gt;<br>
+ &nbsp;&nbsp;&nbsp;
+ &lt;/div&gt;<br>&nbsp;&nbsp;&nbsp; &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;myNavbar&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;ul class=&quot;nav navbar-nav navbar-right&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;WHO&lt;/a&gt;&lt;/li&gt;<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ &lt;li&gt;&lt;a href=&quot;#&quot;&gt;WHAT&lt;/a&gt;&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;WHERE&lt;/a&gt;&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/ul&gt;<br>
+ &nbsp;&nbsp;&nbsp;
+ &lt;/div&gt;<br>&nbsp; &lt;/div&gt;<br>&lt;/nav&gt;</div>
+<p>Result:</p>
+<div class="xw3-padding xw3-white">
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" style="text-decoration:none !important;">Me</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#" style="text-decoration:none !important;">WHO</a></li>
+        <li><a href="#" style="text-decoration:none !important;">WHAT</a></li>
+        <li><a href="#" style="text-decoration:none !important;">WHERE</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</div>
+<a target="_blank" href="tryit9eae.html?filename=trybs_theme_me_navbar&amp;stacked=h" class="w3-btn w3-margin-bottom w3-margin-top">Try it Yourself &raquo;</a>
+</div>
+<hr>
+
+<h2>Style The Navbar</h2>
+<p>Use CSS to customize the navigation bar:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+ .navbar {<br>&nbsp;&nbsp;padding-top: 15px;<br>&nbsp;&nbsp;padding-bottom: 15px;<br>
+  &nbsp; border: 0;<br>&nbsp; border-radius: 0;<br>
+  &nbsp;
+ margin-bottom: 0;<br>&nbsp;&nbsp;font-size: 12px;<br>&nbsp; letter-spacing: 5px;<br>}<br><br>
+ .navbar-nav li a:hover {<br>&nbsp;&nbsp;color: #1abc9c !important;<br>}</div>
+<p>Result:</p>
+<div>
+<nav class="testnav navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar2">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Me</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar2">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#" style="text-decoration:none !important;">WHO</a></li>
+        <li><a href="#">WHAT</a></li>
+        <li><a href="#">WHERE</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</div>
+<a target="_blank" href="tryit1bf3.html?filename=trybs_theme_me_navbar_css&amp;stacked=h" class="w3-btn w3-margin-bottom w3-margin-top">Try it Yourself &raquo;</a>
+</div>
+<hr>
+
+<h2>Add a Footer</h2>
+<p>Add a footer and use CSS to style it:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;style&gt;<br>.bg-4 { <br>&nbsp;&nbsp;background-color: #2f2f2f;<br>&nbsp; color: #ffffff;<br>}<br>&lt;/style&gt;<br><br>&lt;footer class=&quot;container-fluid bg-4 text-center&quot;&gt;<br>&nbsp;&nbsp;&lt;p&gt;Bootstrap Theme Made By &lt;a href=&quot;https://www.w3schools.com&quot;&gt;www.w3schools.com&lt;/a&gt;&lt;/p&gt;
+ <br>&lt;/footer&gt;</div>
+<p>Result:</p>
+<div style="background-color:#2f2f2f;color:#fff;padding-top:70px;padding-bottom:70px;">
+  <footer class="text-center">
+    <p>Bootstrap Theme Made By <a href="../index.html">www.w3schools.com</a></p>
+  </footer>
+</div>
+<a target="_blank" href="tryit4c82.html?filename=trybs_theme_me_footer&amp;stacked=h" class="w3-btn w3-margin-bottom w3-margin-top">Try it Yourself &raquo;</a>
+</div>
+<hr>
+
+<h2>Final Touch</h2>
+<p>Personalize your Theme by adding a font that you like. We have used "Montserrat" from Google's Font Library. </p>
+<p>Link to the font in the 
+<code class="w3-codespan">&lt;head&gt;</code> section:</p>
+<p><code class="w3-codespan">&lt;link href=&quot;https://fonts.googleapis.com/css?family=Montserrat&quot; rel=&quot;stylesheet&quot;&gt;</code></p>
+<p>Then you can use it in the page:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+ body {<br>&nbsp; font: 20px &quot;Montserrat&quot;, sans-serif;<br>&nbsp;&nbsp;line-height: 1.8;<br>
+  &nbsp; color: #f5f6f7;<br>}<br><br>p {font-size: 16px;}</div>
+</div>
+<p>We have also created a &quot;helper&quot; margin class to add extra space 
+where we think it's needed; usually after each <code class="w3-codespan">&lt;h3&gt;</code> and <code class="w3-codespan">&lt;img&gt;</code> element.</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+ .margin {margin-bottom: 45px;}</div>
+<a target="_blank" href="tryit31b2.html?filename=trybs_theme_me_complete&amp;stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
+</div>
+<hr>
+
+<h2>Complete "Simply Me" Theme</h2>
 <br>
-<button type="submit" class="w3-btn w3-margin-bottom">Submit Answer &raquo;</button>
-<p><a target="_blank" href="exercise_bs368e1.html?filename=exercise_bs3_pagination1">Start the Exercise</a></p>
-</div>
-</form>
-
-<hr>
-
-<h2>Bootstrap Quiz Test</h2>
-<p>Test your Bootstrap skills at W3Schools!</p>
-<p><a href="bootstrap_quiz.html" class="w3-button w3-blue">Start Bootstrap Quiz!</a></p>
-<hr>
-
-<h2>Bootstrap References</h2>
-<p>At W3Schools you will find a complete Bootstrap reference of all CSS classes, 
-Components, and JavaScript plugins - all with &quot;Try it Yourself&quot; examples:</p>
-
-<div class="w3-bar-block">
-<a class="w3-button w3-bar-item w3-light-grey" href="bootstrap_ref_all_classes.html">Complete List of All Bootstrap Classes<span class="w3-margin-left w3-tag w3-blue">Popular</span></a>
-<br>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_css_text.html">Bootstrap CSS Text/Typography</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_css_buttons.html">Bootstrap CSS Buttons</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_css_forms.html">Bootstrap CSS Forms</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_css_helpers.html">Bootstrap CSS Helpers</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_css_images.html">Bootstrap CSS Images</a>
-<a class="w3-button w3-bar-item w3-light-grey" href="bootstrap_ref_css_tables.html">Bootstrap CSS Tables</a>
-  <br>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_comp_dropdowns.html">Bootstrap Components Dropdowns</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_comp_navs.html">Bootstrap Components Navs</a>
-<a class="w3-button w3-bar-item w3-light-grey" href="bootstrap_ref_comp_glyphs.html">Bootstrap Components Glyphicons</a>
-  <br>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_affix.html">Bootstrap JS Affix</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_alert.html">Bootstrap JS Alert</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_button.html">Bootstrap JS Button</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_carousel.html">Bootstrap JS Carousel</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_collapse.html">Bootstrap JS Collapse</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_dropdown.html">Bootstrap JS Dropdown</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_modal.html">Bootstrap JS Modal</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_popover.html">Bootstrap JS Popover</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_scrollspy.html">Bootstrap JS Scrollspy</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_tab.html">Bootstrap JS Tab</a>
-<a class="w3-button w3-bar-item w3-light-grey" href="bootstrap_ref_js_tooltip.html">Bootstrap JS Tooltip</a>
-
+<div class="btncon" style="margin-bottom:25px;">
+<a href="trybs_theme_me_complete.html" target="_blank" class="btn btn-default">Full Page Demo <i class="fa fa-file-text"></i></a>
+<a href="tryit31b2.html?filename=trybs_theme_me_complete&amp;stacked=h" target="_blank" class="btn btn-default">Full Source Code <i class="fa fa-file-text-o"></i></a>
 </div>
 
-<hr>
-
-<h2>Bootstrap Themes / Templates</h2>
-<p>We have made some Bootstrap Templates you can play around with. They are completely free to use:</p>
-<div class="w3-row-padding w3-stretch">
-<div class="w3-half">
-<a href="trybs_theme_company_full.html" target="_blank" title="Theme Company Demo">
-<img src="bs_themes.jpg" style="width:98%;margin:20px 0" alt="Theme Company"></a>
-<p class="w3-center"><a href="bootstrap_theme_me.html" class="w3-button w3-block w3-padding-large w3-dark-grey w3-margin-top">Browse Themes</a></p>
-</div>
-<div class="w3-half">
-<a href="bootstrap_templates.html" title="Templates Demo">
-<img src="bs_templates2.jpg" style="width:98%;margin:20px 0" alt="Templates"></a>
-<p class="w3-center"><a href="bootstrap_templates.html" class="w3-button w3-block w3-padding-large w3-dark-grey w3-margin-top">Browse Basic Templates</a></p>
-</div>
-
-</div>
-<hr>
-
-<h2>Bootstrap 3 vs. Bootstrap 4</h2>
-<p><a href="../bootstrap4/default.html">Bootstrap 4</a> is the newest version of Bootstrap; with new components, faster stylesheet and more responsiveness.</p>
-<p>Bootstrap 4 supports the latest, stable releases of all major browsers and 
-platforms. However, Internet Explorer 9 and down is not supported. </p>
-<div class="w3-panel w3-note">
-<p class="margin-bottom-remove"><strong>If you require IE8-9 support, use Bootstrap 3.</strong> It is the most 
-stable version of Bootstrap, and it is still supported by the team for critical bugfixes and documentation changes. However, no new features will be added to 
-it.</p>
-</div>
-<a href="../bootstrap4/default.html" class="w3-button w3-dark-grey">Go To Bootstrap 4 &raquo;</a>
-<hr>
-
-<h2>Did You Know?</h2>
-<p>W3.CSS is an excellent alternative to Bootstrap.</p>
-<p>W3.CSS is smaller, faster, and easier to use.</p>
-<p>If you want to learn W3.CSS, go to our <a href="../w3css/default.html">W3.CSS 
-Tutorial</a>.</p>
 <br>
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="../default.html">&#10094; Home</a>
-<a class="w3-right w3-btn" href="bootstrap_get_started.html">Next &#10095;</a>
+<a class="w3-left w3-btn" href="bootstrap_templates.html">&#10094; Previous</a>
+<a class="w3-right w3-btn" href="bootstrap_theme_company.html">Next &#10095;</a>
 </div>
 </div>
 <div class="w3-col l2 m12" id="right">
@@ -1242,4 +1498,6 @@ While using this site, you agree to have read and accepted our <a href="../about
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>  
 <![endif]-->
 </body>
+
+<!-- Mirrored from www.w3schools.com/bootstrap/bootstrap_theme_me.asp by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Sep 2019 08:46:43 GMT -->
 </html>

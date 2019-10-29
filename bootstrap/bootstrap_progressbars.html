@@ -1,10 +1,13 @@
+
 <!DOCTYPE html>
 <html lang="en-US">
+
+<!-- Mirrored from www.w3schools.com/bootstrap/bootstrap_progressbars.asp by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Sep 2019 08:46:37 GMT -->
 <head>
-<title>Bootstrap 3 Учебник</title>
-<link rel="stylesheet" href="../../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<title>Bootstrap Progress Bars</title>
+<link rel="stylesheet" href="../../maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 <script src="../../ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-<script src="../../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="../../maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="Keywords" content="HTML,CSS,JavaScript,SQL,PHP,jQuery,XML,DOM,Bootstrap,Python,Java,Web development,W3C,tutorials,programming,training,learning,quiz,primer,lessons,references,examples,exercises,source code,colors,demos,tips">
@@ -483,11 +486,6 @@ function w3_getStyleValue(elmnt,style) {
 }
 </script>
 <link rel="stylesheet" href="w3-fix.css">
-<style>
-.w3-ul li a {
-  text-decoration:none;
-}
-</style>
 </head>
 <body>
 <div class='w3-container top'>
@@ -805,37 +803,54 @@ function w3_getStyleValue(elmnt,style) {
         <!-- adspace leaderboard -->
        
       </div>
-<h1>Bootstrap 3 <span class="color_h1">Tutorial</span></h1>
+<h1>Bootstrap <span class="color_h1">Progress Bars</span></h1>
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="../default.html">&#10094; Home</a>
-<a class="w3-right w3-btn" href="bootstrap_get_started.html">Next &#10095;</a>
+<a class="w3-left w3-btn" href="bootstrap_badges_labels.html">&#10094; Previous</a>
+<a class="w3-right w3-btn" href="bootstrap_pagination.html">Next &#10095;</a>
 </div>
-
-<div class="w3-panel w3-info intro w3-padding-16">
-<p>Bootstrap is the most popular HTML, CSS, and JavaScript framework for developing responsive, mobile-first websites.</p>
-<p>Bootstrap is completely free to download and use!</p>
-<a href="bootstrap_get_started.html" class="w3-btn w3-padding-large w3-hide-small" style="margin-top:5px">Start learning Bootstrap now &raquo;</a>
-<a href="bootstrap_get_started.html" class="w3-btn w3-block w3-hide-large w3-hide-medium" style="margin-top:5px;padding:8px 16px">Learn Bootstrap</a>
-</div>
-
 <hr>
 
-<h2>Try it Yourself Examples</h2>
-<p>This Bootstrap tutorial contains hundreds of Bootstrap examples.</p>
-<p>With our online editor, you can edit the code, and click on a button to view the result.</p>
-<img src="imgdefault.jpg" alt="Responsive Bootstrap Page" style="width:95%;margin:16px auto;display:block">
-
+<h2>Basic Progress Bar</h2>
+<p>A progress bar can be used to show a user how far along he/she is in a 
+process.</p>
+<p>Bootstrap provides several types of progress bars.</p>
+<p>A default progress bar in Bootstrap looks like this:</p>
+<div class="progress">
+  <div class="progress-bar" role="progressbar" aria-valuenow="70"
+  aria-valuemin="0" aria-valuemax="100" style="width:70%">
+    <span class="sr-only">70% Complete</span>
+  </div>
+</div>
+<p>To create a default progress bar, add a <code class="w3-codespan">.progress</code> class to a <code class="w3-codespan">&lt;div&gt;</code> element:</p>                  
 <div class="w3-example">
-<h3>Bootstrap Example</h3>
+<h3>Example</h3>
 <div class="w3-code notranslate htmlHigh">
-  &lt;div class=&quot;jumbotron text-center&quot;&gt;<br>&nbsp;&nbsp;&lt;h1&gt;My First Bootstrap Page&lt;/h1&gt;<br>&nbsp; &lt;p&gt;Resize this responsive page to see the effect!&lt;/p&gt; <br>&lt;/div&gt;<br><br>&lt;div class=&quot;container&quot;&gt;<br>&nbsp; &lt;div class=&quot;row&quot;&gt;<br>
-  &nbsp;&nbsp;&nbsp; &lt;div class=&quot;col-sm-4&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h3&gt;Column 1&lt;/h3&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;Lorem ipsum 
-  dolor..&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp;&nbsp;&nbsp; &lt;div class=&quot;col-sm-4&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h3&gt;Column 2&lt;/h3&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;Lorem ipsum 
-  dolor..&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp;&nbsp;&nbsp; &lt;div class=&quot;col-sm-4&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h3&gt;Column 3&lt;/h3&gt; <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;Lorem ipsum 
-  dolor..&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp; &lt;/div&gt;<br>&lt;/div&gt;</div>
-<a target="_blank" href="tryit689b.html?filename=trybs_default&amp;stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a></div>
+ &lt;div class=&quot;progress&quot;&gt;<br>&nbsp; &lt;div class=&quot;progress-bar&quot; role=&quot;progressbar&quot; aria-valuenow=&quot;70&quot;<br>&nbsp; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width:70%&quot;&gt;<br>&nbsp;&nbsp;&nbsp; &lt;span class=&quot;sr-only&quot;&gt;70% Complete&lt;/span&gt;<br>&nbsp; &lt;/div&gt;<br>&lt;/div&gt;</div>
+<a target="_blank" href="tryitf1b0.html?filename=trybs_progressbar1&amp;stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
+</div>
+
 <div class="w3-panel w3-note">
-  <p>Click on the &quot;Try it Yourself&quot; button to see how it works.</p>
+<p><strong>Note: </strong>Progress bars are not supported in Internet Explorer 9 and 
+earlier (because they use CSS3 transitions and animations to achieve some of 
+their effects).<br><br><strong>Note:</strong> To help improve accessibility for 
+people using screen readers, you should include the aria-* attributes.</p>
+</div>
+<hr>
+
+<h2>Progress Bar With Label</h2>
+<p>A progress bar with a label looks like this:</p>
+<div class="progress">
+  <div class="progress-bar" role="progressbar" aria-valuenow="70"
+  aria-valuemin="0" aria-valuemax="100" style="width:70%">
+    70%
+  </div>
+</div>
+<p>Remove the <code class="w3-codespan">.sr-only</code> class from the progress bar to show a visible percentage:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;div class=&quot;progress&quot;&gt;<br>&nbsp; &lt;div class=&quot;progress-bar&quot; role=&quot;progressbar&quot; aria-valuenow=&quot;70&quot;<br>&nbsp; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width:70%&quot;&gt;<br>&nbsp;&nbsp;&nbsp; 70%<br>&nbsp; &lt;/div&gt;<br>&lt;/div&gt;</div>
+<a target="_blank" href="tryit46da.html?filename=trybs_progressbar2&amp;stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
 </div>
 <hr>
 <div id="midcontentadcontainer" style="overflow:auto;text-align:center">
@@ -847,108 +862,147 @@ function w3_getStyleValue(elmnt,style) {
 </div>
 <hr>
 
-<h2>Bootstrap Exercises</h2>
-<form autocomplete="off" id="w3-exerciseform" action="https://www.w3schools.com/bootstrap/exercise_bs3.asp?filename=exercise_bs3_pagination1" method="post" target="_blank">
+<h2>Colored Progress Bars</h2>
+<p>Contextual classes are used to provide &quot;meaning through colors&quot;.</p>
+<p>The contextual classes that can be used with progress bars are:</p>
+<ul>
+  <li><code class="w3-codespan">.progress-bar-success</code></li>
+  <li><code class="w3-codespan">.progress-bar-info</code></li>
+  <li><code class="w3-codespan">.progress-bar-warning</code></li>
+  <li><code class="w3-codespan">.progress-bar-danger</code></li>
+</ul>
+<div class="progress">
+  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+    40% Complete (success)
+  </div>
+</div>
+<div class="progress">
+  <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
+    50% Complete (info)
+  </div>
+</div>
+<div class="progress">
+  <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+    60% Complete (warning)
+  </div>
+</div>
+<div class="progress">
+  <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+    70% Complete (danger)
+  </div>
+</div>
+<p>The following example shows how to create progress bars with the different 
+contextual classes:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;div class=&quot;progress&quot;&gt;<br>&nbsp; &lt;div class=&quot;progress-bar progress-bar-success&quot; role=&quot;progressbar&quot; aria-valuenow=&quot;40&quot;<br>&nbsp; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width:40%&quot;&gt;<br>&nbsp;&nbsp;&nbsp; 40% Complete (success)<br>&nbsp; &lt;/div&gt;<br>&lt;/div&gt;<br><br>&lt;div class=&quot;progress&quot;&gt;<br>&nbsp; &lt;div class=&quot;progress-bar progress-bar-info&quot; role=&quot;progressbar&quot; aria-valuenow=&quot;50&quot;<br>&nbsp; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width:50%&quot;&gt;<br>&nbsp;&nbsp;&nbsp; 50% Complete (info)<br>&nbsp; &lt;/div&gt;<br>&lt;/div&gt;<br><br>&lt;div class=&quot;progress&quot;&gt;<br>&nbsp; &lt;div class=&quot;progress-bar progress-bar-warning&quot; role=&quot;progressbar&quot; aria-valuenow=&quot;60&quot;<br>&nbsp; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width:60%&quot;&gt;<br>&nbsp;&nbsp;&nbsp; 60% Complete (warning)<br>&nbsp; &lt;/div&gt;<br>&lt;/div&gt;<br><br>&lt;div class=&quot;progress&quot;&gt;<br>&nbsp; &lt;div class=&quot;progress-bar progress-bar-danger&quot; role=&quot;progressbar&quot; aria-valuenow=&quot;70&quot;<br>&nbsp; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width:70%&quot;&gt;<br>&nbsp;&nbsp;&nbsp; 70% Complete (danger)<br>&nbsp; &lt;/div&gt;<br>&lt;/div&gt;</div>
+<a target="_blank" href="tryitb220.html?filename=trybs_progressbar3&amp;stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
+</div>
+<hr>
+
+<h2>Striped Progress Bars</h2>
+<p>Progress bars can also be striped:</p>
+<div class="progress">
+    <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+    40% Complete (success)
+  </div>
+</div>
+<div class="progress">
+  <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
+    50% Complete (info)
+  </div>
+</div>
+<div class="progress">
+  <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+    60% Complete (warning)
+  </div>
+</div>
+<div class="progress">
+  <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+    70% Complete (danger)
+  </div>
+</div>
+<p>Add class <code class="w3-codespan">.progress-bar-striped</code> to add stripes to the progress bars:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;div class=&quot;progress&quot;&gt;<br>&nbsp; &lt;div class=&quot;progress-bar progress-bar-success progress-bar-striped&quot; role=&quot;progressbar&quot;<br>&nbsp; aria-valuenow=&quot;40&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width:40%&quot;&gt;<br>&nbsp;&nbsp;&nbsp; 40% Complete (success)<br>&nbsp; &lt;/div&gt;<br>&lt;/div&gt;<br><br>&lt;div class=&quot;progress&quot;&gt;<br>&nbsp; &lt;div class=&quot;progress-bar progress-bar-info progress-bar-striped&quot; role=&quot;progressbar&quot;<br>&nbsp; aria-valuenow=&quot;50&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width:50%&quot;&gt;<br>&nbsp;&nbsp;&nbsp; 50% Complete (info)<br>&nbsp; &lt;/div&gt;<br>&lt;/div&gt;<br><br>&lt;div class=&quot;progress&quot;&gt;<br>&nbsp; &lt;div class=&quot;progress-bar progress-bar-warning progress-bar-striped&quot; role=&quot;progressbar&quot;<br>&nbsp; aria-valuenow=&quot;60&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width:60%&quot;&gt;<br>&nbsp;&nbsp;&nbsp; 60% Complete (warning)<br>&nbsp; &lt;/div&gt;<br>&lt;/div&gt;<br><br>&lt;div class=&quot;progress&quot;&gt;<br>&nbsp; &lt;div class=&quot;progress-bar progress-bar-danger progress-bar-striped&quot; role=&quot;progressbar&quot;<br>&nbsp; aria-valuenow=&quot;70&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width:70%&quot;&gt;<br>&nbsp;&nbsp;&nbsp; 70% Complete (danger)<br>&nbsp; &lt;/div&gt;<br>&lt;/div&gt;</div>
+<a target="_blank" href="tryitef9a.html?filename=trybs_progressbar4&amp;stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
+</div>
+<hr>
+
+<h2>Animated Progress Bar</h2>
+<div class="progress">
+    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+      40%
+  </div>
+</div>
+<p>Add class <code class="w3-codespan">.active</code> to animate the progress bar:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;div class=&quot;progress&quot;&gt;<br>&nbsp; &lt;div class=&quot;progress-bar progress-bar-striped active&quot; role=&quot;progressbar&quot;<br>&nbsp; aria-valuenow=&quot;40&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width:40%&quot;&gt;<br>&nbsp;&nbsp;&nbsp; 40%<br>&nbsp; &lt;/div&gt;<br>&lt;/div&gt;</div>
+<a target="_blank" href="tryit3da0.html?filename=trybs_progressbar5&amp;stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
+</div>
+<hr>
+
+<h2>Stacked Progress Bars</h2>
+<p>Progress bars can also be stacked:</p> 
+<div class="progress">
+  <div class="progress-bar progress-bar-success" role="progressbar" style="width:40%">
+    Free Space
+  </div>
+  <div class="progress-bar progress-bar-warning" role="progressbar" style="width:10%">
+    Warning
+  </div>
+  <div class="progress-bar progress-bar-danger" role="progressbar" style="width:20%">
+    Danger
+  </div>
+</div>
+<p>Create a stacked progress bar by placing multiple bars into the same <code class="w3-codespan">&lt;div class=&quot;progress&quot;&gt;</code>:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;div class=&quot;progress&quot;&gt;<br>&nbsp; &lt;div class=&quot;progress-bar progress-bar-success&quot; role=&quot;progressbar&quot; style=&quot;width:40%&quot;&gt;<br>&nbsp;&nbsp;&nbsp; Free Space<br>&nbsp; &lt;/div&gt;<br>&nbsp; &lt;div class=&quot;progress-bar progress-bar-warning&quot; role=&quot;progressbar&quot; style=&quot;width:10%&quot;&gt;<br>&nbsp;&nbsp;&nbsp; Warning<br>&nbsp; &lt;/div&gt;<br>&nbsp; &lt;div class=&quot;progress-bar progress-bar-danger&quot; role=&quot;progressbar&quot; style=&quot;width:20%&quot;&gt;<br>&nbsp;&nbsp;&nbsp; Danger<br>&nbsp; &lt;/div&gt;<br>&lt;/div&gt;</div>
+<a target="_blank" href="tryit61d0.html?filename=trybs_progressbar6&amp;stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
+</div>
+<hr>
+<form autocomplete="off" id="w3-exerciseform" action="https://www.w3schools.com/bootstrap/exercise_bs3.asp?filename=exercise_bs3_progressbars1" method="post" target="_blank">
 <h2>Test Yourself With Exercises</h2>
 <div class="exercisewindow">
 <h2>Exercise:</h2>
-<p>Add the correct class name to transform the list below into a pagination menu.</p>
+<p>Add the correct classes to make this HTML code behave as a progress bar.</p>
 <div class="exerciseprecontainer">
 <pre style="background-color:transparent;border:none;">
-&lt;ul class="<input name="ex1" maxlength="10" style="width: 107px;">"&gt;
-  &lt;li&gt;&lt;a href="#"&gt;1&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="#"&gt;2&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="#"&gt;3&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="#"&gt;4&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="#"&gt;5&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;div class="<input name="ex1" maxlength="8" style="width: 85px;">"&gt;
+  &lt;div class="<input name="ex2" maxlength="12" style="width: 127px;">"
+    role="progressbar"
+    style="width:70%"&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
 </pre>
 </div>
 <br>
 <button type="submit" class="w3-btn w3-margin-bottom">Submit Answer &raquo;</button>
-<p><a target="_blank" href="exercise_bs368e1.html?filename=exercise_bs3_pagination1">Start the Exercise</a></p>
+<p><a target="_blank" href="exercise_bs3d03e.html?filename=exercise_bs3_progressbars1">Start the Exercise</a></p>
 </div>
 </form>
-
 <hr>
 
-<h2>Bootstrap Quiz Test</h2>
-<p>Test your Bootstrap skills at W3Schools!</p>
-<p><a href="bootstrap_quiz.html" class="w3-button w3-blue">Start Bootstrap Quiz!</a></p>
-<hr>
-
-<h2>Bootstrap References</h2>
-<p>At W3Schools you will find a complete Bootstrap reference of all CSS classes, 
-Components, and JavaScript plugins - all with &quot;Try it Yourself&quot; examples:</p>
-
-<div class="w3-bar-block">
-<a class="w3-button w3-bar-item w3-light-grey" href="bootstrap_ref_all_classes.html">Complete List of All Bootstrap Classes<span class="w3-margin-left w3-tag w3-blue">Popular</span></a>
-<br>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_css_text.html">Bootstrap CSS Text/Typography</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_css_buttons.html">Bootstrap CSS Buttons</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_css_forms.html">Bootstrap CSS Forms</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_css_helpers.html">Bootstrap CSS Helpers</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_css_images.html">Bootstrap CSS Images</a>
-<a class="w3-button w3-bar-item w3-light-grey" href="bootstrap_ref_css_tables.html">Bootstrap CSS Tables</a>
-  <br>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_comp_dropdowns.html">Bootstrap Components Dropdowns</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_comp_navs.html">Bootstrap Components Navs</a>
-<a class="w3-button w3-bar-item w3-light-grey" href="bootstrap_ref_comp_glyphs.html">Bootstrap Components Glyphicons</a>
-  <br>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_affix.html">Bootstrap JS Affix</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_alert.html">Bootstrap JS Alert</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_button.html">Bootstrap JS Button</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_carousel.html">Bootstrap JS Carousel</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_collapse.html">Bootstrap JS Collapse</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_dropdown.html">Bootstrap JS Dropdown</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_modal.html">Bootstrap JS Modal</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_popover.html">Bootstrap JS Popover</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_scrollspy.html">Bootstrap JS Scrollspy</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_tab.html">Bootstrap JS Tab</a>
-<a class="w3-button w3-bar-item w3-light-grey" href="bootstrap_ref_js_tooltip.html">Bootstrap JS Tooltip</a>
-
-</div>
-
-<hr>
-
-<h2>Bootstrap Themes / Templates</h2>
-<p>We have made some Bootstrap Templates you can play around with. They are completely free to use:</p>
-<div class="w3-row-padding w3-stretch">
-<div class="w3-half">
-<a href="trybs_theme_company_full.html" target="_blank" title="Theme Company Demo">
-<img src="bs_themes.jpg" style="width:98%;margin:20px 0" alt="Theme Company"></a>
-<p class="w3-center"><a href="bootstrap_theme_me.html" class="w3-button w3-block w3-padding-large w3-dark-grey w3-margin-top">Browse Themes</a></p>
-</div>
-<div class="w3-half">
-<a href="bootstrap_templates.html" title="Templates Demo">
-<img src="bs_templates2.jpg" style="width:98%;margin:20px 0" alt="Templates"></a>
-<p class="w3-center"><a href="bootstrap_templates.html" class="w3-button w3-block w3-padding-large w3-dark-grey w3-margin-top">Browse Basic Templates</a></p>
-</div>
-
-</div>
-<hr>
-
-<h2>Bootstrap 3 vs. Bootstrap 4</h2>
-<p><a href="../bootstrap4/default.html">Bootstrap 4</a> is the newest version of Bootstrap; with new components, faster stylesheet and more responsiveness.</p>
-<p>Bootstrap 4 supports the latest, stable releases of all major browsers and 
-platforms. However, Internet Explorer 9 and down is not supported. </p>
-<div class="w3-panel w3-note">
-<p class="margin-bottom-remove"><strong>If you require IE8-9 support, use Bootstrap 3.</strong> It is the most 
-stable version of Bootstrap, and it is still supported by the team for critical bugfixes and documentation changes. However, no new features will be added to 
-it.</p>
-</div>
-<a href="../bootstrap4/default.html" class="w3-button w3-dark-grey">Go To Bootstrap 4 &raquo;</a>
-<hr>
-
-<h2>Did You Know?</h2>
-<p>W3.CSS is an excellent alternative to Bootstrap.</p>
-<p>W3.CSS is smaller, faster, and easier to use.</p>
-<p>If you want to learn W3.CSS, go to our <a href="../w3css/default.html">W3.CSS 
-Tutorial</a>.</p>
+<!--
+<h2>Test Yourself with Exercises!</h2>
+<p>
+<a class="w3-btn" href="exercise.asp?filename=exercise_progressbars1" target="_blank">Exercise 1 &raquo;</a>&nbsp;
+<a class="w3-btn" href="exercise.asp?filename=exercise_progressbars2" target="_blank">Exercise 2 &raquo;</a>&nbsp;
+<a class="w3-btn" href="exercise.asp?filename=exercise_progressbars3" target="_blank">Exercise 3 &raquo;</a>&nbsp;
+<a class="w3-btn" href="exercise.asp?filename=exercise_progressbars4" target="_blank">Exercise 4 &raquo;</a>
+</p>
+-->
 <br>
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="../default.html">&#10094; Home</a>
-<a class="w3-right w3-btn" href="bootstrap_get_started.html">Next &#10095;</a>
+<a class="w3-left w3-btn" href="bootstrap_badges_labels.html">&#10094; Previous</a>
+<a class="w3-right w3-btn" href="bootstrap_pagination.html">Next &#10095;</a>
 </div>
 </div>
 <div class="w3-col l2 m12" id="right">
@@ -1242,4 +1296,6 @@ While using this site, you agree to have read and accepted our <a href="../about
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>  
 <![endif]-->
 </body>
+
+<!-- Mirrored from www.w3schools.com/bootstrap/bootstrap_progressbars.asp by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Sep 2019 08:46:37 GMT -->
 </html>

@@ -1,10 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en-US">
+
+<!-- Mirrored from www.w3schools.com/bootstrap/bootstrap_ver.asp by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Sep 2019 08:36:44 GMT -->
 <head>
-<title>Bootstrap 3 Учебник</title>
-<link rel="stylesheet" href="../../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<script src="../../ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-<script src="../../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<title>Bootstrap 3 or Bootstrap 4</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="Keywords" content="HTML,CSS,JavaScript,SQL,PHP,jQuery,XML,DOM,Bootstrap,Python,Java,Web development,W3C,tutorials,programming,training,learning,quiz,primer,lessons,references,examples,exercises,source code,colors,demos,tips">
@@ -482,10 +482,148 @@ function w3_getStyleValue(elmnt,style) {
   }
 }
 </script>
-<link rel="stylesheet" href="w3-fix.css">
 <style>
-.w3-ul li a {
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow: hidden;
+  padding-top: 20px;
+  color: white;
+}
+
+.left {
+  left: 0;
+  background-color: #775ba4;
+}
+
+.right {
+  right: 0;
+  background-color: #6138ad;
+}
+
+.centered {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  text-align: center;
+}
+
+a.topnav-icons.fa-menu {
+  display: none;
+}
+
+.myLink {
   text-decoration:none;
+  color:white !important;
+  opacity:0.8;
+}
+.myLink:hover {
+  opacity: 1 
+}
+
+.myLink:hover h1 {
+  font-size: 41px;
+}
+
+.mySpan {
+   border-radius: 15%;
+   border: 2px solid white;
+   padding: 20px 35px;
+   display: inline-block;
+   font-size: 105px;
+}
+
+.myh1 {
+   line-height: 90px;
+   font-size: 40px;
+}
+.myP {
+   font-size: 15px;
+   max-width: 370px;
+   padding-left: 20px;
+   padding-right: 20px;
+   margin: auto;
+}
+
+@media only screen and (max-width:993px) {
+  .centered {
+    margin-top: 40px;
+  }
+  .myLink .mySpan {
+    font-size: 70px;
+    padding: 10px 25px;
+  }
+  .myLink .myh1 {
+    font-size: 25px;
+  }
+  .myLink:hover h1 {
+    font-size: 26px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .centered {
+    margin-top: 50px;
+  }
+  .myLink .mySpan {
+    font-size: 40px;
+    padding: 10px 25px;
+  }
+  .myLink .myh1 {
+    font-size: 16px;
+  }
+  .myP {
+    display: none;
+  }
+  .myLink:hover h1 {
+    font-size: 17px;
+  }
+}
+
+@media only screen and (max-height: 620px) {
+  .centered {
+    margin-top: 45px;
+  }
+  .myLink .mySpan {
+    font-size: 25px;
+    padding: 10px 25px;
+  }
+  .myLink .myh1 {
+    font-size: 16px;
+  }
+  .myP {
+    display: none
+  }
+  .myLink:hover h1 {
+    font-size: 17px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .centered {
+    margin-top: 40px;
+  }
+  .myLink .mySpan {
+    font-size: 25px;
+    padding: 10px 25px;
+  }
+  .myLink .myh1 {
+    font-size: 16px;
+  }
+  .myP {
+    display: none
+  }
+  .myLink:hover h1 {
+    font-size: 17px;
+  }
+}
+
+.topnav .w3-bar a[href^="/bootstrap/default.asp"] {
+  background-color: #4CAF50 !important;
 }
 </style>
 </head>
@@ -519,7 +657,7 @@ function w3_getStyleValue(elmnt,style) {
       <a class="w3-bar-item w3-button" id='topnavbtn_tutorials' href='javascript:void(0);' onclick='w3_open_nav("tutorials")' title='Tutorials'>MORE <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style='display:none'></i></a>
       <a href='javascript:void(0);' class='topnav-icons fa w3-right w3-bar-item w3-button' onclick='open_search(this)' title='Search W3Schools'>&#xe802;</a>
       <a href='javascript:void(0);' class='topnav-icons fa w3-right w3-bar-item w3-button' onclick='open_translate(this)' title='Translate W3Schools'>&#xe801;</a>
-      <a class="w3-bar-item w3-button w3-right" target="_blank" href='http://w3schools.invisionzone.com/'>FORUM</a>
+      <a class="w3-bar-item w3-button w3-right" href='http://w3schools.invisionzone.com/'>FORUM</a>
       <a class="w3-bar-item w3-button w3-right" id='topnavbtn_exercises' href='javascript:void(0);' onclick='w3_open_nav("exercises")' title='Exercises'>EXERCISES <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style='display:none'></i></a>
       <a class="w3-bar-item w3-button w3-right" id='topnavbtn_references' href='javascript:void(0);' onclick='w3_open_nav("references")' title='References'>REFERENCES <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style='display:none'></i></a>
     </div>
@@ -538,7 +676,7 @@ function w3_getStyleValue(elmnt,style) {
           <a class="w3-bar-item w3-button" href='../graphics/svg_intro.html'>Learn SVG</a>
           <a class="w3-bar-item w3-button" href='../graphics/canvas_intro.html'>Learn Canvas</a>
           <a class="w3-bar-item w3-button" href='../howto/default.html'>Learn How To</a>
-          <a class="w3-bar-item w3-button" href='../sass/default.html'>Learn Sass</a>          
+          <a class="w3-bar-item w3-button" href='../sass/default.html'>Learn Sass</a>
           <div class="w3-hide-large w3-hide-small">
             <h3>XML</h3>
             <a class="w3-bar-item w3-button" href='../xml/default.html'>Learn XML</a>
@@ -639,7 +777,7 @@ function w3_getStyleValue(elmnt,style) {
           <a class="w3-bar-item w3-button" href='../xml/xsl_elementref.html'>XSLT Reference</a>
           <a class="w3-bar-item w3-button" href='../xml/schema_elements_ref.html'>XML Schema Reference</a>
         </div>
-        <div class='w3-col l3 m6 w3-hide-medium w3-hide-small'>
+        <div class='w3-col l3 m6'>
           <h3>Character Sets</h3>
           <a class="w3-bar-item w3-button" href='../charsets/default.html'>HTML Character Sets</a>
           <a class="w3-bar-item w3-button" href='../charsets/ref_html_ascii.html'>HTML ASCII</a>
@@ -666,9 +804,8 @@ function w3_getStyleValue(elmnt,style) {
           <a class="w3-bar-item w3-button" href="../jquery/jquery_exercises.html">jQuery Exercises</a>
           <a class="w3-bar-item w3-button" href="bootstrap_exercises.html">Bootstrap Exercises</a>
           <a class="w3-bar-item w3-button" href="../java/java_exercises.html">Java Exercises</a>
-          <a class="w3-bar-item w3-button" href="../cpp/cpp_exercises.html">C++ Exercises</a>
         </div>
-        <div class='w3-col l4 m6'>
+        <div class='w3-col l4 m6 xw3-hide-medium'>
           <h3>Quizzes</h3>
           <a class="w3-bar-item w3-button" href='../html/html_quiz.html' target='_top'>HTML Quiz</a>
           <a class="w3-bar-item w3-button" href='../css/css_quiz.html' target='_top'>CSS Quiz</a>
@@ -680,15 +817,15 @@ function w3_getStyleValue(elmnt,style) {
           <a class="w3-bar-item w3-button" href='bootstrap_quiz.html' target='_top'>Bootstrap Quiz</a>
           <a class="w3-bar-item w3-button" href='../xml/xml_quiz.html' target='_top'>XML Quiz</a>
         </div>
-        <div class='w3-col l4 m12'>
+        <div class="w3-col l4 m12">
          <h3>Certificates</h3>
          <a class="w3-bar-item w3-button" href="../cert/cert_html_new.html" target="_top">HTML Certificate</a>
          <a class="w3-bar-item w3-button" href="../cert/cert_css.html" target="_top">CSS Certificate</a>
          <a class="w3-bar-item w3-button" href="../cert/cert_javascript.html" target="_top">JavaScript Certificate</a>
          <a class="w3-bar-item w3-button" href="../cert/cert_sql.html" target="_top">SQL Certificate</a>
-         <a class="w3-bar-item w3-button" href="../cert/cert_php.html" target="_top">PHP Certificate</a>
          <a class="w3-bar-item w3-button" href="../cert/cert_python.html" target="_top">Python Certificate</a>
          <a class="w3-bar-item w3-button" href="../cert/cert_jquery.html" target="_top">jQuery Certificate</a>
+         <a class="w3-bar-item w3-button" href="../cert/cert_php.html" target="_top">PHP Certificate</a>
          <a class="w3-bar-item w3-button" href="../cert/cert_bootstrap.html" target="_top">Bootstrap Certificate</a>
          <a class="w3-bar-item w3-button" href="../cert/cert_xml.html" target="_top">XML Certificate</a>
         </div>
@@ -697,99 +834,9 @@ function w3_getStyleValue(elmnt,style) {
     </div>
   </div>
 </div>
-
 <div class='w3-sidebar w3-collapse' id='sidenav'>
   <div id='leftmenuinner'>
     <div class='w3-light-grey' id='leftmenuinnerinner'>
-<!--  <a href='javascript:void(0)' onclick='close_menu()' class='w3-button w3-hide-large w3-large w3-display-topright' style='right:16px;padding:3px 12px;font-weight:bold;'>&times;</a>-->
-<h2 class="left"><span class="left_h2">Bootstrap 3 Tutorial</span></h2>
-<a target="_top" href="default.html">BS HOME</a>
-<a target="_top" href="bootstrap_get_started.html">BS Get Started</a>
-<a target="_top" href="bootstrap_grid_basic.html">BS Grid Basic</a>
-<a target="_top" href="bootstrap_typography.html">BS Typography</a>
-<a target="_top" href="bootstrap_tables.html">BS Tables</a>
-<a target="_top" href="bootstrap_images.html">BS Images</a>
-<a target="_top" href="bootstrap_jumbotron_header.html">BS Jumbotron</a>
-<a target="_top" href="bootstrap_wells.html">BS Wells</a>
-<a target="_top" href="bootstrap_alerts.html">BS Alerts</a>
-<a target="_top" href="bootstrap_buttons.html">BS Buttons</a>
-<a target="_top" href="bootstrap_button_groups.html">BS Button Groups</a>
-<a target="_top" href="bootstrap_glyphicons.html">BS Glyphicons</a>
-<a target="_top" href="bootstrap_badges_labels.html">BS Badges/Labels</a>
-<a target="_top" href="bootstrap_progressbars.html">BS Progress Bars</a>
-<a target="_top" href="bootstrap_pagination.html">BS Pagination</a>
-<a target="_top" href="bootstrap_pager.html">BS Pager</a>
-<a target="_top" href="bootstrap_list_groups.html">BS List Groups</a>
-<a target="_top" href="bootstrap_panels.html">BS Panels</a>
-<a target="_top" href="bootstrap_dropdowns.html">BS Dropdowns</a>
-<a target="_top" href="bootstrap_collapse.html">BS Collapse</a>
-<a target="_top" href="bootstrap_tabs_pills.html">BS Tabs/Pills</a>
-<a target="_top" href="bootstrap_navbar.html">BS Navbar</a>
-<a target="_top" href="bootstrap_forms.html">BS Forms</a>
-<a target="_top" href="bootstrap_forms_inputs.html">BS Inputs</a>
-<a target="_top" href="bootstrap_forms_inputs2.html">BS Inputs 2</a>
-<a target="_top" href="bootstrap_forms_sizing.html">BS Input Sizing</a>
-<a target="_top" href="bootstrap_media_objects.html">BS Media Objects</a>
-<a target="_top" href="bootstrap_carousel.html">BS Carousel</a>
-<a target="_top" href="bootstrap_modal.html">BS Modal</a>
-<a target="_top" href="bootstrap_tooltip.html">BS Tooltip</a>
-<a target="_top" href="bootstrap_popover.html">BS Popover</a>
-<a target="_top" href="bootstrap_scrollspy.html">BS Scrollspy</a>
-<a target="_top" href="bootstrap_affix.html">BS Affix</a>
-<a target="_top" href="bootstrap_filters.html">BS Filters</a>
-<br>
-
-<h2 class="left"><span class="left_h2">Bootstrap</span> Grids</h2>
-<a target="_top" href="bootstrap_grid_system.html">BS Grid System</a>
-<a target="_top" href="bootstrap_grid_stacked_to_horizontal.html">BS Stacked/Horizontal</a>
-<a target="_top" href="bootstrap_grid_small.html">BS Grid Small</a>
-<a target="_top" href="bootstrap_grid_medium.html">BS Grid Medium</a>
-<a target="_top" href="bootstrap_grid_large.html">BS Grid Large</a>
-<a target="_top" href="bootstrap_grid_examples.html">BS Grid Examples</a>
-<br>
-
-<h2 class="left"><span class="left_h2">Bootstrap</span> Themes</h2>
-<a target="_top" href="bootstrap_templates.html">BS Templates</a>
-<a target="_top" href="bootstrap_theme_me.html">BS Theme "Simply Me"</a>
-<a target="_top" href="bootstrap_theme_company.html">BS Theme "Company"</a>
-<a target="_top" href="bootstrap_theme_band.html">BS Theme "Band"</a>
-<br>
-
-<h2 class="left"><span class="left_h2">Bootstrap</span> Examples</h2>
-<a target="_top" href="bootstrap_examples.html">BS Examples</a>
-<a target="_top" href="bootstrap_quiz.html">BS Quiz</a>
-<a target="_top" href="bootstrap_exercises.html">BS Exercises</a>
-<a target="_top" href="bootstrap_exam.html">BS Certificate</a>
-<br>
-
-<h2 class="left"><span class="left_h2">Bootstrap</span> CSS Ref</h2>
-<a target="_top" href="bootstrap_ref_all_classes.html">CSS All Classes</a>
-<a target="_top" href="bootstrap_ref_css_text.html">CSS Typography</a>
-<a target="_top" href="bootstrap_ref_css_buttons.html">CSS Buttons</a>
-<a target="_top" href="bootstrap_ref_css_forms.html">CSS Forms</a>
-<a target="_top" href="bootstrap_ref_css_helpers.html">CSS Helpers</a>
-<a target="_top" href="bootstrap_ref_css_images.html">CSS Images</a>
-<a target="_top" href="bootstrap_ref_css_tables.html">CSS Tables</a>
-<a target="_top" href="bootstrap_ref_comp_dropdowns.html">CSS Dropdowns</a>
-<a target="_top" href="bootstrap_ref_comp_navs.html">CSS Navs</a>
-<a target="_top" href="bootstrap_ref_comp_glyphs.html">Glyphicons</a>
-<br>
-<h2 class="left"><span class="left_h2">Bootstrap</span> JS Ref</h2>
-<a target="_top" href="bootstrap_ref_js_affix.html">JS Affix</a>
-<a target="_top" href="bootstrap_ref_js_alert.html">JS Alert</a>
-<a target="_top" href="bootstrap_ref_js_button.html">JS Button</a>
-<a target="_top" href="bootstrap_ref_js_carousel.html">JS Carousel</a>
-<a target="_top" href="bootstrap_ref_js_collapse.html">JS Collapse</a>
-<a target="_top" href="bootstrap_ref_js_dropdown.html">JS Dropdown</a>
-<a target="_top" href="bootstrap_ref_js_modal.html">JS Modal</a>
-<a target="_top" href="bootstrap_ref_js_popover.html">JS Popover</a>
-<a target="_top" href="bootstrap_ref_js_scrollspy.html">JS Scrollspy</a>
-<a target="_top" href="bootstrap_ref_js_tab.html">JS Tab</a>
-<a target="_top" href="bootstrap_ref_js_tooltip.html">JS Tooltip</a>
-<br class="w3-hide-large">
-
-
-
       <br><br>
     </div>
   </div>
@@ -798,443 +845,37 @@ function w3_getStyleValue(elmnt,style) {
   <div class='w3-row w3-white'>
     <div class='w3-col l10 m12' id='main'>
       <div id='mainLeaderboard' style='overflow:hidden;'>
-        <!-- MainLeaderboard-->
-
-        <!--<pre>main_leaderboard, all: [728,90][970,90][320,50][468,60]</pre>-->
-        <div id="snhb-main_leaderboard-0"></div>
-        <!-- adspace leaderboard -->
-       
+        </div>
       </div>
-<h1>Bootstrap 3 <span class="color_h1">Tutorial</span></h1>
-<div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="../default.html">&#10094; Home</a>
-<a class="w3-right w3-btn" href="bootstrap_get_started.html">Next &#10095;</a>
-</div>
-
-<div class="w3-panel w3-info intro w3-padding-16">
-<p>Bootstrap is the most popular HTML, CSS, and JavaScript framework for developing responsive, mobile-first websites.</p>
-<p>Bootstrap is completely free to download and use!</p>
-<a href="bootstrap_get_started.html" class="w3-btn w3-padding-large w3-hide-small" style="margin-top:5px">Start learning Bootstrap now &raquo;</a>
-<a href="bootstrap_get_started.html" class="w3-btn w3-block w3-hide-large w3-hide-medium" style="margin-top:5px;padding:8px 16px">Learn Bootstrap</a>
-</div>
-
-<hr>
-
-<h2>Try it Yourself Examples</h2>
-<p>This Bootstrap tutorial contains hundreds of Bootstrap examples.</p>
-<p>With our online editor, you can edit the code, and click on a button to view the result.</p>
-<img src="imgdefault.jpg" alt="Responsive Bootstrap Page" style="width:95%;margin:16px auto;display:block">
-
-<div class="w3-example">
-<h3>Bootstrap Example</h3>
-<div class="w3-code notranslate htmlHigh">
-  &lt;div class=&quot;jumbotron text-center&quot;&gt;<br>&nbsp;&nbsp;&lt;h1&gt;My First Bootstrap Page&lt;/h1&gt;<br>&nbsp; &lt;p&gt;Resize this responsive page to see the effect!&lt;/p&gt; <br>&lt;/div&gt;<br><br>&lt;div class=&quot;container&quot;&gt;<br>&nbsp; &lt;div class=&quot;row&quot;&gt;<br>
-  &nbsp;&nbsp;&nbsp; &lt;div class=&quot;col-sm-4&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h3&gt;Column 1&lt;/h3&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;Lorem ipsum 
-  dolor..&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp;&nbsp;&nbsp; &lt;div class=&quot;col-sm-4&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h3&gt;Column 2&lt;/h3&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;Lorem ipsum 
-  dolor..&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp;&nbsp;&nbsp; &lt;div class=&quot;col-sm-4&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h3&gt;Column 3&lt;/h3&gt; <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;Lorem ipsum 
-  dolor..&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp; &lt;/div&gt;<br>&lt;/div&gt;</div>
-<a target="_blank" href="tryit689b.html?filename=trybs_default&amp;stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a></div>
-<div class="w3-panel w3-note">
-  <p>Click on the &quot;Try it Yourself&quot; button to see how it works.</p>
-</div>
-<hr>
-<div id="midcontentadcontainer" style="overflow:auto;text-align:center">
-<!-- MidContent -->
-
-  <!--<pre>mid_content, all: [300,250][336,280][728,90][970,250][970,90][320,50][468,60]</pre>-->
-  <div id="snhb-mid_content-0"></div>
-    
-</div>
-<hr>
-
-<h2>Bootstrap Exercises</h2>
-<form autocomplete="off" id="w3-exerciseform" action="https://www.w3schools.com/bootstrap/exercise_bs3.asp?filename=exercise_bs3_pagination1" method="post" target="_blank">
-<h2>Test Yourself With Exercises</h2>
-<div class="exercisewindow">
-<h2>Exercise:</h2>
-<p>Add the correct class name to transform the list below into a pagination menu.</p>
-<div class="exerciseprecontainer">
-<pre style="background-color:transparent;border:none;">
-&lt;ul class="<input name="ex1" maxlength="10" style="width: 107px;">"&gt;
-  &lt;li&gt;&lt;a href="#"&gt;1&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="#"&gt;2&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="#"&gt;3&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="#"&gt;4&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="#"&gt;5&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</pre>
-</div>
-<br>
-<button type="submit" class="w3-btn w3-margin-bottom">Submit Answer &raquo;</button>
-<p><a target="_blank" href="exercise_bs368e1.html?filename=exercise_bs3_pagination1">Start the Exercise</a></p>
-</div>
-</form>
-
-<hr>
-
-<h2>Bootstrap Quiz Test</h2>
-<p>Test your Bootstrap skills at W3Schools!</p>
-<p><a href="bootstrap_quiz.html" class="w3-button w3-blue">Start Bootstrap Quiz!</a></p>
-<hr>
-
-<h2>Bootstrap References</h2>
-<p>At W3Schools you will find a complete Bootstrap reference of all CSS classes, 
-Components, and JavaScript plugins - all with &quot;Try it Yourself&quot; examples:</p>
-
-<div class="w3-bar-block">
-<a class="w3-button w3-bar-item w3-light-grey" href="bootstrap_ref_all_classes.html">Complete List of All Bootstrap Classes<span class="w3-margin-left w3-tag w3-blue">Popular</span></a>
-<br>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_css_text.html">Bootstrap CSS Text/Typography</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_css_buttons.html">Bootstrap CSS Buttons</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_css_forms.html">Bootstrap CSS Forms</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_css_helpers.html">Bootstrap CSS Helpers</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_css_images.html">Bootstrap CSS Images</a>
-<a class="w3-button w3-bar-item w3-light-grey" href="bootstrap_ref_css_tables.html">Bootstrap CSS Tables</a>
-  <br>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_comp_dropdowns.html">Bootstrap Components Dropdowns</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_comp_navs.html">Bootstrap Components Navs</a>
-<a class="w3-button w3-bar-item w3-light-grey" href="bootstrap_ref_comp_glyphs.html">Bootstrap Components Glyphicons</a>
-  <br>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_affix.html">Bootstrap JS Affix</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_alert.html">Bootstrap JS Alert</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_button.html">Bootstrap JS Button</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_carousel.html">Bootstrap JS Carousel</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_collapse.html">Bootstrap JS Collapse</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_dropdown.html">Bootstrap JS Dropdown</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_modal.html">Bootstrap JS Modal</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_popover.html">Bootstrap JS Popover</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_scrollspy.html">Bootstrap JS Scrollspy</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_tab.html">Bootstrap JS Tab</a>
-<a class="w3-button w3-bar-item w3-light-grey" href="bootstrap_ref_js_tooltip.html">Bootstrap JS Tooltip</a>
-
-</div>
-
-<hr>
-
-<h2>Bootstrap Themes / Templates</h2>
-<p>We have made some Bootstrap Templates you can play around with. They are completely free to use:</p>
-<div class="w3-row-padding w3-stretch">
-<div class="w3-half">
-<a href="trybs_theme_company_full.html" target="_blank" title="Theme Company Demo">
-<img src="bs_themes.jpg" style="width:98%;margin:20px 0" alt="Theme Company"></a>
-<p class="w3-center"><a href="bootstrap_theme_me.html" class="w3-button w3-block w3-padding-large w3-dark-grey w3-margin-top">Browse Themes</a></p>
-</div>
-<div class="w3-half">
-<a href="bootstrap_templates.html" title="Templates Demo">
-<img src="bs_templates2.jpg" style="width:98%;margin:20px 0" alt="Templates"></a>
-<p class="w3-center"><a href="bootstrap_templates.html" class="w3-button w3-block w3-padding-large w3-dark-grey w3-margin-top">Browse Basic Templates</a></p>
-</div>
-
-</div>
-<hr>
-
-<h2>Bootstrap 3 vs. Bootstrap 4</h2>
-<p><a href="../bootstrap4/default.html">Bootstrap 4</a> is the newest version of Bootstrap; with new components, faster stylesheet and more responsiveness.</p>
-<p>Bootstrap 4 supports the latest, stable releases of all major browsers and 
-platforms. However, Internet Explorer 9 and down is not supported. </p>
-<div class="w3-panel w3-note">
-<p class="margin-bottom-remove"><strong>If you require IE8-9 support, use Bootstrap 3.</strong> It is the most 
-stable version of Bootstrap, and it is still supported by the team for critical bugfixes and documentation changes. However, no new features will be added to 
-it.</p>
-</div>
-<a href="../bootstrap4/default.html" class="w3-button w3-dark-grey">Go To Bootstrap 4 &raquo;</a>
-<hr>
-
-<h2>Did You Know?</h2>
-<p>W3.CSS is an excellent alternative to Bootstrap.</p>
-<p>W3.CSS is smaller, faster, and easier to use.</p>
-<p>If you want to learn W3.CSS, go to our <a href="../w3css/default.html">W3.CSS 
-Tutorial</a>.</p>
-<br>
-<div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="../default.html">&#10094; Home</a>
-<a class="w3-right w3-btn" href="bootstrap_get_started.html">Next &#10095;</a>
-</div>
-</div>
-<div class="w3-col l2 m12" id="right">
-
-<div class="sidesection">
-  <div id="skyscraper">
-  
-    <!--<pre>wide_skyscraper, all: [160,600][300,600][320,50][120,600][300,1050]</pre>-->
-    <div id="snhb-wide_skyscraper-0"></div>
-    <!-- adspace wide-->
-  
-  </div>
-</div>
-
-<div class="sidesection">
-<h4><a href="../colors/colors_picker.html">COLOR PICKER</a></h4>
-<a href="../colors/colors_picker.html">
-<img src="../images/colorpicker.gif" alt="colorpicker"></a>
-</div>
-
-<div class="sidesection" id="moreAboutSubject">
-</div>
-
-<!--
-<div id="sidesection_exercise" class="sidesection" style="background-color:#555555;max-width:200px;margin:auto;margin-bottom:32px">
-  <div class="w3-container w3-text-white">
-    <h4>Exercises</h4>
-  </div>
-  <div>
-    <div class="w3-light-grey">
-      <a target="_blank" href="/html/exercise.asp" style="padding-top:8px">HTML</a>
-      <a target="_blank" href="/css/exercise.asp">CSS</a>
-      <a target="_blank" href="/js/exercise_js.asp">JavaScript</a>
-      <a target="_blank" href="/sql/exercise.asp">SQL</a>
-      <a target="_blank" href="/php/exercise.asp">PHP</a>
-      <a target="_blank" href="/python/exercise.asp">Python</a>
-      <a target="_blank" href="/bootstrap/exercise_bs3.asp">Bootstrap</a>
-      <a target="_blank" href="/jquery/exercise_jq.asp" style="padding-bottom:8px">jQuery</a>
     </div>
   </div>
-</div>
--->
 
-<div class="sidesection w3-light-grey" style="margin-left:auto;margin-right:auto;max-width:230px">
-  <div class="w3-container w3-dark-grey">
-    <h4><a href="../howto/default.html" class="w3-hover-text-white">HOW TO</a></h4>
-  </div>
-  <div class="w3-container w3-left-align w3-padding-16">
-    <a href="../howto/howto_js_tabs.html">Tabs</a><br>
-    <a href="../howto/howto_css_dropdown.html">Dropdowns</a><br>
-    <a href="../howto/howto_js_accordion.html">Accordions</a><br>
-    <a href="../howto/howto_js_sidenav.html">Side Navigation</a><br>
-    <a href="../howto/howto_js_topnav.html">Top Navigation</a><br>
-    <a href="../howto/howto_css_modals.html">Modal Boxes</a><br>
-    <a href="../howto/howto_js_progressbar.html">Progress Bars</a><br>
-    <a href="../howto/howto_css_parallax.html">Parallax</a><br>
-    <a href="../howto/howto_css_login_form.html">Login Form</a><br>
-    <a href="../howto/howto_html_include.html">HTML Includes</a><br>
-    <a href="../graphics/google_maps_intro.html">Google Maps</a><br>
-    <a href="../howto/howto_js_rangeslider.html">Range Sliders</a><br>
-    <a href="../howto/howto_css_tooltip.html">Tooltips</a><br>
-    <a href="../howto/howto_js_slideshow.html">Slideshow</a><br>
-    <a href="../howto/howto_js_filter_lists.html">Filter List</a><br>
-    <a href="../howto/howto_js_sort_list.html">Sort List</a><br>
+<div class="split left">
+  <div class="centered">
+    <a href="default.html" class="myLink">
+      <div style="display:inline-block">
+        <span class="mySpan">B3</span>
+        <h1 class="myh1">Learn Bootstrap 3 &raquo;</h1>
+      </div>
+    </a>
+    <p class="myP">Bootstrap is a free <b>CSS framework</b>. Bootstrap 3 is the most stable version of Bootstrap, and it is still supported by the team for critical bugfixes and documentation changes.</p>
   </div>
 </div>
 
-<div class="sidesection">
-<h4>SHARE</h4>
-<div class="w3-text-grey sharethis">
-<script>
-<!--
-try{
-loc=location.pathname;
-if (loc.toUpperCase().indexOf(".ASP")<0) loc=loc+"default.asp";
-txt='<a href="http://www.facebook.com/sharer.php?u=https://www.w3schools.com'+loc+'" target="_blank" title="Facebook"><span class="fa fa-facebook-square fa-2x"></span></a>';
-txt=txt+'<a href="https://twitter.com/home?status=Currently reading https://www.w3schools.com'+loc+'" target="_blank" title="Twitter"><span class="fa fa-twitter-square fa-2x"></span></a>';
-document.write(txt);
-} catch(e) {}
-//-->
-</script>
-<br><br>
-<a href="javascript:void(0);" onclick="clickFBLike()" title="Like W3Schools on Facebook">
-<span class="fa fa-thumbs-o-up fa-2x"></span></a>
-<div id="fblikeframe" class="w3-modal">
-<div class="w3-modal-content w3-padding-64 w3-animate-zoom" id="popupDIV"></div>
-</div>
-</div>
-</div>
-
-<div class="sidesection">
-<h4><a target="_blank" href="../cert/default.html">CERTIFICATES</a></h4>
-<p>
-<a href="../cert/cert_html_new.html">HTML</a><br>
-<a href="../cert/cert_css.html">CSS</a><br>
-<a href="../cert/cert_javascript.html">JavaScript</a><br>
-<a href="../cert/cert_sql.html">SQL</a><br>
-<a href="../cert/cert_python.html">Python</a><br>
-<a href="../cert/cert_php.html">PHP</a><br>
-<a href="../cert/cert_jquery.html">jQuery</a><br>
-<a href="../cert/cert_bootstrap.html">Bootstrap</a><br>
-<a href="../cert/cert_xml.html">XML</a></p>
-<a href="../cert/default.html" class="w3-button w3-dark-grey" style="text-decoration:none">
-Read More &raquo;</a>
-</div>
-
-<div id="stickypos" class="sidesection" style="text-align:center;position:sticky;top:50px;">
-  <div id="stickyadcontainer">
-    <div style="position:relative;margin:auto;">
-      
-      <!--<pre>sidebar_sticky, desktop: [120,600][160,600][300,600][300,250]</pre>-->
-      <div id="snhb-sidebar_sticky-0"></div>
-      <script>
-          if (Number(w3_getStyleValue(document.getElementById("main"), "height").replace("px", "")) > 2200) {
-            // adspace sticky
-            if (document.getElementById("snhb-mid_content-0")) {
-              snhb.queue.push(function(){  snhb.startAuction(["sidebar_sticky", "mid_content" ]); });
-            }
-            else {
-              snhb.queue.push(function(){  snhb.startAuction(["sidebar_sticky"]); });
-            }
-          }
-          else {
-              if (document.getElementById("snhb-mid_content-0")) {
-                snhb.queue.push(function(){  snhb.startAuction(["mid_content"]); });
-              }
-          }
-      </script>  
-      
-    </div>
+<div class="split right">
+  <div class="centered">
+    <a href="../bootstrap4/default.html" class="myLink">
+      <div style="display:inline-block">
+        <span class="mySpan">B4</span>
+        <h1 class="myh1">Learn Bootstrap 4 &raquo;</h1>
+      </div>
+    </a>
+    <p class="myP">Bootstrap 4 is the newest version of Bootstrap; with new components, faster stylesheet and more responsiveness. However, Internet Explorer 9 and down is not supported.</p>
   </div>
 </div>
-
-<script>
-  window.addEventListener("scroll", fix_stickyad);
-  window.addEventListener("resize", fix_stickyad);
-</script>
-
-</div>
-</div>
-<div id="footer" class="footer w3-container w3-white">
-
-<hr>
-
-<div style="overflow:auto">
-  <div class="bottomad">
-    <!-- BottomMediumRectangle -->
-    <!--<pre>bottom_medium_rectangle, all: [970,250][300,250][336,280]</pre>-->
-    <div id="snhb-bottom_medium_rectangle-0" style="padding:0 10px 10px 0;float:left;width:auto;"></div>
-    <!-- adspace bmr -->
-    <!-- RightBottomMediumRectangle -->
-    <!--<pre>right_bottom_medium_rectangle, desktop: [300,250][336,280]</pre>-->
-    <div id="snhb-right_bottom_medium_rectangle-0" style="padding:0 10px 10px 0;float:left;width:auto;"></div>
-  </div>
+<div id="right">
 </div>
 
-<hr>
-<div class="w3-row-padding w3-center w3-small" style="margin:0 -16px">
-<div class="w3-col l3 m3 s12">
-<a class="w3-button w3-light-grey w3-block" href="javascript:void(0);" onclick="displayError();return false" style="white-space:nowrap;text-decoration:none;margin-top:1px;margin-bottom:1px">REPORT ERROR</a>
-</div>
-<div class="w3-col l3 m3 s12">
-<a class="w3-button w3-light-grey w3-block" href="javascript:void(0);" target="_blank" onclick="printPage();return false;" style="text-decoration:none;margin-top:1px;margin-bottom:1px">PRINT PAGE</a>
-</div>
-<div class="w3-col l3 m3 s12">
-<a class="w3-button w3-light-grey w3-block" href="http://w3schools.invisionzone.com/" target="_blank" style="text-decoration:none;margin-top:1px;margin-bottom:1px">FORUM</a>
-</div>
-<div class="w3-col l3 m3 s12">
-<a class="w3-button w3-light-grey w3-block" href="../about/default.html" target="_top" style="text-decoration:none;margin-top:1px;margin-bottom:1px">ABOUT</a>
-</div>
-</div>
-<hr>
-<div class="w3-light-grey w3-padding w3-margin-bottom" id="err_form" style="display:none;position:relative">
-<span onclick="this.parentElement.style.display='none'" class="w3-button w3-display-topright w3-large">&times;</span>     
-<h2>Your Suggestion:</h2>
-<form>
-<div class="w3-section">      
-<label for="err_email">Your E-mail:</label>
-<input class="w3-input w3-border" type="text" style="margin-top:5px;width:100%" id="err_email" name="err_email">
-</div>
-<div class="w3-section">      
-<label for="err_email">Page address:</label>
-<input class="w3-input w3-border" type="text" style="width:100%;margin-top:5px" id="err_url" name="err_url" disabled="disabled">
-</div>
-<div class="w3-section">
-<label for="err_email">Description:</label>
-<textarea rows="10" class="w3-input w3-border" id="err_desc" name="err_desc" style="width:100%;margin-top:5px;resize:vertical;"></textarea>
-</div>
-<div class="form-group">        
-<button type="button" class="w3-button w3-dark-grey" onclick="sendErr()">Submit</button>
-</div>
-<br>
-</form>
-</div>
-<div class="w3-container w3-light-grey w3-padding" id="err_sent" style="display:none;position:relative">
-<span onclick="this.parentElement.style.display='none'" class="w3-button w3-display-topright">&times;</span>     
-<h2>Thank You For Helping Us!</h2>
-<p>Your message has been sent to W3Schools.</p>
-</div>
-
-<div class="w3-row w3-center w3-small">
-<div class="w3-col l3 m6 s12">
-<div class="top10">
-<h4>Top Tutorials</h4>
-<a href="../html/default.html">HTML Tutorial</a><br>
-<a href="../css/default.html">CSS Tutorial</a><br>
-<a href="../js/default.html">JavaScript Tutorial</a><br>
-<a href="../howto/default.html">How To Tutorial</a><br>
-<a href="../sql/default.html">SQL Tutorial</a><br>
-<a href="../python/default.html">Python Tutorial</a><br>
-<a href="../w3css/default.html">W3.CSS Tutorial</a><br>
-<a href="bootstrap_ver.html">Bootstrap Tutorial</a><br>
-<a href="../php/default.html">PHP Tutorial</a><br>
-<a href="../jquery/default.html">jQuery Tutorial</a><br>
-<a href="../java/default.html">Java Tutorial</a><br>
-<a href="../cpp/default.html">C++ Tutorial</a><br>
-</div>
-</div>
-<div class="w3-col l3 m6 s12">
-<div class="top10">
-<h4>Top References</h4>
-<a href="../tags/default.html">HTML Reference</a><br>
-<a href="../cssref/default.html">CSS Reference</a><br>
-<a href="../jsref/default.html">JavaScript Reference</a><br>
-<a href="../sql/sql_ref_keywords.html">SQL Reference</a><br>
-<a href="../python/python_reference.html">Python Reference</a><br>
-<a href="../w3css/w3css_references.html">W3.CSS Reference</a><br>
-<a href="bootstrap_ref_all_classes.html">Bootstrap Reference</a><br>
-<a href="../php/php_ref_overview.html">PHP Reference</a><br>
-<a href="../colors/colors_names.html">HTML Colors</a><br>
-<a href="../jquery/jquery_ref_overview.html">jQuery Reference</a><br>
-<a href="../java/java_ref_keywords.html">Java Reference</a><br>
-<a href="../angular/angular_ref_directives.html">Angular Reference</a><br>
-</div>
-</div>
-<div class="w3-col l3 m6 s12">
-<div class="top10">
-<h4>Top Examples</h4>
-<a href="../html/html_examples.html">HTML Examples</a><br>
-<a href="../css/css_examples.html">CSS Examples</a><br>
-<a href="../js/js_examples.html">JavaScript Examples</a><br>
-<a href="../howto/default.html">How To Examples</a><br>
-<a href="../sql/sql_examples.html">SQL Examples</a><br>
-<a href="../python/python_examples.html">Python Examples</a><br>
-<a href="../w3css/w3css_examples.html">W3.CSS Examples</a><br>
-<a href="bootstrap_examples.html">Bootstrap Examples</a><br>
-<a href="../php/php_examples.html">PHP Examples</a><br>
-<a href="../jquery/jquery_examples.html">jQuery Examples</a><br>
-<a href="../java/java_examples.html">Java Examples</a><br>
-<a href="../xml/xml_examples.html">XML Examples</a><br>
-</div>
-</div>
-<div class="w3-col l3 m6 s12">
-<div class="top10">
-<h4>Web Certificates</h4>
-<a href="../cert/default.html">HTML Certificate</a><br>
-<a href="../cert/default.html">CSS Certificate</a><br>
-<a href="../cert/default.html">JavaScript Certificate</a><br>
-<a href="../cert/default.html">SQL Certificate</a><br>
-<a href="../cert/default.html">Python Certificate</a><br>
-<a href="../cert/default.html">jQuery Certificate</a><br>
-<a href="../cert/default.html">PHP Certificate</a><br>
-<a href="../cert/default.html">Bootstrap Certificate</a><br>
-<a href="../cert/default.html">XML Certificate</a><br>
-<a href="../cert/default.html" class="w3-button w3-margin-top w3-dark-grey" style="text-decoration:none">
-Get Certified &raquo;</a>
-
-</div>
-</div>        
-</div>        
-
-<hr>
-<div class="w3-center w3-small w3-opacity">
-W3Schools is optimized for learning, testing, and training. Examples might be simplified to improve reading and basic understanding.
-Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content.
-While using this site, you agree to have read and accepted our <a href="../about/about_copyright.html">terms of use</a>,
-<a href="../about/about_privacy.html">cookie and privacy policy</a>.
-<a href="../about/about_copyright.html">Copyright 1999-2019</a> by Refsnes Data. All Rights Reserved.<br>
- <a href="../w3css/index.html">Powered by W3.CSS</a>.<br><br>
-<a href="../index.html">
-<img style="width:150px;height:28px;border:0" src="../images/w3schoolscom_gray.gif" alt="W3Schools.com"></a>
-</div>
-<br><br>
-</div>
-
-</div>
 <script src="../lib/w3schools_footer.js"></script>
 <script src="../../translate.google.com/translate_a/elementa0d8.html?cb=googleTranslateElementInit"></script>
 <!--[if lt IE 9]>
@@ -1242,4 +883,6 @@ While using this site, you agree to have read and accepted our <a href="../about
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>  
 <![endif]-->
 </body>
+
+<!-- Mirrored from www.w3schools.com/bootstrap/bootstrap_ver.asp by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Sep 2019 08:36:44 GMT -->
 </html>

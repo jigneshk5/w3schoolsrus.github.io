@@ -1,10 +1,13 @@
+
 <!DOCTYPE html>
 <html lang="en-US">
+
+<!-- Mirrored from www.w3schools.com/bootstrap/bootstrap_tabs_pills.asp by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Sep 2019 08:46:37 GMT -->
 <head>
-<title>Bootstrap 3 Учебник</title>
-<link rel="stylesheet" href="../../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<title>Bootstrap Tabs and Pills</title>
+<link rel="stylesheet" href="../../maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 <script src="../../ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-<script src="../../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="../../maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="Keywords" content="HTML,CSS,JavaScript,SQL,PHP,jQuery,XML,DOM,Bootstrap,Python,Java,Web development,W3C,tutorials,programming,training,learning,quiz,primer,lessons,references,examples,exercises,source code,colors,demos,tips">
@@ -378,14 +381,18 @@ ga('require', 'displayfeatures');
 ga('send', 'pageview');
 </script>
 
-<script src="../../snigelweb-com.videoplayerhub.com/videoloader.js" async></script>
-
 <script type='text/javascript'>
 var k42 = false;
 var googletag = googletag || {}; googletag.cmd = googletag.cmd || [];
 
-k42 = true;
-(adsbygoogle=window.adsbygoogle||[]).pauseAdRequests=1;
+(function() {
+  var gads = document.createElement('script');
+  gads.async = true;
+  gads.type = 'text/javascript';
+  gads.src = '../../www.googletagservices.com/tag/js/gpt.js';
+  var node = document.getElementsByTagName('script')[0];
+  node.parentNode.insertBefore(gads, node);
+})();
 
 var snhb = snhb || {}; snhb.queue = snhb.queue || [];
 snhb.options = {
@@ -396,6 +403,85 @@ snhb.options = {
                      reconsiderationAppealIntervalSeconds: 0
                      }
                };
+
+// GPT slots
+var gptAdSlots = [];
+googletag.cmd.push(function() {
+  googletag.pubads().disableInitialLoad();               
+  googletag.pubads().enableSingleRequest();
+  var leaderMapping = googletag.sizeMapping().
+    // Mobile ad
+    addSize([0, 0], [320, 50]). 
+    // Vertical Tablet ad
+    addSize([480, 0], [468, 60]). 
+    // Horizontal Tablet
+    addSize([780, 0], [728, 90]).
+    // Small Desktop
+    addSize([993, 0], [468, 60]).
+    // Normal Desktop
+    addSize([1150, 0], [728, 90]).
+    // Large Desktop and bigger ad
+    addSize([1425, 0], [[728, 90], [970, 90]]).build();
+  gptAdSlots[0] = googletag.defineSlot('/16833175/MainLeaderboard', [[728, 90], [970, 90]], 'div-gpt-ad-1422003450156-2').
+    defineSizeMapping(leaderMapping).addService(googletag.pubads());
+  var skyMapping = googletag.sizeMapping().
+    // Mobile ad
+    addSize([0, 0], [320, 50]). 
+    // Tablet ad
+    addSize([975, 0], [120, 600]). 
+    // Desktop
+    addSize([1135, 0], [160, 600]).   
+    // Large Desktop
+    addSize([1675, 0], [[160, 600], [300, 600], [300, 1050]]).build();
+  gptAdSlots[1] = googletag.defineSlot('/16833175/WideSkyScraper', [[160, 600], [300, 600], [300, 1050]], 'div-gpt-ad-1422003450156-5').
+    defineSizeMapping(skyMapping).addService(googletag.pubads());
+  var stickyMapping = googletag.sizeMapping().
+    // Mobile ad
+    addSize([0, 0], []). 
+    // Tablet ad
+    addSize([975, 0], [120, 600]). 
+    // Desktop
+    addSize([1135, 0], [160, 600]).   
+    // Large Desktop
+    addSize([1675, 0], [[160, 600], [300, 600], [300, 250]]).build();
+  gptAdSlots[4] = googletag.defineSlot('/16833175/StickySkyScraper', [[300, 600], [120, 600], [300, 250], [160, 600]], 'div-gpt-ad-1472547360578-0').
+    defineSizeMapping(stickyMapping).addService(googletag.pubads());
+  var mcontMapping = googletag.sizeMapping().
+    // Mobile ad
+    addSize([0, 0], [[300, 250], [336, 280], [320, 50]]). 
+    // Vertical Tablet ad
+    addSize([490, 0], [[300, 250], [336, 280], [468, 60]]). 
+    // Horizontal Tablet
+    addSize([750, 0], [728, 90]).
+    // Small Desktop
+    addSize([993, 0], [[300, 250], [336, 280], [468, 60]]).
+    // Normal Desktop
+    addSize([1135, 0], [728, 90]).
+    // Large Desktop and bigger ad
+    addSize([1440, 0], [[728, 90], [970, 90], [970, 250]]).build();
+  gptAdSlots[5] = googletag.defineSlot('/16833175/MidContent', [[300, 250], [336, 280]], 'div-gpt-ad-1493883843099-0').
+    defineSizeMapping(mcontMapping).setCollapseEmptyDiv(true).addService(googletag.pubads());
+  var bmrMapping = googletag.sizeMapping().
+    // Smaller
+    addSize([0, 0], [[300, 250], [336, 280]]). 
+    // Large Desktop
+    addSize([1240, 0], [[300, 250], [336, 280], [970, 250]]).build();
+    gptAdSlots[2] = googletag.defineSlot('/16833175/BottomMediumRectangle', [[300, 250], [336, 280], [970, 250]], 'div-gpt-ad-1422003450156-0').
+    defineSizeMapping(bmrMapping).setCollapseEmptyDiv(true).addService(googletag.pubads());
+  var rbmrMapping = googletag.sizeMapping().
+    // Smaller
+    addSize([0, 0], []). 
+    // Large Desktop
+    addSize([975, 0], [[300, 250], [336, 280]]).build();
+  gptAdSlots[3] = googletag.defineSlot('/16833175/RightBottomMediumRectangle', [[300, 250], [336, 280]], 'div-gpt-ad-1422003450156-3').
+    defineSizeMapping(rbmrMapping).setCollapseEmptyDiv(true).addService(googletag.pubads());
+  googletag.pubads().setTargeting("content",(function () {
+    var folder = location.pathname;
+    folder = folder.replace("../index.html", "");
+    folder = folder.substr(0, folder.indexOf("../index.html"));
+    return folder;
+  })());
+});  
 
 </script>
 <script src="../../static.h-bid.com/sncmp/sncmp_stub.min.js" type="text/javascript"></script>
@@ -420,7 +506,7 @@ snhb.options = {
 <script>
   snhb.queue.push(function(){
 
-    snhb.startAuction(["main_leaderboard", "wide_skyscraper", "bottom_medium_rectangle", "right_bottom_medium_rectangle"]);
+    snhb.addAdditionalAdSlotsToRefresh(gptAdSlots);
 
   });
 </script>
@@ -484,8 +570,33 @@ function w3_getStyleValue(elmnt,style) {
 </script>
 <link rel="stylesheet" href="w3-fix.css">
 <style>
-.w3-ul li a {
-  text-decoration:none;
+ul.test1 a {
+  color: #337ab7;
+  text-decoration: none !important;
+}
+ul.test1 a:hover, ul.test1 a:focus {
+  color: #777;
+}
+
+ul.test2 a {
+  color: #337ab7;
+  text-decoration: none !important;
+  border-radius: 4px;
+}
+ul.test2 a:hover, ul.test2 a:focus {
+  color: #777;
+}
+
+a.dropdown-toggle:focus {
+  background-color: #f3f3f3 !important;
+  color: #337ab7;
+}
+.dropdown-menu li a {
+  color: black;
+}
+
+.dropdown-menu li a:focus {
+  background-color: #f3f3f3 !important;
 }
 </style>
 </head>
@@ -799,156 +910,306 @@ function w3_getStyleValue(elmnt,style) {
     <div class='w3-col l10 m12' id='main'>
       <div id='mainLeaderboard' style='overflow:hidden;'>
         <!-- MainLeaderboard-->
-
-        <!--<pre>main_leaderboard, all: [728,90][970,90][320,50][468,60]</pre>-->
-        <div id="snhb-main_leaderboard-0"></div>
-        <!-- adspace leaderboard -->
+        
+        <div id='div-gpt-ad-1422003450156-2'>
+          <script type='text/javascript'>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1422003450156-2'); });</script>
+        </div>
        
       </div>
-<h1>Bootstrap 3 <span class="color_h1">Tutorial</span></h1>
+<h1>Bootstrap <span class="color_h1">Tabs and Pills</span></h1>
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="../default.html">&#10094; Home</a>
-<a class="w3-right w3-btn" href="bootstrap_get_started.html">Next &#10095;</a>
+<a class="w3-left w3-btn" href="bootstrap_collapse.html">&#10094; Previous</a>
+<a class="w3-right w3-btn" href="bootstrap_navbar.html">Next &#10095;</a>
 </div>
-
-<div class="w3-panel w3-info intro w3-padding-16">
-<p>Bootstrap is the most popular HTML, CSS, and JavaScript framework for developing responsive, mobile-first websites.</p>
-<p>Bootstrap is completely free to download and use!</p>
-<a href="bootstrap_get_started.html" class="w3-btn w3-padding-large w3-hide-small" style="margin-top:5px">Start learning Bootstrap now &raquo;</a>
-<a href="bootstrap_get_started.html" class="w3-btn w3-block w3-hide-large w3-hide-medium" style="margin-top:5px;padding:8px 16px">Learn Bootstrap</a>
+<hr>
+<h2>Menus</h2>
+<p>Most web pages have some kind of a menu.</p>
+<p>In HTML, a menu is often defined in an unordered list <code class="w3-codespan">&lt;ul&gt;</code> (and styled 
+afterwards), like this:</p>
+<div class="w3-example">
+<div class="w3-code notranslate htmlHigh">
+&lt;ul&gt;<br>&nbsp; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;<br>&nbsp; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Menu 1&lt;/a&gt;&lt;/li&gt;<br>&nbsp; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Menu 2&lt;/a&gt;&lt;/li&gt;<br>&nbsp; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Menu 3&lt;/a&gt;&lt;/li&gt;<br>&lt;/ul&gt;</div>
 </div>
+<p>If you want to create a horizontal menu of the list above, add the 
+<code class="w3-codespan">.list-inline</code> class to <code class="w3-codespan">&lt;ul&gt;</code>:</p>
+<div class="w3-example">
+<div class="w3-code notranslate htmlHigh">
+&lt;ul class=&quot;list-inline&quot;&gt;</div>
+<a target="_blank" href="tryite4e9.html?filename=trybs_menu_list-inline&amp;stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
 
+</div>
+<p>Or you can display the menu above with Bootstraps' Tabs and Pills (see 
+below).</p>
+<div class="w3-panel w3-note">
+<p><strong>Note:</strong> See the <strong>last example</strong> on this page to find out how to make tabs and pills toggleable/dynamic.</p>
+</div>
 <hr>
 
-<h2>Try it Yourself Examples</h2>
-<p>This Bootstrap tutorial contains hundreds of Bootstrap examples.</p>
-<p>With our online editor, you can edit the code, and click on a button to view the result.</p>
-<img src="imgdefault.jpg" alt="Responsive Bootstrap Page" style="width:95%;margin:16px auto;display:block">
+<h2>Tabs</h2>
+<ul style="margin:20px 0 22px 0;" class="test1 nav nav-tabs">
+  <li class="active"><a data-toggle="tab" href="#">Home</a></li>
+  <li><a data-toggle="tab" href="#">Menu 1</a></li>
+  <li><a data-toggle="tab" href="#">Menu 2</a></li>
+  <li><a data-toggle="tab" href="#">Menu 3</a></li>
+</ul>
+<p>Tabs are created with <code class="w3-codespan">&lt;ul class=&quot;nav nav-tabs&quot;&gt;</code>:</p>
 
-<div class="w3-example">
-<h3>Bootstrap Example</h3>
+<p><strong>Tip:</strong> Also mark the current page with <code class="w3-codespan">&lt;li class=&quot;active&quot;&gt;</code>.</p>
+<p>The following example creates navigation tabs:</p>
+<div class="w3-example" style="margin-bottom:36px;">
+<h3>Example</h3>
 <div class="w3-code notranslate htmlHigh">
-  &lt;div class=&quot;jumbotron text-center&quot;&gt;<br>&nbsp;&nbsp;&lt;h1&gt;My First Bootstrap Page&lt;/h1&gt;<br>&nbsp; &lt;p&gt;Resize this responsive page to see the effect!&lt;/p&gt; <br>&lt;/div&gt;<br><br>&lt;div class=&quot;container&quot;&gt;<br>&nbsp; &lt;div class=&quot;row&quot;&gt;<br>
-  &nbsp;&nbsp;&nbsp; &lt;div class=&quot;col-sm-4&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h3&gt;Column 1&lt;/h3&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;Lorem ipsum 
-  dolor..&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp;&nbsp;&nbsp; &lt;div class=&quot;col-sm-4&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h3&gt;Column 2&lt;/h3&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;Lorem ipsum 
-  dolor..&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp;&nbsp;&nbsp; &lt;div class=&quot;col-sm-4&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h3&gt;Column 3&lt;/h3&gt; <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;Lorem ipsum 
-  dolor..&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp; &lt;/div&gt;<br>&lt;/div&gt;</div>
-<a target="_blank" href="tryit689b.html?filename=trybs_default&amp;stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a></div>
-<div class="w3-panel w3-note">
-  <p>Click on the &quot;Try it Yourself&quot; button to see how it works.</p>
+ &lt;ul class=&quot;nav nav-tabs&quot;&gt;<br>&nbsp; &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;<br>&nbsp; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Menu 1&lt;/a&gt;&lt;/li&gt;<br>&nbsp; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Menu 2&lt;/a&gt;&lt;/li&gt;<br>&nbsp; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Menu 3&lt;/a&gt;&lt;/li&gt;<br>&lt;/ul&gt;<br></div>
+<a target="_blank" href="tryitafda.html?filename=trybs_tabs&amp;stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
+</div>
+
+<h3>Tabs With Dropdown Menu</h3>
+<ul style="margin:20px 0 22px 0;" class="test1 nav nav-tabs">
+  <li data-toggle="tab" class="active"><a href="#">Home</a></li>
+  <li data-toggle="tab" class="dropdown">
+    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Menu 1
+    <span class="caret"></span></a>
+    <ul class="dropdown-menu">
+      <li><a href="#">Submenu 1-1</a></li>
+      <li><a href="#">Submenu 1-2</a></li>
+      <li><a href="#">Submenu 1-3</a></li> 
+    </ul>
+  </li>
+  <li data-toggle="tab"><a href="#">Menu 2</a></li>
+  <li data-toggle="tab"><a href="#">Menu 3</a></li>
+</ul><p>Tabs can also hold dropdown menus.</p>
+<p>The following example adds a dropdown menu to &quot;Menu 1&quot;:</p>
+<div class="w3-example">
+ <h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;ul class=&quot;nav nav-tabs&quot;&gt;<br>&nbsp; &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;<br>&nbsp; &lt;li class=&quot;dropdown&quot;&gt;<br>&nbsp;&nbsp;&nbsp; &lt;a class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; href=&quot;#&quot;&gt;Menu 1<br>&nbsp;&nbsp;&nbsp; &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/a&gt;<br>&nbsp;&nbsp;&nbsp; &lt;ul class=&quot;dropdown-menu&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Submenu 1-1&lt;/a&gt;&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Submenu 1-2&lt;/a&gt;&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Submenu 1-3&lt;/a&gt;&lt;/li&gt; <br>&nbsp;&nbsp;&nbsp; &lt;/ul&gt;<br>&nbsp; &lt;/li&gt;<br>&nbsp; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Menu 2&lt;/a&gt;&lt;/li&gt;<br>&nbsp; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Menu 3&lt;/a&gt;&lt;/li&gt;<br>&lt;/ul&gt;<br></div>
+<a target="_blank" href="tryit22e4.html?filename=trybs_tabs_dropdown&amp;stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
 </div>
 <hr>
 <div id="midcontentadcontainer" style="overflow:auto;text-align:center">
 <!-- MidContent -->
 
-  <!--<pre>mid_content, all: [300,250][336,280][728,90][970,250][970,90][320,50][468,60]</pre>-->
-  <div id="snhb-mid_content-0"></div>
+  <div id='div-gpt-ad-1493883843099-0' style="display: inline-block">
+    <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1493883843099-0'); });
+    </script>
+  </div>
     
 </div>
 <hr>
 
-<h2>Bootstrap Exercises</h2>
-<form autocomplete="off" id="w3-exerciseform" action="https://www.w3schools.com/bootstrap/exercise_bs3.asp?filename=exercise_bs3_pagination1" method="post" target="_blank">
+
+<h2>Pills</h2>
+<ul style="margin:19px 0 15px 0;" class="test2 nav nav-pills">
+  <li class="active"><a data-toggle="pill" href="#">Home</a></li>
+  <li><a data-toggle="pill" href="#">Menu 1</a></li>
+  <li><a data-toggle="pill" href="#">Menu 2</a></li>
+  <li><a data-toggle="pill" href="#">Menu 3</a></li>
+</ul>
+<p>Pills are created with <code class="w3-codespan">&lt;ul class=&quot;nav nav-pills&quot;&gt;</code>. Also mark the current page with 
+<code class="w3-codespan">&lt;li class=&quot;active&quot;&gt;</code>:</p>
+<div class="w3-example">
+ <h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;ul class=&quot;nav nav-pills&quot;&gt;<br>&nbsp; &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;<br>&nbsp; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Menu 1&lt;/a&gt;&lt;/li&gt;<br>&nbsp; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Menu 2&lt;/a&gt;&lt;/li&gt;<br>&nbsp; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Menu 3&lt;/a&gt;&lt;/li&gt;<br>&lt;/ul&gt;</div>
+<a target="_blank" href="tryit980d.html?filename=trybs_pills&amp;stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
+</div>
+
+<h3>Vertical Pills</h3>
+<ul style="margin:19px 0 13px 0;" class="test2 nav nav-pills nav-stacked">
+  <li class="active"><a data-toggle="pill" href="#">Home</a></li>
+  <li><a data-toggle="pill" href="#">Menu 1</a></li>
+  <li><a data-toggle="pill" href="#">Menu 2</a></li>
+  <li><a data-toggle="pill" href="#">Menu 3</a></li>
+</ul>
+<p>Pills can also be displayed vertically. Just add the <code class="w3-codespan">.nav-stacked</code> class:</p>
+<div class="w3-example">
+ <h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;ul class=&quot;nav nav-pills nav-stacked&quot;&gt;<br>&nbsp;&nbsp;&lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;<br>&nbsp; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Menu 1&lt;/a&gt;&lt;/li&gt;<br>&nbsp;&nbsp;&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Menu 2&lt;/a&gt;&lt;/li&gt;<br>&nbsp; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Menu 3&lt;/a&gt;&lt;/li&gt;<br>
+ &lt;/ul&gt;<br>
+ </div>
+<a target="_blank" href="tryitc3a7.html?filename=trybs_pills_vertical&amp;stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
+</div>
+
+<h3>Vertical Pills in a Row</h3>
+<div style="width:90%;margin:35px 0">
+  <div class="row">
+    <div class="col-md-3">
+      <p>Text...</p>
+    </div>
+    <div class="col-md-3"> 
+      <p>Text...</p>
+    </div>
+    <div class="col-md-3"> 
+      <p>Text...</p>
+    </div>
+    <div class="col-md-3">
+      <ul class="nav nav-pills nav-stacked test2">
+        <li class="active"><a href="#" data-toggle="tab">Home</a></li>
+        <li><a href="#" data-toggle="tab">Menu 1</a></li>
+        <li><a href="#" data-toggle="tab">Menu 2</a></li>
+        <li><a href="#" data-toggle="tab">Menu 3</a></li>
+      </ul>
+    </div>
+    <div class="clearfix visible-lg"></div>
+  </div>
+</div>
+
+<p>The following example places the vertical pill menu inside the last column. 
+So, on a large screen the menu will be displayed to the right. But on a small 
+screen, the content will automatically adjust itself into a single-column 
+layout:</p>
+<div class="w3-example">
+ <h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;div class=&quot;col-md-3&quot;&gt;<br>&nbsp; &lt;ul class=&quot;nav nav-pills nav-stacked&quot;&gt;<br>&nbsp;&nbsp;&nbsp; &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;<br>&nbsp; &nbsp; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Menu 1&lt;/a&gt;&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Menu 2&lt;/a&gt;&lt;/li&gt;<br>&nbsp; &nbsp; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Menu 3&lt;/a&gt;&lt;/li&gt;<br>&nbsp; &lt;/ul&gt;<br>
+ &lt;/div&gt;</div>
+<a target="_blank" href="tryitb154.html?filename=trybs_pills_vertical_row&amp;stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
+</div>
+<h3>Pills With Dropdown Menu</h3>
+
+<ul style="margin:16px 0 15px 0;" class="test2 nav nav-pills nav-stacked">
+  <li data-toggle="pill" class="active"><a href="#">Home</a></li>
+  <li data-toggle="pill" class="dropdown">
+    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Menu 1
+    <span class="caret"></span></a>
+    <ul class="dropdown-menu">
+      <li><a href="#">Submenu 1-1</a></li>
+      <li><a href="#">Submenu 1-2</a></li>
+      <li><a href="#">Submenu 1-3</a></li> 
+    </ul>
+  </li>
+  <li data-toggle="pill"><a href="#">Menu 2</a></li>
+  <li data-toggle="pill"><a href="#">Menu 3</a></li>
+</ul>
+<p>Pills can also hold dropdown menus.</p>
+<p>The following example adds a dropdown menu to &quot;Menu 1&quot;:</p>
+<div class="w3-example">
+ <h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;ul class=&quot;nav nav-pills nav-stacked&quot;&gt;<br>&nbsp; &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;<br>&nbsp; &lt;li class=&quot;dropdown&quot;&gt;<br>&nbsp;&nbsp;&nbsp; &lt;a class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; href=&quot;#&quot;&gt;Menu 1<br>&nbsp;&nbsp;&nbsp; &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/a&gt;<br>&nbsp;&nbsp;&nbsp; &lt;ul class=&quot;dropdown-menu&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Submenu 1-1&lt;/a&gt;&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Submenu 1-2&lt;/a&gt;&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Submenu 1-3&lt;/a&gt;&lt;/li&gt; <br>&nbsp;&nbsp;&nbsp; &lt;/ul&gt;<br>&nbsp; &lt;/li&gt;<br>&nbsp; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Menu 2&lt;/a&gt;&lt;/li&gt;<br>&nbsp; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Menu 3&lt;/a&gt;&lt;/li&gt;<br>&lt;/ul&gt;<br></div>
+<a target="_blank" href="tryitfffe.html?filename=trybs_pills_dropdown&amp;stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
+</div>
+<hr>
+
+<h2>Centered Tabs and Pills</h2>
+<ul style="margin:19px 0 18px 0;" class="test2 nav nav-pills nav-justified">
+  <li class="active"><a data-toggle="pill" href="#">Home</a></li>
+  <li><a data-toggle="pill" href="#">Menu 1</a></li>
+  <li><a data-toggle="pill" href="#">Menu 2</a></li>
+  <li><a data-toggle="pill" href="#">Menu 3</a></li>
+</ul>
+<p>To center/justify the tabs and pills, use the <code class="w3-codespan">.nav-justified</code> class.</p>
+<p>Note that on screens that are smaller than 768px, the list items are stacked 
+(content will remain centered):</p>
+<div class="w3-example">
+ <h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;!-- Centered Tabs --&gt;<br>&lt;ul class=&quot;nav nav-tabs nav-justified&quot;&gt;<br>&nbsp; &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;<br>&nbsp; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Menu 1&lt;/a&gt;&lt;/li&gt;<br>&nbsp; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Menu 2&lt;/a&gt;&lt;/li&gt;<br>&nbsp; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Menu 3&lt;/a&gt;&lt;/li&gt;<br>&lt;/ul&gt;<br><br>&lt;!-- Centered Pills --&gt;<br>&lt;ul class=&quot;nav nav-pills nav-justified&quot;&gt;<br>&nbsp; &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;<br>&nbsp; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Menu 1&lt;/a&gt;&lt;/li&gt;<br>&nbsp; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Menu 2&lt;/a&gt;&lt;/li&gt;<br>&nbsp; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Menu 3&lt;/a&gt;&lt;/li&gt;<br>&lt;/ul&gt;<br></div>
+<a target="_blank" href="tryit4d01.html?filename=trybs_tabs_pills_justified&amp;stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
+</div>
+<hr>
+
+<h2>Toggleable / Dynamic Tabs</h2>
+
+<div style="margin-top:15px;margin-bottom:18px;border:2px solid #f1f1f1;border-radius:2px;padding:25px;">
+<ul style="margin:19px 0 18px 0;" class="nav nav-tabs test2">
+    <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+    <li><a data-toggle="tab" href="#menu1">Menu 1</a></li>
+    <li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
+    <li><a data-toggle="tab" href="#menu3">Menu 3</a></li>
+</ul>
+
+<div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+      <h3>HOME</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+    <div id="menu1" class="tab-pane fade">
+      <h3>Menu 1</h3>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <div id="menu2" class="tab-pane fade">
+      <h3>Menu 2</h3>
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+    </div>
+    <div id="menu3" class="tab-pane fade">
+      <h3>Menu 3</h3>
+      <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+    </div>
+</div>
+</div>
+
+<p>To make the tabs toggleable, add the <code class="w3-codespan">data-toggle=&quot;tab&quot;</code> attribute to each link. 
+Then add a <code class="w3-codespan">.tab-pane</code> class with a unique ID for every tab and wrap them inside a 
+<code class="w3-codespan">&lt;div&gt;</code> element with class <code class="w3-codespan">.tab-content</code>.</p>
+<p>If you want the tabs to fade in and out when clicking on them, add the <code class="w3-codespan">
+.fade</code> class to <code class="w3-codespan">.tab-pane</code>:</p>
+<div class="w3-example">
+ <h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;ul class=&quot;nav nav-tabs&quot;&gt;<br>&nbsp; &lt;li class=&quot;active&quot;&gt;&lt;a data-toggle=&quot;tab&quot; href=&quot;#home&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;<br>&nbsp; &lt;li&gt;&lt;a data-toggle=&quot;tab&quot; href=&quot;#menu1&quot;&gt;Menu 1&lt;/a&gt;&lt;/li&gt;<br>&nbsp; &lt;li&gt;&lt;a data-toggle=&quot;tab&quot; href=&quot;#menu2&quot;&gt;Menu 2&lt;/a&gt;&lt;/li&gt;<br>
+ &lt;/ul&gt;<br><br>&lt;div class=&quot;tab-content&quot;&gt;<br>&nbsp; &lt;div id=&quot;home&quot; class=&quot;tab-pane fade in active&quot;&gt;<br>&nbsp;&nbsp;&nbsp; &lt;h3&gt;HOME&lt;/h3&gt;<br>&nbsp;&nbsp;&nbsp; &lt;p&gt;Some content.&lt;/p&gt;<br>&nbsp; &lt;/div&gt;<br>&nbsp; &lt;div id=&quot;menu1&quot; class=&quot;tab-pane fade&quot;&gt;<br>&nbsp;&nbsp;&nbsp; &lt;h3&gt;Menu 1&lt;/h3&gt;<br>&nbsp;&nbsp;&nbsp; &lt;p&gt;Some content in menu 1.&lt;/p&gt;<br>&nbsp; &lt;/div&gt;<br>&nbsp; &lt;div id=&quot;menu2&quot; class=&quot;tab-pane fade&quot;&gt;<br>&nbsp;&nbsp;&nbsp; &lt;h3&gt;Menu 2&lt;/h3&gt;<br>&nbsp;&nbsp;&nbsp; &lt;p&gt;Some content in menu 2.&lt;/p&gt;<br>&nbsp; &lt;/div&gt;<br>&lt;/div&gt;<br></div>
+<a target="_blank" href="tryite653.html?filename=trybs_tabs_dynamic&amp;stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
+</div>
+<hr>
+
+<h2>Toggleable / Dynamic Pills</h2>
+<p>The same code applies to pills; only change the data-toggle 
+attribute to <code class="w3-codespan">data-toggle=&quot;pill&quot;</code>:</p>
+<div class="w3-example">
+ <h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;ul class=&quot;nav nav-pills&quot;&gt;<br>&nbsp; &lt;li class=&quot;active&quot;&gt;&lt;a data-toggle=&quot;pill&quot; href=&quot;#home&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;<br>&nbsp; &lt;li&gt;&lt;a data-toggle=&quot;pill&quot; href=&quot;#menu1&quot;&gt;Menu 1&lt;/a&gt;&lt;/li&gt;<br>&nbsp; &lt;li&gt;&lt;a data-toggle=&quot;pill&quot; href=&quot;#menu2&quot;&gt;Menu 2&lt;/a&gt;&lt;/li&gt;<br>
+ &lt;/ul&gt;<br><br>&lt;div class=&quot;tab-content&quot;&gt;<br>&nbsp; &lt;div id=&quot;home&quot; class=&quot;tab-pane fade in active&quot;&gt;<br>&nbsp;&nbsp;&nbsp; &lt;h3&gt;HOME&lt;/h3&gt;<br>&nbsp;&nbsp;&nbsp; &lt;p&gt;Some content.&lt;/p&gt;<br>&nbsp; &lt;/div&gt;<br>&nbsp; &lt;div id=&quot;menu1&quot; class=&quot;tab-pane fade&quot;&gt;<br>&nbsp;&nbsp;&nbsp; &lt;h3&gt;Menu 1&lt;/h3&gt;<br>&nbsp;&nbsp;&nbsp; &lt;p&gt;Some content in menu 1.&lt;/p&gt;<br>&nbsp; &lt;/div&gt;<br>&nbsp; &lt;div id=&quot;menu2&quot; class=&quot;tab-pane fade&quot;&gt;<br>&nbsp;&nbsp;&nbsp; &lt;h3&gt;Menu 2&lt;/h3&gt;<br>&nbsp;&nbsp;&nbsp; &lt;p&gt;Some content in menu 2.&lt;/p&gt;<br>&nbsp; &lt;/div&gt;<br>&lt;/div&gt;<br></div>
+<a target="_blank" href="tryit8a1e.html?filename=trybs_pills_dynamic&amp;stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
+</div>
+<hr>
+<form autocomplete="off" id="w3-exerciseform" action="https://www.w3schools.com/bootstrap/exercise_bs3.asp?filename=exercise_bs3_tabs1" method="post" target="_blank">
 <h2>Test Yourself With Exercises</h2>
 <div class="exercisewindow">
 <h2>Exercise:</h2>
-<p>Add the correct class name to transform the list below into a pagination menu.</p>
+<p>Add the required class to create a Tab Menu.</p>
 <div class="exerciseprecontainer">
 <pre style="background-color:transparent;border:none;">
-&lt;ul class="<input name="ex1" maxlength="10" style="width: 107px;">"&gt;
-  &lt;li&gt;&lt;a href="#"&gt;1&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="#"&gt;2&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="#"&gt;3&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="#"&gt;4&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="#"&gt;5&lt;/a&gt;&lt;/li&gt;
+&lt;ul class="<input name="ex1" maxlength="12" style="width: 128px;">"&gt;
+  &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;HTML&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;CSS&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;JavaScript&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </pre>
 </div>
 <br>
 <button type="submit" class="w3-btn w3-margin-bottom">Submit Answer &raquo;</button>
-<p><a target="_blank" href="exercise_bs368e1.html?filename=exercise_bs3_pagination1">Start the Exercise</a></p>
+<p><a target="_blank" href="exercise_bs3ab02.html?filename=exercise_bs3_tabs1">Start the Exercise</a></p>
 </div>
 </form>
-
 <hr>
 
-<h2>Bootstrap Quiz Test</h2>
-<p>Test your Bootstrap skills at W3Schools!</p>
-<p><a href="bootstrap_quiz.html" class="w3-button w3-blue">Start Bootstrap Quiz!</a></p>
+<!--
+<h2>Test Yourself with Exercises!</h2>
+<p>
+<a class="w3-btn" href="exercise.asp?filename=exercise_tabs1" target="_blank">Exercise 1 &raquo;</a>&nbsp;
+<a class="w3-btn" href="exercise.asp?filename=exercise_tabs2" target="_blank">Exercise 2 &raquo;</a>&nbsp;
+<a class="w3-btn" href="exercise.asp?filename=exercise_tabs3" target="_blank">Exercise 3 &raquo;</a>&nbsp;
+<a class="w3-btn" href="exercise.asp?filename=exercise_tabs4" target="_blank">Exercise 4 &raquo;</a>&nbsp;
+<a class="w3-btn" href="exercise.asp?filename=exercise_tabs5" target="_blank">Exercise 5 &raquo;</a>&nbsp;
+<a class="w3-btn" href="exercise.asp?filename=exercise_tabs6" target="_blank">Exercise 6 &raquo;</a>
+</p>
 <hr>
+-->
+<h2>Complete Bootstrap Navigation Reference</h2>
+<p>For a complete reference of all navigation classes, go to our complete
+<a href="bootstrap_ref_comp_navs.html">Bootstrap Navigation Reference</a>.</p>
+<p>For a complete reference of all tab options, methods and events, go to our
+<a href="bootstrap_ref_js_tab.html">Bootstrap JS Tab Reference</a>.</p>
 
-<h2>Bootstrap References</h2>
-<p>At W3Schools you will find a complete Bootstrap reference of all CSS classes, 
-Components, and JavaScript plugins - all with &quot;Try it Yourself&quot; examples:</p>
-
-<div class="w3-bar-block">
-<a class="w3-button w3-bar-item w3-light-grey" href="bootstrap_ref_all_classes.html">Complete List of All Bootstrap Classes<span class="w3-margin-left w3-tag w3-blue">Popular</span></a>
-<br>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_css_text.html">Bootstrap CSS Text/Typography</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_css_buttons.html">Bootstrap CSS Buttons</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_css_forms.html">Bootstrap CSS Forms</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_css_helpers.html">Bootstrap CSS Helpers</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_css_images.html">Bootstrap CSS Images</a>
-<a class="w3-button w3-bar-item w3-light-grey" href="bootstrap_ref_css_tables.html">Bootstrap CSS Tables</a>
-  <br>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_comp_dropdowns.html">Bootstrap Components Dropdowns</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_comp_navs.html">Bootstrap Components Navs</a>
-<a class="w3-button w3-bar-item w3-light-grey" href="bootstrap_ref_comp_glyphs.html">Bootstrap Components Glyphicons</a>
-  <br>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_affix.html">Bootstrap JS Affix</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_alert.html">Bootstrap JS Alert</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_button.html">Bootstrap JS Button</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_carousel.html">Bootstrap JS Carousel</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_collapse.html">Bootstrap JS Collapse</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_dropdown.html">Bootstrap JS Dropdown</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_modal.html">Bootstrap JS Modal</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_popover.html">Bootstrap JS Popover</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_scrollspy.html">Bootstrap JS Scrollspy</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_tab.html">Bootstrap JS Tab</a>
-<a class="w3-button w3-bar-item w3-light-grey" href="bootstrap_ref_js_tooltip.html">Bootstrap JS Tooltip</a>
-
-</div>
-
-<hr>
-
-<h2>Bootstrap Themes / Templates</h2>
-<p>We have made some Bootstrap Templates you can play around with. They are completely free to use:</p>
-<div class="w3-row-padding w3-stretch">
-<div class="w3-half">
-<a href="trybs_theme_company_full.html" target="_blank" title="Theme Company Demo">
-<img src="bs_themes.jpg" style="width:98%;margin:20px 0" alt="Theme Company"></a>
-<p class="w3-center"><a href="bootstrap_theme_me.html" class="w3-button w3-block w3-padding-large w3-dark-grey w3-margin-top">Browse Themes</a></p>
-</div>
-<div class="w3-half">
-<a href="bootstrap_templates.html" title="Templates Demo">
-<img src="bs_templates2.jpg" style="width:98%;margin:20px 0" alt="Templates"></a>
-<p class="w3-center"><a href="bootstrap_templates.html" class="w3-button w3-block w3-padding-large w3-dark-grey w3-margin-top">Browse Basic Templates</a></p>
-</div>
-
-</div>
-<hr>
-
-<h2>Bootstrap 3 vs. Bootstrap 4</h2>
-<p><a href="../bootstrap4/default.html">Bootstrap 4</a> is the newest version of Bootstrap; with new components, faster stylesheet and more responsiveness.</p>
-<p>Bootstrap 4 supports the latest, stable releases of all major browsers and 
-platforms. However, Internet Explorer 9 and down is not supported. </p>
-<div class="w3-panel w3-note">
-<p class="margin-bottom-remove"><strong>If you require IE8-9 support, use Bootstrap 3.</strong> It is the most 
-stable version of Bootstrap, and it is still supported by the team for critical bugfixes and documentation changes. However, no new features will be added to 
-it.</p>
-</div>
-<a href="../bootstrap4/default.html" class="w3-button w3-dark-grey">Go To Bootstrap 4 &raquo;</a>
-<hr>
-
-<h2>Did You Know?</h2>
-<p>W3.CSS is an excellent alternative to Bootstrap.</p>
-<p>W3.CSS is smaller, faster, and easier to use.</p>
-<p>If you want to learn W3.CSS, go to our <a href="../w3css/default.html">W3.CSS 
-Tutorial</a>.</p>
 <br>
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="../default.html">&#10094; Home</a>
-<a class="w3-right w3-btn" href="bootstrap_get_started.html">Next &#10095;</a>
+<a class="w3-left w3-btn" href="bootstrap_collapse.html">&#10094; Previous</a>
+<a class="w3-right w3-btn" href="bootstrap_navbar.html">Next &#10095;</a>
 </div>
 </div>
 <div class="w3-col l2 m12" id="right">
@@ -956,9 +1217,13 @@ Tutorial</a>.</p>
 <div class="sidesection">
   <div id="skyscraper">
   
-    <!--<pre>wide_skyscraper, all: [160,600][300,600][320,50][120,600][300,1050]</pre>-->
-    <div id="snhb-wide_skyscraper-0"></div>
-    <!-- adspace wide-->
+    <div id="div-gpt-ad-1422003450156-5">
+      <script>
+      googletag.cmd.push(function() {
+      googletag.display('div-gpt-ad-1422003450156-5');
+      });
+      </script> 
+    </div>
   
   </div>
 </div>
@@ -1059,24 +1324,13 @@ Read More &raquo;</a>
   <div id="stickyadcontainer">
     <div style="position:relative;margin:auto;">
       
-      <!--<pre>sidebar_sticky, desktop: [120,600][160,600][300,600][300,250]</pre>-->
-      <div id="snhb-sidebar_sticky-0"></div>
-      <script>
-          if (Number(w3_getStyleValue(document.getElementById("main"), "height").replace("px", "")) > 2200) {
-            // adspace sticky
-            if (document.getElementById("snhb-mid_content-0")) {
-              snhb.queue.push(function(){  snhb.startAuction(["sidebar_sticky", "mid_content" ]); });
-            }
-            else {
-              snhb.queue.push(function(){  snhb.startAuction(["sidebar_sticky"]); });
-            }
-          }
-          else {
-              if (document.getElementById("snhb-mid_content-0")) {
-                snhb.queue.push(function(){  snhb.startAuction(["mid_content"]); });
-              }
-          }
-      </script>  
+        <script>
+        if (Number(w3_getStyleValue(document.getElementById("main"), "height").replace("px", "")) > 2200) {
+        document.write("<div id='div-gpt-ad-1472547360578-0'>");
+        googletag.cmd.push(function() { googletag.display('div-gpt-ad-1472547360578-0'); });
+        document.write("</div>");
+        }
+        </script>
       
     </div>
   </div>
@@ -1094,14 +1348,17 @@ Read More &raquo;</a>
 <hr>
 
 <div style="overflow:auto">
-  <div class="bottomad">
-    <!-- BottomMediumRectangle -->
-    <!--<pre>bottom_medium_rectangle, all: [970,250][300,250][336,280]</pre>-->
-    <div id="snhb-bottom_medium_rectangle-0" style="padding:0 10px 10px 0;float:left;width:auto;"></div>
-    <!-- adspace bmr -->
-    <!-- RightBottomMediumRectangle -->
-    <!--<pre>right_bottom_medium_rectangle, desktop: [300,250][336,280]</pre>-->
-    <div id="snhb-right_bottom_medium_rectangle-0" style="padding:0 10px 10px 0;float:left;width:auto;"></div>
+  <!-- BottomMediumRectangle -->
+  <div class="bottomad" id='div-gpt-ad-1422003450156-0'>
+    <script type='text/javascript'>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1422003450156-0'); });
+    </script>
+  </div>
+  <!-- RightBottomMediumRectangle -->
+  <div class="bottomad" id='div-gpt-ad-1422003450156-3'>
+    <script type='text/javascript'>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1422003450156-3'); });
+    </script>
   </div>
 </div>
 
@@ -1242,4 +1499,6 @@ While using this site, you agree to have read and accepted our <a href="../about
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>  
 <![endif]-->
 </body>
+
+<!-- Mirrored from www.w3schools.com/bootstrap/bootstrap_tabs_pills.asp by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Sep 2019 08:46:37 GMT -->
 </html>

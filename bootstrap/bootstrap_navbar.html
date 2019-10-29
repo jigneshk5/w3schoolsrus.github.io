@@ -1,10 +1,13 @@
+
 <!DOCTYPE html>
 <html lang="en-US">
+
+<!-- Mirrored from www.w3schools.com/bootstrap/bootstrap_navbar.asp by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Sep 2019 08:46:37 GMT -->
 <head>
-<title>Bootstrap 3 Учебник</title>
-<link rel="stylesheet" href="../../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<title>Bootstrap Navigation Bar</title>
+<link rel="stylesheet" href="../../maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 <script src="../../ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-<script src="../../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="../../maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="Keywords" content="HTML,CSS,JavaScript,SQL,PHP,jQuery,XML,DOM,Bootstrap,Python,Java,Web development,W3C,tutorials,programming,training,learning,quiz,primer,lessons,references,examples,exercises,source code,colors,demos,tips">
@@ -484,10 +487,18 @@ function w3_getStyleValue(elmnt,style) {
 </script>
 <link rel="stylesheet" href="w3-fix.css">
 <style>
-.w3-ul li a {
-  text-decoration:none;
+nav.testnav a {
+  text-decoration: none !important;
+}
+.topnav {
+  z-index:2;
 }
 </style>
+<script>
+$(document).ready(function(){
+     $('.testnav a[href]').click(function (e) { e.preventDefault(); });
+});
+</script>
 </head>
 <body>
 <div class='w3-container top'>
@@ -805,37 +816,96 @@ function w3_getStyleValue(elmnt,style) {
         <!-- adspace leaderboard -->
        
       </div>
-<h1>Bootstrap 3 <span class="color_h1">Tutorial</span></h1>
+<h1>Bootstrap <span class="color_h1">Navigation Bar</span></h1>
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="../default.html">&#10094; Home</a>
-<a class="w3-right w3-btn" href="bootstrap_get_started.html">Next &#10095;</a>
+<a class="w3-left w3-btn" href="bootstrap_tabs_pills.html">&#10094; Previous</a>
+<a class="w3-right w3-btn" href="bootstrap_forms.html">Next &#10095;</a>
 </div>
-
-<div class="w3-panel w3-info intro w3-padding-16">
-<p>Bootstrap is the most popular HTML, CSS, and JavaScript framework for developing responsive, mobile-first websites.</p>
-<p>Bootstrap is completely free to download and use!</p>
-<a href="bootstrap_get_started.html" class="w3-btn w3-padding-large w3-hide-small" style="margin-top:5px">Start learning Bootstrap now &raquo;</a>
-<a href="bootstrap_get_started.html" class="w3-btn w3-block w3-hide-large w3-hide-medium" style="margin-top:5px;padding:8px 16px">Learn Bootstrap</a>
+<hr>
+<h2>Navigation Bars</h2>
+<p>A navigation bar is a navigation header that is placed at the top of the 
+page:</p>
+<nav class="navbar navbar-default testnav" style="margin-top:16px;">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="javascript:void(0);">WebSiteName</a>
+    </div>
+    <div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="javascript:void(0);">Home</a></li>
+        <li><a href="javascript:void(0);">Page 1</a></li>
+        <li><a href="javascript:void(0);">Page 2</a></li>
+        <li><a href="javascript:void(0);">Page 3</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<p>With Bootstrap, a navigation bar can extend or collapse, depending on the 
+screen size.</p>
+<p>A standard navigation bar is created with <code class="w3-codespan">&lt;nav class=&quot;navbar navbar-default&quot;&gt;</code>.</p>
+<p>The following example shows how to add a navigation bar to the top of the page:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;nav class=&quot;navbar navbar-default&quot;&gt;<br>
+ &nbsp; &lt;div class=&quot;container-fluid&quot;&gt;<br>
+ &nbsp;&nbsp;&nbsp; &lt;div class=&quot;navbar-header&quot;&gt;<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;WebSiteName&lt;/a&gt;<br>
+ &nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&lt;ul class=&quot;nav navbar-nav&quot;&gt;<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Page 1&lt;/a&gt;&lt;/li&gt;<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Page 2&lt;/a&gt;&lt;/li&gt;<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Page 3&lt;/a&gt;&lt;/li&gt;<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;<br>
+ &nbsp; &lt;/div&gt;<br>
+ &lt;/nav&gt;<br>
+ ...</div>
+<a target="_blank" href="tryitfe3b.html?filename=trybs_navbar&amp;stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
+</div>
+<div class="w3-panel w3-note">
+<p><strong>Note:</strong> All of the examples on this page will show a navigation bar that takes up 
+too much space on small screens (however, the navigation bar will be on one single 
+line on large screens - because Bootstrap is responsive). This problem (with the 
+small screens) will be 
+solved in the last example on this page.</p>
 </div>
 
 <hr>
 
-<h2>Try it Yourself Examples</h2>
-<p>This Bootstrap tutorial contains hundreds of Bootstrap examples.</p>
-<p>With our online editor, you can edit the code, and click on a button to view the result.</p>
-<img src="imgdefault.jpg" alt="Responsive Bootstrap Page" style="width:95%;margin:16px auto;display:block">
+<h2>Inverted Navigation Bar</h2>
+<p>If you don't like the style of the default navigation bar, Bootstrap provides an alternative, 
+black navbar:</p>
+<nav class="navbar navbar-inverse testnav" style="margin-top:16px;">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="javascript:void(0);">WebSiteName</a>
+    </div>
+    <div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="javascript:void(0);">Home</a></li>
+        <li><a href="javascript:void(0);">Page 1</a></li>
+        <li><a href="javascript:void(0);">Page 2</a></li>
+        <li><a href="javascript:void(0);">Page 3</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
+<p>Just change the <code class="w3-codespan">.navbar-default</code> class into <code class="w3-codespan">.navbar-inverse</code>:</p>
 <div class="w3-example">
-<h3>Bootstrap Example</h3>
+<h3>Example</h3>
 <div class="w3-code notranslate htmlHigh">
-  &lt;div class=&quot;jumbotron text-center&quot;&gt;<br>&nbsp;&nbsp;&lt;h1&gt;My First Bootstrap Page&lt;/h1&gt;<br>&nbsp; &lt;p&gt;Resize this responsive page to see the effect!&lt;/p&gt; <br>&lt;/div&gt;<br><br>&lt;div class=&quot;container&quot;&gt;<br>&nbsp; &lt;div class=&quot;row&quot;&gt;<br>
-  &nbsp;&nbsp;&nbsp; &lt;div class=&quot;col-sm-4&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h3&gt;Column 1&lt;/h3&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;Lorem ipsum 
-  dolor..&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp;&nbsp;&nbsp; &lt;div class=&quot;col-sm-4&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h3&gt;Column 2&lt;/h3&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;Lorem ipsum 
-  dolor..&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp;&nbsp;&nbsp; &lt;div class=&quot;col-sm-4&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h3&gt;Column 3&lt;/h3&gt; <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;Lorem ipsum 
-  dolor..&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp; &lt;/div&gt;<br>&lt;/div&gt;</div>
-<a target="_blank" href="tryit689b.html?filename=trybs_default&amp;stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a></div>
-<div class="w3-panel w3-note">
-  <p>Click on the &quot;Try it Yourself&quot; button to see how it works.</p>
+ &lt;nav class=&quot;navbar navbar-inverse&quot;&gt;<br>
+ &nbsp; &lt;div class=&quot;container-fluid&quot;&gt;<br>
+ &nbsp;&nbsp;&nbsp; &lt;div class=&quot;navbar-header&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;WebSiteName&lt;/a&gt;<br>
+ &nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp;&nbsp;&nbsp; &lt;ul class=&quot;nav navbar-nav&quot;&gt;<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Page 1&lt;/a&gt;&lt;/li&gt;<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Page 2&lt;/a&gt;&lt;/li&gt;<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Page 3&lt;/a&gt;&lt;/li&gt;<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;<br>&nbsp; &lt;/div&gt;<br>&lt;/nav&gt;<br></div>
+<a target="_blank" href="tryitd65c.html?filename=trybs_navbar_inverse&amp;stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
 </div>
 <hr>
 <div id="midcontentadcontainer" style="overflow:auto;text-align:center">
@@ -847,108 +917,351 @@ function w3_getStyleValue(elmnt,style) {
 </div>
 <hr>
 
-<h2>Bootstrap Exercises</h2>
-<form autocomplete="off" id="w3-exerciseform" action="https://www.w3schools.com/bootstrap/exercise_bs3.asp?filename=exercise_bs3_pagination1" method="post" target="_blank">
+<h2>Navigation Bar With Dropdown</h2>
+<nav class="navbar navbar-inverse testnav" style="margin-top:16px;">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="javascript:void(0);">WebSiteName</a>
+    </div>
+    <div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="javascript:void(0);">Home</a></li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);">Page 1 <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="javascript:void(0);">Page 1-1</a></li>
+            <li><a href="javascript:void(0);">Page 1-2</a></li>
+            <li><a href="javascript:void(0);">Page 1-3</a></li>
+          </ul>
+        </li>
+        <li><a href="javascript:void(0);">Page 2</a></li>
+        <li><a href="javascript:void(0);">Page 3</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<p>Navigation bars can also hold dropdown menus.</p>
+<p>The following example adds a dropdown menu for the &quot;Page 1&quot; 
+button:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;nav class=&quot;navbar navbar-inverse&quot;&gt;<br>
+ &nbsp; &lt;div class=&quot;container-fluid&quot;&gt;<br>
+ &nbsp;&nbsp;&nbsp; &lt;div class=&quot;navbar-header&quot;&gt;<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;WebSiteName&lt;/a&gt;<br>&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&lt;ul class=&quot;nav navbar-nav&quot;&gt;<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class=&quot;dropdown&quot;&gt;<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;a class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; href=&quot;#&quot;&gt;Page 1<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/a&gt;<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;ul class=&quot;dropdown-menu&quot;&gt;<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Page 1-1&lt;/a&gt;&lt;/li&gt;<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Page 1-2&lt;/a&gt;&lt;/li&gt;<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Page 1-3&lt;/a&gt;&lt;/li&gt;<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Page 2&lt;/a&gt;&lt;/li&gt;<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Page 3&lt;/a&gt;&lt;/li&gt;<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;<br>
+ &nbsp; &lt;/div&gt;<br>
+ &lt;/nav&gt;</div>
+<a target="_blank" href="tryit7356.html?filename=trybs_navbar_dropdown&amp;stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
+</div>
+<hr>
+
+<h2>Right-Aligned Navigation Bar</h2>
+<nav class="navbar navbar-inverse testnav" style="margin-top:16px;">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="javascript:void(0);">WebSiteName</a>
+    </div>
+    <div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="javascript:void(0);">Home</a></li>
+        <li><a href="javascript:void(0);">Page 1</a></li>
+        <li><a href="javascript:void(0);">Page 2</a></li> 
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="javascript:void(0);"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="javascript:void(0);"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav><p>The <code class="w3-codespan">.navbar-right</code> class is used to right-align navigation bar buttons. </p>
+<p>In the following example we insert a &quot;Sign Up&quot; button and a &quot;Login&quot; button to 
+the right in the navigation bar. We also add a glyphicon on each of the two new 
+buttons:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;nav class=&quot;navbar navbar-inverse&quot;&gt;<br>
+ &nbsp; &lt;div class=&quot;container-fluid&quot;&gt;<br>
+ &nbsp;&nbsp;&nbsp; &lt;div class=&quot;navbar-header&quot;&gt;<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;WebSiteName&lt;/a&gt;<br>
+ &nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&lt;ul class=&quot;nav navbar-nav&quot;&gt;<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Page 1&lt;/a&gt;&lt;/li&gt;<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Page 2&lt;/a&gt;&lt;/li&gt;<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&lt;ul class=&quot;nav navbar-nav navbar-right&quot;&gt;<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-user&quot;&gt;&lt;/span&gt; Sign Up&lt;/a&gt;&lt;/li&gt;<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-log-in&quot;&gt;&lt;/span&gt; Login&lt;/a&gt;&lt;/li&gt;<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;<br>&nbsp; &lt;/div&gt;<br>&lt;/nav&gt;</div>
+<a target="_blank" href="tryitc55f.html?filename=trybs_navbar_right&amp;stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
+</div>
+<hr>
+
+<h2>Navbar Buttons</h2>
+<nav class="navbar navbar-inverse testnav" style="margin-top:16px;">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="javascript:void(0);">WebSiteName</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="javascript:void(0);">Home</a></li>
+      <li><a href="javascript:void(0);">Link</a></li>
+      <li><a href="javascript:void(0);">Link</a></li>
+    </ul>
+    <button class="btn btn-danger navbar-btn">Button</button>
+  </div>
+</nav>
+
+<p>To add buttons inside the navbar, add the <code>.navbar-btn</code> class on a Bootstrap 
+button:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;nav class=&quot;navbar navbar-inverse&quot;&gt;<br>
+ &nbsp; &lt;div class=&quot;container-fluid&quot;&gt;<br>
+ &nbsp;&nbsp;&nbsp; &lt;div class=&quot;navbar-header&quot;&gt;<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;WebSiteName&lt;/a&gt;<br>
+ &nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>
+ &nbsp;&nbsp;&nbsp; &lt;ul class=&quot;nav navbar-nav&quot;&gt;<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link&lt;/a&gt;&lt;/li&gt;<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link&lt;/a&gt;&lt;/li&gt;<br>
+ &nbsp;&nbsp;&nbsp; &lt;/ul&gt;<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&lt;button class=&quot;btn btn-danger navbar-btn&quot;&gt;Button&lt;/button&gt;<br>
+ &nbsp; &lt;/div&gt;<br>
+ &lt;/nav&gt;</div>
+<a target="_blank" href="tryit633b.html?filename=trybs_navbar_btn&amp;stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
+</div>
+<hr>
+
+<h2>Navbar Forms</h2>
+<nav class="navbar navbar-inverse testnav" style="margin-top:16px;">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="javascript:void(0);">WebSiteName</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="javascript:void(0);">Home</a></li>
+      <li><a href="javascript:void(0);">Page 1</a></li>
+      <li><a href="javascript:void(0);">Page 2</a></li>
+    </ul>
+    <div class="navbar-form navbar-left">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search">
+      </div>
+      <button type="button" class="btn btn-default">Submit</button>
+    </div>
+  </div>
+</nav>
+
+<p>To add form elements inside the navbar, add the <code>.navbar-form</code> class to a form element and add an input(s). Note that we have added a <code>.form-group</code> class to the div container holding the input. This adds proper padding if you have more than one inputs (you will learn more about this in the Forms chapter).</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;nav class=&quot;navbar navbar-inverse&quot;&gt;<br>
+ &nbsp; &lt;div class=&quot;container-fluid&quot;&gt;<br>
+ &nbsp;&nbsp;&nbsp; &lt;div class=&quot;navbar-header&quot;&gt;<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;WebSiteName&lt;/a&gt;<br>
+ &nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>
+ &nbsp;&nbsp;&nbsp; &lt;ul class=&quot;nav navbar-nav&quot;&gt;<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Page 1&lt;/a&gt;&lt;/li&gt;<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Page 2&lt;/a&gt;&lt;/li&gt;<br>
+ &nbsp;&nbsp;&nbsp; &lt;/ul&gt;<br>
+ &nbsp;&nbsp;&nbsp; &lt;form class=&quot;navbar-form navbar-left&quot; 
+  action=&quot;/action_page.php&quot;&gt;<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class=&quot;form-group&quot;&gt;<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Search&quot;&gt;<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;button type=&quot;submit&quot; class=&quot;btn btn-default&quot;&gt;Submit&lt;/button&gt;<br>
+ &nbsp;&nbsp;&nbsp; &lt;/form&gt;<br>
+ &nbsp; &lt;/div&gt;<br>
+ &lt;/nav&gt;</div>
+<a target="_blank" href="tryitdb4d.html?filename=trybs_navbar_form&amp;stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
+</div>
+
+<p>You can also use the <code>.input-group</code> and <code>.input-group-addon</code> classes to attach an icon or help text next to the input field. You will learn more about these classes in the Bootstrap Inputs chapter.</p>
+<nav class="navbar navbar-inverse testnav" style="margin-top:16px;">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="javascript:void(0);">WebSiteName</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="javascript:void(0);">Home</a></li>
+      <li><a href="javascript:void(0);">Page 1</a></li>
+      <li><a href="javascript:void(0);">Page 2</a></li>
+    </ul>
+    <form class="navbar-form navbar-left">
+      <div class="input-group" style="z-index:1">
+        <input type="text" class="form-control" placeholder="Search">
+        <div class="input-group-btn">
+          <button class="btn btn-default" type="button">
+            <i class="glyphicon glyphicon-search"></i>
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</nav>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;form class=&quot;navbar-form navbar-left&quot; action=&quot;/action_page.php&quot;&gt;<br>
+ &nbsp; &lt;div class=&quot;input-group&quot;&gt;<br>
+ &nbsp;&nbsp;&nbsp; &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Search&quot;&gt;<br>
+ &nbsp;&nbsp;&nbsp; &lt;div class=&quot;input-group-btn&quot;&gt;<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;button class=&quot;btn btn-default&quot; type=&quot;submit&quot;&gt;<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;i class=&quot;glyphicon glyphicon-search&quot;&gt;&lt;/i&gt;<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ &lt;/button&gt;<br>
+ &nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>
+ &nbsp; &lt;/div&gt;<br>&lt;/form&gt;</div>
+<a target="_blank" href="tryit7325.html?filename=trybs_navbar_form_addon&amp;stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
+</div>
+
+<hr>
+
+<h2>Navbar Text</h2>
+<nav class="navbar navbar-inverse testnav">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav">
+      <li style="margin-top:1px"><a href="javascript:void(0);">Link</a></li>
+      <li style="margin-top:1px"><a href="javascript:void(0);">Link</a></li>
+    </ul>
+    <p class="navbar-text">Some text</p>
+  </div>
+</nav>
+
+<p>Use the <code>.navbar-text</code> class to vertical align any elements inside the navbar that are not links (ensures proper padding 
+and text color).</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;nav class=&quot;navbar navbar-inverse&quot;&gt;<br>
+ &nbsp; &lt;ul class=&quot;nav navbar-nav&quot;&gt;<br>
+ &nbsp;&nbsp;&nbsp; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link&lt;/a&gt;&lt;/li&gt;<br>
+ &nbsp;&nbsp;&nbsp; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link&lt;/a&gt;&lt;/li&gt;<br>
+ &nbsp; &lt;/ul&gt;<br>
+ &nbsp; &lt;p class=&quot;navbar-text&quot;&gt;Some text&lt;/p&gt;<br>
+ &lt;/nav&gt;</div>
+<a target="_blank" href="tryitba77.html?filename=trybs_navbar_text&amp;stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
+</div>
+<hr>
+
+
+<h2>Fixed Navigation Bar</h2>
+<p>The navigation bar can also be fixed at the top or at the bottom of the page.</p>
+<p>A fixed navigation bar stays visible in a fixed position (top or bottom) 
+independent of the page scroll.</p>
+
+<iframe src="../bootstrap4/trybs_navbar_fixed.html" style="width:100%;height:260px;margin-bottom:16px" class="w3-border"></iframe>
+
+<p>The <code class="w3-codespan">.navbar-fixed-top</code> class makes the navigation bar fixed at 
+the top:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;nav class=&quot;navbar navbar-inverse navbar-fixed-top&quot;&gt;<br>
+ &nbsp; &lt;div class=&quot;container-fluid&quot;&gt;<br>
+ &nbsp;&nbsp;&nbsp; &lt;div class=&quot;navbar-header&quot;&gt;<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;WebSiteName&lt;/a&gt;<br>
+ &nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul class=&quot;nav navbar-nav&quot;&gt;<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Page 1&lt;/a&gt;&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Page 2&lt;/a&gt;&lt;/li&gt;<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Page 3&lt;/a&gt;&lt;/li&gt;<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;<br>
+ &nbsp; &lt;/div&gt;<br>&lt;/nav&gt;</div>
+<a target="_blank" href="tryit1827.html?filename=trybs_navbar_fixed&amp;stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
+</div>
+<p>The <code class="w3-codespan">.navbar-fixed-bottom</code> class makes the navigation bar stay at 
+the bottom:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;nav class=&quot;navbar navbar-inverse navbar-fixed-bottom&quot;&gt;<br>
+ &nbsp; &lt;div class=&quot;container-fluid&quot;&gt;<br>&nbsp;&nbsp;&nbsp; &lt;div class=&quot;navbar-header&quot;&gt;<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;WebSiteName&lt;/a&gt;<br>
+ &nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul class=&quot;nav navbar-nav&quot;&gt;<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Page 1&lt;/a&gt;&lt;/li&gt;<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Page 2&lt;/a&gt;&lt;/li&gt;<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Page 3&lt;/a&gt;&lt;/li&gt;<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;<br>
+ &nbsp; &lt;/div&gt;<br>&lt;/nav&gt;
+</div>
+<a target="_blank" href="tryitdfa7.html?filename=trybs_navbar_fixed_bottom&amp;stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
+</div>
+<hr>
+
+<h2>Collapsing The Navigation Bar</h2>
+<p>The navigation bar often takes up too much space on a small screen.</p>
+<p>We should hide the navigation bar; and only show it when it is needed.</p>
+<p>In the following example the navigation bar is replaced by a button 
+in the top right corner. Only when the button is clicked, the navigation bar will be 
+displayed:</p>
+<iframe src="../bootstrap4/trybs_navbar_collapse_ifr.html" style="width:100%;height:280px;margin-bottom:16px" class="w3-border"></iframe>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;nav class=&quot;navbar navbar-inverse&quot;&gt;<br>&nbsp; &lt;div class=&quot;container-fluid&quot;&gt;<br>&nbsp;&nbsp;&nbsp; &lt;div class=&quot;navbar-header&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;button type=&quot;button&quot; class=&quot;navbar-toggle&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#myNavbar&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt; <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/button&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;WebSiteName&lt;/a&gt;<br>&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp;&nbsp;&nbsp; &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;myNavbar&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;ul class=&quot;nav navbar-nav&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Page 1&lt;/a&gt;&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Page 2&lt;/a&gt;&lt;/li&gt; <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Page 3&lt;/a&gt;&lt;/li&gt; <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/ul&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;ul class=&quot;nav navbar-nav navbar-right&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-user&quot;&gt;&lt;/span&gt; Sign Up&lt;/a&gt;&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-log-in&quot;&gt;&lt;/span&gt; Login&lt;/a&gt;&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/ul&gt;<br>&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp; &lt;/div&gt;<br>&lt;/nav&gt;</div>
+<a target="_blank" href="tryita18e.html?filename=trybs_navbar_collapse" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
+</div>
+<hr>
+<form autocomplete="off" id="w3-exerciseform" action="https://www.w3schools.com/bootstrap/exercise_bs3.asp?filename=exercise_bs3_navbars1" method="post" target="_blank">
 <h2>Test Yourself With Exercises</h2>
 <div class="exercisewindow">
 <h2>Exercise:</h2>
-<p>Add the correct class name to transform the list below into a pagination menu.</p>
+<p>Add the required class names to create a default Navigation Bar.</p>
 <div class="exerciseprecontainer">
 <pre style="background-color:transparent;border:none;">
-&lt;ul class="<input name="ex1" maxlength="10" style="width: 107px;">"&gt;
-  &lt;li&gt;&lt;a href="#"&gt;1&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="#"&gt;2&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="#"&gt;3&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="#"&gt;4&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="#"&gt;5&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;nav class="<input name="ex1" maxlength="21" style="width: 222px;">"&gt;
+  &lt;div class="container-fluid"&gt;
+    &lt;ul class="nav navbar-nav"&gt;
+      &lt;li&gt;&lt;a href="#"&gt;Page 1&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;Page 2&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;Page 3&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;
 </pre>
 </div>
 <br>
 <button type="submit" class="w3-btn w3-margin-bottom">Submit Answer &raquo;</button>
-<p><a target="_blank" href="exercise_bs368e1.html?filename=exercise_bs3_pagination1">Start the Exercise</a></p>
+<p><a target="_blank" href="exercise_bs371d6.html?filename=exercise_bs3_navbars1">Start the Exercise</a></p>
 </div>
 </form>
-
 <hr>
 
-<h2>Bootstrap Quiz Test</h2>
-<p>Test your Bootstrap skills at W3Schools!</p>
-<p><a href="bootstrap_quiz.html" class="w3-button w3-blue">Start Bootstrap Quiz!</a></p>
-<hr>
-
-<h2>Bootstrap References</h2>
-<p>At W3Schools you will find a complete Bootstrap reference of all CSS classes, 
-Components, and JavaScript plugins - all with &quot;Try it Yourself&quot; examples:</p>
-
-<div class="w3-bar-block">
-<a class="w3-button w3-bar-item w3-light-grey" href="bootstrap_ref_all_classes.html">Complete List of All Bootstrap Classes<span class="w3-margin-left w3-tag w3-blue">Popular</span></a>
-<br>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_css_text.html">Bootstrap CSS Text/Typography</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_css_buttons.html">Bootstrap CSS Buttons</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_css_forms.html">Bootstrap CSS Forms</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_css_helpers.html">Bootstrap CSS Helpers</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_css_images.html">Bootstrap CSS Images</a>
-<a class="w3-button w3-bar-item w3-light-grey" href="bootstrap_ref_css_tables.html">Bootstrap CSS Tables</a>
-  <br>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_comp_dropdowns.html">Bootstrap Components Dropdowns</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_comp_navs.html">Bootstrap Components Navs</a>
-<a class="w3-button w3-bar-item w3-light-grey" href="bootstrap_ref_comp_glyphs.html">Bootstrap Components Glyphicons</a>
-  <br>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_affix.html">Bootstrap JS Affix</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_alert.html">Bootstrap JS Alert</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_button.html">Bootstrap JS Button</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_carousel.html">Bootstrap JS Carousel</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_collapse.html">Bootstrap JS Collapse</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_dropdown.html">Bootstrap JS Dropdown</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_modal.html">Bootstrap JS Modal</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_popover.html">Bootstrap JS Popover</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_scrollspy.html">Bootstrap JS Scrollspy</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_tab.html">Bootstrap JS Tab</a>
-<a class="w3-button w3-bar-item w3-light-grey" href="bootstrap_ref_js_tooltip.html">Bootstrap JS Tooltip</a>
-
-</div>
-
-<hr>
-
-<h2>Bootstrap Themes / Templates</h2>
-<p>We have made some Bootstrap Templates you can play around with. They are completely free to use:</p>
-<div class="w3-row-padding w3-stretch">
-<div class="w3-half">
-<a href="trybs_theme_company_full.html" target="_blank" title="Theme Company Demo">
-<img src="bs_themes.jpg" style="width:98%;margin:20px 0" alt="Theme Company"></a>
-<p class="w3-center"><a href="bootstrap_theme_me.html" class="w3-button w3-block w3-padding-large w3-dark-grey w3-margin-top">Browse Themes</a></p>
-</div>
-<div class="w3-half">
-<a href="bootstrap_templates.html" title="Templates Demo">
-<img src="bs_templates2.jpg" style="width:98%;margin:20px 0" alt="Templates"></a>
-<p class="w3-center"><a href="bootstrap_templates.html" class="w3-button w3-block w3-padding-large w3-dark-grey w3-margin-top">Browse Basic Templates</a></p>
-</div>
-
-</div>
-<hr>
-
-<h2>Bootstrap 3 vs. Bootstrap 4</h2>
-<p><a href="../bootstrap4/default.html">Bootstrap 4</a> is the newest version of Bootstrap; with new components, faster stylesheet and more responsiveness.</p>
-<p>Bootstrap 4 supports the latest, stable releases of all major browsers and 
-platforms. However, Internet Explorer 9 and down is not supported. </p>
-<div class="w3-panel w3-note">
-<p class="margin-bottom-remove"><strong>If you require IE8-9 support, use Bootstrap 3.</strong> It is the most 
-stable version of Bootstrap, and it is still supported by the team for critical bugfixes and documentation changes. However, no new features will be added to 
-it.</p>
-</div>
-<a href="../bootstrap4/default.html" class="w3-button w3-dark-grey">Go To Bootstrap 4 &raquo;</a>
-<hr>
-
-<h2>Did You Know?</h2>
-<p>W3.CSS is an excellent alternative to Bootstrap.</p>
-<p>W3.CSS is smaller, faster, and easier to use.</p>
-<p>If you want to learn W3.CSS, go to our <a href="../w3css/default.html">W3.CSS 
-Tutorial</a>.</p>
+<!--
+<h2>Test Yourself with Exercises!</h2>
+<p>
+<a class="w3-btn" href="exercise.asp?filename=exercise_navbars1" target="_blank">Exercise 1 &raquo;</a>&nbsp;
+<a class="w3-btn" href="exercise.asp?filename=exercise_navbars2" target="_blank">Exercise 2 &raquo;</a>&nbsp;
+<a class="w3-btn" href="exercise.asp?filename=exercise_navbars3" target="_blank">Exercise 3 &raquo;</a>&nbsp;
+<a class="w3-btn" href="exercise.asp?filename=exercise_navbars4" target="_blank">Exercise 4 &raquo;</a>
+</p>
+-->
 <br>
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="../default.html">&#10094; Home</a>
-<a class="w3-right w3-btn" href="bootstrap_get_started.html">Next &#10095;</a>
+<a class="w3-left w3-btn" href="bootstrap_tabs_pills.html">&#10094; Previous</a>
+<a class="w3-right w3-btn" href="bootstrap_forms.html">Next &#10095;</a>
 </div>
 </div>
 <div class="w3-col l2 m12" id="right">
@@ -1242,4 +1555,6 @@ While using this site, you agree to have read and accepted our <a href="../about
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>  
 <![endif]-->
 </body>
+
+<!-- Mirrored from www.w3schools.com/bootstrap/bootstrap_navbar.asp by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Sep 2019 08:46:37 GMT -->
 </html>

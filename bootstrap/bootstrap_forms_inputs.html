@@ -1,10 +1,13 @@
+
 <!DOCTYPE html>
 <html lang="en-US">
+
+<!-- Mirrored from www.w3schools.com/bootstrap/bootstrap_forms_inputs.asp by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Sep 2019 08:46:37 GMT -->
 <head>
-<title>Bootstrap 3 Учебник</title>
-<link rel="stylesheet" href="../../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<title>Bootstrap Form Inputs</title>
+<link rel="stylesheet" href="../../maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 <script src="../../ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-<script src="../../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="../../maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="Keywords" content="HTML,CSS,JavaScript,SQL,PHP,jQuery,XML,DOM,Bootstrap,Python,Java,Web development,W3C,tutorials,programming,training,learning,quiz,primer,lessons,references,examples,exercises,source code,colors,demos,tips">
@@ -483,11 +486,6 @@ function w3_getStyleValue(elmnt,style) {
 }
 </script>
 <link rel="stylesheet" href="w3-fix.css">
-<style>
-.w3-ul li a {
-  text-decoration:none;
-}
-</style>
 </head>
 <body>
 <div class='w3-container top'>
@@ -805,37 +803,62 @@ function w3_getStyleValue(elmnt,style) {
         <!-- adspace leaderboard -->
        
       </div>
-<h1>Bootstrap 3 <span class="color_h1">Tutorial</span></h1>
+<h1>Bootstrap <span class="color_h1">Form Inputs</span></h1>
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="../default.html">&#10094; Home</a>
-<a class="w3-right w3-btn" href="bootstrap_get_started.html">Next &#10095;</a>
+<a class="w3-left w3-btn" href="bootstrap_forms.html">&#10094; Previous</a>
+<a class="w3-right w3-btn" href="bootstrap_forms_inputs2.html">Next &#10095;</a>
 </div>
-
-<div class="w3-panel w3-info intro w3-padding-16">
-<p>Bootstrap is the most popular HTML, CSS, and JavaScript framework for developing responsive, mobile-first websites.</p>
-<p>Bootstrap is completely free to download and use!</p>
-<a href="bootstrap_get_started.html" class="w3-btn w3-padding-large w3-hide-small" style="margin-top:5px">Start learning Bootstrap now &raquo;</a>
-<a href="bootstrap_get_started.html" class="w3-btn w3-block w3-hide-large w3-hide-medium" style="margin-top:5px;padding:8px 16px">Learn Bootstrap</a>
-</div>
-
+<hr>
+<h2>Supported Form Controls</h2>
+<p>Bootstrap supports the following form controls:</p>
+<ul>
+  <li>input</li>
+  <li>textarea</li>
+  <li>checkbox</li>
+  <li>radio</li>
+  <li>select</li>
+</ul>
 <hr>
 
-<h2>Try it Yourself Examples</h2>
-<p>This Bootstrap tutorial contains hundreds of Bootstrap examples.</p>
-<p>With our online editor, you can edit the code, and click on a button to view the result.</p>
-<img src="imgdefault.jpg" alt="Responsive Bootstrap Page" style="width:95%;margin:16px auto;display:block">
-
+<h2>Bootstrap Input</h2>
+<p>Bootstrap supports all the HTML5 input types: 
+text, password, datetime, datetime-local, date, month, time, week, number, 
+email, url, search, tel, and color. </p>
+<p><strong>Note:</strong> Inputs will NOT be fully styled if their type is not properly declared!</p>
+<div style="margin:20px 0 25px 0;">
+    <div class="form-group">
+      <label for="usr">Name:</label>
+      <input type="text" class="form-control" id="usr">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="text" class="form-control" id="pwd">
+    </div>
+</div>    
+<p>The following example contains two input elements; one of type text and one of 
+type password:</p>
 <div class="w3-example">
-<h3>Bootstrap Example</h3>
+<h3>Example</h3>
 <div class="w3-code notranslate htmlHigh">
-  &lt;div class=&quot;jumbotron text-center&quot;&gt;<br>&nbsp;&nbsp;&lt;h1&gt;My First Bootstrap Page&lt;/h1&gt;<br>&nbsp; &lt;p&gt;Resize this responsive page to see the effect!&lt;/p&gt; <br>&lt;/div&gt;<br><br>&lt;div class=&quot;container&quot;&gt;<br>&nbsp; &lt;div class=&quot;row&quot;&gt;<br>
-  &nbsp;&nbsp;&nbsp; &lt;div class=&quot;col-sm-4&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h3&gt;Column 1&lt;/h3&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;Lorem ipsum 
-  dolor..&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp;&nbsp;&nbsp; &lt;div class=&quot;col-sm-4&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h3&gt;Column 2&lt;/h3&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;Lorem ipsum 
-  dolor..&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp;&nbsp;&nbsp; &lt;div class=&quot;col-sm-4&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h3&gt;Column 3&lt;/h3&gt; <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;Lorem ipsum 
-  dolor..&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp; &lt;/div&gt;<br>&lt;/div&gt;</div>
-<a target="_blank" href="tryit689b.html?filename=trybs_default&amp;stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a></div>
-<div class="w3-panel w3-note">
-  <p>Click on the &quot;Try it Yourself&quot; button to see how it works.</p>
+ &lt;div class=&quot;form-group&quot;&gt;<br>&nbsp; &lt;label for=&quot;usr&quot;&gt;Name:&lt;/label&gt;<br>&nbsp; &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;usr&quot;&gt;<br>&lt;/div&gt;<br>&lt;div class=&quot;form-group&quot;&gt;<br>&nbsp; &lt;label for=&quot;pwd&quot;&gt;Password:&lt;/label&gt;<br>&nbsp; &lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;pwd&quot;&gt;<br>&lt;/div&gt;</div>
+<a target="_blank" href="tryitd04d.html?filename=trybs_form_input&amp;stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
+</div>
+<hr>
+
+<h2>Bootstrap Textarea</h2>
+<div style="margin:20px 0 25px 0;">
+    <div class="form-group">
+      <label for="comment">Comment:</label>
+      <textarea class="form-control" rows="5" id="comment" style="max-width:100%;"></textarea>
+    </div>
+</div>
+
+<p>The following example contains a textarea:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;div class=&quot;form-group&quot;&gt;<br>&nbsp; &lt;label for=&quot;comment&quot;&gt;Comment:&lt;/label&gt;<br>&nbsp; &lt;textarea class=&quot;form-control&quot; rows=&quot;5&quot; id=&quot;comment&quot;&gt;&lt;/textarea&gt;<br>&lt;/div&gt;</div>
+<a target="_blank" href="tryitfcc3.html?filename=trybs_form_textarea&amp;stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
 </div>
 <hr>
 <div id="midcontentadcontainer" style="overflow:auto;text-align:center">
@@ -847,108 +870,135 @@ function w3_getStyleValue(elmnt,style) {
 </div>
 <hr>
 
-<h2>Bootstrap Exercises</h2>
-<form autocomplete="off" id="w3-exerciseform" action="https://www.w3schools.com/bootstrap/exercise_bs3.asp?filename=exercise_bs3_pagination1" method="post" target="_blank">
-<h2>Test Yourself With Exercises</h2>
-<div class="exercisewindow">
-<h2>Exercise:</h2>
-<p>Add the correct class name to transform the list below into a pagination menu.</p>
-<div class="exerciseprecontainer">
-<pre style="background-color:transparent;border:none;">
-&lt;ul class="<input name="ex1" maxlength="10" style="width: 107px;">"&gt;
-  &lt;li&gt;&lt;a href="#"&gt;1&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="#"&gt;2&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="#"&gt;3&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="#"&gt;4&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="#"&gt;5&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</pre>
+<h2>Bootstrap Checkboxes</h2>
+<div style="margin:20px 0 25px 0;">
+    <div class="checkbox">
+      <label><input type="checkbox" value="">Option 1</label>
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox" value="">Option 2</label>
+    </div>
+    <div class="checkbox disabled">
+      <label><input type="checkbox" value="" disabled>Option 3</label>
+    </div>
 </div>
-<br>
-<button type="submit" class="w3-btn w3-margin-bottom">Submit Answer &raquo;</button>
-<p><a target="_blank" href="exercise_bs368e1.html?filename=exercise_bs3_pagination1">Start the Exercise</a></p>
+ 
+<p>Checkboxes are used if you want the user to select any number of options from 
+a list of preset options.</p>
+<p>The following example contains three checkboxes. The last option is disabled:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;div class=&quot;checkbox&quot;&gt;<br>&nbsp; &lt;label&gt;&lt;input type=&quot;checkbox&quot; value=&quot;&quot;&gt;Option 1&lt;/label&gt;<br>&lt;/div&gt;<br>&lt;div class=&quot;checkbox&quot;&gt;<br>&nbsp; &lt;label&gt;&lt;input type=&quot;checkbox&quot; value=&quot;&quot;&gt;Option 2&lt;/label&gt;<br>&lt;/div&gt;<br>&lt;div class=&quot;checkbox disabled&quot;&gt;<br>&nbsp; &lt;label&gt;&lt;input type=&quot;checkbox&quot; value=&quot;&quot; disabled&gt;Option 3&lt;/label&gt;<br>&lt;/div&gt;</div>
+<a target="_blank" href="tryit7026.html?filename=trybs_form_checkbox&amp;stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
 </div>
-</form>
-
-<hr>
-
-<h2>Bootstrap Quiz Test</h2>
-<p>Test your Bootstrap skills at W3Schools!</p>
-<p><a href="bootstrap_quiz.html" class="w3-button w3-blue">Start Bootstrap Quiz!</a></p>
-<hr>
-
-<h2>Bootstrap References</h2>
-<p>At W3Schools you will find a complete Bootstrap reference of all CSS classes, 
-Components, and JavaScript plugins - all with &quot;Try it Yourself&quot; examples:</p>
-
-<div class="w3-bar-block">
-<a class="w3-button w3-bar-item w3-light-grey" href="bootstrap_ref_all_classes.html">Complete List of All Bootstrap Classes<span class="w3-margin-left w3-tag w3-blue">Popular</span></a>
-<br>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_css_text.html">Bootstrap CSS Text/Typography</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_css_buttons.html">Bootstrap CSS Buttons</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_css_forms.html">Bootstrap CSS Forms</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_css_helpers.html">Bootstrap CSS Helpers</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_css_images.html">Bootstrap CSS Images</a>
-<a class="w3-button w3-bar-item w3-light-grey" href="bootstrap_ref_css_tables.html">Bootstrap CSS Tables</a>
-  <br>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_comp_dropdowns.html">Bootstrap Components Dropdowns</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_comp_navs.html">Bootstrap Components Navs</a>
-<a class="w3-button w3-bar-item w3-light-grey" href="bootstrap_ref_comp_glyphs.html">Bootstrap Components Glyphicons</a>
-  <br>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_affix.html">Bootstrap JS Affix</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_alert.html">Bootstrap JS Alert</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_button.html">Bootstrap JS Button</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_carousel.html">Bootstrap JS Carousel</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_collapse.html">Bootstrap JS Collapse</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_dropdown.html">Bootstrap JS Dropdown</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_modal.html">Bootstrap JS Modal</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_popover.html">Bootstrap JS Popover</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_scrollspy.html">Bootstrap JS Scrollspy</a>
-<a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_tab.html">Bootstrap JS Tab</a>
-<a class="w3-button w3-bar-item w3-light-grey" href="bootstrap_ref_js_tooltip.html">Bootstrap JS Tooltip</a>
-
+<p>Use the <code class="w3-codespan">.checkbox-inline</code> class if you want the checkboxes to appear on the 
+same line:</p>
+<div style="margin:20px 0 25px 0;">
+    <label class="checkbox-inline">
+      <input type="checkbox" value="">Option 1
+    </label>
+    <label class="checkbox-inline">
+      <input type="checkbox" value="">Option 2
+    </label>
+    <label class="checkbox-inline">
+      <input type="checkbox" value="">Option 3
+    </label>
 </div>
-
-<hr>
-
-<h2>Bootstrap Themes / Templates</h2>
-<p>We have made some Bootstrap Templates you can play around with. They are completely free to use:</p>
-<div class="w3-row-padding w3-stretch">
-<div class="w3-half">
-<a href="trybs_theme_company_full.html" target="_blank" title="Theme Company Demo">
-<img src="bs_themes.jpg" style="width:98%;margin:20px 0" alt="Theme Company"></a>
-<p class="w3-center"><a href="bootstrap_theme_me.html" class="w3-button w3-block w3-padding-large w3-dark-grey w3-margin-top">Browse Themes</a></p>
-</div>
-<div class="w3-half">
-<a href="bootstrap_templates.html" title="Templates Demo">
-<img src="bs_templates2.jpg" style="width:98%;margin:20px 0" alt="Templates"></a>
-<p class="w3-center"><a href="bootstrap_templates.html" class="w3-button w3-block w3-padding-large w3-dark-grey w3-margin-top">Browse Basic Templates</a></p>
-</div>
-
+    
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;label class=&quot;checkbox-inline&quot;&gt;&lt;input type=&quot;checkbox&quot; value=&quot;&quot;&gt;Option 1&lt;/label&gt;<br>&lt;label class=&quot;checkbox-inline&quot;&gt;&lt;input type=&quot;checkbox&quot; value=&quot;&quot;&gt;Option 2&lt;/label&gt;<br>&lt;label class=&quot;checkbox-inline&quot;&gt;&lt;input type=&quot;checkbox&quot; value=&quot;&quot;&gt;Option 3&lt;/label&gt;</div>
+<a target="_blank" href="tryita26b.html?filename=trybs_form_checkbox_inline&amp;stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
 </div>
 <hr>
 
-<h2>Bootstrap 3 vs. Bootstrap 4</h2>
-<p><a href="../bootstrap4/default.html">Bootstrap 4</a> is the newest version of Bootstrap; with new components, faster stylesheet and more responsiveness.</p>
-<p>Bootstrap 4 supports the latest, stable releases of all major browsers and 
-platforms. However, Internet Explorer 9 and down is not supported. </p>
-<div class="w3-panel w3-note">
-<p class="margin-bottom-remove"><strong>If you require IE8-9 support, use Bootstrap 3.</strong> It is the most 
-stable version of Bootstrap, and it is still supported by the team for critical bugfixes and documentation changes. However, no new features will be added to 
-it.</p>
+<h2>Bootstrap Radio Buttons</h2>
+<div style="margin:20px 0 25px 0;">
+    <div class="radio">
+      <label><input type="radio" name="optradio">Option 1</label>
+    </div>
+    <div class="radio">
+      <label><input type="radio" name="optradio">Option 2</label>
+    </div>
+    <div class="radio disabled">
+      <label><input type="radio" name="optradio" disabled>Option 3</label>
+    </div>
 </div>
-<a href="../bootstrap4/default.html" class="w3-button w3-dark-grey">Go To Bootstrap 4 &raquo;</a>
+
+<p>Radio buttons are used if you want to limit the user to just one selection 
+from a list of preset options.</p>
+<p>The following example contains three radio buttons. The first option is 
+checked by default and the last option is disabled:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;div class=&quot;radio&quot;&gt;<br>&nbsp; &lt;label&gt;&lt;input type=&quot;radio&quot; name=&quot;optradio&quot; 
+  checked&gt;Option 1&lt;/label&gt;<br>&lt;/div&gt;<br>&lt;div class=&quot;radio&quot;&gt;<br>&nbsp; &lt;label&gt;&lt;input type=&quot;radio&quot; name=&quot;optradio&quot;&gt;Option 2&lt;/label&gt;<br>&lt;/div&gt;<br>&lt;div class=&quot;radio disabled&quot;&gt;<br>&nbsp; &lt;label&gt;&lt;input type=&quot;radio&quot; name=&quot;optradio&quot; disabled&gt;Option 3&lt;/label&gt;<br>
+ &lt;/div&gt;</div>
+<a target="_blank" href="tryit1460.html?filename=trybs_form_radio&amp;stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
+</div>
+<p>Use the <code class="w3-codespan">.radio-inline</code> class if you want the radio buttons to appear on the same line:</p>
+<div style="margin:20px 0 25px 0;">
+    <label class="radio-inline">
+      <input type="radio" name="optradio">Option 1
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="optradio">Option 2
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="optradio">Option 3
+    </label>
+</div>    
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;label class=&quot;radio-inline&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;optradio&quot; 
+  checked&gt;Option 1&lt;/label&gt;<br>
+&lt;label class=&quot;radio-inline&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;optradio&quot;&gt;Option 2&lt;/label&gt;<br>
+&lt;label class=&quot;radio-inline&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;optradio&quot;&gt;Option 3&lt;/label&gt;
+</div>
+<a target="_blank" href="tryit6f92.html?filename=trybs_form_radio_inline&amp;stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
+</div>
 <hr>
 
-<h2>Did You Know?</h2>
-<p>W3.CSS is an excellent alternative to Bootstrap.</p>
-<p>W3.CSS is smaller, faster, and easier to use.</p>
-<p>If you want to learn W3.CSS, go to our <a href="../w3css/default.html">W3.CSS 
-Tutorial</a>.</p>
+<h2>Bootstrap Select List</h2>
+
+<div style="margin:20px 0 25px 0;">
+   <div class="form-group">
+      <label for="sel1">Select list (select one):</label>
+      <select class="form-control" id="sel1">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+      </select>
+      <br>
+      <label for="sel2">Multiple select list (hold ctrl or shift (or drag with    the mouse) to select more than one):</label>
+      <select multiple class="form-control" id="sel2">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+    </div>
+</div>    
+    
+<p>Select lists are used if you want to allow the user to pick from multiple options.</p>
+<p>The following example contains a dropdown list (select list):</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;div class=&quot;form-group&quot;&gt;<br>&nbsp; &lt;label for=&quot;sel1&quot;&gt;Select list:&lt;/label&gt;<br>&nbsp; &lt;select class=&quot;form-control&quot; id=&quot;sel1&quot;&gt;<br>&nbsp;&nbsp;&nbsp; &lt;option&gt;1&lt;/option&gt;<br>&nbsp;&nbsp;&nbsp; &lt;option&gt;2&lt;/option&gt;<br>&nbsp;&nbsp;&nbsp; &lt;option&gt;3&lt;/option&gt;<br>&nbsp;&nbsp;&nbsp; &lt;option&gt;4&lt;/option&gt;<br>&nbsp; &lt;/select&gt;<br>&lt;/div&gt;</div>
+<a target="_blank" href="tryit29cb.html?filename=trybs_form_select&amp;stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
+</div>
+
 <br>
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="../default.html">&#10094; Home</a>
-<a class="w3-right w3-btn" href="bootstrap_get_started.html">Next &#10095;</a>
+<a class="w3-left w3-btn" href="bootstrap_forms.html">&#10094; Previous</a>
+<a class="w3-right w3-btn" href="bootstrap_forms_inputs2.html">Next &#10095;</a>
 </div>
 </div>
 <div class="w3-col l2 m12" id="right">
@@ -1242,4 +1292,6 @@ While using this site, you agree to have read and accepted our <a href="../about
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>  
 <![endif]-->
 </body>
+
+<!-- Mirrored from www.w3schools.com/bootstrap/bootstrap_forms_inputs.asp by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Sep 2019 08:46:37 GMT -->
 </html>
