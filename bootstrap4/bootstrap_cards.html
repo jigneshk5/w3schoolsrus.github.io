@@ -1,7 +1,14 @@
+
 <!DOCTYPE html>
 <html lang="en-US">
+
+<!-- Mirrored from www.w3schools.com/bootstrap4/bootstrap_cards.asp by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Sep 2019 08:46:55 GMT -->
 <head>
-<title>Bootstrap 4 Tutorial</title>
+<title>Bootstrap 4 Cards</title>
+<link rel="stylesheet" href="../../maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="../../ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="../../cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="../../maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="Keywords" content="HTML,CSS,JavaScript,SQL,PHP,jQuery,XML,DOM,Bootstrap,Python,Java,Web development,W3C,tutorials,programming,training,learning,quiz,primer,lessons,references,examples,exercises,source code,colors,demos,tips">
@@ -479,9 +486,13 @@ function w3_getStyleValue(elmnt,style) {
   }
 }
 </script>
+<link rel="stylesheet" href="w3-fix.css">
 <style>
-.w3-ul li a {
-  text-decoration:none;
+.card-link {
+    color: #0275d8;
+}
+.card-link:hover {
+    color: #014c8c;
 }
 .topnav .w3-bar a[href^="/bootstrap/bootstrap_ver.asp"] {
   background-color: #4CAF50 !important;
@@ -786,40 +797,114 @@ function w3_getStyleValue(elmnt,style) {
         <!-- adspace leaderboard -->
        
       </div>
-<h1>Bootstrap 4 <span class="color_h1">Tutorial</span></h1>
+<h1>Bootstrap 4 <span class="color_h1">Cards</span></h1>
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="../default.html">&#10094; Home</a>
-<a class="w3-right w3-btn" href="bootstrap_get_started.html">Next &#10095;</a>
+<a class="w3-left w3-btn" href="bootstrap_list_groups.html">&#10094; Previous</a>
+<a class="w3-right w3-btn" href="bootstrap_dropdowns.html">Next &#10095;</a>
 </div>
+<hr>
+<h2>Cards</h2>
+<p>A card in Bootstrap 4 is a bordered box with some padding around its content. It includes options for headers, footers, content, colors, etc.</p>
+<div class="card" style="width:20rem;margin:20px 0 24px 0">
+  <img class="card-img-top" src="img_avatar3.png" alt="image" style="width:100%">
+  <div class="card-body">
+    <h4 class="card-title">John Doe</h4>
+    <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+    <a href="javascript:void(0)" class="btn btn-primary">See Profile</a>
+  </div>
+</div>
+<hr>
 
-<div class="w3-panel w3-info intro w3-padding-16">
-<p style="margin-top:15px;">Bootstrap 4 is the newest version of <a href="../bootstrap/default.html">Bootstrap</a>, which is the most popular HTML, CSS, and JavaScript framework for developing responsive, mobile-first websites.</p>
-<p>Bootstrap 4 is completely free to download and use!</p>
-<p><a href="bootstrap_get_started.html" class="w3-btn w3-padding-large w3-hide-small">Start learning Bootstrap 4 now &raquo;</a></p>
-<p><a href="bootstrap_get_started.html" class="w3-btn w3-block w3-hide-large w3-hide-medium" style="padding:8px 16px">Learn Bootstrap 4</a></p>
+<h2>Basic Card</h2>
+<p>A basic card is created with the <code class="w3-codespan">.card</code> class, and content inside the 
+card has a <code class="w3-codespan">.card-body</code> class:</p>
+<div class="card">
+<div class="card-body">Basic card</div>
+</div>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;div class=&quot;card&quot;&gt;<br>&nbsp; &lt;div class=&quot;card-body&quot;&gt;Basic 
+  card&lt;/div&gt;<br>&lt;/div&gt;<br></div>
+<a target="_blank" href="tryit9e3e.html?filename=trybs_card&amp;stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
+</div>
+<div class="w3-panel w3-note">
+<p style="margin-bottom:8px">If you are familiar with Bootstrap 3, cards replace old panels, wells, and thumbnails.</p>
+</div>
+<hr>
+
+<h2>Header and Footer</h2>
+<div class="card" style="margin:16px 0 24px 0">  
+  <div class="card-header">
+    Header
+  </div>
+  <div class="card-body">
+    Content
+  </div> 
+  <div class="card-footer">
+    Footer
+  </div>
+</div>
+  
+<p>The <code class="w3-codespan">.card-header</code> class adds a heading to the card and the <code class="w3-codespan">.card-footer</code> class adds a footer to the card:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+  &lt;div class=&quot;card&quot;&gt;<br>&nbsp; &lt;div class=&quot;card-header&quot;&gt;Header&lt;/div&gt;<br>&nbsp; 
+  &lt;div class=&quot;card-body&quot;&gt;Content&lt;/div&gt; <br>&nbsp; &lt;div 
+  class=&quot;card-footer&quot;&gt;Footer&lt;/div&gt;<br>&lt;/div&gt;<br></div>
+<a target="_blank" href="tryit6995.html?filename=trybs_card_header&amp;stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
 </div>
 
 <hr>
 
-<h2>Try it Yourself Examples</h2>
-<p>This Bootstrap 4 tutorial contains hundreds of Bootstrap 4 examples.</p>
-<p>With our online editor, you can edit the code, and click on a button to view the result.</p>
-<img src="imgdefault.jpg" alt="Responsive Bootstrap Page" style="width:95%;margin:16px auto;display:block">
-
+<h2>Contextual Cards</h2>
+<p>To add a background color the card, use contextual classes (<code class="w3-codespan">.bg-primary</code>, <code class="w3-codespan">
+.bg-success</code>, <code class="w3-codespan">.bg-info</code>, <code class="w3-codespan">.bg-warning</code>, <code class="w3-codespan">.bg-danger</code>, <code class="w3-codespan">.bg-secondary</code>, <code class="w3-codespan">.bg-dark</code> and <code class="w3-codespan">.bg-light</code>.</p>
 <div class="w3-example">
-<h3>Bootstrap 4 Example</h3>
-<div class="w3-code notranslate htmlHigh">
-  &lt;div class=&quot;jumbotron text-center&quot;&gt;<br>&nbsp;&nbsp;&lt;h1&gt;My First Bootstrap 
-  Page&lt;/h1&gt;<br>&nbsp; &lt;p&gt;Resize this responsive page to see the effect!&lt;/p&gt; <br>&lt;/div&gt;<br><br>&lt;div class=&quot;container&quot;&gt;<br>&nbsp; &lt;div class=&quot;row&quot;&gt;<br>
-  &nbsp;&nbsp;&nbsp; &lt;div class=&quot;col-sm-4&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h3&gt;Column 1&lt;/h3&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;Lorem ipsum 
-  dolor..&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp;&nbsp;&nbsp; &lt;div class=&quot;col-sm-4&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h3&gt;Column 2&lt;/h3&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;Lorem ipsum 
-  dolor..&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp;&nbsp;&nbsp; &lt;div class=&quot;col-sm-4&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h3&gt;Column 3&lt;/h3&gt; <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;Lorem ipsum 
-  dolor..&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp; &lt;/div&gt;<br>&lt;/div&gt;</div>
-<a target="_blank" href="tryit689b.html?filename=trybs_default&amp;stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a></div>
-<div class="w3-panel w3-note">
-  <p style="margin-bottom:8px">Click on the &quot;Try it Yourself&quot; button to see how it works.</p>
+<h3>Example</h3>
+<div class="w3-padding w3-white notranslate">
+<div class="card">
+<div class="card-body">Basic card</div>
+</div>
+<br>
+<div class="card bg-primary text-white">
+<div class="card-body">Primary card</div>
+</div>
+<br>
+<div class="card bg-success text-white">
+<div class="card-body">Success card</div>
+</div>
+<br>
+<div class="card bg-info text-white">
+<div class="card-body">Info card</div>
+</div>
+<br>
+<div class="card bg-warning text-white">
+<div class="card-body">Warning card</div>
+</div>
+<br>
+<div class="card bg-danger text-white">
+<div class="card-body">Danger card</div>
+</div>
+<br>
+<div class="card bg-secondary text-white">
+<div class="card-body">Secondary card</div>
+</div>
+<br>
+<div class="card bg-dark text-white">
+<div class="card-body">Dark card</div>
+</div>
+<br>
+<div class="card bg-light text-dark">
+<div class="card-body">Light card</div>
 </div>
 
+</div>
+
+<a target="_blank" href="tryit5f81.html?filename=trybs_card_contextual&amp;stacked=h" class="w3-btn w3-margin-top w3-margin-bottom">Try it Yourself &raquo;</a>
+
+</div>
 <hr>
 <div id="midcontentadcontainer" style="overflow:auto;text-align:center">
 <!-- MidContent -->
@@ -830,63 +915,290 @@ function w3_getStyleValue(elmnt,style) {
 </div>
 <hr>
 
-<h2>Bootstrap 3 vs. Bootstrap 4</h2>
-<p>Bootstrap 4 is the newest version of Bootstrap; with new components, faster stylesheet and more responsiveness.</p>
-<p>Bootstrap 4 supports the latest, stable releases of all major browsers and 
-platforms. However, Internet Explorer 9 and down is not supported. </p>
-<div class="w3-panel w3-note">
-<p style="margin-bottom:8px"><strong>If you require IE8-9 support, use <a href="../bootstrap/default.html">Bootstrap 3.</a></strong> It is the most 
-stable version of Bootstrap, and it is still supported by the team for critical bugfixes and documentation changes. However, new features will NOT be added to 
-it.</p>
-</div>
-<a href="../bootstrap/default.html" class="w3-btn w3-dark-grey">Go To Bootstrap 3 &raquo;</a>
-<hr>
-
-<h2>Bootstrap 4 Basic Template</h2>
-<p>We have created a responsive starter template with Bootstrap 4. You are free to modify, save, share, and use it in your projects:</p>
-<div class="w3-content" style="max-width:1500px">
-<iframe src="../howto/tryhow_website_bootstrap4_ifr.html" class="w3-round" style="width:100%;border:5px solid #e9e9e9;height:600px"></iframe>
-<div class="w3-row-padding" style="margin:16px -16px 0 -16px">
-  <div class="w3-col m6">
-    <a href="trybs_template1.html" target="_blank" class="w3-btn w3-padding-large w3-dark-grey w3-block">Demo</a>
-  </div>
-  <div class="w3-col m6">
-    <a href="tryit0874.html?filename=trybs_template1" target="_blank" class="w3-btn w3-padding-large w3-green w3-block">Try it Yourself</a>
+<h2>Titles, text, and links</h2>
+<div class="card" style="margin:16px 0 24px 0">
+  <div class="card-body">
+    <h4 class="card-title" style="margin-top:2px;font-weight:500;font-size: 1.5rem;line-height:1.1">Card title</h4>
+    <p class="card-text" style="margin:14px 0 16px 0">Some example text. Some example text.</p>
+    <a href="javascript:void(0)" class="card-link">Card link</a>
+    <a href="javascript:void(0)" class="card-link">Another link</a>
   </div>
 </div>
+<p>Use <code class="w3-codespan">.card-title</code> to add card titles to any 
+heading element. 
+The <code class="w3-codespan">.card-text</code> class is used to remove bottom margins for a &lt;p&gt; element if it is 
+the last child (or the only one) inside <code class="w3-codespan">.card-body</code>. The <code class="w3-codespan">.card-link</code> class adds a blue 
+color to any link, and a hover effect.</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+  &lt;div class=&quot;card&quot;&gt;<br>&nbsp; &lt;div class=&quot;card-body&quot;&gt;<br>&nbsp;&nbsp;&nbsp; 
+  &lt;h4 class=&quot;card-title&quot;&gt;Card title&lt;/h4&gt;<br>&nbsp;&nbsp;&nbsp; &lt;p 
+  class=&quot;card-text&quot;&gt;Some example text. Some example text.&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp; 
+  &lt;a href=&quot;#&quot; class=&quot;card-link&quot;&gt;Card link&lt;/a&gt;<br>&nbsp;&nbsp;&nbsp; &lt;a href=&quot;#&quot; 
+  class=&quot;card-link&quot;&gt;Another link&lt;/a&gt;<br>&nbsp; &lt;/div&gt;<br>&lt;/div&gt;<br></div>
+<a target="_blank" href="tryit7c15.html?filename=trybs_card_title&amp;stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
 </div>
 <hr>
 
-<h2>Bootstrap References</h2>
-<p>A complete list of all Bootstrap 4 CSS classes with description and examples:</p>
-<div class="w3-bar-block" style="margin-bottom:12px">
-  <a class="w3-button w3-bar-item w3-light-grey" href="bootstrap_ref_all_classes.html">Bootstrap All CSS Classes <span class="w3-tag w3-blue" style="margin-left:5px">Popular</span></a>
+<h2>Card Images</h2>
+<div class="w3-row" style="margin:20px 0 24px 0">
+<div class="w3-half">
+<div class="card" style="width:70%;">
+  <img class="card-img-top" src="img_avatar1.png" alt="Card image" style="width:100%;margin-bottom:0">
+  <div class="card-body">
+    <h4 class="card-title" style="margin-top:0">John Doe</h4>
+    <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+    <a href="javascript:void(0)" class="btn btn-primary">See Profile</a>
+  </div>
 </div>
-<p>If you want to do more with Bootstrap components, see our complete Bootstrap 4 JavaScript/jQuery reference - all with &quot;Try it Yourself&quot; examples:</p>
-<div class="w3-bar-block">
-  <a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_alert.html">Bootstrap JS Alert</a>
-  <a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_button.html">Bootstrap JS Button</a>
-  <a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_carousel.html">Bootstrap JS Carousel</a>
-  <a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_collapse.html">Bootstrap JS Collapse</a>
-  <a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_dropdown.html">Bootstrap JS Dropdown</a>
-  <a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_modal.html">Bootstrap JS Modal</a>
-  <a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_popover.html">Bootstrap JS Popover</a>
-  <a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_scrollspy.html">Bootstrap JS Scrollspy</a>
-  <a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_tab.html">Bootstrap JS Tab</a>
-  <a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_toasts.html">Bootstrap JS Toasts</a>
-  <a class="w3-button w3-bar-item w3-light-grey" href="bootstrap_ref_js_tooltip.html">Bootstrap JS Tooltip</a>
+</div>
+<div class="w3-half w3-hide-small">
+<div class="card" style="width:70%;">
+  <div class="card-body">
+    <h4 class="card-title" style="margin-top:0">Jane Doe</h4>
+    <p class="card-text">Some example text some example text. Jane Doe is an architect and engineer</p>
+    <a href="javascript:void(0)" class="btn btn-primary">See Profile</a>
+  </div>
+  <img class="card-img-bottom w3-grayscale-min" src="img_avatar5.png" alt="Card image" style="width:100%;margin-bottom:0">
+</div>
+</div>
+</div>
+
+<p>Add <code class="w3-codespan">.card-img-top</code> or <code class="w3-codespan">.card-img-bottom</code> to an <code class="w3-codespan">
+&lt;img&gt;</code> to place the image at the top or at the bottom inside the card. Note 
+that we have added the image outside of the <code class="w3-codespan">.card-body</code> to span the entire width:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+  &lt;div class=&quot;card&quot; style=&quot;width:400px&quot;&gt;<br>&nbsp; &lt;img class=&quot;card-img-top&quot; src=&quot;img_avatar1.png&quot; 
+  alt=&quot;Card image&quot;&gt;<br>&nbsp; &lt;div class=&quot;card-body&quot;&gt;<br>&nbsp;&nbsp;&nbsp; &lt;h4 
+  class=&quot;card-title&quot;&gt;John Doe&lt;/h4&gt;<br>&nbsp;&nbsp;&nbsp; &lt;p 
+  class=&quot;card-text&quot;&gt;Some example text.&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp; &lt;a href=&quot;#&quot; 
+  class=&quot;btn btn-primary&quot;&gt;See Profile&lt;/a&gt;<br>&nbsp; &lt;/div&gt;<br>&lt;/div&gt;<br></div>
+<a target="_blank" href="tryitce9e.html?filename=trybs_card_image&amp;stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
 </div>
 <hr>
 
-<h2>Did You Know?</h2>
-<p>W3.CSS is an excellent alternative to Bootstrap 4.</p>
-<p>W3.CSS is smaller, faster, and easier to use.</p>
-<p>If you want to learn W3.CSS, go to our <a href="../w3css/default.html">W3.CSS 
-Tutorial</a>.</p>
+<h2>Stretched Link</h2>
+<p>Add the <code class="w3-codespan">.stretched-link</code> class to a link inside the card, and it will make the whole card clickable and hoverable (the card will act as a link):</p><div class="w3-row" style="margin:20px 0 24px 0">
+<div class="w3-half">
+<div class="card" style="width:70%;">
+  <img class="card-img-top" src="img_avatar1.png" alt="Card image" style="width:100%;margin-bottom:0">
+  <div class="card-body">
+    <h4 class="card-title" style="margin-top:0">John Doe</h4>
+    <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+    <a href="javascript:void(0)" class="btn btn-primary stretched-link">See Profile</a>
+  </div>
+</div>
+</div>
+<div class="w3-half w3-hide-small">
+<div class="card" style="width:70%;">
+  <div class="card-body">
+    <h4 class="card-title" style="margin-top:0">Jane Doe</h4>
+    <p class="card-text">Some example text some example text. Jane Doe is an architect and engineer</p>
+    <a href="javascript:void(0)" class="btn btn-primary stretched-link">See Profile</a>
+  </div>
+  <img class="card-img-bottom w3-grayscale-min" src="img_avatar5.png" alt="Card image" style="width:100%;margin-bottom:0">
+</div>
+</div>
+</div>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+  &lt;a href=&quot;#&quot; class=&quot;btn btn-primary stretched-link&quot;&gt;See Profile&lt;/a&gt;<br></div>
+<a target="_blank" href="tryit597f.html?filename=trybs_card_link&amp;stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
+</div>
+<hr>
+
+<h2>Card Image Overlays</h2>
+  <div class="card img-fluid" style="width:500px;margin:16px 0 24px 0">
+    <img class="card-img-top" src="img_avatar1.png" alt="Card image" style="width:100%">
+    <div class="card-img-overlay">
+      <h4 class="card-title">John Doe</h4>
+      <p class="card-text">Some example text some example text. Some example text some example text. Some example text some example text. Some example text some example text.</p>
+      <a href="javascript:void(0)" class="btn btn-primary">See Profile</a>
+    </div>
+  </div>
+  
+<p>Turn an image into a card background and use <code class="w3-codespan">.card-img-overlay</code> 
+to add text on top of the image:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+  &lt;div class=&quot;card&quot; style=&quot;width:500px&quot;&gt;<br>&nbsp; &lt;img class=&quot;card-img-top&quot; src=&quot;img_avatar1.png&quot; 
+  alt=&quot;Card image&quot;&gt;<br>&nbsp; &lt;div class=&quot;card-img-overlay&quot;&gt;<br>&nbsp;&nbsp;&nbsp; &lt;h4 
+  class=&quot;card-title&quot;&gt;John Doe&lt;/h4&gt;<br>&nbsp;&nbsp;&nbsp; &lt;p 
+  class=&quot;card-text&quot;&gt;Some example text.&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp; &lt;a href=&quot;#&quot; 
+  class=&quot;btn btn-primary&quot;&gt;See Profile&lt;/a&gt;<br>&nbsp; &lt;/div&gt;<br>&lt;/div&gt;<br></div>
+<a target="_blank" href="tryit4600.html?filename=trybs_card_image_overlay&amp;stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
+</div>
+<hr>
+
+<h2>Card Columns</h2>
+  <div class="card-columns">
+    <div class="card bg-primary pt-3">
+      <div class="card-body text-center">
+        <p>Some text inside the first card</p>
+      </div>
+    </div>
+    <div class="card bg-warning pt-3">
+      <div class="card-body text-center">
+        <p>Some text inside the second card</p>
+      </div>
+    </div>
+    <div class="card bg-success pt-3">
+      <div class="card-body text-center">
+        <p>Some text inside the third card</p>
+      </div>
+    </div>
+    <div class="card bg-danger pt-3">
+      <div class="card-body text-center">
+        <p>Some text inside the fourth card</p>
+      </div>
+    </div>  
+    <div class="card bg-light pt-3">
+      <div class="card-body text-center">
+        <p>Some text inside the fifth card</p>
+      </div>
+    </div>
+    <div class="card bg-info pt-3">
+      <div class="card-body text-center">
+        <p>Some text inside the sixth card</p>
+      </div>
+    </div>
+  </div>
+  
+  <p>The <code class="w3-codespan">.card-columns</code> class creates a masonry-like grid of cards (like pinterest). The layout will automatically adjust as you insert more cards.</p>
+  <p><strong>Note:</strong> The cards are displayed vertically on small screens (less than 576px):</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+  &lt;div class="card-columns"&gt;<br>&nbsp; &lt;div class="card bg-primary"&gt;<br>&nbsp;&nbsp;&nbsp; 
+  &lt;div class="card-body text-center"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p 
+  class=&quot;card-text&quot;&gt;Some 
+  text inside the first card&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp; &lt;/div&gt;<br>&nbsp; 
+  &lt;div class="card bg-warning"&gt;<br>&nbsp;&nbsp;&nbsp; &lt;div class="card-body 
+  text-center"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p class=&quot;card-text&quot;&gt;Some text inside the second 
+  card&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp; &lt;/div&gt;<br>&nbsp; &lt;div 
+  class="card bg-success"&gt;<br>&nbsp;&nbsp;&nbsp; &lt;div class="card-body 
+  text-center"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p class=&quot;card-text&quot;&gt;Some text inside the third 
+  card&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp; &lt;/div&gt;<br>&nbsp; &lt;div 
+  class="card bg-danger"&gt;<br>&nbsp;&nbsp;&nbsp; &lt;div class="card-body 
+  text-center"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p class=&quot;card-text&quot;&gt;Some text inside the fourth 
+  card&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp; &lt;/div&gt; <br>&nbsp; &lt;div 
+  class="card bg-light"&gt;<br>&nbsp;&nbsp;&nbsp; &lt;div class="card-body 
+  text-center"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p class=&quot;card-text&quot;&gt;Some text inside the fifth 
+  card&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp; &lt;/div&gt;<br>&nbsp; &lt;div 
+  class="card bg-info"&gt;<br>&nbsp;&nbsp;&nbsp; &lt;div class="card-body 
+  text-center"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p class=&quot;card-text&quot;&gt;Some text inside the sixth 
+  card&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp; &lt;/div&gt;<br>&lt;/div&gt;<br></div>
+<a target="_blank" href="tryitce9f.html?filename=trybs_card_columns&amp;stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
+</div>
+<hr>
+
+<h2>Card Deck</h2>
+  <div class="card-deck mb-4">
+    <div class="card bg-primary pt-3">
+      <div class="card-body text-center">
+        <p>Some text inside the first card</p>
+        <p>Some more text to increase the height</p>
+        <p>Some more text to increase the height</p>
+        <p>Some more text to increase the height</p>
+      </div>
+    </div>
+    <div class="card bg-warning pt-3">
+      <div class="card-body text-center">
+        <p>Some text inside the second card</p>
+      </div>
+    </div>
+    <div class="card bg-success pt-3">
+      <div class="card-body text-center">
+        <p>Some text inside the third card</p>
+      </div>
+    </div>
+    <div class="card bg-danger pt-3">
+      <div class="card-body text-center">
+        <p>Some text inside the fourth card</p>
+      </div>
+    </div>
+  </div>
+  
+  <p>The <code class="w3-codespan">.card-deck</code> class creates a grid of cards that are of <strong>equal height and width</strong>. The layout will automatically adjust as you insert more cards.</p>
+  <p><strong>Note:</strong> The cards are displayed vertically on small screens (less than 576px):</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+  &lt;div class="card-deck"&gt;<br>&nbsp; &lt;div class="card bg-primary"&gt;<br>&nbsp;&nbsp;&nbsp; 
+  &lt;div class="card-body text-center"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p 
+  class=&quot;card-text&quot;&gt;Some 
+  text inside the first card&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp; &lt;/div&gt;<br>&nbsp; 
+  &lt;div class="card bg-warning"&gt;<br>&nbsp;&nbsp;&nbsp; &lt;div class="card-body 
+  text-center"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p class=&quot;card-text&quot;&gt;Some text inside the second 
+  card&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp; &lt;/div&gt;<br>&nbsp; &lt;div 
+  class="card bg-success"&gt;<br>&nbsp;&nbsp;&nbsp; &lt;div class="card-body 
+  text-center"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p class=&quot;card-text&quot;&gt;Some text inside the third 
+  card&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp; &lt;/div&gt;<br>&nbsp; &lt;div 
+  class="card bg-danger"&gt;<br>&nbsp;&nbsp;&nbsp; &lt;div class="card-body 
+  text-center"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p class=&quot;card-text&quot;&gt;Some text inside the fourth 
+  card&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp; &lt;/div&gt; <br>&lt;/div&gt;<br></div>
+<a target="_blank" href="tryit5da9.html?filename=trybs_card_deck&amp;stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
+</div>
+<hr>
+
+<h2>Card Group</h2>
+  <div class="card-group mb-4">
+    <div class="card bg-primary pt-3">
+      <div class="card-body text-center">
+        <p>Some text inside the first card</p>
+        <p>Some more text to increase the height</p>
+        <p>Some more text to increase the height</p>
+        <p>Some more text to increase the height</p>
+      </div>
+    </div>
+    <div class="card bg-warning pt-3">
+      <div class="card-body text-center">
+        <p>Some text inside the second card</p>
+      </div>
+    </div>
+    <div class="card bg-success pt-3">
+      <div class="card-body text-center">
+        <p>Some text inside the third card</p>
+      </div>
+    </div>
+    <div class="card bg-danger pt-3">
+      <div class="card-body text-center">
+        <p>Some text inside the fourth card</p>
+      </div>
+    </div>
+  </div>
+  
+  <p>The <code class="w3-codespan">.card-group</code> class is similar to <code class="w3-codespan">.card-deck</code>. The only difference is that the <code class="w3-codespan">.card-group</code> class removes left and right margins between each card.</p>
+  <p><strong>Note:</strong> The cards are displayed vertically on small screens (less than 576px), <strong>WITH</strong> top and bottom margin:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+  &lt;div class="card-group"&gt;<br>&nbsp; &lt;div class="card bg-primary"&gt;<br>&nbsp;&nbsp;&nbsp; 
+  &lt;div class="card-body text-center"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p 
+  class=&quot;card-text&quot;&gt;Some 
+  text inside the first card&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp; &lt;/div&gt;<br>&nbsp; 
+  &lt;div class="card bg-warning"&gt;<br>&nbsp;&nbsp;&nbsp; &lt;div class="card-body 
+  text-center"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p class=&quot;card-text&quot;&gt;Some text inside the second 
+  card&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp; &lt;/div&gt;<br>&nbsp; &lt;div 
+  class="card bg-success"&gt;<br>&nbsp;&nbsp;&nbsp; &lt;div class="card-body 
+  text-center"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p class=&quot;card-text&quot;&gt;Some text inside the third 
+  card&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp; &lt;/div&gt;<br>&nbsp; &lt;div 
+  class="card bg-danger"&gt;<br>&nbsp;&nbsp;&nbsp; &lt;div class="card-body 
+  text-center"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p class=&quot;card-text&quot;&gt;Some text inside the fourth 
+  card&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp; &lt;/div&gt; <br>&lt;/div&gt;<br></div>
+<a target="_blank" href="tryit2afa.html?filename=trybs_card_group&amp;stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
+</div>
+
 <br>
+
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="../default.html">&#10094; Home</a>
-<a class="w3-right w3-btn" href="bootstrap_get_started.html">Next &#10095;</a>
+<a class="w3-left w3-btn" href="bootstrap_list_groups.html">&#10094; Previous</a>
+<a class="w3-right w3-btn" href="bootstrap_dropdowns.html">Next &#10095;</a>
 </div>
 </div>
 <div class="w3-col l2 m12" id="right">
@@ -1180,4 +1492,6 @@ While using this site, you agree to have read and accepted our <a href="../about
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>  
 <![endif]-->
 </body>
+
+<!-- Mirrored from www.w3schools.com/bootstrap4/bootstrap_cards.asp by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Sep 2019 08:46:56 GMT -->
 </html>

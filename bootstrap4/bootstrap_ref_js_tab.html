@@ -1,7 +1,13 @@
+
 <!DOCTYPE html>
 <html lang="en-US">
+
+<!-- Mirrored from www.w3schools.com/bootstrap4/bootstrap_ref_js_tab.asp by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Sep 2019 08:47:01 GMT -->
 <head>
-<title>Bootstrap 4 Tutorial</title>
+<title>Bootstrap JS Tab Reference</title>
+<link rel="stylesheet" href="../../maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+<script src="../../ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="../../maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="Keywords" content="HTML,CSS,JavaScript,SQL,PHP,jQuery,XML,DOM,Bootstrap,Python,Java,Web development,W3C,tutorials,programming,training,learning,quiz,primer,lessons,references,examples,exercises,source code,colors,demos,tips">
@@ -479,10 +485,8 @@ function w3_getStyleValue(elmnt,style) {
   }
 }
 </script>
+<link rel="stylesheet" href="w3-fix.css">
 <style>
-.w3-ul li a {
-  text-decoration:none;
-}
 .topnav .w3-bar a[href^="/bootstrap/bootstrap_ver.asp"] {
   background-color: #4CAF50 !important;
 }
@@ -786,107 +790,166 @@ function w3_getStyleValue(elmnt,style) {
         <!-- adspace leaderboard -->
        
       </div>
-<h1>Bootstrap 4 <span class="color_h1">Tutorial</span></h1>
+<h1>Bootstrap <span class="color_h1">JS Tab</span></h1>
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="../default.html">&#10094; Home</a>
-<a class="w3-right w3-btn" href="bootstrap_get_started.html">Next &#10095;</a>
+<a class="w3-left w3-btn" href="bootstrap_ref_js_scrollspy.html">&#10094; Previous</a>
+<a class="w3-right w3-btn" href="bootstrap_ref_js_toasts.html">Next &#10095;</a>
 </div>
-
-<div class="w3-panel w3-info intro w3-padding-16">
-<p style="margin-top:15px;">Bootstrap 4 is the newest version of <a href="../bootstrap/default.html">Bootstrap</a>, which is the most popular HTML, CSS, and JavaScript framework for developing responsive, mobile-first websites.</p>
-<p>Bootstrap 4 is completely free to download and use!</p>
-<p><a href="bootstrap_get_started.html" class="w3-btn w3-padding-large w3-hide-small">Start learning Bootstrap 4 now &raquo;</a></p>
-<p><a href="bootstrap_get_started.html" class="w3-btn w3-block w3-hide-large w3-hide-medium" style="padding:8px 16px">Learn Bootstrap 4</a></p>
-</div>
-
 <hr>
 
-<h2>Try it Yourself Examples</h2>
-<p>This Bootstrap 4 tutorial contains hundreds of Bootstrap 4 examples.</p>
-<p>With our online editor, you can edit the code, and click on a button to view the result.</p>
-<img src="imgdefault.jpg" alt="Responsive Bootstrap Page" style="width:95%;margin:16px auto;display:block">
+<h2>Tab CSS Classes</h2>
+<p>Tabs are used to separate content into different panes where each pane is 
+viewable one at a time.</p>
+<p>For a tutorial about Tabs, read our <a href="bootstrap_navs.html">Bootstrap Tabs/Pills Tutorial</a>.</p>
+<table class="w3-table-all notranslate">
+  <tr>
+    <th style="width:22%;">Class</th>
+    <th >Description</th>
+    <th>Example</th>
+  </tr>
+  <tr>
+    <td><code>.nav nav-tabs</code></td>
+    <td>Creates navigation tabs</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="tryit20f8.html?filename=trybs_ref_js_tab&amp;stacked=h">Try it</a></td>
+  </tr>
+  <tr>
+    <td><code>.nav nav-pills</code></td>
+    <td>Creates navigation pills</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="tryitcebe.html?filename=trybs_ref_js_tab-pills&amp;stacked=h">Try it</a></td>
+  </tr>
+  <tr>
+    <td><code>.nav-item</code></td>
+    <td>Creates tab items</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="tryit20f8.html?filename=trybs_ref_js_tab&amp;stacked=h">Try it</a></td>
+  </tr>
+  <tr>
+    <td><code>.nav-link</code></td>
+    <td>Styles links inside the navigation tab</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="tryit20f8.html?filename=trybs_ref_js_tab&amp;stacked=h">Try it</a></td>
+  </tr>
+  <tr>
+    <td><code>.nav-justified</code></td>
+    <td>Makes navigation tabs/pills equal widths of their parent, at screens wider than 768px. On smaller screens, the nav tabs are stacked</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="tryit8a3a.html?filename=trybs_ref_js_tab-justified&amp;stacked=h">Try it</a></td>
+  </tr>
+  <tr>
+    <td><code>.tab-content</code></td>
+    <td>Together with .tab-pane and data-toggle=&quot;tab&quot;, it makes the tab toggleable</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="tryita7da.html?filename=trybs_ref_js_tab-content&amp;stacked=h">Try it</a></td>
+  </tr>
+  <tr>
+    <td><code>.tab-pane</code></td>
+    <td>Together with .tab-content and data-toggle=&quot;tab&quot;, it makes the tab toggleable</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="tryita7da.html?filename=trybs_ref_js_tab-content&amp;stacked=h">Try it</a></td>
+  </tr>
+</table>
+<hr>
+
+<h2>Via data-* Attributes</h2>
+<p>Add <code class="w3-codespan">data-toggle=&quot;tab&quot;</code> to each tab, and add a <code class="w3-codespan">.tab-pane</code> class with a unique ID 
+for every tab and wrap them in a <code class="w3-codespan">.tab-content</code> class.</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+  &lt;!-- Nav tabs --&gt;<br>&lt;ul class=&quot;nav nav-tabs&quot;&gt;<br>&nbsp; &lt;li class=&quot;nav-item&quot;&gt;<br>&nbsp;&nbsp;&nbsp; 
+  &lt;a class=&quot;nav-link active&quot; data-toggle=&quot;tab&quot; href=&quot;#home&quot;&gt;Home&lt;/a&gt;<br>&nbsp; 
+  &lt;/li&gt;<br>&nbsp; &lt;li class=&quot;nav-item&quot;&gt;<br>&nbsp;&nbsp;&nbsp; &lt;a class=&quot;nav-link&quot; 
+  data-toggle=&quot;tab&quot; href=&quot;#menu1&quot;&gt;Menu 1&lt;/a&gt;<br>&nbsp; &lt;/li&gt;<br>&nbsp; &lt;li 
+  class=&quot;nav-item&quot;&gt;<br>&nbsp;&nbsp;&nbsp; &lt;a class=&quot;nav-link&quot; data-toggle=&quot;tab&quot; 
+  href=&quot;#menu2&quot;&gt;Menu 2&lt;/a&gt;<br>&nbsp; &lt;/li&gt;<br>&lt;/ul&gt;<br><br>&lt;!-- Tab panes --&gt;<br>
+  &lt;div class=&quot;tab-content&quot;&gt;<br>&nbsp; &lt;div class=&quot;tab-pane active container&quot; 
+  id=&quot;home&quot;&gt;...&lt;/div&gt;<br>&nbsp; &lt;div class=&quot;tab-pane container&quot; 
+  id=&quot;menu1&quot;&gt;...&lt;/div&gt;<br>&nbsp; &lt;div class=&quot;tab-pane container&quot; 
+  id=&quot;menu2&quot;&gt;...&lt;/div&gt;<br>&lt;/div&gt;</div>
+<a target="_blank" href="tryita7da.html?filename=trybs_ref_js_tab-content&amp;stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
+</div>
+<hr>
+
+<h2>Via JavaScript</h2>
+<p>Enable manually with:</p>
 
 <div class="w3-example">
-<h3>Bootstrap 4 Example</h3>
-<div class="w3-code notranslate htmlHigh">
-  &lt;div class=&quot;jumbotron text-center&quot;&gt;<br>&nbsp;&nbsp;&lt;h1&gt;My First Bootstrap 
-  Page&lt;/h1&gt;<br>&nbsp; &lt;p&gt;Resize this responsive page to see the effect!&lt;/p&gt; <br>&lt;/div&gt;<br><br>&lt;div class=&quot;container&quot;&gt;<br>&nbsp; &lt;div class=&quot;row&quot;&gt;<br>
-  &nbsp;&nbsp;&nbsp; &lt;div class=&quot;col-sm-4&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h3&gt;Column 1&lt;/h3&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;Lorem ipsum 
-  dolor..&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp;&nbsp;&nbsp; &lt;div class=&quot;col-sm-4&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h3&gt;Column 2&lt;/h3&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;Lorem ipsum 
-  dolor..&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp;&nbsp;&nbsp; &lt;div class=&quot;col-sm-4&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h3&gt;Column 3&lt;/h3&gt; <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;Lorem ipsum 
-  dolor..&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp; &lt;/div&gt;<br>&lt;/div&gt;</div>
-<a target="_blank" href="tryit689b.html?filename=trybs_default&amp;stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a></div>
-<div class="w3-panel w3-note">
-  <p style="margin-bottom:8px">Click on the &quot;Try it Yourself&quot; button to see how it works.</p>
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+// Select all tabs<br>$('.nav-tabs a').click(function(){<br>&nbsp;&nbsp;$(this).tab('show');<br>})<br>
+<br>// Select tab by name<br>$('.nav-tabs a[href=&quot;#home&quot;]').tab('show')<br>
+<br>// Select first tab<br>$('.nav-tabs a:first').tab('show') <br><br>// Select 
+last tab<br>$('.nav-tabs a:last').tab('show') <br><br>// Select fourth tab 
+(zero-based)<br>$('.nav-tabs li:eq(3) a').tab('show')
 </div>
-
-<hr>
-<div id="midcontentadcontainer" style="overflow:auto;text-align:center">
-<!-- MidContent -->
-
-  <!--<pre>mid_content, all: [300,250][336,280][728,90][970,250][970,90][320,50][468,60]</pre>-->
-  <div id="snhb-mid_content-0"></div>
-    
+<a target="_blank" href="tryit610b.html?filename=trybs_ref_js_tab_js&amp;stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
 </div>
 <hr>
 
-<h2>Bootstrap 3 vs. Bootstrap 4</h2>
-<p>Bootstrap 4 is the newest version of Bootstrap; with new components, faster stylesheet and more responsiveness.</p>
-<p>Bootstrap 4 supports the latest, stable releases of all major browsers and 
-platforms. However, Internet Explorer 9 and down is not supported. </p>
-<div class="w3-panel w3-note">
-<p style="margin-bottom:8px"><strong>If you require IE8-9 support, use <a href="../bootstrap/default.html">Bootstrap 3.</a></strong> It is the most 
-stable version of Bootstrap, and it is still supported by the team for critical bugfixes and documentation changes. However, new features will NOT be added to 
-it.</p>
-</div>
-<a href="../bootstrap/default.html" class="w3-btn w3-dark-grey">Go To Bootstrap 3 &raquo;</a>
-<hr>
+<h2>Tab Options</h2>
+<table class="w3-table-all notranslate">
+  <tr>
+    <td>None</td>
+  </tr>
+</table>
 
-<h2>Bootstrap 4 Basic Template</h2>
-<p>We have created a responsive starter template with Bootstrap 4. You are free to modify, save, share, and use it in your projects:</p>
-<div class="w3-content" style="max-width:1500px">
-<iframe src="../howto/tryhow_website_bootstrap4_ifr.html" class="w3-round" style="width:100%;border:5px solid #e9e9e9;height:600px"></iframe>
-<div class="w3-row-padding" style="margin:16px -16px 0 -16px">
-  <div class="w3-col m6">
-    <a href="trybs_template1.html" target="_blank" class="w3-btn w3-padding-large w3-dark-grey w3-block">Demo</a>
-  </div>
-  <div class="w3-col m6">
-    <a href="tryit0874.html?filename=trybs_template1" target="_blank" class="w3-btn w3-padding-large w3-green w3-block">Try it Yourself</a>
-  </div>
+<h2>Tab Methods</h2>
+<p>The following table lists all available tab methods.</p>
+<div class="table-responsive">
+<table class="w3-table-all notranslate">
+  <tr>
+    <th>Method</th>
+    <th style="width:60%;">Description</th>
+    <th style="width:7%">Try it</th>
+  </tr>
+  <tr>
+    <td>.tab(&quot;show&quot;)</td>
+    <td>Shows the tab</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="tryit3261.html?filename=trybs_ref_js_tab_show&amp;stacked=h">Try it</a></td>
+  </tr>
+</table>
 </div>
-</div>
-<hr>
 
-<h2>Bootstrap References</h2>
-<p>A complete list of all Bootstrap 4 CSS classes with description and examples:</p>
-<div class="w3-bar-block" style="margin-bottom:12px">
-  <a class="w3-button w3-bar-item w3-light-grey" href="bootstrap_ref_all_classes.html">Bootstrap All CSS Classes <span class="w3-tag w3-blue" style="margin-left:5px">Popular</span></a>
-</div>
-<p>If you want to do more with Bootstrap components, see our complete Bootstrap 4 JavaScript/jQuery reference - all with &quot;Try it Yourself&quot; examples:</p>
-<div class="w3-bar-block">
-  <a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_alert.html">Bootstrap JS Alert</a>
-  <a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_button.html">Bootstrap JS Button</a>
-  <a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_carousel.html">Bootstrap JS Carousel</a>
-  <a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_collapse.html">Bootstrap JS Collapse</a>
-  <a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_dropdown.html">Bootstrap JS Dropdown</a>
-  <a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_modal.html">Bootstrap JS Modal</a>
-  <a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_popover.html">Bootstrap JS Popover</a>
-  <a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_scrollspy.html">Bootstrap JS Scrollspy</a>
-  <a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_tab.html">Bootstrap JS Tab</a>
-  <a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_toasts.html">Bootstrap JS Toasts</a>
-  <a class="w3-button w3-bar-item w3-light-grey" href="bootstrap_ref_js_tooltip.html">Bootstrap JS Tooltip</a>
-</div>
-<hr>
+<h2>Tab Events</h2>
+<p>The following table lists all available tab events.</p>
+<div class="table-responsive">
+<table class="w3-table-all notranslate">
+  <tr>
+    <th>Event</th>
+    <th style="width:60%;">Description</th>
+    <th style="width:7%">Try it</th>
+  </tr>
+  <tr>
+    <td>show.bs.tab</td>
+    <td>Occurs when the tab is about to be shown.</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="tryit1bbb.html?filename=trybs_ref_js_tab_events&amp;stacked=h">Try it</a></td>
+  </tr>
+  <tr>
+    <td>shown.bs.tab</td>
+    <td>Occurs when the tab is fully shown (after CSS transitions have completed)</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="tryit1bbb.html?filename=trybs_ref_js_tab_events&amp;stacked=h">Try it</a></td>
+  </tr>
+  <tr>
+    <td>hide.bs.tab</td>
+    <td>Occurs when the tab is about to be hidden</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="tryit1bbb.html?filename=trybs_ref_js_tab_events&amp;stacked=h">Try it</a></td>
+  </tr>
+  <tr>
+    <td>hidden.bs.tab</td>
+    <td>Occurs when the tab is fully hidden (after CSS transitions have completed)</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="tryit1bbb.html?filename=trybs_ref_js_tab_events&amp;stacked=h">Try it</a></td>
+    </tr>
+</table>
+<p><strong>Tip:</strong> Use jQuery's <a href="../jquery/event_target.html">event.target</a> and <a href="../jquery/event_relatedtarget.html">event.relatedTarget</a> 
+to get the active tab and the previous active tab:</p>
 
-<h2>Did You Know?</h2>
-<p>W3.CSS is an excellent alternative to Bootstrap 4.</p>
-<p>W3.CSS is smaller, faster, and easier to use.</p>
-<p>If you want to learn W3.CSS, go to our <a href="../w3css/default.html">W3.CSS 
-Tutorial</a>.</p>
+<div class="w3-example">
+ <h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+ $('.nav-tabs a').on('shown.bs.tab', function(event){<br>&nbsp;&nbsp;var x = $(event.target).text();&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // active tab<br>&nbsp;&nbsp;var y = $(event.relatedTarget).text();&nbsp; // previous tab<br>});</div>
+<a target="_blank" href="tryitee61.html?filename=trybs_ref_js_tab_events2&amp;stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
+</div>
+</div>
+
 <br>
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="../default.html">&#10094; Home</a>
-<a class="w3-right w3-btn" href="bootstrap_get_started.html">Next &#10095;</a>
+<a class="w3-left w3-btn" href="bootstrap_ref_js_scrollspy.html">&#10094; Previous</a>
+<a class="w3-right w3-btn" href="bootstrap_ref_js_toasts.html">Next &#10095;</a>
 </div>
 </div>
 <div class="w3-col l2 m12" id="right">
@@ -1180,4 +1243,6 @@ While using this site, you agree to have read and accepted our <a href="../about
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>  
 <![endif]-->
 </body>
+
+<!-- Mirrored from www.w3schools.com/bootstrap4/bootstrap_ref_js_tab.asp by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Sep 2019 08:47:01 GMT -->
 </html>

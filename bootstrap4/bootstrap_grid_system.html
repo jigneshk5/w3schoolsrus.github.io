@@ -1,7 +1,14 @@
+
 <!DOCTYPE html>
 <html lang="en-US">
+
+<!-- Mirrored from www.w3schools.com/bootstrap4/bootstrap_grid_system.asp by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Sep 2019 08:47:00 GMT -->
 <head>
-<title>Bootstrap 4 Tutorial</title>
+<title>Bootstrap 4 Grid System</title>
+<link rel="stylesheet" href="../../maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<script src="../../ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="../../cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="../../maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="Keywords" content="HTML,CSS,JavaScript,SQL,PHP,jQuery,XML,DOM,Bootstrap,Python,Java,Web development,W3C,tutorials,programming,training,learning,quiz,primer,lessons,references,examples,exercises,source code,colors,demos,tips">
@@ -479,9 +486,20 @@ function w3_getStyleValue(elmnt,style) {
   }
 }
 </script>
+<link rel="stylesheet" href="w3-fix.css">
 <style>
-.w3-ul li a {
-  text-decoration:none;
+table.grid {
+    width:100%;
+    border:none;
+    background-color:#f1f1f1;
+    padding:0px;    
+}
+table.grid tr {
+    text-align:center;
+}
+table.grid td {
+    border:4px solid white;
+    padding:8px;     
 }
 .topnav .w3-bar a[href^="/bootstrap/bootstrap_ver.asp"] {
   background-color: #4CAF50 !important;
@@ -786,38 +804,86 @@ function w3_getStyleValue(elmnt,style) {
         <!-- adspace leaderboard -->
        
       </div>
-<h1>Bootstrap 4 <span class="color_h1">Tutorial</span></h1>
+<h1>Bootstrap 4 <span class="color_h1">Grid System</span></h1>
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="../default.html">&#10094; Home</a>
-<a class="w3-right w3-btn" href="bootstrap_get_started.html">Next &#10095;</a>
+<a class="w3-left w3-btn" href="bootstrap_filters.html">&#10094; Previous</a>
+<a class="w3-right w3-btn" href="bootstrap_grid_stacked_to_horizontal.html">Next &#10095;</a>
 </div>
-
-<div class="w3-panel w3-info intro w3-padding-16">
-<p style="margin-top:15px;">Bootstrap 4 is the newest version of <a href="../bootstrap/default.html">Bootstrap</a>, which is the most popular HTML, CSS, and JavaScript framework for developing responsive, mobile-first websites.</p>
-<p>Bootstrap 4 is completely free to download and use!</p>
-<p><a href="bootstrap_get_started.html" class="w3-btn w3-padding-large w3-hide-small">Start learning Bootstrap 4 now &raquo;</a></p>
-<p><a href="bootstrap_get_started.html" class="w3-btn w3-block w3-hide-large w3-hide-medium" style="padding:8px 16px">Learn Bootstrap 4</a></p>
-</div>
+<hr>
+<h2>Bootstrap 4 Grid System</h2>
+<p>Bootstrap's grid system allows up to 12 columns across the page.</p>
+<p>If you do not want to use all 12 column individually, you can group the columns together to create wider columns:</p>
+<div class="table-responsive">
+<table class="grid" cellspacing="0">
+<tr>
+  <td>span 1</td>
+  <td>span 1</td>  
+  <td>span 1</td>
+  <td>span 1</td>
+  <td>span 1</td>  
+  <td>span 1</td>
+  <td>span 1</td>
+  <td>span 1</td>  
+  <td>span 1</td>
+  <td>span 1</td>
+  <td>span 1</td>  
+  <td>span 1</td>
+</tr>
+<tr>
+  <td colspan="4">&nbsp;span 4</td>
+  <td colspan="4">&nbsp;span 4</td>  
+  <td colspan="4">&nbsp;span 4</td>
+</tr>
+<tr>
+  <td colspan="4">span 4</td>
+  <td colspan="8">span 8</td>  
+</tr>
+<tr>
+  <td colspan="6">span 6</td>
+  <td colspan="6">span 6</td>  
+</tr>
+<tr>
+  <td colspan="12">span 12</td>
+</tr>
+</table>
+</div><p>Bootstrap's grid system is responsive, and the columns will re-arrange 
+depending on the screen size: On a big screen it might look better with the 
+content organized in three columns, but on a small screen it would be better if 
+the content items were stacked on top of each other.</p>
 
 <hr>
 
-<h2>Try it Yourself Examples</h2>
-<p>This Bootstrap 4 tutorial contains hundreds of Bootstrap 4 examples.</p>
-<p>With our online editor, you can edit the code, and click on a button to view the result.</p>
-<img src="imgdefault.jpg" alt="Responsive Bootstrap Page" style="width:95%;margin:16px auto;display:block">
+<h2>Grid Classes</h2>
+<p>The Bootstrap 4 grid system has five classes:</p>
+<ul>
+  <li><code class="w3-codespan">.col-</code> (extra small devices - screen width less than 576px)</li>
+  <li><code class="w3-codespan">.col-sm-</code> (small devices - screen width equal to or greater than 576px)</li>
+  <li><code class="w3-codespan">.col-md-</code> (medium devices - screen width equal to or greater than 768px)</li>
+  <li><code class="w3-codespan">.col-lg-</code> (large devices - screen width equal to or greater than 992px)</li>
+  <li><code class="w3-codespan">.col-xl-</code> (xlarge devices - screen width equal to or greater than 1200px)</li>
+</ul>
+<p>The classes above can be combined to create more dynamic and flexible layouts.</p>
+<p><strong>Tip:</strong> Each class scales up, so if you wish to set the same widths for 
+<code class="w3-codespan">sm</code> and <code class="w3-codespan">md</code>, you only need to specify <code class="w3-codespan">sm</code>.</p>
+<hr>
 
-<div class="w3-example">
-<h3>Bootstrap 4 Example</h3>
-<div class="w3-code notranslate htmlHigh">
-  &lt;div class=&quot;jumbotron text-center&quot;&gt;<br>&nbsp;&nbsp;&lt;h1&gt;My First Bootstrap 
-  Page&lt;/h1&gt;<br>&nbsp; &lt;p&gt;Resize this responsive page to see the effect!&lt;/p&gt; <br>&lt;/div&gt;<br><br>&lt;div class=&quot;container&quot;&gt;<br>&nbsp; &lt;div class=&quot;row&quot;&gt;<br>
-  &nbsp;&nbsp;&nbsp; &lt;div class=&quot;col-sm-4&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h3&gt;Column 1&lt;/h3&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;Lorem ipsum 
-  dolor..&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp;&nbsp;&nbsp; &lt;div class=&quot;col-sm-4&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h3&gt;Column 2&lt;/h3&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;Lorem ipsum 
-  dolor..&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp;&nbsp;&nbsp; &lt;div class=&quot;col-sm-4&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h3&gt;Column 3&lt;/h3&gt; <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;Lorem ipsum 
-  dolor..&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp; &lt;/div&gt;<br>&lt;/div&gt;</div>
-<a target="_blank" href="tryit689b.html?filename=trybs_default&amp;stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a></div>
+<h2>Grid System Rules</h2>
+<p>Some Bootstrap 4 grid system rules:</p>
+<ul>
+  <li>Rows must be placed within a <code class="w3-codespan">.container</code> (fixed-width) or <code class="w3-codespan">.container-fluid</code> (full-width) for proper alignment and padding</li>
+  <li>Use rows to create horizontal groups of columns</li>
+  <li>Content should be placed within columns, and only columns may be immediate children of rows</li>
+  <li>Predefined classes like <code class="w3-codespan">.row </code>and <code class="w3-codespan">.col-sm-4</code> are available for quickly making grid layouts</li>
+  <li>Columns create gutters (gaps between column content) via padding. That padding is offset in rows for the first and last column via negative margin on <code class="w3-codespan">.rows</code></li>
+  <li>Grid columns are created by specifying the number of 12 available columns you wish to span. For example, three equal columns would use three <code class="w3-codespan">.col-sm-4</code></li>
+  <li>Column widths are in percentage, so they are always fluid and sized relative to their parent element</li>
+  <li>The biggest <strong>difference between Bootstrap 3 and Bootstrap 4</strong> is that Bootstrap 4 now uses flexbox, instead of floats. One big advantage with flexbox is that grid columns without a specified width will automatically layout as "equal width columns" (and equal height). Example: Three elements with <code class="w3-codespan">.col-sm</code> will each automatically be 33.33% wide from the small breakpoint and up. <strong>Tip:</strong> If you want to learn more about Flexbox, you can read our <a href="../css/css3_flexbox.html">CSS Flexbox Tutorial</a>.</li>
+</ul>
 <div class="w3-panel w3-note">
-  <p style="margin-bottom:8px">Click on the &quot;Try it Yourself&quot; button to see how it works.</p>
+<p style="margin-bottom:0">Note that Flexbox is not supported in IE9 and earlier versions.</p>
+<p style="margin-bottom:8px"><strong>If you require IE8-9 support, use <a href="../bootstrap/default.html">Bootstrap 3.</a></strong> It is the most 
+stable version of Bootstrap, and it is still supported by the team for critical bugfixes and documentation changes. However, no new features will be added to 
+it.</p>
 </div>
 
 <hr>
@@ -830,63 +896,169 @@ function w3_getStyleValue(elmnt,style) {
 </div>
 <hr>
 
-<h2>Bootstrap 3 vs. Bootstrap 4</h2>
-<p>Bootstrap 4 is the newest version of Bootstrap; with new components, faster stylesheet and more responsiveness.</p>
-<p>Bootstrap 4 supports the latest, stable releases of all major browsers and 
-platforms. However, Internet Explorer 9 and down is not supported. </p>
-<div class="w3-panel w3-note">
-<p style="margin-bottom:8px"><strong>If you require IE8-9 support, use <a href="../bootstrap/default.html">Bootstrap 3.</a></strong> It is the most 
-stable version of Bootstrap, and it is still supported by the team for critical bugfixes and documentation changes. However, new features will NOT be added to 
-it.</p>
+<h2>Basic Structure of a Bootstrap 4 Grid</h2>
+<p>The following is a basic structure of a Bootstrap 4 grid:</p>
+<div class="w3-example">
+ <div class="w3-code notranslate htmlHigh">
+   &lt;!-- Control the column width, and how they should appear on different 
+   devices --&gt;<br>&lt;div class=&quot;row&quot;&gt;<br>&nbsp; &lt;div class=&quot;col-*-*&quot;&gt;&lt;/div&gt;<br>&nbsp; &lt;div class=&quot;col-*-*&quot;&gt;&lt;/div&gt;<br>&nbsp; &lt;div class=&quot;col-*-*&quot;&gt;&lt;/div&gt;<br>&lt;/div&gt;<br>
+   <br>&lt;!-- Or let Bootstrap automatically handle the layout --&gt;<br>&lt;div class=&quot;row&quot;&gt;<br>&nbsp; &lt;div class=&quot;col&quot;&gt;&lt;/div&gt;<br>&nbsp; &lt;div class=&quot;col&quot;&gt;&lt;/div&gt;<br>&nbsp; &lt;div class=&quot;col&quot;&gt;&lt;/div&gt;<br>&nbsp; 
+   &lt;div class=&quot;col&quot;&gt;&lt;/div&gt;<br>&lt;/div&gt;</div>
+<a target="_blank" href="tryitabd1.html?filename=trybs_grid_ex_structure&amp;stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
 </div>
-<a href="../bootstrap/default.html" class="w3-btn w3-dark-grey">Go To Bootstrap 3 &raquo;</a>
+<p>First example: create a row (<code class="w3-codespan">&lt;div 
+class="row"&gt;</code>). Then, add the desired number of columns (tags with appropriate 
+<code class="w3-codespan">.col-*-*</code> classes). The first star (*) 
+represents the responsiveness: sm, md, lg or xl, while the second star 
+represents a number, which should always add up to 12 for each row.</p>
+<p>Second example: instead of adding a number to each <code class="w3-codespan">col</code>, let bootstrap handle 
+the layout, to create equal width columns: two <code class="w3-codespan">&quot;col&quot;</code> elements = 50% width to 
+each col. three cols = 33.33% width to each col. four cols = 25% width, etc. You 
+can also use <code class="w3-codespan">.col-sm|md|lg|xl</code> to make the columns responsive.</p>
+
+<!--<p>Different grid examples:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;div class=&quot;container&quot;&gt;<br>&nbsp; &lt;div class=&quot;row&quot;&gt;<br>&nbsp;&nbsp;&nbsp; &lt;div class=&quot;col-sm-12&quot;&gt;.col-sm-12 yellow&lt;/div&gt;<br>&nbsp; &lt;/div&gt;<br>&nbsp; &lt;div class=&quot;row&quot;&gt;<br>&nbsp;&nbsp;&nbsp; &lt;div class=&quot;col-sm-4&quot;&gt;.col-sm-4 beige&lt;/div&gt;<br>&nbsp;&nbsp;&nbsp; &lt;div class=&quot;col-sm-4&quot;&gt;.col-sm-4 grey&lt;/div&gt;<br>&nbsp;&nbsp;&nbsp; &lt;div class=&quot;col-sm-4&quot;&gt;.col-sm-4 blue&lt;/div&gt;<br>&nbsp; &lt;/div&gt;<br>&nbsp; &lt;div class=&quot;row&quot;&gt;<br>&nbsp;&nbsp;&nbsp; &lt;div class=&quot;col-lg-9 col-sm-8&quot;&gt;col-lg-9 col-sm-8 pink&lt;/div&gt;<br>&nbsp;&nbsp;&nbsp; &lt;div class=&quot;col-lg-3 col-sm-4&quot;&gt;col-lg-3 col-sm-4 orange&lt;/div&gt;<br>&nbsp; &lt;/div&gt;<br>&lt;/div&gt;<br>
+ </div>
+<p>Result:</p>
+<div class="w3-padding w3-white notranslate test">
+<div class="row">
+  <div class="col-sm-12 columns" style="background-color:yellow;">.col-sm-12</div>
+</div>
+<div class="row">
+  <div class="col-sm-4 columns" style="background-color:beige;">.col-sm-4</div>
+  <div class="col-sm-4 columns" style="background-color:lightgrey;">.col-sm-4</div>
+  <div class="col-sm-4 columns" style="background-color:lightblue;">.col-sm-4</div>
+</div>
+<div class="row">
+  <div class="col-sm-8 col-lg-9 columns" style="background-color:pink;">.small-8 .large-9</div>
+  <div class="col-sm-4 col-lg-3 columns" style="background-color:orange;">.small-4 .large-3</div>
+</div>
+</div>
+<a target="_blank" href="tryit.asp?filename=trybs_grid_system&stacked=h" class="w3-btn w3-margin-top w3-margin-bottom">Try it Yourself &raquo;</a></div>
+<p>So for the first row in 
+our example above, the markup defines a &lt;div&gt; with class <code class="w3-codespan">.col-sm-12</code>, which is going to take up twelve 
+columns of space (100% of the width). </p>
+<p>The next row specifies three columns; Bootstrap lines these up next to each other, where <code class="w3-codespan">.col-sm-4</code> takes 
+about 33.3% of the width (33.3% + 33.3% + 33.3%).</p>
+<p>In our third row, we have added one extra class to each column (<code class="w3-codespan">.col-lg-9</code> and 
+<code class="w3-codespan">.col-lg-3</code>). This means that when the page is viewed on a larger screen it should 
+split the column width to 75% (<code class="w3-codespan">.col-lg-9</code>) and 25% (<code class="w3-codespan">.col-lg-3</code>). 
+As we also have specified the small classes, the columns will split to 66% (<code class="w3-codespan">.col-sm-8</code>) 
+and 33% (<code class="w3-codespan">.col-sm-4</code>) for small AND medium screens (scales up). This is useful for re-arranging 
+the layout for 
+different screen sizes.</p>
+-->
 <hr>
 
-<h2>Bootstrap 4 Basic Template</h2>
-<p>We have created a responsive starter template with Bootstrap 4. You are free to modify, save, share, and use it in your projects:</p>
-<div class="w3-content" style="max-width:1500px">
-<iframe src="../howto/tryhow_website_bootstrap4_ifr.html" class="w3-round" style="width:100%;border:5px solid #e9e9e9;height:600px"></iframe>
-<div class="w3-row-padding" style="margin:16px -16px 0 -16px">
-  <div class="w3-col m6">
-    <a href="trybs_template1.html" target="_blank" class="w3-btn w3-padding-large w3-dark-grey w3-block">Demo</a>
-  </div>
-  <div class="w3-col m6">
-    <a href="tryit0874.html?filename=trybs_template1" target="_blank" class="w3-btn w3-padding-large w3-green w3-block">Try it Yourself</a>
-  </div>
-</div>
+<h2>Grid Options</h2>
+<p>The following table summarizes how the Bootstrap 4 grid system works across 
+different screen sizes:</p>
+<div class="table-responsive">
+<table class="table table-striped table-bordered notranslate">
+  <tr>
+    <th style="width:20%;">&nbsp;</th>
+    <th style="width:17%;">Extra small (&lt;576px)</th>
+    <th style="width:16%;">Small (&gt;=576px)</th>
+    <th style="width:16%;">Medium (&gt;=768px)</th>
+    <th style="width:16%;">Large (&gt;=992px)</th>
+    <th style="width:16%;">Extra Large (&gt;=1200px)</th>
+  </tr>
+  <tr>
+    <td><strong>Class prefix</strong></td>
+    <td><code class="w3-codespan">.col-</code></td>
+    <td><code class="w3-codespan">.col-sm-</code></td>
+    <td><code class="w3-codespan">.col-md-</code></td>
+    <td><code class="w3-codespan">.col-lg-</code></td>
+    <td><code class="w3-codespan">.col-xl-</code></td>
+  </tr>
+  <tr>
+    <td><strong>Grid behaviour</strong></td>
+    <td>Horizontal at all times</td>
+    <td>Collapsed to start, horizontal above breakpoints</td>
+    <td>Collapsed to start, horizontal above breakpoints</td>
+    <td>Collapsed to start, horizontal above breakpoints</td>        
+    <td>Collapsed to start, horizontal above breakpoints</td>        
+  </tr>
+  <tr>
+    <td><strong>Container width</strong></td>
+    <td>None (auto)</td>
+    <td>540px</td>
+    <td>720px</td>
+    <td>960px</td>
+    <td>1140px</td>
+  </tr>
+  <tr>
+    <td><strong>Suitable for</strong></td>
+    <td>Portrait phones</td>
+    <td>Landscape phones</td>
+    <td>Tablets</td>
+    <td>Laptops</td>
+    <td>Laptops and Desktops</td>    
+  </tr>
+  <tr>
+    <td><strong># of columns</strong></td>
+    <td>12</td>
+    <td>12</td>
+    <td>12</td>
+    <td>12</td>    
+    <td>12</td>    
+  </tr>
+  <tr>
+    <td><strong>Gutter width</strong></td>
+    <td>30px (15px on each side of a column)</td>
+    <td>30px (15px on each side of a column)</td>
+    <td>30px (15px on each side of a column)</td>
+    <td>30px (15px on each side of a column)</td>
+    <td>30px (15px on each side of a column)</td>
+  </tr>
+  <tr>
+    <td><strong>Nestable</strong></td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
+  </tr>
+  <tr>
+    <td><strong>Offsets</strong></td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
+  </tr>
+  <tr>
+    <td><strong>Column ordering</strong></td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
+  </tr>
+</table>
 </div>
 <hr>
 
-<h2>Bootstrap References</h2>
-<p>A complete list of all Bootstrap 4 CSS classes with description and examples:</p>
-<div class="w3-bar-block" style="margin-bottom:12px">
-  <a class="w3-button w3-bar-item w3-light-grey" href="bootstrap_ref_all_classes.html">Bootstrap All CSS Classes <span class="w3-tag w3-blue" style="margin-left:5px">Popular</span></a>
-</div>
-<p>If you want to do more with Bootstrap components, see our complete Bootstrap 4 JavaScript/jQuery reference - all with &quot;Try it Yourself&quot; examples:</p>
-<div class="w3-bar-block">
-  <a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_alert.html">Bootstrap JS Alert</a>
-  <a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_button.html">Bootstrap JS Button</a>
-  <a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_carousel.html">Bootstrap JS Carousel</a>
-  <a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_collapse.html">Bootstrap JS Collapse</a>
-  <a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_dropdown.html">Bootstrap JS Dropdown</a>
-  <a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_modal.html">Bootstrap JS Modal</a>
-  <a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_popover.html">Bootstrap JS Popover</a>
-  <a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_scrollspy.html">Bootstrap JS Scrollspy</a>
-  <a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_tab.html">Bootstrap JS Tab</a>
-  <a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_toasts.html">Bootstrap JS Toasts</a>
-  <a class="w3-button w3-bar-item w3-light-grey" href="bootstrap_ref_js_tooltip.html">Bootstrap JS Tooltip</a>
-</div>
-<hr>
+<h2>Examples</h2>
+<p>The next chapters shows examples of grid systems for different devices and screen widths:</p>
+<ul>
+  <li><a href="bootstrap_grid_stacked_to_horizontal.html">Stacked-to-horizontal</a></li>
+  <li><a href="bootstrap_grid_xsmall.html">Auto Layout</a></li>
+  <li><a href="bootstrap_grid_small.html">Small devices</a></li>
+  <li><a href="bootstrap_grid_medium.html">Medium devices</a></li>
+  <li><a href="bootstrap_grid_large.html">Large devices</a></li>
+  <li><a href="bootstrap_grid_xlarge.html">Extra large devices</a></li>
+  <li><a href="bootstrap_grid_examples.html">More grid examples</a></li>
+</ul>
 
-<h2>Did You Know?</h2>
-<p>W3.CSS is an excellent alternative to Bootstrap 4.</p>
-<p>W3.CSS is smaller, faster, and easier to use.</p>
-<p>If you want to learn W3.CSS, go to our <a href="../w3css/default.html">W3.CSS 
-Tutorial</a>.</p>
 <br>
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="../default.html">&#10094; Home</a>
-<a class="w3-right w3-btn" href="bootstrap_get_started.html">Next &#10095;</a>
+<a class="w3-left w3-btn" href="bootstrap_filters.html">&#10094; Previous</a>
+<a class="w3-right w3-btn" href="bootstrap_grid_stacked_to_horizontal.html">Next &#10095;</a>
 </div>
 </div>
 <div class="w3-col l2 m12" id="right">
@@ -1180,4 +1352,6 @@ While using this site, you agree to have read and accepted our <a href="../about
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>  
 <![endif]-->
 </body>
+
+<!-- Mirrored from www.w3schools.com/bootstrap4/bootstrap_grid_system.asp by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Sep 2019 08:47:00 GMT -->
 </html>

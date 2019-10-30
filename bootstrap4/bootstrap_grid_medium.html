@@ -1,7 +1,14 @@
+
 <!DOCTYPE html>
 <html lang="en-US">
+
+<!-- Mirrored from www.w3schools.com/bootstrap4/bootstrap_grid_medium.asp by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Sep 2019 08:47:00 GMT -->
 <head>
-<title>Bootstrap 4 Tutorial</title>
+<title>Bootstrap 4 Grid Medium</title>
+<link rel="stylesheet" href="../../maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<script src="../../ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="../../cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="../../maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="Keywords" content="HTML,CSS,JavaScript,SQL,PHP,jQuery,XML,DOM,Bootstrap,Python,Java,Web development,W3C,tutorials,programming,training,learning,quiz,primer,lessons,references,examples,exercises,source code,colors,demos,tips">
@@ -375,14 +382,18 @@ ga('require', 'displayfeatures');
 ga('send', 'pageview');
 </script>
 
-<script src="../../snigelweb-com.videoplayerhub.com/videoloader.js" async></script>
-
 <script type='text/javascript'>
 var k42 = false;
 var googletag = googletag || {}; googletag.cmd = googletag.cmd || [];
 
-k42 = true;
-(adsbygoogle=window.adsbygoogle||[]).pauseAdRequests=1;
+(function() {
+  var gads = document.createElement('script');
+  gads.async = true;
+  gads.type = 'text/javascript';
+  gads.src = '../../www.googletagservices.com/tag/js/gpt.js';
+  var node = document.getElementsByTagName('script')[0];
+  node.parentNode.insertBefore(gads, node);
+})();
 
 var snhb = snhb || {}; snhb.queue = snhb.queue || [];
 snhb.options = {
@@ -393,6 +404,85 @@ snhb.options = {
                      reconsiderationAppealIntervalSeconds: 0
                      }
                };
+
+// GPT slots
+var gptAdSlots = [];
+googletag.cmd.push(function() {
+  googletag.pubads().disableInitialLoad();               
+  googletag.pubads().enableSingleRequest();
+  var leaderMapping = googletag.sizeMapping().
+    // Mobile ad
+    addSize([0, 0], [320, 50]). 
+    // Vertical Tablet ad
+    addSize([480, 0], [468, 60]). 
+    // Horizontal Tablet
+    addSize([780, 0], [728, 90]).
+    // Small Desktop
+    addSize([993, 0], [468, 60]).
+    // Normal Desktop
+    addSize([1150, 0], [728, 90]).
+    // Large Desktop and bigger ad
+    addSize([1425, 0], [[728, 90], [970, 90]]).build();
+  gptAdSlots[0] = googletag.defineSlot('/16833175/MainLeaderboard', [[728, 90], [970, 90]], 'div-gpt-ad-1422003450156-2').
+    defineSizeMapping(leaderMapping).addService(googletag.pubads());
+  var skyMapping = googletag.sizeMapping().
+    // Mobile ad
+    addSize([0, 0], [320, 50]). 
+    // Tablet ad
+    addSize([975, 0], [120, 600]). 
+    // Desktop
+    addSize([1135, 0], [160, 600]).   
+    // Large Desktop
+    addSize([1675, 0], [[160, 600], [300, 600], [300, 1050]]).build();
+  gptAdSlots[1] = googletag.defineSlot('/16833175/WideSkyScraper', [[160, 600], [300, 600], [300, 1050]], 'div-gpt-ad-1422003450156-5').
+    defineSizeMapping(skyMapping).addService(googletag.pubads());
+  var stickyMapping = googletag.sizeMapping().
+    // Mobile ad
+    addSize([0, 0], []). 
+    // Tablet ad
+    addSize([975, 0], [120, 600]). 
+    // Desktop
+    addSize([1135, 0], [160, 600]).   
+    // Large Desktop
+    addSize([1675, 0], [[160, 600], [300, 600], [300, 250]]).build();
+  gptAdSlots[4] = googletag.defineSlot('/16833175/StickySkyScraper', [[300, 600], [120, 600], [300, 250], [160, 600]], 'div-gpt-ad-1472547360578-0').
+    defineSizeMapping(stickyMapping).addService(googletag.pubads());
+  var mcontMapping = googletag.sizeMapping().
+    // Mobile ad
+    addSize([0, 0], [[300, 250], [336, 280], [320, 50]]). 
+    // Vertical Tablet ad
+    addSize([490, 0], [[300, 250], [336, 280], [468, 60]]). 
+    // Horizontal Tablet
+    addSize([750, 0], [728, 90]).
+    // Small Desktop
+    addSize([993, 0], [[300, 250], [336, 280], [468, 60]]).
+    // Normal Desktop
+    addSize([1135, 0], [728, 90]).
+    // Large Desktop and bigger ad
+    addSize([1440, 0], [[728, 90], [970, 90], [970, 250]]).build();
+  gptAdSlots[5] = googletag.defineSlot('/16833175/MidContent', [[300, 250], [336, 280]], 'div-gpt-ad-1493883843099-0').
+    defineSizeMapping(mcontMapping).setCollapseEmptyDiv(true).addService(googletag.pubads());
+  var bmrMapping = googletag.sizeMapping().
+    // Smaller
+    addSize([0, 0], [[300, 250], [336, 280]]). 
+    // Large Desktop
+    addSize([1240, 0], [[300, 250], [336, 280], [970, 250]]).build();
+    gptAdSlots[2] = googletag.defineSlot('/16833175/BottomMediumRectangle', [[300, 250], [336, 280], [970, 250]], 'div-gpt-ad-1422003450156-0').
+    defineSizeMapping(bmrMapping).setCollapseEmptyDiv(true).addService(googletag.pubads());
+  var rbmrMapping = googletag.sizeMapping().
+    // Smaller
+    addSize([0, 0], []). 
+    // Large Desktop
+    addSize([975, 0], [[300, 250], [336, 280]]).build();
+  gptAdSlots[3] = googletag.defineSlot('/16833175/RightBottomMediumRectangle', [[300, 250], [336, 280]], 'div-gpt-ad-1422003450156-3').
+    defineSizeMapping(rbmrMapping).setCollapseEmptyDiv(true).addService(googletag.pubads());
+  googletag.pubads().setTargeting("content",(function () {
+    var folder = location.pathname;
+    folder = folder.replace("../index.html", "");
+    folder = folder.substr(0, folder.indexOf("../index.html"));
+    return folder;
+  })());
+});  
 
 </script>
 <script src="../../static.h-bid.com/sncmp/sncmp_stub.min.js" type="text/javascript"></script>
@@ -417,7 +507,7 @@ snhb.options = {
 <script>
   snhb.queue.push(function(){
 
-    snhb.startAuction(["main_leaderboard", "wide_skyscraper", "bottom_medium_rectangle", "right_bottom_medium_rectangle"]);
+    snhb.addAdditionalAdSlotsToRefresh(gptAdSlots);
 
   });
 </script>
@@ -479,10 +569,8 @@ function w3_getStyleValue(elmnt,style) {
   }
 }
 </script>
+<link rel="stylesheet" href="w3-fix.css">
 <style>
-.w3-ul li a {
-  text-decoration:none;
-}
 .topnav .w3-bar a[href^="/bootstrap/bootstrap_ver.asp"] {
   background-color: #4CAF50 !important;
 }
@@ -780,113 +868,167 @@ function w3_getStyleValue(elmnt,style) {
     <div class='w3-col l10 m12' id='main'>
       <div id='mainLeaderboard' style='overflow:hidden;'>
         <!-- MainLeaderboard-->
-
-        <!--<pre>main_leaderboard, all: [728,90][970,90][320,50][468,60]</pre>-->
-        <div id="snhb-main_leaderboard-0"></div>
-        <!-- adspace leaderboard -->
+        
+        <div id='div-gpt-ad-1422003450156-2'>
+          <script type='text/javascript'>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1422003450156-2'); });</script>
+        </div>
        
       </div>
-<h1>Bootstrap 4 <span class="color_h1">Tutorial</span></h1>
+<h1>Bootstrap 4 Grid <span class="color_h1">Medium</span></h1>
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="../default.html">&#10094; Home</a>
-<a class="w3-right w3-btn" href="bootstrap_get_started.html">Next &#10095;</a>
+<a class="w3-left w3-btn" href="bootstrap_grid_small.html">&#10094; Previous</a>
+<a class="w3-right w3-btn" href="bootstrap_grid_large.html">Next &#10095;</a>
 </div>
-
-<div class="w3-panel w3-info intro w3-padding-16">
-<p style="margin-top:15px;">Bootstrap 4 is the newest version of <a href="../bootstrap/default.html">Bootstrap</a>, which is the most popular HTML, CSS, and JavaScript framework for developing responsive, mobile-first websites.</p>
-<p>Bootstrap 4 is completely free to download and use!</p>
-<p><a href="bootstrap_get_started.html" class="w3-btn w3-padding-large w3-hide-small">Start learning Bootstrap 4 now &raquo;</a></p>
-<p><a href="bootstrap_get_started.html" class="w3-btn w3-block w3-hide-large w3-hide-medium" style="padding:8px 16px">Learn Bootstrap 4</a></p>
-</div>
-
 <hr>
+<h2>Medium Grid Example</h2>
+<div class="table-responsive" style="margin:11px 0">
+<table class="table table-striped table-bordered notranslate">
+  <tr>
+    <th style="width:20%;">&nbsp;</th>
+    <th style="width:17%;">Extra small</th>
+    <th style="width:16%;">Small</th>
+    <th class="w3-dark-grey" style="width:16%;">Medium</th>
+    <th style="width:16%;">Large</th>
+    <th style="width:16%;">Extra Large</th>
+  </tr>
+  <tr>
+    <td><strong>Class prefix</strong></td>
+    <td><code class="w3-codespan">.col-</code></td>
+    <td><code class="w3-codespan">.col-sm-</code></td>
+    <td class="w3-dark-grey"><code class="w3-codespan">.col-md-</code></td>
+    <td><code class="w3-codespan">.col-lg-</code></td>
+    <td><code class="w3-codespan">.col-xl-</code></td>
+  </tr>
+  <tr>
+    <td><strong>Screen width</strong></td>
+    <td>&lt;576px</td>
+    <td>&gt;=576px</td>
+    <td class="w3-dark-grey">&gt;=768px</td>
+    <td>&gt;=992px</td>
+    <td>&gt;=1200px</td>
+  </tr>
+</table>
+</div>
 
-<h2>Try it Yourself Examples</h2>
-<p>This Bootstrap 4 tutorial contains hundreds of Bootstrap 4 examples.</p>
-<p>With our online editor, you can edit the code, and click on a button to view the result.</p>
-<img src="imgdefault.jpg" alt="Responsive Bootstrap Page" style="width:95%;margin:16px auto;display:block">
+<p>In the previous chapter, we presented a grid example with classes for small 
+devices. We used two divs (columns) and we gave them a 25%/75% split:</p>
+<div class="w3-example">
+ <div class="w3-code notranslate htmlHigh">
+&lt;div class=&quot;col-sm-3&quot;&gt;....&lt;/div&gt;<br>
+&lt;div class=&quot;col-sm-9&quot;&gt;....&lt;/div&gt;</div>
+</div>
+
+<p>But on medium devices the design may be better as a 50%/50% split.</p>
+<div class="w3-note w3-panel">
+<p style="margin-bottom:8px">Medium devices are defined as having a screen width 
+from <strong>768 pixels to 991 pixels</strong>.</p>
+</div>
+<p>For medium devices we will use the <code class="w3-codespan">.col-md-*</code> classes:</p>
 
 <div class="w3-example">
-<h3>Bootstrap 4 Example</h3>
 <div class="w3-code notranslate htmlHigh">
-  &lt;div class=&quot;jumbotron text-center&quot;&gt;<br>&nbsp;&nbsp;&lt;h1&gt;My First Bootstrap 
-  Page&lt;/h1&gt;<br>&nbsp; &lt;p&gt;Resize this responsive page to see the effect!&lt;/p&gt; <br>&lt;/div&gt;<br><br>&lt;div class=&quot;container&quot;&gt;<br>&nbsp; &lt;div class=&quot;row&quot;&gt;<br>
-  &nbsp;&nbsp;&nbsp; &lt;div class=&quot;col-sm-4&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h3&gt;Column 1&lt;/h3&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;Lorem ipsum 
-  dolor..&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp;&nbsp;&nbsp; &lt;div class=&quot;col-sm-4&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h3&gt;Column 2&lt;/h3&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;Lorem ipsum 
-  dolor..&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp;&nbsp;&nbsp; &lt;div class=&quot;col-sm-4&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h3&gt;Column 3&lt;/h3&gt; <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;Lorem ipsum 
-  dolor..&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp; &lt;/div&gt;<br>&lt;/div&gt;</div>
-<a target="_blank" href="tryit689b.html?filename=trybs_default&amp;stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a></div>
+ &lt;div class=&quot;col-sm-3 <strong>col-md-6</strong>&quot;&gt;....&lt;/div&gt;<br>
+&lt;div class=&quot;col-sm-9 <strong>col-md-6</strong>&quot;&gt;....&lt;/div&gt;<br>
+</div>
+</div>
+
+<p>Now Bootstrap is going to say &quot;at the small size, look at classes with 
+-sm- in them and use those. At the medium size, look at classes with 
+-md- in them and use those&quot;.</p>
+<p>The following example will result in a 25%/75% split on small devices and a 
+50%/50% split on medium (and large and xlarge) devices. On extra small devices, it will 
+automatically stack (100%):</p>
+<div class="w3-container">
+<div class="row">
+<div class="col-sm-3 col-md-6 bg-success w3-padding-16">
+.col-sm-3 .col-md-6
+</div>
+<div class="col-sm-9 col-md-6 bg-warning w3-padding-16">
+.col-sm-9 .col-md-6
+</div>
+</div>
+</div>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;div class=&quot;container-fluid&quot;&gt;<br>&nbsp; &lt;div class=&quot;row&quot;&gt;<br>
+  &nbsp;&nbsp;&nbsp; &lt;div class=&quot;col-sm-3 col-md-6&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;Lorem ipsum...&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>
+  &nbsp;&nbsp;&nbsp; &lt;div class=&quot;col-sm-9 col-md-6&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;Sed ut perspiciatis...&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp; &lt;/div&gt;<br>
+ &lt;/div&gt;</div>
+<a target="_blank" href="tryitfbae.html?filename=trybs_grid_medium&amp;stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
+</div>
+
 <div class="w3-panel w3-note">
-  <p style="margin-bottom:8px">Click on the &quot;Try it Yourself&quot; button to see how it works.</p>
+  <p style="margin-bottom:8px;"><strong>Note:</strong> Make sure that the sum adds up to 12 or fewer (it is 
+  not required that you use all 12 available columns):</p>
 </div>
 
-<hr>
-<div id="midcontentadcontainer" style="overflow:auto;text-align:center">
-<!-- MidContent -->
+<h2>Using Only Medium</h2>
+<p>In the example below, we only specify the <code class="w3-codespan">.col-md-6</code> class (without <code class="w3-codespan">.col-sm-*</code>). This means that medium, large 
+and extra large devices will split 50%/50% - because the class scales up. However, 
+for small and extra small devices, it will stack vertically (100% width):</p>
 
-  <!--<pre>mid_content, all: [300,250][336,280][728,90][970,250][970,90][320,50][468,60]</pre>-->
-  <div id="snhb-mid_content-0"></div>
-    
-</div>
-<hr>
-
-<h2>Bootstrap 3 vs. Bootstrap 4</h2>
-<p>Bootstrap 4 is the newest version of Bootstrap; with new components, faster stylesheet and more responsiveness.</p>
-<p>Bootstrap 4 supports the latest, stable releases of all major browsers and 
-platforms. However, Internet Explorer 9 and down is not supported. </p>
-<div class="w3-panel w3-note">
-<p style="margin-bottom:8px"><strong>If you require IE8-9 support, use <a href="../bootstrap/default.html">Bootstrap 3.</a></strong> It is the most 
-stable version of Bootstrap, and it is still supported by the team for critical bugfixes and documentation changes. However, new features will NOT be added to 
-it.</p>
-</div>
-<a href="../bootstrap/default.html" class="w3-btn w3-dark-grey">Go To Bootstrap 3 &raquo;</a>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;div class=&quot;row&quot;&gt;<br>&nbsp;&nbsp;&lt;div class=&quot;col-md-6&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Lorem ipsum...&lt;/p&gt;<br>&nbsp;&nbsp;&lt;/div&gt;<br>
+  &nbsp; &lt;div class=&quot;col-md-6&quot;&gt;<br>
+ &nbsp;&nbsp;&nbsp; &lt;p&gt;Sed ut perspiciatis...&lt;/p&gt;<br>&nbsp;&nbsp;&lt;/div&gt;<br>&lt;/div&gt;<br>
+ </div>
+<a target="_blank" href="tryit28f2.html?filename=trybs_grid_medium2&amp;stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a></div>
 <hr>
 
-<h2>Bootstrap 4 Basic Template</h2>
-<p>We have created a responsive starter template with Bootstrap 4. You are free to modify, save, share, and use it in your projects:</p>
-<div class="w3-content" style="max-width:1500px">
-<iframe src="../howto/tryhow_website_bootstrap4_ifr.html" class="w3-round" style="width:100%;border:5px solid #e9e9e9;height:600px"></iframe>
-<div class="w3-row-padding" style="margin:16px -16px 0 -16px">
-  <div class="w3-col m6">
-    <a href="trybs_template1.html" target="_blank" class="w3-btn w3-padding-large w3-dark-grey w3-block">Demo</a>
+<h2>Auto Layout Columns</h2>
+<p>In Bootstrap 4, there is an easy way to create equal width columns for all devices: just remove the number from <code class="w3-codespan">.col-md-*</code> and only use the <code class="w3-codespan">.col-md</code> class on a specified number of 
+<strong>col elements</strong>. Bootstrap will recognize how many columns there 
+are, and each column will get the same width.</p>
+<p>If the screen size is <strong>less than 768px</strong>, the columns will 
+stack horizontally:</p>
+<div class="w3-example">
+<div class="w3-code notranslate htmlHigh">
+  &lt;!-- Two columns: 50% width on medium and up--&gt;<br>&lt;div class=&quot;row&quot;&gt;<br>&nbsp; &lt;div class=&quot;col-md&quot;&gt;1 of 
+  2&lt;/div&gt;<br>
+&nbsp;
+&lt;div class=&quot;col-md&quot;&gt;2 of 2&lt;/div&gt;<br>&lt;/div&gt;<br><br>&lt;!-- Four 
+  columns: 25% width on medium and up --&gt;<br>&lt;div class=&quot;row&quot;&gt;<br>&nbsp; &lt;div class=&quot;col-md&quot;&gt;1 of 4&lt;/div&gt;<br>
+&nbsp;
+&lt;div class=&quot;col-md&quot;&gt;2 of 4&lt;/div&gt;<br>&nbsp; &lt;div class=&quot;col-md&quot;&gt;3 
+  of 4&lt;/div&gt;<br>&nbsp; &lt;div class=&quot;col-md&quot;&gt;4 of 4&lt;/div&gt;<br>
+  &lt;/div&gt;</div>
+
+<div class="w3-white w3-padding">
+<div class="row w3-padding">
+  <div class="col w3-padding-16 bg-success">
+    1 of 2
   </div>
-  <div class="w3-col m6">
-    <a href="tryit0874.html?filename=trybs_template1" target="_blank" class="w3-btn w3-padding-large w3-green w3-block">Try it Yourself</a>
+  <div class="col w3-padding-16 bg-warning">
+    2 of 2
+  </div>
+</div>
+
+<div class="row w3-padding">
+  <div class="col w3-padding-16 bg-success">
+    1 of 4
+  </div>
+  <div class="col w3-padding-16 bg-warning">
+    2 of 4
+  </div>
+  <div class="col w3-padding-16 bg-success">
+    3 of 4
+  </div>
+  <div class="col w3-padding-16 bg-warning">
+    4 of 4
   </div>
 </div>
 </div>
-<hr>
+<a target="_blank" href="tryitd08a.html?filename=trybs_grid_medium_auto&amp;stacked=h" class="w3-btn w3-margin-top w3-margin-bottom">Try it Yourself &raquo;</a></div>
 
-<h2>Bootstrap References</h2>
-<p>A complete list of all Bootstrap 4 CSS classes with description and examples:</p>
-<div class="w3-bar-block" style="margin-bottom:12px">
-  <a class="w3-button w3-bar-item w3-light-grey" href="bootstrap_ref_all_classes.html">Bootstrap All CSS Classes <span class="w3-tag w3-blue" style="margin-left:5px">Popular</span></a>
-</div>
-<p>If you want to do more with Bootstrap components, see our complete Bootstrap 4 JavaScript/jQuery reference - all with &quot;Try it Yourself&quot; examples:</p>
-<div class="w3-bar-block">
-  <a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_alert.html">Bootstrap JS Alert</a>
-  <a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_button.html">Bootstrap JS Button</a>
-  <a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_carousel.html">Bootstrap JS Carousel</a>
-  <a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_collapse.html">Bootstrap JS Collapse</a>
-  <a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_dropdown.html">Bootstrap JS Dropdown</a>
-  <a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_modal.html">Bootstrap JS Modal</a>
-  <a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_popover.html">Bootstrap JS Popover</a>
-  <a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_scrollspy.html">Bootstrap JS Scrollspy</a>
-  <a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_tab.html">Bootstrap JS Tab</a>
-  <a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_toasts.html">Bootstrap JS Toasts</a>
-  <a class="w3-button w3-bar-item w3-light-grey" href="bootstrap_ref_js_tooltip.html">Bootstrap JS Tooltip</a>
-</div>
-<hr>
+<p>The next chapter shows how to add a different split percent for large devices.</p>
 
-<h2>Did You Know?</h2>
-<p>W3.CSS is an excellent alternative to Bootstrap 4.</p>
-<p>W3.CSS is smaller, faster, and easier to use.</p>
-<p>If you want to learn W3.CSS, go to our <a href="../w3css/default.html">W3.CSS 
-Tutorial</a>.</p>
 <br>
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="../default.html">&#10094; Home</a>
-<a class="w3-right w3-btn" href="bootstrap_get_started.html">Next &#10095;</a>
+<a class="w3-left w3-btn" href="bootstrap_grid_small.html">&#10094; Previous</a>
+<a class="w3-right w3-btn" href="bootstrap_grid_large.html">Next &#10095;</a>
 </div>
 </div>
 <div class="w3-col l2 m12" id="right">
@@ -894,9 +1036,13 @@ Tutorial</a>.</p>
 <div class="sidesection">
   <div id="skyscraper">
   
-    <!--<pre>wide_skyscraper, all: [160,600][300,600][320,50][120,600][300,1050]</pre>-->
-    <div id="snhb-wide_skyscraper-0"></div>
-    <!-- adspace wide-->
+    <div id="div-gpt-ad-1422003450156-5">
+      <script>
+      googletag.cmd.push(function() {
+      googletag.display('div-gpt-ad-1422003450156-5');
+      });
+      </script> 
+    </div>
   
   </div>
 </div>
@@ -997,24 +1143,13 @@ Read More &raquo;</a>
   <div id="stickyadcontainer">
     <div style="position:relative;margin:auto;">
       
-      <!--<pre>sidebar_sticky, desktop: [120,600][160,600][300,600][300,250]</pre>-->
-      <div id="snhb-sidebar_sticky-0"></div>
-      <script>
-          if (Number(w3_getStyleValue(document.getElementById("main"), "height").replace("px", "")) > 2200) {
-            // adspace sticky
-            if (document.getElementById("snhb-mid_content-0")) {
-              snhb.queue.push(function(){  snhb.startAuction(["sidebar_sticky", "mid_content" ]); });
-            }
-            else {
-              snhb.queue.push(function(){  snhb.startAuction(["sidebar_sticky"]); });
-            }
-          }
-          else {
-              if (document.getElementById("snhb-mid_content-0")) {
-                snhb.queue.push(function(){  snhb.startAuction(["mid_content"]); });
-              }
-          }
-      </script>  
+        <script>
+        if (Number(w3_getStyleValue(document.getElementById("main"), "height").replace("px", "")) > 2200) {
+        document.write("<div id='div-gpt-ad-1472547360578-0'>");
+        googletag.cmd.push(function() { googletag.display('div-gpt-ad-1472547360578-0'); });
+        document.write("</div>");
+        }
+        </script>
       
     </div>
   </div>
@@ -1032,14 +1167,17 @@ Read More &raquo;</a>
 <hr>
 
 <div style="overflow:auto">
-  <div class="bottomad">
-    <!-- BottomMediumRectangle -->
-    <!--<pre>bottom_medium_rectangle, all: [970,250][300,250][336,280]</pre>-->
-    <div id="snhb-bottom_medium_rectangle-0" style="padding:0 10px 10px 0;float:left;width:auto;"></div>
-    <!-- adspace bmr -->
-    <!-- RightBottomMediumRectangle -->
-    <!--<pre>right_bottom_medium_rectangle, desktop: [300,250][336,280]</pre>-->
-    <div id="snhb-right_bottom_medium_rectangle-0" style="padding:0 10px 10px 0;float:left;width:auto;"></div>
+  <!-- BottomMediumRectangle -->
+  <div class="bottomad" id='div-gpt-ad-1422003450156-0'>
+    <script type='text/javascript'>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1422003450156-0'); });
+    </script>
+  </div>
+  <!-- RightBottomMediumRectangle -->
+  <div class="bottomad" id='div-gpt-ad-1422003450156-3'>
+    <script type='text/javascript'>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1422003450156-3'); });
+    </script>
   </div>
 </div>
 
@@ -1180,4 +1318,6 @@ While using this site, you agree to have read and accepted our <a href="../about
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>  
 <![endif]-->
 </body>
+
+<!-- Mirrored from www.w3schools.com/bootstrap4/bootstrap_grid_medium.asp by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Sep 2019 08:47:00 GMT -->
 </html>

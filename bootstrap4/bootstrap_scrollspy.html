@@ -1,7 +1,14 @@
+
 <!DOCTYPE html>
 <html lang="en-US">
+
+<!-- Mirrored from www.w3schools.com/bootstrap4/bootstrap_scrollspy.asp by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Sep 2019 08:46:59 GMT -->
 <head>
-<title>Bootstrap 4 Tutorial</title>
+<title>Bootstrap 4 Scrollspy</title>
+<link rel="stylesheet" href="../../maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<script src="../../ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="../../cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="../../maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="Keywords" content="HTML,CSS,JavaScript,SQL,PHP,jQuery,XML,DOM,Bootstrap,Python,Java,Web development,W3C,tutorials,programming,training,learning,quiz,primer,lessons,references,examples,exercises,source code,colors,demos,tips">
@@ -479,9 +486,21 @@ function w3_getStyleValue(elmnt,style) {
   }
 }
 </script>
+<link rel="stylesheet" href="w3-fix.css">
 <style>
-.w3-ul li a {
-  text-decoration:none;
+.spytest {
+ width:100%;
+ height:255px;
+}
+@media screen and (max-width: 821px) {
+    .spytest {
+        height: 400px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .spytest {
+        height: 500px;
+    }
 }
 .topnav .w3-bar a[href^="/bootstrap/bootstrap_ver.asp"] {
   background-color: #4CAF50 !important;
@@ -786,38 +805,49 @@ function w3_getStyleValue(elmnt,style) {
         <!-- adspace leaderboard -->
        
       </div>
-<h1>Bootstrap 4 <span class="color_h1">Tutorial</span></h1>
+<h1>Bootstrap 4 <span class="color_h1">Scrollspy (Advanced)</span></h1>
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="../default.html">&#10094; Home</a>
-<a class="w3-right w3-btn" href="bootstrap_get_started.html">Next &#10095;</a>
+<a class="w3-left w3-btn" href="bootstrap_toast.html">&#10094; Previous</a>
+<a class="w3-right w3-btn" href="bootstrap_utilities.html">Next &#10095;</a>
 </div>
+<hr>
+<h2>Bootstrap 4 Scrollspy</h2>
+<p>Scrollspy is used to automatically update links in a navigation 
+list based on <strong>scroll</strong> position.</p>
 
-<div class="w3-panel w3-info intro w3-padding-16">
-<p style="margin-top:15px;">Bootstrap 4 is the newest version of <a href="../bootstrap/default.html">Bootstrap</a>, which is the most popular HTML, CSS, and JavaScript framework for developing responsive, mobile-first websites.</p>
-<p>Bootstrap 4 is completely free to download and use!</p>
-<p><a href="bootstrap_get_started.html" class="w3-btn w3-padding-large w3-hide-small">Start learning Bootstrap 4 now &raquo;</a></p>
-<p><a href="bootstrap_get_started.html" class="w3-btn w3-block w3-hide-large w3-hide-medium" style="padding:8px 16px">Learn Bootstrap 4</a></p>
-</div>
-
+<iframe class="spytest" src="trybs_scrollspy.html" scrolling="yes" frameborder="0"></iframe>
 <hr>
 
-<h2>Try it Yourself Examples</h2>
-<p>This Bootstrap 4 tutorial contains hundreds of Bootstrap 4 examples.</p>
-<p>With our online editor, you can edit the code, and click on a button to view the result.</p>
-<img src="imgdefault.jpg" alt="Responsive Bootstrap Page" style="width:95%;margin:16px auto;display:block">
-
+<h2>How To Create a Scrollspy</h2>
+<p>The following example shows how to create a scrollspy:</p>
 <div class="w3-example">
-<h3>Bootstrap 4 Example</h3>
+ <h3>Example</h3>
 <div class="w3-code notranslate htmlHigh">
-  &lt;div class=&quot;jumbotron text-center&quot;&gt;<br>&nbsp;&nbsp;&lt;h1&gt;My First Bootstrap 
-  Page&lt;/h1&gt;<br>&nbsp; &lt;p&gt;Resize this responsive page to see the effect!&lt;/p&gt; <br>&lt;/div&gt;<br><br>&lt;div class=&quot;container&quot;&gt;<br>&nbsp; &lt;div class=&quot;row&quot;&gt;<br>
-  &nbsp;&nbsp;&nbsp; &lt;div class=&quot;col-sm-4&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h3&gt;Column 1&lt;/h3&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;Lorem ipsum 
-  dolor..&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp;&nbsp;&nbsp; &lt;div class=&quot;col-sm-4&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h3&gt;Column 2&lt;/h3&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;Lorem ipsum 
-  dolor..&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp;&nbsp;&nbsp; &lt;div class=&quot;col-sm-4&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h3&gt;Column 3&lt;/h3&gt; <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;Lorem ipsum 
-  dolor..&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp; &lt;/div&gt;<br>&lt;/div&gt;</div>
-<a target="_blank" href="tryit689b.html?filename=trybs_default&amp;stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a></div>
+ &lt;!-- The scrollable area --&gt;<br>&lt;body data-spy="scroll" data-target=".navbar" data-offset="50"&gt;<br><br>&lt;!-- The navbar - The &lt;a&gt; elements are used to jump to a section in the scrollable area --&gt;<br>&lt;nav 
+  class=&quot;navbar navbar-expand-sm bg-dark navbar-dark fixed-top&quot;&gt;<br>...<br>&nbsp; &lt;ul class="navbar-nav"&gt;<br>&nbsp;&nbsp;&nbsp; &lt;li&gt;&lt;a href="#section1"&gt;Section 1&lt;/a&gt;&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp; ...<br>&lt;/nav&gt;<br><br>&lt;!-- Section 1 --&gt;<br>&lt;div id="section1"&gt;<br>&nbsp;&nbsp;&lt;h1&gt;Section 1&lt;/h1&gt;<br>&nbsp;&nbsp;&lt;p&gt;Try to scroll this page and look at the navigation bar while scrolling!&lt;/p&gt;<br>&lt;/div&gt;<br>...<br><br>
+ &lt;/body&gt;</div>
+<a target="_blank" href="tryita7e1.html?filename=trybs_scrollspy&amp;stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
+</div>
+
+<h3>Example Explained</h3>
+
+<p>Add <code class="w3-codespan">data-spy="scroll"</code> to the element that should be used as the scrollable 
+area (often this is the <code class="w3-codespan">&lt;body&gt;</code> element).</p>
+<p>Then add the <code class="w3-codespan">data-target</code> attribute with a value of the id or the class name 
+of the navigation bar (<code class="w3-codespan">.navbar</code>). This is to make sure that the navbar 
+is connected with the scrollable area.</p>
+<p>Note that scrollable elements must match the ID of the links inside the navbar's 
+list items 
+(<code class="w3-codespan">&lt;div id="section1"&gt;</code> matches <code class="w3-codespan">&lt;a href="#section1"&gt;</code>).</p>
+<p>The optional <code class="w3-codespan">data-offset</code> attribute specifies the number of pixels to offset 
+from top when calculating the position of scroll. This is useful when you feel 
+that the links inside the navbar changes the active state too soon or too early 
+when jumping to the scrollable elements. Default is 10 pixels.</p>
 <div class="w3-panel w3-note">
-  <p style="margin-bottom:8px">Click on the &quot;Try it Yourself&quot; button to see how it works.</p>
+  <p style="margin-bottom:8px"><strong>Requires relative positioning: </strong>The element with 
+data-spy=&quot;scroll&quot; 
+requires the CSS <strong>position</strong> property, with a value of &quot;relative&quot; 
+to work properly.</p>
 </div>
 
 <hr>
@@ -830,63 +860,33 @@ function w3_getStyleValue(elmnt,style) {
 </div>
 <hr>
 
-<h2>Bootstrap 3 vs. Bootstrap 4</h2>
-<p>Bootstrap 4 is the newest version of Bootstrap; with new components, faster stylesheet and more responsiveness.</p>
-<p>Bootstrap 4 supports the latest, stable releases of all major browsers and 
-platforms. However, Internet Explorer 9 and down is not supported. </p>
-<div class="w3-panel w3-note">
-<p style="margin-bottom:8px"><strong>If you require IE8-9 support, use <a href="../bootstrap/default.html">Bootstrap 3.</a></strong> It is the most 
-stable version of Bootstrap, and it is still supported by the team for critical bugfixes and documentation changes. However, new features will NOT be added to 
-it.</p>
-</div>
-<a href="../bootstrap/default.html" class="w3-btn w3-dark-grey">Go To Bootstrap 3 &raquo;</a>
-<hr>
-
-<h2>Bootstrap 4 Basic Template</h2>
-<p>We have created a responsive starter template with Bootstrap 4. You are free to modify, save, share, and use it in your projects:</p>
-<div class="w3-content" style="max-width:1500px">
-<iframe src="../howto/tryhow_website_bootstrap4_ifr.html" class="w3-round" style="width:100%;border:5px solid #e9e9e9;height:600px"></iframe>
-<div class="w3-row-padding" style="margin:16px -16px 0 -16px">
-  <div class="w3-col m6">
-    <a href="trybs_template1.html" target="_blank" class="w3-btn w3-padding-large w3-dark-grey w3-block">Demo</a>
-  </div>
-  <div class="w3-col m6">
-    <a href="tryit0874.html?filename=trybs_template1" target="_blank" class="w3-btn w3-padding-large w3-green w3-block">Try it Yourself</a>
-  </div>
-</div>
+<h2>Scrollspy Vertical Menu</h2>
+<iframe  class="spytest" src="trybs_scrollspy2.html" style="margin-bottom:10px;border:1px solid #ebebeb;border-radius:4px;" scrolling="yes" frameborder="0"></iframe>
+<p>In this example, we use Bootstrap's vertical navigation pills as menu:</p>
+<div class="w3-example">
+ <h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;body data-spy=&quot;scroll&quot; data-target=&quot;#myScrollspy&quot; data-offset=&quot;1&quot;&gt;<br><br>&nbsp; &lt;div class=&quot;container-fluid&quot;&gt;<br>&nbsp;&nbsp;&nbsp; &lt;div class=&quot;row&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;nav class=&quot;col-sm-3 
+  col-4&quot; id=&quot;myScrollspy&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;ul class=&quot;nav nav-pills 
+  flex-column&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li class=&quot;nav-item&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  &lt;a class=&quot;nav-link active&quot; href=&quot;#section1&quot;&gt;Section 1&lt;/a&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  &lt;/li&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ...<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/ul&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/nav&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class=&quot;col-sm-9 
+  col-8&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div id=&quot;section1&quot;&gt; <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h1&gt;Section 1&lt;/h1&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;Try to scroll this page and look at the 
+  menu while scrolling!&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;
+ <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ...<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp; &lt;/div&gt;<br><br>&lt;/body&gt;</div>
+<a target="_blank" href="tryit25b3.html?filename=trybs_scrollspy2&amp;stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
 </div>
 <hr>
 
-<h2>Bootstrap References</h2>
-<p>A complete list of all Bootstrap 4 CSS classes with description and examples:</p>
-<div class="w3-bar-block" style="margin-bottom:12px">
-  <a class="w3-button w3-bar-item w3-light-grey" href="bootstrap_ref_all_classes.html">Bootstrap All CSS Classes <span class="w3-tag w3-blue" style="margin-left:5px">Popular</span></a>
-</div>
-<p>If you want to do more with Bootstrap components, see our complete Bootstrap 4 JavaScript/jQuery reference - all with &quot;Try it Yourself&quot; examples:</p>
-<div class="w3-bar-block">
-  <a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_alert.html">Bootstrap JS Alert</a>
-  <a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_button.html">Bootstrap JS Button</a>
-  <a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_carousel.html">Bootstrap JS Carousel</a>
-  <a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_collapse.html">Bootstrap JS Collapse</a>
-  <a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_dropdown.html">Bootstrap JS Dropdown</a>
-  <a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_modal.html">Bootstrap JS Modal</a>
-  <a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_popover.html">Bootstrap JS Popover</a>
-  <a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_scrollspy.html">Bootstrap JS Scrollspy</a>
-  <a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_tab.html">Bootstrap JS Tab</a>
-  <a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_toasts.html">Bootstrap JS Toasts</a>
-  <a class="w3-button w3-bar-item w3-light-grey" href="bootstrap_ref_js_tooltip.html">Bootstrap JS Tooltip</a>
-</div>
-<hr>
+<h2>Complete Bootstrap Scrollspy Reference</h2>
+<p>For a complete reference of all scrollspy options, methods and events, go to our
+<a href="bootstrap_ref_js_scrollspy.html">Bootstrap JS Scrollspy Reference</a>.</p>
+<br>
 
-<h2>Did You Know?</h2>
-<p>W3.CSS is an excellent alternative to Bootstrap 4.</p>
-<p>W3.CSS is smaller, faster, and easier to use.</p>
-<p>If you want to learn W3.CSS, go to our <a href="../w3css/default.html">W3.CSS 
-Tutorial</a>.</p>
 <br>
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="../default.html">&#10094; Home</a>
-<a class="w3-right w3-btn" href="bootstrap_get_started.html">Next &#10095;</a>
+<a class="w3-left w3-btn" href="bootstrap_toast.html">&#10094; Previous</a>
+<a class="w3-right w3-btn" href="bootstrap_utilities.html">Next &#10095;</a>
 </div>
 </div>
 <div class="w3-col l2 m12" id="right">
@@ -1180,4 +1180,6 @@ While using this site, you agree to have read and accepted our <a href="../about
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>  
 <![endif]-->
 </body>
+
+<!-- Mirrored from www.w3schools.com/bootstrap4/bootstrap_scrollspy.asp by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Sep 2019 08:46:59 GMT -->
 </html>

@@ -1,7 +1,14 @@
+
 <!DOCTYPE html>
 <html lang="en-US">
+
+<!-- Mirrored from www.w3schools.com/bootstrap4/bootstrap_typography.asp by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Sep 2019 08:46:53 GMT -->
 <head>
-<title>Bootstrap 4 Tutorial</title>
+<title>Bootstrap 4 Text/Typography</title>
+<link rel="stylesheet" href="../../maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="../../ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="../../cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="../../maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="Keywords" content="HTML,CSS,JavaScript,SQL,PHP,jQuery,XML,DOM,Bootstrap,Python,Java,Web development,W3C,tutorials,programming,training,learning,quiz,primer,lessons,references,examples,exercises,source code,colors,demos,tips">
@@ -479,14 +486,13 @@ function w3_getStyleValue(elmnt,style) {
   }
 }
 </script>
+<link rel="stylesheet" href="w3-fix.css">
 <style>
-.w3-ul li a {
-  text-decoration:none;
-}
 .topnav .w3-bar a[href^="/bootstrap/bootstrap_ver.asp"] {
   background-color: #4CAF50 !important;
 }
 </style>
+
 </head>
 <body>
 <div class='w3-container top'>
@@ -786,40 +792,67 @@ function w3_getStyleValue(elmnt,style) {
         <!-- adspace leaderboard -->
        
       </div>
-<h1>Bootstrap 4 <span class="color_h1">Tutorial</span></h1>
+
+<h1>Bootstrap 4 <span class="color_h1">Text/Typography</span></h1>
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="../default.html">&#10094; Home</a>
-<a class="w3-right w3-btn" href="bootstrap_get_started.html">Next &#10095;</a>
+<a class="w3-left w3-btn" href="bootstrap_grid_basic.html">&#10094; Previous</a>
+<a class="w3-right w3-btn" href="bootstrap_colors.html">Next &#10095;</a>
 </div>
-
-<div class="w3-panel w3-info intro w3-padding-16">
-<p style="margin-top:15px;">Bootstrap 4 is the newest version of <a href="../bootstrap/default.html">Bootstrap</a>, which is the most popular HTML, CSS, and JavaScript framework for developing responsive, mobile-first websites.</p>
-<p>Bootstrap 4 is completely free to download and use!</p>
-<p><a href="bootstrap_get_started.html" class="w3-btn w3-padding-large w3-hide-small">Start learning Bootstrap 4 now &raquo;</a></p>
-<p><a href="bootstrap_get_started.html" class="w3-btn w3-block w3-hide-large w3-hide-medium" style="padding:8px 16px">Learn Bootstrap 4</a></p>
-</div>
-
+<hr>
+<h2>Bootstrap 4 Default Settings</h2>
+<p>Bootstrap 4 uses a default 
+<code class="w3-codespan">font-size</code> of 16px, and its  
+<code class="w3-codespan">line-height</code> is 1.5.</p>
+<p>The default <code class="w3-codespan">font-family</code> is &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif.</p>
+<p>In addition, all <code class="w3-codespan">&lt;p&gt;</code> elements have 
+<code class="w3-codespan">margin-top: 0</code> and <code class="w3-codespan">margin-bottom: 1rem</code> (16px by default).</p>
 <hr>
 
-<h2>Try it Yourself Examples</h2>
-<p>This Bootstrap 4 tutorial contains hundreds of Bootstrap 4 examples.</p>
-<p>With our online editor, you can edit the code, and click on a button to view the result.</p>
-<img src="imgdefault.jpg" alt="Responsive Bootstrap Page" style="width:95%;margin:16px auto;display:block">
-
+<h2>&lt;h1&gt; - &lt;h6&gt;</h2>
+<p>Bootstrap 4 styles HTML headings (<code class="w3-codespan">&lt;h1&gt;</code> to
+<code class="w3-codespan">&lt;h6&gt;</code>)&nbsp; with a bolder font-weight and 
+an increased font-size:</p>
 <div class="w3-example">
-<h3>Bootstrap 4 Example</h3>
-<div class="w3-code notranslate htmlHigh">
-  &lt;div class=&quot;jumbotron text-center&quot;&gt;<br>&nbsp;&nbsp;&lt;h1&gt;My First Bootstrap 
-  Page&lt;/h1&gt;<br>&nbsp; &lt;p&gt;Resize this responsive page to see the effect!&lt;/p&gt; <br>&lt;/div&gt;<br><br>&lt;div class=&quot;container&quot;&gt;<br>&nbsp; &lt;div class=&quot;row&quot;&gt;<br>
-  &nbsp;&nbsp;&nbsp; &lt;div class=&quot;col-sm-4&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h3&gt;Column 1&lt;/h3&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;Lorem ipsum 
-  dolor..&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp;&nbsp;&nbsp; &lt;div class=&quot;col-sm-4&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h3&gt;Column 2&lt;/h3&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;Lorem ipsum 
-  dolor..&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp;&nbsp;&nbsp; &lt;div class=&quot;col-sm-4&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h3&gt;Column 3&lt;/h3&gt; <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;Lorem ipsum 
-  dolor..&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp; &lt;/div&gt;<br>&lt;/div&gt;</div>
-<a target="_blank" href="tryit689b.html?filename=trybs_default&amp;stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a></div>
-<div class="w3-panel w3-note">
-  <p style="margin-bottom:8px">Click on the &quot;Try it Yourself&quot; button to see how it works.</p>
+ <h3>Example</h3>
+<div class="w3-white w3-padding notranslate fix">
+      <h1>h1 Bootstrap heading <span style="margin-left:10px;font-size:16px;font-weight:normal;color:#888">(2.5rem = 40px)</span></h1>
+      <h2>h2 Bootstrap heading <span style="margin-left:10px;font-size:16px;font-weight:normal;color:#888">(2rem = 32px)</span></h2>
+      <h3>h3 Bootstrap heading <span style="margin-left:10px;font-size:16px;font-weight:normal;color:#888">(1.75rem = 28px)</span></h3>
+      <h4>h4 Bootstrap heading <span style="margin-left:10px;font-size:16px;font-weight:normal;color:#888">(1.5rem = 24px)</span></h4>
+      <h5>h5 Bootstrap heading <span style="margin-left:10px;font-size:16px;font-weight:normal;color:#888">(1.25rem = 20px)</span></h5>
+      <h6>h6 Bootstrap heading <span style="margin-left:10px;font-size:16px;font-weight:normal;color:#888">(1rem = 16px)</span></h6>
 </div>
+<a target="_blank" href="tryitd083.html?filename=trybs_txt_hn&amp;stacked=h" class="w3-btn w3-margin-bottom w3-margin-top">Try it Yourself &raquo;</a></div>
+<hr>
 
+<h2>Display Headings</h2>
+<p>Display headings are used to stand out more than normal headings (larger 
+font-size and lighter font-weight), and there 
+are four classes to choose from: <code class="w3-codespan">.display-1</code>, <code class="w3-codespan">.display-2</code>, <code class="w3-codespan">.display-3</code>, <code class="w3-codespan">.display-4</code></p>
+<div class="w3-example">
+ <h3>Example</h3>
+<div class="w3-white w3-padding notranslate">
+      <h1 class="display-1">Display 1</h1>
+      <h1 class="display-2">Display 2</h1>
+      <h1 class="display-3">Display 3</h1>
+      <h1 class="display-4">Display 4</h1>
+</div>
+<a target="_blank" href="tryit7135.html?filename=trybs_txt_display&amp;stacked=h" class="w3-btn w3-margin-bottom w3-margin-top">Try it Yourself &raquo;</a></div>
+<hr>
+
+<h2>&lt;small&gt;</h2>
+<p>In Bootstrap 4 the HTML <code class="w3-codespan">&lt;small&gt;</code> element is used to create a lighter, secondary text in any heading:</p>
+<div class="w3-example">
+ <h3>Example</h3>
+<div class="w3-white w3-padding notranslate fix">
+      <h1>h1 heading <small>secondary text</small></h1>
+      <h2>h2 heading <small>secondary text</small></h2>
+      <h3>h3 heading <small>secondary text</small></h3>
+      <h4>h4 heading <small>secondary text</small></h4>
+      <h5>h5 heading <small>secondary text</small></h5>
+      <h6>h6 heading <small>secondary text</small></h6>
+</div>
+<a target="_blank" href="tryitc1d5.html?filename=trybs_txt_small&amp;stacked=h" class="w3-btn w3-margin-bottom w3-margin-top">Try it Yourself &raquo;</a></div>
 <hr>
 <div id="midcontentadcontainer" style="overflow:auto;text-align:center">
 <!-- MidContent -->
@@ -829,64 +862,246 @@ function w3_getStyleValue(elmnt,style) {
     
 </div>
 <hr>
-
-<h2>Bootstrap 3 vs. Bootstrap 4</h2>
-<p>Bootstrap 4 is the newest version of Bootstrap; with new components, faster stylesheet and more responsiveness.</p>
-<p>Bootstrap 4 supports the latest, stable releases of all major browsers and 
-platforms. However, Internet Explorer 9 and down is not supported. </p>
-<div class="w3-panel w3-note">
-<p style="margin-bottom:8px"><strong>If you require IE8-9 support, use <a href="../bootstrap/default.html">Bootstrap 3.</a></strong> It is the most 
-stable version of Bootstrap, and it is still supported by the team for critical bugfixes and documentation changes. However, new features will NOT be added to 
-it.</p>
+<h2>&lt;mark&gt;</h2>
+<p>Bootstrap 4 will style the HTML <code class="w3-codespan">&lt;mark&gt;</code> element 
+with a yellow background color and some padding:</p>
+<div class="w3-example">
+ <h3>Example</h3>
+<div class="w3-white w3-padding notranslate fix">
+      <p>Use the mark element to <mark style="background-color:#fcf8e3;padding:.2em;">highlight</mark> text.</p>
 </div>
-<a href="../bootstrap/default.html" class="w3-btn w3-dark-grey">Go To Bootstrap 3 &raquo;</a>
+<a target="_blank" href="tryit149a.html?filename=trybs_txt_mark&amp;stacked=h" class="w3-btn w3-margin-bottom w3-margin-top">Try it Yourself &raquo;</a></div>
 <hr>
 
-<h2>Bootstrap 4 Basic Template</h2>
-<p>We have created a responsive starter template with Bootstrap 4. You are free to modify, save, share, and use it in your projects:</p>
-<div class="w3-content" style="max-width:1500px">
-<iframe src="../howto/tryhow_website_bootstrap4_ifr.html" class="w3-round" style="width:100%;border:5px solid #e9e9e9;height:600px"></iframe>
-<div class="w3-row-padding" style="margin:16px -16px 0 -16px">
-  <div class="w3-col m6">
-    <a href="trybs_template1.html" target="_blank" class="w3-btn w3-padding-large w3-dark-grey w3-block">Demo</a>
-  </div>
-  <div class="w3-col m6">
-    <a href="tryit0874.html?filename=trybs_template1" target="_blank" class="w3-btn w3-padding-large w3-green w3-block">Try it Yourself</a>
-  </div>
+<h2>&lt;abbr&gt;</h2>
+<p>Bootstrap 4 will style the HTML <code class="w3-codespan">&lt;abbr&gt;</code> element 
+with a dotted border bottom:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-white w3-padding notranslate fix">
+<p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
 </div>
-</div>
+<a target="_blank" href="tryit1968.html?filename=trybs_txt_abbr&amp;stacked=h" class="w3-btn w3-margin-bottom w3-margin-top">Try it Yourself &raquo;</a></div>
 <hr>
 
-<h2>Bootstrap References</h2>
-<p>A complete list of all Bootstrap 4 CSS classes with description and examples:</p>
-<div class="w3-bar-block" style="margin-bottom:12px">
-  <a class="w3-button w3-bar-item w3-light-grey" href="bootstrap_ref_all_classes.html">Bootstrap All CSS Classes <span class="w3-tag w3-blue" style="margin-left:5px">Popular</span></a>
+<h2>&lt;blockquote&gt;</h2>
+<p>Add the <code class="w3-codespan">.blockquote</code> class to a <code class="w3-codespan">&lt;blockquote&gt;</code> 
+when quoting blocks of content from another source:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-white w3-padding w3-margin-bottom notranslate fix">
+<blockquote class="blockquote">
+  <p>For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.</p>
+  <br><footer class="blockquote-footer">From WWF's website</footer>
+</blockquote>
 </div>
-<p>If you want to do more with Bootstrap components, see our complete Bootstrap 4 JavaScript/jQuery reference - all with &quot;Try it Yourself&quot; examples:</p>
-<div class="w3-bar-block">
-  <a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_alert.html">Bootstrap JS Alert</a>
-  <a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_button.html">Bootstrap JS Button</a>
-  <a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_carousel.html">Bootstrap JS Carousel</a>
-  <a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_collapse.html">Bootstrap JS Collapse</a>
-  <a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_dropdown.html">Bootstrap JS Dropdown</a>
-  <a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_modal.html">Bootstrap JS Modal</a>
-  <a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_popover.html">Bootstrap JS Popover</a>
-  <a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_scrollspy.html">Bootstrap JS Scrollspy</a>
-  <a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_tab.html">Bootstrap JS Tab</a>
-  <a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_toasts.html">Bootstrap JS Toasts</a>
-  <a class="w3-button w3-bar-item w3-light-grey" href="bootstrap_ref_js_tooltip.html">Bootstrap JS Tooltip</a>
-</div>
+<a target="_blank" href="tryit87a3.html?filename=trybs_txt_blockquote&amp;stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a></div>
 <hr>
 
-<h2>Did You Know?</h2>
-<p>W3.CSS is an excellent alternative to Bootstrap 4.</p>
-<p>W3.CSS is smaller, faster, and easier to use.</p>
-<p>If you want to learn W3.CSS, go to our <a href="../w3css/default.html">W3.CSS 
-Tutorial</a>.</p>
+<h2>&lt;dl&gt;</h2>
+<p>Bootstrap 4 will style the HTML <code class="w3-codespan">&lt;dl&gt;</code> element in the following way:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-white w3-padding notranslate fix">
+      <dl>
+        <dt>Coffee</dt>
+        <dd>- black hot drink</dd>
+        <dt>Milk</dt>
+        <dd>- white cold drink</dd>
+      </dl>     
+</div>
+<a target="_blank" href="tryit44f5.html?filename=trybs_txt_dl&amp;stacked=h" class="w3-btn w3-margin-bottom w3-margin-top">Try it Yourself &raquo;</a></div>
+<hr>
+
+<h2>&lt;code&gt;</h2>
+<p>Bootstrap 4 will style the HTML <code class="w3-codespan">&lt;code&gt;</code> element in the following way:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-white w3-padding notranslate fix">
+<p>The following HTML elements: <code>span</code>, <code>section</code>, and <code>div</code> defines a section in a document.</p>
+</div>
+<a target="_blank" href="tryit41b3.html?filename=trybs_txt_code&amp;stacked=h" class="w3-btn w3-margin-bottom w3-margin-top">Try it Yourself &raquo;</a></div>
+<hr>
+
+<h2>&lt;kbd&gt;</h2>
+<p>Bootstrap 4 will style the HTML <code class="w3-codespan">&lt;kbd&gt;</code> element in the following way:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-white w3-padding notranslate fix">
+<p>Use <kbd>ctrl + p</kbd> to open the Print dialog box.</p>
+</div>
+<a target="_blank" href="tryit762f.html?filename=trybs_txt_kbd&amp;stacked=h" class="w3-btn w3-margin-bottom w3-margin-top">Try it Yourself &raquo;</a></div>
+<hr>
+
+<h2>&lt;pre&gt;</h2>
+<p>Bootstrap 4 will style the HTML <code class="w3-codespan">&lt;pre&gt;</code> element in the following way:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-white w3-padding notranslate fix">
+<pre style="font-family:Consolas,'courier new';">
+Text in a pre element
+is displayed in a fixed-width
+font, and it preserves
+both      spaces and
+line breaks.
+</pre>
+</div>
+<a target="_blank" href="tryit259f.html?filename=trybs_txt_pre&amp;stacked=h" class="w3-btn w3-margin-bottom w3-margin-top">Try it Yourself &raquo;</a></div>
+<hr>
+
+<h2>More Typography Classes</h2>
+<p>The Bootstrap 4 classes below can be added to style HTML elements further:</p>
+<table class="w3-table-all notranslate">
+  <tr>
+    <th style="width:28%;">Class</th>
+    <th style="width:60%;">Description</th>
+    <th style="width:12%;">Example</th>
+  </tr>
+  <tr>
+    <td><code class="w3-codespan">.font-weight-bold</code></td>
+    <td>Bold text</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="tryit90d0.html?filename=trybs_txt_font-weight&amp;stacked=h">Try it</a></td>
+  </tr>
+  <tr>
+    <td><code class="w3-codespan">.font-weight-bolder</code></td>
+    <td>Bolder text</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="tryit90d0.html?filename=trybs_txt_font-weight&amp;stacked=h">Try it</a></td>
+  </tr>
+  <tr>
+    <td><code class="w3-codespan">.font-italic</code></td>
+    <td>Italic text</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="tryit90d0.html?filename=trybs_txt_font-weight&amp;stacked=h">Try it</a></td>
+  </tr>
+  <tr>
+    <td><code class="w3-codespan">.font-weight-light</code></td>
+    <td>Light weight text</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="tryit90d0.html?filename=trybs_txt_font-weight&amp;stacked=h">Try it</a></td>
+  </tr>
+  <tr>
+    <td><code class="w3-codespan">.font-weight-lighter</code></td>
+    <td>Lighter weight text</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="tryit90d0.html?filename=trybs_txt_font-weight&amp;stacked=h">Try it</a></td>
+  </tr>
+  <tr>
+    <td><code class="w3-codespan">.font-weight-normal</code></td>
+    <td>Normal text</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="tryit90d0.html?filename=trybs_txt_font-weight&amp;stacked=h">Try it</a></td>
+  </tr>
+  <tr>
+    <td><code class="w3-codespan">.lead</code></td>
+    <td>Makes a paragraph stand out</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="tryita635.html?filename=trybs_ref_txt_lead&amp;stacked=h">Try it</a></td>
+  </tr>
+  <tr>
+    <td><code class="w3-codespan">.small</code></td>
+    <td>Indicates smaller text (set to 80% of the size of the parent)</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="tryite1ce.html?filename=trybs_ref_txt_small&amp;stacked=h">Try it</a></td>
+  </tr>
+  <tr>
+    <td><code class="w3-codespan">.text-left</code></td>
+    <td>Indicates left-aligned text</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="tryitef52.html?filename=trybs_ref_text-left&amp;stacked=h">Try it</a></td>
+  </tr>
+  <tr>
+    <td><code class="w3-codespan">.text-*-left</code></td>
+    <td>Indicates left-aligned text on small, medium, large or xlarge screens</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="tryit6ea4.html?filename=trybs_ref_text-left-responsive&amp;stacked=h">Try it</a></td>
+  </tr>
+  <tr>
+    <td><code class="w3-codespan">.text-break</code></td>
+    <td>Prevents long text from breaking layout</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="tryit352c.html?filename=trybs_ref_text-break">Try it</a></td>
+  </tr>
+  <tr>
+    <td><code class="w3-codespan">.text-center</code></td>
+    <td>Indicates center-aligned text</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="tryitef52.html?filename=trybs_ref_text-left&amp;stacked=h">Try it</a></td>
+  </tr>
+  <tr>
+    <td><code class="w3-codespan">.text-*-center</code></td>
+    <td>Indicates center-aligned text on small, medium, large or xlarge screens</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="tryitdab2.html?filename=trybs_ref_text-center-responsive&amp;stacked=h">Try it</a></td>
+  </tr>
+  <tr>
+    <td><code class="w3-codespan">.text-decoration-none</code></td>
+    <td>Removes the underline from a link</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="tryitbbdf.html?filename=trybs_ref_txt_decoration&amp;stacked=h">Try it</a></td>
+  </tr>
+  <tr>
+    <td><code class="w3-codespan">.text-right</code></td>
+    <td>Indicates right-aligned text</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="tryitef52.html?filename=trybs_ref_text-left&amp;stacked=h">Try it</a></td>
+  </tr>
+  <tr>
+    <td><code class="w3-codespan">.text-*-right</code></td>
+    <td>Indicates right-aligned text on small, medium, large or xlarge screens</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="tryitbb73.html?filename=trybs_ref_text-right-responsive&amp;stacked=h">Try it</a></td>
+  </tr>
+  <tr>
+    <td><code class="w3-codespan">.text-justify</code></td>
+    <td>Indicates justified text</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="tryitef52.html?filename=trybs_ref_text-left&amp;stacked=h">Try it</a></td>
+  </tr>
+  <tr>
+    <td><code class="w3-codespan">.text-monospace</code></td>
+    <td>Monospaced text</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="tryit27af.html?filename=trybs_ref_text-monospace&amp;stacked=h">Try it</a></td>
+  </tr>
+  <tr>
+    <td><code class="w3-codespan">.text-nowrap</code></td>
+    <td>Indicates no wrap text</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="tryitef52.html?filename=trybs_ref_text-left&amp;stacked=h">Try it</a></td>
+  </tr>
+  <tr>
+    <td><code class="w3-codespan">.text-lowercase</code></td>
+    <td>Indicates lowercased text</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="tryitc378.html?filename=trybs_ref_text-lowercase&amp;stacked=h">Try it</a></td>
+  </tr>
+  <tr>
+    <td><code class="w3-codespan">.text-reset</code></td>
+    <td>Resets the color of a text or a link (inherits the color from its parent)</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="tryit1941.html?filename=trybs_ref_txt_reset&amp;stacked=h">Try it</a></td>
+  </tr>
+  <tr>
+    <td><code class="w3-codespan">.text-uppercase</code></td>
+    <td>Indicates uppercased text</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="tryitc378.html?filename=trybs_ref_text-lowercase&amp;stacked=h">Try it</a></td>
+  </tr>
+  <tr>
+    <td><code class="w3-codespan">.text-capitalize</code></td>
+    <td>Indicates capitalized text</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="tryitc378.html?filename=trybs_ref_text-lowercase&amp;stacked=h">Try it</a></td>
+  </tr>
+  <tr>
+    <td><code class="w3-codespan">.initialism</code></td>
+    <td>Displays the text inside an <code class="w3-codespan">&lt;abbr&gt;</code> element in a slightly smaller font size</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="tryit58f6.html?filename=trybs_ref_txt_abbr2&amp;stacked=h">Try it</a></td>
+  </tr>
+  <tr>
+    <td><code class="w3-codespan">.list-unstyled</code></td>
+    <td>Removes the default list-style and left margin on list items (works on both <code class="w3-codespan">&lt;ul&gt;</code> and <code class="w3-codespan">&lt;ol&gt;</code>). This class only applies to immediate children list items (to remove the default list-style from any nested lists, apply this class to any nested lists as well)</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="tryitf725.html?filename=trybs_ref_txt_list-unstyled&amp;stacked=h">Try it</a></td>
+  </tr>
+  <tr>
+    <td><code class="w3-codespan">.list-inline</code></td>
+    <td>Places all list items on a single line (used together with 
+    <code class="w3-codespan">.list-inline-item</code> on each &lt;li&gt; elements)</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="tryitf321.html?filename=trybs_ref_txt_list-inline&amp;stacked=h">Try it</a></td>
+  </tr>
+  <tr>
+    <td><code class="w3-codespan">.pre-scrollable</code></td>
+    <td>Makes a <code class="w3-codespan">&lt;pre&gt;</code> element scrollable</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="tryitfcfe.html?filename=trybs_ref_txt_pre&amp;stacked=h">Try it</a></td>
+  </tr>
+</table>
+
+<h2>Complete Bootstrap 4 CSS Reference</h2>
+<p>For a complete reference of all CSS classes available in Bootstrap 4, visit our
+<a href="bootstrap_ref_all_classes.html">Bootstrap 4 All Classes Reference</a>.</p>
 <br>
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="../default.html">&#10094; Home</a>
-<a class="w3-right w3-btn" href="bootstrap_get_started.html">Next &#10095;</a>
+<a class="w3-left w3-btn" href="bootstrap_grid_basic.html">&#10094; Previous</a>
+<a class="w3-right w3-btn" href="bootstrap_colors.html">Next &#10095;</a>
 </div>
 </div>
 <div class="w3-col l2 m12" id="right">
@@ -1180,4 +1395,6 @@ While using this site, you agree to have read and accepted our <a href="../about
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>  
 <![endif]-->
 </body>
+
+<!-- Mirrored from www.w3schools.com/bootstrap4/bootstrap_typography.asp by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Sep 2019 08:46:53 GMT -->
 </html>

@@ -1,7 +1,14 @@
+
 <!DOCTYPE html>
 <html lang="en-US">
+
+<!-- Mirrored from www.w3schools.com/bootstrap4/bootstrap_images.asp by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Sep 2019 08:46:53 GMT -->
 <head>
-<title>Bootstrap 4 Tutorial</title>
+<title>Bootstrap 4 Images</title>
+<link rel="stylesheet" href="../../maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="../../ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="../../cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="../../maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="Keywords" content="HTML,CSS,JavaScript,SQL,PHP,jQuery,XML,DOM,Bootstrap,Python,Java,Web development,W3C,tutorials,programming,training,learning,quiz,primer,lessons,references,examples,exercises,source code,colors,demos,tips">
@@ -375,14 +382,18 @@ ga('require', 'displayfeatures');
 ga('send', 'pageview');
 </script>
 
-<script src="../../snigelweb-com.videoplayerhub.com/videoloader.js" async></script>
-
 <script type='text/javascript'>
 var k42 = false;
 var googletag = googletag || {}; googletag.cmd = googletag.cmd || [];
 
-k42 = true;
-(adsbygoogle=window.adsbygoogle||[]).pauseAdRequests=1;
+(function() {
+  var gads = document.createElement('script');
+  gads.async = true;
+  gads.type = 'text/javascript';
+  gads.src = '../../www.googletagservices.com/tag/js/gpt.js';
+  var node = document.getElementsByTagName('script')[0];
+  node.parentNode.insertBefore(gads, node);
+})();
 
 var snhb = snhb || {}; snhb.queue = snhb.queue || [];
 snhb.options = {
@@ -393,6 +404,85 @@ snhb.options = {
                      reconsiderationAppealIntervalSeconds: 0
                      }
                };
+
+// GPT slots
+var gptAdSlots = [];
+googletag.cmd.push(function() {
+  googletag.pubads().disableInitialLoad();               
+  googletag.pubads().enableSingleRequest();
+  var leaderMapping = googletag.sizeMapping().
+    // Mobile ad
+    addSize([0, 0], [320, 50]). 
+    // Vertical Tablet ad
+    addSize([480, 0], [468, 60]). 
+    // Horizontal Tablet
+    addSize([780, 0], [728, 90]).
+    // Small Desktop
+    addSize([993, 0], [468, 60]).
+    // Normal Desktop
+    addSize([1150, 0], [728, 90]).
+    // Large Desktop and bigger ad
+    addSize([1425, 0], [[728, 90], [970, 90]]).build();
+  gptAdSlots[0] = googletag.defineSlot('/16833175/MainLeaderboard', [[728, 90], [970, 90]], 'div-gpt-ad-1422003450156-2').
+    defineSizeMapping(leaderMapping).addService(googletag.pubads());
+  var skyMapping = googletag.sizeMapping().
+    // Mobile ad
+    addSize([0, 0], [320, 50]). 
+    // Tablet ad
+    addSize([975, 0], [120, 600]). 
+    // Desktop
+    addSize([1135, 0], [160, 600]).   
+    // Large Desktop
+    addSize([1675, 0], [[160, 600], [300, 600], [300, 1050]]).build();
+  gptAdSlots[1] = googletag.defineSlot('/16833175/WideSkyScraper', [[160, 600], [300, 600], [300, 1050]], 'div-gpt-ad-1422003450156-5').
+    defineSizeMapping(skyMapping).addService(googletag.pubads());
+  var stickyMapping = googletag.sizeMapping().
+    // Mobile ad
+    addSize([0, 0], []). 
+    // Tablet ad
+    addSize([975, 0], [120, 600]). 
+    // Desktop
+    addSize([1135, 0], [160, 600]).   
+    // Large Desktop
+    addSize([1675, 0], [[160, 600], [300, 600], [300, 250]]).build();
+  gptAdSlots[4] = googletag.defineSlot('/16833175/StickySkyScraper', [[300, 600], [120, 600], [300, 250], [160, 600]], 'div-gpt-ad-1472547360578-0').
+    defineSizeMapping(stickyMapping).addService(googletag.pubads());
+  var mcontMapping = googletag.sizeMapping().
+    // Mobile ad
+    addSize([0, 0], [[300, 250], [336, 280], [320, 50]]). 
+    // Vertical Tablet ad
+    addSize([490, 0], [[300, 250], [336, 280], [468, 60]]). 
+    // Horizontal Tablet
+    addSize([750, 0], [728, 90]).
+    // Small Desktop
+    addSize([993, 0], [[300, 250], [336, 280], [468, 60]]).
+    // Normal Desktop
+    addSize([1135, 0], [728, 90]).
+    // Large Desktop and bigger ad
+    addSize([1440, 0], [[728, 90], [970, 90], [970, 250]]).build();
+  gptAdSlots[5] = googletag.defineSlot('/16833175/MidContent', [[300, 250], [336, 280]], 'div-gpt-ad-1493883843099-0').
+    defineSizeMapping(mcontMapping).setCollapseEmptyDiv(true).addService(googletag.pubads());
+  var bmrMapping = googletag.sizeMapping().
+    // Smaller
+    addSize([0, 0], [[300, 250], [336, 280]]). 
+    // Large Desktop
+    addSize([1240, 0], [[300, 250], [336, 280], [970, 250]]).build();
+    gptAdSlots[2] = googletag.defineSlot('/16833175/BottomMediumRectangle', [[300, 250], [336, 280], [970, 250]], 'div-gpt-ad-1422003450156-0').
+    defineSizeMapping(bmrMapping).setCollapseEmptyDiv(true).addService(googletag.pubads());
+  var rbmrMapping = googletag.sizeMapping().
+    // Smaller
+    addSize([0, 0], []). 
+    // Large Desktop
+    addSize([975, 0], [[300, 250], [336, 280]]).build();
+  gptAdSlots[3] = googletag.defineSlot('/16833175/RightBottomMediumRectangle', [[300, 250], [336, 280]], 'div-gpt-ad-1422003450156-3').
+    defineSizeMapping(rbmrMapping).setCollapseEmptyDiv(true).addService(googletag.pubads());
+  googletag.pubads().setTargeting("content",(function () {
+    var folder = location.pathname;
+    folder = folder.replace("../index.html", "");
+    folder = folder.substr(0, folder.indexOf("../index.html"));
+    return folder;
+  })());
+});  
 
 </script>
 <script src="../../static.h-bid.com/sncmp/sncmp_stub.min.js" type="text/javascript"></script>
@@ -417,7 +507,7 @@ snhb.options = {
 <script>
   snhb.queue.push(function(){
 
-    snhb.startAuction(["main_leaderboard", "wide_skyscraper", "bottom_medium_rectangle", "right_bottom_medium_rectangle"]);
+    snhb.addAdditionalAdSlotsToRefresh(gptAdSlots);
 
   });
 </script>
@@ -479,9 +569,15 @@ function w3_getStyleValue(elmnt,style) {
   }
 }
 </script>
+<link rel="stylesheet" href="w3-fix.css">
 <style>
-.w3-ul li a {
-  text-decoration:none;
+.row .thumbnail a {
+ text-decoration:none;
+ color:#333;
+}
+.row .thumbnail a:hover {
+ text-decoration:underline;
+ color:#333;
 }
 .topnav .w3-bar a[href^="/bootstrap/bootstrap_ver.asp"] {
   background-color: #4CAF50 !important;
@@ -780,113 +876,161 @@ function w3_getStyleValue(elmnt,style) {
     <div class='w3-col l10 m12' id='main'>
       <div id='mainLeaderboard' style='overflow:hidden;'>
         <!-- MainLeaderboard-->
-
-        <!--<pre>main_leaderboard, all: [728,90][970,90][320,50][468,60]</pre>-->
-        <div id="snhb-main_leaderboard-0"></div>
-        <!-- adspace leaderboard -->
+        
+        <div id='div-gpt-ad-1422003450156-2'>
+          <script type='text/javascript'>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1422003450156-2'); });</script>
+        </div>
        
       </div>
-<h1>Bootstrap 4 <span class="color_h1">Tutorial</span></h1>
+<h1>Bootstrap 4 <span class="color_h1">Images</span></h1>
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="../default.html">&#10094; Home</a>
-<a class="w3-right w3-btn" href="bootstrap_get_started.html">Next &#10095;</a>
+<a class="w3-left w3-btn" href="bootstrap_tables.html">&#10094; Previous</a>
+<a class="w3-right w3-btn" href="bootstrap_jumbotron.html">Next &#10095;</a>
 </div>
-
-<div class="w3-panel w3-info intro w3-padding-16">
-<p style="margin-top:15px;">Bootstrap 4 is the newest version of <a href="../bootstrap/default.html">Bootstrap</a>, which is the most popular HTML, CSS, and JavaScript framework for developing responsive, mobile-first websites.</p>
-<p>Bootstrap 4 is completely free to download and use!</p>
-<p><a href="bootstrap_get_started.html" class="w3-btn w3-padding-large w3-hide-small">Start learning Bootstrap 4 now &raquo;</a></p>
-<p><a href="bootstrap_get_started.html" class="w3-btn w3-block w3-hide-large w3-hide-medium" style="padding:8px 16px">Learn Bootstrap 4</a></p>
-</div>
-
 <hr>
 
-<h2>Try it Yourself Examples</h2>
-<p>This Bootstrap 4 tutorial contains hundreds of Bootstrap 4 examples.</p>
-<p>With our online editor, you can edit the code, and click on a button to view the result.</p>
-<img src="imgdefault.jpg" alt="Responsive Bootstrap Page" style="width:95%;margin:16px auto;display:block">
-
-<div class="w3-example">
-<h3>Bootstrap 4 Example</h3>
-<div class="w3-code notranslate htmlHigh">
-  &lt;div class=&quot;jumbotron text-center&quot;&gt;<br>&nbsp;&nbsp;&lt;h1&gt;My First Bootstrap 
-  Page&lt;/h1&gt;<br>&nbsp; &lt;p&gt;Resize this responsive page to see the effect!&lt;/p&gt; <br>&lt;/div&gt;<br><br>&lt;div class=&quot;container&quot;&gt;<br>&nbsp; &lt;div class=&quot;row&quot;&gt;<br>
-  &nbsp;&nbsp;&nbsp; &lt;div class=&quot;col-sm-4&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h3&gt;Column 1&lt;/h3&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;Lorem ipsum 
-  dolor..&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp;&nbsp;&nbsp; &lt;div class=&quot;col-sm-4&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h3&gt;Column 2&lt;/h3&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;Lorem ipsum 
-  dolor..&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp;&nbsp;&nbsp; &lt;div class=&quot;col-sm-4&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h3&gt;Column 3&lt;/h3&gt; <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;Lorem ipsum 
-  dolor..&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp; &lt;/div&gt;<br>&lt;/div&gt;</div>
-<a target="_blank" href="tryit689b.html?filename=trybs_default&amp;stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a></div>
-<div class="w3-panel w3-note">
-  <p style="margin-bottom:8px">Click on the &quot;Try it Yourself&quot; button to see how it works.</p>
+<h2>Bootstrap 4 Image Shapes</h2>
+<div style="float:left;width:33%">
+<p>Rounded Corners:</p>
+<img src="paris.jpg" class="img-fluid rounded" alt="Paris" style="width:204px;height:auto;">
 </div>
+<div style="float:left;width:33%">
+<p>Circle:</p>
+<img src="newyork.jpg" class="img-fluid rounded-circle" alt="NYC" style="width:204px;height:auto;">
+</div>
+<div style="float:left;width:33%;">
+<p>Thumbnail:</p>
+<img src="sanfran.jpg" class="img-fluid img-thumbnail" alt="San Fran" style="width:204px;height:auto;">
+</div>
+<div style="clear:both;margin-bottom:20px;"></div>
+<hr>
 
+<h2>Rounded Corners</h2>
+<p>The <code class="w3-codespan">.rounded</code> class adds rounded corners to an image:</p>
+<div class="w3-example">
+ <h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;img src=&quot;cinqueterre.jpg&quot; class=&quot;rounded&quot; alt=&quot;Cinque Terre&quot;&gt;</div>
+<a target="_blank" href="tryit5fdf.html?filename=trybs_img_rounded&amp;stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
+</div>
+<hr>
+
+<h2>Circle</h2>
+<p>The <code class="w3-codespan">.rounded-circle</code> class shapes the image to a circle:</p>
+<div class="w3-example">
+ <h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;img src=&quot;cinqueterre.jpg&quot; class=&quot;rounded-circle&quot; alt=&quot;Cinque Terre&quot;&gt;</div>
+<a target="_blank" href="tryit6a64.html?filename=trybs_img_circle&amp;stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
+</div>
+<hr>
+
+<h2>Thumbnail</h2>
+<p>The <code class="w3-codespan">.img-thumbnail</code> class shapes the image to a thumbnail 
+(bordered):</p>
+<div class="w3-example">
+ <h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;img src=&quot;cinqueterre.jpg&quot; class=&quot;img-thumbnail&quot; alt=&quot;Cinque Terre&quot;&gt;</div>
+<a target="_blank" href="tryit8c2c.html?filename=trybs_img_thumbnail&amp;stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
+</div>
 <hr>
 <div id="midcontentadcontainer" style="overflow:auto;text-align:center">
 <!-- MidContent -->
 
-  <!--<pre>mid_content, all: [300,250][336,280][728,90][970,250][970,90][320,50][468,60]</pre>-->
-  <div id="snhb-mid_content-0"></div>
+  <div id='div-gpt-ad-1493883843099-0' style="display: inline-block">
+    <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1493883843099-0'); });
+    </script>
+  </div>
     
 </div>
 <hr>
 
-<h2>Bootstrap 3 vs. Bootstrap 4</h2>
-<p>Bootstrap 4 is the newest version of Bootstrap; with new components, faster stylesheet and more responsiveness.</p>
-<p>Bootstrap 4 supports the latest, stable releases of all major browsers and 
-platforms. However, Internet Explorer 9 and down is not supported. </p>
+<h2>Aligning Images</h2>
+<p>Float an image to the right with the <code class="w3-codespan">.float-right</code> class or to the left with <code class="w3-codespan">.float-left</code>:</p> 
+<div class="w3-container" style="margin:0 -16px">
+  <img src="paris.jpg" class="float-left" style="width:30%"> 
+  <img src="paris.jpg" class="float-right" style="width:30%"> 
+</div>
+
+<div class="w3-example">
+ <h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+  &lt;img src=&quot;paris.jpg&quot; class=&quot;float-left&quot;&gt; <br>&lt;img src=&quot;paris.jpg&quot; 
+  class=&quot;float-right&quot;&gt; </div>
+<a target="_blank" href="tryit99a5.html?filename=trybs_img_align&amp;stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
+</div>
+<hr>
+
+<h2>Centered Image</h2>
+<p>Center an image by adding the utility classes <code class="w3-codespan">.mx-auto</code> (margin:auto) and <code class="w3-codespan">.d-block</code> (display:block) to the image:</p> 
+<div class="w3-container" style="margin:0 -16px">
+  <img src="paris.jpg" class="mx-auto d-block" style="width:30%"> 
+</div>
+
+<div class="w3-example">
+ <h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+  &lt;img src=&quot;paris.jpg&quot; class=&quot;mx-auto d-block&quot;&gt;</div>
+<a target="_blank" href="tryitbc9a.html?filename=trybs_img_centered&amp;stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
+</div>
+<hr>
+
+<h2>Responsive Images</h2>
+<p>Images come in all sizes. So do screens. Responsive images automatically 
+adjust to fit the size of the screen. </p>
+<p>Create responsive images by adding an <code class="w3-codespan">.img-fluid</code> class 
+to the <code class="w3-codespan">&lt;img&gt;</code> tag. The image will then scale nicely to the parent element.</p>
+<p>The <code class="w3-codespan">.img-fluid</code> class applies <code class="w3-codespan">max-width: 100%;</code> and 
+<code class="w3-codespan">height: auto;</code> to the image:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;img class=&quot;img-fluid&quot; src=&quot;img_chania.jpg&quot; alt=&quot;Chania&quot;&gt; </div>
+<a target="_blank" href="tryit1f51.html?filename=trybs_img_responsive&amp;stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
+</div>
+
+<!--
+<hr>
+<h2>Responsive Embeds</h2>
+<p>Also let videos or slideshows scale properly on any device.</p>
+<p>Classes can be applied directly to &lt;iframe&gt;, &lt;embed&gt;, &lt;video&gt;, and &lt;object&gt; elements.</p>
+<p>The following example creates a responsive video by adding an <code class="w3-codespan">.embed-responsive-item</code> class 
+to an <code class="w3-codespan">&lt;iframe&gt;</code> tag (the video will then scale nicely to the parent element). 
+The containing <code class="w3-codespan">&lt;div&gt;</code> defines the aspect ratio of the video:</p>
+<div class="w3-example">
+ <h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;div class=&quot;embed-responsive embed-responsive-16by9&quot;&gt;<br>&nbsp; &lt;iframe class=&quot;embed-responsive-item&quot; src=&quot;...&quot;&gt;&lt;/iframe&gt;<br>&lt;/div&gt;</div>
+<a target="_blank" href="tryit.asp?filename=trybs_responsive_embed&stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
+</div>
 <div class="w3-panel w3-note">
-<p style="margin-bottom:8px"><strong>If you require IE8-9 support, use <a href="../bootstrap/default.html">Bootstrap 3.</a></strong> It is the most 
-stable version of Bootstrap, and it is still supported by the team for critical bugfixes and documentation changes. However, new features will NOT be added to 
-it.</p>
+<p><strong>What is aspect ratio?</strong> <br><br>The aspect ratio of an image 
+describes the proportional relationship between its width and its height. Two common video aspect ratios are 4:3 
+(the universal video format of the 20th 
+century), and 16:9 (universal for HD television and European digital 
+television).</p>
 </div>
-<a href="../bootstrap/default.html" class="w3-btn w3-dark-grey">Go To Bootstrap 3 &raquo;</a>
-<hr>
 
-<h2>Bootstrap 4 Basic Template</h2>
-<p>We have created a responsive starter template with Bootstrap 4. You are free to modify, save, share, and use it in your projects:</p>
-<div class="w3-content" style="max-width:1500px">
-<iframe src="../howto/tryhow_website_bootstrap4_ifr.html" class="w3-round" style="width:100%;border:5px solid #e9e9e9;height:600px"></iframe>
-<div class="w3-row-padding" style="margin:16px -16px 0 -16px">
-  <div class="w3-col m6">
-    <a href="trybs_template1.html" target="_blank" class="w3-btn w3-padding-large w3-dark-grey w3-block">Demo</a>
-  </div>
-  <div class="w3-col m6">
-    <a href="tryit0874.html?filename=trybs_template1" target="_blank" class="w3-btn w3-padding-large w3-green w3-block">Try it Yourself</a>
-  </div>
-</div>
+<p>You can choose between two aspect ratio classes:</p>
+<div class="w3-example">
+<div class="w3-code notranslate htmlHigh">
+ &lt;!-- 16:9 aspect ratio --&gt;<br>&lt;div class=&quot;embed-responsive embed-responsive-16by9&quot;&gt;<br>&nbsp; &lt;iframe class=&quot;embed-responsive-item&quot; src=&quot;...&quot;&gt;&lt;/iframe&gt;<br>&lt;/div&gt;<br>
+ <br>&lt;!-- 4:3 aspect ratio --&gt;<br>&lt;div class=&quot;embed-responsive embed-responsive-4by3&quot;&gt;<br>&nbsp; &lt;iframe class=&quot;embed-responsive-item&quot; src=&quot;...&quot;&gt;&lt;/iframe&gt;<br>&lt;/div&gt;</div>
+<a target="_blank" href="tryit.asp?filename=trybs_responsive_embed_4by3&stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
 </div>
 <hr>
 
-<h2>Bootstrap References</h2>
-<p>A complete list of all Bootstrap 4 CSS classes with description and examples:</p>
-<div class="w3-bar-block" style="margin-bottom:12px">
-  <a class="w3-button w3-bar-item w3-light-grey" href="bootstrap_ref_all_classes.html">Bootstrap All CSS Classes <span class="w3-tag w3-blue" style="margin-left:5px">Popular</span></a>
-</div>
-<p>If you want to do more with Bootstrap components, see our complete Bootstrap 4 JavaScript/jQuery reference - all with &quot;Try it Yourself&quot; examples:</p>
-<div class="w3-bar-block">
-  <a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_alert.html">Bootstrap JS Alert</a>
-  <a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_button.html">Bootstrap JS Button</a>
-  <a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_carousel.html">Bootstrap JS Carousel</a>
-  <a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_collapse.html">Bootstrap JS Collapse</a>
-  <a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_dropdown.html">Bootstrap JS Dropdown</a>
-  <a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_modal.html">Bootstrap JS Modal</a>
-  <a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_popover.html">Bootstrap JS Popover</a>
-  <a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_scrollspy.html">Bootstrap JS Scrollspy</a>
-  <a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_tab.html">Bootstrap JS Tab</a>
-  <a class="w3-button w3-bar-item w3-light-grey w3-border-bottom" href="bootstrap_ref_js_toasts.html">Bootstrap JS Toasts</a>
-  <a class="w3-button w3-bar-item w3-light-grey" href="bootstrap_ref_js_tooltip.html">Bootstrap JS Tooltip</a>
-</div>
-<hr>
+<h2>Complete Bootstrap 4 Image Reference</h2>
+<p>For a complete reference of all image classes, go to our complete
+<a href="bootstrap_ref_css_images.asp" class="w3-border-bottom">Bootstrap 4 Image Reference</a>.</p>
+-->
 
-<h2>Did You Know?</h2>
-<p>W3.CSS is an excellent alternative to Bootstrap 4.</p>
-<p>W3.CSS is smaller, faster, and easier to use.</p>
-<p>If you want to learn W3.CSS, go to our <a href="../w3css/default.html">W3.CSS 
-Tutorial</a>.</p>
 <br>
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="../default.html">&#10094; Home</a>
-<a class="w3-right w3-btn" href="bootstrap_get_started.html">Next &#10095;</a>
+<a class="w3-left w3-btn" href="bootstrap_tables.html">&#10094; Previous</a>
+<a class="w3-right w3-btn" href="bootstrap_jumbotron.html">Next &#10095;</a>
 </div>
 </div>
 <div class="w3-col l2 m12" id="right">
@@ -894,9 +1038,13 @@ Tutorial</a>.</p>
 <div class="sidesection">
   <div id="skyscraper">
   
-    <!--<pre>wide_skyscraper, all: [160,600][300,600][320,50][120,600][300,1050]</pre>-->
-    <div id="snhb-wide_skyscraper-0"></div>
-    <!-- adspace wide-->
+    <div id="div-gpt-ad-1422003450156-5">
+      <script>
+      googletag.cmd.push(function() {
+      googletag.display('div-gpt-ad-1422003450156-5');
+      });
+      </script> 
+    </div>
   
   </div>
 </div>
@@ -997,24 +1145,13 @@ Read More &raquo;</a>
   <div id="stickyadcontainer">
     <div style="position:relative;margin:auto;">
       
-      <!--<pre>sidebar_sticky, desktop: [120,600][160,600][300,600][300,250]</pre>-->
-      <div id="snhb-sidebar_sticky-0"></div>
-      <script>
-          if (Number(w3_getStyleValue(document.getElementById("main"), "height").replace("px", "")) > 2200) {
-            // adspace sticky
-            if (document.getElementById("snhb-mid_content-0")) {
-              snhb.queue.push(function(){  snhb.startAuction(["sidebar_sticky", "mid_content" ]); });
-            }
-            else {
-              snhb.queue.push(function(){  snhb.startAuction(["sidebar_sticky"]); });
-            }
-          }
-          else {
-              if (document.getElementById("snhb-mid_content-0")) {
-                snhb.queue.push(function(){  snhb.startAuction(["mid_content"]); });
-              }
-          }
-      </script>  
+        <script>
+        if (Number(w3_getStyleValue(document.getElementById("main"), "height").replace("px", "")) > 2200) {
+        document.write("<div id='div-gpt-ad-1472547360578-0'>");
+        googletag.cmd.push(function() { googletag.display('div-gpt-ad-1472547360578-0'); });
+        document.write("</div>");
+        }
+        </script>
       
     </div>
   </div>
@@ -1032,14 +1169,17 @@ Read More &raquo;</a>
 <hr>
 
 <div style="overflow:auto">
-  <div class="bottomad">
-    <!-- BottomMediumRectangle -->
-    <!--<pre>bottom_medium_rectangle, all: [970,250][300,250][336,280]</pre>-->
-    <div id="snhb-bottom_medium_rectangle-0" style="padding:0 10px 10px 0;float:left;width:auto;"></div>
-    <!-- adspace bmr -->
-    <!-- RightBottomMediumRectangle -->
-    <!--<pre>right_bottom_medium_rectangle, desktop: [300,250][336,280]</pre>-->
-    <div id="snhb-right_bottom_medium_rectangle-0" style="padding:0 10px 10px 0;float:left;width:auto;"></div>
+  <!-- BottomMediumRectangle -->
+  <div class="bottomad" id='div-gpt-ad-1422003450156-0'>
+    <script type='text/javascript'>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1422003450156-0'); });
+    </script>
+  </div>
+  <!-- RightBottomMediumRectangle -->
+  <div class="bottomad" id='div-gpt-ad-1422003450156-3'>
+    <script type='text/javascript'>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1422003450156-3'); });
+    </script>
   </div>
 </div>
 
@@ -1180,4 +1320,6 @@ While using this site, you agree to have read and accepted our <a href="../about
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>  
 <![endif]-->
 </body>
+
+<!-- Mirrored from www.w3schools.com/bootstrap4/bootstrap_images.asp by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Sep 2019 08:46:54 GMT -->
 </html>
