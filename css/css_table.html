@@ -358,15 +358,12 @@ table
 </div>
 <hr>
 
-<h2>Table Width and Height</h2>
-<p>Width and height of a table are defined by the <code class="w3-codespan">width</code> and <code class="w3-codespan">height</code> properties.</p>
-<p>The example below sets the width of the table to 100%, and the height of the 
-&lt;th&gt; elements to 50px:</p>
-
+<h2>Width и Height - Ширина и высота таблицы</h2>
+<p>Ширина и высота таблицы определяются с помощью свойств <code class="w3-codespan">width</code> и <code class="w3-codespan">height</code>.</p>
+<p>В приведенном ниже примере ширина таблицы устанавливается на 100%, а высота элементов <code class="w3-codespan">&lt;th&gt;</code> 50px:</p>
 <iframe src="trycss_table_width_iframe.html" style="border:none;width:100%;height:146px;"></iframe>
-
 <div class="w3-example">
-<h3>Example</h3>
+<h3>Пример</h3>
 <div class="w3-code notranslate cssHigh">
 table 
 {<br>
@@ -381,16 +378,14 @@ th
 </div>
 <hr>
 
-<h2>Horizontal Alignment</h2>
-<p>The <code class="w3-codespan">text-align</code> property sets the horizontal alignment (like left, right, or center) 
-of the content in &lt;th&gt; or &lt;td&gt;.</p>
-<p>By default, the content of &lt;th&gt; elements are center-aligned and the 
-content of &lt;td&gt; elements are left-aligned.</p>
-<p>The following example left-aligns the text in &lt;th&gt; elements:</p>
+<h2>Text-align - Горизонтальное выравнивание</h2>
+<p>Свойство <code class="w3-codespan">text-align</code> устанавливает горизонтальное выравнивание (например слева, справа или по центру) содержимого в элементах <code class="w3-codespan">&lt;th&gt;</code> или <code class="w3-codespan">&lt;td&gt;</code>.</p>
+<p>По умолчанию содержимое элементов <code class="w3-codespan">&lt;th&gt;</code> выравнивается по центру, а содержимое элементов <code class="w3-codespan">&lt;td&gt;</code> выравнивается по левому краю.</p>
+<p>В следующем примере текст выравнивается по левому краю элементов <code class="w3-codespan">&lt;th&gt;</code>:</p>
 <iframe src="trycss_table_align_iframe.html" style="border:none;width:100%;height:120px;"></iframe>
 
 <div class="w3-example">
-<h3>Example</h3>
+<h3>Пример</h3>
 <div class="w3-code notranslate cssHigh">
 th
 {<br>
@@ -401,15 +396,14 @@ text-align: left;<br>
 </div>
 <hr>
 
-<h2>Vertical Alignment</h2>
-<p>The <code class="w3-codespan">vertical-align</code> property sets the vertical alignment (like top, bottom, or middle) 
-of the content in &lt;th&gt; or &lt;td&gt;.</p>
-<p>By default, the vertical alignment of the content in a table is middle (for both &lt;th&gt; 
-and &lt;td&gt; elements).</p>
-<p>The following example sets the vertical text alignment to bottom for &lt;td&gt; elements:</p>
+<h2>Vertical-align - Вертикальное выравнивание</h2>
+<p>Свойство <code class="w3-codespan">vertical-align</code> устанавливает вертикальное выравнивание (например, верх, низ или середина) содержимого в <code class="w3-codespan">&lt;th&gt;</code> или <code class="w3-codespan">&lt;td&gt;</code>.</p>
+<p>По умолчанию вертикальное выравнивание содержимого в таблице является посередине (для обоих элементов <code class="w3-codespan">&lt;th&gt;</code> и <code class="w3-codespan">&lt;td&gt;</code>).</p>
+<p>В следующем примере устанавливается вертикальное выравнивание текста по низу для элементов <code class="w3-codespan">&lt;td&gt;</code></p>
 <iframe src="trycss_table_vertical-align_iframe.html" style="border:none;width:100%;height:206px;"></iframe>
+
 <div class="w3-example">
-<h3>Example</h3>
+<h3>Пример</h3>
 <div class="w3-code notranslate cssHigh">
 td
 {<br>
@@ -422,13 +416,12 @@ vertical-align: bottom;<br>
 </div>
 <hr>
 
-<h2>Table Padding</h2>
-<p>To control the space between the border and the content in a table, use the 
-<code class="w3-codespan">padding</code> property on 
-&lt;td&gt; and &lt;th&gt; elements:</p>
+<h2>Padding - Отступы в таблице</h2>
+<p>Чтобы контролировать пространство между границей и содержимым таблицы, используйте свойство
+<code class="w3-codespan">padding</code> в элементах <code class="w3-codespan">&lt;td&gt;</code> и <code class="w3-codespan">&lt;th&gt;</code>:</p>
 <iframe src="trycss_table_border-padding_iframe.html" style="border:none;width:100%;height:231px;"></iframe>
 <div class="w3-example">
-<h3>Example</h3>
+<h3>Пример</h3>
 <div class="w3-code notranslate cssHigh">
 th, td
 {<br>
@@ -439,7 +432,7 @@ padding: 15px;<br>&nbsp; text-align: left;<br>
 </div>
 <hr>
 
-<h2>Horizontal Dividers</h2>
+<h2>Горизонтальные делители</h2>
 <table class="tabletest2">
 <thead>
 <tr>
@@ -466,18 +459,17 @@ padding: 15px;<br>&nbsp; text-align: left;<br>
   </tr>
 </tbody>
 </table>
-<p>Add the <code class="w3-codespan">border-bottom</code> property to &lt;th&gt; and &lt;td&gt; for horizontal dividers:</p>
+<p>Добавьте свойство <code class="w3-codespan">border-bottom</code> в <code class="w3-codespan">&lt;th&gt;</code> и <code class="w3-codespan">&lt;td&gt;</code> для установки горизонтальных делителей в таблице:</p>
 <div class="w3-example">
-<h3>Example</h3>
+<h3>Пример</h3>
 <div class="w3-code notranslate cssHigh">
 th, td {<br>&nbsp;&nbsp;border-bottom: 1px solid #ddd;<br>}</div>
 <a target="_blank" href="tryit55d6.html?filename=trycss_table_border_divider" class="w3-btn w3-margin-bottom">Попробуйте сами &raquo;</a>
 </div>
 <hr>
 
-<h2>Hoverable Table</h2>
-<p>Use the <code class="w3-codespan">:hover</code> selector on &lt;tr&gt; to highlight table rows on mouse 
-over:</p>
+<h2>Выделение строк таблицы с помощью мыши</h2>
+<p>Используйте селектор <code class="w3-codespan">:hover</code> на <code class="w3-codespan">&lt;tr&gt;</code> чтобы выделить строки таблицы при наведении на них мыши:</p>
 <table class="tabletest4">
 <tr>
   <th>First Name</th>
@@ -502,14 +494,14 @@ over:</p>
 </table>
 
 <div class="w3-example">
-<h3>Example</h3>
+<h3>Пример</h3>
 <div class="w3-code notranslate cssHigh">
 tr:hover {background-color: #f5f5f5;}</div>
 <a target="_blank" href="tryit147b.html?filename=trycss_table_hover" class="w3-btn w3-margin-bottom">Попробуйте сами &raquo;</a>
 </div>
 <hr>
 
-<h2>Striped Tables</h2>
+<h2>Полосатые таблицы</h2>
 <table class="tabler">
 <tr>
   <th>First Name</th>
@@ -532,19 +524,17 @@ tr:hover {background-color: #f5f5f5;}</div>
     <td>$300</td>
   </tr>
 </table>
-<p>For zebra-striped tables, use the <code class="w3-codespan">nth-child()</code> selector and add a <code class="w3-codespan">background-color</code> to all even (or odd) table rows:</p>
+<p>Для таблиц с полосками зебры используйте селектор <code class="w3-codespan">nth-child()</code> и добавьте <code class="w3-codespan">background-color</code> для всех чётных (или нечётных) строк таблицы:</p>
 <div class="w3-example">
-<h3>Example</h3>
+<h3>Пример</h3>
 <div class="w3-code notranslate cssHigh">
 tr:nth-child(even) {background-color: #f2f2f2;}</div>
 <a target="_blank" href="tryit68c5.html?filename=trycss_table_striped" class="w3-btn w3-margin-bottom">Попробуйте сами &raquo;</a>
 </div>
 <hr>
 
-<h2>Table Color</h2>
-<p>The example below specifies the background color 
-and text color of 
-&lt;th&gt; elements:</p>
+<h2>Цвета таблицы</h2>
+<p>Пример ниже определяет цвет фона и цвет текста элементов <code class="w3-codespan">&lt;th&gt;</code>:</p>
 <table class="tabler">
 <tr style="background-color:#4CAF50;color:white;">
   <th>First Name</th>
@@ -569,16 +559,15 @@ and text color of
 </table>
 
 <div class="w3-example">
-<h3>Example</h3>
+<h3>Пример</h3>
 <div class="w3-code notranslate cssHigh">
 th {<br>&nbsp; background-color: #4CAF50;<br>&nbsp;&nbsp;color: white;<br>}</div>
 <a target="_blank" href="tryitf3ff.html?filename=trycss_table_color" class="w3-btn w3-margin-bottom">Попробуйте сами &raquo;</a>
 </div>
 <hr>
 
-<h2>Responsive Table</h2>
-<p>A responsive table will display a horizontal scroll bar if the screen is too 
-small to display the full content:</p>
+<h2>Responsive Table - Отзывчивая (адаптивная) таблица</h2>
+<p>Адаптивная таблица будет отображать горизонтальную полосу прокрутки, если экран слишком мал для отображения всего содержимого:</p>
 
 <div class="w3-responsive">
 <table class="w3-table w3-striped w3-bordered"><tr>
@@ -648,9 +637,9 @@ small to display the full content:</p>
 </tr></table>
 </div>
 
-<p>Add a container element (like &lt;div&gt;) with <code class="w3-codespan">overflow-x:auto</code> around the &lt;table&gt; element to make it responsive:</p>
+<p>Добавьте элемент контейнера (например, <code class="w3-codespan">&lt;div&gt;</code>) с помощью <code class="w3-codespan">overflow-x:auto</code> вокруг элемента <code class="w3-codespan">&lt;table&gt;</code>, чтобы сделать его адаптивным:</p>
 <div class="w3-example">
-<h3>Example</h3>
+<h3>Пример</h3>
 <div class="w3-code notranslate htmlHigh">
 &lt;div style="overflow-x:auto;"&gt;<br><br>&lt;table&gt;<br>
 ... table content ...<br>&lt;/table&gt;<br>
@@ -660,64 +649,61 @@ small to display the full content:</p>
 </div>
 
 <div class="w3-note w3-panel">
-<p><strong>Note:</strong> In OS X Lion (on Mac), scrollbars are hidden by default and only shown when being used (even though "overflow:scroll" is set).</p>
+<p><strong>Примечание:</strong> В OS X Lion (на Mac) полосы прокрутки по умолчанию скрыты и отображаются только при использовании (даже если установлено &quot;overflow: scroll&quot;).</p>
 </div>
 <hr>
 
-<h2>More Examples</h2>
-<p><a target="_blank" href="tryitfbac.html?filename=trycss_table_fancy">Make a fancy table</a><br>
-This example demonstrates how to create a fancy table.</p>
-<p><a target="_blank" href="tryit7a2e.html?filename=trycss_table_caption-side">Set the position of the table caption</a><br>
-This example demonstrates how to position the table caption.</p>
+<h2>Больше примеров</h2>
+<p><a target="_blank" href="tryitfbac.html?filename=trycss_table_fancy">Сделать красивую таблицу</a><br>Этот пример демонстрирует, как создать красивую таблицу.</p>
+<p><a target="_blank" href="tryit7a2e.html?filename=trycss_table_caption-side">Установить положение заголовка таблицы</a><br>Этот пример демонстрирует, как расположить заголовок таблицы.</p>
 <hr>
 
 <div class="w3-container w3-dark-grey w3-padding">
-  <h2>Проверьте себя с помощью упражнений!</h2>
+  <h2 class="heading">Проверьте себя с помощью упражнений!</h2>
   <div class="w3-bar w3-margin-bottom">
-    <a class="w3-bar-item w3-btn w3-hover-light-grey" href="exercise80ae.html?filename=exercise_table1" target="_blank">Exercise 1 &raquo;</a>
-    <a class="w3-bar-item w3-btn w3-hover-light-grey" href="exercised2f9.html?filename=exercise_table2" target="_blank">Exercise 2 &raquo;</a>
-    <a class="w3-bar-item w3-btn w3-hover-light-grey" href="exercise1ffb.html?filename=exercise_table3" target="_blank">Exercise 3 &raquo;</a>
-    <a class="w3-bar-item w3-btn w3-hover-light-grey" href="exercise6c3f.html?filename=exercise_table4" target="_blank">Exercise 4 &raquo;</a>
-    <a class="w3-bar-item w3-btn w3-hover-light-grey" href="exercise38e7.html?filename=exercise_table5" target="_blank">Exercise 5 &raquo;</a>
-    <a class="w3-bar-item w3-btn w3-hover-light-grey" href="exercise618a.html?filename=exercise_table6" target="_blank">Exercise 6 &raquo;</a>
+    <a class="w3-bar-item w3-btn w3-hover-light-grey" href="exercise80ae.html?filename=exercise_table1" target="_blank">Упражнение 1 &raquo;</a>
+    <a class="w3-bar-item w3-btn w3-hover-light-grey" href="exercised2f9.html?filename=exercise_table2" target="_blank">Упражнение 2 &raquo;</a>
+    <a class="w3-bar-item w3-btn w3-hover-light-grey" href="exercise1ffb.html?filename=exercise_table3" target="_blank">Упражнение 3 &raquo;</a>
+    <a class="w3-bar-item w3-btn w3-hover-light-grey" href="exercise6c3f.html?filename=exercise_table4" target="_blank">Упражнение 4 &raquo;</a>
+    <a class="w3-bar-item w3-btn w3-hover-light-grey" href="exercise38e7.html?filename=exercise_table5" target="_blank">Упражнение 5 &raquo;</a>
+    <a class="w3-bar-item w3-btn w3-hover-light-grey" href="exercise618a.html?filename=exercise_table6" target="_blank">Упражнение 6 &raquo;</a>
   </div>
 </div>
 <hr>
 
-<h2>CSS Table Properties</h2>
-
+<h2>Свойства CSS таблицы</h2>
 <table class="w3-table-all notranslate">
-  <tr>
-    <th style="width:20%">Property</th>
-    <th>Description</th>
-  </tr>
-  <tr>
-    <td><a href="../cssref/pr_border.html">border</a></td>
-    <td>Sets all the border properties in one declaration</td>
-  </tr>
-  <tr>
-    <td><a href="../cssref/pr_border-collapse.html">border-collapse</a></td>
-    <td>Specifies whether or not table borders should be collapsed</td>
-  </tr>
-  <tr>
-    <td><a href="../cssref/pr_border-spacing.html">border-spacing</a></td>
-    <td>Specifies the distance between the borders of adjacent cells</td>
-  </tr>
-  <tr>
-    <td><a href="../cssref/pr_tab_caption-side.html">caption-side</a></td>
-    <td>Specifies the placement of a table caption</td>
-  </tr>
-  <tr>
-    <td><a href="../cssref/pr_tab_empty-cells.html">empty-cells</a></td>
-    <td>Specifies whether or not to display borders and background on empty cells in a table</td>
-  </tr>
-  <tr>
-    <td><a href="../cssref/pr_tab_table-layout.html">table-layout</a></td>
-    <td>Sets the layout algorithm to be used for a table</td>
-  </tr>
+   <tr>
+      <th style="width:20%">Свойство</th>
+      <th>Описание</th>
+   </tr>
+   <tr>
+      <td><a href="../cssref/pr_border.html">border</a></td>
+      <td>Устанавливает все свойства границы в одном объявлении</td>
+   </tr>
+   <tr>
+      <td><a href="../cssref/pr_border-collapse.html">border-collapse</a></td>
+      <td>Указывает, должны ли быть свёрнуты границы таблицы</td>
+   </tr>
+   <tr>
+      <td><a href="../cssref/pr_border-spacing.html">border-spacing</a></td>
+      <td>Определяет расстояние между границами соседних ячеек</td>
+   </tr>
+   <tr>
+      <td><a href="../cssref/pr_tab_caption-side.html">caption-side</a></td>
+      <td>Определяет размещение заголовка таблицы</td>
+   </tr>
+   <tr>
+      <td><a href="../cssref/pr_tab_empty-cells.html">empty-cells</a></td>
+      <td>Указывает, следует ли отображать границы и фон для пустых ячеек в таблице</td>
+   </tr>
+   <tr>
+      <td><a href="../cssref/pr_tab_table-layout.html">table-layout</a></td>
+      <td>Устанавливает алгоритм макета для таблицы</td>
+   </tr>  
 </table>
 
-<br>
+<hr>
 <div class="w3-clear nextprev">
 <a class="w3-left w3-btn" href="css_list.html">&#10094; Prev</a>
 <a class="w3-right w3-btn" href="css_display_visibility.html">Next &#10095;</a>
