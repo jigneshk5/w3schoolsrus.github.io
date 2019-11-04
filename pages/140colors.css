@@ -1,7 +1,8 @@
-/* 140 стандартных веб-цветов */
-/* Автор: websunsey */
-/* Сайт: https://w3schoolsrus.github.io/ */
-/* Colors Standart */
+/* 140 стандартных веб-цветов - 140 standard web colors */
+/* Автор - author: websunsey */
+/* Сайт - Site: https://w3schoolsrus.github.io/ */
+/* 140swc_v.2019.11 */
+
 .AliceBlue,.aliceblue,.alice-blue,.hover-alice-blue:hover{color: #000!important; background-color:#f0f8ff!important}
 .AntiqueWhite,.antiquewhite,.antique-white,.hover-antique-white:hover{color:#000!important;background-color:#faebd7!important}
 .Aqua,.aqua,.hover-aqua:hover{color:#000!important;background-color:#00ffff!important}
@@ -49,3 +50,24 @@
 .DodgerBlue,.dodgerblue,.dodger-blue,.hover-dodger-blue:hover{color:#fff!important;text-shadow:.5px .5px .5px #000;background-color:#1e90ff!important}
 .FireBrick,.firebrick,.fire-brick,.hover-fire-brick:hover{color:#fff!important;text-shadow:.5px .5px .5px #000;background-color:#b22222!important}
 .FloralWhite,.floralwhite,.floral-white,.hover-floral-white:hover{color:#000!important;background-color:#fffaf0!important}
+.FloralWhite,.floralwhite,.floral-white,.hover-floral-white:hover{color:#000!important;background-color:#fffaf0!important}
+.ForestGreen,.forestgreen,.forest-green,.hover-forest-green:hover{color:#fff!important;text-shadow:.5px .5px .5px #000;background-color:#228b22!important}
+.Fuchsia,.fuchsia,.hover-fuchsia:hover{color:#fff!important;text-shadow:1px 1px .5px #b22222;background-color:#ff00ff!important}
+.Gainsboro,.gainsboro,.hover-gainsboro:hover{color:#000!important;background-color:#dcdcdc!important}
+.GhostWhite,.ghostwhite,.ghost-white,.hover-ghost-white:hover{color:#000!important;background-color:#f8f8ff!important}
+.Gold,.gold,.hover-gold:hover{color:#000!important;text-shadow:.1px .1px .2px #ff8c00;background-color:#ffd700!important}
+.GoldenRod,.goldenrod,.golden-rod,.hover-golden-rod:hover{color:#fff!important;text-shadow:.5px .5px .5px #8b0000;background-color:#daa520!important}
+.Gray,.gray,.hover-gray:hover{color:#fff!important;text-shadow:.5px .5px .5px #000;background-color:#808080!important}
+.Grey,.grey,.hover-grey:hover{color:#fff!important;text-shadow:.5px .5px .5px #000;background-color:#808080!important}
+.Green,.green,.hover-green:hover{color:#fff!important;text-shadow:.5px .5px .5px #000;background-color:#008000!important}
+.GreenYellow,.greenyellow,.green-yellow,.hover-green-yellow:hover{color:#000!important;background-color:#adff2f!important}
+.HoneyDew,.honeydew,.honey-dew,.hover-honey-dew:hover{color:#000!important;background-color:#f0fff0!important}
+.HotPink,.hotpink,.hot-pink,.hover-hot-pink:hover{color:#fff!important;text-shadow:.5px .5px .5px #8b0000;background-color:#ff69b4!important}
+.IndianRed,.indianred,.indian-red,.hover-indian-red:hover{color:#fff!important;text-shadow:.5px .5px .5px #b22222;background-color:#cd5c5c!important}
+.Indigo,.indigo,.hover-indigo:hover{color:#fff!important;.5px .5px .5px #000;background-color:#4b0082!important}
+.Ivory,.ivory,.hover-ivory:hover{color:#000!important;background-color:#fffff0!important}
+.Khaki,.khaki,.hover-khaki:hover{color:#000!important;background-color:#f0e68c!important}
+.Lavender,.lavender,.hover-lavender:hover{color:#000!important;background-color:#e6e6fa!important}
+.LavenderBlush,.lavenderblush,.lavender-blush,.hover-lavender-blush:hover{color:#000!important;background-color:#fff0f5!important}
+.LawnGreen,.lawngreen,.lawn-green,.hover-lawn-green:hover{color:#000!important;background-color:#7cfc00!important}
+.LemonChiffon,.lemonchiffon,.lemon-chiffon,.hover-lemon-chiffon:hover{color:#000!important;background-color:#fffacd!important}
