@@ -1,30 +1,15 @@
                       http://tx4.us/nbs-iscc.htm
                         NBS/ISCC Color System
 
-Copyright 2003 Voluntocracy.  Permission is granted to copy and
-distribute modified or unmodified versions of this color dictionary
-provided the copyright notice and this permission notice are preserved
-on all copies and the entire such work is distributed under the terms
-of a permission notice identical to this one.
+Copyright 2003 Voluntocracy.  Разрешается копировать и
+распространять измененные или неизмененные версии этого цветового словаря при условии, что уведомление об авторском праве и это уведомление о разрешении сохраняются на всех копиях, и вся такая работа распространяется в соответствии с условиями уведомления о разрешении, идентичного этому.
 
-"Pink" and "brown" are used instead of the more logical "pale red" and
+"Pink" и "brown" используются вместо более логичного "pale red" и
 "dark orange".
 
-http://www.anthus.com/Colors/Cent.html by David A. Mundie, converted
-the NBS Centroid colors from Munsell to CIE XYZ, then converted to Mac
-QuickDraw RGB.  The colors were visibly biased towards pink and had
-duplications.
+http://www.anthus.com/Colors/Cent.html by David A. Mundie, преобразовал цвета NBS Centroid из Munsell в CIE XYZ, а затем преобразовал в Mac QuickDraw RGB. Цвета были явно смещены в сторону розового цвета и имели дубликаты.
 
-John Foster reconverted supplied Munsell values via Munsell software
-downloaded from www.gretagmacbeth.com <http://www.gretagmacbeth.com>
-directly to RGB, and tried to resolve some duplicates.  Some of these
-don't even look right, because some of the bright colors are on the
-dark fringes with less chroma and are not centered and high up on the
-hue curves.  Many of the original Munsell values (noted) are outside
-the RGB gamut, and have been adjusted to the closest brightest RGB
-value by changing chroma until 0 or 255 is reached in one out of
-bounds RGB component.  Guesses were made in a few cases (noted) where
-the color was still illogical compared to the name.
+Джон Фостер повторно преобразовал предоставленные значения Манселла через программное обеспечение Munsell, загруженное с www.gretagmacbeth.com <http://www.gretagmacbeth.com> непосредственно в RGB, и попытался устранить некоторые дубликаты. Некоторые из них даже не выглядят правильно, потому что некоторые из ярких цветов на темных полосах с меньшим количеством цветов и не центрированы и расположены высоко на кривых оттенков. Многие из исходных значений Манселла (отмеченных) находятся за пределами гаммы RGB и были скорректированы до ближайшего самого яркого значения RGB путем изменения цветности до тех пор, пока не будет достигнут 0 или 255 в одном компоненте RGB вне границ. Предположения были сделаны в нескольких случаях (отмечено), где цвет был все еще нелогичным по сравнению с названием.
 
 Vivid_Pink			#FFB5BA
 Strong_Pink			#EA9399

@@ -351,8 +351,6 @@ function clearLine() {
   }
 }
 
-
-
 function drawLine(degrees) {
   ctx.setTransform(1,0,0,1,0,0);
   ctx.translate(canvas.height / 2, canvas.height / 2);
@@ -365,8 +363,6 @@ function drawLine(degrees) {
   ctx.stroke();
   ctx.rotate(-(degrees) * Math.PI);
 }
-
-
 
 function satlight() {
   var lightval, satval, i, x;
@@ -457,4 +453,3 @@ function detectEdge() {
     }
   }
 };
-

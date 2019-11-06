@@ -118,7 +118,7 @@
   animation-duration: 0.5s;
 }
 
-/* Next & previous buttons */
+/* Next & prev кнопки */
 .prev, .next {
   cursor: pointer;
   padding: 8px;
@@ -132,19 +132,16 @@
   color:#ffffff;
 }
 
-/* Position the "next button" to the right */
+/* Позиция "next кнопки" справа */
 .next {
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
+/* При hover, добавить черный цвет фона с небольшой прозрачностью */
 .prev:hover, .next:hover {
   background-color: rgba(255,255,255,0.8);
   color: rgba(0,0,0,0.8);
 }
-
-
-
 
 @-webkit-keyframes fade {
   from {opacity: .4} 
