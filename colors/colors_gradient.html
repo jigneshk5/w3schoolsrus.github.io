@@ -38,7 +38,7 @@
     cursor:pointer;text-align:center;display:none;position:absolute;top:-10px;left:-2px;
 }
 .pointer div{
-    background-color:#ffffff;     
+    background-color:#ffffff;
     border:1px solid #aaaaaa;
     height:24px;
     width:40px;
@@ -47,12 +47,12 @@
     text-align:center;
     top:-14px;
     left:-15px;
-    color:#000000;   
+    color:#000000;
     border-radius:4px;
     font:14px verdana;
 }
 .pointerup div{
-    background-color:#ffffff;     
+    background-color:#ffffff;
     border:1px solid #aaaaaa;
     height:24px;
     width:40px;
@@ -61,7 +61,7 @@
     text-align:center;
     top:14px;
     left:-15px;
-    color:#000000;   
+    color:#000000;
     border-radius:4px;
     font:14px verdana;
 }
@@ -97,7 +97,7 @@
 }
 .directionbtn div.active {
   outline:2px solid #555555;
-  border:2px solid #f1f1f1;  
+  border:2px solid #f1f1f1;
 }
 
 .directionbtn div:hover {
@@ -273,11 +273,12 @@
 <div class='w3-main w3-light-grey' id='belowtopnav' style='margin-left:220px;'>
   <div class='w3-row w3-white'>
     <div class='w3-col l10 m12' id='main'>
-<h1>Цветовой градиент</h1>
+    <a href="index.html"><img src="../svg/colors_icon.svg" alt="Цвета в HTML. Уроки для начинающих" class="w3-left w3-padding" title="Цвета в HTML" width="90"></a>
 
+<h1>Цветовой градиент</h1>
 <div class="w3-clear nextprev">
-	<a class="w3-left w3-btn" href="colors_ncol.html">&#10094; Prev</a>
-	<a class="w3-right w3-btn" href="colors_theory.html">Next &#10095;</a>
+  <a class="w3-left w3-btn" href="colors_ncol.html">&#10094; Prev</a>
+  <a class="w3-right w3-btn" href="colors_theory.html">Next &#10095;</a>
 </div>
 <br>
 <div class="w3-container w3-padding-large" style="background-color:#f1f1f1;border:1px solid #d3d3d3;">
@@ -336,7 +337,7 @@ var thisleft = "135";
   <div class="w3-col m1" style="font-family:Consolas, 'courier new';">
     <div id="touchbutton1" style="text-align:center;display:none;">
       <button ontouchstart="touchslider(1, -1, event)" ontouchend="stoptouchslider()" onmousedown="touchslider(1, -1, event)" onmouseup="stoptouchslider()">&#10094;</button>
-      <button ontouchstart="touchslider(1, 1, event)" ontouchend="stoptouchslider()" onmousedown="touchslider(1, 1, event)" onmouseup="stoptouchslider()">&#10095;</button>    
+      <button ontouchstart="touchslider(1, 1, event)" ontouchend="stoptouchslider()" onmousedown="touchslider(1, 1, event)" onmouseup="stoptouchslider()">&#10095;</button>
     </div>
     <input class="w3-input w3-border" type="number" style="padding:3px 5px;margin:auto;" id="pow1" oninput="setGradient()" onchange="setGradient()" value="0">
     <br class="w3-hide-medium w3-hide-large">
@@ -347,10 +348,10 @@ var thisleft = "135";
   </div>
   <div class="w3-col m1" style="font-family:Consolas, 'courier new';">
     <br class="w3-hide-medium w3-hide-large">
-    <input class="w3-input w3-border" type="number" style="padding:3px 5px;margin:auto;" id="pow2" oninput="setGradient()" onchange="setGradient()" value="100">    
+    <input class="w3-input w3-border" type="number" style="padding:3px 5px;margin:auto;" id="pow2" oninput="setGradient()" onchange="setGradient()" value="100">
     <div id="touchbutton2" style="display:none;text-align:center;">
       <button ontouchstart="touchslider(2, -1, event)" ontouchend="stoptouchslider()" onmousedown="touchslider(2, -1, event)" onmouseup="stoptouchslider()">&#10094;</button>
-      <button ontouchstart="touchslider(2, 1, event)" ontouchend="stoptouchslider()" onmousedown="touchslider(2, 1, event)" onmouseup="stoptouchslider()">&#10095;</button>    
+      <button ontouchstart="touchslider(2, 1, event)" ontouchend="stoptouchslider()" onmousedown="touchslider(2, 1, event)" onmouseup="stoptouchslider()">&#10095;</button>
     </div>
   </div>
 </div>
@@ -400,7 +401,7 @@ function drawRedTable() {
     x += "<tr>";
     for (i = -25; i <= 125; i++) {
         x += "<td";
-        x += " style='position:relative;padding:0;'><div class='pointer' onmousedown='dragstart(1, event)' ontouchstart='dragstart(1, event)' id='redpointer" + i + "'><div>" + i + "</div><i class='fa fa-caret-down'></i></div></td>";        
+        x += " style='position:relative;padding:0;'><div class='pointer' onmousedown='dragstart(1, event)' ontouchstart='dragstart(1, event)' id='redpointer" + i + "'><div>" + i + "</div><i class='fa fa-caret-down'></i></div></td>";
     }
     x += "</tr>";
     pow1 = Number(document.getElementById("pow1").value);
@@ -478,8 +479,8 @@ function submitOnEnter(e) {
 </script>
 <hr>
 <div class="w3-clear nextprev">
-	<a class="w3-left w3-btn" href="colors_gradient.html">&#10094; Prev</a>
-	<a class="w3-right w3-btn" href="colors_theory.html">Next &#10095;</a>
+  <a class="w3-left w3-btn" href="colors_gradient.html">&#10094; Prev</a>
+  <a class="w3-right w3-btn" href="colors_theory.html">Next &#10095;</a>
 </div>
 <script src="../lib/w3color.js"></script>
 <script>
@@ -524,9 +525,9 @@ function clickColor(n, hex, seltop, selleft, html5) {
   cObj = w3color(c);
   colorhex = cObj.toHexString();
   if (cObj.valid) {
-        
+
   } else {
-        
+
     return;
   }
   r = cObj.red;
@@ -574,7 +575,7 @@ function dragstart(n, e) {
 var prevPos = false;
 
 function dragmove(e) {
-  if (dragging) 
+  if (dragging)
   {
     document.getElementById("shield").style.display = "block";
     var pow = Number(document.getElementById("pow" + dragpointer).value);
@@ -590,7 +591,7 @@ function dragmove(e) {
     if (prevPos && (pos - cc) > prevPos) {
       document.getElementById("pow" + dragpointer).value = (pow + 1);
       setGradient();
-      prevPos = pos;      
+      prevPos = pos;
     }
   }
 }

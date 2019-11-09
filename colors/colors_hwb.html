@@ -25,7 +25,7 @@
     text-align:center;display:none;position:absolute;top:-14px;left:-2px;
 }
 .pointer div{
-    background-color:#ffffff;     
+    background-color:#ffffff;
     border:1px solid #aaaaaa;
     height:24px;
     width:40px;
@@ -34,7 +34,7 @@
     text-align:center;
     top:-14px;
     left:-15px;
-    color:#000000;   
+    color:#000000;
     border-radius:4px;
     font:14px verdana;
 }
@@ -205,8 +205,9 @@
 <div class='w3-main w3-light-grey' id='belowtopnav' style='margin-left:220px;'>
   <div class='w3-row w3-white'>
     <div class='w3-col l10 m12' id='main'>
-<h1>Цвета <span class="color_h1">HWB</span></h1>
+    <a href="index.html"><img src="../svg/colors_icon.svg" alt="Цвета в HTML. Уроки для начинающих" class="w3-left w3-padding" title="Цвета в HTML" width="90"></a>
 
+<h1>Цвета <span class="color_h1">HWB</span></h1>
 <div class="w3-clear nextprev">
 <a class="w3-left w3-btn" href="colors_hsl.html">&#10094; Prev</a>
 <a class="w3-right w3-btn" href="colors_cmyk.html">Next &#10095;</a>
@@ -228,7 +229,7 @@
     <input id="hwb01" type="text" class="w3-input w3-border" onchange="setFullColor()" onkeydown="submitOnEnter(event)">
     <div id="rgb01" class="w3-margin-top">rgb(255, 0, 0)</div>
     <div id="hex01" class="w3-margin-top">#ff0000</div>
-    <div id="hsl01" class="w3-margin-top">hsl(0, 100%, 50%)</div>        
+    <div id="hsl01" class="w3-margin-top">hsl(0, 100%, 50%)</div>
   </div>
 </div>
 </div>
@@ -370,14 +371,14 @@ with a metropolitan area of over 13 million inhabitants.&lt;/p&gt;<br><br>
 
 <script>
 var btnclck = false;
-if (window.addEventListener) {              
+if (window.addEventListener) {
     window.addEventListener("mousedown", function () {btnclck = true; });
-} else if (window.attachEvent) {                 
+} else if (window.attachEvent) {
     window.attachEvent("onmousedown", function () {btnclck = true; });
 }
-if (window.addEventListener) {              
+if (window.addEventListener) {
     window.addEventListener("mouseup", function () {btnclck = false; });
-} else if (window.attachEvent) {                 
+} else if (window.attachEvent) {
     window.attachEvent("onmouseup", function () {btnclck = false; });
 }
 function tooltip(e, n) {
@@ -385,7 +386,7 @@ function tooltip(e, n) {
     if (btnclck) {
         if (e == 0) { x = document.getElementById("hue01"); }
         if (e == 1) { x = document.getElementById("white01"); }
-        if (e == 2) { x = document.getElementById("black01"); }                
+        if (e == 2) { x = document.getElementById("black01"); }
         x.value = n;
         setColor(x);
     }

@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<title>Учебник по цветам. Уроки для начинающих. W3Schools на русском</title>
+<title>HTML Цвета 2018 года. Цветовые тренды. W3Schools на русском</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta content="Цвет,цвета,HTML,CSS,w3c,w3schools,на русском,учебник,уроки,для начинающих,курс,основы,язык,тег,справочник,css3,примеры,код" name="keywords">
-<meta content="Цвета в веб-дизайне. Какие цвета используют при создании веб-сайтов? Способы написания цвета. Бесплатные уроки онлайн для начинающих веб-разработчиков. W3Schools на русском" name="description">
+<meta content="тренд,года,цвет,цвета,HTML,CSS,w3c,w3schools,на русском,учебник,уроки,для начинающих,курс,основы,язык,тег,справочник,css3,примеры,код" name="keywords">
+<meta content="HTML цвета. Какие цветовые тренды этого года? Цвета года или сезона. Что из цветов сейчас модно? Цветовые схемы. Написание цветов в веб-дизайне. Бесплатные уроки онлайн для начинающих веб-разработчиков. W3Schools на русском" name="description">
 <link rel="icon" href="../favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="../w3css/4/w3.css">
 <link href='https://fonts.googleapis.com/css?family=Source%20Code%20Pro' rel='stylesheet'>
+<link rel="stylesheet" href="../lib/w3-colors-2018.css">
+<link rel="stylesheet" href="../lib/w3-colors-2019.css">
 </head>
 
 <body>
@@ -129,6 +131,11 @@
 <a target="_top" href="colors_flatui.html">Цвета Flat UI</a>
 <a target="_top" href="colors_psychology.html">Цветовая психология</a>
 <a target="_top" href="colors_trends.html">Цвета года</a>
+<a target="_top" href="colors_2019.html">Цвета 2019</a>
+<a target="_top" href="colors_2018.html">Цвета 2018</a>
+<a target="_top" href="colors_2017.html">Цвета 2017</a>
+<a target="_top" href="colors_2016.html">Цвета 2016</a>
+
 <br>
 <h2 class="left"><span class="left_h2">Цветовые</span> Схемы</h2>
 <a target="_top" href="colors_monochromatic.html">Цвета однотонные</a>
@@ -158,270 +165,244 @@
 <div class='w3-main w3-light-grey' id='belowtopnav' style='margin-left:220px;'>
   <div class='w3-row w3-white'>
     <div class='w3-col l10 m12' id='main'>
-    <a href="index.html"><img src="../svg/colors_icon.svg" alt="Цвета в HTML. Уроки для начинающих" class="w3-left w3-padding" title="Цвета в HTML" width="90"></a>
+  <a href="index.html"><img src="../svg/colors_icon.svg" alt="Цвета в HTML. Уроки для начинающих" class="w3-left w3-padding" title="Цвета в HTML" width="90"></a>
 
-<h1><span class="color_h1">Учебник цветов</span></h1>
+<h1>Цвета 2018</h1>
+
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="../default.html">&#10094; Home</a>
-<a class="w3-right w3-btn" href="colors_names.html">Next &#10095;</a>
-</div>
-<hr>
-
-<div class="w3-panel w3-info intro">
-<p>Цвета отображаются в сочетании красного, зеленого и синего света.</p>
-</div>
-<hr>
-
-<h2>Названия цветов</h2>
-<p>В CSS цвета можно установить с помощью названий (имён) цветов:</p>
-<div class="w3-example">
- <h3>Пример</h3>
-<div class="notranslate">
-<div class="w3-responsive">
-<table class="w3-table-all notranslate">
-  <tr>
-    <th style="width:50%">Цвет</th>
-    <th>Название</th>
-  </tr>
-  <tr><td style="background-color:red">&nbsp;</td><td>Red</td></tr>
-  <tr><td style="background-color:yellow">&nbsp;</td><td>Yellow</td></tr>
-  <tr><td style="background-color:cyan">&nbsp;</td><td>Cyan</td></tr>
-  <tr><td style="background-color:blue">&nbsp;</td><td>Blue</td></tr>
-  <tr><td style="background-color:magenta">&nbsp;</td><td>Magenta</td></tr>
-</table>
-</div>
-</div>
- <a class="w3-btn w3-margin-bottom" href="tryit0c43.html?filename=trycolors_colornames" target="_blank">Попробуйте сами &raquo;</a>
-</div>
-<hr>
-
-<h2>CSS Значения цвета</h2>
-<p>С помощью CSS цвета можно указывать по-разному:</p>
-<ul>
-  <li>По названиям цветов</li>
-   <li>В качестве значений RGB</li>
-   <li>В виде шестнадцатеричных значений</li>
-   <li>В качестве значений HSL (CSS3)</li>
-   <li>В качестве значений HWB (CSS4)</li>
-</ul>
-<hr>
-
-<h2>RGB Цвета</h2>
-<p>Значения цвета RGB поддерживаются во всех браузерах.</p>
-<p><b>Значение цвета RGB расшифровывается как: rgb(
-<span style="color:red">RED</span> - красный,
-<span style="color:green">GREEN</span> - зелёный,
-<span style="color:blue">BLUE</span> - синий).</b></p>
-<p>Каждый параметр определяет интенсивность цвета в виде целого числа от 0 до 255.</p>
-<p>Например, rgb (0,0,255) отображается синим цветом, поскольку для параметра <span style="color:blue"><b>blue</b></span> установлено самое высокое значение (255), а для остальных - 0.</p>
-
-<div class="w3-example">
-<h3>Пример</h3>
-<div class="w3-code notranslate">
-<div class="w3-responsive">
-<table class="w3-table-all notranslate">
-  <tr>
-    <th style="width:25%">Цвет</th>
-    <th style="width:25%">RGB</th>
-    <th>Цвет</th>
-  </tr>
-  <tr>
-    <td style="background-color:#FF0000">&nbsp;</td>
-    <td>rgb(255,0,0)</td>
-    <td>Красный</td>
-  </tr>
-  <tr>
-    <td style="background-color:#00FF00">&nbsp;</td>
-    <td>rgb(0,255,0)</td>
-    <td>Зелёный</td>
-  </tr>
-  <tr>
-    <td style="background-color:#0000FF">&nbsp;</td>
-    <td>rgb(0,0,255)</td>
-    <td>Синий</td>
-  </tr>
-</table>
-</div>
-</div>
- <a class="w3-btn w3-margin-bottom" href="tryitc2b4.html?filename=trycolors_rgbvalues" target="_blank">Попробуйте сами &raquo;</a>
-</div>
-
-<p>Оттенки серого часто определяются с использованием равных значений для всех 3 источников света:</p>
-
-<div class="w3-example">
-<h3>Пример</h3>
-<div class="w3-code notranslate">
-<div class="w3-responsive">
-<table class="w3-table-all notranslate">
-  <tr>
-    <th style="width:25%">Цвет</th>
-    <th style="width:25%">RGB</th>
-    <th>Цвет</th>
-  </tr>
-  <tr>
-    <td style="background-color:#000000">&nbsp;</td>
-    <td>rgb(0,0,0)</td>
-    <td>Чёрный</td>
-  </tr>
-  <tr>
-    <td style="background-color:#808080">&nbsp;</td>
-    <td>rgb(128,128,128)</td>
-    <td>Серый</td>
-  </tr>
-  <tr>
-    <td style="background-color:#FFFFFF">&nbsp;</td>
-    <td>rgb(255,255,255)</td>
-    <td>Белый</td>
-  </tr>
-</table>
-</div>
-</div>
- <a class="w3-btn w3-margin-bottom" href="tryit94f9.html?filename=trycolors_rgbgray" target="_blank">Попробуйте сами &raquo;</a>
-</div>
-<hr>
-
-<h2>Шестнадцатеричные значения цвета - HEX</h2>
-<p>Шестнадцатеричные значения цвета также поддерживаются во всех браузерах.</p>
-<p><b>Шестнадцатеричный цвет указывается с помощью:
-#<span style="color:#ff0000">RR</span><span style="color:green">GG</span><span style="color:#0000ff">BB</span></b>.</p>
-<p>RR (<span style="color:#ff0000">red</span>), GG (<span style="color:green">green</span>) и BB (<span style="color:#0000ff">blue</span>) шестнадцатеричные целые числа от 00 до FF, определяющие интенсивность цвета.</p>
-<p>Например, #0000FF отображается синим цветом, потому что синий компонент установлен на самое высокое значение (FF), а остальные установлены на 00.</p>
-
-<div class="w3-example">
-<h3>Пример</h3>
-<div class="w3-code notranslate">
-<div class="w3-responsive">
-<table class="w3-table-all notranslate">
-  <tr>
-    <th style="width:25%">Цвет</th>
-    <th style="width:25%">HEX</th>
-    <th style="width:25%">RGB</th>
-    <th>Цвет</th>
-  </tr>
-  <tr>
-    <td style="background-color:#FF0000">&nbsp;</td>
-    <td>#FF0000</td>
-    <td>rgb(255,0,0)</td>
-    <td>Красный</td>
-  </tr>
-  <tr>
-    <td style="background-color:#00FF00">&nbsp;</td>
-    <td>#00FF00</td>
-    <td>rgb(0,255,0)</td>
-    <td>Зелёный</td>
-  </tr>
-  <tr>
-    <td style="background-color:#0000FF">&nbsp;</td>
-    <td>#0000FF</td>
-    <td>rgb(0,0,255)</td>
-    <td>Синий</td>
-  </tr>
-</table>
-</div>
-</div>
- <a class="w3-btn w3-margin-bottom" href="tryitfd09.html?filename=trycolors_hexvalues" target="_blank">Попробуйте сами &raquo;</a>
-</div>
-
-<p>Оттенки серого часто определяются с использованием равных значений для всех 3 источников света:</p>
-
-<div class="w3-example">
-<h3>Пример</h3>
-<div class="w3-code notranslate">
-<div class="w3-responsive">
-<table class="w3-table-all notranslate">
-  <tr>
-    <th style="width:25%">Цвет</th>
-    <th style="width:25%">HEX</th>
-    <th style="width:25%">RGB</th>
-    <th>Цвет</th>
-  </tr>
-  <tr>
-    <td style="background-color:#000000">&nbsp;</td>
-    <td>#000000</td>
-    <td>rgb(0,0,0)</td>
-    <td>Чёрный</td>
-  </tr>
-  <tr>
-    <td style="background-color:#808080">&nbsp;</td>
-    <td>#808080</td>
-    <td>rgb(128,128,128)</td>
-    <td>Серый</td>
-  </tr>
-  <tr>
-    <td style="background-color:#FFFFFF">&nbsp;</td>
-    <td>#FFFFFF</td>
-    <td>rgb(255,255,255)</td>
-    <td>Белый</td>
-  </tr>
-</table>
-</div>
-</div>
- <a class="w3-btn w3-margin-bottom" href="tryita845.html?filename=trycolors_hexgray" target="_blank">Попробуйте сами &raquo;</a>
-</div>
-<hr>
-
-<h2>Верхний регистр или нижний регистр?</h2>
-<p>Вы можете использовать буквы в верхнем или нижнем регистре, чтобы указать шестнадцатеричные значения цвета.</p>
-<div class="w3-panel w3-note">
-<p>Буквы в нижнем регистре легче писать. Буквы в верхнем регистре легче читать.</p>
-</div>
-
-<!-- стандарт для навигации снизу -->
-<hr>
-<h2>Названия цветов</h2>
-<p>CSS поддерживает 140 стандартных названий (имён) цветов.</p>
-<p>В следующей главе вы найдете полный алфавитный список названий цветов с шестнадцатеричными значениями:</p>
-
-<div class="w3-responsive">
-<table class="w3-table-all notranslate">
-<tr>
-<th style="width:25%">Название цвета</th>
-<th style="width:25%">Hex</th>
-<th>Цвет</th>
-</tr>
-<tr>
-<td>AliceBlue</td>
-<td>#F0F8FF</td>
-<td style="background: #F0F8FF">&nbsp;</td>
-</tr>
-<tr>
-<td>AntiqueWhite</td>
-<td>#FAEBD7</td>
-<td style="background: #FAEBD7">&nbsp;</td>
-</tr>
-<tr>
-<td>Aqua</td>
-<td>#00FFFF</td>
-<td style="background: #00FFFF">&nbsp;</td>
-</tr>
-<tr>
-<td>Aquamarine</td>
-<td>#7FFFD4</td>
-<td style="background: #7FFFD4">&nbsp;</td>
-</tr>
-<tr>
-<td>Azure</td>
-<td>#F0FFFF</td>
-<td style="background: #F0FFFF">&nbsp;</td>
-</tr>
-<tr>
-<td>Beige</td>
-<td>#F5F5DC</td>
-<td style="background: #F5F5DC">&nbsp;</td>
-</tr>
-<tr>
-<td>Bisque</td>
-<td>#FFE4C4</td>
-<td style="background: #FFE4C4">&nbsp;</td>
-</tr>
-</table>
+<a class="w3-left w3-btn" href="colors_2019.html">❮ Prev</a>
+<a class="w3-right w3-btn" href="colors_2017.html">Next ❯</a>
 </div>
 
 <hr>
+<h2>Цвета года 2018</h2>
+<div class="w3-container w3-section w3-text-white" style="background-color:#6B5B95">
+<h2>Ultra Violet</h2>
+<p><a href="colors_picker.asp?colorhex=6B5B95">HEX: #6B5B95</a></p>
+<p>PANTONE 18-3838</p>
+</div>
+
+<p>Каждый год <a href="https://www.pantone.com/color-consulting/about-pantone-color-institute" target="_blank" rel="nofollow">Институт Цвета Pantone</a> оценивает цвета, показанные модными дизайнерами на Неделе моды в Нью-Йорке.</p>
+<p>Эта информация используется для создания «Цвета года Pantone» и «Отчета о моде цвета Pantone», в котором представлены лучшие цвета моды года:</p>
+
+<h2>Самые горячие цвета осень / зима 2018</h2>
+
+<div class="w3-container w3-section w3-2018-red-pear">
+<h2>Red Pear</h2>
+<p><a href="colors_picker.asp?colorhex=7F4145">HEX: #7F4145</a></p>
+<p>Pantone 19-1536</p>
+</div>
+
+<div class="w3-container w3-section w3-2018-valiant-poppy">
+<h2>Valiant Poppy</h2>
+<p><a href="colors_picker.asp?colorhex=BD3D3A">HEX: #BD3D3A</a></p>
+<p>Pantone 18-1549</p>
+</div>
+
+<div class="w3-container w3-section w3-2018-nebulas-blue">
+<h2>Nebulas Blue</h2>
+<p><a href="colors_picker.asp?colorhex=3F69AA">HEX: #3F69AA</a></p>
+<p>Pantone 18-4048</p>
+</div>
+
+<div class="w3-container w3-section w3-2018-ceylon-yellow">
+<h2>Ceylon Yellow</h2>
+<p><a href="colors_picker.asp?colorhex=D5AE41">HEX: #D5AE41</a></p>
+<p>Pantone 15-0850</p>
+</div>
+
+<div class="w3-container w3-section w3-2018-martini-olive">
+<h2>Martini Olive</h2>
+<p><a href="colors_picker.asp?colorhex=766F57">HEX: #766F57</a></p>
+<p>Pantone 18-0625</p>
+</div>
+
+<div class="w3-container w3-section w3-2018-russet-orange">
+<h2>Russet Orange</h2>
+<p><a href="colors_picker.asp?colorhex=E47A2E">HEX: #E47A2E</a></p>
+<p>Pantone 16-1255</p>
+</div>
+
+<div class="w3-container w3-section w3-2018-crocus-petal">
+<h2>Crocus Petal</h2>
+<p><a href="colors_picker.asp?colorhex=BE9EC9">HEX: #BE9EC9</a></p>
+<p>Pantone 15-3520</p>
+</div>
+
+<div class="w3-container w3-section w3-2018-limelight">
+<h2>Limelight</h2>
+<p><a href="colors_picker.asp?colorhex=F1EA7F">HEX: #F1EA7F</a></p>
+<p>Pantone 12-0740</p>
+</div>
+
+<div class="w3-container w3-section w3-2018-quetzal-green">
+<h2>Quetzal Green</h2>
+<p><a href="colors_picker.asp?colorhex=006E6D">HEX: #006E6D</a></p>
+<p>Pantone 18-5025</p>
+</div>
+<hr>
+
+<h2>Классические цвета осень / зима 2018</h2>
+<div class="w3-container w3-section w3-text-white" style="background-color:#485167">
+<h2>Sargasso Sea</h2>
+<p><a href="colors_picker.asp?colorhex=485167">HEX: #485167</a></p>
+<p>Pantone 19-4031</p>
+</div>
+
+<div class="w3-container w3-section" style="background-color:#EAE6DA">
+<h2>Tofu</h2>
+<p><a href="colors_picker.asp?colorhex=EAE6DA">HEX: #EAE6DA</a></p>
+<p>Pantone 11-4801</p>
+</div>
+
+<div class="w3-container w3-section" style="background-color:#D1B894">
+<h2>Almond Buff</h2>
+<p><a href="colors_picker.asp?colorhex=D1B894">HEX: #D1B894</a></p>
+<p>Pantone 14-1116</p>
+</div>
+
+<div class="w3-container w3-section" style="background-color:#BCBCBE">
+<h2>Quiet Gray</h2>
+<p><a href="colors_picker.asp?colorhex=BCBCBE">HEX: #BCBCBE</a></p>
+<p>Pantone 14-4107</p>
+</div>
+
+<div class="w3-container w3-section" style="background-color:#A9754F">
+<h2>Meerkat</h2>
+<p><a href="colors_picker.asp?colorhex=A9754F">HEX: #A9754F</a></p>
+<p>Pantone 16-1438</p>
+</div>
+
+<hr>
+<h2>Самые горячие весенние цвета 2018</h2>
+
+<div class="w3-container w3-section" style="background-color:#ECDB54">
+<h2>Meadowlark</h2>
+<p><a href="colors_picker.asp?colorhex=ECDB54">HEX: #ECDB54</a></p>
+<p>Pantone 13-0646</p>
+</div>
+
+<div class="w3-container w3-section w3-text-white" style="background-color:#E94B3C">
+<h2>Cherry Tomato</h2>
+<p><a href="colors_picker.asp?colorhex=E94B3C">HEX: #E94B3C</a></p>
+<p>Pantone 17-1563</p>
+</div>
+
+<div class="w3-container w3-section" style="background-color:#6F9FD8">
+<h2>Little Boy Blue</h2>
+<p><a href="colors_picker.asp?colorhex=6F9FD8">HEX: #6F9FD8</a></p>
+<p>Pantone 16-4132</p>
+</div>
+
+<div class="w3-container w3-section w3-text-white" style="background-color:#944743">
+<h2>Chili Oil</h2>
+<p><a href="colors_picker.asp?colorhex=944743">HEX: #944743</a></p>
+<p>Pantone 18-1440</p>
+</div>
+
+<div class="w3-container w3-section" style="background-color:#DBB1CD">
+<h2>Pink Lavender</h2>
+<p><a href="colors_picker.asp?colorhex=DBB1CD">HEX: #DBB1CD</a></p>
+<p>Pantone 14-3207</p>
+</div>
+
+<div class="w3-container w3-section" style="background-color:#EC9787">
+<h2>Blooming Dahlia</h2>
+<p><a href="colors_picker.asp?colorhex=EC9787">HEX: #EC9787</a></p>
+<p>PANTONE 15-1520</p>
+</div>
+
+<div class="w3-container w3-section w3-text-white" style="background-color:#00A591">
+<h2>Arcadia</h2>
+<p><a href="colors_picker.asp?colorhex=00A591">HEX: #00A591</a></p>
+<p>PANTONE 16-5533</p>
+</div>
+
+<div class="w3-container w3-section w3-text-white" style="background-color:#6B5B95">
+<h2>Ultra Violet</h2>
+<p><a href="colors_picker.asp?colorhex=6B5B95">HEX: #6B5B95</a></p>
+<p>PANTONE 18-3838</p>
+</div>
+
+<div class="w3-container w3-section w3-text-white" style="background-color:#6C4F3D">
+<h2>Emperador</h2>
+<p><a href="colors_picker.asp?colorhex=6C4F3D">HEX: #6C4F3D</a></p>
+<p>Pantone 18-1028</p>
+</div>
+
+<div class="w3-container w3-section" style="background-color:#EADEDB">
+<h2>Almost Mauve</h2>
+<p><a href="colors_picker.asp?colorhex=EADEDB">HEX: #EADEDB</a></p>
+<p>Pantone 12-2103</p>
+</div>
+
+<div class="w3-container w3-section w3-text-white" style="background-color:#BC70A4">
+<h2>Spring Crocus</h2>
+<p><a href="colors_picker.asp?colorhex=BC70A4">HEX: #BC70A4</a></p>
+<p>PANTONE 17-3020</p>
+</div>
+
+<div class="w3-container w3-section" style="background-color:#BFD641">
+<h2>Lime Punch</h2>
+<p><a href="colors_picker.asp?colorhex=BFD641">HEX: #BFD641</a></p>
+<p>PANTONE 13-0550</p>
+</div>
+<hr>
+<h2>Весна 2018 Классическая цветовая палитра</h2>
+<div class="w3-container w3-section w3-text-white" style="background-color:#2E4A62">
+<h2>Sailor Blue</h2>
+<p><a href="colors_picker.asp?colorhex=2E4A62">HEX: #2E4A62</a></p>
+<p>PANTONE 19-4034</p>
+</div>
+
+<div class="w3-container w3-section" style="background-color:#B4B7BA">
+<h2>Harbor Mist</h2>
+<p><a href="colors_picker.asp?colorhex=B4B7BA">HEX: #B4B7BA</a></p>
+<p>PANTONE 14-4202</p>
+</div>
+
+<div class="w3-container w3-section" style="background-color:#C0AB8E">
+<h2>Warm Sand</h2>
+<p><a href="colors_picker.asp?colorhex=C0AB8E">HEX: #C0AB8E</a></p>
+<p>PANTONE 15-1214</p>
+</div>
+
+<div class="w3-container w3-section" style="background-color:#F0EDE5">
+<h2>Coconut Milk</h2>
+<p><a href="colors_picker.asp?colorhex=F0EDE5">HEX: #F0EDE5</a></p>
+<p>PANTONE 11-0608</p>
+</div>
+<hr>
+<div class="w3-container w3-section w3-2019-vanilla-custard">
+<h2>Загрузки</h2>
+<p>Библиотеки CSS цветовых трендов можно загрузить с:</p>
+<p class="w3-xlarge"><a href="/w3css/w3css_color_libraries.asp">W3.CSS Библиотеки цвета</a></p>
+</div>
+
+<br>
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="../default.html">&#10094; Home</a>
-<a class="w3-right w3-btn" href="colors_names.html">Next &#10095;</a>
+<a class="w3-left w3-btn" href="colors_2019.html">❮ Prev</a>
+<a class="w3-right w3-btn" href="colors_2017.html">Next ❯</a>
 </div>
+
+<hr>
+<!--Комментарии от Disqus-->
+<iframe class="predisqus" src="../pages/predisqus.html"></iframe>
+<div id="disqus_thread"></div>
+<script>
+var disqus_config = function () {
+this.page.url = w3schoolsrus.github.io; // канонический URL страницы
+this.page.identifier = w3schoolsrus.github.io / colors / colors_2018.html; // уникальный идентификатор страницы
+};
+(function() { // Не редактировать ниже этой линии
+var d = document, s = d.createElement('script');
+s.src = 'https://w3schoolsrus-github-io.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Пожалуйста, включите JavaScript для просмотра <a href="https://disqus.com/?ref_noscript">комментариев, предоставленных Disqus.</a></noscript>
+<!--/ Комментарии от Disqus-->
 <hr>
 
 </div>
