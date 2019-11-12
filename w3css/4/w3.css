@@ -619,7 +619,7 @@ p {line-height: 1.4;}
 
 .videowrap {margin: 0 auto;}
 .videoblock {position: relative; padding-bottom: 65.25%; height: 0; overflow: hidden;}
-.videoblock iframe, object, embed {border: 0; position: absolute; top: 0; width: 100%; height: 90%;}
+.videoblock iframe, object, embed {border: 0; position: absolute; top: 0; width: 100%; height: 95%;}
 .video-title {font-size: 2em; text-align: center; color:#00008b;}
 
 .box-beige {background: #F5F5DC; padding: 1px 5px}
@@ -629,6 +629,3 @@ p {line-height: 1.4;}
 .box-lightcyan {background: #E0FFFF; padding: 1px 5px}
 .box-moccasin {background: #FFE4B5; padding: 1px 5px}
 .box-pink {background: #FFC0CB; padding: 1px 5px}
-
-
-
