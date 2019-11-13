@@ -1,0 +1,115 @@
+/* W3Schools Font Logo */
+.w3schools-logo {
+font-family:fontawesome;
+text-decoration:none;
+line-height: 1;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+font-size:37px;
+letter-spacing:3px;
+color:#555555;
+display:block;
+position:relative;
+}
+.w3schools-logo {text-shadow: 1px 1px .5px #000}
+.w3schools-logo:hover {color:green; text-shadow: 1px 1px .5px #000}
+.dotcom {color:#0048ff;font-family:Comic Sans MS, Comic Sans, cursive; font-size:.8em;text-shadow: 1.1px 1.1px .5px #000}
+.dotcom:hover {color:red;text-shadow: 1.1px 1.1px 1px #000}
+
+@font-face {
+font-family:'fontawesome';
+src:url('../lib/fonts/fontawesome8deb.eot?14663396#iefix') format('embedded-opentype'),
+url('../lib/fonts/fontawesome8deb.woff?14663396') format('woff'),
+url('..lib/fonts/fontawesome8deb.ttf?14663396') format('truetype'),
+url('..lib/fonts/fontawesome8deb.svg?14663396#fontawesome') format('svg');
+font-style:normal;
+}
+.fa {
+display:inline-block;
+font:normal normal normal 14px/1 FontAwesome;
+font-size:20px;
+text-rendering:auto;
+-webkit-font-smoothing:antialiased;
+-moz-osx-font-smoothing:grayscale;
+transform:translate(0,0);
+}
+.fa-home:before {content:'\e800';}
+.fa-menu:before {content: '\f0c9';}
+.fa-globe:before {content:'\e801';}
+.fa-search:before {content:'\e802'; }
+.fa-thumbs-o-up:before {content:'\e803';}
+.fa-left-open:before {content:'\e804';}
+.fa-right-open:before {content:'\e805';}
+.fa-caret-down:before {content:'\e809';}
+.fa-caret-up:before {content:'\e80a';}
+
+/* Customize W3.CSS */
+#nav_tutorials,#nav_references,#nav_examples,#nav_exercises {
+display:none;
+padding-bottom:40px;
+position:absolute;
+width:100%;
+z-index:5 !important;
+}
+.w3-col .w3-button {
+margin:5px 5px 5px 0;
+font-size:16px;
+}
+.w3-col.l4 .w3-card-2 {
+padding:15px 10px;
+height:260px;
+}
+.w3-theme {color:#fff !important;background-color:#4CAF50 !important;}
+.w3-main {margin-left:230px;}
+.w3-sidebar {
+z-index:3;
+width:230px;
+overflow:hidden !important;
+position:absolute !important;
+margin-bottom:-155px;
+}
+.w3-sidebar .w3-bar-block .w3-bar-item{
+padding:0 16px;
+font-size:16px;
+}
+.w3-bar {
+position:relative;
+z-index:4;
+font-size:17px;
+}
+.w3-wide {
+font-family:"Segoe UI",Arial,sans-serif;
+}
+h1 {
+font-size:80px;
+color:#555555;
+margin:2px 0 -20px 0 !important;
+}
+.certoverlay {
+  position:absolute;
+  top:0;
+  background-color:rgba(0, 0, 0, 0.5);
+  width:100%;
+  text-align:center;
+  padding:15px
+}
+.certoverlay h2 {
+  margin:10px 0 0 0;
+  font-size:36px;
+}
+.certoverlay h3 {
+  margin:0 0 10px 0;
+}
+
+@media screen and (min-width:769px){.w3-sidebar.w3-collapse{display:block !important;}}
+@media screen and (min-width:769px){#myAccordion,.hidesm{display:none !important;}}
+@media screen and (min-width:769px){.w3-main{margin-left:230px !important;}.w3-bar-block .w3-button{padding:0;}}
+@media screen and (max-width:768px){.w3-sidebar.w3-collapse,.barex,.navex{display:none !important;}.w3-bar-block .w3-bar-item{text-align:center !important;padding:2px 0;}h1,.w3-jumbo{font-size:60px !important;}}
+@media screen and (max-width:545px){.certoverlay{padding:10px;height:100%;}.certoverlay h3{font-size:15px;}}
+@media screen and (max-width:380px){.getcert{position:absolute;text-align:center;left:50%;bottom:50%;font-size:13px;}}
+@media only screen and (max-width: 1366px){.w3-hide-device{display:none;}}
+
+/* Customize main.css */
+.box-h70 {height:70px}
+.picker {width:150px;height:128px;margin-top:16px}
+.pro {font-size:.1em;color:#fff}
