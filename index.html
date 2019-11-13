@@ -7,7 +7,6 @@
 <meta name="description" content="Уроки онлайн для начинающих по HTML, CSS, Bootstrap, jQuery, W3.CSS и др. Бесплатные курсы W3Schools на русском языке. Выучить язык программирования JavaScript, SQL, PHP, Python, Java, C++. Справочники, упражнения для веб-разработчиков. Как сделать шаблоны? Основы HTML5, CSS3, PHP7">
 <link rel="icon" href="favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="w3css/4/w3c.css">
-<link rel="stylesheet" href="styles/main.css">
 </head>
 <body style="position:relative;min-height:100%;">
 
@@ -25,8 +24,8 @@
 
 <!--Top menu-->
 <div class="w3-bar w3-theme w3-card-2 w3-wide notranslate">
- <!--<a class="w3-bar-item w3-button w3-hover-white w3-padding-16 hidesm" href="javascript:void(0)" onclick="w3_open()"><i class='fa'>&#xf0c9;</i></a>-->
-
+<!--script для верхнего меню при адаптиве-->
+ <a class="w3-bar-item w3-button w3-hover-white w3-padding-16 hidesm" href="javascript:void(0)" onclick="w3_open()"><i class='fa'>&#xf0c9;</i></a> <!--/end script-->
  <a class="w3-bar-item w3-button barex w3-hover-white w3-padding-16" href="javascript:void(0)" onclick="w3_open_nav('tutorials')" id="navbtn_tutorials">УЧЕБНИКИ <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style="display:none"></i></a>
  <a class="w3-bar-item w3-button barex w3-hover-white w3-padding-16" href="javascript:void(0)" onclick="w3_open_nav('references')" id="navbtn_references">СПРАВОЧНИКИ <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style="display:none"></i></a>
  <a class="w3-bar-item w3-button barex w3-hover-white w3-padding-16" href="javascript:void(0)" onclick="w3_open_nav('examples')" id="navbtn_examples">ПРИМЕРЫ <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style="display:none"></i></a>
@@ -576,7 +575,7 @@ WHERE Country='Mexico';
  </div>
  <div class="w3-col l4 w3-center" style="padding:3%;">
   <h2 class="w3-xxlarge">Палитра цветов</h2>
-  <a href="colors/colors_picker.html" class="w3-hover-opacity"><img class="picker" src="images/colorpicker.png" alt="Colorpicker"></a>
+  <a href="colors/colors_picker.html" class="w3-hover-opacity"><img class="picker" src="images/colorpicker.png" alt="Цвета в HTML и CSS"></a>
  </div>
  <div class="w3-col l4 w3-center" style="padding:3%;">
   <h2 class="w3-xxlarge">Bootstrap</h2>
@@ -646,7 +645,7 @@ WHERE Country='Mexico';
   <h2 class="w3-xxlarge">Веб-шаблоны</h2>
   <h4 class="w3-text-dark-grey">Посмотрите коллекцию <strong>бесплатных</strong> адаптивных HTML шаблонов</h4>
   <div class="w3-content">
-    <a href="w3css/w3css_templates.html"><img src="w3css_templates.jpg" style="width:100%;margin:16px 0 20px 0" alt="W3.CSS Templates"></a>
+    <a href="w3css/w3css_templates.html"><img src="w3css_templates.jpg" style="width:100%;margin:16px 0 20px 0" alt="W3.CSS фреймворк шаблоны"></a>
   </div>
   <p><a href="w3css/w3css_templates.html" class="w3-button w3-dark-grey w3-padding-large w3-mobile">ПРОСМОТРЕТЬ ШАБЛОНЫ</a></p>
 </div>
@@ -670,7 +669,7 @@ WHERE Country='Mexico';
 
 <div class="w3-display-container w3-black" id="certsection">
   <a href="cert/default.html">
-    <img src="getcertified.jpg" style="max-width:100%;margin:auto;display:block" alt="W3 Certificates">
+    <img src="getcertified.jpg" style="max-width:100%;margin:auto;display:block" alt="W3Schools Сертификаты Отзывы">
     <div class="certoverlay">
     <br class="w3-hide-small w3-hide-medium">
       <h2>Веб-сертификаты</h2><h3>Получите сертификацию по HTML, CSS и JavaScript</h3>
@@ -711,6 +710,9 @@ screen.colorDepth:screen.pixelDepth))+';u'+escape(document.URL)+
 ' часа, посетителей за 24 часа и за сегодня" '+
 'border="0" width="88" height="31"><\/a>')
 </script><!--/LiveInternet-->
+
+<a href="https://24ho.ru/flag-counter/details/mr/"><img src="https://24ho.ru/flag-counter/load/mr/" alt="Посетители сайта W3Schools на русском"></a>
+
 </div>
 
 </footer>
@@ -781,6 +783,8 @@ function w3_close_nav(x) {
 <script>w3CodeColor();</script>
 <!-- / Скрипт подсветки кода -->
 
+
+<link rel="stylesheet" href="styles/main.css">
 <!--[if lt IE 9]>
 <script src="cdn/html5shiv/3.7.3/html5shiv.js"></script>
 <script src="cdn/respond/1.4.2/respond.min.js"></script>
