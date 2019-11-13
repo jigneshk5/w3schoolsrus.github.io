@@ -4,127 +4,10 @@
 <title>W3Schools на русском. HTML CSS JavaScript. Уроки для начинающих онлайн</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="keywords" content="HTML,CSS,JavaScript,PHP,SQL,Python,Bootstrap,Web,W3CSS,W3C,для начинающих,уроки,основы,создание,сайта,справочники,w3c">
-<meta name="description" content="Уроки онлайн для начинающих по HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap и др. Бесплатные курсы W3Schools на русском языке. Скачать книги для веб-разработчиков. Основы HTML5, CSS3, PHP7">
+<meta name="description" content="Уроки онлайн для начинающих по HTML, CSS, Bootstrap, jQuery, W3.CSS и др. Бесплатные курсы W3Schools на русском языке. Выучить язык программирования JavaScript, SQL, PHP, Python, Java, C++. Справочники, упражнения для веб-разработчиков. Как сделать шаблоны? Основы HTML5, CSS3, PHP7">
 <link rel="icon" href="favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="w3css/4/w3c.css">
-
-<style>
-/* W3Schools Font Logo */
-.w3schools-logo {
-font-family:fontawesome;
-text-decoration:none;
-line-height: 1;
--webkit-font-smoothing: antialiased;
--moz-osx-font-smoothing: grayscale;
-font-size:37px;
-letter-spacing:3px;
-color:#555555;
-display:block;
-position:relative;
-}
-.w3schools-logo {text-shadow: 1px 1px .5px #000}
-.w3schools-logo:hover {color:green; text-shadow: 1px 1px .5px #000}
-.dotcom {color:#0048ff;font-family:Comic Sans MS, Comic Sans, cursive; font-size:.8em;text-shadow: 1.1px 1.1px .5px #000}
-.dotcom:hover {color:red;text-shadow: 1.1px 1.1px 1px #000}
-
-@font-face {
-font-family:'fontawesome';
-src:url('lib/fonts/fontawesome8deb.eot?14663396#iefix') format('embedded-opentype'),
-url('lib/fonts/fontawesome8deb.woff?14663396') format('woff'),
-url('lib/fonts/fontawesome8deb.ttf?14663396') format('truetype'),
-url('lib/fonts/fontawesome8deb.svg?14663396#fontawesome') format('svg');
-font-style:normal;
-}
-.fa {
-display:inline-block;
-font:normal normal normal 14px/1 FontAwesome;
-font-size:20px;
-text-rendering:auto;
--webkit-font-smoothing:antialiased;
--moz-osx-font-smoothing:grayscale;
-transform:translate(0,0);
-}
-.fa-home:before {content:'\e800';}
-.fa-menu:before {content: '\f0c9';}
-.fa-globe:before {content:'\e801';}
-.fa-search:before {content:'\e802'; }
-.fa-thumbs-o-up:before {content:'\e803';}
-.fa-left-open:before {content:'\e804';}
-.fa-right-open:before {content:'\e805';}
-.fa-caret-down:before {content:'\e809';}
-.fa-caret-up:before {content:'\e80a';}
-
-/* Customize W3.CSS */
-#nav_tutorials,#nav_references,#nav_examples,#nav_exercises {
-display:none;
-padding-bottom:40px;
-position:absolute;
-width:100%;
-z-index:5 !important;
-}
-.w3-col .w3-button {
-margin:5px 5px 5px 0;
-font-size:16px;
-}
-.w3-col.l4 .w3-card-2 {
-padding:15px 10px;
-height:260px;
-}
-.w3-theme {color:#fff !important;background-color:#4CAF50 !important;}
-.w3-main {margin-left:230px;}
-.w3-sidebar {
-z-index:3;
-width:230px;
-overflow:hidden !important;
-position:absolute !important;
-margin-bottom:-155px;
-}
-.w3-sidebar .w3-bar-block .w3-bar-item{
-padding:0 16px;
-font-size:16px;
-}
-.w3-bar {
-position:relative;
-z-index:4;
-font-size:17px;
-}
-.w3-wide {
-font-family:"Segoe UI",Arial,sans-serif;
-}
-h1 {
-font-size:80px;
-color:#555555;
-margin:2px 0 -20px 0 !important;
-}
-.certoverlay {
-  position:absolute;
-  top:0;
-  background-color:rgba(0, 0, 0, 0.5);
-  width:100%;
-  text-align:center;
-  padding:15px
-}
-.certoverlay h2 {
-  margin:10px 0 0 0;
-  font-size:36px;
-}
-.certoverlay h3 {
-  margin:0 0 10px 0;
-}
-
-@media screen and (min-width:769px){.w3-sidebar.w3-collapse{display:block !important;}}
-@media screen and (min-width:769px){#myAccordion,.hidesm{display:none !important;}}
-@media screen and (min-width:769px){.w3-main{margin-left:230px !important;}.w3-bar-block .w3-button{padding:0;}}
-@media screen and (max-width:768px){.w3-sidebar.w3-collapse,.barex,.navex{display:none !important;}.w3-bar-block .w3-bar-item{text-align:center !important;padding:2px 0;}h1,.w3-jumbo{font-size:60px !important;}}
-@media screen and (max-width:545px){.certoverlay{padding:10px;height:100%;}.certoverlay h3{font-size:15px;}}
-@media screen and (max-width:380px){.getcert{position:absolute;text-align:center;left:50%;bottom:50%;font-size:13px;}}
-@media only screen and (max-width: 1366px){.w3-hide-device{display:none;}}
-</style>
-<!--[if lt IE 9]>
-<script src="cdn/html5shiv/3.7.3/html5shiv.js"></script>
-<script src="cdn/respond/1.4.2/respond.min.js"></script>
-<![endif]-->
+<link rel="stylesheet" href="styles/main.css">
 </head>
 <body style="position:relative;min-height:100%;">
 
@@ -142,7 +25,7 @@ margin:2px 0 -20px 0 !important;
 
 <!--Top menu-->
 <div class="w3-bar w3-theme w3-card-2 w3-wide notranslate">
- <a class="w3-bar-item w3-button w3-hover-white w3-padding-16 hidesm" href="javascript:void(0)" onclick="w3_open()"><i class='fa'>&#xf0c9;</i></a>
+ <!--<a class="w3-bar-item w3-button w3-hover-white w3-padding-16 hidesm" href="javascript:void(0)" onclick="w3_open()"><i class='fa'>&#xf0c9;</i></a>-->
 
  <a class="w3-bar-item w3-button barex w3-hover-white w3-padding-16" href="javascript:void(0)" onclick="w3_open_nav('tutorials')" id="navbtn_tutorials">УЧЕБНИКИ <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style="display:none"></i></a>
  <a class="w3-bar-item w3-button barex w3-hover-white w3-padding-16" href="javascript:void(0)" onclick="w3_open_nav('references')" id="navbtn_references">СПРАВОЧНИКИ <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style="display:none"></i></a>
@@ -645,9 +528,9 @@ WHERE Country='Mexico';
  <div class="w3-col l6 w3-center" style="padding:2% 3%;">
   <div class="w3-card-2 w3-white w3-padding" style="padding-bottom:24px!important">
    <h2 class="w3-xxlarge">Python</h2>
-   <div style="height:70px;">
+   <div class='box-h70'>
      <h4 class="w3-text-dark-grey">Язык программирования</h4>
-     <p style="font-size:.1em;color:#fff"><strong>Python (Питон)</strong> - высокоуровневый язык программирования общего назначения, ориентированный на повышение производительности разработчика и читаемости кода. Применяется для программирования как общеприкладных программ, так и в веб-программировании (создания сайтов). Рекомендуется для изучения начинающих веб-разработчиков, а также как первый язык программирования для новичков благодаря своей простоте и доступности.</p>
+     <p class="pro"><strong>Python (Питон)</strong> - высокоуровневый язык программирования общего назначения, ориентированный на повышение производительности разработчика и читаемости кода. Применяется для программирования как общеприкладных программ, так и в веб-программировании (создания сайтов). Рекомендуется для изучения начинающих веб-разработчиков, а также как первый язык программирования для новичков благодаря своей простоте и доступности. Язык программирования Python вы можете выучить онлайн на сайте w3schools на русском.</p>
    </div>
    <a href="python/default.html" class="w3-button w3-dark-grey">ВЫУЧИТЬ PYTHON</a>
   </div>
@@ -655,9 +538,9 @@ WHERE Country='Mexico';
  <div class="w3-col l6 w3-center" style="padding:2% 3%;">
   <div class="w3-card-2 w3-white w3-padding" style="padding-bottom:24px!important">
    <h2 class="w3-xxlarge">PHP</h2>
-   <div style="height:70px;">
+   <div class='box-h70'>
       <h4 class="w3-text-dark-grey">Язык программирования веб-сервера</h4>
-      <p style="font-size:.1em;color:#fff"><strong>PHP</strong> (препроцессор гипертекста) - скриптовый язык общего назначения, применяемый для разработки веб-приложений. Поддерживается абсолютным большинством хостинг-провайдеров и является одним из основных языков, применяемых для создания динамических веб-сайтов. С помощью <strong>PHP</strong> часто создают <strong>CMS</strong> - систему управления контентом (движок сайта). PHP работает на стороне сервера (backend), обеспечивая взаимодействие с пользователем. На PHP созданы такие сайты, как Facebook, Yahoo, Вконтакте, Википедия, движок Wordpress и др.</p>
+      <p class="pro"><strong>PHP</strong> (препроцессор гипертекста) - скриптовый язык общего назначения, применяемый для разработки веб-приложений. Поддерживается абсолютным большинством хостинг-провайдеров и является одним из основных языков, применяемых для создания динамических веб-сайтов. С помощью <strong>PHP</strong> часто создают <strong>CMS</strong> - систему управления контентом (движок сайта). PHP работает на стороне сервера (backend), обеспечивая взаимодействие с пользователем. На PHP созданы такие сайты, как Facebook, Yahoo, Вконтакте, Википедия, движок Wordpress и др. Язык программирования PHP вы можете выучить онлайн на сайте w3schools на русском.</p>
    </div>
    <a href="php/default.html" class="w3-button w3-dark-grey">ВЫУЧИТЬ PHP</a>
   </div>
@@ -666,8 +549,9 @@ WHERE Country='Mexico';
  <div class="w3-col l6 w3-center" style="padding:2% 3%;">
   <div class="w3-card-2 w3-white w3-padding" style="padding-bottom:24px!important">
    <h2 class="w3-xxlarge">jQuery</h2>
-   <div style="height:70px;">
+   <div class='box-h70'>
      <h4 class="w3-text-dark-grey">Библиотека JavaScript для разработки веб-страниц</h4>
+     <p class="pro"><strong>jQuery</strong> - популярная <strong>JavaScript</strong> библиотека с открытым кодом. Синтаксис <strong>jQuery</strong> разработан, чтобы сделать ориентирование в навигации удобным благодаря выбору элементов DOM, созданию анимации, обработки событий и разработке AJAX-приложений. Помогает созданию мощных динамичных веб-страниц. Пройти полный курс онлайн по библиотеке <strong>jQuery</strong> вы можете на сайте w3schools на русском.</p>
    </div>
    <a href="jquery/default.html" class="w3-button w3-dark-grey">ВЫУЧИТЬ JQUERY</a>
   </div>
@@ -676,8 +560,9 @@ WHERE Country='Mexico';
  <div class="w3-col l6 w3-center" style="padding:2% 3%;">
   <div class="w3-card-2 w3-white w3-padding" style="padding-bottom:24px!important">
    <h2 class="w3-xxlarge">Java</h2>
-   <div style="height:70px;">
+   <div class='box-h70'>
      <h4 class="w3-text-dark-grey">Язык программирования</h4>
+     <p class="pro"><strong>Java</strong> - объектно-ориентированный язык программирования. Используется для написания клиентских приложений и серверного программного обеспечения. Пройти полный курс онлайн по языку программирования <strong>Java</strong> вы можете на сайте w3schools на русском.</p>
    </div>
    <a href="java/default.html" class="w3-button w3-dark-grey">ВЫУЧИТЬ JAVA</a>
   </div>
@@ -691,7 +576,7 @@ WHERE Country='Mexico';
  </div>
  <div class="w3-col l4 w3-center" style="padding:3%;">
   <h2 class="w3-xxlarge">Палитра цветов</h2>
-  <a href="colors/colors_picker.html" class="w3-hover-opacity"><img style="width:150px;height:128px;margin-top:16px;" src="images/colorpicker.png" alt="Colorpicker"></a>
+  <a href="colors/colors_picker.html" class="w3-hover-opacity"><img class="picker" src="images/colorpicker.png" alt="Colorpicker"></a>
  </div>
  <div class="w3-col l4 w3-center" style="padding:3%;">
   <h2 class="w3-xxlarge">Bootstrap</h2>
@@ -895,5 +780,10 @@ function w3_close_nav(x) {
 <script src="lib/w3codecolor.js"></script>
 <script>w3CodeColor();</script>
 <!-- / Скрипт подсветки кода -->
+
+<!--[if lt IE 9]>
+<script src="cdn/html5shiv/3.7.3/html5shiv.js"></script>
+<script src="cdn/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
 </body>
 </html>
