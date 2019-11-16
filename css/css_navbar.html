@@ -4,7 +4,7 @@
 <title>CSS Навигационная панель. Уроки для начинающих. W3Schools на русском</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="CSS Навбар. Как создать навигационную панель для сайта? Какие бывают навбары? Горизонтальный и вертикальный навбар. Стилизация веб-страниц. Уроки по CSS3 для начинающих. Основы веб-дизайна. W3Schools на русском">
+<meta name="description" content="CSS Навбар. Как создать навигационную панель для сайта? Какие бывают навбары? Горизонтальный и вертикальный навбар. Стилизация навигации на сайте. Уроки по CSS3 для начинающих. Основы веб-дизайна. W3Schools на русском">
 <link rel="icon" href="../favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="../w3css/4/w3.css">
 <style>
@@ -631,11 +631,9 @@ display: block;<br>
 </div>
 <hr>
 
-<h2>Vertical Navigation Bar Examples</h2>
+<h2>Примеры вертикальной навигационной панели</h2>
 
-<p>Create a basic vertical navigation bar with a gray background color and
-change the background color of the links when the user moves the mouse over
-them:</p>
+<p>Создайте базовую вертикальную панель навигации с серым цветом фона и измените цвет фона ссылок, когда пользователь наводит на них курсор мыши:</p>
 <ul class="vertical">
   <li><a href="javascript:void(0)">Home</a></li>
   <li><a href="javascript:void(0)">News</a></li>
@@ -644,7 +642,7 @@ them:</p>
 </ul>
 
 <div class="w3-example">
-<h3>Example</h3>
+<h3>Пример</h3>
 <div class="w3-code notranslate cssHigh">
 ul {<br>&nbsp; list-style-type: none;<br>&nbsp;
 margin: 0;<br>&nbsp; padding: 0;<br>&nbsp; width:
@@ -655,8 +653,8 @@ background-color: #555;<br>&nbsp;&nbsp;color: white;<br>}</div>
 <a target="_blank" class="w3-btn w3-margin-bottom" href="tryit1484.html?filename=trycss_navbar_vertical_gray">Попробуйте сами &raquo;</a>
 </div>
 
-<h3 style="margin-top:35px;">Active/Current Navigation Link</h3>
-<p>Add an "active" class to the current link to let the user know which page he/she is on:</p>
+<h3 style="margin-top:35px;">Активная / текущая навигационная ссылка</h3>
+<p>Добавьте &quot;активный&quot; класс к текущей ссылке, чтобы пользователь знал, на какой странице он / она находится:</p>
 <ul class="vertical">
   <li><a class="active" href="javascript:void(0)">Home</a></li>
   <li><a href="javascript:void(0)">News</a></li>
@@ -665,18 +663,16 @@ background-color: #555;<br>&nbsp;&nbsp;color: white;<br>}</div>
 </ul>
 
 <div class="w3-example">
-<h3>Example</h3>
+<h3>Пример</h3>
 <div class="w3-code notranslate cssHigh">
 .active {<br>&nbsp; background-color: #4CAF50;<br>&nbsp;
 color: white;<br>}</div>
 <a target="_blank" class="w3-btn w3-margin-bottom" href="tryitad31.html?filename=trycss_navbar_vertical_active">Попробуйте сами &raquo;</a>
 </div>
 
-<h3 style="margin-top:35px;">Center Links &amp; Add Borders</h3>
-<p>Add <code class="w3-codespan">text-align:center</code> to &lt;li&gt; or &lt;a&gt; to center the links.</p>
-<p>Add the <code class="w3-codespan">border</code> property to &lt;ul&gt; add a border around the navbar. If you also want
-borders inside the navbar, add a <code class="w3-codespan">border-bottom</code> to all &lt;li&gt; elements, except for the
-last one:</p>
+<h3 style="margin-top:35px;">Центрирование ссылок &amp; Добавление границ</h3>
+<p>Добавьте <code class="w3-codespan">text-align:center</code> к &lt;li&gt; или &lt;a&gt;, чтобы центрировать ссылки.</p>
+<p>Добавьте свойство <code class="w3-codespan">border</code> к &lt;ul&gt;, чтобы добавить границу вокруг навбара. Если вы также хотите границы внутри навбара, добавьте <code class="w3-codespan">border-bottom</code> ко всем элементам &lt;li&gt;, кроме последнего:</p>
 <ul class="vertical border">
   <li><a class="active" href="javascript:void(0)">Home</a></li>
   <li><a href="javascript:void(0)">News</a></li>
@@ -685,7 +681,7 @@ last one:</p>
 </ul>
 
 <div class="w3-example">
-<h3>Example</h3>
+<h3>Пример</h3>
 <div class="w3-code notranslate cssHigh">
 ul {<br>&nbsp; border: 1px solid #555;<br>}<br><br>li {<br>&nbsp; text-align: center;<br>
   &nbsp;
@@ -694,34 +690,31 @@ border-bottom: none;<br>}</div>
 <a target="_blank" class="w3-btn w3-margin-bottom" href="tryit831a.html?filename=trycss_navbar_vertical_borders">Попробуйте сами &raquo;</a>
 </div>
 
-<h3 style="margin-top:35px;">Full-height Fixed Vertical Navbar</h3>
-<p>Create a full-height, &quot;sticky&quot; side navigation:</p>
+<h3 style="margin-top:35px;">Фиксированный вертикальный навбар на всю высоту</h3>
+<p>Создайте &quot;sticky&quot; (&quot;липкий&quot;) боковой навбар на всю высоту страницы:</p>
 
 <iframe src="trycss_navbar_vertical_iframe.html" style="height:262px;width:100%;border:3px solid #f1f1f1;border-left:none"></iframe>
 
 <div class="w3-example">
-<h3>Example</h3>
+<h3>Пример</h3>
 <div class="w3-code notranslate cssHigh">
 ul {<br>&nbsp; list-style-type: none;<br>&nbsp;
 margin: 0;<br>&nbsp; padding: 0;<br>&nbsp; width:
 25%;<br>&nbsp; background-color: #f1f1f1;<br>&nbsp;&nbsp;height: 100%; /* Full height */<br>
-  &nbsp; position: fixed; /*
-Make it stick, even on scroll */<br>&nbsp;
-overflow: auto; /* Enable scrolling if the sidenav has too much content */<br>}</div>
+  &nbsp; position: fixed; /* Делает прилепание даже при скроллинге */<br>&nbsp;
+overflow: auto; /* Включите скроллинг если сайднав имеет много контента */<br>}</div>
 <a target="_blank" class="w3-btn w3-margin-bottom" href="tryitbe1d.html?filename=trycss_navbar_vertical_fixed">Попробуйте сами &raquo;</a>
 </div>
-<p><strong>Note:</strong> This example might not work properly on mobile devices.</p>
+<p><strong>Примечание:</strong> Этот пример может не работать должным образом на мобильных устройствах.</p>
 
 <hr>
-<h2>Horizontal Navigation Bar</h2>
-<p>There are two ways to create a horizontal navigation bar. Using <b>
-inline</b> or <b>floating</b> list items.</p>
+<h2>Горизонтальная панель навигации</h2>
+<p>Есть два способа создать горизонтальную панель навигации. Использование <b>встроенных</b> или <b>плавающих</b> элементов списка.</p>
 
-<h3>Inline List Items</h3>
-<p>One way to build a horizontal navigation bar is to specify the &lt;li&gt; elements
-as inline, in addition to the &quot;standard&quot; code above:</p>
+<h3>Встроенные элементы списка</h3>
+<p>Один из способов построения горизонтальной панели навигации - указать элементы &lt;li&gt; как встроенные, в дополнение к приведенному выше &quot;стандартному&quot; коду:</p>
 <div class="w3-example">
-<h3>Example</h3>
+<h3>Пример</h3>
 <div class="w3-code notranslate cssHigh">
 li
 {<br>
@@ -731,17 +724,15 @@ display: inline;<br>
 <a target="_blank" class="w3-btn w3-margin-bottom" href="tryit43bc.html?filename=trycss_navbar_horizontal">Попробуйте сами &raquo;</a>
 </div>
 
-<p>Example explained:</p>
+<p>Объяснение примера:</p>
 <ul>
-<li><code class="w3-codespan">display: inline;</code> - By default, &lt;li&gt; elements are block elements. Here, we
-remove the line breaks before and after each list item, to display them on one line</li>
+<li><code class="w3-codespan">display: inline;</code> - По умолчанию элементы &lt;li&gt; являются блочными элементами. Здесь мы удаляем разрывы строк до и после каждого элемента списка, чтобы отобразить их на одной строке</li>
 </ul>
-<h3>Floating List Items</h3>
-<p>Another way of creating a horizontal navigation bar is to float the &lt;li&gt;
-elements, and specify a layout for the navigation links:</p>
+<h3>Элементы плавающего списка</h3>
+<p>Еще один способ создания горизонтальной панели навигации - это плавающие элементы &lt;li&gt; и указание макета для ссылок навигации:</p>
 
 <div class="w3-example">
-<h3>Example</h3>
+<h3>Пример</h3>
 <div class="w3-code notranslate cssHigh">
 li
 {<br>
@@ -757,23 +748,17 @@ display: block;<br>
 <a target="_blank" class="w3-btn w3-margin-bottom" href="tryitc7a0.html?filename=trycss_navbar_horizontal_float">Попробуйте сами &raquo;</a>
 </div>
 
-<p>Example explained:</p>
+<p>Объяснение примера:</p>
 <ul>
-<li><code class="w3-codespan">float: left;</code> - use float to get block elements to slide next to each other</li>
-<li><code class="w3-codespan">display: block;</code> -
-Displaying the links as block elements makes the whole link area
-clickable (not just the text), and it allows us to specify padding (and
-height, width, margins, etc. if you want)</li>
-<li><code class="w3-codespan">padding: 8px;</code> - Since block elements take up the full width available, they
-cannot float next to each other. Therefore, specify some padding to make
-them look good</li>
-<li><code class="w3-codespan">background-color: #dddddd;</code> - Add a gray background-color to each a element</li>
+<li><code class="w3-codespan">float: left;</code> - используйте float, чтобы элементы блока скользили рядом друг с другом</li>
+<li><code class="w3-codespan">display: block;</code> - Отображение ссылок как элементов блока делает всю область ссылок кликабельной (не только текст), и это позволяет нам указать отступы (а также, если хотите, высоту, ширину, поля и т.д.)</li>
+<li><code class="w3-codespan">padding: 8px;</code> - Поскольку блочные элементы занимают всю доступную ширину, они не могут плавать рядом друг с другом. Поэтому, укажите некоторые отступы, чтобы они выглядели хорошо</li>
+<li><code class="w3-codespan">background-color: #dddddd;</code> - Добавление серого цвета фона для каждого элемента</li>
 </ul>
 
-<p><strong>Tip:</strong> Add the background-color to &lt;ul&gt; instead of each &lt;a&gt; element if you want
-a full-width background color:</p>
+<p><strong>Совет:</strong> добавьте background-color к &lt;ul&gt; вместо каждого элемента &lt;a&gt;, если хотите задать цвет фону на всю ширину:</p>
 <div class="w3-example">
-<h3>Example</h3>
+<h3>Пример</h3>
 <div class="w3-code notranslate cssHigh">
 ul
 {<br>
@@ -783,11 +768,9 @@ ul
 </div>
 <hr>
 
-<h2>Horizontal Navigation Bar Examples</h2>
+<h2>Примеры горизонтальной панели навигации</h2>
 
-<p>Create a basic horizontal navigation bar with a dark background color and
-change the background color of the links when the user moves the mouse over
-them:</p>
+<p>Создайте базовую горизонтальную панель навигации с темным цветом фона и измените цвет фона ссылок, когда пользователь наводит на них курсор мыши:</p>
 <ul class="horizontal">
   <li><a href="javascript:void(0)">Home</a></li>
   <li><a href="javascript:void(0)">News</a></li>
@@ -796,7 +779,7 @@ them:</p>
 </ul>
 
 <div class="w3-example">
-<h3>Example</h3>
+<h3>Пример</h3>
 <div class="w3-code notranslate cssHigh">
 ul {<br>&nbsp; list-style-type: none;<br>&nbsp;&nbsp;margin: 0;<br>&nbsp; padding: 0;<br>
   &nbsp; overflow:
@@ -805,13 +788,13 @@ float: left;<br>}<br>
 <br>li a {<br>&nbsp; display: block;<br>&nbsp;
 color: white;<br>&nbsp; text-align: center;<br>&nbsp;
 padding: 14px 16px;<br>&nbsp; text-decoration: none;<br>}<br>
-<br>/* Change the link color to #111 (black) on hover */<br>li a:hover {<br>&nbsp; background-color:
+<br>/* Измените цвет ссылки на #111 (черный) при наведении */<br>li a:hover {<br>&nbsp; background-color:
 #111;<br>}</div>
 <a target="_blank" class="w3-btn w3-margin-bottom" href="tryitb6a4.html?filename=trycss_navbar_horizontal_black">Попробуйте сами &raquo;</a>
 </div>
 
-<h3 style="margin-top:35px;">Active/Current Navigation Link</h3>
-<p>Add an "active" class to the current link to let the user know which page he/she is on:</p>
+<h3 style="margin-top:35px;">Активная / текущая навигационная ссылка</h3>
+<p>Добавьте &quot;активный&quot; класс к текущей ссылке, чтобы пользователь знал, на какой странице он / она находится:</p>
 <ul class="horizontal">
   <li><a class="active" href="javascript:void(0)">Home</a></li>
   <li><a href="javascript:void(0)">News</a></li>
@@ -820,14 +803,14 @@ padding: 14px 16px;<br>&nbsp; text-decoration: none;<br>}<br>
 </ul>
 
 <div class="w3-example">
-<h3>Example</h3>
+<h3>Пример</h3>
 <div class="w3-code notranslate cssHigh">
 .active {<br>&nbsp; background-color: #4CAF50;<br>}</div>
 <a target="_blank" class="w3-btn w3-margin-bottom" href="tryitcd0d.html?filename=trycss_navbar_horizontal_black_active">Попробуйте сами &raquo;</a>
 </div>
 
-<h3 style="margin-top:35px;">Right-Align Links</h3>
-<p>Right-align links by floating the list items to the right (<code class="w3-codespan">float:right;</code>):</p>
+<h3 style="margin-top:35px;">Ссылки выравниваются справа</h3>
+<p>Выровняйте ссылки по правому краю, перемещая элементы списка вправо (<code class="w3-codespan">float:right;</code>):</p>
 <ul class="horizontal">
   <li><a href="javascript:void(0)">Home</a></li>
   <li><a href="javascript:void(0)">News</a></li>
@@ -836,7 +819,7 @@ padding: 14px 16px;<br>&nbsp; text-decoration: none;<br>}<br>
 </ul>
 
 <div class="w3-example">
-<h3>Example</h3>
+<h3>Пример</h3>
 <div class="w3-code notranslate htmlHigh">
 &lt;ul&gt;<br>&nbsp; &lt;li&gt;&lt;a href=&quot;#home&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;<br>&nbsp;
 &lt;li&gt;&lt;a href=&quot;#news&quot;&gt;News&lt;/a&gt;&lt;/li&gt;<br>&nbsp; &lt;li&gt;&lt;a href=&quot;#contact&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;<br>
@@ -845,8 +828,8 @@ class=&quot;active&quot; href=&quot;#about&quot;&gt;About&lt;/a&gt;&lt;/li&gt;<b
 <a target="_blank" class="w3-btn w3-margin-bottom" href="tryit9e9e.html?filename=trycss_navbar_horizontal_black_right">Попробуйте сами &raquo;</a>
 </div>
 
-<h3 style="margin-top:35px;">Border Dividers</h3>
-<p>Add the <code class="w3-codespan">border-right</code> property to &lt;li&gt; to create link dividers:</p>
+<h3 style="margin-top:35px;">Разделители границы</h3>
+<p>Добавьте свойство <code class="w3-codespan">border-right</code> в &lt;/li&gt; для создания разделителей ссылок:</p>
 <ul class="horizontal divider">
   <li><a class="active" href="javascript:void(0)">Home</a></li>
   <li><a href="javascript:void(0)">News</a></li>
@@ -855,16 +838,15 @@ class=&quot;active&quot; href=&quot;#about&quot;&gt;About&lt;/a&gt;&lt;/li&gt;<b
 </ul>
 
 <div class="w3-example">
-<h3>Example</h3>
+<h3>Пример</h3>
 <div class="w3-code notranslate cssHigh">
-/* Add a gray right border to all list items, except the last item
-(last-child) */<br>li {<br>&nbsp; border-right: 1px solid #bbb;<br>}<br><br>
+/* Добавьте серую правую границу ко всем элементам списка, кроме последнего (последний-дочерний) */<br>li {<br>&nbsp; border-right: 1px solid #bbb;<br>}<br><br>
 li:last-child {<br>&nbsp; border-right: none;<br>}</div>
 <a target="_blank" class="w3-btn w3-margin-bottom" href="tryitab33.html?filename=trycss_navbar_horizontal_dividers">Попробуйте сами &raquo;</a>
 </div>
 
-<h3 style="margin-top:35px;">Fixed Navigation Bar</h3>
-<p>Make the navigation bar stay at the top or the bottom of the page, even when the user scrolls the page:</p>
+<h3 style="margin-top:35px;">Фиксированная панель навигации</h3>
+<p>Зафиксируйте панель навигации вверху или внизу страницы, даже когда пользователь прокручивает страницу:</p>
 
 <div class="w3-row">
 
@@ -872,7 +854,7 @@ li:last-child {<br>&nbsp; border-right: none;<br>}</div>
 <div class="width94">
 <iframe src="trycss_navbar_horizontal_iframe.html" style="height:262px;width:100%;border:none;"></iframe>
 <div class="w3-example">
-<h3>Fixed Top</h3>
+<h3>Фиксирование вверху</h3>
 <div class="w3-code notranslate cssHigh">
 ul {<br>&nbsp; position: fixed;<br>&nbsp; top: 0;<br>&nbsp;&nbsp;width: 100%;<br>}</div>
 <a target="_blank" class="w3-btn w3-margin-bottom" href="tryit3e7f.html?filename=trycss_navbar_horizontal_black_fixed">Попробуйте сами &raquo;</a>
@@ -885,7 +867,7 @@ ul {<br>&nbsp; position: fixed;<br>&nbsp; top: 0;<br>&nbsp;&nbsp;width: 100%;<br
 <iframe src="trycss_navbar_horizontal_iframe2.html" style="height:262px;width:100%;border:none;"></iframe>
 
 <div class="w3-example">
-<h3>Fixed Bottom</h3>
+<h3>Фиксирование внизу</h3>
 <div class="w3-code notranslate cssHigh">
 ul {<br>&nbsp; position: fixed;<br>&nbsp; bottom: 0;<br>&nbsp;&nbsp;width: 100%;<br>}</div>
 <a target="_blank" class="w3-btn w3-margin-bottom" href="tryit1d39.html?filename=trycss_navbar_horizontal_black_fixed2">Попробуйте сами &raquo;</a>
@@ -894,11 +876,11 @@ ul {<br>&nbsp; position: fixed;<br>&nbsp; bottom: 0;<br>&nbsp;&nbsp;width: 100%;
 </div>
 </div>
 <div class="w3-note w3-panel" style="margin-top:0">
-<p><strong>Note:</strong> Fixed position might not work properly on mobile devices.</p>
+<p><strong>Примечание:</strong> Фиксированная позиция может не работать должным образом на мобильных устройствах.</p>
 </div>
 
-<h3 style="margin-top:30px;">Gray Horizontal Navbar</h3>
-<p>An example of a gray horizontal navigation bar with a thin gray border:</p>
+<h3 style="margin-top:30px;">Серый горизонтальный навбар</h3>
+<p>Пример серой горизонтальной панели навигации с тонкой серой границей:</p>
 <ul class="horizontal2">
   <li><a class="active" href="javascript:void(0)">Home</a></li>
   <li><a href="javascript:void(0)">News</a></li>
@@ -907,7 +889,7 @@ ul {<br>&nbsp; position: fixed;<br>&nbsp; bottom: 0;<br>&nbsp;&nbsp;width: 100%;
 </ul>
 
 <div class="w3-example">
-<h3>Example</h3>
+<h3>Пример</h3>
 <div class="w3-code notranslate cssHigh">
 ul {<br>&nbsp; border: 1px solid #e7e7e7;<br>&nbsp;
 background-color: #f3f3f3;<br>}<br><br>li a {<br>&nbsp;&nbsp;color:
@@ -916,52 +898,52 @@ background-color: #f3f3f3;<br>}<br><br>li a {<br>&nbsp;&nbsp;color:
 <a target="_blank" class="w3-btn w3-margin-bottom" href="tryit6287.html?filename=trycss_navbar_horizontal_gray">Попробуйте сами &raquo;</a>
 </div>
 
-<h3 style="margin-top:30px;">Sticky Navbar</h3>
-<p>Add <code class="w3-codespan">position: sticky;</code> to &lt;ul&gt; to create a sticky navbar.</p>
-<p>A sticky element toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed).</p>
+<h3 style="margin-top:30px;">Липкий навбар</h3>
+<p>Добавьте <code class="w3-codespan">position: sticky;</code> к &lt;ul&gt; чтобы создать &quot;липкий&quot; навбар.</p>
+<p>Липкий элемент переключается между относительным и фиксированным, в зависимости от положения прокрутки. Он позиционируется относительно до тех пор, пока в окне просмотра не будет достигнута заданная позиция смещения - тогда он &quot;залипнет&quot; на месте (как position:fixed).</p>
 <iframe src="../howto/tryhow_js_navbar_sticky.html" style="width:100%;border:3px solid #e9e9e9;height:400px;padding:0"></iframe><div class="w3-example">
-<h3>Example</h3>
+<h3>Пример</h3>
 <div class="w3-code notranslate cssHigh">
   ul {<br>&nbsp; position: -webkit-sticky; /* Safari */<br>&nbsp;
   position: sticky;<br>&nbsp; top: 0;<br>}</div>
 <a target="_blank" class="w3-btn w3-margin-bottom" href="tryitb668.html?filename=trycss_navbar_sticky">Попробуйте сами &raquo;</a>
 </div>
 <div class="w3-note w3-panel">
-<p><strong>Note: </strong>Internet Explorer, Edge 15 and earlier versions do not support sticky positioning. Safari requires a -webkit-
-prefix (see example above). You must also specify at least one of <code class="w3-codespan">top</code>, <code class="w3-codespan">right</code>, <code class="w3-codespan">bottom</code> or <code class="w3-codespan">left</code> for
-sticky positioning to work.</p>
+<p><strong>Примечание: </strong>Internet Explorer, Edge 15 и более ранние версии не поддерживают sticky-позиционирование. Safari требует -webkit-prefix (см. Пример выше). Вы также должны указать хотя бы одно из значений: <code class="w3-codespan">top</code>, <code class="w3-codespan">right</code>, <code class="w3-codespan">bottom</code> или <code class="w3-codespan">left</code> для работы sticky позиционирования.</p>
 </div>
 <hr>
 
-<h2>More Examples</h2>
+<h2>Больше примеров</h2>
 
 <div class="w3-example">
-<h3>Responsive Topnav</h3>
-<p>How to use CSS media queries to create a responsive top navigation.</p>
+<h3>Адптивная верхняя панель навигации</h3>
+<p>Как использовать медиазапросы CSS для создания адаптивной верхней навигации.</p>
 <div class="w3-white">
-<img src="navbar_responsive_hor.jpg" style="width:100%">
+<img src="navbar_responsive_hor.jpg" style="width:100%" alt="Адптивная верхняя панель навигации">
 </div>
 <a target="_blank" class="w3-btn w3-margin-top w3-margin-bottom" href="tryitf95e.html?filename=trycss_navbar_horizontal_responsive">Попробуйте сами &raquo;</a>
 </div>
 
 <div class="w3-example">
-<h3>Responsive Sidenav</h3>
-<p>How to use CSS media queries to create a responsive side navigation.</p>
+<h3>Адаптивная боковая панель навигации</h3>
+<p>Как использовать медиазапросы CSS для создания адаптивной боковой навигации.</p>
 <div class="w3-white">
-<img src="navbar_responsive_ver.jpg" style="width:100%">
+<img src="navbar_responsive_ver.jpg" style="width:100%" alt="Адаптивная боковая панель навигации">
 </div>
 <a target="_blank" class="w3-btn w3-margin-top w3-margin-bottom" href="tryiteca8.html?filename=trycss_navbar_vertical_responsive">Попробуйте сами &raquo;</a>
 </div>
 
 <div class="w3-example">
-<h3>Dropdown Navbar</h3>
-<p>How to add a dropdown menu inside a navigation bar.</p>
+<h3>Выпадающий навбар</h3>
+<p>Как добавить выпадающее меню внутри панели навигации.</p>
 
 <div class="w3-white">
 <iframe src="trycss_dropdown_navbar.html" style="width:100%;border:none;height:200px"></iframe>
 </div>
 <a target="_blank" class="w3-btn w3-margin-top w3-margin-bottom" href="tryitc02c.html?filename=trycss_dropdown_navbar">Попробуйте сами &raquo;</a>
 </div>
+
+<p>Больше примеров того, как создавать различные панели навигации вы можете узнать в разделе <a href="../howto/default.html" target="_blank">Как сделать?</a> на нашем сайте.</p>
 
 <hr>
 <div class="w3-clear nextprev">
