@@ -8,7 +8,6 @@
 <meta name="Description" content="JavaScript на веб-страницах. Зачем нужен язык программирования javascript? Тег script. Как вставить сценарий на веб-страницу? Основы HTML. W3Schools на русском. Учебник для начинающих.">
 <link rel="icon" href="../favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="../w3css/4/w3.css">
-<link href='https://fonts.googleapis.com/css?family=Source%20Code%20Pro' rel='stylesheet'>
 
 <body>
 <div id="mainContent">
@@ -44,11 +43,11 @@
       <a class="w3-bar-item w3-button" id='topnavbtn_tutorials' href='javascript:void(0);' onclick='w3_open_nav("tutorials")' title='Tutorials'>БОЛЬШЕ <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style='display:none'></i></a>
       <a href='javascript:void(0);' class='topnav-icons fa w3-right w3-bar-item w3-button' onclick='open_search(this)' title='Поиск на сайте'>&#128269;</a>
       <a class="w3-bar-item w3-button w3-right" target="_blank" href='https://drive.google.com/open?id=1fddM8chCC273SbiTEYVNLorbZ2qij7fp'>КНИГИ</a>
-      <a class="w3-bar-item w3-button w3-right" id='topnavbtn_exercises' href='javascript:void(0);' onclick='w3_open_nav("exercises")' title='Exercises'>УПРАЖНЕНИЯ <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style='display:none'></i></a>     
+      <a class="w3-bar-item w3-button w3-right" id='topnavbtn_exercises' href='javascript:void(0);' onclick='w3_open_nav("exercises")' title='Exercises'>УПРАЖНЕНИЯ <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style='display:none'></i></a>
       <a class="w3-bar-item w3-button w3-right" id='topnavbtn_references' href='javascript:void(0);' onclick='w3_open_nav("references")' title='References'>СПРАВОЧНИКИ <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style='display:none'></i></a>
 
     </div>
-    <div id='nav_tutorials' class='w3-bar-block w3-card-2' style="display:none;">   
+    <div id='nav_tutorials' class='w3-bar-block w3-card-2' style="display:none;">
       <span onclick='w3_close_nav("tutorials")' class='w3-button w3-xlarge w3-right' style="position:absolute;right:0;font-weight:bold;">&times;</span>
       <div class='w3-row-padding' style="padding:24px 48px">
         <div class='w3-col l3 m6'>
@@ -259,7 +258,7 @@
 <a target="_top" href="html_id.html">HTML Идентификаторы</a>
 <a target="_top" href="html_iframe.html">HTML Фреймы</a>
 <a target="_top" href="html_scripts.html">HTML JavaScript</a>
-<a target="_top" href="html_filepaths.html">HTML Пути файлов</a>
+<a target="_top" href="html_filepaths.html">HTML Пути к файлам</a>
 <a target="_top" href="html_head.html">HTML Голова веб-страницы</a>
 <a target="_top" href="html_layout.html">HTML Макеты</a>
 <a target="_top" href="html_responsive.html">HTML Адаптивность</a>
@@ -364,7 +363,7 @@
 <p>Тег <code class="w3-codespan">&lt;script&gt;</code> тег используется для определения скрипта на стороне клиента (JavaScript).</p>
 <p>Элемент <code class="w3-codespan">&lt;script&gt;</code> либо содержит операторы сценария, либо указывает на внешний файл сценария через атрибут <code class="w3-codespan">src</code>.</p>
 <p>Обычное использование JavaScript - манипуляции с изображениями, проверка формы и динамические изменения содержимого.</p>
-<p>Чтобы выбрать HTML элемент, JavaScript чаще всего использует метод 
+<p>Чтобы выбрать HTML элемент, JavaScript чаще всего использует метод
 <code class="w3-codespan">document.getElementById()</code>.</p>
 <p>Этот пример JavaScript выводит &quot;Hello JavaScript!&quot; в HTML элементе с id=&quot;demo&quot;:</p>
 <div class="w3-example">
@@ -435,7 +434,7 @@ document.getElementById(&quot;demo&quot;).style.fontSize = &quot;25px&quot;;<br>
 <hr>
 <h2>HTML Упражнения</h2>
 <form autocomplete="off" id="w3-exerciseform" action="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_scripts1" method="post" target="_blank">
-<h2 class="heading">Проверьте себя с помощью упражнений</h2>
+<h2 class="shadow-black-1">Проверьте себя с помощью упражнений</h2>
 <div class="exercisewindow">
 <h2>Упражнение:</h2>
 <p>Используйте JavaScript для изменения HTML-содержимого элемента <code class="w3-codespan">&lt;p&gt;</code> "Hello World!".</p>
@@ -448,7 +447,7 @@ document.getElementById(&quot;demo&quot;).style.fontSize = &quot;25px&quot;;<br>
 <br>
 document.<input name="ex1" spellcheck="false" maxlength="14" style="width: 146px;">("demo").innerHTML = "Hello World!";
 <br>
-&lt;/script&gt; 
+&lt;/script&gt;
 <br><br>
 &lt;/body&gt;
 </div>
@@ -499,7 +498,7 @@ document.<input name="ex1" spellcheck="false" maxlength="14" style="width: 146px
     <h4><a href="../howto/default.html" class="w3-hover-text-white">КАК СДЕЛАТЬ</a></h4>
   </div>
   <div class="w3-container w3-left-align w3-padding-16">
-    <a href="../howto/howto_js_tabs.html">Вкладки</a><br>    
+    <a href="../howto/howto_js_tabs.html">Вкладки</a><br>
     <a href="../howto/howto_css_dropdown.html">Выпадающее меню</a><br>
     <a href="../howto/howto_js_accordion.html">Меню аккордеон</a><br>
     <a href="../howto/howto_js_sidenav.html">Боковая навигация</a><br>
@@ -653,8 +652,8 @@ document.<input name="ex1" spellcheck="false" maxlength="14" style="width: 146px
 </div>
 <script src="../lib/w3schools_footer.js"></script>
 <!--[if lt IE 9]>
-<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<script src="../cdn/html5shiv/3.7.3/html5shiv.js"></script>
+<script src="../cdn/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
 </div>
 

@@ -5,10 +5,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="Keywords" content="HTML,CSS,уроки,для начинающих,html5,css3,атрибут,класс,class,веб,страница,w3schools,на русском">
-<meta name="Description" content="Атрибут class. Основы HTML. Что такое атрибуты html-элементов? W3Schools на русском. Учебник для начинающих">
+<meta name="Description" content="Атрибут class. Основы HTML. Что такое классы? Зачем нужен атрибут class? Что такое атрибуты html-элементов? Как задать одинаковый стиль для html-элементов? Стилизация веб-документов. W3Schools на русском. Учебник для начинающих">
 <link rel="icon" href="../favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="../w3css/4/w3.css">
-<link href='https://fonts.googleapis.com/css?family=Source%20Code%20Pro' rel='stylesheet'>
 
 <body>
 <div id="mainContent">
@@ -44,11 +43,11 @@
       <a class="w3-bar-item w3-button" id='topnavbtn_tutorials' href='javascript:void(0);' onclick='w3_open_nav("tutorials")' title='Tutorials'>БОЛЬШЕ <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style='display:none'></i></a>
       <a href='javascript:void(0);' class='topnav-icons fa w3-right w3-bar-item w3-button' onclick='open_search(this)' title='Поиск на сайте'>&#128269;</a>
       <a class="w3-bar-item w3-button w3-right" target="_blank" href='https://drive.google.com/open?id=1fddM8chCC273SbiTEYVNLorbZ2qij7fp'>КНИГИ</a>
-      <a class="w3-bar-item w3-button w3-right" id='topnavbtn_exercises' href='javascript:void(0);' onclick='w3_open_nav("exercises")' title='Exercises'>УПРАЖНЕНИЯ <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style='display:none'></i></a>     
+      <a class="w3-bar-item w3-button w3-right" id='topnavbtn_exercises' href='javascript:void(0);' onclick='w3_open_nav("exercises")' title='Exercises'>УПРАЖНЕНИЯ <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style='display:none'></i></a>
       <a class="w3-bar-item w3-button w3-right" id='topnavbtn_references' href='javascript:void(0);' onclick='w3_open_nav("references")' title='References'>СПРАВОЧНИКИ <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style='display:none'></i></a>
 
     </div>
-    <div id='nav_tutorials' class='w3-bar-block w3-card-2' style="display:none;">   
+    <div id='nav_tutorials' class='w3-bar-block w3-card-2' style="display:none;">
       <span onclick='w3_close_nav("tutorials")' class='w3-button w3-xlarge w3-right' style="position:absolute;right:0;font-weight:bold;">&times;</span>
       <div class='w3-row-padding' style="padding:24px 48px">
         <div class='w3-col l3 m6'>
@@ -376,7 +375,7 @@
   <h2>Paris</h2>
   <p>Paris is the capital of France.</p>
   </div>
-  <div class="cities">  
+  <div class="cities">
   <h2>Tokyo</h2>
   <p>Tokyo is the capital of Japan.</p>
   </div>
@@ -410,11 +409,11 @@
 <p>Используйте CSS для стилизации всех элементов с именем класса "city":</p>
 <div class="w3-code notranslate htmlHigh">
   &lt;style&gt;<br>
-  <strong>.city</strong> {<br>&nbsp;&nbsp;background-color: tomato;<br>&nbsp;&nbsp;color: white;<br>&nbsp;&nbsp;padding: 
+  <strong>.city</strong> {<br>&nbsp;&nbsp;background-color: tomato;<br>&nbsp;&nbsp;color: white;<br>&nbsp;&nbsp;padding:
   10px;<br>} <br>&lt;/style&gt;<br>
-  <br>&lt;h2 
+  <br>&lt;h2
   <strong>class=&quot;city&quot;</strong>&gt;London&lt;/h2&gt;<br>&lt;p&gt;London is the capital of England.&lt;/p&gt;<br><br>
-  &lt;h2 <strong>class=&quot;city&quot;</strong>&gt;Paris&lt;/h2&gt;<br>&lt;p&gt;Paris is the capital of France.&lt;/p&gt;<br><br>&lt;h2 
+  &lt;h2 <strong>class=&quot;city&quot;</strong>&gt;Paris&lt;/h2&gt;<br>&lt;p&gt;Paris is the capital of France.&lt;/p&gt;<br><br>&lt;h2
   <strong>class=&quot;city&quot;</strong>&gt;Tokyo&lt;/h2&gt;<br>&lt;p&gt;Tokyo is the capital of Japan.&lt;/p&gt;<br></div>
   <p>Результат:</p>
   <div class="w3-white w3-padding">
@@ -437,8 +436,8 @@
 <h3>Пример</h3>
 <p>Элементы стиля с именем класса &quot;city&quot;, а также элементы стиля с именем класса &quot;main&quot;:</p>
 <div class="w3-code notranslate htmlHigh">
-  &lt;h2 
-  class=&quot;city main&quot;&gt;London&lt;/h2&gt;<br>&lt;h2 class=&quot;city&quot;&gt;Paris&lt;/h2&gt;<br>&lt;h2 
+  &lt;h2
+  class=&quot;city main&quot;&gt;London&lt;/h2&gt;<br>&lt;h2 class=&quot;city&quot;&gt;Paris&lt;/h2&gt;<br>&lt;h2
   class=&quot;city&quot;&gt;Tokyo&lt;/h2&gt;<br></div>
 <a class="w3-btn w3-margin-bottom" href="tryited4f.html?filename=tryhtml_classes_multiple" target="_blank">
  Попробуйте сами &raquo;</a>
@@ -452,7 +451,7 @@
 <div class="w3-example">
 <h3>Пример</h3>
 <div class="w3-code notranslate htmlHigh">
-  &lt;h2 class=&quot;city&quot;&gt;Paris&lt;/h2&gt;<br>&lt;p 
+  &lt;h2 class=&quot;city&quot;&gt;Paris&lt;/h2&gt;<br>&lt;p
   class=&quot;city&quot;&gt;Paris is the capital of France&lt;/p&gt;<br></div>
 <a class="w3-btn w3-margin-bottom" href="tryit794f.html?filename=tryhtml_classes_tags" target="_blank">
  Попробуйте сами &raquo;</a>
@@ -465,10 +464,10 @@
 
 <div class="w3-example">
 <h3>Пример</h3>
-  <p>Когда пользователь нажимает на кнопку, скрыть все элементы с именем класса 
+  <p>Когда пользователь нажимает на кнопку, скрыть все элементы с именем класса
   &quot;city&quot;:</p>
 <div class="w3-code notranslate htmlHigh">
-  &lt;script&gt;<br>function myFunction() {<br>&nbsp; var x = <strong>document.getElementsByClassName(&quot;city&quot;)</strong>;<br>&nbsp; for (var i = 0; i &lt; x.length; 
+  &lt;script&gt;<br>function myFunction() {<br>&nbsp; var x = <strong>document.getElementsByClassName(&quot;city&quot;)</strong>;<br>&nbsp; for (var i = 0; i &lt; x.length;
   i++) {<br>&nbsp;&nbsp;&nbsp; x[i].style.display = &quot;none&quot;;<br>&nbsp; }<br>}<br>&lt;/script&gt;</div>
 <a class="w3-btn w3-margin-bottom" href="tryitcfa3.html?filename=tryhtml_classes_js" target="_blank">
  Попробуйте сами &raquo;</a>
@@ -480,7 +479,7 @@
 <hr>
 <h2>HTML Упражнения</h2>
 <form autocomplete="off" id="w3-exerciseform" action="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_classes1" method="post" target="_blank">
-<h2 class="heading">Проверьте себя с помощью упражнений</h2>
+<h2 class="shadow-black-1">Проверьте себя с помощью упражнений</h2>
 <div class="exercisewindow">
 <h2>Упражнение:</h2>
 <p>Создайте селектор класса с именем "special".</p>
@@ -517,11 +516,13 @@
 <p><a target="_blank" href="exercise401c.html?filename=exercise_html_classes1">Начать упражнение</a></p>
 </div>
 </form>
+
 <hr>
 <div class="w3-clear nextprev">
 <a class="w3-left w3-btn" href="html_blocks.html">&#10094; Prev</a>
 <a class="w3-right w3-btn" href="html_id.html">Next &#10095;</a>
 </div>
+<hr>
 
 <!--Комментарии от Disqus-->
         <iframe class="predisqus" src="../pages/predisqus.html"></iframe>
@@ -556,7 +557,7 @@
     <h4><a href="../howto/default.html" class="w3-hover-text-white">КАК СДЕЛАТЬ</a></h4>
   </div>
   <div class="w3-container w3-left-align w3-padding-16">
-    <a href="../howto/howto_js_tabs.html">Вкладки</a><br>    
+    <a href="../howto/howto_js_tabs.html">Вкладки</a><br>
     <a href="../howto/howto_css_dropdown.html">Выпадающее меню</a><br>
     <a href="../howto/howto_js_accordion.html">Меню аккордеон</a><br>
     <a href="../howto/howto_js_sidenav.html">Боковая навигация</a><br>
@@ -710,8 +711,8 @@
 </div>
 <script src="../lib/w3schools_footer.js"></script>
 <!--[if lt IE 9]>
-<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<script src="../cdn/html5shiv/3.7.3/html5shiv.js"></script>
+<script src="../cdn/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
 </div>
 

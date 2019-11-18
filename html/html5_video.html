@@ -8,8 +8,7 @@
 <meta name="Description" content="HTML5 Видео на сайте. Как добавить видеоплеер на веб-страницу? Форматы видео в Интернете. W3Schools на русском. Уроки для начинающих">
 <link rel="icon" href="../favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="../w3css/4/w3.css">
-<link href='https://fonts.googleapis.com/css?family=Source%20Code%20Pro' rel='stylesheet'>
-<link rel="stylesheet" href="/browserref.css">
+<link rel="stylesheet" href="../browserref.css">
 </head>
 
 <body>
@@ -46,11 +45,11 @@
       <a class="w3-bar-item w3-button" id='topnavbtn_tutorials' href='javascript:void(0);' onclick='w3_open_nav("tutorials")' title='Tutorials'>БОЛЬШЕ <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style='display:none'></i></a>
       <a href='javascript:void(0);' class='topnav-icons fa w3-right w3-bar-item w3-button' onclick='open_search(this)' title='Поиск на сайте'>&#128269;</a>
       <a class="w3-bar-item w3-button w3-right" target="_blank" href='https://drive.google.com/open?id=1fddM8chCC273SbiTEYVNLorbZ2qij7fp'>КНИГИ</a>
-      <a class="w3-bar-item w3-button w3-right" id='topnavbtn_exercises' href='javascript:void(0);' onclick='w3_open_nav("exercises")' title='Exercises'>УПРАЖНЕНИЯ <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style='display:none'></i></a>     
+      <a class="w3-bar-item w3-button w3-right" id='topnavbtn_exercises' href='javascript:void(0);' onclick='w3_open_nav("exercises")' title='Exercises'>УПРАЖНЕНИЯ <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style='display:none'></i></a>
       <a class="w3-bar-item w3-button w3-right" id='topnavbtn_references' href='javascript:void(0);' onclick='w3_open_nav("references")' title='References'>СПРАВОЧНИКИ <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style='display:none'></i></a>
 
     </div>
-    <div id='nav_tutorials' class='w3-bar-block w3-card-2' style="display:none;">   
+    <div id='nav_tutorials' class='w3-bar-block w3-card-2' style="display:none;">
       <span onclick='w3_close_nav("tutorials")' class='w3-button w3-xlarge w3-right' style="position:absolute;right:0;font-weight:bold;">&times;</span>
       <div class='w3-row-padding' style="padding:24px 48px">
         <div class='w3-col l3 m6'>
@@ -351,13 +350,13 @@
 <div class="w3-example">
 <h3>HTML Видео пример.  Взято из <a href="https://www.bigbuckbunny.org/" target="_blank">Big Buck Bunny</a>.</h3>
 <div class="w3-padding w3-white notranslate">
-  <div style="text-align:center"> 
+  <div style="text-align:center">
   <video id="video1" style="width:600px;max-width:100%;" controls>
     <source src="mov_bbb.mp4" type="video/mp4">
     <source src="mov_bbb.ogg" type="video/ogg">
     Ваш браузер не поддерживает HTML5 видео.
   </video>
-</div> 
+</div>
 </div>
 <a target="_blank" href="tryit420a.html?filename=tryhtml5_video" class="w3-btn w3-margin-bottom w3-margin-top">Попробуйте сами &raquo;</a>
 </div>
@@ -376,7 +375,7 @@
     <th style="width:16%;" class="bsEdge" title="Internet Explorer / Edge"></th>
     <th style="width:16%;" class="bsFirefox" title="Firefox"></th>
     <th style="width:16%;" class="bsSafari" title="Safari"></th>
-    <th style="width:16%;" class="bsOpera" title="Opera"></th>                
+    <th style="width:16%;" class="bsOpera" title="Opera"></th>
   </tr>
   <tr>
     <td style="text-align:left;">&lt;video&gt;</td>
@@ -502,38 +501,38 @@
 <div class="w3-example">
 <h3>Пример: использование JavaScript</h3>
   <br>
-  <div style="text-align:center;" class="w3-white w3-padding-16"> 
-  <button onclick="playPause()">Play/Pause</button> 
+  <div style="text-align:center;" class="w3-white w3-padding-16">
+  <button onclick="playPause()">Play/Pause</button>
   <button onclick="makeBig()">Big</button>
   <button onclick="makeSmall()">Small</button>
   <button onclick="makeNormal()">Normal</button>
-  <br><br> 
+  <br><br>
   <video id="video2" width="480" style="max-width:100%">
     <source src="mov_bbb.mp4" type="video/mp4">
     <source src="mov_bbb.ogg" type="video/ogg">
     Ваш браузер не поддерживает HTML5 видео.
   </video>
-<script> 
-var myVideo = document.getElementById("video2"); 
-function playPause() { 
-    if (myVideo.paused) 
-        myVideo.play(); 
-    else 
-        myVideo.pause(); 
-} 
+<script>
+var myVideo = document.getElementById("video2");
+function playPause() {
+    if (myVideo.paused)
+        myVideo.play();
+    else
+        myVideo.pause();
+}
 
 function makeBig() {
     myVideo.width = 600;
-} 
+}
 
-function makeSmall() { 
-    myVideo.width = 320; 
-} 
+function makeSmall() {
+    myVideo.width = 320;
+}
 
-function makeNormal() { 
+function makeNormal() {
     myVideo.width = 480;
-} 
-</script> 
+}
+</script>
 <p>Видео взято из <a href="https://www.bigbuckbunny.org/" target="_blank">Big Buck Bunny</a>.</p>
 </div>
 <a target="_blank" href="tryited54.html?filename=tryhtml5_video_js_prop" class="w3-btn w3-margin-bottom w3-margin-top">Попробуйте сами &raquo;</a>
@@ -561,7 +560,7 @@ function makeNormal() {
 </tr>
 </table>
 
-<br>
+<hr>
 <div class="w3-clear nextprev">
 <a class="w3-left w3-btn" href="html_media.html">&#10094; Prev</a>
 <a class="w3-right w3-btn" href="html5_audio.html">Next &#10095;</a>
@@ -601,7 +600,7 @@ function makeNormal() {
     <h4><a href="../howto/default.html" class="w3-hover-text-white">КАК СДЕЛАТЬ</a></h4>
   </div>
   <div class="w3-container w3-left-align w3-padding-16">
-    <a href="../howto/howto_js_tabs.html">Вкладки</a><br>    
+    <a href="../howto/howto_js_tabs.html">Вкладки</a><br>
     <a href="../howto/howto_css_dropdown.html">Выпадающее меню</a><br>
     <a href="../howto/howto_js_accordion.html">Меню аккордеон</a><br>
     <a href="../howto/howto_js_sidenav.html">Боковая навигация</a><br>

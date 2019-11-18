@@ -6,10 +6,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="Keywords" content="HTML,CSS,уроки,для начинающих,html5,css3,цвета,веб дизайн,цвет,hex,rgb">
-<meta name="Description" content="HTML Основы. Цвета для веб-дизайна. Как добавлять цвет для элементов на web-странице? Какие бывают цвета в Интернете? W3Schools на русском. Учебник для начинающих.">
+<meta name="Description" content="HTML Основы. Цвета для веб-дизайна. Как добавлять цвет для элементов на web-странице? Какие бывают цвета в Интернете? Безопасные веб-цвета. W3Schools на русском. Учебник для начинающих.">
 <link rel="icon" href="../favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="../w3css/4/w3.css">
-<link href='https://fonts.googleapis.com/css?family=Source%20Code%20Pro' rel='stylesheet'>
 </head>
 
 <body>
@@ -44,13 +43,13 @@
       <a class="w3-bar-item w3-button" href='../jquery/default.html' title='jQuery Tutorial'>JQUERY</a>
       <a class="w3-bar-item w3-button" href='../xml/default.html' title='XML Tutorial'>XML</a>
       <a class="w3-bar-item w3-button" id='topnavbtn_tutorials' href='javascript:void(0);' onclick='w3_open_nav("tutorials")' title='Tutorials'>БОЛЬШЕ <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style='display:none'></i></a>
-      <a href='javascript:void(0);' class='topnav-icons fa w3-right w3-bar-item w3-button' onclick='open_search(this)' title='Поиск на сайте'>&#xe802;</a>
+      <a href='javascript:void(0);' class='topnav-icons fa w3-right w3-bar-item w3-button' onclick='open_search(this)' title='Поиск на сайте'>&#128269;</a>
       <a class="w3-bar-item w3-button w3-right" target="_blank" href='https://drive.google.com/open?id=1fddM8chCC273SbiTEYVNLorbZ2qij7fp'>КНИГИ</a>
-      <a class="w3-bar-item w3-button w3-right" id='topnavbtn_exercises' href='javascript:void(0);' onclick='w3_open_nav("exercises")' title='Exercises'>УПРАЖНЕНИЯ <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style='display:none'></i></a>     
+      <a class="w3-bar-item w3-button w3-right" id='topnavbtn_exercises' href='javascript:void(0);' onclick='w3_open_nav("exercises")' title='Exercises'>УПРАЖНЕНИЯ <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style='display:none'></i></a>
       <a class="w3-bar-item w3-button w3-right" id='topnavbtn_references' href='javascript:void(0);' onclick='w3_open_nav("references")' title='References'>СПРАВОЧНИКИ <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style='display:none'></i></a>
 
     </div>
-    <div id='nav_tutorials' class='w3-bar-block w3-card-2' style="display:none;">   
+    <div id='nav_tutorials' class='w3-bar-block w3-card-2' style="display:none;">
       <span onclick='w3_close_nav("tutorials")' class='w3-button w3-xlarge w3-right' style="position:absolute;right:0;font-weight:bold;">&times;</span>
       <div class='w3-row-padding' style="padding:24px 48px">
         <div class='w3-col l3 m6'>
@@ -491,17 +490,17 @@
     <div class="w3-col m4 w3-container w3-center">
       <p>RED</p>
       <input onchange="changeRGB()" oninput="changeRGB()" type="range" id="slideRed" name="slideRed" value="255" min="0" max="255">
-      <div id="valRed2" xstyle="background-color:red;border-radius:5px;color:white;opacity:0.8">255</div>
+      <div id="valRed2" style="background-color:red;border-radius:5px;color:white;opacity:0.8">255</div>
     </div>
     <div class="w3-col m4 w3-container w3-center">
       <p>GREEN</p>
       <input onchange="changeRGB()" oninput="changeRGB()" type="range" id="slideGreen" name="slideGreen" value="125" min="0" max="255">
-      <div id="valGreen2" xstyle="background-color:#00ff00;border-radius:5px;opacity:0.8">0</div>
+      <div id="valGreen2" style="background-color:#00ff00;border-radius:5px;opacity:0.8">0</div>
     </div>
     <div class="w3-col m4 w3-container w3-center">
       <p>BLUE</p>
       <input onchange="changeRGB()" oninput="changeRGB()" type="range" id="slideBlue" name="slideBlue" value="125" min="0" max="255">
-      <div id="valBlue2" xstyle="background-color:blue;border-radius:5px;color:white;opacity:0.8">0</div>
+      <div id="valBlue2" style="background-color:blue;border-radius:5px;color:white;opacity:0.8">0</div>
     </div>
   </div>
 </div>
@@ -911,7 +910,7 @@ function changeAll() {
 }
 </script>
 
-<br>
+<hr>
 <div class="w3-clear nextprev">
 <a class="w3-left w3-btn" href="html_comments.html">&#10094; Prev</a>
 <a class="w3-right w3-btn" href="html_css.html">Next &#10095;</a>
@@ -953,7 +952,7 @@ s.setAttribute('data-timestamp', +new Date());
     <h4><a href="../howto/default.html" class="w3-hover-text-white">КАК СДЕЛАТЬ</a></h4>
   </div>
   <div class="w3-container w3-left-align w3-padding-16">
-    <a href="../howto/howto_js_tabs.html">Вкладки</a><br>    
+    <a href="../howto/howto_js_tabs.html">Вкладки</a><br>
     <a href="../howto/howto_css_dropdown.html">Выпадающее меню</a><br>
     <a href="../howto/howto_js_accordion.html">Меню аккордеон</a><br>
     <a href="../howto/howto_js_sidenav.html">Боковая навигация</a><br>
@@ -1107,8 +1106,8 @@ s.setAttribute('data-timestamp', +new Date());
 </div>
 <script src="../lib/w3schools_footer.js"></script>
 <!--[if lt IE 9]>
-<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<script src="../cdn/html5shiv/3.7.3/html5shiv.js"></script>
+<script src="../cdn/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
 </div>
 

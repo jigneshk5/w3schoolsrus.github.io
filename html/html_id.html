@@ -5,16 +5,15 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="Keywords" content="HTML,CSS,уроки,для начинающих,html5,css3,атрибут,идентификатор,id,веб,страница,w3schools,на русском">
-<meta name="Description" content="Атрибут id. Идентификатор. Основы HTML. Что такое атрибуты html-элементов? W3Schools на русском. Учебник для начинающих.">
+<meta name="Description" content="Атрибут id. Идентификатор. Основы HTML. Что такое атрибуты html-элементов? Как задать оригинальный стиль для одного элемента? W3Schools на русском. Учебник для начинающих.">
 <link rel="icon" href="../favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="../w3css/4/w3.css">
-<link href='https://fonts.googleapis.com/css?family=Source%20Code%20Pro' rel='stylesheet'>
 <style>
 #myHeader {
     background-color: lightblue;
     padding: 40px;
     text-align: center;
-} 
+}
 </style>
 </head>
 
@@ -52,11 +51,11 @@
       <a class="w3-bar-item w3-button" id='topnavbtn_tutorials' href='javascript:void(0);' onclick='w3_open_nav("tutorials")' title='Tutorials'>БОЛЬШЕ <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style='display:none'></i></a>
       <a href='javascript:void(0);' class='topnav-icons fa w3-right w3-bar-item w3-button' onclick='open_search(this)' title='Поиск на сайте'>&#128269;</a>
       <a class="w3-bar-item w3-button w3-right" target="_blank" href='https://drive.google.com/open?id=1fddM8chCC273SbiTEYVNLorbZ2qij7fp'>КНИГИ</a>
-      <a class="w3-bar-item w3-button w3-right" id='topnavbtn_exercises' href='javascript:void(0);' onclick='w3_open_nav("exercises")' title='Exercises'>УПРАЖНЕНИЯ <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style='display:none'></i></a>     
+      <a class="w3-bar-item w3-button w3-right" id='topnavbtn_exercises' href='javascript:void(0);' onclick='w3_open_nav("exercises")' title='Exercises'>УПРАЖНЕНИЯ <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style='display:none'></i></a>
       <a class="w3-bar-item w3-button w3-right" id='topnavbtn_references' href='javascript:void(0);' onclick='w3_open_nav("references")' title='References'>СПРАВОЧНИКИ <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style='display:none'></i></a>
 
     </div>
-    <div id='nav_tutorials' class='w3-bar-block w3-card-2' style="display:none;">   
+    <div id='nav_tutorials' class='w3-bar-block w3-card-2' style="display:none;">
       <span onclick='w3_close_nav("tutorials")' class='w3-button w3-xlarge w3-right' style="position:absolute;right:0;font-weight:bold;">&times;</span>
       <div class='w3-row-padding' style="padding:24px 48px">
         <div class='w3-col l3 m6'>
@@ -363,7 +362,7 @@
 <p>Используйте CSS для стилизации элемента с id "myHeader":</p>
 <div class="w3-code notranslate htmlHigh">
   &lt;style&gt;<br>
-  <strong>#myHeader</strong> {<br>&nbsp; background-color: lightblue;<br>&nbsp;&nbsp;color: black;<br>&nbsp;&nbsp;padding: 
+  <strong>#myHeader</strong> {<br>&nbsp; background-color: lightblue;<br>&nbsp;&nbsp;color: black;<br>&nbsp;&nbsp;padding:
   40px;<br>&nbsp;&nbsp;text-align: center;<br>} <br>&lt;/style&gt;<br>
   <br>&lt;h1 id=&quot;myHeader&quot;&gt;My Header&lt;/h1&gt;<br></div>
   <p>Результат:</p>
@@ -385,13 +384,13 @@
 <div class="w3-example">
 <h3>Пример</h3>
 <div class="w3-code notranslate htmlHigh">
-  &lt;style&gt;<br>/* Стиль элемента с id "myHeader" 
+  &lt;style&gt;<br>/* Стиль элемента с id "myHeader"
   */<br>
-  <strong>#myHeader</strong> {<br>&nbsp; background-color: lightblue;<br>&nbsp; 
-  color: black;<br>&nbsp;&nbsp;padding: 
+  <strong>#myHeader</strong> {<br>&nbsp; background-color: lightblue;<br>&nbsp;
+  color: black;<br>&nbsp;&nbsp;padding:
   40px;<br>&nbsp;&nbsp;text-align: center;<br>}<br><br>/* Стиль всех элементов с именем класса "city" */<br><strong>.city
   </strong>{<br>&nbsp; background-color: tomato;<br>&nbsp;&nbsp;color: white;<br>&nbsp;&nbsp;padding: 10px;<br>} <br>&lt;/style&gt;<br>
-  <br>&lt;!-- Уникальный элемент --&gt;<br>&lt;h1 id=&quot;myHeader&quot;&gt;My 
+  <br>&lt;!-- Уникальный элемент --&gt;<br>&lt;h1 id=&quot;myHeader&quot;&gt;My
   Cities&lt;/h1&gt;<br><br>&lt;!-- Несколько похожих элементов --&gt;<br>&lt;h2 class=&quot;city&quot;&gt;London&lt;/h2&gt;<br>&lt;p&gt;London is the capital of England.&lt;/p&gt;<br><br>
   &lt;h2 class=&quot;city&quot;&gt;Paris&lt;/h2&gt;<br>&lt;p&gt;Paris is the capital of France.&lt;/p&gt;<br><br>
   &lt;h2 class=&quot;city&quot;&gt;Tokyo&lt;/h2&gt;<br>&lt;p&gt;Tokyo is the capital of Japan.&lt;/p&gt;<br></div>
@@ -448,7 +447,7 @@
 <hr>
 <h2>HTML Упражнения</h2>
 <form autocomplete="off" id="w3-exerciseform" action="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_id1" method="post" target="_blank">
-<h2 class="heading">Проверьте себя с помощью упражнений</h2>
+<h2 class="shadow-black-1">Проверьте себя с помощью упражнений</h2>
 <div class="exercisewindow">
 <h2>Упражнение:</h2>
 <p>Добавьте корректный HTML-атрибут, чтобы сделать элемент H1 красным.</p>
@@ -521,7 +520,7 @@
     <h4><a href="../howto/default.html" class="w3-hover-text-white">КАК СДЕЛАТЬ</a></h4>
   </div>
   <div class="w3-container w3-left-align w3-padding-16">
-    <a href="../howto/howto_js_tabs.html">Вкладки</a><br>    
+    <a href="../howto/howto_js_tabs.html">Вкладки</a><br>
     <a href="../howto/howto_css_dropdown.html">Выпадающее меню</a><br>
     <a href="../howto/howto_js_accordion.html">Меню аккордеон</a><br>
     <a href="../howto/howto_js_sidenav.html">Боковая навигация</a><br>
@@ -675,8 +674,8 @@
 </div>
 <script src="../lib/w3schools_footer.js"></script>
 <!--[if lt IE 9]>
-<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<script src="../cdn/html5shiv/3.7.3/html5shiv.js"></script>
+<script src="../cdn/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
 </div>
 

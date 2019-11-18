@@ -5,10 +5,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="Keywords" content="HTML,CSS,уроки,для начинающих,html5,css3,макеты,тег,справочник,веб,страница,w3schools,на русском,учебник">
-<meta name="Description" content="HTML. Макеты веб-страниц. Какие бывают макеты web сайтов? Как их создавать? W3Schools на русском языке. Учебник для начинающих.">
+<meta name="Description" content="HTML. Макеты веб-страниц. Какие бывают макеты web сайтов? Как создавать макеты? W3Schools на русском языке. Учебник для начинающих.">
 <link rel="icon" href="../favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="../w3css/4/w3.css">
-<link href='https://fonts.googleapis.com/css?family=Source%20Code%20Pro' rel='stylesheet'>
 <style>
 /* Style the header */
 .header {
@@ -21,7 +20,6 @@
 .header h2{
     font-size: 50px;font-family: Arial, Helvetica, sans-serif;font-weight:bold;
 }
-
 /* Create two columns/boxes that floats next to each other */
 .nav {
     float: left;
@@ -30,7 +28,6 @@
     background: #ccc;
     padding: 20px;
 }
-
 /* Style the list inside the menu */
 .nav ul {
     list-style-type: none;
@@ -41,7 +38,6 @@
     box-shadow:none!important;
     color:blue;
 }
-
 .article {
     float: left;
     padding: 20px;
@@ -49,14 +45,12 @@
     background-color: #f1f1f1;
     height: 300px; /* only for demonstration, should be removed */
 }
-
 /* Clear floats after the columns */
 .section:after {
     content: "";
     display: table;
     clear: both;
 }
-
 /* Style the footer */
 .footer {
     background-color: #777;
@@ -64,7 +58,6 @@
     text-align: center;
     color: white;
 }
-
 /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
 @media (max-width: 600px) {
     .nav, .article {
@@ -74,7 +67,6 @@
         font-size:25px    }
 
 }
-
 /* Style the header */
 .header2 {
     background-color: #666;
@@ -86,13 +78,11 @@
 .header2 h2{
     font-size: 50px;font-family: Arial, Helvetica, sans-serif;font-weight:bold;
 }
-
 /* Container for flexboxes */
 .section2 {
     display: -webkit-flex;
     display: flex;
 }
-
 /* Create three equal columns that sits next to each other */
 .nav2{
     -webkit-flex: 1;
@@ -101,7 +91,6 @@
     background: #ccc;
     padding: 20px;
 }
-
 /* Style the list inside the menu */
 .nav2 ul {
     list-style-type: none;
@@ -112,7 +101,6 @@
     box-shadow:none!important;
     color:blue;
 }
-
 .article2 {
     -webkit-flex: 3;
     -ms-flex: 3;
@@ -120,7 +108,6 @@
     background-color: #f1f1f1;
     padding: 10px;
 }
-
 /* Style the footer */
 .footer2 {
     background-color: #777;
@@ -128,7 +115,6 @@
     text-align: center;
     color: white;
 }
-
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media (max-width: 600px) {
     .section2 {
@@ -136,7 +122,6 @@
       flex-direction: column;
     }
 }
-
 </style>
 </head>
 
@@ -174,11 +159,11 @@
       <a class="w3-bar-item w3-button" id='topnavbtn_tutorials' href='javascript:void(0);' onclick='w3_open_nav("tutorials")' title='Tutorials'>БОЛЬШЕ <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style='display:none'></i></a>
       <a href='javascript:void(0);' class='topnav-icons fa w3-right w3-bar-item w3-button' onclick='open_search(this)' title='Поиск на сайте'>&#128269;</a>
       <a class="w3-bar-item w3-button w3-right" target="_blank" href='https://drive.google.com/open?id=1fddM8chCC273SbiTEYVNLorbZ2qij7fp'>КНИГИ</a>
-      <a class="w3-bar-item w3-button w3-right" id='topnavbtn_exercises' href='javascript:void(0);' onclick='w3_open_nav("exercises")' title='Exercises'>УПРАЖНЕНИЯ <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style='display:none'></i></a>     
+      <a class="w3-bar-item w3-button w3-right" id='topnavbtn_exercises' href='javascript:void(0);' onclick='w3_open_nav("exercises")' title='Exercises'>УПРАЖНЕНИЯ <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style='display:none'></i></a>
       <a class="w3-bar-item w3-button w3-right" id='topnavbtn_references' href='javascript:void(0);' onclick='w3_open_nav("references")' title='References'>СПРАВОЧНИКИ <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style='display:none'></i></a>
 
     </div>
-    <div id='nav_tutorials' class='w3-bar-block w3-card-2' style="display:none;">   
+    <div id='nav_tutorials' class='w3-bar-block w3-card-2' style="display:none;">
       <span onclick='w3_close_nav("tutorials")' class='w3-button w3-xlarge w3-right' style="position:absolute;right:0;font-weight:bold;">&times;</span>
       <div class='w3-row-padding' style="padding:24px 48px">
         <div class='w3-col l3 m6'>
@@ -490,7 +475,7 @@
       <li><a href="javascript:void(0)">Tokyo</a></li>
     </ul>
   </nav>
-  
+
   <article class="article">
     <h2>London</h2>
     <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
@@ -498,7 +483,7 @@
   </article>
 </section>
 
-<footer class="footer"> 
+<footer class="footer">
   <p>Footer</p>
 </footer>
 </div>
@@ -588,7 +573,7 @@
       <li><a href="javascript:void(0)">Tokyo</a></li>
     </ul>
   </nav>
-  
+
   <article class="article">
     <h2>London</h2>
     <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
@@ -596,7 +581,7 @@
   </article>
 </section>
 
-<footer class="footer"> 
+<footer class="footer">
   <p>Footer</p>
 </footer>
 </div>
@@ -623,7 +608,7 @@
       <li><a href="#">Tokyo</a></li>
     </ul>
   </nav>
-  
+
   <article class="article2">
     <h2>London</h2>
     <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
@@ -644,7 +629,7 @@
 <p><strong>Недостатки:</strong> Не работает ни в IE, ни в Edge 15 и ранее.</p>
 <p>Узнайте больше о CSS-сетках в разделе <a href="../css/css_rwd_grid.html">CSS Grid. Вид сетки</a>.</p>
 
-<br>
+<hr>
 <div class="w3-clear nextprev">
 <a class="w3-left w3-btn" href="html_head.html">&#10094; Prev</a>
 <a class="w3-right w3-btn" href="html_responsive.html">Next &#10095;</a>
@@ -685,7 +670,7 @@
     <h4><a href="../howto/default.html" class="w3-hover-text-white">КАК СДЕЛАТЬ</a></h4>
   </div>
   <div class="w3-container w3-left-align w3-padding-16">
-    <a href="../howto/howto_js_tabs.html">Вкладки</a><br>    
+    <a href="../howto/howto_js_tabs.html">Вкладки</a><br>
     <a href="../howto/howto_css_dropdown.html">Выпадающее меню</a><br>
     <a href="../howto/howto_js_accordion.html">Меню аккордеон</a><br>
     <a href="../howto/howto_js_sidenav.html">Боковая навигация</a><br>
@@ -839,8 +824,8 @@
 </div>
 <script src="../lib/w3schools_footer.js"></script>
 <!--[if lt IE 9]>
-<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<script src="../cdn/html5shiv/3.7.3/html5shiv.js"></script>
+<script src="../cdn/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
 </div>
 

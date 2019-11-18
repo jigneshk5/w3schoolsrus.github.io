@@ -5,10 +5,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="Keywords" content="HTML,CSS,уроки,для начинающих,html5,css3,голова,раздел,head,тег,справочник,веб,страница,w3schools,на русском,учебник">
-<meta name="Description" content="HTML. Голова веб-страницы. Тег head. Что содержится в голове? Зачем нужны мета-теги? W3Schools на русском языке. Учебник для начинающих.">
+<meta name="Description" content="HTML. Голова веб-страницы. Тег head. Что содержится в голове? Зачем нужны мета-теги? Ключевые слова и описание на странице. Значение для SEO продвижения. W3Schools на русском языке. Учебник для начинающих.">
 <link rel="icon" href="../favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="../w3css/4/w3.css">
-<link href='https://fonts.googleapis.com/css?family=Source%20Code%20Pro' rel='stylesheet'>
+
 <body>
 <div id="mainContent">
 <div class='w3-container top'>
@@ -43,11 +43,11 @@
       <a class="w3-bar-item w3-button" id='topnavbtn_tutorials' href='javascript:void(0);' onclick='w3_open_nav("tutorials")' title='Tutorials'>БОЛЬШЕ <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style='display:none'></i></a>
       <a href='javascript:void(0);' class='topnav-icons fa w3-right w3-bar-item w3-button' onclick='open_search(this)' title='Поиск на сайте'>&#128269;</a>
       <a class="w3-bar-item w3-button w3-right" target="_blank" href='https://drive.google.com/open?id=1fddM8chCC273SbiTEYVNLorbZ2qij7fp'>КНИГИ</a>
-      <a class="w3-bar-item w3-button w3-right" id='topnavbtn_exercises' href='javascript:void(0);' onclick='w3_open_nav("exercises")' title='Exercises'>УПРАЖНЕНИЯ <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style='display:none'></i></a>     
+      <a class="w3-bar-item w3-button w3-right" id='topnavbtn_exercises' href='javascript:void(0);' onclick='w3_open_nav("exercises")' title='Exercises'>УПРАЖНЕНИЯ <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style='display:none'></i></a>
       <a class="w3-bar-item w3-button w3-right" id='topnavbtn_references' href='javascript:void(0);' onclick='w3_open_nav("references")' title='References'>СПРАВОЧНИКИ <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style='display:none'></i></a>
 
     </div>
-    <div id='nav_tutorials' class='w3-bar-block w3-card-2' style="display:none;">   
+    <div id='nav_tutorials' class='w3-bar-block w3-card-2' style="display:none;">
       <span onclick='w3_close_nav("tutorials")' class='w3-button w3-xlarge w3-right' style="position:absolute;right:0;font-weight:bold;">&times;</span>
       <div class='w3-row-padding' style="padding:24px 48px">
         <div class='w3-col l3 m6'>
@@ -347,19 +347,19 @@
 
 <h2>HTML элемент &lt;head&gt;</h2>
 <p>Элемент <code class="w3-codespan">&lt;head&gt;</code> является контейнером для метаданных (данных о данных) и помещается между тегом <code class="w3-codespan">&lt;html&gt;</code> и тегом <code class="w3-codespan">&lt;body&gt;</code>.</p>
-<p>Метаданные HTML - это данные о документе HTML. Метаданные не отображаются на самой веб-странице.</p>
+<p><strong>Метаданные HTML</strong> - это данные о документе HTML. Метаданные не отображаются на самой веб-странице.</p>
 <p>Метаданные обычно определяют заголовок документа (title), набор символов (utf-8), стили (css), скрипты (javascript) и другую метаинформацию.</p>
-<p>Следующие теги описывают метаданные: <code class="w3-codespan">&lt;title&gt;</code>, <code class="w3-codespan">&lt;style&gt;</code>, 
+<p>Следующие теги описывают метаданные: <code class="w3-codespan">&lt;title&gt;</code>, <code class="w3-codespan">&lt;style&gt;</code>,
 <code class="w3-codespan">&lt;meta&gt;</code>, <code class="w3-codespan">&lt;link&gt;</code>, <code class="w3-codespan">&lt;script&gt;</code> и <code class="w3-codespan">&lt;base&gt;</code>.</p>
 <hr>
 
 <h2>HTML элемент &lt;title&gt;</h2>
-<p>Элемент <code class="w3-codespan">&lt;title&gt;</code> определяет заголовок документа и является обязательным во всех документах HTML.</p>
+<p>Элемент <code class="w3-codespan">&lt;title&gt;</code> определяет заголовок документа и является обязательным во всех документах HTML (согласно спецификации HTML5).</p>
 <p>Элемент <code class="w3-codespan">&lt;title&gt;</code>:</p>
 <ul>
   <li>определяет заголовок на вкладке браузера</li>
   <li>предоставляет заголовок для страницы, когда она добавляется в избранное</li>
-  <li>отображает заголовок страницы в результатах поиска</li>
+  <li>отображает заголовок страницы в результатах поиска (имеет важное значение для поиска)</li>
 </ul>
 
 <p>Простой HTML-документ:</p>
@@ -369,7 +369,7 @@
 &lt;!DOCTYPE html&gt;<br>
 &lt;html&gt;<br><br>&lt;head&gt;<br>
 &nbsp;
-&lt;title&gt;Page 
+&lt;title&gt;Page
  Title&lt;/title&gt;<br>
  &lt;/head&gt;<br>
 <br>
@@ -414,7 +414,7 @@
 
 <h2>HTML элемент &lt;meta&gt;</h2>
 <p>Элемент <code class="w3-codespan">&lt;meta&gt;</code> используется, чтобы указать, какой набор символов используется, описание страницы, ключевые слова, кто автор и другие метаданные.</p>
-<p>Метаданные используются браузерами (как отображать контент), поисковыми системами (ключевые слова) и другими веб-сервисами.</p>
+<p>Метаданные используются браузерами (как отображать контент), поисковыми системами (ключевые слова, описание) и другими веб-сервисами.</p>
 
 <p>Определите используемый набор символов:</p>
 <div class="w3-example">
@@ -450,7 +450,7 @@
 <div class="w3-example">
 <h3>Пример</h3>
 <div class="w3-code notranslate htmlHigh">
- &lt;meta charset=&quot;UTF-8&quot;&gt;<br>&lt;meta name=&quot;description&quot; content=&quot;Free Web tutorials&quot;&gt;<br>&lt;meta name=&quot;keywords&quot; content=&quot;HTML,CSS,XML,JavaScript&quot;&gt;<br>&lt;meta name=&quot;author&quot; content=&quot;John 
+ &lt;meta charset=&quot;UTF-8&quot;&gt;<br>&lt;meta name=&quot;description&quot; content=&quot;Free Web tutorials&quot;&gt;<br>&lt;meta name=&quot;keywords&quot; content=&quot;HTML,CSS,XML,JavaScript&quot;&gt;<br>&lt;meta name=&quot;author&quot; content=&quot;John
   Doe&quot;&gt;<br></div>
 <a class="w3-btn w3-margin-bottom" href="tryit43c5.html?filename=tryhtml_head_meta" target="_blank">Попробуйте сами &raquo;</a>
 </div>
@@ -483,7 +483,7 @@
     <a target="_blank" href="example_withviewport.html"><img src="../css/img_viewport2.png" class="w3-hover-shadow viewport" alt="Пример использования метатега viewport"><br><br><b>Из метатегом viewport</b></a>
     <br>
     <br>
-  </div>  
+  </div>
 </div>
 <hr>
 
@@ -518,7 +518,7 @@
 
 <h2>Пренебрегать ли &lt;html&gt;, &lt;head&gt; и &lt;body&gt;?</h2>
 <p>Согласно стандарту HTML5, теги <code class="w3-codespan">&lt;html&gt;</code>, <code class="w3-codespan">&lt;body&gt;</code> и <code class="w3-codespan">&lt;head&gt;</code> можно опустить (не писать).</p>
-<p>Следующий код будет проверятся (валидным) как HTML5:</p>
+<p>Следующий код будет считаться валидным согласно спецификации HTML5 (проходить проверку на валидаторе):</p>
 <div class="w3-example">
 <h3>Пример</h3>
 <div class="w3-code notranslate htmlHigh">
@@ -573,7 +573,7 @@
   <p>Для получения полного списка всех доступных тегов HTML, посетите наш <a href="../tags/default.html">HTML Справочник тегов</a>.</p>
 </div>
 
-<br>
+<hr>
 <div class="w3-clear nextprev">
   <a class="w3-left w3-btn" href="html_filepaths.html">&#10094; Prev</a>
 <a class="w3-right w3-btn" href="html_layout.html">Next &#10095;</a>
@@ -614,7 +614,7 @@
     <h4><a href="../howto/default.html" class="w3-hover-text-white">КАК СДЕЛАТЬ</a></h4>
   </div>
   <div class="w3-container w3-left-align w3-padding-16">
-    <a href="../howto/howto_js_tabs.html">Вкладки</a><br>    
+    <a href="../howto/howto_js_tabs.html">Вкладки</a><br>
     <a href="../howto/howto_css_dropdown.html">Выпадающее меню</a><br>
     <a href="../howto/howto_js_accordion.html">Меню аккордеон</a><br>
     <a href="../howto/howto_js_sidenav.html">Боковая навигация</a><br>
@@ -768,8 +768,8 @@
 </div>
 <script src="../lib/w3schools_footer.js"></script>
 <!--[if lt IE 9]>
-<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<script src="../cdn/html5shiv/3.7.3/html5shiv.js"></script>
+<script src="../cdn/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
 </div>
 

@@ -8,7 +8,6 @@
 <meta name="Description" content="HTML Основы. Блочные и встроенные (строчные) элементы на веб-страницах. Как создать блочные и строчные элементы на веб-страницах? Теги div, span. W3Schools на русском. Учебник для начинающих">
 <link href="../favicon.ico" rel="icon" type="image/x-icon">
 <link href="../w3css/4/w3.css" rel="stylesheet">
-<link href='https://fonts.googleapis.com/css?family=Source%20Code%20Pro' rel='stylesheet'>
 <style>
 .mylist {
   float:left;
@@ -58,11 +57,11 @@
       <a class="w3-bar-item w3-button" id='topnavbtn_tutorials' href='javascript:void(0);' onclick='w3_open_nav("tutorials")' title='Tutorials'>БОЛЬШЕ <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style='display:none'></i></a>
       <a href='javascript:void(0);' class='topnav-icons fa w3-right w3-bar-item w3-button' onclick='open_search(this)' title='Поиск на сайте'>&#128269;</a>
       <a class="w3-bar-item w3-button w3-right" target="_blank" href='https://drive.google.com/open?id=1fddM8chCC273SbiTEYVNLorbZ2qij7fp'>КНИГИ</a>
-      <a class="w3-bar-item w3-button w3-right" id='topnavbtn_exercises' href='javascript:void(0);' onclick='w3_open_nav("exercises")' title='Exercises'>УПРАЖНЕНИЯ <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style='display:none'></i></a>     
+      <a class="w3-bar-item w3-button w3-right" id='topnavbtn_exercises' href='javascript:void(0);' onclick='w3_open_nav("exercises")' title='Exercises'>УПРАЖНЕНИЯ <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style='display:none'></i></a>
       <a class="w3-bar-item w3-button w3-right" id='topnavbtn_references' href='javascript:void(0);' onclick='w3_open_nav("references")' title='References'>СПРАВОЧНИКИ <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style='display:none'></i></a>
 
     </div>
-    <div id='nav_tutorials' class='w3-bar-block w3-card-2' style="display:none;">   
+    <div id='nav_tutorials' class='w3-bar-block w3-card-2' style="display:none;">
       <span onclick='w3_close_nav("tutorials")' class='w3-button w3-xlarge w3-right' style="position:absolute;right:0;font-weight:bold;">&times;</span>
       <div class='w3-row-padding' style="padding:24px 48px">
         <div class='w3-col l3 m6'>
@@ -242,7 +241,7 @@
 <div class='w3-sidebar w3-collapse' id='sidenav'>
   <div id='leftmenuinner'>
     <div class='w3-light-grey' id='leftmenuinnerinner'>
-<!--<a href='javascript:void(0)' onclick='close_menu()' class='w3-button w3-hide-large w3-large w3-display-topright' style='right:16px;padding:3px 12px;font-weight:bold;'>&times;</a>-->
+<a href='javascript:void(0)' onclick='close_menu()' class='w3-button w3-hide-large w3-large w3-display-topright' style='right:16px;padding:3px 12px;font-weight:bold;'>&times;</a>
 <h2 class="left"><span class="left_h2">HTML5</span> Учебник</h2>
 <a target="_top" href="default.html">HTML СТАРТ</a>
 <a target="_top" href="html_intro.html">HTML Введение</a>
@@ -360,11 +359,11 @@
 </div>
 <hr>
 <p class="intro">Каждый элемент HTML имеет отображаемое значение по умолчанию в зависимости от типа элемента.</p>
-<p class="intro">Два отображаемых значения: блочный и встроенный.</p>
+<p class="intro">Два отображаемых значения: блочный и встроенный (строчный).</p>
 
 <hr>
 <h2>Блочные элементы</h2>
-<p>Блочный элемент всегда начинается с новой строки и занимает всю доступную ширину (растягивается влево и вправо, насколько это возможно).</p>
+<p><strong>Блочный элемент</strong> всегда начинается с новой строки и занимает всю доступную ширину (растягивается влево и вправо, насколько это возможно).</p>
 <div class="w3-theme-border" style="border-width:1px;border-style:solid;padding:5px;">
 Элемент &lt;div&gt; - это блочный элемент.</div>
 <div class="w3-example">
@@ -374,7 +373,7 @@
 <a class="w3-btn w3-margin-bottom" href="tryit739b.html?filename=tryhtml_block_div" target="_blank">Попробуйте сами &raquo;</a>
 </div>
 
-<p>Блочные элементы в HTML:</p>
+<p><strong>Блочные элементы в HTML</strong>:</p>
 <div class="w3-row htmlHigh" style="line-height:25px;font-family:Consolas,'Courier New', Courier, monospace;font-size:16px;">
   <div class="mylist"><a href="../tags/tag_address.html">&lt;address&gt;</a></div>
   <div class="mylist"><a href="../tags/tag_article.html">&lt;article&gt;</a></div>
@@ -410,7 +409,7 @@
 <hr>
 
 <h2>Встроенные (строчные) элементы</h2>
-<p>Встроенный элемент не начинается с новой строки и занимает столько ширины, сколько необходимо.</p>
+<p><strong>Встроенный элемент</strong> не начинается с новой строки и занимает столько ширины, сколько необходимо.</p>
 <p>Это <span class="w3-theme-border" style="border-width:1px;border-style:solid;padding:5px">встроенный элемент &lt;span&gt; внутри</span> параграфа.</p>
 <div class="w3-example">
 <h3>Пример</h3>
@@ -419,7 +418,7 @@
 <a class="w3-btn w3-margin-bottom" href="tryitb8de.html?filename=tryhtml_inline_span" target="_blank">Попробуйте сами &raquo;</a>
 </div>
 
-<p>Встроенные элементы в HTML:</p>
+<p><strong>Встроенные элементы в HTML</strong>:</p>
 <div class="w3-row htmlHigh" style="line-height:25px;font-family:Consolas,'Courier New', Courier, monospace;font-size:16px;">
   <div class="mylist"><a href="../tags/tag_a.html">&lt;a&gt;</a></div>
   <div class="mylist"><a href="../tags/tag_abbr.html">&lt;abbr&gt;</a></div>
@@ -503,11 +502,12 @@
   <p>Для получения полного списка всех доступных HTML тегов, посетите наш <a href="../tags/default.html">HTML Справочник тегов</a>.</p>
 </div>
 
-<br>
+<hr>
 <div class="w3-clear nextprev">
 <a class="w3-left w3-btn" href="html_lists.html">&#10094; Prev</a>
 <a class="w3-right w3-btn" href="html_classes.html">Next &#10095;</a>
 </div>
+<hr>
 
 <!--Комментарии от Disqus-->
         <iframe class="predisqus" src="../pages/predisqus.html"></iframe>
@@ -543,7 +543,7 @@
     <h4><a href="../howto/default.html" class="w3-hover-text-white">КАК СДЕЛАТЬ</a></h4>
   </div>
   <div class="w3-container w3-left-align w3-padding-16">
-    <a href="../howto/howto_js_tabs.html">Вкладки</a><br>    
+    <a href="../howto/howto_js_tabs.html">Вкладки</a><br>
     <a href="../howto/howto_css_dropdown.html">Выпадающее меню</a><br>
     <a href="../howto/howto_js_accordion.html">Меню аккордеон</a><br>
     <a href="../howto/howto_js_sidenav.html">Боковая навигация</a><br>
@@ -697,8 +697,8 @@
 </div>
 <script src="../lib/w3schools_footer.js"></script>
 <!--[if lt IE 9]>
-<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<script src="../cdn/html5shiv/3.7.3/html5shiv.js"></script>
+<script src="../cdn/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
 </div>
 

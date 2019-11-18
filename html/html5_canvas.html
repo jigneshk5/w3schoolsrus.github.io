@@ -8,8 +8,7 @@
 <meta name="Description" content="HTML5 Canvas. Графика на сайте. Как добавить элементы canvas на веб-странице? W3Schools на русском языке. Учебник для начинающих">
 <link rel="icon" href="../favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="../w3css/4/w3.css">
-<link href='https://fonts.googleapis.com/css?family=Source%20Code%20Pro' rel='stylesheet'>
-<link rel="stylesheet" href="/browserref.css">
+<link rel="stylesheet" href="../browserref.css">
 </head>
 
 <body>
@@ -46,11 +45,11 @@
       <a class="w3-bar-item w3-button" id='topnavbtn_tutorials' href='javascript:void(0);' onclick='w3_open_nav("tutorials")' title='Tutorials'>БОЛЬШЕ <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style='display:none'></i></a>
       <a href='javascript:void(0);' class='topnav-icons fa w3-right w3-bar-item w3-button' onclick='open_search(this)' title='Поиск на сайте'>&#128269;</a>
       <a class="w3-bar-item w3-button w3-right" target="_blank" href='https://drive.google.com/open?id=1fddM8chCC273SbiTEYVNLorbZ2qij7fp'>КНИГИ</a>
-      <a class="w3-bar-item w3-button w3-right" id='topnavbtn_exercises' href='javascript:void(0);' onclick='w3_open_nav("exercises")' title='Exercises'>УПРАЖНЕНИЯ <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style='display:none'></i></a>     
+      <a class="w3-bar-item w3-button w3-right" id='topnavbtn_exercises' href='javascript:void(0);' onclick='w3_open_nav("exercises")' title='Exercises'>УПРАЖНЕНИЯ <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style='display:none'></i></a>
       <a class="w3-bar-item w3-button w3-right" id='topnavbtn_references' href='javascript:void(0);' onclick='w3_open_nav("references")' title='References'>СПРАВОЧНИКИ <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style='display:none'></i></a>
 
     </div>
-    <div id='nav_tutorials' class='w3-bar-block w3-card-2' style="display:none;">   
+    <div id='nav_tutorials' class='w3-bar-block w3-card-2' style="display:none;">
       <span onclick='w3_close_nav("tutorials")' class='w3-button w3-xlarge w3-right' style="position:absolute;right:0;font-weight:bold;">&times;</span>
       <div class='w3-row-padding' style="padding:24px 48px">
         <div class='w3-col l3 m6'>
@@ -367,13 +366,13 @@ if (canvOK==1)
  var ctx=c.getContext("2d");
  ctx.fillStyle="#FF0000";
  ctx.fillRect(20,20,100,50);
- 
+
  var grd=ctx.createLinearGradient(140,20,240,70);
     grd.addColorStop(0,"black");
     grd.addColorStop(1,"white");
     ctx.fillStyle=grd;
     ctx.fillRect(140,20,100,50);
-    
+
     var grd2=ctx.createLinearGradient(20,90,120,90);
     grd2.addColorStop(0,"black");
     grd2.addColorStop("0.3","magenta");
@@ -383,7 +382,7 @@ if (canvOK==1)
     grd2.addColorStop(1,"red");
     ctx.fillStyle=grd2;
     ctx.fillRect(20,90,100,50);
-    
+
     ctx.font="30px Verdana";
     var grd3=ctx.createLinearGradient(140,20,240,90);
     grd3.addColorStop(0,"black");
@@ -410,7 +409,7 @@ if (canvOK==1)
     <th style="width:16%;" class="bsEdge" title="Internet Explorer / Edge"></th>
     <th style="width:16%;" class="bsFirefox" title="Firefox"></th>
     <th style="width:16%;" class="bsSafari" title="Safari"></th>
-    <th style="width:16%;" class="bsOpera" title="Opera"></th>                
+    <th style="width:16%;" class="bsOpera" title="Opera"></th>
   </tr>
   <tr>
     <td style="text-align:left;">&lt;canvas&gt;</td>
@@ -441,7 +440,7 @@ if (canvOK==1)
 <h3>Пример</h3>
 <div class="w3-code notranslate htmlHigh">
 &lt;canvas id="myCanvas&quot; width="200" height="100"
-style=&quot;border:1px solid 
+style=&quot;border:1px solid
 #000000;&quot;&gt;<br>
 &lt;/canvas&gt;
 </div>
@@ -465,7 +464,7 @@ if (canvOK==1)
  ctx.lineTo(200,100);
  ctx.stroke();
  }
-</script> 
+</script>
 <div class="w3-example">
 <h3>Пример</h3>
 <div class="w3-code notranslate jsHigh">
@@ -492,7 +491,7 @@ if (canvOK==1)
  ctx.arc(95,50,40,0,2*Math.PI);
  ctx.stroke();
  }
-</script> 
+</script>
 <div class="w3-example">
 <h3>Пример</h3>
 <div class="w3-code notranslate jsHigh">
@@ -517,7 +516,7 @@ if (canvOK==1)
     ctx.font="30px Arial";
     ctx.fillText("Hello World",10,50);
  }
-</script> 
+</script>
 <div class="w3-example">
 <h3>Пример</h3>
  <div class="w3-code notranslate jsHigh">
@@ -542,7 +541,7 @@ if (canvOK==1)
     ctx.font="30px Arial";
     ctx.strokeText("Hello World",10,50);
  }
-</script> 
+</script>
 <div class="w3-example">
 <h3>Пример</h3>
 <div class="w3-code notranslate jsHigh">
@@ -572,7 +571,7 @@ if (canvOK==1)
     ctx.fillStyle = grd;
     ctx.fillRect(10,10,150,80);
  }
-</script> 
+</script>
 <div class="w3-example">
 <h3>Пример</h3>
  <div class="w3-code notranslate jsHigh">
@@ -611,7 +610,7 @@ if (canvOK==1)
     ctx.fillStyle = grd;
     ctx.fillRect(10,10,150,80);
  }
-</script> 
+</script>
 <div class="w3-example">
 <h3>Пример</h3>
  <div class="w3-code notranslate jsHigh">
@@ -643,7 +642,7 @@ if (canvOK==1)
 <h2>HTML Canvas Учебник</h2>
 <p>Чтобы узнать больше про HTML <code class="w3-codespan">&lt;canvas&gt;</code>, посетите полный <a href="../graphics/canvas_intro.html">HTML Canvas Учебник</a>.</p>
 
-<br>
+<hr>
 <div class="w3-clear nextprev">
 <a class="w3-left w3-btn" href="html5_syntax.html">&#10094; Prev</a>
 <a class="w3-right w3-btn" href="html5_svg.html">Next &#10095;</a>
@@ -683,7 +682,7 @@ if (canvOK==1)
     <h4><a href="../howto/default.html" class="w3-hover-text-white">КАК СДЕЛАТЬ</a></h4>
   </div>
   <div class="w3-container w3-left-align w3-padding-16">
-    <a href="../howto/howto_js_tabs.html">Вкладки</a><br>    
+    <a href="../howto/howto_js_tabs.html">Вкладки</a><br>
     <a href="../howto/howto_css_dropdown.html">Выпадающее меню</a><br>
     <a href="../howto/howto_js_accordion.html">Меню аккордеон</a><br>
     <a href="../howto/howto_js_sidenav.html">Боковая навигация</a><br>
