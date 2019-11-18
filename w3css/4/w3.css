@@ -176,7 +176,6 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-pale-green,.w3-hover-pale-green:hover{color:#000!important;background-color:#ddffdd!important}
 .w3-pale-yellow,.w3-hover-pale-yellow:hover{color:#000!important;background-color:#ffffcc!important}
 .w3-pale-blue,.w3-hover-pale-blue:hover{color:#000!important;background-color:#ddffff!important}
-
 .w3-text-amber,.w3-hover-text-amber:hover{color:#ffc107!important}
 .w3-text-aqua,.w3-hover-text-aqua:hover{color:#00ffff!important}
 .w3-text-blue,.w3-hover-text-blue:hover{color:#2196F3!important}
@@ -235,7 +234,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 /*start style external*/
 a:hover,a:active{color:#4CAF50}
 table.w3-table-all{margin:20px 0}
-/*НАСТРОЙКА TOP, TOPNAV, SIDENAV, MAIN, RIGHT и FOOTER:*/
+/*????????? TOP, TOPNAV, SIDENAV, MAIN, RIGHT, FOOTER:*/
 .top {
 position:relative;
 background-color:#ffffff;
@@ -246,23 +245,24 @@ overflow:hidden;
 z-index:2;
 }
 .w3schools-logo {
-font-family:fontawesome;
+font-family:Impact, sans-serif;
 text-decoration:none;
 line-height:1;
 -webkit-font-smoothing:antialiased;
 -moz-osx-font-smoothing:grayscale;
 font-size:36px;
 letter-spacing:3px;
-color:#555555;
+color:green;
 display:block;
 position:absolute;
 top:17px;
+text-shadow: 1px 1px .5px #000
 }
-.w3schools-logo {color:#4CAF50;font-family:Impact, sans-serif;text-shadow: 1px 1px .5px #000}
-.dotcom {color:#0048ff;font-family:arial black, sans-serif; font-size:.8em;}
+.w3schools-logo:hover {color:#32CD32; text-shadow: 1.2px 1.2px .5px #000}
+.dotcom {color:#0048ff;font-family:arial black, sans-serif; font-size:.8em;text-shadow: 1.1px 1.1px .5px #000}
+.dotcom:hover {color:red;text-shadow: 1.1px 1.1px 1px #000}
 
-
-
+/*??????? ?????????*/
 .topnav {
 position:relative;
 z-index:2;
@@ -429,6 +429,7 @@ background-color:#f1f1f1;
 .top {height:68px}
 .toptext {display:none}
 }
+
 @font-face {
 font-family:'fontawesome';
 src: url('../../lib/fonts/fontawesome8deb.eot?14663396');
@@ -439,6 +440,7 @@ url('../../lib/fonts/fontawesome8deb.svg?14663396#fontawesome') format('svg');
 font-weight:normal;
 font-style:normal;
 }
+
 .fa {
 display:inline-block;
 font:normal normal normal 14px/1 FontAwesome;
@@ -451,6 +453,7 @@ transform:translate(0, 0);
 .fa-2x {
  font-size:2em;
 }
+
 .fa-home:before {content:'\e800';}
 .fa-menu:before {content: '\f0c9';}
 .fa-globe:before {content:'\e801';}
@@ -464,6 +467,7 @@ transform:translate(0, 0);
 .fa-caret-down:before {content:'\e809';}
 .fa-caret-up:before {content:'\e80a';}
 .fa.fa-adjust:before { content: '\e80b'; }
+
 span.marked, span.deprecated {
  color:#e80000;
  background-color:transparent;
@@ -606,6 +610,7 @@ hr[id^="ez-insert-after-placeholder"] {margin-top: 0;}
 
 .box-shadow-black-1 {box-shadow: 1px 1px 5px 1px #000;} // Сдвиг x, сдвиг y, размытие, растяжение, цвет
 .box-shadow-black-2 {box-shadow: 2px 2px 5px 2px #000;}
+
 .box-shadow-white-1 {box-shadow: 1px 1px 5px 1px #fff;}
 
 .heading {text-shadow: 1px 1px .5px #000}
@@ -619,13 +624,5 @@ p {line-height: 1.4;}
 
 .videowrap {margin: 0 auto;}
 .videoblock {position: relative; padding-bottom: 65.25%; height: 0; overflow: hidden;}
-.videoblock iframe, object, embed {border: 0; position: absolute; top: 0; width: 100%; height: 95%;}
+.videoblock iframe, object, embed {border: 0; position: absolute; top: 0; width: 100%; height: 100%;}
 .video-title {font-size: 2em; text-align: center; color:#00008b;}
-
-.box-beige {background: #F5F5DC; padding: 1px 5px}
-.box-bisque {background: #FFE4C4; padding: 1px 5px}
-.box-gold {background: #FFD700; padding: 1px 5px}
-.box-lavender {background: #E6E6FA; padding: 1px 5px}
-.box-lightcyan {background: #E0FFFF; padding: 1px 5px}
-.box-moccasin {background: #FFE4B5; padding: 1px 5px}
-.box-pink {background: #FFC0CB; padding: 1px 5px}
