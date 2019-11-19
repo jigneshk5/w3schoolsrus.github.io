@@ -1,7 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en-US">
+
+<!-- Mirrored from www.w3schools.com/sql/func_msaccess_right.asp by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Sep 2019 08:42:23 GMT -->
 <head>
-<title>SQL Tutorial</title>
+<title>MS Access Right() Function</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="Keywords" content="HTML,CSS,JavaScript,SQL,PHP,jQuery,XML,DOM,Bootstrap,Python,Java,Web development,W3C,tutorials,programming,training,learning,quiz,primer,lessons,references,examples,exercises,source code,colors,demos,tips">
@@ -87,7 +90,7 @@ width:204px;
 position:fixed;
 top:0;
 padding-top:112px;
-padding-bottom:0;
+padding-bottom:0;    
 height:100%;
 width:220px;
 background-color:transparent;
@@ -184,7 +187,7 @@ box-shadow:0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 #sidenav h2 {font-size:26px;width:100%;}
 #sidenav a {padding:3px 2px 3px 24px;font-size:17px}
-#leftmenuinner {
+#leftmenuinner {  
 overflow:auto;
 -webkit-overflow-scrolling:touch;
 height:100%;
@@ -260,7 +263,7 @@ a.btnsmall:active,a.btnsmall:hover {color:#4CAF50;background-color:#ffffff}
 .csspropertycolor{color:red}
 .csspropertyvaluecolor{color:mediumblue}
 .cssdelimitercolor{color:black}
-.cssimportantcolor{color:red}
+.cssimportantcolor{color:red}  
 .jscolor{color:black}
 .jskeywordcolor{color:mediumblue}
 .jsstringcolor{color:brown}
@@ -281,16 +284,16 @@ a.btnsmall:active,a.btnsmall:hover {color:#4CAF50;background-color:#ffffff}
 .phpkeywordcolor{color:mediumblue}
 .phpglobalcolor{color:goldenrod}
 .phpstringcolor{color:brown}
-.phpnumbercolor{color:red}
+.phpnumbercolor{color:red}  
 .pythoncolor{color:black}
 .pythonkeywordcolor{color:mediumblue}
 .pythonstringcolor{color:brown}
-.pythonnumbercolor{color:red}
+.pythonnumbercolor{color:red}  
 .angularstatementcolor{color:red}
 .sqlcolor{color:black}
 .sqlkeywordcolor{color:mediumblue}
 .sqlstringcolor{color:brown}
-.sqlnumbercolor{color:}
+.sqlnumbercolor{color:} 
 .darktheme {background-color:rgb(40,44,52);color:white;}
 .darktheme .tagcolor{color:#88ccbb/*green2*/!important}
 .darktheme .tagnamecolor{color:#ff9999/*red*/!important}
@@ -375,14 +378,18 @@ ga('require', 'displayfeatures');
 ga('send', 'pageview');
 </script>
 
-<script src="../../snigelweb-com.videoplayerhub.com/videoloader.js" async></script>
-
 <script type='text/javascript'>
 var k42 = false;
 var googletag = googletag || {}; googletag.cmd = googletag.cmd || [];
 
-k42 = true;
-(adsbygoogle=window.adsbygoogle||[]).pauseAdRequests=1;
+(function() {
+  var gads = document.createElement('script');
+  gads.async = true;
+  gads.type = 'text/javascript';
+  gads.src = '../../www.googletagservices.com/tag/js/gpt.js';
+  var node = document.getElementsByTagName('script')[0];
+  node.parentNode.insertBefore(gads, node);
+})();
 
 var snhb = snhb || {}; snhb.queue = snhb.queue || [];
 snhb.options = {
@@ -394,22 +401,101 @@ snhb.options = {
                      }
                };
 
+// GPT slots
+var gptAdSlots = [];
+googletag.cmd.push(function() {
+  googletag.pubads().disableInitialLoad();               
+  googletag.pubads().enableSingleRequest();
+  var leaderMapping = googletag.sizeMapping().
+    // Mobile ad
+    addSize([0, 0], [320, 50]). 
+    // Vertical Tablet ad
+    addSize([480, 0], [468, 60]). 
+    // Horizontal Tablet
+    addSize([780, 0], [728, 90]).
+    // Small Desktop
+    addSize([993, 0], [468, 60]).
+    // Normal Desktop
+    addSize([1150, 0], [728, 90]).
+    // Large Desktop and bigger ad
+    addSize([1425, 0], [[728, 90], [970, 90]]).build();
+  gptAdSlots[0] = googletag.defineSlot('/16833175/MainLeaderboard', [[728, 90], [970, 90]], 'div-gpt-ad-1422003450156-2').
+    defineSizeMapping(leaderMapping).addService(googletag.pubads());
+  var skyMapping = googletag.sizeMapping().
+    // Mobile ad
+    addSize([0, 0], [320, 50]). 
+    // Tablet ad
+    addSize([975, 0], [120, 600]). 
+    // Desktop
+    addSize([1135, 0], [160, 600]).   
+    // Large Desktop
+    addSize([1675, 0], [[160, 600], [300, 600], [300, 1050]]).build();
+  gptAdSlots[1] = googletag.defineSlot('/16833175/WideSkyScraper', [[160, 600], [300, 600], [300, 1050]], 'div-gpt-ad-1422003450156-5').
+    defineSizeMapping(skyMapping).addService(googletag.pubads());
+  var stickyMapping = googletag.sizeMapping().
+    // Mobile ad
+    addSize([0, 0], []). 
+    // Tablet ad
+    addSize([975, 0], [120, 600]). 
+    // Desktop
+    addSize([1135, 0], [160, 600]).   
+    // Large Desktop
+    addSize([1675, 0], [[160, 600], [300, 600], [300, 250]]).build();
+  gptAdSlots[4] = googletag.defineSlot('/16833175/StickySkyScraper', [[300, 600], [120, 600], [300, 250], [160, 600]], 'div-gpt-ad-1472547360578-0').
+    defineSizeMapping(stickyMapping).addService(googletag.pubads());
+  var mcontMapping = googletag.sizeMapping().
+    // Mobile ad
+    addSize([0, 0], [[300, 250], [336, 280], [320, 50]]). 
+    // Vertical Tablet ad
+    addSize([490, 0], [[300, 250], [336, 280], [468, 60]]). 
+    // Horizontal Tablet
+    addSize([750, 0], [728, 90]).
+    // Small Desktop
+    addSize([993, 0], [[300, 250], [336, 280], [468, 60]]).
+    // Normal Desktop
+    addSize([1135, 0], [728, 90]).
+    // Large Desktop and bigger ad
+    addSize([1440, 0], [[728, 90], [970, 90], [970, 250]]).build();
+  gptAdSlots[5] = googletag.defineSlot('/16833175/MidContent', [[300, 250], [336, 280]], 'div-gpt-ad-1493883843099-0').
+    defineSizeMapping(mcontMapping).setCollapseEmptyDiv(true).addService(googletag.pubads());
+  var bmrMapping = googletag.sizeMapping().
+    // Smaller
+    addSize([0, 0], [[300, 250], [336, 280]]). 
+    // Large Desktop
+    addSize([1240, 0], [[300, 250], [336, 280], [970, 250]]).build();
+    gptAdSlots[2] = googletag.defineSlot('/16833175/BottomMediumRectangle', [[300, 250], [336, 280], [970, 250]], 'div-gpt-ad-1422003450156-0').
+    defineSizeMapping(bmrMapping).setCollapseEmptyDiv(true).addService(googletag.pubads());
+  var rbmrMapping = googletag.sizeMapping().
+    // Smaller
+    addSize([0, 0], []). 
+    // Large Desktop
+    addSize([975, 0], [[300, 250], [336, 280]]).build();
+  gptAdSlots[3] = googletag.defineSlot('/16833175/RightBottomMediumRectangle', [[300, 250], [336, 280]], 'div-gpt-ad-1422003450156-3').
+    defineSizeMapping(rbmrMapping).setCollapseEmptyDiv(true).addService(googletag.pubads());
+  googletag.pubads().setTargeting("content",(function () {
+    var folder = location.pathname;
+    folder = folder.replace("../index.html", "");
+    folder = folder.substr(0, folder.indexOf("../index.html"));
+    return folder;
+  })());
+});  
+
 </script>
 <script src="../../static.h-bid.com/sncmp/sncmp_stub.min.js" type="text/javascript"></script>
 <script>
-      window.__cmp('setLogo', "../images/w3schoolscom_gray.gif", function(result){
-             snhb.console.log("Logo set");
-        });
-      window.__cmp('setPrivacyPolicy', "../about/about_privacy.html", function(result){
-             snhb.console.log("Privacy policy URI set");
-        });
-      window.__cmp('enableBanner', null, function(result) {
-             snhb.console.log("Banner mode enabled");
-      });
-      __cmp('enablePopupDismissable', null, function(result) {});
-      window.__cmp('disableBannerPrivacyPolicyButton', null, function(result) {
-             snhb.console.log("Banner mode without privacy policy button enabled");
-      });
+			window.__cmp('setLogo', "../images/w3schoolscom_gray.gif", function(result){
+	       		snhb.console.log("Logo set");
+	    	});
+			window.__cmp('setPrivacyPolicy', "../about/about_privacy.html", function(result){
+	       		snhb.console.log("Privacy policy URI set");
+	    	});
+			window.__cmp('enableBanner', null, function(result) {
+	       		snhb.console.log("Banner mode enabled");
+			});
+			__cmp('enablePopupDismissable', null, function(result) {});
+			window.__cmp('disableBannerPrivacyPolicyButton', null, function(result) {
+	       		snhb.console.log("Banner mode without privacy policy button enabled");
+			});
       window.__cmp('setTranslationFiles', { path: '//www.w3schools.com/lib/', locales: ["en"] }, function(result) {});
       __cmp('setCSS', '../lib/cmp.css', function(result){} );
 </script>
@@ -417,7 +503,7 @@ snhb.options = {
 <script>
   snhb.queue.push(function(){
 
-    snhb.startAuction(["main_leaderboard", "wide_skyscraper", "bottom_medium_rectangle", "right_bottom_medium_rectangle"]);
+    snhb.addAdditionalAdSlotsToRefresh(gptAdSlots);
 
   });
 </script>
@@ -428,10 +514,10 @@ function fix_stickyad() {
   var elem = document.getElementById("stickyadcontainer");
   if (!elem) {return false;}
   if (document.getElementById("skyscraper")) {
-    var skyWidth = Number(w3_getStyleValue(document.getElementById("skyscraper"), "width").replace("px", ""));
+    var skyWidth = Number(w3_getStyleValue(document.getElementById("skyscraper"), "width").replace("px", ""));  
     }
   else {
-    var skyWidth = Number(w3_getStyleValue(document.getElementById("right"), "width").replace("px", ""));
+    var skyWidth = Number(w3_getStyleValue(document.getElementById("right"), "width").replace("px", ""));  
   }
   elem.style.width = skyWidth + "px";
   if (window.innerWidth <= 992) {
@@ -451,7 +537,7 @@ function fix_stickyad() {
 
     }
   } else {
-    if ((docTop + 60) - stickypos < 0) {
+    if ((docTop + 60) - stickypos < 0) {  
       elem.style.position = "";
       elem.style.top = stickypos + "px";
       stickyadstatus = "";
@@ -479,7 +565,8 @@ function w3_getStyleValue(elmnt,style) {
   }
 }
 </script>
-</head><body>
+</head>
+<body>
 <div class='w3-container top'>
   <a class='w3schools-logo notranslate' href='../index.html'>w3schools<span class='dotcom'>.com</span></a>
   <div class='w3-right w3-hide-small w3-wide toptext' style="font-family:'Segoe UI',Arial,sans-serif">THE WORLD'S LARGEST WEB DEVELOPER SITE</div>
@@ -528,7 +615,7 @@ function w3_getStyleValue(elmnt,style) {
           <a class="w3-bar-item w3-button" href='../graphics/svg_intro.html'>Learn SVG</a>
           <a class="w3-bar-item w3-button" href='../graphics/canvas_intro.html'>Learn Canvas</a>
           <a class="w3-bar-item w3-button" href='../howto/default.html'>Learn How To</a>
-          <a class="w3-bar-item w3-button" href='../sass/default.html'>Learn Sass</a>
+          <a class="w3-bar-item w3-button" href='../sass/default.html'>Learn Sass</a>          
           <div class="w3-hide-large w3-hide-small">
             <h3>XML</h3>
             <a class="w3-bar-item w3-button" href='../xml/default.html'>Learn XML</a>
@@ -562,7 +649,7 @@ function w3_getStyleValue(elmnt,style) {
           <a class="w3-bar-item w3-button" href='../php/default.html'>Learn PHP</a>
           <a class="w3-bar-item w3-button" href='../asp/default.html'>Learn ASP</a>
           <a class="w3-bar-item w3-button" href='../nodejs/default.html'>Learn Node.js</a>
-          <a class="w3-bar-item w3-button" href='../nodejs/nodejs_raspberrypi.html'>Learn Raspberry Pi</a>
+          <a class="w3-bar-item w3-button" href='../nodejs/nodejs_raspberrypi.html'>Learn Raspberry Pi</a>          
           <h3>Web Building</h3>
           <a class="w3-bar-item w3-button" href="../w3css/w3css_templates.html">Web Templates</a>
           <a class="w3-bar-item w3-button" href='../browsers/default.html'>Web Statistics</a>
@@ -1069,7 +1156,7 @@ function w3_getStyleValue(elmnt,style) {
   <a href="func_sqlserver_coalesce.html">COALESCE</a>
   <a href="func_sqlserver_convert.html">CONVERT</a>
   <a href="func_sqlserver_current_user.html">CURRENT_USER</a>
-  <a href="func_sqlserver_iif.html">IIF</a>
+  <a href="func_sqlserver_iif.html">IIF</a>  
   <a href="func_sqlserver_isnull.html">ISNULL</a>
   <a href="func_sqlserver_isnumeric.html">ISNUMERIC</a>
   <a href="func_sqlserver_nullif.html">NULLIF</a>
@@ -1173,123 +1260,84 @@ function w3_getStyleValue(elmnt,style) {
     <div class='w3-col l10 m12' id='main'>
       <div id='mainLeaderboard' style='overflow:hidden;'>
         <!-- MainLeaderboard-->
-
-        <!--<pre>main_leaderboard, all: [728,90][970,90][320,50][468,60]</pre>-->
-        <div id="snhb-main_leaderboard-0"></div>
-        <!-- adspace leaderboard -->
-
+        
+        <div id='div-gpt-ad-1422003450156-2'>
+          <script type='text/javascript'>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1422003450156-2'); });</script>
+        </div>
+       
       </div>
-<h1>SQL <span class="color_h1">Tutorial</span></h1>
-<div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="../default.html">&#10094; Home</a>
-<a class="w3-right w3-btn" href="sql_intro.html">Next &#10095;</a>
-</div>
-
-<div class="w3-panel w3-info intro">
-<p>SQL is a standard language for storing, manipulating and retrieving data
-in databases.</p>
-<p>Our SQL tutorial will teach you how to use SQL in:
-MySQL, SQL Server, MS Access, Oracle, Sybase, Informix, Postgres, and other database systems.</p>
-</div>
-<hr>
-
-<h2>Examples in Each Chapter</h2>
-<p>With our online SQL editor, you can edit the SQL statements, and click on a button to view the result.</p>
+<h1>MS Access <span class="color_h1">Right()</span> Function</h1>
+<p><a href="sql_ref_msaccess.html" class="w3-btn w3-white w3-border" title="MS Access Functions">&#10094; MS Access Functions</a></p>
 <div class="w3-example">
 <h3>Example</h3>
+<p>Extract 4 characters from a string (starting from right):</p>
 <div class="w3-code notranslate sqlHigh">
-SELECT * FROM Customers;
-</div>
-<a target="_blank" href="trysql786e.html?filename=trysql_select_all" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
-</div>
-<p>Click on the &quot;Try it Yourself&quot; button to see how it works.</p>
-<p><a href="sql_intro.html">Start learning SQL now!</a></p>
-<hr>
-
-<h2>SQL Exercises</h2>
-<form autocomplete="off" id="w3-exerciseform" action="https://www.w3schools.com/sql/exercise.asp?filename=exercise_select1" method="post" target="_blank">
-<h2>Test Yourself With Exercises</h2>
-<div class="exercisewindow">
-<h2>Exercise:</h2>
-<p>Insert the missing statement to get all the columns from the <code class="w3-codespan">Customers</code> table.</p>
-<div class="exerciseprecontainer">
-<pre>
-<input name="ex1" maxlength="6" style="width: 64px;"> * FROM Customers;
-</pre>
-</div>
-<br>
-<button type="submit" class="w3-btn w3-margin-bottom">Submit Answer &raquo;</button>
-<p><a target="_blank" href="exercise79a6.html?filename=exercise_select1">Start the Exercise</a></p>
-</div>
-</form>
-
-<hr>
-<div id="midcontentadcontainer" style="overflow:auto;text-align:center">
-<!-- MidContent -->
-
-  <!--<pre>mid_content, all: [300,250][336,280][728,90][970,250][970,90][320,50][468,60]</pre>-->
-  <div id="snhb-mid_content-0"></div>
-
+  SELECT 
+  Right("SQL Tutorial is cool", 4) AS ExtractString;</div>
+<a target="_blank" href="trysqle251.html?filename=trysql_func_ms_right&amp;ss=-1" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
 </div>
 <hr>
 
-<h2>SQL Examples</h2>
-<p>Learn by examples! This tutorial supplements all explanations with clarifying examples.</p>
-<p><a href="sql_examples.html" class="w3-button w3-light-grey">See All SQL Examples</a></p>
+<h2>Definition and Usage</h2>
+<p>The Right() function extracts a number of characters from a string (starting from 
+right).</p>
+<p><strong>Note:</strong> See also the <a href="func_msaccess_left.html">Left()</a> function.</p>
+
+<h2>Syntax</h2>
+<div class="w3-code w3-border notranslate">
+  Right(<em>string</em>, <em>number_of_chars</em>)</div>
+
+<h2>Parameter Values</h2>
+<table class="w3-table-all notranslate"> 
+  <tr>
+    <th style="width:23%">Parameter</th>
+    <th>Description</th>  </tr>  
+  <tr>
+    <td><em>string</em></td>
+    <td>Required. The string to extract from</td>
+  </tr>
+  <tr>
+    <td><em>number_of_chars</em></td>
+    <td>Required. The number of characters to extract. If this parameter is 
+    higher than the number of characters in <em>string</em>, 
+  this function will return the entire <em>string</em></td>
+  </tr>
+  </table>
+
+<h2>Technical Details</h2>
+<table class="w3-table-all">
+<tr>
+ <th style="width:23%">Works in:</th>
+  <td>From Access 2000</td>
+</tr>
+</table>
 <hr>
 
-<h2>SQL Quiz Test</h2>
-<p>Test your SQL skills at W3Schools!</p>
-<p><a href="sql_quiz.html" class="w3-blue w3-button">Start SQL Quiz!</a></p>
-<hr>
-
-<h2>SQL References</h2>
-<p>At W3Schools you will find a complete reference for keywords and function:</p>
-<p><a href="sql_ref_keywords.html">SQL Keyword Reference</a></p>
-<p><a href="sql_ref_mysql.html">MYSQL Functions</a></p>
-<p><a href="sql_ref_sqlserver.html">SQLServer Functions</a></p>
-<p><a href="sql_ref_msaccess.html">MS Access Functions</a></p>
-<p><a href="sql_quickref.html">SQL Quick Reference</a></p>
-<hr>
-
-<h2>SQL Data Types</h2>
-<p>Data types and ranges for Microsoft Access, MySQL and SQL Server.</p>
-<p><a href="sql_datatypes.html">SQL Data Types</a></p>
-<hr>
-
-<h2>SQL Exam - Get Your Diploma!</h2>
-<div class="w3-row">
-<div class="w3-third w3-container w3-padding-24"><a href="../cert/default.html"><img src="../images/w3certified_logo_250.png" style="max-width:100%;" alt="W3Schools Certification" /></a> </div>
-<div class="w3-twothird w3-container"><h2>W3Schools' Online Certification</h2>
-<p>The perfect solution for professionals who need to balance work, family, and career building.</p>
-<p>More than 25 000 certificates already issued!</p>
+<h2>More Examples</h2>
+<div class="w3-example">
+<h3>Example</h3>
+<p>Extract 5 characters from the text in the &quot;CustomerName&quot; column (starting from right):</p>
+<div class="w3-code notranslate sqlHigh">
+  SELECT Right(CustomerName, 5) AS ExtractString<br>FROM Customers;</div>
+<a target="_blank" href="trysqlc778.html?filename=trysql_func_ms_right2&amp;ss=-1" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
 </div>
-</div>
-<p><a class="w3-btn" href="../cert/default.html">Get Your Certificate &raquo;</a></p>
-<p style="clear:both;">The <a href="../cert/default.html">HTML Certificate</a> documents your knowledge of HTML.</p>
-<p>The <a href="../cert/default.html">CSS Certificate</a> documents your knowledge of advanced CSS.</p>
-<p>The <a href="../cert/default.html">JavaScript Certificate</a> documents your knowledge of JavaScript and HTML DOM.</p>
-<p>The <a href="../cert/default.html">Python Certificate</a> documents your knowledge of Python.</p>
-<p>The <a href="../cert/default.html">jQuery Certificate</a> documents your knowledge of jQuery.</p>
-<p>The <a href="../cert/default.html">SQL Certificate</a> documents your knowledge of SQL.</p>
-<p>The <a href="../cert/default.html">PHP Certificate</a> documents your knowledge of PHP and MySQL.</p>
-<p>The <a href="../cert/default.html">XML Certificate</a> documents your knowledge of XML, XML DOM and XSLT.</p>
-<p>The <a href="../cert/default.html">Bootstrap Certificate</a> documents your knowledge of the Bootstrap framework.</p>
-<br>
-<div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="../default.html">&#10094; Home</a>
-<a class="w3-right w3-btn" href="sql_intro.html">Next &#10095;</a>
-</div>
+<hr>
+
+<p><a href="sql_ref_msaccess.html" class="w3-btn w3-white w3-border" title="MS Access Functions">&#10094; MS Access Functions</a></p>
 </div>
 <div class="w3-col l2 m12" id="right">
 
 <div class="sidesection">
   <div id="skyscraper">
-
-    <!--<pre>wide_skyscraper, all: [160,600][300,600][320,50][120,600][300,1050]</pre>-->
-    <div id="snhb-wide_skyscraper-0"></div>
-    <!-- adspace wide-->
-
+  
+    <div id="div-gpt-ad-1422003450156-5">
+      <script>
+      googletag.cmd.push(function() {
+      googletag.display('div-gpt-ad-1422003450156-5');
+      });
+      </script> 
+    </div>
+  
   </div>
 </div>
 
@@ -1388,26 +1436,15 @@ Read More &raquo;</a>
 <div id="stickypos" class="sidesection" style="text-align:center;position:sticky;top:50px;">
   <div id="stickyadcontainer">
     <div style="position:relative;margin:auto;">
-
-      <!--<pre>sidebar_sticky, desktop: [120,600][160,600][300,600][300,250]</pre>-->
-      <div id="snhb-sidebar_sticky-0"></div>
-      <script>
-          if (Number(w3_getStyleValue(document.getElementById("main"), "height").replace("px", "")) > 2200) {
-            // adspace sticky
-            if (document.getElementById("snhb-mid_content-0")) {
-              snhb.queue.push(function(){  snhb.startAuction(["sidebar_sticky", "mid_content" ]); });
-            }
-            else {
-              snhb.queue.push(function(){  snhb.startAuction(["sidebar_sticky"]); });
-            }
-          }
-          else {
-              if (document.getElementById("snhb-mid_content-0")) {
-                snhb.queue.push(function(){  snhb.startAuction(["mid_content"]); });
-              }
-          }
-      </script>
-
+      
+        <script>
+        if (Number(w3_getStyleValue(document.getElementById("main"), "height").replace("px", "")) > 2200) {
+        document.write("<div id='div-gpt-ad-1472547360578-0'>");
+        googletag.cmd.push(function() { googletag.display('div-gpt-ad-1472547360578-0'); });
+        document.write("</div>");
+        }
+        </script>
+      
     </div>
   </div>
 </div>
@@ -1424,14 +1461,17 @@ Read More &raquo;</a>
 <hr>
 
 <div style="overflow:auto">
-  <div class="bottomad">
-    <!-- BottomMediumRectangle -->
-    <!--<pre>bottom_medium_rectangle, all: [970,250][300,250][336,280]</pre>-->
-    <div id="snhb-bottom_medium_rectangle-0" style="padding:0 10px 10px 0;float:left;width:auto;"></div>
-    <!-- adspace bmr -->
-    <!-- RightBottomMediumRectangle -->
-    <!--<pre>right_bottom_medium_rectangle, desktop: [300,250][336,280]</pre>-->
-    <div id="snhb-right_bottom_medium_rectangle-0" style="padding:0 10px 10px 0;float:left;width:auto;"></div>
+  <!-- BottomMediumRectangle -->
+  <div class="bottomad" id='div-gpt-ad-1422003450156-0'>
+    <script type='text/javascript'>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1422003450156-0'); });
+    </script>
+  </div>
+  <!-- RightBottomMediumRectangle -->
+  <div class="bottomad" id='div-gpt-ad-1422003450156-3'>
+    <script type='text/javascript'>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1422003450156-3'); });
+    </script>
   </div>
 </div>
 
@@ -1452,14 +1492,14 @@ Read More &raquo;</a>
 </div>
 <hr>
 <div class="w3-light-grey w3-padding w3-margin-bottom" id="err_form" style="display:none;position:relative">
-<span onclick="this.parentElement.style.display='none'" class="w3-button w3-display-topright w3-large">&times;</span>
+<span onclick="this.parentElement.style.display='none'" class="w3-button w3-display-topright w3-large">&times;</span>     
 <h2>Your Suggestion:</h2>
 <form>
-<div class="w3-section">
+<div class="w3-section">      
 <label for="err_email">Your E-mail:</label>
 <input class="w3-input w3-border" type="text" style="margin-top:5px;width:100%" id="err_email" name="err_email">
 </div>
-<div class="w3-section">
+<div class="w3-section">      
 <label for="err_email">Page address:</label>
 <input class="w3-input w3-border" type="text" style="width:100%;margin-top:5px" id="err_url" name="err_url" disabled="disabled">
 </div>
@@ -1467,14 +1507,14 @@ Read More &raquo;</a>
 <label for="err_email">Description:</label>
 <textarea rows="10" class="w3-input w3-border" id="err_desc" name="err_desc" style="width:100%;margin-top:5px;resize:vertical;"></textarea>
 </div>
-<div class="form-group">
+<div class="form-group">        
 <button type="button" class="w3-button w3-dark-grey" onclick="sendErr()">Submit</button>
 </div>
 <br>
 </form>
 </div>
 <div class="w3-container w3-light-grey w3-padding" id="err_sent" style="display:none;position:relative">
-<span onclick="this.parentElement.style.display='none'" class="w3-button w3-display-topright">&times;</span>
+<span onclick="this.parentElement.style.display='none'" class="w3-button w3-display-topright">&times;</span>     
 <h2>Thank You For Helping Us!</h2>
 <p>Your message has been sent to W3Schools.</p>
 </div>
@@ -1547,8 +1587,8 @@ Read More &raquo;</a>
 Get Certified &raquo;</a>
 
 </div>
-</div>
-</div>
+</div>        
+</div>        
 
 <hr>
 <div class="w3-center w3-small w3-opacity">
@@ -1569,7 +1609,9 @@ While using this site, you agree to have read and accepted our <a href="../about
 <script src="../../translate.google.com/translate_a/elementa0d8.html?cb=googleTranslateElementInit"></script>
 <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>  
 <![endif]-->
 </body>
+
+<!-- Mirrored from www.w3schools.com/sql/func_msaccess_right.asp by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Sep 2019 08:42:23 GMT -->
 </html>
