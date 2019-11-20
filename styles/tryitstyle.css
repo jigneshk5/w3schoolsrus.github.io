@@ -1,6 +1,7 @@
 * { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
 body {color: #000000; margin: 0px; font-size: 100%;}
-.trytopnav {height: 40px;overflow: hidden; min-width: 380px; position: absolute; width: 100%; top: 99px; background-color: #f1f1f1;}
+.trytopnav {height: 40px;overflow: hidden; min-width: 380px; position: absolute; width: 100%; top: 1px; background-color: #f1f1f1;}
+
 .trytopnav a {color: #999999;}
 .w3-bar .w3-bar-item:hover {color: #757575 !important;}
 a.w3schoolslink {padding: 0 !important;display: inline !important;}
@@ -8,7 +9,7 @@ a.w3schoolslink:hover, a.w3schoolslink:active {text-decoration: underline !impor
 #dragbar {position: absolute;cursor: col-resize; z-index: 3; padding: 5px;}
 #shield {display: none;top: 0;left: 0; width: 100%; position: absolute; height: 100%; z-index: 4;}
 #framesize span {font-family: Consolas, monospace;}
-#container {background-color: #f1f1f1; width: 100%; overflow: auto; position: absolute; top: 138px; bottom: 0; height: auto;}
+#container {background-color: #f1f1f1; width: 100%; overflow: auto; position: absolute; top: 40px; bottom: 0; height: auto;}
 #textareacontainer, #iframecontainer {float: left;height: 100%; width: 50%;}
 #textarea, #iframe {height: 100%; width: 100%; padding-bottom: 10px; padding-top: 1px;}
 #textarea {padding-left: 10px; padding-right: 5px;}
@@ -30,11 +31,11 @@ a.w3schoolslink:hover, a.w3schoolslink:active {text-decoration: underline !impor
 #container.horizontal {min-height: 200px;margin-left: 0;}
 #tryitLeaderboard {overflow: hidden;text-align: center;margin-top: 5px;height: 90px;}
 .w3-dropdown-content {width: 350px}
-@media screen and (max-width: 727px) {.trytopnav {top: 70px;}
-#container {top: 108px;}
+@media screen and (max-width: 727px) {.trytopnav {top: 1px;}
+#container {top: 40px;}
 }
-@media screen and (max-width: 467px) {.trytopnav {top: 60px;}
-#container {top: 98px;}
+@media screen and (max-width: 467px) {.trytopnav {top: 1px;}
+#container {top: 40px;}
 .w3-dropdown-content {width: 100%}
 }
 @media only screen and (max-width: 768px) {
