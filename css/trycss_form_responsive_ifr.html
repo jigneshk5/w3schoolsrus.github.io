@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<html>
-
-<!-- Mirrored from www.w3schools.com/css/trycss_form_responsive_ifr.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Sep 2019 08:49:57 GMT -->
+<html lang="ru">
 <head>
+  <title>Пример адаптивной формы. Использование HTML и CSS</title>
 <style>
 * {
   box-sizing: border-box;
@@ -53,14 +52,14 @@ input[type=submit]:hover {
   margin-top: 6px;
 }
 
-/* Clear floats after the columns */
+/* Очистить float после столбцов */
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+/* Адаптивный макет - когда ширина экрана составляет менее 600 пикселей, две колонки должны быть расположены друг над другом, а не рядом друг с другом. */
 @media (max-width: 600px) {
   .col-25, .col-75, input[type=submit] {
     width: 100%;
@@ -74,38 +73,38 @@ input[type=submit]:hover {
 <div class="container">
   <div class="row">
     <div class="col-25">
-    <label for="fname">First Name</label>
+    <label for="fname">Имя</label>
     </div>
     <div class="col-75">
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    <input type="text" id="fname" name="firstname" placeholder="Ваше имя..">
     </div>
   </div>
   <div class="row">
     <div class="col-25">
-    <label for="lname">Last Name</label>
+    <label for="lname">Фамилия</label>
     </div>
     <div class="col-75">
-    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    <input type="text" id="lname" name="lastname" placeholder="Ваша фамилия..">
     </div>
   </div>
   <div class="row">
     <div class="col-25">
-    <label for="country">Country</label>
+    <label for="country">Страна</label>
     </div>
     <div class="col-75">
     <select id="country" name="country">
-      <option value="australia">Australia</option>
-      <option value="canada">Canada</option>
-      <option value="usa">USA</option>
+      <option value="australia">Австралия</option>
+      <option value="canada">Канада</option>
+      <option value="usa">США</option>
     </select>
     </div>
   </div>
   <div class="row">
     <div class="col-25">
-    <label for="subject">Subject</label>
+    <label for="subject">Тема</label>
     </div>
     <div class="col-75">
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    <textarea id="subject" name="subject" placeholder="Напиши что-нибудь.." style="height:200px"></textarea>
     </div>
   </div>
   <div class="row">
@@ -114,6 +113,4 @@ input[type=submit]:hover {
 </div>
 
 </body>
-
-<!-- Mirrored from www.w3schools.com/css/trycss_form_responsive_ifr.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Sep 2019 08:49:57 GMT -->
 </html>
