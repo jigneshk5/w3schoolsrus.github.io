@@ -347,7 +347,20 @@
 </div>
 <hr>
 
-<h2>Что такое HTML?</h2>
+<div class="sum">
+<h4>В этой теме:</h4>
+<ul>
+  <li><a href="#c1"><em>Что такое HTML?</em></a></li>
+  <li><a href="#c2"><em>HTML теги</em></a></li>
+  <li><a href="#c3"><em>Веб-браузеры</em></a></li>
+  <li><a href="#c4"><em>Структура html-страницы</em></a></li>
+  <li><a href="#c5"><em>Объявление &lt;!DOCTYPE&gt;</em></a></li>
+  <li><a href="#c6"><em>HTML Версии</em></a></li>
+</ul>
+</div>
+<hr>
+
+<h2 id="c1">Что такое HTML?</h2>
 <p><strong>HTML</strong> является стандартным языком разметки для создания веб-страниц.</p>
 <ul>
   <li><strong>HTML</strong> означает <em>Hyper Text Markup Language</em> (язык гипертекстовой разметки)
@@ -364,9 +377,9 @@
 <h3>Пример</h3>
 <div class="w3-code notranslate htmlHigh">
  &lt;!DOCTYPE html&gt;<br>
-&lt;html&gt;<br>&lt;head&gt;<br>&lt;title&gt;Page Title&lt;/title&gt;<br>
+&lt;html&gt;<br>&lt;head&gt;<br>&lt;title&gt;Название страницы&lt;/title&gt;<br>
  &lt;/head&gt;<br>
-&lt;body&gt;<br><br>&lt;h1&gt;My First Heading&lt;/h1&gt;<br>&lt;p&gt;My first paragraph.&lt;/p&gt;<br><br>
+&lt;body&gt;<br><br>&lt;h1&gt;Мой первый заголовок&lt;/h1&gt;<br>&lt;p&gt;Мой первый параграф.&lt;/p&gt;<br><br>
     &lt;/body&gt;<br>&lt;/html&gt;
 </div>
 <a target="_blank" href="tryit6a1d.html?filename=tryhtml_intro" class="w3-btn w3-margin-bottom">Попробуйте сами &raquo;</a>
@@ -383,13 +396,13 @@
 </ul>
 <hr>
 
-<h2>HTML Теги</h2>
+<h2 id="c2">HTML Теги</h2>
 <p><strong>HTML-теги</strong> - это названия элементов, окружённые угловыми скобками:</p>
 <div class="w3-panel w3-light-grey w3-border">
 <p class="w3-xlarge">&lt;название тега&gt;Здесь идёт содержание...&lt;/название тега&gt;</p>
 </div>
 <ul>
-<li>Теги <strong>HTML</strong> обычно идут <b>парами</b>, например, <code>&lt;p&gt;</code> и <code>&lt;/p&gt;</code>
+<li>Теги <strong>HTML</strong> обычно идут <b>парами</b>, например, <code class="w3-codespan">&lt;p&gt;</code> и <code class="w3-codespan">&lt;/p&gt;</code>
 <li>Первым тегом в паре есть <b>начальный тег</b>, второй - <b>конечный тег</b>
 <li>Конечный тег записывается как начальный тег, но перед названием тега вставляется косая черта ( / слэш)
 </ul>
@@ -398,12 +411,12 @@
 </div>
 <hr>
 
-<h2>Web Браузеры</h2>
-<p>Целью веб-браузера (Chrome, Firefox, Opera, Internet Explorer, Safari) является чтение документов <em>HTML</em> и их отображение. Браузер не отображает теги <em>HTML</em>, но использует их, чтобы определить, как отобразить веб-страницу:</p>
+<h2 id="c3">Web Браузеры</h2>
+      <p>Целью веб-браузера (<a href="https://www.google.com/intl/uk/chrome/" target="_blank" rel="nofollow">Chrome</a>, <a href="https://www.mozilla.org/uk/firefox/new/" target="_blank" rel="nofollow">Firefox</a>, <a href="https://www.opera.com/ru" target="_blank" rel="nofollow">Opera</a>, <a href="https://uk.wikipedia.org/wiki/Internet_Explorer" target="_blank" rel="nofollow">Internet Explorer</a>, <a href="https://uk.wikipedia.org/wiki/Safari" target="_blank" rel="nofollow">Safari</a>) является чтение документов <em>HTML</em> и их отображение. Браузер не отображает теги <em>HTML</em>, но использует их, чтобы определить, как отобразить веб-страницу:</p>
 <p><img alt="Вид в браузере" src="img_chrome.png" class="w3-image"></p>
 <hr>
 
-<h2>HTML Структура страницы</h2>
+<h2 id="c4">HTML Структура страницы</h2>
 <p>Ниже приведена визуализация структуры <em>HTML-страницы</em>:</p>
 <div style="width:99%;border:1px solid grey;padding:3px;margin:0;background-color:#FFCC66">&lt;html&gt;
 <div style="width:90%;border:1px solid grey;padding:3px;margin:20px;background-color:#CCCC66">&lt;head&gt;
@@ -426,7 +439,7 @@
 </div>
 <hr>
 
-<h2>Объявление &lt;!DOCTYPE&gt;</h2>
+<h2 id="c5">Объявление &lt;!DOCTYPE&gt;</h2>
 <p>Объявление <code class="w3-codespan">&lt;!DOCTYPE&gt;</code> представляет собой определение типа документа и помогает браузерам правильно отображать веб-страницы. Оно должно появляться только один раз в верхней части страницы (перед любыми тегами <em>HTML</em>).</p>
 <p>Объявление <code class="w3-codespan">&lt;!DOCTYPE&gt;</code> не чувствительно к регистру.</p>
 <p>Объявление <code class="w3-codespan">&lt;!DOCTYPE&gt;</code> для <strong>HTML5</strong> выглядит так:</p>
@@ -436,7 +449,7 @@
 </div>
 <hr>
 
-<h2>HTML Версии</h2>
+<h2 id="c6">HTML Версии</h2>
 <p>С первых дней существования Интернета было много версий <em>HTML</em>:</p>
 <table class="w3-table-all notranslate">
   <tr>
@@ -466,6 +479,18 @@
   <tr>
     <td>HTML5</td>
     <td>2014</td>
+  </tr>
+  <tr>
+    <td>HTML5.1</td>
+    <td>2015</td>
+  </tr>
+  <tr>
+    <td>HTML5.2</td>
+    <td>2016</td>
+  </tr>
+  <tr>
+    <td>HTML5.3</td>
+    <td>2017</td>
   </tr>
 </table>
 

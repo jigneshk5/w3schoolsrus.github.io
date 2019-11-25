@@ -345,10 +345,33 @@
 <a class="w3-right w3-btn" href="html_headings.html">Next &#10095;</a>
 </div>
 <hr>
-<p class="intro">Атрибуты предоставляют дополнительную информацию об элементах HTML.</p>
+
+<div class="sum">
+  <h4>В этой теме:</h4>
+  <ul>
+    <li><a href="#c1"><em>HTML атрибуты</em></a>
+      <ul>
+      <li><a href="#c2"><em>Атрибут href</em></a></li>
+      <li><a href="#c3"><em>Атрибут src</em></a></li>
+      <li><a href="#c4"><em>Атрибуты width и height</em></a></li>
+      <li><a href="#c5"><em>Атрибут alt</em></a></li>
+      <li><a href="#c6"><em>Атрибут style</em></a></li>
+      <li><a href="#c7"><em>Атрибут lang</em></a></li>
+      <li><a href="#c8"><em>Атрибут title</em></a></li>
+      </ul>
+    </li>
+    <li><a href="#c9"><em>Атрибуты в нижнем регистре</em></a></li>
+    <li><a href="#c10"><em>Значения атрибутов в кавычках</em></a></li>
+    <li><a href="#c11"><em>Одинарные или двойные кавычки</em></a></li>
+    <li><a href="#c12"><em>HTML упражнения</em></a></li>
+  </ul>
+</div>
 <hr>
 
-<h2>HTML Атрибуты</h2>
+<p class="intro"><strong>Атрибуты</strong> предоставляют дополнительную информацию об элементах HTML.</p>
+<hr>
+
+<h2 id="c1">HTML Атрибуты</h2>
 <ul>
   <li>Все элементы HTML могут иметь <b>атрибуты</b></li>
   <li>Атрибуты предоставляют <b>дополнительную информацию</b> об элементе</li>
@@ -356,18 +379,18 @@
   <li>Атрибуты обычно входят в пары имя/значение, например: <b>имя=&quot;значение&quot;</b></li>
 </ul>
 <hr>
-<h2>Атрибут href</h2>
+<h2 id="c2">Атрибут href</h2>
 <p>HTML ссылки определяются с помощью тега <code class="w3-codespan">&lt;a&gt;</code>. Адрес ссылки указывается в атрибуте <code class="w3-codespan">href</code>:</p>
 <div class="w3-example">
 <h3>Пример</h3>
 <div class="w3-code notranslate htmlHigh">
-&lt;a href=&quot;https://www.w3schools.com&quot;&gt;This is a link&lt;/a&gt;
+&lt;a href=&quot;https://www.w3schools.com&quot;&gt;Это ссылка&lt;/a&gt;
 </div>
 <a target="_blank" href="tryit9089.html?filename=tryhtml_attributes_link" class="w3-btn w3-margin-bottom">Попробуйте сами &raquo;</a>
 </div>
 <p>Подробнее о ссылках и теге <code class="w3-codespan">&lt;a&gt;</code> можно узнать в следующих разделах этого учебника.</p>
 <hr>
-<h2>Атрибут src</h2>
+<h2 id="c3">Атрибут src</h2>
 <p>HTML изображения определяются с помощью тега <code class="w3-codespan">&lt;img&gt;</code>.</p>
 <p>Имя файла источника изображения указывается в атрибуте <code class="w3-codespan">src</code>:</p>
 <div class="w3-example">
@@ -378,7 +401,7 @@
 <a class="w3-btn w3-margin-bottom" href="tryit3511.html?filename=tryhtml_attributes_img_src" target="_blank">Попробуйте сами &raquo;</a>
 </div>
 <hr>
-<h2>Атрибуты width (ширина) и height (высота)</h2>
+<h2 id="c4">Атрибуты width (ширина) и height (высота)</h2>
 <p>&nbsp;HTML изображения также имеют атрибуты <code class="w3-codespan">width</code> (ширина) и <code class="w3-codespan">height</code> (высота), которые определяют ширину и высоту изображения:</p>
 <div class="w3-example">
 <h3>Пример</h3>
@@ -391,14 +414,13 @@
 <p>Подробнее об изображениях вы узнаете в главе <a href="html_images.html">HTML Изображения</a>.</p>
 <hr>
 
-<h2>Атрибут alt</h2>
+<h2 id="c5">Атрибут alt</h2>
 <p>Атрибут <code class="w3-codespan">alt</code> указывает альтернативный текст, который будет использоваться, если изображение не может быть отображено.</p>
 <p>Значение атрибута <code class="w3-codespan">alt</code> может быть прочитано программами чтения с экрана (скринридерами). Таким образом, можно &quot;прослушивать&quot; веб-страницы, например, человек с нарушениями зрения может &quot;слышать&quot; элемент, т.е. будет знать, что изображено на картинке.</p>
 <div class="w3-example">
 <h3>Пример</h3>
 <div class="w3-code notranslate htmlHigh">
- &lt;img src=&quot;img_girl.jpg&quot; alt=&quot;Girl
-  with a jacket&quot;&gt;
+ &lt;img src=&quot;img_girl.jpg&quot; alt=&quot;Девушка с жакетом&quot;&gt;
 </div>
 <a class="w3-btn w3-margin-bottom" href="tryit0248.html?filename=tryhtml_attributes_alt" target="_blank">Попробуйте сами &raquo;</a>
 </div>
@@ -410,19 +432,18 @@
 <h3>Пример</h3>
 <p>Посмотрите, что произойдет, если мы попытаемся отобразить изображение, которое не существует:</p>
 <div class="w3-code notranslate htmlHigh">
- &lt;img src=&quot;img_typo.jpg&quot; alt=&quot;Girl
-  with a jacket&quot;&gt;
+ &lt;img src=&quot;img_typo.jpg&quot; alt=&quot;Девушка с жакетом&quot;&gt;
 </div>
 <a class="w3-btn w3-margin-bottom" href="tryitc66c.html?filename=tryhtml_attributes_alt_error" target="_blank">Попробуйте сами &raquo;</a>
 </div>
 <hr>
 
-<h2>Атрибут style</h2>
+<h2 id="c6">Атрибут style</h2>
 <p>Атрибут <code class="w3-codespan">style</code> используется для указания стиля элемента, такого как цвет, шрифт, размер и т.д.</p>
 <div class="w3-example">
 <h3>Пример</h3>
   <div class="w3-code notranslate htmlHigh">
-&lt;p style=&quot;color:red&quot;&gt;This is a paragraph.&lt;/p&gt;
+&lt;p style=&quot;color:red&quot;&gt;Это параграф.&lt;/p&gt;
   </div>
   <a class="w3-btn w3-margin-bottom" href="tryitace5.html?filename=tryhtml_attributes_style" target="_blank">Попробуйте сами &raquo;</a>
 </div>
@@ -431,7 +452,7 @@
 </div>
 <hr>
 
-<h2>Атрибут lang</h2>
+<h2 id="c7">Атрибут lang</h2>
 <p>Язык документа может быть объявлен в теге <code class="w3-codespan">&lt;html&gt;</code>.</p>
 <p>Язык объявляется с помощью атрибута <code class="w3-codespan">lang</code>.</p>
 <p>Объявление языка важно для приложений с расширенными возможностями (средства чтения с экрана) и поисковых систем:</p>
@@ -444,18 +465,18 @@
 <p>Первые две буквы указывают на язык (en). Если есть диалект, добавьте еще две буквы (US, т.е. США).</p>
 <hr>
 
-<h2>Атрибут title</h2>
+<h2 id="c8">Атрибут title</h2>
 <p>Здесь атрибут <code class="w3-codespan">title</code> добавляется к элементу <code class="w3-codespan">&lt;p&gt;</code>. Значение атрибута title будет отображаться в виде всплывающей подсказки при наведении мыши на абзац (параграф):</p>
 <div class="w3-example">
 <h3>Пример</h3>
 <div class="w3-code notranslate htmlHigh">
- &lt;p title="I'm a tooltip"&gt;<br>This is a paragraph.<br>&lt;/p&gt;
+ &lt;p title="Я всплывающая подсказка"&gt;<br>Это параграф.<br>&lt;/p&gt;
 </div>
 <a class="w3-btn w3-margin-bottom" href="tryitf524.html?filename=tryhtml_attributes_title" target="_blank">Попробуйте сами &raquo;</a>
 </div>
 <hr>
 
-<h2>Использовать строчные атрибуты (в нижнем регистре)</h2>
+<h2 id="c9">Использовать строчные атрибуты (в нижнем регистре)</h2>
 <p>Стандарт HTML5 не требует строчных имен атрибутов.</p>
 <p>Атрибут title может быть написан в верхнем или нижнем регистре, например <strong>title</strong> или <strong>TITLE</strong>.</p>
 <p>W3C <strong>рекомендует</strong> использовать нижний регистр в HTML и <strong>требует</strong> нижний регистр для более строгих типов документов, таких как XHTML.</p>
@@ -464,7 +485,7 @@
 </div>
 <hr>
 
-<h2>Мы предлагаем: значения атрибутов брать в кавычки</h2>
+<h2 id="c10">Мы предлагаем: значения атрибутов брать в кавычки</h2>
 <p>Стандарт HTML5 не требует кавычек вокруг значений атрибутов.</p>
 <p>Атрибут <code class="w3-codespan">href</code>, показанный выше, <em>можно</em> писать без кавычек:</p>
 
@@ -503,7 +524,7 @@
 </div>
 <hr>
 
-<h2>Одинарные или двойные кавычки?</h2>
+<h2 id="c11">Одинарные или двойные кавычки?</h2>
 <p>Двойные кавычки вокруг значений атрибутов являются наиболее распространенными в HTML, но также можно использовать и одинарные кавычки.</p>
 <p>В некоторых ситуациях, когда само значение атрибута содержит двойные кавычки, необходимо использовать одинарные кавычки:</p>
 <div class="w3-example">
@@ -532,7 +553,7 @@
   <li>В W3Schools всегда значения атрибутов в <strong>кавычках</strong></li>
 </ul>
 <hr>
-<h2>HTML Упражнения</h2>
+<h2 id="c12">HTML Упражнения</h2>
 <form autocomplete="off" id="w3-exerciseform" action="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_attributes1" method="post" target="_blank">
 <h2 class="heading">Проверьте себя с помощью упражнений</h2>
 <div class="exercisewindow">
