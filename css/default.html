@@ -4,11 +4,12 @@
 <title>CSS Учебник. Уроки для начинающих. W3Schools на русском</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="Keywords" content="HTML,CSS,w3c,w3schools,на русском,уроки,для начинающих,курс,основы,язык,стили,стилизация,элементы,справочники,css3,примеры,упражнения,код">
-<meta name="Description" content="Хорошо организованные уроки по CSS для начинающих веб-разработчиков, примеры кода. Как создать сайт. W3Schools на русском">
+<meta name="keywords" content="HTML,CSS,w3c,w3schools,на русском,уроки,для начинающих,курс,основы,язык,стили,стилизация,элементы,справочники,css3,примеры,упражнения,код">
+<meta name="description" content="Хорошо организованные уроки по CSS для начинающих веб-разработчиков, примеры кода. Как создать сайт. W3Schools на русском">
 <link rel="icon" href="../favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="../w3css/4/w3.css">
 <link href='https://fonts.googleapis.com/css?family=Source%20Code%20Pro' rel='stylesheet'>
+</head>
 
 <body>
 <div id="mainContent">
@@ -236,11 +237,11 @@
 <a target="_top" href="css_selectors.html">CSS Селекторы</a>
 <a target="_top" href="css_howto.html">CSS Как подключить</a>
 <a target="_top" href="css_colors.html">CSS Цвета</a>
-<a target="_top" href="css_background.html">CSS Фоны</a>
-<a target="_top" href="css_border.html">CSS Границы</a>
-<a target="_top" href="css_margin.html">CSS Поля</a>
-<a target="_top" href="css_padding.html">CSS Отступы</a>
-<a target="_top" href="css_dimension.html">CSS Высота/Ширина</a>
+<a target="_top" href="css_background.html">CSS background-color</a>
+<a target="_top" href="css_border.html">CSS border</a>
+<a target="_top" href="css_margin.html">CSS margin</a>
+<a target="_top" href="css_padding.html">CSS padding</a>
+<a target="_top" href="css_dimension.html">CSS height/width</a>
 <a target="_top" href="css_boxmodel.html">CSS Блочная модель</a>
 <a target="_top" href="css_outline.html">CSS Контур</a>
 <a target="_top" href="css_text.html">CSS Текст</a>
@@ -249,27 +250,27 @@
 <a target="_top" href="css_link.html">CSS Ссылки</a>
 <a target="_top" href="css_list.html">CSS Списки</a>
 <a target="_top" href="css_table.html">CSS Таблицы</a>
-<a target="_top" href="css_display_visibility.html">CSS Дисплей</a>
-<a target="_top" href="css_max-width.html">CSS Максимальная ширина</a>
-<a target="_top" href="css_positioning.html">CSS Позиция</a>
-<a target="_top" href="css_overflow.html">CSS Переполнение</a>
-<a target="_top" href="css_float.html">CSS Обтекание</a>
-<a target="_top" href="css_inline-block.html">CSS Встроенный блок</a>
+<a target="_top" href="css_display_visibility.html">CSS display</a>
+<a target="_top" href="css_max-width.html">CSS max-width</a>
+<a target="_top" href="css_positioning.html">CSS position</a>
+<a target="_top" href="css_overflow.html">CSS overflow</a>
+<a target="_top" href="css_float.html">CSS float/clear</a>
+<a target="_top" href="css_inline-block.html">CSS inline-block</a>
 <a target="_top" href="css_align.html">CSS Выравнивание</a>
 <a target="_top" href="css_combinators.html">CSS Комбинаторы</a>
-<a target="_top" href="css_pseudo_classes.html">CSS Псевдо-класс</a>
-<a target="_top" href="css_pseudo_elements.html">CSS Псевдо-элемент</a>
-<a target="_top" href="css_image_transparency.html">CSS Прозрачность</a>
+<a target="_top" href="css_pseudo_classes.html">CSS Псевдо-классы</a>
+<a target="_top" href="css_pseudo_elements.html">CSS Псевдо-элементы</a>
+<a target="_top" href="css_image_transparency.html">CSS opacity/transparency</a>
 <a target="_top" href="css_navbar.html">CSS Панель навигации</a>
 <a target="_top" href="css_dropdowns.html">CSS Выпадающие списки</a>
-<a target="_top" href="css_image_gallery.html">CSS Галлерея изображений</a>
+<a target="_top" href="css_image_gallery.html">CSS Галерея изображений</a>
 <a target="_top" href="css_image_sprites.html">CSS Спрайты изображений</a>
-<a target="_top" href="css_attribute_selectors.html">CSS Атрибуты селекторов</a>
+<a target="_top" href="css_attribute_selectors.html">CSS Селекторы атрибутов</a>
 <a target="_top" href="css_form.html">CSS Формы</a>
 <a target="_top" href="css_counters.html">CSS Счётчики</a>
 <a target="_top" href="css_website_layout.html">CSS Макет веб-сайта</a>
-<a target="_top" href="css_units.html">CSS Единицы измерения</a>
-<a target="_top" href="css_specificity.html">CSS Особенности</a>
+<a target="_top" href="css_units.html">CSS Единицы</a>
+<a target="_top" href="css_specificity.html">CSS Специфичности</a>
 <br>
 <h2 class="left"><span class="left_h2">CSS Продвинутый</span></h2>
 <a target="_top" href="css3_borders.html">CSS Закругленные углы</a>
@@ -351,10 +352,11 @@
 </div>
 <hr>
 <p><strong>CSS</strong> (англ. <em>Cascading Style Sheets</em>, рус. <em>Каскадные таблицы стилей</em>) — специальный язык, который используется для описания внешнего вида страниц, написанных языками разметки данных.</p>
-<p>Наиболее часто CSS используют для визуальной презентации страниц, написанных на <strong>HTML</strong> и <strong>XHTML</strong>, но формат <strong>CSS</strong> может применяться к другим видам XML-документов.</p>
-<p>Спецификации <strong>CSS</strong> были созданы и развиваются <em><a href="https://uk.wikipedia.org/wiki/W3C" target="_blank" rel="nofollow" title="W3C - World Wide Web Consortium">Консорциумом Всемирной паутины</a></em>.</p>
+<p>Наиболее часто CSS используют для визуальной презентации страниц, написанных на <strong>HTML</strong> и <strong>XHTML</strong>, но формат <strong>CSS</strong> может применяться и к другим видам XML-документов.</p>
+<p>Спецификации <strong>CSS</strong> были созданы и развиваются <em><a href="https://uk.wikipedia.org/wiki/W3C" target="_blank" rel="nofollow" title="W3C - World Wide Web Consortium">Консорциумом Всемирной паутины</a></em> - W3C.</p>
 <p><strong>CSS</strong> имеет разные уровни и профили. Следующий уровень <strong>CSS</strong> создаётся на основе предыдущих, добавляя новую функциональность или расширяя уже существующие функции. Уровни обозначаются как <strong>CSS1</strong>, <strong>CSS2</strong> и <strong>CSS3</strong>. Профили — совокупность правил <strong>CSS</strong> одного или больше уровней, созданные для отдельных типов устройств или интерфейсов. Например, существуют профили <strong>CSS</strong> для принтеров, мобильных устройств и т.д.</p>
 <p><strong>CSS</strong> (каскадная или блочная вёрстка) пришла на замену табличной верстке веб-страниц. Главное преимущество блочной вёрстки — разделение содержания страницы (данных) и её визуальной презентации (оформления).</p>
+<p>По состоянию на 2020-й год актуальной версией является спецификация <strong>CSS3</strong>. Спецификация <strong>CSS4</strong> разрабатывается ещё с 2011 года. Модули <strong>CSS4</strong> построены на основе CSS3 и дополняют их новыми свойствами и значениями. Все они существуют пока в виде черновиков (working draft) и на данный момент официально не утверждены.</p>
 <p class="w3-right"><em>Информация взята из <a href="https://ru.wikipedia.org/wiki/CSS" title="Читать про CSS на Википедии" target="_blank" rel="nofollow">Википедии</a></em></p>
 <br><br>
 <hr>
@@ -456,7 +458,7 @@ font-family: verdana;<br>
 <script>
 var disqus_config = function () {
 this.page.url = w3schoolsrus.github.io; // канонический URL страницы
-this.page.identifier = w3schoolsrus.github.io / html / html_default.html; // уникальный идентификатор страницы
+this.page.identifier = w3schoolsrus.github.io / css / default.html; // уникальный идентификатор страницы
 };
 (function() { // Не редактировать ниже этой линии
 var d = document, s = d.createElement('script');
