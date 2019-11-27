@@ -362,74 +362,47 @@
     <div class='w3-col l10 m12' id='main'>
 <a href="index.html"><img src="../svg/css3.svg" alt="CSS3. Уроки для начинающих" class="w3-left w3-padding" title="CSS3 для начинающих" width="100"></a>
 
-<h1>CSS <span class="color_h1">Counters</span></h1>
+<h1>CSS <span class="color_h1">Счётчики</span></h1>
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="css_form.html">&#10094; Previous</a>
+<a class="w3-left w3-btn" href="css_form.html">&#10094; Prev</a>
 <a class="w3-right w3-btn" href="css_website_layout.html">Next &#10095;</a>
 </div>
 <hr>
 <div class="w3-dark-grey">
 <div class="container w3-content w3-green" style="max-width:500px">
-  <h3>Pizza</h3>
-  <h3>Hamburger</h3>
-  <h3>Hotdogs</h3>
+  <h3>Пицца</h3>
+  <h3>Гамбургер</h3>
+  <h3>Хотдоги</h3>
 </div>
 </div>
 
-<p class="intro">CSS counters are &quot;variables&quot; maintained by CSS whose values can 
-be incremented by CSS rules (to track how many times they are used). Counters 
-let you adjust the appearance of content based on its placement in the document.</p>
-
+<p class="intro"><strong>CSS счётчики</strong> - это &quot;переменные&quot;, поддерживаемые CSS, значения которых можно увеличивать с помощью правил CSS (чтобы отслеживать, сколько раз они используются). Счетчики позволяют настраивать внешний вид контента в зависимости от его размещения в документе.</p>
 <hr>
 
-<h2>Automatic Numbering With Counters</h2>
-<p>CSS counters are like &quot;variables&quot;. The variable values can be incremented by CSS rules 
-(which will 
-track how many times they are used).</p>
-<p>To work with CSS counters we will use the following properties:</p>
+<h2>Автоматическая нумерация с помощью счётчиков</h2>
+<p>CSS счётчики похожи на &quot;переменные&quot;. Значения переменных могут быть увеличены с помощью правил CSS (которые будут отслеживать, сколько раз они используются).</p>
+<p>Для работы со счетчиками CSS мы будем использовать следующие свойства:</p>
 <ul>
-<li><code class="w3-codespan">counter-reset</code> - Creates or resets a counter</li>
-<li><code class="w3-codespan">counter-increment</code> - Increments a counter value</li>
-<li><code class="w3-codespan">content</code> - Inserts generated 
-content</li>
-<li><code class="w3-codespan">counter()</code> or <code class="w3-codespan">counters()</code> function - Adds the 
-value of a counter to an element</li>
+<li><code class="w3-codespan">counter-reset</code> - создает или сбрасывает счетчик</li>
+<li><code class="w3-codespan">counter-increment</code> - увеличивает значение счетчика</li>
+<li><code class="w3-codespan">content</code> - вставляет сгенерированный контент</li>
+<li><code class="w3-codespan">counter()</code> или <code class="w3-codespan">counters()</code> функция - добавляет значение счетчика к элементу</li>
 </ul>
-<p>To use a CSS counter, it must first be created with <code class="w3-codespan">counter-reset</code>.</p>
-<p>The following example creates a counter for the page (in the body selector), 
-then increments the counter value for each &lt;h2&gt; element and adds &quot;Section &lt;<em>value of the counter</em>&gt;:&quot; 
-to the beginning of each &lt;h2&gt; element:</p>
+<p>Чтобы использовать счетчик CSS, его необходимо сначала создать с помощью <code class="w3-codespan">counter-reset</code>.</p>
+<p>В следующем примере создается счетчик для страницы (в селекторе body), затем увеличивается значение счетчика для каждого элемента &lt;h2&gt; и добавляется &quot;Section &lt;<em>значение счётчика</em>&gt;:&quot; в начало каждого элемента &lt;h2&gt;:</p>
 <div class="w3-example">
-<h3>Example</h3>
+<h3>Пример</h3>
 <div class="w3-code notranslate cssHigh">
 body {<br>&nbsp;&nbsp;counter-reset: section;<br>}<br><br>h2::before {<br>&nbsp; counter-increment: section;<br>&nbsp;&nbsp;content: &quot;Section &quot; counter(section) &quot;: &quot;;<br>}
 </div>
-<a target="_blank" href="tryit5a5e.html?filename=trycss_counters1" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
-</div>
-
-<hr>
-<div id="midcontentadcontainer" style="overflow:auto;text-align:center">
-<!-- MidContent -->
-
-  <div id='div-gpt-ad-1493883843099-0' style="display: inline-block">
-    <script>
-    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1493883843099-0'); });
-    </script>
-  </div>
-    
+<a target="_blank" href="tryit5a5e.html?filename=trycss_counters1" class="w3-btn w3-margin-bottom">Попробуйте сами &raquo;</a>
 </div>
 <hr>
 
-<h2>Nesting Counters</h2>
-
-<p>The following example creates one counter for the page (section) and one 
-counter for each &lt;h1&gt; element (subsection). The &quot;section&quot; counter will be 
-counted for each &lt;h1&gt; element with &quot;Section &lt;<em>value of the 
-section counter</em>&gt;.&quot;, and the &quot;subsection&quot; counter will be counted 
-for each &lt;h2&gt; element with &quot;&lt;<em>value of the section counter</em>&gt;.&lt;<em>value of the 
-subsection counter</em>&gt;&quot;:</p>
+<h2>Вложенные счётчики</h2>
+<p>В следующем примере создается один счетчик для страницы (section) и один счетчик для каждого элемента &lt;h1&gt; (subsection). Счётчик &quot;section&quot; будет  подсчитываться для каждого элемента &lt;h1&gt; с помощью &quot;Section &lt;<em>значения счётчика section</em>&gt;.&quot;, а счётчик &quot;subsection&quot; будет подсчитываться для каждого элемента &lt;h2&gt; с помощью &quot;&lt;<em>значения счётчика section</em>&gt;.&lt;<em>значение счётчика subsection</em>&gt;&quot;:</p>
 <div class="w3-example">
-<h3>Example</h3>
+<h3>Пример</h3>
 <div class="w3-code notranslate cssHigh">
 body {<br>&nbsp;&nbsp;counter-reset: section;<br>}<br><br>h1 {<br>&nbsp; 
 counter-reset: subsection;<br>}<br><br>h1::before {<br>&nbsp; counter-increment: 
@@ -437,45 +410,42 @@ section;<br>&nbsp; content: &quot;Section &quot; counter(section) &quot;. &quot;
 }<br><br>h2::before {<br>&nbsp; 
 counter-increment: subsection;<br>&nbsp; content: 
 counter(section) &quot;.&quot; counter(subsection) &quot; &quot;;<br>} </div>
-<a target="_blank" href="tryitcfd4.html?filename=trycss_counters2" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
+<a target="_blank" href="tryitcfd4.html?filename=trycss_counters2" class="w3-btn w3-margin-bottom">Попробуйте сами &raquo;</a>
 </div>
-<p>A counter can also be useful to make outlined lists because a new 
-instance of a counter is automatically created in child elements. Here we use the 
-<code class="w3-codespan">counters()</code> function to insert a string between different levels of nested 
-counters:</p>
+<p>Счетчик также может быть полезен для составления списков, поскольку в дочерних элементах автоматически создается новый экземпляр счетчика. Здесь мы используем функцию <code class="w3-codespan">counters()</code> для вставки строки между различными уровнями вложенных счетчиков:</p>
 
 <div class="w3-example">
-<h3>Example</h3>
+<h3>Пример</h3>
 <div class="w3-code notranslate cssHigh">
 ol {<br>&nbsp; counter-reset: section;<br>&nbsp; 
 list-style-type: none;<br>}<br><br>
 li::before {<br>&nbsp; counter-increment: section;<br>&nbsp; 
 content: counters(section,&quot;.&quot;) &quot; &quot;;<br>} </div>
-<a target="_blank" href="tryitbd19.html?filename=trycss_counters3" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
+<a target="_blank" href="tryitbd19.html?filename=trycss_counters3" class="w3-btn w3-margin-bottom">Попробуйте сами &raquo;</a>
 </div>
 <hr>
 
-<h2>&nbsp;CSS Counter Properties</h2>
+<h2>&nbsp;Свойства CSS счётчика</h2>
 <table class="w3-table-all notranslate">
   <tr>
-    <th style="width:20%">Property</th>
-    <th>Description</th>
+    <th style="width:20%">Свойство</th>
+    <th>Описание</th>
   </tr>
   <tr>
     <td><a href="../cssref/pr_gen_content.html">content</a></td>
-    <td>Used with the ::before and ::after pseudo-elements, to insert generated content</td>
+    <td>Используется с псевдоэлементами ::before и ::after для вставки сгенерированного контента</td>
   </tr>
   <tr>
     <td><a href="../cssref/pr_gen_counter-increment.html">counter-increment</a></td>
-    <td>Increments one or more counter values</td>
+    <td>Увеличивает одно или несколько значений счетчика</td>
   </tr>
   <tr>
     <td><a href="../cssref/pr_gen_counter-reset.html">counter-reset</a></td>
-    <td>Creates or resets one or more counters</td>
+    <td>Создает или сбрасывает один или несколько счетчиков</td>
   </tr>
 </table>
 
-<br>
+<hr>
 <div class="w3-clear nextprev">
 <a class="w3-left w3-btn" href="css_form.html">&#10094; Prev</a>
 <a class="w3-right w3-btn" href="css_website_layout.html">Next &#10095;</a>
@@ -488,7 +458,7 @@ content: counters(section,&quot;.&quot;) &quot; &quot;;<br>} </div>
 <script>
 var disqus_config = function () {
 this.page.url = w3schoolsrus.github.io; // канонический URL страницы
-this.page.identifier = w3schoolsrus.github.io / css / css_.html; // уникальный идентификатор страницы
+this.page.identifier = w3schoolsrus.github.io / css / css_counters.html; // уникальный идентификатор страницы
 };
 (function() { // Не редактировать ниже этой линии
 var d = document, s = d.createElement('script');
