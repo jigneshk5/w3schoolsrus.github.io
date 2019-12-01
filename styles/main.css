@@ -91,3 +91,12 @@ body {background: #F5F5DC; position:relative;min-height:100%;}
 .picker {width:150px;height:128px;margin-top:16px}
 .pro {font-size:.1em;color:#fff}
 p.small {font-size:.8em; line-height: .9;}
+
+.shadow-black-01 {text-shadow: .1px .1px .1px #000}
+.shadow-black-02 {text-shadow: .2px .2px .2px #000}
+.shadow-black-03 {text-shadow: .3px .3px .3px #000}
+.shadow-black-04 {text-shadow: .4px .4px .4px #000}
+.shadow-black-05 {text-shadow: .5px .5px .5px #000}
+.shadow-black-1 {text-shadow: 1px 1px 1px #000}
+.shadow-black-2 {text-shadow: 2px 2px 2px #000}
+.shadow-black-3 {text-shadow: 3px 3px 3px #000}
