@@ -44,7 +44,7 @@ margin-bottom:-155px;
 }
 .w3-sidebar .w3-bar-block .w3-bar-item{
 padding:0 16px;
-font-size:16px; 
+font-size:16px;
 }
 .w3-bar {
 position:relative;
@@ -55,9 +55,9 @@ font-size:17px;
 font-family:"Segoe UI",Arial,sans-serif;
 }
 h1 {
-font-size:80px;
+font-size:70px;
 color:#555555;
-margin:2px 0 -20px 0 !important;
+margin:0 0 -30px 0 !important;
 }
 .certoverlay {
   position:absolute;
@@ -90,3 +90,4 @@ body {background: #F5F5DC; position:relative;min-height:100%;}
 .box-h70 {height:70px}
 .picker {width:150px;height:128px;margin-top:16px}
 .pro {font-size:.1em;color:#fff}
+p.small {font-size:.8em; line-height: .9;}
