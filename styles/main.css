@@ -90,7 +90,7 @@ body {background: #F5F5DC; position:relative;min-height:100%;}
 .box-h70 {height:70px}
 .picker {width:150px;height:128px;margin-top:16px}
 .pro {font-size:.1em;color:#fff}
-p.small {font-size:.8em; line-height: .9;}
+p.small {font-size:.8em; line-height: 1.1;}
 
 .shadow-black-01 {text-shadow: .1px .1px .1px #000}
 .shadow-black-02 {text-shadow: .2px .2px .2px #000}
