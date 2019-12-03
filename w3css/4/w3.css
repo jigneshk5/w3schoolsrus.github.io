@@ -1,4 +1,4 @@
-﻿/* W3.CSS 4.13 June 2019 by Jan Egil and Borge Refsnes */
+/* W3.CSS 4.13 June 2019 by Jan Egil and Borge Refsnes */
 html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
 /* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
 html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
@@ -60,7 +60,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-modal{z-index:3;display:none;padding-top:100px;position:fixed;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:rgb(0,0,0);background-color:rgba(0,0,0,0.4)}
 .w3-modal-content{margin:auto;background-color:#fff;position:relative;padding:0;outline:0;width:600px}
 .w3-bar{width:100%;overflow:hidden}.w3-center .w3-bar{display:inline-block;width:auto}
-.w3-bar .w3-bar-item{padding:8px 16px;margin:0 2.5px 0 0; float:left;width:auto;border:none;display:block;outline:0}
+.w3-bar .w3-bar-item{padding:8px 16px;float:left;width:auto;border:none;display:block;outline:0}
 .w3-bar .w3-dropdown-hover,.w3-bar .w3-dropdown-click{position:static;float:left}
 .w3-bar .w3-button{white-space:normal}
 .w3-bar-block .w3-bar-item{width:100%;display:block;padding:8px 16px;text-align:left;border:none;white-space:normal;float:none;outline:0}
@@ -371,10 +371,11 @@ padding-left:6px;
 .nextprev a {font-size:17px;border:1px solid #cccccc;}
 .nextprev a:link,.nextprev a:visited {background-color:#ffffff;color:#000000;}
 .w3-example a:focus,.nextprev a:focus{box-shadow:0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);}
-.nextprev a.w3-right,.nextprev a.w3-left {background-color:#4CAF50;color:#ffffff;border-color:#008F50}
+.nextprev a.w3-right,.nextprev a.w3-left {background-color:#4CAF50;color:#ffffff;border-color:#4CAF50}
 #w3-exerciseform {background-color:#555555;padding:16px;color:#ffffff;}
 #w3-exerciseform .exercisewindow {background-color:#ffffff;padding:16px;color:#000000;}
 #w3-exerciseform .exerciseprecontainer {background-color:#f1f1f1;padding:16px;font-size:120%;font-family:Consolas,"Courier New", Courier, monospace;}
+#w3-exerciseform .exerciseprecontainer pre[class*="language-"] {padding:1px;}
 #w3-exerciseform .exerciseprecontainer pre {display: block;}
 #w3-exerciseform .exerciseprecontainer input {padding:1px;border: 1px solid transparent;height:1.3em;}
 .w3-theme {color:#fff !important;background-color:#73AD21 !important;background-color:#4CAF50 !important}
@@ -453,7 +454,6 @@ transform:translate(0, 0);
 .fa-2x {
  font-size:2em;
 }
-
 .fa-home:before {content:'\e800';}
 .fa-menu:before {content: '\f0c9';}
 .fa-globe:before {content:'\e801';}
@@ -467,7 +467,10 @@ transform:translate(0, 0);
 .fa-caret-down:before {content:'\e809';}
 .fa-caret-up:before {content:'\e80a';}
 .fa.fa-adjust:before { content: '\e80b'; }
-
+span.marked, span.deprecated {
+ color:#e80000;
+ background-color:transparent;
+}
 .w3-code span.marked {
  color:#e80000;
  background-color:transparent;
@@ -528,8 +531,9 @@ a.btnsmall:active,a.btnsmall:hover {color:#4CAF50;background-color:#ffffff}
 .sqlcolor{color:black}
 .sqlkeywordcolor{color:mediumblue}
 .sqlstringcolor{color:brown}
-.sqlnumbercolor{color:black}
-.darktheme {background-color:rgb(40,44,52);color:white;}
+.sqlnumbercolor{color:}
+.darktheme .w3-code{background-color:rgb(40,44,52);color:white;border-left-color:rgb(40,44,52)}
+.darktheme .w3-example pre{background-color:rgb(40,44,52)!important;border-left-color:rgb(40,44,52)}
 .darktheme .tagcolor{color:#88ccbb/*green2*/!important}
 .darktheme .tagnamecolor{color:#ff9999/*red*/!important}
 .darktheme .attributecolor{color:#c5a5c5/*purple*/!important}
@@ -569,8 +573,8 @@ a.btnsmall:active,a.btnsmall:hover {color:#4CAF50;background-color:#ffffff}
 .darktheme .sqlcolor{color:white!important}
 .darktheme .sqlkeywordcolor{color:#80b6ff/*blue*/!important}
 .darktheme .sqlstringcolor{color:#88c999/*green*/!important}
-.darktheme .sqlnumbercolor{color:#ccc}
-@media only screen and (max-width: 480px) {
+.darktheme .sqlnumbercolor{color:}
+@media only screen and (max-device-width: 480px) {
 .w3-code, .w3-codespan,#w3-exerciseform .exerciseprecontainer {font-family: 'Source Code Pro',Menlo,Consolas,monospace;}
 .w3-code {font-size:14px;}
 .w3-codespan {font-size:15px;}
@@ -582,38 +586,133 @@ a.btnsmall:active,a.btnsmall:hover {color:#4CAF50;background-color:#ffffff}
 #div-gpt-ad-1422003450156-0 {float:none;margin-left:auto;margin-right:auto}
 #div-gpt-ad-1422003450156-3 {float:none;margin-left:auto;margin-right:auto}
 }
-@media (max-width:1700px) {#topnav .w3-bar:nth-of-type(1) a:nth-of-type(17){display:none;}}
+@media (max-width:1700px) {#topnav .w3-bar:nth-of-type(1) a:nth-of-type(18){display:none;}}
 @media (max-width:1600px) {#topnav .w3-bar:nth-of-type(1) a:nth-of-type(13){display:none;}}
-@media (max-width:1510px) {#topnav .w3-bar:nth-of-type(1) a:nth-of-type(12){display:none;}}
+/*@media (max-width:1510px) {#topnav .w3-bar:nth-of-type(1) a:nth-of-type(12){display:none;}}*/
+@media (max-width:1530px) {#topnav .w3-bar:nth-of-type(1) a:nth-of-type(12){display:none;}}
 @media (max-width:1450px) {#topnav .w3-bar:nth-of-type(1) a:nth-of-type(11){display:none;}}
-@media (max-width:1330px) {#topnav .w3-bar:nth-of-type(1) a:nth-of-type(10){display:none;}}
-@media (max-width:1200px) {#topnav .w3-bar:nth-of-type(1) a:nth-of-type(9){display:none;}}
-@media (max-width:1100px) {#topnav .w3-bar:nth-of-type(1) a:nth-of-type(8){display:none;}}
-@media (max-width:1000px) {#topnav .w3-bar:nth-of-type(1) a:nth-of-type(7){display:none;}}
-@media (max-width:992px) {#topnav .w3-bar:nth-of-type(1) a:nth-of-type(6){display:none;}}
-@media (max-width:930px) {#topnav .w3-bar:nth-of-type(1) a:nth-of-type(18){display:none;}}
-@media (max-width:800px) {#topnav .w3-bar:nth-of-type(1) a:nth-of-type(19){display:none;}}
-@media (max-width:650px) {#topnav .w3-bar:nth-of-type(1) a:nth-of-type(5){display:none;} #topnav .w3-bar:nth-of-type(1) a:nth-of-type(16){display:none;}}
-@media (max-width:460px) {#topnav .w3-bar:nth-of-type(1) a:nth-of-type(4){display:none;}}
-@media (max-width:400px) {#topnav .w3-bar:nth-of-type(1) a:nth-of-type(3){display:none;}}
+/*@media (max-width:1330px) {#topnav .w3-bar:nth-of-type(1) a:nth-of-type(10){display:none;}}*/
+@media (max-width:1350px) {#topnav .w3-bar:nth-of-type(1) a:nth-of-type(10){display:none;}}
+/*@media (max-width:1200px) {#topnav .w3-bar:nth-of-type(1) a:nth-of-type(9){display:none;}}*/
+@media (max-width:1240px) {#topnav .w3-bar:nth-of-type(1) a:nth-of-type(9){display:none;}}
+/*@media (max-width:1100px) {#topnav .w3-bar:nth-of-type(1) a:nth-of-type(8){display:none;}}*/
+@media (max-width:1140px) {#topnav .w3-bar:nth-of-type(1) a:nth-of-type(8){display:none;}}
+/*@media (max-width:1000px) {#topnav .w3-bar:nth-of-type(1) a:nth-of-type(7){display:none;}}*/
+@media (max-width:1050px) {#topnav .w3-bar:nth-of-type(1) a:nth-of-type(7){display:none;}}
+@media (max-width:992px)  {#topnav .w3-bar:nth-of-type(1) a:nth-of-type(6){display:none;}}
+@media (max-width:300px)  {#topnav .w3-bar:nth-of-type(1) a:nth-of-type(17){display:none;}}
+@media (max-width:930px)  {#topnav .w3-bar:nth-of-type(1) a:nth-of-type(19){display:none;}}
+@media (max-width:800px)  {#topnav .w3-bar:nth-of-type(1) a:nth-of-type(20){display:none;}}
+@media (max-width:650px)  {#topnav .w3-bar:nth-of-type(1) a:nth-of-type(5){display:none;} #topnav .w3-bar:nth-of-type(1) a:nth-of-type(16){display:none;}}
+@media (max-width:460px)  {#topnav .w3-bar:nth-of-type(1) a:nth-of-type(4){display:none;}}
+@media (max-width:400px)  {#topnav .w3-bar:nth-of-type(1) a:nth-of-type(3){display:none;}}
 .w3-note{background-color:#ffffcc;border-left:6px solid #ffeb3b}
 .w3-warning{background-color:#ffdddd;border-left:6px solid #f44336}
-
-/*.w3-info{background-color:#d4edda;border-left:6px solid #4CAF50}*/
-
-
-.w3-info {
-  background-color: #d4edda;
-  border-left: none;
-  padding:0 32px;
-  margin:24px;
-  margin-left:-32px;
-  margin-right:-16px;
-}
-
+.w3-info{background-color:#ddffdd;border-left:6px solid #4CAF50}
 hr[id^="ez-insert-after-placeholder"] {margin-top: 0;}
 .phonebr {display:none;}
 @media screen and (max-width: 475px) {.phonebr {display:initial;}}
+
+/*NYTT:*/
+#main {
+  padding:16px 32px 32px 32px;
+  border-right: 1px solid #f1f1f1;
+}
+#right {
+  padding:16px 8px;
+}
+.sidesection .w3-left-align {
+  text-align:center!important;
+}
+#footer {padding:32px;border-top:1px solid #f1f1f1;}
+#footer hr:first-child {
+  display:none;
+}
+.w3-info {
+  background-color: #d4edda;
+  border-left: none;
+  padding:32px;
+  margin:24px;
+  margin-left:-32px;
+  margin-right:-32px;
+}
+.w3-example {
+  padding: 8px 20px;
+  margin: 24px -20px;
+  box-shadow:none!important;
+}
+.w3-note, .w3-warning {
+  border-left: none;
+}
+.w3-panel {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  margin-left:-32px;
+  margin-right:-32px;
+  padding:16px 32px;
+}
+h1 {
+  font-size: 42px;
+}
+h2 {
+  font-size: 32px;
+}
+.w3-btn:hover,.w3-btn:active,.w3-example a:focus,.nextprev a:focus {
+  box-shadow: none;
+  background-color: #46a049!important;
+}
+.w3-btn:hover.w3-blue,.w3-btn:active.w3-blue,.w3-button:hover.w3-blue,.w3-button:active.w3-blue {
+  background-color: #0d8bf2!important;color: #fff!important;
+}
+.w3-btn:hover.w3-white,.w3-btn:active.w3-white,.w3-button:hover.w3-white,.w3-button:active.w3-white {
+  background-color: #f1f1f1!important;
+}
+.nextprev .w3-btn:not(.w3-left):not(.w3-right):hover,.nextprev .w3-btn:not(.w3-left):not(.w3-right):active,.nextprev .w3-btn:not(.w3-left):not(.w3-right):focus {
+  background-color: #f1f1f1!important;
+}
+a.btnsmall:hover {box-shadow:none;}
+a.btnsmall:active,a.btnsmall:hover {color:#fff;}
+a.btnplayit:hover,a.btnplayit:active {background-color:#ff9900!important;color:#fff}
+a.btnplayit:hover {box-shadow:none;}
+#w3-exerciseform {
+  padding: 20px;
+  margin:32px -20px;
+}
+p {
+  margin-top: 1.2em;
+  margin-bottom: 1.2em;
+  font-size: 15px;
+}
+hr {
+  margin:20px -16px;
+}
+.w3-codespan {
+  font-size:105%;
+}
+.w3-example p,.w3-panel p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.w3-code{
+  font-size:15px;
+}
+#midcontentadcontainer,#mainLeaderboard {
+  text-align:center;
+  margin-left:-20px;
+  margin-right:-20px;
+}
+@media screen and (max-width:600px) {
+.w3-example, #w3-exerciseform {margin-left:-32px;margin-right:-32px;}
+}
+
+@media only screen and (max-device-width: 480px) {
+#main {padding:24px}
+h1 {font-size: 30px;}
+h2 {font-size: 25px;}
+.w3-example {padding: 8px 16px;margin: 24px -24px;}
+#w3-exerciseform {padding: 8px 16px 16px 16px;margin: 24px -24px;}
+.w3-panel,.w3-info {margin-left:-24px;margin-right:-24px;}
+}
 /*end style external*/
 
 
