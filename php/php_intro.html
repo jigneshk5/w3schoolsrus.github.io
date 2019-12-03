@@ -8,33 +8,7 @@
 <meta content="Что такое PHP? Как создать сайт с помощью языка программирования PHP? W3Schools на русском языке. Уроки онлайн для начинающих." name="description">
 <link rel="icon" href="../favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="../w3css/4/w3.css">
-<style>
-.bigbtn {
- margin-bottom:5px;
- height:65px;
- width:19%;
- border:1px solid #e3e3e3;
- background-color:#F1F1F1;
- color:#555;
- font-size:16px;
- padding:20px 0;
- text-align: center;
- vertical-align: middle;
- display: inline-block;
- text-decoration:none !important;
-}
-.bigbtn:hover, .bigbtn2:hover {
-    background-color: #555;
-    color: #ffffff !important;
-    border: 1px solid #555;
-}
-@media screen and (max-width: 992px){
-    .bigbtn {
-        display: block;
-     width: 100%;
-    }
-}
-</style>
+<link rel="stylesheet" href="../cdn/font-awesome/5.11.2/css/all.min.css">
 </head>
 
 <body>
@@ -57,11 +31,29 @@
     <div class='w3-card-2 topnav notranslate' id='topnav'>
       <div style="overflow:auto;">
         <div class="w3-bar w3-left" style="width:100%;overflow:hidden;height:44px">
-          <a class='topnav-icons fa fa-menu w3-hide-large w3-left w3-bar-item w3-button' href='javascript:void(0);' onclick='open_menu()' title='Menu'></a> <a class='topnav-icons fa fa-home w3-left w3-bar-item w3-button' href='../default.html' title='Home'></a> <a class="w3-bar-item w3-button" href='../html/default.html' title='HTML Tutorial'>HTML</a> <a class="w3-bar-item w3-button" href='../css/default.html' title='CSS Tutorial'>CSS</a> <a class="w3-bar-item w3-button" href='../js/default.html' title='JavaScript Tutorial'>JAVASCRIPT</a> <a class="w3-bar-item w3-button" href='../sql/default.html' title='SQL Tutorial'>SQL</a> <a class="w3-bar-item w3-button" href='../python/default.html' title='Python Tutorial'>PYTHON</a> <a class="w3-bar-item w3-button" href='../php/default.html' title='PHP Tutorial'>PHP</a> <a class="w3-bar-item w3-button" href='../bootstrap/bootstrap_ver.html' title='Bootstrap Tutorial'>BOOTSTRAP</a> <a class="w3-bar-item w3-button" href='../howto/default.html' title='How To'>КАК СДЕЛАТЬ</a> <a class="w3-bar-item w3-button" href='../w3css/default.html' title='W3.CSS Tutorial'>W3.CSS</a> <a class="w3-bar-item w3-button" href='../jquery/default.html' title='jQuery Tutorial'>JQUERY</a> <a class="w3-bar-item w3-button" href='../xml/default.html' title='XML Tutorial'>XML</a> <a class="w3-bar-item w3-button" href='javascript:void(0);' id='topnavbtn_tutorials' onclick='w3_open_nav("tutorials")' title='Tutorials'>БОЛЬШЕ <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style='display:none'></i></a> <a class='topnav-icons fa w3-right w3-bar-item w3-button' href='javascript:void(0);' onclick='open_search(this)' title='Поиск на сайте'>&#128269;</a> <a class="w3-bar-item w3-button w3-right" href='https://drive.google.com/open?id=1fddM8chCC273SbiTEYVNLorbZ2qij7fp' target="_blank">КНИГИ</a> <a class="w3-bar-item w3-button w3-right" href='javascript:void(0);' id='topnavbtn_exercises' onclick='w3_open_nav("exercises")' title='Exercises'>УПРАЖНЕНИЯ <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style='display:none'></i></a> <a class="w3-bar-item w3-button w3-right" href='javascript:void(0);' id='topnavbtn_references' onclick='w3_open_nav("references")' title='References'>СПРАВОЧНИКИ <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style='display:none'></i></a>
+          <a class='topnav-icons fa fa-menu w3-hide-large w3-left w3-bar-item w3-button' href='javascript:void(0);' onclick='open_menu()' title='Menu'></a>
+          <a class='topnav-icons fa fa-home w3-left w3-bar-item w3-button' href='../default.html' title='Home'></a>
+          <a class="w3-bar-item w3-button" href='../html/default.html' title='HTML Tutorial'>HTML</a>
+          <a class="w3-bar-item w3-button" href='../css/default.html' title='CSS Tutorial'>CSS</a>
+          <a class="w3-bar-item w3-button" href='../js/default.html' title='JavaScript Tutorial'>JAVASCRIPT</a>
+          <a class="w3-bar-item w3-button" href='../sql/default.html' title='SQL Tutorial'>SQL</a>
+          <a class="w3-bar-item w3-button" href='../python/default.html' title='Python Tutorial'>PYTHON</a>
+          <a class="w3-bar-item w3-button" href='../php/default.html' title='PHP Tutorial'>PHP</a>
+          <a class="w3-bar-item w3-button" href='../bootstrap/bootstrap_ver.html' title='Bootstrap Tutorial'>BOOTSTRAP</a>
+          <a class="w3-bar-item w3-button" href='../howto/default.html' title='How To'>КАК СДЕЛАТЬ</a>
+          <a class="w3-bar-item w3-button" href='../w3css/default.html' title='W3.CSS Tutorial'>W3.CSS</a>
+          <a class="w3-bar-item w3-button" href='../jquery/default.html' title='jQuery Tutorial'>JQUERY</a>
+          <a class="w3-bar-item w3-button" href='../xml/default.html' title='XML Tutorial'>XML</a>
+          <a class="w3-bar-item w3-button" href='javascript:void(0);' id='topnavbtn_tutorials' onclick='w3_open_nav("tutorials")' title='Tutorials'>БОЛЬШЕ <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style='display:none'></i></a>
+          <a class='topnav-icons fa w3-right w3-bar-item w3-button' href='javascript:void(0);' onclick='open_search(this)' title='Поиск на сайте'>&#128269;</a>
+          <a href='javascript:void(0);' class='topnav-icons fa w3-right w3-bar-item w3-button' onclick='changecodetheme(this)' title='Переключить на тёмный код'>&#xe80b;</a>
+          <a class="w3-bar-item w3-button w3-right" href='https://drive.google.com/open?id=1fddM8chCC273SbiTEYVNLorbZ2qij7fp' target="_blank">КНИГИ</a>
+          <a class="w3-bar-item w3-button w3-right" href='javascript:void(0);' id='topnavbtn_exercises' onclick='w3_open_nav("exercises")' title='Exercises'>УПРАЖНЕНИЯ <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style='display:none'></i></a>
+          <a class="w3-bar-item w3-button w3-right" href='javascript:void(0);' id='topnavbtn_references' onclick='w3_open_nav("references")' title='References'>СПРАВОЧНИКИ <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style='display:none'></i></a>
         </div>
         <div class='w3-bar-block w3-card-2' id='nav_tutorials' style="display:none;">
           <span class='w3-button w3-xlarge w3-right' onclick='w3_close_nav("tutorials")' style="position:absolute;right:0;font-weight:bold;">&times;</span>
-          <div class='w3-row-padding' style="padding:24px 48px">
+        <div class='w3-row-padding' style="padding:24px 48px">
             <div class='w3-col l3 m6'>
               <h3>HTML и CSS</h3><a class="w3-bar-item w3-button" href='../html/default.html'>Выучить HTML</a> <a class="w3-bar-item w3-button" href='../css/default.html'>Выучить CSS</a> <a class="w3-bar-item w3-button" href='../bootstrap/bootstrap_ver.html'>Выучить Bootstrap</a> <a class="w3-bar-item w3-button" href='../w3css/default.html'>Выучить W3.CSS</a> <a class="w3-bar-item w3-button" href='../colors/default.html'>Выучить Colors</a> <a class="w3-bar-item w3-button" href='../icons/default.html'>Выучить Icons</a> <a class="w3-bar-item w3-button" href='../graphics/default.html'>Выучить Graphics</a> <a class="w3-bar-item w3-button" href='../graphics/svg_intro.html'>Выучить SVG</a> <a class="w3-bar-item w3-button" href='../graphics/canvas_intro.html'>Выучить Canvas</a> <a class="w3-bar-item w3-button" href='default.html'>Выучить How To</a> <a class="w3-bar-item w3-button" href='../sass/default.html'>Выучить Sass</a>
               <div class="w3-hide-large w3-hide-small">
@@ -981,7 +973,7 @@
 <h2>Где и как лучше всего изучать язык программирования PHP?</h2>
 <p>Конечно, вы можете поступить учиться программированию в какой-нибудь дорогой ВУЗ, платить большие деньги 4-5 лет, а потом получить Диплом программиста. Но где гарантия, что полученные за время учёбы в универе знания вам пригодятся в реальной жизни? Сфера IT очень быстро развивается, меняются технологии и может оказаться, что всё то, что вы учили в течение последних 4-5 лет в ВУЗе окажется устаревшим и вам всё равно придётся учиться снова. Языки программирования также развиваются и очень быстро меняются. Особенно это касается веб-технологий, к которым относится и такой популярный язык программирования, как <strong>PHP</strong>. Недавно популярная версия языка <strong>PHP 5.6</strong> уже стала устаревшей, и сейчас, по состоянию на 2020 год, актуальной версией является <strong>PHP7</strong>, которая также постоянно обновляется и в которой часто добавляются нововведения.</p>
 <p>Также можно изучать язык программирования <strong>PHP</strong> по книгам, которых существует огромное множество - как в печатном, так и в электронном виде. Книги по PHP можно приобрести за деньги либо скачать бесплатно в сети. Но, как правило, книги по современным веб-технологиям, в т.ч. по языку программирования PHP, также очень быстро устаревают и имеют материал, который уже через пару лет после выхода книги становится неактуальным.</p>
-<p>Для изучения языкам программирования, в т.ч. <strong>PHP</strong>, существует множество курсов - как стационарных, когда необходимо посещать занятия, так и онлайн-курсов, когда всё обучение проходит в режиме онлайн. Такие курсы, как правило, платные и часто очень дорогостоящие. Кроме того, они направлены в большей степени не на то, чтобы научить реальному программированию, а лишь дать учащимся элементарные основы по программированию, и не дают ни фундаментальных знаний, ни каких-либо профессиональных навыков. Часто после таких курсов сложно трудоустроиться и вообще найти работу в какой-либо серъёзной компании. В лучшем случае такие начинающие программисты и веб-разработчики смогут попытаться зарабатывать небольшие деньги только лишь на фрилансе. И продолжать самостоятельно учиться и учиться, потратив на это еще немало времени. Лишь единицы таких самозанятых фрилансеров могут зарабатывать достойные деньги...</p>
+<p>Для изучения языков программирования, в т.ч. <strong>PHP</strong>, существует множество курсов - как стационарных, когда необходимо посещать занятия, так и онлайн-курсов, когда всё обучение проходит в режиме онлайн. Такие курсы, как правило, платные и часто очень дорогостоящие. Кроме того, они направлены в большей степени не на то, чтобы научить реальному программированию, а лишь дать учащимся элементарные основы по программированию, и не дают ни фундаментальных знаний, ни каких-либо профессиональных навыков. Часто после таких курсов сложно трудоустроиться и вообще найти работу в какой-либо серъёзной компании. В лучшем случае такие начинающие программисты и веб-разработчики смогут попытаться зарабатывать небольшие деньги только лишь на фрилансе. И продолжать самостоятельно учиться и учиться, потратив на это еще немало времени. Лишь единицы таких самозанятых фрилансеров могут зарабатывать достойные деньги...</p>
 <p>Что же делать, где и как лучше всего изучать языки програмирования? Какой язык программирования выбрать? Стоит ли вообще изучать язык <strong>PHP</strong> или, может быть, выбрать какой-нибудь другой язык программирования? - спросите вы.</p>
 <p>Язык <strong>PHP</strong> является одним из самых популярных на сегодняшний день языков программирования и основным языком для разработки большинства веб-сайтов, работающих на CMS (системе управления контентом). Этот язык развивается, постоянно обновляется, на нём работают такие Интернет-гиганты, как Facebook, Wikipedia, Vkontakte и др. На нём продолжают создавать всё больше новых сайтов.</p>
 <p>При всём множестве выборе способов изучения языка программирования <strong>PHP</strong> одним из наиболее оптимальных является его изучения онлайн на самых популярных Интернет-ресурсах, которые поддерживаются и на которых информация постоянно обновляется. При этом такие ресурсы могут быть как платными, так и бесплатными. Есть очень много сайтов на английском языке, но есть и много на русском языке, на которых можно найти уроки для начинающих по PHP.</p>
