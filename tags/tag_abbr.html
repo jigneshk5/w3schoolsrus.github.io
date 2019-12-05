@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<title>HTML Объявление DOCTYPE. W3Schools на русском</title>
+<title>HTML Тег &lt;abbr&gt;. Аббревиатура. W3Schools на русском</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="keywords" content="doctype,объявление,HTML,CSS,теги,полный,справочник,W3Schools,на русском,уроки,для начинающих" />
-<meta name="description" content="HTML Объявление DOCTYPE. Определение типа документа. Полный справочник HTML-тегов. Применение на веб-странице. Создание сайта. Уроки для начинающих. W3Schools на русском" />
+<meta name="keywords" content="аббревиатура,HTML,CSS,теги,полный,справочник,W3Schools,на русском,уроки,для начинающих" />
+<meta name="description" content="HTML тег &lt;abbr&gt;. Что такое аббревиатура. Как записать тег сокращения на веб-странице? Полный справочник HTML-тегов. Применение на веб-странице. Создание сайта. Уроки для начинающих. W3Schools на русском" />
 <link rel="icon" href="../favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="../w3css/4/w3.css">
 <link rel="stylesheet" href="../browserref.css">
@@ -384,38 +384,31 @@
     <div class='w3-col l10 m12' id='main'>
       <a href="default.html"><img src="../svg/HTML5_icon.svg" alt="HTML теги. Полный справочник" class="w3-left" title="HTML теги. Полный справочник" width="90"></a>
 
-<h1>HTML Объявление <span class="color_h1">&lt;!DOCTYPE&gt;</span></h1>
+<h1>HTML тег <span class="color_h1">&lt;abbr&gt;</span></h1>
+
 <div class="w3-clear w3-center nextprev">
-<a class="w3-left w3-btn" href="tag_comment.html">&#10094;<span class="w3-hide-small"> Prev</span></a>
+<a class="w3-left w3-btn" href="tag_a.html">&#10094;<span class="w3-hide-small"> Prev</span></a>
 <a class="w3-btn" href="default.html"><span class="w3-hide-small">Полный HTML </span>Справочник</a>
-<a class="w3-right w3-btn" href="tag_a.html"><span class="w3-hide-small">Next </span>&#10095;</a>
+<a class="w3-right w3-btn" href="tag_acronym.html"><span class="w3-hide-small">Next </span>&#10095;</a>
 </div>
 <br>
 
 <div class="w3-example">
 <h3>Пример</h3>
+<p>Аббревиатура на веб-странице размечается следующим образом:</p>
 <div class="w3-code notranslate htmlHigh">
-&lt;!DOCTYPE html&gt;<br>
-&lt;html&gt;<br>
-&lt;head&gt;<br>
-&lt;title&gt;Название документа&lt;/title&gt;<br>
-&lt;/head&gt;<br><br>
-&lt;body&gt;<br>
-Содержимое документа......<br>
-&lt;/body&gt;<br><br>
-&lt;/html&gt;
+    &lt;abbr title=&quot;Всемирная Организация Здравоохранения&quot;&gt;ВОЗ&lt;/abbr&gt; была образована в 1948.
 </div>
-<a target="_blank" href="tryit1efd.html?filename=tryhtml_doctype" class="w3-btn w3-margin-bottom">Попробуйте сами &raquo;</a>
+<a target="_blank" href="tryitd0e4.html?filename=tryhtml_abbr_test" class="w3-btn w3-margin-bottom">Попробуйте сами &raquo;</a>
 </div>
 <hr>
 
 <h2>Определение и использование</h2>
-<p>Объявление &lt;!DOCTYPE&gt; должно быть самым первым делом в вашем HTML документе, перед &lt;html&gt; тегом.</p>
-<p>Объявление &lt;!DOCTYPE&gt; не является HTML тегом; это инструкция для веб-браузера, которая сообщает, в какой версии HTML написана страница.</p>
-<p>В HTML 4.01 объявление &lt;!DOCTYPE&gt; относится к DTD, потому что HTML 4.01 базировался на SGML. DTD определяет правила для языка разметки так, чтобы браузеры визуализировали содержание правильно.</p>
-<p>HTML5 не основан на SGML, и поэтому не требует ссылки на DTD.</p>
-<p><b>Совет:</b> Всегда добавляйте объявление &lt;!DOCTYPE&gt; к HTML-документам, чтобы браузер знал, какой тип документа следует ожидать.</p>
+<p>Тег <code class="w3-codespan">&lt;abbr&gt;</code> определяет аббревиатуру или акроним, например &quot;HTML&quot;, "Mr.&quot;, &quot;Dec.&quot;, &quot;ASAP&quot;, &quot;ATM&quot;.</p>
+<p><strong>Совет:</strong> Аббревиатура и акроним являются сокращенными версиями чего-то ещё. Оба часто представлены в виде серии букв.</p>
+<p>Разметка сокращений может дать полезную информацию для браузеров, систем перевода и поисковых систем.</p>
 <hr>
+
 <h2>Поддержка браузерами</h2>
 <table class="browserref notranslate">
   <tr>
@@ -427,7 +420,7 @@
     <th style="width:16%;" class="bsOpera" title="Opera"></th>
   </tr>
   <tr>
-    <td style="text-align:left;">&lt;!DOCTYPE&gt;</td>
+    <td style="text-align:left;">&lt;abbr&gt;</td>
     <td>Yes</td>
     <td>Yes</td>
     <td>Yes</td>
@@ -437,76 +430,37 @@
   </table>
 <hr>
 
-<h2>Отличия между HTML 4.01 и HTML5</h2>
-<p>Существует три разных объявления &lt;!DOCTYPE&gt; в HTML 4.01. В HTML5 существует только один вид объявления:</p>
-<div class="w3-code w3-border notranslate"><div>
-&lt;!DOCTYPE html&gt;
-</div></div>
-<hr>
-
-<h2>HTML элементы и Doctype</h2>
-<p>Посмотрите таблицу всех <a href="ref_html_dtd.html">HTML элементов, и в каком Doctype появляется в каждом документе</a>.</p>
-<hr>
-
 <h2>Советы и примечания</h2>
-<p><b>Примечание:</b> Объявление &lt;!DOCTYPE&gt; НЕ чуствительно к регистру.</p>
-<p><b>Совет:</b> Чтобы проверить, правильный ли HTML-код ваших веб-документов, перейдите на <a href="http://validator.w3.org/" target="_blank">валидатор-сервис W3C</a>.</p>
+<p><b>Примечание:</b> Глобальный атрибут title используется с тегом &lt;abbr&gt;, чтобы показать описание аббревиатуры / акронима, когда вы наводите курсор мыши на элемент &lt;abbr&gt;.</p>
 <hr>
 
-<h2>Общие объявления DOCTYPE</h2>
+<h2>Отличия между HTML 4.01 и HTML5</h2>
+<p>ОТСУТСТВУЮТ.</p>
+<hr>
 
-<h3>HTML 5</h3>
-<div class="w3-code w3-border notranslate htmlHigh"><div>
-&lt;!DOCTYPE html&gt;
-</div></div>
-
-<h3>HTML 4.01 Strict</h3>
-<p>Этот DTD содержит все элементы и атрибуты HTML, но НЕ ВКЛЮЧАЕТ презентационные или устаревшие элементы (например, шрифт). Фреймы не разрешены.</p>
-<div class="w3-code w3-border notranslate htmlHigh"><div>
-&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01//EN&quot; &quot;http://www.w3.org/TR/html4/strict.dtd&quot;&gt;
-</div></div>
-
-<h3>HTML 4.01 Transitional</h3>
-<p>Этот DTD содержит все HTML-элементы и атрибуты, включая презентационные и устаревшие элементы (например, шрифт). Фреймы не разрешены.</p>
-<div class="w3-code w3-border notranslate htmlHigh"><div>
-&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
-</div></div>
-
-<h3>HTML 4.01 Frameset</h3>
-<p>Этот DTD соответствует HTML 4.01 Transitional, но позволяет использовать содержимое фреймов.</p>
-<div class="w3-code w3-border notranslate htmlHigh"><div>
-&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Frameset//EN&quot; &quot;http://www.w3.org/TR/html4/frameset.dtd&quot;&gt;
-</div></div>
-
-<h3>XHTML 1.0 Strict</h3>
-<p>Этот DTD содержит все элементы и атрибуты HTML, но НЕ ВКЛЮЧАЕТ презентационные или устаревшие элементы (например, шрифт). Фреймы не разрешены. Разметка также должна быть записана как хорошо сформированный XML.</p>
-<div class="w3-code w3-border notranslate htmlHigh"><div>
-&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&quot;&gt;
-</div></div>
-
-<h3>XHTML 1.0 Transitional</h3>
-<p>Этот DTD содержит все HTML-элементы и атрибуты, включая презентационные и устаревшие элементы (например, шрифт). Фреймы не разрешены. Разметка также должна быть записана как хорошо сформированный XML.</p>
-<div class="w3-code w3-border notranslate htmlHigh"><div>
-&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
-</div></div>
-
-<h3>XHTML 1.0 Frameset</h3>
-<p>Этот DTD соответсвует XHTML 1.0 Transitional, но позволяет использовать содержимое фреймов.</p>
-<div class="w3-code w3-border notranslate htmlHigh"><div>
-&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Frameset//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd&quot;&gt;
-</div></div>
-
-<h3>XHTML 1.1</h3>
-<p>Этот DTD соответсвует XHTML 1.0 Strict, но позволяет добавлять модули (например, для обеспечения поддержки Ruby для восточноазиатских языков).</p>
-<div class="w3-code w3-border notranslate htmlHigh"><div>
-&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.1//EN&quot; &quot;http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd&quot;&gt;
-</div></div>
+<h2>Глобальные атрибуты</h2>
+<p>Тег &lt;abbr&gt; поддерживает <a href="ref_standardattributes.html">Глобальыне атрибуты в HTML</a>.</p>
+<hr>
+<h2>Атрибуты событий</h2>
+<p>Тег &lt;abbr&gt; поддерживает <a href="ref_eventattributes.html">Атрибуты событий в HTML</a>.</p>
+<hr>
+<h2>Связанные страницы</h2>
+<p>HTML DOM справочник: <a href="../jsref/dom_obj_abbr.html">Объект Аббревиатура</a></p>
+<hr>
+<h2>Настройки CSS по умолчанию</h2>
+<p>Большинство браузеров отображают элемент &lt;abbr&gt; со следующими значениями по умолчанию:</p>
+<div class="w3-example">
+<h3>Пример</h3>
+<div class="w3-code notranslate cssHigh">
+    abbr { <br>&nbsp; display: inline;<br>} </div>
+<a target="_blank" href="tryit5b37.html?filename=tryhtml_abbr_default_css" class="w3-btn w3-margin-bottom">Попробуйте сами &raquo;</a>
+</div>
 
 <hr>
 <div class="w3-clear w3-center nextprev">
-<a class="w3-left w3-btn" href="tag_comment.html">&#10094;<span class="w3-hide-small"> Prev</span></a>
+<a class="w3-left w3-btn" href="tag_a.html">&#10094;<span class="w3-hide-small"> Prev</span></a>
 <a class="w3-btn" href="default.html"><span class="w3-hide-small">Полный HTML </span>Справочник</a>
-<a class="w3-right w3-btn" href="tag_a.html"><span class="w3-hide-small">Next </span>&#10095;</a>
+<a class="w3-right w3-btn" href="tag_acronym.html"><span class="w3-hide-small">Next </span>&#10095;</a>
 </div>
 
 </div>
@@ -672,7 +626,7 @@
 <a href="../about/about_copyright.html">Copyright 1999-2019</a> by Refsnes Data. All Rights Reserved.<br>
  <a href="../w3css/default.html">Сайт работает на фреймворке W3.CSS</a>.<br><br>
 <a href="../index.html">
-<img style="width:150px;height:28px;border:0" src="../images/w3schoolscom_gray.gif" alt="W3Schools.com"></a>
+<img style="width:150px;height:28px;border:0" src="../images/w3schoolscom_gray.gif" alt="W3Schools"></a>
 </div>
 <br>
 </div>
