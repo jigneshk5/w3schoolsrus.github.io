@@ -1,9 +1,9 @@
+
 <!DOCTYPE html>
 <html lang="en-US">
 
-<!-- Mirrored from www.w3schools.com/php/php_exercises.asp by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 02 Dec 2019 17:51:55 GMT -->
-<head>
-<title>PHP Exercises</title>
+<!-- Mirrored from www.w3schools.com/php/php_arrays_multidimensional.asp by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 02 Dec 2019 17:52:40 GMT -->
+<head><title>PHP Multidimensional Arrays</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="Keywords" content="HTML,CSS,JavaScript,SQL,PHP,jQuery,XML,DOM,Bootstrap,Python,Java,Web development,W3C,tutorials,programming,training,learning,quiz,primer,lessons,references,examples,exercises,source code,colors,demos,tips">
@@ -1682,32 +1682,94 @@ function w3_getStyleValue(elmnt,style) {
         <!-- adspace leaderboard -->
        
       </div>
-<h1>PHP <span class="color_h1">Exercises</span></h1>
+<h1>PHP <span class="color_h1">Multidimensional Arrays</span></h1>
 <div class="w3-clear nextprev">
-  <a class="w3-left w3-btn" href="php_quiz.html">&#10094; Previous</a>
-  <a class="w3-right w3-btn" href="php_exam.html">Next &#10095;</a>
+  <a class="w3-left w3-btn" href="php_arrays_associative.html">&#10094; Previous</a>
+  <a class="w3-right w3-btn" href="php_arrays_sort.html">Next &#10095;</a>
 </div>
-<hr><p class="intro">You can test your PHP skills with W3Schools' Exercises.</p>
-<hr><h2>Exercises</h2>
-<p>We have gathered a variety of PHP exercises (with answers) for each PHP Chapter.</p>
-<p>Try to solve an exercise by filling in the missing parts of a code. If your stuck, hit the "Show Answer" button to see what you've done wrong.</p>
-<h2>Count Your Score</h2>
-<p>You will get 1 point for
-each correct answer. Your score and total score will always be displayed.</p>
+<hr>
+<p class="intro">In the previous pages, we have described arrays that are a 
+single list of key/value pairs.</p>
+<p class="intro">However, sometimes you want to store values with more than one 
+key. For this, we have multidimensional arrays.</p>
+<hr>
 
-<div class="w3-dark-grey w3-padding w3-margin-top">
-  <h2>Start PHP Exercises</h2>
-  <p>Good luck!</p>
-  <p><a href="exercise.html" target="_blank" class="w3-btn w3-green" style="padding:17px;font-size:17px">Start PHP Exercises &#10095;</a></p>
+<h2>PHP - Multidimensional Arrays</h2>
+<p>A multidimensional array is an array containing one or more arrays.</p>
+<p>PHP supports multidimensional arrays that are two, three, four, five, or 
+more levels deep. However, arrays more than three levels deep are hard to manage for most people.</p>
+
+<div class="w3-panel w3-note"><p>
+<strong>The dimension of an array indicates the number of indices you need to select an element.</strong>
+</p><ul>
+<li>For a two-dimensional array you need two indices to select an element</li>
+<li>For a three-dimensional array you need three indices to select an element</li>
+</ul></div>
+
+<hr>
+
+<h2>PHP - Two-dimensional Arrays</h2>
+<p>A two-dimensional array is an array of arrays (a three-dimensional array is an array of arrays of arrays).</p>
+<p>First, take a look at the following table:</p>
+<table class="w3-table-all notranslate">
+  <tr>
+    <th>Name</th>
+    <th>Stock</th>
+    <th>Sold</th>
+  </tr>
+  <tr>
+    <td>Volvo</td>
+    <td>22</td>
+    <td>18</td>
+  </tr>
+  <tr>
+    <td>BMW</td>
+    <td>15</td>
+    <td>13</td>
+  </tr>
+  <tr>
+    <td>Saab</td>
+    <td>5</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>Land Rover</td>
+    <td>17</td>
+    <td>15</td>
+  </tr>
+</table>
+
+<p>We can store the data from the table above in a two-dimensional array, like this:</p>
+<div class="w3-code w3-border notranslate"><div>
+ $cars = array<br>&nbsp; (<br>&nbsp; array(&quot;Volvo&quot;,22,18),<br>&nbsp; array(&quot;BMW&quot;,15,13),<br>&nbsp; array(&quot;Saab&quot;,5,2),<br>&nbsp; array(&quot;Land Rover&quot;,17,15)<br>&nbsp; );</div></div>
+
+<p>Now the two-dimensional $cars array contains four arrays, and it has two indices: row and column.</p>
+<p>To get access to the elements of the $cars array we must point to the two 
+indices (row and column):</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code htmlHigh notranslate">
+ &lt;?php<br>echo $cars[0][0].&quot;: In stock: &quot;.$cars[0][1].&quot;, sold: &quot;.$cars[0][2].&quot;.&lt;br&gt;&quot;;<br>echo $cars[1][0].&quot;: In stock: &quot;.$cars[1][1].&quot;, sold: &quot;.$cars[1][2].&quot;.&lt;br&gt;&quot;;<br>echo $cars[2][0].&quot;: In stock: &quot;.$cars[2][1].&quot;, sold: &quot;.$cars[2][2].&quot;.&lt;br&gt;&quot;;<br>echo $cars[3][0].&quot;: In stock: &quot;.$cars[3][1].&quot;, sold: &quot;.$cars[3][2].&quot;.&lt;br&gt;&quot;;<br>?&gt;</div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="phptryite88c.html?filename=tryphp_array_multi">Try it Yourself &raquo;</a>
 </div>
-<div class="w3-note w3-panel">
-  <p>If you don't know PHP, we suggest that you read our <a href="default.html">PHP Tutorial</a> from scratch.</p>
+<p>We can also put a <code class="w3-codespan">for</code> loop inside another <code class="w3-codespan">for</code> loop to get the elements of the 
+$cars array (we still have to point to the two indices):</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code htmlHigh notranslate">
+ &lt;?php<br>for ($row = 0; $row &lt; 4; $row++) {<br>&nbsp; echo &quot;&lt;p&gt;&lt;b&gt;Row number $row&lt;/b&gt;&lt;/p&gt;&quot;;<br>&nbsp; echo &quot;&lt;ul&gt;&quot;;<br>&nbsp; for ($col = 0; $col &lt; 3; $col++) {<br>&nbsp;&nbsp;&nbsp; echo &quot;&lt;li&gt;&quot;.$cars[$row][$col].&quot;&lt;/li&gt;&quot;;<br>&nbsp; }<br>&nbsp; echo &quot;&lt;/ul&gt;&quot;;<br>}<br>?&gt;</div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="phptryitd854.html?filename=tryphp_array_multi2">Try it Yourself &raquo;</a>
 </div>
+<hr>
+
+<h2>Complete PHP Array Reference</h2>
+<p>For a complete reference of all array functions, go to our complete <a href="php_ref_array.html">PHP Array Reference</a>.</p>
+<p>The reference contains a brief description, and examples of use, for each function!</p>
 
 <br>
 <div class="w3-clear nextprev">
-  <a class="w3-left w3-btn" href="php_quiz.html">&#10094; Previous</a>
-  <a class="w3-right w3-btn" href="php_exam.html">Next &#10095;</a>
+  <a class="w3-left w3-btn" href="php_arrays_associative.html">&#10094; Previous</a>
+  <a class="w3-right w3-btn" href="php_arrays_sort.html">Next &#10095;</a>
 </div>
 </div>
 <div class="w3-col l2 m12" id="right">
@@ -2002,5 +2064,5 @@ While using this site, you agree to have read and accepted our <a href="https://
 <![endif]-->
 </body>
 
-<!-- Mirrored from www.w3schools.com/php/php_exercises.asp by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 02 Dec 2019 17:51:55 GMT -->
+<!-- Mirrored from www.w3schools.com/php/php_arrays_multidimensional.asp by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 02 Dec 2019 17:52:41 GMT -->
 </html>

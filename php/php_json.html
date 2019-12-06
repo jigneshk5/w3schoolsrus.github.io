@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en-US">
 
-<!-- Mirrored from www.w3schools.com/php/php_exercises.asp by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 02 Dec 2019 17:51:55 GMT -->
+<!-- Mirrored from www.w3schools.com/php/php_json.asp by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 02 Dec 2019 17:52:55 GMT -->
 <head>
-<title>PHP Exercises</title>
+<title>PHP and JSON</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="Keywords" content="HTML,CSS,JavaScript,SQL,PHP,jQuery,XML,DOM,Bootstrap,Python,Java,Web development,W3C,tutorials,programming,training,learning,quiz,primer,lessons,references,examples,exercises,source code,colors,demos,tips">
@@ -1682,32 +1683,141 @@ function w3_getStyleValue(elmnt,style) {
         <!-- adspace leaderboard -->
        
       </div>
-<h1>PHP <span class="color_h1">Exercises</span></h1>
+<h1><span class="color_h1">PHP and </span>JSON</h1>
 <div class="w3-clear nextprev">
-  <a class="w3-left w3-btn" href="php_quiz.html">&#10094; Previous</a>
-  <a class="w3-right w3-btn" href="php_exam.html">Next &#10095;</a>
+  <a class="w3-left w3-btn" href="php_filter_advanced.html">&#10094; Previous</a>
+  <a class="w3-right w3-btn" href="php_oop_what_is.html">Next &#10095;</a>
 </div>
-<hr><p class="intro">You can test your PHP skills with W3Schools' Exercises.</p>
-<hr><h2>Exercises</h2>
-<p>We have gathered a variety of PHP exercises (with answers) for each PHP Chapter.</p>
-<p>Try to solve an exercise by filling in the missing parts of a code. If your stuck, hit the "Show Answer" button to see what you've done wrong.</p>
-<h2>Count Your Score</h2>
-<p>You will get 1 point for
-each correct answer. Your score and total score will always be displayed.</p>
+<hr>
+<h2>What is JSON?</h2>
+<p>JSON stands for JavaScript Object Notation, and is a syntax for storing and 
+exchanging data.</p>
+<p>Since the JSON format is a text-based format, it can easily be sent to and 
+from a server, and used as a data format by any programming language.</p>
+<hr>
 
-<div class="w3-dark-grey w3-padding w3-margin-top">
-  <h2>Start PHP Exercises</h2>
-  <p>Good luck!</p>
-  <p><a href="exercise.html" target="_blank" class="w3-btn w3-green" style="padding:17px;font-size:17px">Start PHP Exercises &#10095;</a></p>
+<h2>PHP and JSON</h2>
+<p>PHP has some built-in functions to handle JSON.</p>
+<p>First, we will look at the following two functions:</p>
+<ul>
+  <li>
+<span class="w3-codespan">json_encode()</span></li>
+  <li>
+<span class="w3-codespan">json_decode()</span> </li>
+</ul>
+<hr>
+
+<h2>PHP - json_encode()</h2>
+<p>The <span class="w3-codespan">json_encode()</span> function is used to encode a value to JSON format.</p>
+<div class="w3-example">
+<h3>Example</h3>
+<p>This example shows how to encode an associative array into a JSON object:</p>
+<div class="w3-code notranslate htmlHigh">
+  &lt;?php<br>$age = array(&quot;Peter&quot;=&gt;35, &quot;Ben&quot;=&gt;37, &quot;Joe&quot;=&gt;43);<br>
+  <br>echo json_encode($age);<br>?&gt;<br></div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="showphpf49c.html?filename=demo_json_encode1">Run Example &raquo;</a>
 </div>
-<div class="w3-note w3-panel">
-  <p>If you don't know PHP, we suggest that you read our <a href="default.html">PHP Tutorial</a> from scratch.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>This example shows how to encode an indexed array into a JSON array:</p>
+<div class="w3-code notranslate htmlHigh">
+  &lt;?php<br>$cars = array(&quot;Volvo&quot;, &quot;BMW&quot;, &quot;Toyota&quot;);<br><br>echo json_encode($cars);<br>?&gt;<br></div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="showphp83cc.html?filename=demo_json_encode2">Run Example &raquo;</a>
+</div>
+<hr>
+<div id="midcontentadcontainer" style="overflow:auto;text-align:center">
+<!-- MidContent -->
+
+  <!--<pre>mid_content, all: [300,250][336,280][728,90][970,250][970,90][320,50][468,60]</pre>-->
+  <div id="snhb-mid_content-0"></div>
+    
+</div>
+<hr>
+
+<h2>PHP - json_decode()</h2>
+<p>The <span class="w3-codespan">json_decode()</span> function is used to decode 
+a JSON object into a PHP object or an associative array.</p>
+<div class="w3-example">
+<h3>Example</h3>
+<p>This example decodes JSON data into a 
+PHP object:</p>
+<div class="w3-code notranslate htmlHigh">
+  &lt;?php<br>$jsonobj = '{&quot;Peter&quot;:35,&quot;Ben&quot;:37,&quot;Joe&quot;:43}';<br><br>var_dump(json_decode($jsonobj));<br>?&gt;<br></div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="showphp07eb.html?filename=demo_json_decode1">Run Example &raquo;</a>
+</div>
+
+<p>The <span class="w3-codespan">json_decode()</span> function returns an object 
+by default. The <span class="w3-codespan">json_decode()</span> function has a 
+second parameter, and when set to true, JSON objects are decoded into 
+associative arrays.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>This example decodes JSON data into a 
+PHP 
+associative array:</p>
+<div class="w3-code notranslate htmlHigh">
+  &lt;?php<br>$jsonobj = '{&quot;Peter&quot;:35,&quot;Ben&quot;:37,&quot;Joe&quot;:43}';<br><br>var_dump(json_decode($jsonobj, 
+  true));<br>?&gt;<br></div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="showphp5bfa.html?filename=demo_json_decode2">Run Example &raquo;</a>
+</div>
+<hr>
+
+<h2>PHP - Accessing the Decoded Values</h2>
+<p>Here are two examples of how to access the decoded values from an object and 
+from an associative array:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<p>This example shows how to access the values from a PHP object:</p>
+<div class="w3-code notranslate htmlHigh">
+  &lt;?php<br>$jsonobj = '{&quot;Peter&quot;:35,&quot;Ben&quot;:37,&quot;Joe&quot;:43}';<br><br>
+  $obj = json_decode($jsonobj);<br><br>echo $obj-&gt;Peter;<br>echo $obj-&gt;Ben;<br>
+  echo $obj-&gt;Joe;<br>?&gt;<br></div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="showphp274e.html?filename=demo_json_decode3">Run Example &raquo;</a>
+</div>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>This example shows how to access the values from a 
+PHP associative array:</p>
+<div class="w3-code notranslate htmlHigh">
+  &lt;?php<br>$jsonobj = '{&quot;Peter&quot;:35,&quot;Ben&quot;:37,&quot;Joe&quot;:43}';<br><br>
+  $arr = json_decode($jsonobj, true);<br><br>echo $arr[&quot;Peter&quot;];<br>echo $arr[&quot;Ben&quot;];<br>
+  echo $arr[&quot;Joe&quot;];<br>?&gt;<br></div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="showphpa367.html?filename=demo_json_decode4">Run Example &raquo;</a>
+</div>
+
+<hr>
+
+<h2>PHP - Looping Through the Values</h2>
+<p>You can also loop through the values with a <span class="w3-codespan">foreach()</span> 
+loop:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<p>This example shows how to loop through the values of a PHP object:</p>
+<div class="w3-code notranslate htmlHigh">
+  &lt;?php<br>$jsonobj = '{&quot;Peter&quot;:35,&quot;Ben&quot;:37,&quot;Joe&quot;:43}';<br><br>
+  $obj = json_decode($jsonobj);<br><br>foreach($obj 
+  as $key =&gt; $value) {<br>&nbsp; echo $key . &quot; =&gt; &quot; . $value . &quot;&lt;br&gt;&quot;;<br>}<br>?&gt;<br></div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="showphpc780.html?filename=demo_json_decode5">Run Example &raquo;</a>
+</div>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>This example shows how to loop through the 
+values of a PHP associative array:</p>
+<div class="w3-code notranslate htmlHigh">
+  &lt;?php<br>$jsonobj = '{&quot;Peter&quot;:35,&quot;Ben&quot;:37,&quot;Joe&quot;:43}';<br><br>
+  $arr = json_decode($jsonobj, true);<br><br>foreach($arr as $key =&gt; $value) {<br>&nbsp; echo $key . &quot; =&gt; &quot; . $value 
+  . &quot;&lt;br&gt;&quot;;<br>}<br>?&gt;<br></div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="showphp1738.html?filename=demo_json_decode6">Run Example &raquo;</a>
 </div>
 
 <br>
 <div class="w3-clear nextprev">
-  <a class="w3-left w3-btn" href="php_quiz.html">&#10094; Previous</a>
-  <a class="w3-right w3-btn" href="php_exam.html">Next &#10095;</a>
+  <a class="w3-left w3-btn" href="php_filter_advanced.html">&#10094; Previous</a>
+  <a class="w3-right w3-btn" href="php_oop_what_is.html">Next &#10095;</a>
 </div>
 </div>
 <div class="w3-col l2 m12" id="right">
@@ -2002,5 +2112,5 @@ While using this site, you agree to have read and accepted our <a href="https://
 <![endif]-->
 </body>
 
-<!-- Mirrored from www.w3schools.com/php/php_exercises.asp by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 02 Dec 2019 17:51:55 GMT -->
+<!-- Mirrored from www.w3schools.com/php/php_json.asp by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 02 Dec 2019 17:52:59 GMT -->
 </html>

@@ -1,9 +1,9 @@
+
 <!DOCTYPE html>
 <html lang="en-US">
 
-<!-- Mirrored from www.w3schools.com/php/php_exercises.asp by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 02 Dec 2019 17:51:55 GMT -->
-<head>
-<title>PHP Exercises</title>
+<!-- Mirrored from www.w3schools.com/php/php_superglobals_globals.asp by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 02 Dec 2019 17:52:45 GMT -->
+<head><title>PHP $GLOBALS</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="Keywords" content="HTML,CSS,JavaScript,SQL,PHP,jQuery,XML,DOM,Bootstrap,Python,Java,Web development,W3C,tutorials,programming,training,learning,quiz,primer,lessons,references,examples,exercises,source code,colors,demos,tips">
@@ -1682,32 +1682,37 @@ function w3_getStyleValue(elmnt,style) {
         <!-- adspace leaderboard -->
        
       </div>
-<h1>PHP <span class="color_h1">Exercises</span></h1>
+<h1>PHP Superglobal - $GLOBALS</h1>
 <div class="w3-clear nextprev">
-  <a class="w3-left w3-btn" href="php_quiz.html">&#10094; Previous</a>
-  <a class="w3-right w3-btn" href="php_exam.html">Next &#10095;</a>
+  <a class="w3-left w3-btn" href="php_superglobals.html">&#10094; Previous</a>
+  <a class="w3-right w3-btn" href="php_superglobals_server.html">Next &#10095;</a>
 </div>
-<hr><p class="intro">You can test your PHP skills with W3Schools' Exercises.</p>
-<hr><h2>Exercises</h2>
-<p>We have gathered a variety of PHP exercises (with answers) for each PHP Chapter.</p>
-<p>Try to solve an exercise by filling in the missing parts of a code. If your stuck, hit the "Show Answer" button to see what you've done wrong.</p>
-<h2>Count Your Score</h2>
-<p>You will get 1 point for
-each correct answer. Your score and total score will always be displayed.</p>
+<hr>
+<p class="intro">Super global variables are built-in variables that are always available in all scopes.</p>
+<hr>
 
-<div class="w3-dark-grey w3-padding w3-margin-top">
-  <h2>Start PHP Exercises</h2>
-  <p>Good luck!</p>
-  <p><a href="exercise.html" target="_blank" class="w3-btn w3-green" style="padding:17px;font-size:17px">Start PHP Exercises &#10095;</a></p>
+<h2>PHP $GLOBALS</h2>
+<p>$GLOBALS is a PHP super global variable which is used to access global variables from anywhere in the PHP script (also from within 
+functions or methods). </p>
+<p>PHP stores all global variables in an array called $GLOBALS[<i>index</i>]. 
+The <em>index</em> holds the name of the variable.</p>
+<p>The example below shows how to use the super global variable $GLOBALS:</p>
+
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code htmlHigh notranslate">
+ &lt;?php <br>$x = 75; <br>$y = 25;<br>&nbsp;<br>function addition() { <br>&nbsp;&nbsp;&nbsp; $GLOBALS['z'] = $GLOBALS['x'] + $GLOBALS['y']; <br>}<br>&nbsp;<br>addition(); <br>echo $z; <br>?&gt; </div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="phptryitcb83.html?filename=tryphp_global_global">Try it Yourself &raquo;</a>
 </div>
-<div class="w3-note w3-panel">
-  <p>If you don't know PHP, we suggest that you read our <a href="default.html">PHP Tutorial</a> from scratch.</p>
-</div>
+
+<p>In the example above, since z is a variable present within the $GLOBALS 
+array, it is also accessible from outside the function! </p>
 
 <br>
 <div class="w3-clear nextprev">
-  <a class="w3-left w3-btn" href="php_quiz.html">&#10094; Previous</a>
-  <a class="w3-right w3-btn" href="php_exam.html">Next &#10095;</a>
+  <a class="w3-left w3-btn" href="php_superglobals.html">&#10094; Previous</a>
+  <a class="w3-right w3-btn" href="php_superglobals_server.html">Next &#10095;</a>
 </div>
 </div>
 <div class="w3-col l2 m12" id="right">
@@ -2002,5 +2007,5 @@ While using this site, you agree to have read and accepted our <a href="https://
 <![endif]-->
 </body>
 
-<!-- Mirrored from www.w3schools.com/php/php_exercises.asp by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 02 Dec 2019 17:51:55 GMT -->
+<!-- Mirrored from www.w3schools.com/php/php_superglobals_globals.asp by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 02 Dec 2019 17:52:45 GMT -->
 </html>
