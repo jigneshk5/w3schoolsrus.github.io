@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<title>PHP Суперглобальная переменная $GLOBALS. Уроки для начинающих. W3Schools на русском</title>
+<title>PHP Суперглобальная переменная $_SERVER. Уроки для начинающих. W3Schools на русском</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta content="переменная,php,учебник,уроки,для начинающих,w3schools,на русском,язык,программирования,создание,сайтов,веб" name="keywords">
-<meta content="PHP Суперглобальные переменные $GLOBALS - используется для доступа к глобальным переменным из любой точки скрипта PHP (также из функций или методов). W3Schools на русском. Уроки онлайн для начинающих бесплатно." name="description">
+<meta content="php,учебник,уроки,для начинающих,w3schools,на русском,язык,программирования,создание,сайтов,веб" name="keywords">
+<meta content="PHP Суперглобальные переменные - $_SERVER является суперглобальной переменной PHP, которая содержит информацию о заголовках, путях и расположениях скриптов. W3Schools на русском. Уроки онлайн для начинающих бесплатно." name="description">
 <link rel="icon" href="../favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="../w3css/4/w3.css">
 </head>
@@ -1071,34 +1071,136 @@
     <div class='w3-col l10 m12' id='main'>
 	<a href="default.html"><img src="../svg/php.svg" alt="PHP. Уроки для начинающих" class="w3-left" title="PHP для начинающих" style="width:120px;padding: 10px;"></a>
 
-<h1>PHP Суперглобальные переменные - $GLOBALS</h1>
+<h1>PHP Суперглобальные переменные - $_SERVER</h1>
 <div class="w3-clear nextprev">
-  <a class="w3-left w3-btn" href="php_superglobals.html">&#10094; Prev</a>
-  <a class="w3-right w3-btn" href="php_superglobals_server.html">Next &#10095;</a>
+  <a class="w3-left w3-btn" href="php_superglobals_globals.html">&#10094; Prev</a>
+  <a class="w3-right w3-btn" href="php_superglobals_request.html">Next &#10095;</a>
 </div>
 <hr>
 <p class="intro"><strong>Суперглобальные переменные</strong> - это встроенные переменные, которые всегда доступны во всех областях.</p>
 <hr>
 
-<h2>PHP $GLOBALS</h2>
-<p>$GLOBALS - это суперглобальная переменная PHP, которая используется для доступа к глобальным переменным из любой точки скрипта PHP (также из функций или методов).</p>
-<p>PHP stores aPHP хранит все глобальные переменные в массиве $GLOBALS[<i>index</i>]. Значение <em>index</em> содержит имя переменной.</p>
-<p>В приведенном ниже примере показано, как использовать суперглобальную переменную $GLOBALS:</p>
+<h2>PHP $_SERVER</h2>
+<p>$_SERVER является суперглобальной переменной PHP, которая содержит информацию о заголовках, путях и расположениях скриптов.</p>
+<p>В приведенном ниже примере показано, как использовать некоторые элементы в $_SERVER:</p>
 
 
 <div class="w3-example">
 <h3>Пример</h3>
 <div class="w3-code htmlHigh notranslate">
- &lt;?php <br>$x = 75; <br>$y = 25;<br>&nbsp;<br>function addition() { <br>&nbsp;&nbsp;&nbsp; $GLOBALS['z'] = $GLOBALS['x'] + $GLOBALS['y']; <br>}<br>&nbsp;<br>addition(); <br>echo $z; <br>?&gt; </div>
-<a target="_blank" class="w3-btn w3-margin-bottom" href="phptryitcb83.html?filename=tryphp_global_global">Попробуйте сами &raquo;</a>
+ &lt;?php <br>echo $_SERVER['PHP_SELF'];<br>echo &quot;&lt;br&gt;&quot;;<br>
+ echo $_SERVER['SERVER_NAME'];<br>echo &quot;&lt;br&gt;&quot;;<br>echo $_SERVER['HTTP_HOST'];<br>
+ echo &quot;&lt;br&gt;&quot;;<br>echo $_SERVER['HTTP_REFERER'];<br>echo &quot;&lt;br&gt;&quot;;<br>echo $_SERVER['HTTP_USER_AGENT'];<br>echo &quot;&lt;br&gt;&quot;;<br>echo $_SERVER['SCRIPT_NAME'];<br>?&gt; </div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="https://tryphp.w3schools.com/showphp.php?filename=demo_global_server">Попробуйте сами &raquo;</a>
 </div>
-
-<p>В приведенном выше примере, поскольку z является переменной, присутствующей в массиве $GLOBALS, она также доступна вне функции!</p>
+<p>В следующей таблице перечислены наиболее важные элементы, которые могут быть внутри $_SERVER:</p>
+<table class="w3-table-all notranslate">
+<tr>
+<th style="width:35%">Элемент/Код</th>
+<th style="width:65%">Описание</th>
+</tr>
+<tr>
+<td>$_SERVER['PHP_SELF']</td>
+<td>Возвращает имя файла исполняемого скрипта</td>
+</tr>
+<tr>
+<td>$_SERVER['GATEWAY_INTERFACE']</td>
+<td>Возвращает версию Common Gateway Interface (CGI), которую использует сервер</td>
+</tr>
+<tr>
+<td>$_SERVER['SERVER_ADDR']</td>
+<td>Возвращает IP-адрес хост-сервера</td>
+</tr>
+<tr>
+<td>$_SERVER['SERVER_NAME']</td>
+<td>Возвращает имя хост-сервера (например, www.w3schools.com)</td>
+</tr>
+<tr>
+<td>$_SERVER['SERVER_SOFTWARE']</td>
+<td>Возвращает строку идентификации сервера (например, Apache/2.2.24)</td>
+</tr>
+<tr>
+<td>$_SERVER['SERVER_PROTOCOL']</td>
+<td>Возвращает имя и ревизию информационного протокола (например, HTTP/1.1)</td>
+</tr>
+<tr>
+<td>$_SERVER['REQUEST_METHOD']</td>
+<td>Возвращает метод запроса, используемый для доступа к странице (например, POST)</td>
+</tr>
+<tr>
+<td>$_SERVER['REQUEST_TIME']</td>
+<td>Возвращает метку времени начала запроса (например, 1377687496)</td>
+</tr>
+<tr>
+<td>$_SERVER['QUERY_STRING']</td>
+<td>Возвращает строку запроса, если доступ к странице осуществляется через строку запроса</td>
+</tr>
+<tr>
+<td>$_SERVER['HTTP_ACCEPT']</td>
+<td>Возвращает заголовок Accept из текущего запроса</td>
+</tr>
+<tr>
+<td>$_SERVER['HTTP_ACCEPT_CHARSET']</td>
+<td>Возвращает заголовок Accept_Charset из текущего запроса (например, utf-8,ISO-8859-1)</td>
+</tr>
+<tr>
+<td>$_SERVER['HTTP_HOST']</td>
+<td>Возвращает заголовок хоста из текущего запроса</td>
+</tr>
+<tr>
+<td>$_SERVER['HTTP_REFERER']</td>
+<td>Возвращает полный URL-адрес текущей страницы (ненадежно, поскольку не все user-агенты поддерживают его)</td>
+</tr>
+<tr>
+<td>$_SERVER['HTTPS']</td>
+<td>Запрашивается ли скрипт по безопасному протоколу HTTP?</td>
+</tr>
+<tr>
+<td>$_SERVER['REMOTE_ADDR']</td>
+<td>Возвращает IP-адрес, с которого пользователь просматривает текущую страницу</td>
+</tr>
+<tr>
+<td>$_SERVER['REMOTE_HOST']</td>
+<td>Возвращает имя хоста, с которого пользователь просматривает текущую страницу</td>
+</tr>
+<tr>
+<td>$_SERVER['REMOTE_PORT']</td>
+<td>Возвращает порт, используемый на компьютере пользователя для связи с веб-сервером.</td>
+</tr>
+<tr>
+<td>$_SERVER['SCRIPT_FILENAME']</td>
+<td>Возвращает абсолютный путь к исполняемому скрипту</td>
+</tr>
+<tr>
+<td>$_SERVER['SERVER_ADMIN']</td>
+<td>Возвращает значение, данное директиве SERVER_ADMIN в файле конфигурации веб-сервера (если ваш скрипт выполняется на виртуальном хосте, это будет значение, определенное для этого виртуального хоста) (например, someone@w3schools.com)</td>
+</tr>
+<tr>
+<td>$_SERVER['SERVER_PORT']</td>
+<td>Возвращает порт на сервере, который используется веб-сервером для связи (например, 80)</td>
+</tr>
+<tr>
+<td>$_SERVER['SERVER_SIGNATURE']</td>
+<td>Возвращает версию сервера и имя виртуального хоста, которые добавляются на сгенерированные сервером страницы</td>
+</tr>
+<tr>
+<td>$_SERVER['PATH_TRANSLATED']</td>
+<td>Возвращает путь к текущему сценарию на основе файловой системы</td>
+</tr>
+<tr>
+<td>$_SERVER['SCRIPT_NAME']</td>
+<td>Возвращает путь текущего скрипта</td>
+</tr>
+<tr>
+<td>$_SERVER['SCRIPT_URI']</td>
+<td>Возвращает URI текущей страницы</td>
+</tr>
+</table>
 
 <hr>
 <div class="w3-clear nextprev">
-  <a class="w3-left w3-btn" href="php_superglobals.html">&#10094; Prev</a>
-  <a class="w3-right w3-btn" href="php_superglobals_server.html">Next &#10095;</a>
+  <a class="w3-left w3-btn" href="php_superglobals_globals.html">&#10094; Prev</a>
+  <a class="w3-right w3-btn" href="php_superglobals_request.html">Next &#10095;</a>
 </div>
 
 <hr>
@@ -1108,7 +1210,7 @@
 <script>
 var disqus_config = function () {
 this.page.url = w3schoolsrus.github.io; // канонический URL страницы
-this.page.identifier = w3schoolsrus.github.io / php / php_superglobals_globals.html; // уникальный идентификатор страницы
+this.page.identifier = w3schoolsrus.github.io / php / php_superglobals_server.html; // уникальный идентификатор страницы
 };
 (function() { // Не редактировать ниже этой линии
 var d = document, s = d.createElement('script');
