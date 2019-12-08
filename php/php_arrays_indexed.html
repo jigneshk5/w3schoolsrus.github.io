@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<title>PHP Учебник. Уроки для начинающих. W3Schools на русском</title>
+<title>PHP Индексированные массивы. Уроки для начинающих. W3Schools на русском</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta content="php,учебник,уроки,для начинающих,w3schools,на русском,язык,программирования,создание,сайтов,веб" name="keywords">
-<meta content="PHP . W3Schools на русском. Уроки онлайн для начинающих бесплатно." name="description">
+<meta content="PHP Индексированные массивы. Два способа создания индексированных массивов - автоматически и вручную. W3Schools на русском. Уроки онлайн для начинающих бесплатно." name="description">
 <link rel="icon" href="../favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="../w3css/4/w3.css">
 </head>
@@ -1073,61 +1073,59 @@
 
 <h1>PHP <span class="color_h1">Индексированные массивы</span></h1>
 <div class="w3-clear nextprev">
-  <a class="w3-left w3-btn" href="php_arrays.html">&#10094; Previous</a>
+  <a class="w3-left w3-btn" href="php_arrays.html">&#10094; Prev</a>
   <a class="w3-right w3-btn" href="php_arrays_associative.html">Next &#10095;</a>
 </div>
 <hr>
-<h2>PHP Indexed Arrays</h2>
-<p>There are two ways to create indexed arrays:</p>
-<p>The index can be assigned automatically (index
-always starts at 0), like this:</p>
+<h2>PHP Индексированные массивы</h2>
+<p>Есть два способа создания индексированных массивов:</p>
+<p>Индекс может быть назначен автоматически (индекс всегда начинается с 0), вот так:</p>
 <div class="w3-code w3-border notranslate"><div>
 $cars = array(&quot;Volvo&quot;, &quot;BMW&quot;, &quot;Toyota&quot;);</div></div>
 
-<p>or the index can be assigned manually:</p>
+<p>или индекс может быть назначен вручную:</p>
 <div class="w3-code w3-border notranslate"><div>
 $cars[0] = &quot;Volvo&quot;;<br>
 $cars[1] = &quot;BMW&quot;;<br>
 $cars[2] = &quot;Toyota&quot;;
 </div></div>
-<p>The following example creates an indexed array named $cars, assigns three
-elements to it, and then prints a text containing the array values:</p>
+<p>В следующем примере создается индексированный массив с именем $cars, присваивает ему три элемента, а затем печатает текст, содержащий значения массива:</p>
 
 <div class="w3-example">
-<h3>Example</h3>
+<h3>Пример</h3>
 <div class="w3-code htmlHigh notranslate">
 &lt;?php<br>
  $cars = array(&quot;Volvo&quot;, &quot;BMW&quot;, &quot;Toyota&quot;);<br>echo &quot;I like &quot; . $cars[0] . &quot;, &quot; . $cars[1] . &quot; and &quot; . $cars[2] . &quot;.&quot;;<br>
 ?&gt;
 </div>
-<a target="_blank" class="w3-btn w3-margin-bottom" href="phptryitb2ed.html?filename=tryphp_array_num">Try it Yourself &raquo;</a>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="phptryitb2ed.html?filename=tryphp_array_num">Попробуйте сами &raquo;</a>
 </div>
 <hr>
 
-<h2>Loop Through an Indexed Array</h2>
-<p>To loop through and print all the values of an indexed array, you could use a <code class="w3-codespan">for</code> loop, like this:</p>
+<h2>Цикл через индексированный массив</h2>
+<p>Чтобы просмотреть и распечатать все значения индексированного массива, вы можете использовать цикл <code class="w3-codespan">for</code> например так:</p>
 <div class="w3-example">
-<h3>Example</h3>
+<h3>Пример</h3>
 <div class="w3-code htmlHigh notranslate">
 &lt;?php<br>
  $cars = array(&quot;Volvo&quot;, &quot;BMW&quot;, &quot;Toyota&quot;);<br>
  $arrlength = count($cars);<br><br>for($x = 0; $x &lt; $arrlength; $x++) {<br>&nbsp; &nbsp; echo $cars[$x];<br>&nbsp;&nbsp;&nbsp; echo &quot;&lt;br&gt;&quot;;<br>}<br>?&gt;
 </div>
-<a target="_blank" class="w3-btn w3-margin-bottom" href="phptryitdda1.html?filename=tryphp_array_num_loop">Try it Yourself &raquo;</a>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="phptryitdda1.html?filename=tryphp_array_num_loop">Попробуйте сами &raquo;</a>
 </div>
 <hr>
 
-<h2>Complete PHP Array Reference</h2>
-<p>For a complete reference of all array functions, go to our complete <a href="php_ref_array.html">PHP Array Reference</a>.</p>
-<p>The reference contains a brief description, and examples of use, for each function!</p>
+<h2>Полный справочник по PHP массивам</h2>
+<p>Полный список всех функций массива приведен в нашем <a href="php_ref_array.html">PHP Справочник массивов</a>.</p>
+<p>Справочник содержит краткое описание и примеры использования для каждой функции!</p>
 <hr>
 
-<h2>PHP Exercises</h2>
+<h2>PHP Упражнения</h2>
 <form autocomplete="off" id="w3-exerciseform" action="https://www.w3schools.com/php/exercise.asp?filename=exercise_arrays2" method="post" target="_blank">
-<h2>Test Yourself With Exercises</h2>
+<h2>Проверьте себя с помощью упражнений</h2>
 <div class="exercisewindow">
-<h2>Exercise:</h2>
-<p>Output the second item in the $fruits array.</p>
+<h2>Упражнение:</h2>
+<p>Выведите второй элемент в массиве $fruits.</p>
 <div class="exerciseprecontainer">
 <pre>
 $fruits = array("Apple", "Banana", "Orange");
@@ -1135,11 +1133,11 @@ echo <input name="ex1" maxlength="10" style="width:105px;">;
 </pre>
 </div>
 <br>
-<button type="submit" class="w3-btn w3-margin-bottom">Submit Answer &raquo;</button>
+<button type="submit" class="w3-btn w3-margin-bottom">Отправить ответ &raquo;</button>
 </div>
 </form>
 
-<br>
+<hr>
 <div class="w3-clear nextprev">
   <a class="w3-left w3-btn" href="php_arrays.html">&#10094; Prev</a>
   <a class="w3-right w3-btn" href="php_arrays_associative.html">Next &#10095;</a>
@@ -1152,7 +1150,7 @@ echo <input name="ex1" maxlength="10" style="width:105px;">;
 <script>
 var disqus_config = function () {
 this.page.url = w3schoolsrus.github.io; // канонический URL страницы
-this.page.identifier = w3schoolsrus.github.io / php / php_.html; // уникальный идентификатор страницы
+this.page.identifier = w3schoolsrus.github.io / php / php_arrays.html; // уникальный идентификатор страницы
 };
 (function() { // Не редактировать ниже этой линии
 var d = document, s = d.createElement('script');
