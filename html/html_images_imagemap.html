@@ -345,10 +345,24 @@
 <a class="w3-right w3-btn" href="html_images_background.html">Next &#10095;</a>
 </div>
 <hr>
+
+<div class="sum">
+<h4>В этой теме:</h4>
+<ul>
+  <li><a href="#c1"><em>Изображение-карта</em></a></li>
+  <li><a href="#c2"><em>Как это работает?</em></a></li>
+  <li><a href="#c3"><em>Изображение</em></a></li>
+  <li><a href="#c4"><em>Карта</em></a></li>
+  <li><a href="#c5"><em>Области</em></a></li>
+  <li><a href="#c6"><em>Изображение-карта и JavaScript</em></a></li>
+</ul>
+</div>
+<hr>
+
 <p class="intro">С изображениями-картами вы можете добавить кликабельные области на изображении.</p>
 <hr>
 
-<h2>Изображение-карта</h2>
+<h2 id="c1">Изображение-карта</h2>
 <p>Тег <code class="w3-codespan">&lt;map&gt;</code> определяет изображение-карту. Изображение-карта - это изображение с
 кликабельными областями.</p>
 <p>Нажмите на компьютер, телефон или чашку кофе на изображении ниже:</p>
@@ -373,14 +387,12 @@
 </div>
 <hr>
 
-<h2>Как это работает?</h2>
-
+<h2 id="c2">Как это работает?</h2>
 <p>Идея, лежащая в основе изображений-карт, заключается в том, что вы должны иметь возможность выполнять различные действия в зависимости от того, на каком изображении вы кликнули.</p>
 <p>Чтобы создать карту изображений, вам нужно изображение и карта, содержащая некоторые правила, описывающие интерактивные области.</p>
-
 <hr>
-<h2>Изображение</h2>
 
+<h2 id="c3">Изображение</h2>
 <p>Изображение вставляется с использованием тега <code class="w3-codespan">&lt;img&gt;</code>. Единственное отличие от других изображений заключается в том, что вы должны добавить атрибут <code class="w3-codespan">usemap</code>:</p>
 
 <div class="w3-example">
@@ -397,11 +409,9 @@
 
 <hr>
 
-<h2>Карта</h2>
-
+<h2 id="c4">Карта</h2>
 <p>Затем добавьте элемент <code class="w3-codespan">&lt;map&gt;</code>.</p>
-
-<p>Элемент <code class="w3-codespan">&lt;map&gt;</code> используется для создания карты изображения и связан с изображением с помощью атрибута <code class="w3-codespan">name</code>:</p>
+<p>Элемент <code class="w3-codespan">&lt;map&gt;</code> используется для создания изображения-карты и связан с изображением с помощью атрибута <code class="w3-codespan">name</code>:</p>
 
 <div class="w3-example">
 <div class="w3-code notranslate htmlHigh">
@@ -414,11 +424,9 @@
 <div class="w3-panel w3-note">
   <p><strong>Примечание:</strong> Вы можете вставить элемент <code class="w3-codespan">&lt;map&gt;</code> где угодно, его не нужно вставлять сразу после изображения.</p>
 </div>
-
 <hr>
 
-<h2>Области</h2>
-
+<h2 id="c5">Области</h2>
 <p>Затем добавьте интерактивные области.</p>
 <p> Кликабельная область определяется с помощью элемента <code class="w3-codespan">&lt;area&gt;</code>.</p>
 <h3>Форма</h3>
@@ -427,7 +435,7 @@
   <li><code class="w3-codespan">rect</code> - определяет прямоугольную область</li>
   <li><code class="w3-codespan">circle</code> - определяет круговую область</li>
   <li><code class="w3-codespan">poly</code> - определяет многоугольную область</li>
-  <li><code class="w3-codespan">default</code> - определяет весь регион</li>
+  <li><code class="w3-codespan">default</code> - определяет всю область</li>
 </ul>
 <h3>Координаты</h3>
 <p>Вы должны определить некоторые координаты, чтобы иметь возможность разместить кликабельную область на изображении.</p>
@@ -435,7 +443,6 @@
 <p>Координаты <code class="w3-codespan">34, 44</code> расположены в 34 пикселях от левого поля и в 44 пикселях от верхнего:</p>
 
 <div style="position:relative">
-
 <div style="position:absolute;width:2px;height:379px;left:34px;background-color:GreenYellow ;opacity:0.8"></div>
 <div style="position:absolute;width:400px;height:2px;top:44px;background-color:GreenYellow ;opacity:0.8"></div>
 <div style="border:2px solid red;border-radius:50%;position:absolute;width:20px;height:20px;left:25px;top:35px;background-color:transparent;opacity:0.8"></div>
@@ -464,7 +471,6 @@
 <div style="position:absolute;width:236px;height:306px;left:34px;top:44px;background-color:dodgerblue;opacity:0.8"></div>
 </div>
 <img src="workplace.jpg" alt="Workplace">
-
 <hr>
 
 <h3>Круг</h3>
@@ -503,8 +509,7 @@
 
 <hr>
 
-<h2>Изображение-карта и JavaScript</h2>
-
+<h2 id="c6">Изображение-карта и JavaScript</h2>
 <p>Кликабельная область не обязательно должна быть ссылкой на другую страницу, она также может вызывать функцию JavaScript.</p>
 
 <p>Добавьте событие <code class="w3-codespan">click</code> в элемент <code class="w3-codespan">&lt;area&gt;</code> чтобы выполнить функцию JavaScript:</p>
@@ -517,7 +522,7 @@
 <a class="w3-btn w3-margin-bottom" href="tryitab62.html?filename=tryhtml_images_map5" target="_blank">Попробуйте сами &raquo;</a>
 </div>
 
-<br>
+<hr>
 <div class="w3-clear nextprev">
 <a class="w3-left w3-btn" href="html_images.html">&#10094; Prev</a>
 <a class="w3-right w3-btn" href="html_images_background.html">Next &#10095;</a>

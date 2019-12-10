@@ -346,9 +346,30 @@
 <a class="w3-right w3-btn" href="html_css.html">Next &#10095;</a>
 </div>
 <hr>
+
+<div class="sum">
+<h4>В этой теме:</h4>
+<ul>
+  <li><a href="#c1"><em>Названия цветов</em></a></li>
+  <li><a href="#c2"><em>Background Color - Цвет фона</em></a></li>
+  <li><a href="#c3"><em>Text Color - Цвет текста</em></a></li>
+  <li><a href="#c4"><em>Border Color - Цвет границы</em></a></li>
+  <li><a href="#c5"><em>Значения цвета</em></a>
+    <ul>
+      <li><a href="#c6"><em>RGB Значение</em></a></li>
+      <li><a href="#c7"><em>HEX значение</em></a></li>
+      <li><a href="#c8"><em>HSL значение</em></a></li>
+      <li><a href="#c9"><em>RGBA значение</em></a></li>
+      <li><a href="#c10"><em>HSLA значение</em></a></li>
+    </ul>
+  </li>
+</ul>
+</div>
+<hr>
+
 <p class="intro">Цвета HTML задаются с использованием предварительно определенных названий цветов или значений RGB, HEX, HSL, RGBA, HSLA.</p>
 <hr>
-<h2>Названия цветов</h2>
+<h2 id="c1">Названия цветов</h2>
 <p>В HTML цвет можно указать с помощью названия цвета:</p>
 
 <div class="w3-row w3-center" style="margin:0 -16px;line-height:80px;color:white;">
@@ -383,7 +404,7 @@
 <p>HTML поддерживает <a href="../colors/colors_names.html">140 стандартных названий цветов</a>.</p>
 <hr>
 
-<h2>Background Color - Цвет фона</h2>
+<h2 id="c2">Background Color - Цвет фона</h2>
 <p>Вы можете установить цвет фона для элементов HTML:</p>
 
 <div style="background-color:dodgerblue; text-align:center;color:white;font-size:24px;">Hello World</div>
@@ -403,7 +424,7 @@
 </div>
 
 <hr>
-<h2>Text Color - Цвет текста</h2>
+<h2 id="c3">Text Color - Цвет текста</h2>
 <p>Вы можете установить цвет текста:</p>
 <h3 style="color:tomato">Hello World</h3>
 <p style="color:dodgerblue">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
@@ -420,7 +441,7 @@
 </div>
 
 <hr>
-<h2>Border Color - Цвет границы</h2>
+<h2 id="c4">Border Color - Цвет границы</h2>
 <p>Вы можете установить цвет границ:</p>
 <h2 style="border: 2px solid Tomato;">Hello World</h2>
 <h2 style="border: 2px solid DodgerBlue;">Hello World</h2>
@@ -440,7 +461,7 @@
 </div>
 
 <hr>
-<h2>Значения цвета</h2>
+<h2 id="c5">Значения цвета</h2>
 <p>В HTML цвета также могут быть указаны с использованием значений RGB, HEX, HSL, RGBA и HSLA:</p>
 <p>То же, что и название цвета "Tomato":</p>
 
@@ -467,7 +488,7 @@
 </div>
 
 <hr>
-<h2>RGB Значение</h2>
+<h2 id="c6">RGB Значение</h2>
 <p>В HTML цвет можно указать как значение RGB, используя эту формулу:</p>
 <p style="font-size:20px;font-weight:bold;font-family:Consolas, 'Courier New', Courier, monospace">rgb(<em>red,</em> <em>green</em>, <em>blue</em>)</p>
 <p>Каждый параметр (red, green и blue) определяет интенсивность цвета от 0 до 255.</p>
@@ -564,7 +585,7 @@
 </div>
 
 <hr>
-<h2>HEX значение</h2>
+<h2 id="c7">HEX значение</h2>
 <p>В HTML цвет можно указать, используя шестнадцатеричное значение в форме:</p>
 <p style="font-size:20px;font-weight:bold;font-family:Consolas, 'Courier New', Courier, monospace">#<em>rrggbb</em></p>
 <p>Где rr (<span style="color:red">red</span>), gg (<span style="color:green">green</span>) и bb (<span style="color:blue">blue</span>) шестнадцатеричные значения от 00 до ff (такие же, как десятичные 0-255).</p>
@@ -632,7 +653,7 @@
 
 <hr>
 
-<h2>HSL значение</h2>
+<h2 id="c8">HSL значение</h2>
 <p>В HTML цвет можно указать с помощью оттенка (hue), насыщенности (saturation) и яркости (lightness) - HSL в форме:</p>
 <p style="font-size:20px;font-weight:bold;font-family:Consolas, 'Courier New', Courier, monospace">hsl(<em>hue</em>, <em>saturation</em>, <em>lightness</em>)</p>
 <p>Оттенок (hue) - это градус цветового круга от 0 до 360. 0 - красный, 120 - зеленый, 240 - синий.</p>
@@ -766,7 +787,7 @@
 </div>
 
 <hr>
-<h2>RGBA значение</h2>
+<h2 id="c9">RGBA значение</h2>
 <p>Цветовые значения RGBA являются расширением цветовых значений RGB с альфа-каналом, который определяет непрозрачность для цвета.</p>
 <p>Значение цвета RGBA указывается с:</p>
 <p style="font-size:20px;font-weight:bold;font-family:Consolas, 'Courier New', Courier, monospace">rgba(<em>red,</em> <em>green</em>, <em>blue, alpha</em>)</p>
@@ -810,7 +831,7 @@
 </div>
 
 <hr>
-<h2>HSLA значение</h2>
+<h2 id="c10">HSLA значение</h2>
 <p>Значения цвета HSLA являются расширением значений цвета HSL с альфа-каналом, который определяет непрозрачность для цвета.</p>
 <p>Значение цвета HSLA задается с помощью:</p>
 <p style="font-size:20px;font-weight:bold;font-family:Consolas, 'Courier New', Courier, monospace">hsla(<em>hue,</em> <em>saturation</em>, <em>lightness, alpha</em>)</p>

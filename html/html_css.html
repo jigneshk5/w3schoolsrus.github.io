@@ -345,6 +345,7 @@
 <a class="w3-right w3-btn" href="html_links.html">Next &#10095;</a>
 </div>
 <hr>
+
 <div style="position:relative;height:220px;margin-top:50px;">
   <div style="opacity:0.5;position:absolute;left:50px;top:-30px;width:300px;height:150px;background-color:#40B3DF"></div>
   <div class="w3-theme" style="opacity:0.3;position:absolute;left:120px;top:20px;width:100px;height:170px;"></div>
@@ -358,7 +359,27 @@
 <br>
 <hr>
 
-<h2>Стилизация HTML с помощью CSS. Каскадные таблицы стилей</h2>
+<div class="sum">
+<h4>В этой теме:</h4>
+<ul>
+  <li><a href="#c1"><em>Стилизация HTML с помощью CSS. Каскадные таблицы стилей</em></a></li>
+  <li><a href="#c2"><em>Inline CSS - Встроенный (строчный) стиль</em></a></li>
+  <li><a href="#c3"><em>Internal CSS - Внутренний стиль</em></a></li>
+  <li><a href="#c4"><em>External CSS - Внешний стиль</em></a></li>
+  <li><a href="#c5"><em>CSS Шрифты</em></a></li>
+  <li><a href="#c6"><em>CSS Border - Граница</em></a></li>
+  <li><a href="#c7"><em>CSS Padding - Внутренний отступ</em></a></li>
+  <li><a href="#c8"><em>CSS Margin - Внешний отступ</em></a></li>
+  <li><a href="#c9"><em>Атрибут идентификатора - id</em></a></li>
+  <li><a href="#c10"><em>Атрибут класса - class</em></a></li>
+  <li><a href="#c11"><em>Внешние ссылки</em></a></li>
+  <li><a href="#c12"><em>HTML Упражнения</em></a></li>
+  <li><a href="#c13"><em>HTML Теги стиля</em></a></li>
+</ul>
+</div>
+<hr>
+
+<h2 id="c1">Стилизация HTML с помощью CSS. Каскадные таблицы стилей</h2>
 <p><b>CSS</b> расшифровывается как <b>C</b>ascading <b>S</b>tyle <b>S</b>heets - Каскадная таблица стилей.</p>
 <p>CSS описывает, <strong>как элементы HTML должны отображаться на экране, бумаге или других носителях.</strong>.</p>
 <p>CSS <strong> экономит много времени</strong>. Он может контролировать макет нескольких веб-страниц одновременно.</p>
@@ -375,7 +396,7 @@
 </div>
 <hr>
 
-<h2>Inline CSS - Встроенный (строчный) стиль</h2>
+<h2 id="c2">Inline CSS - Встроенный (строчный) стиль</h2>
 <p>Встроенный CSS используется для применения уникального стиля к одному HTML элементу.</p>
 <p>Встроенный CSS использует атрибут <code class="w3-codespan">style</code> элемента HTML.</p>
 <p>Этот пример устанавливает цвет текста элемента <code class="w3-codespan">&lt;h1&gt;</code> в синий:</p>
@@ -388,7 +409,7 @@
 </div>
 <hr>
 
-<h2>Internal CSS - Внутренний стиль</h2>
+<h2 id="c3">Internal CSS - Внутренний стиль</h2>
 <p>Внутренний CSS используется для определения стиля отдельной HTML страницы.</p>
 <p>Внутренний CSS указывается в разделе <code class="w3-codespan">&lt;head&gt;</code> HTML страницы с помощью элемента <code class="w3-codespan">&lt;style&gt;</code>:</p>
 <div class="w3-example">
@@ -402,7 +423,7 @@
 </div>
 <hr>
 
-<h2>External CSS - Внешний стиль</h2>
+<h2 id="c4">External CSS - Внешний стиль</h2>
 <p>Внешняя таблица стилей используется для определения стиля для многих HTML-страниц.</p>
 <p><strong>С помощью внешней таблицы стилей вы можете изменить внешний вид всего веб-сайта, изменив лишь один файл!</strong></p>
 <p>Чтобы использовать внешнюю таблицу стилей, добавьте ссылку на неё в разделе <code class="w3-codespan">&lt;head&gt;</code> HTML страницы:</p>
@@ -425,7 +446,7 @@
 </div>
 <hr>
 
-<h2>CSS Шрифты</h2>
+<h2 id="c5">CSS Шрифты</h2>
 <p>CSS свойство <code class="w3-codespan">color</code> определяет цвет текста, который будет использоваться.</p>
 <p>CSS свойство <code class="w3-codespan">font-family</code> определяет семейство шрифта, который будет использоваться.</p>
 <p>CSS свойство <code class="w3-codespan">font-size</code> определяет размер текста, который будет использоваться.</p>
@@ -441,7 +462,7 @@
 </div>
 <hr>
 
-<h2>CSS Border - Граница</h2>
+<h2 id="c6">CSS Border - Граница</h2>
 <p>CSS свойство <code class="w3-codespan">border</code> определяет границу вокруг HTML элемента:</p>
 <div class="w3-example">
 <h3>Пример</h3>
@@ -453,7 +474,7 @@ solid powderblue;<br>}<br>
 </div>
 <hr>
 
-<h2>CSS Padding - Внутренний отступ</h2>
+<h2 id="c7">CSS Padding - Внутренний отступ</h2>
 <p>CSS свойство <code class="w3-codespan">padding</code> определяет отступ (пробел) между текстом и границей:</p>
 <div class="w3-example">
 <h3>Пример</h3>
@@ -464,7 +485,7 @@ solid powderblue;<br>&nbsp; padding: 30px;<br>}</div>
 </div>
 <hr>
 
-<h2>CSS Margin - Внешний отступ</h2>
+<h2 id="c8">CSS Margin - Внешний отступ</h2>
 <p>CSS свойство <code class="w3-codespan">margin</code> определяет пространство (пробел) за пределами границы (внешний отступ):</p>
 <div class="w3-example">
 <h3>Пример</h3>
@@ -476,7 +497,7 @@ solid powderblue;<br>&nbsp;&nbsp;margin: 50px;<br>
 </div>
 <hr>
 
-<h2>Атрибут идентификатора - id</h2>
+<h2 id="c9">Атрибут идентификатора - id</h2>
 <p>Чтобы указать конкретный стиль для одного определённого элемента, добавьте атрибут <code class="w3-codespan">id</code> к элементу:</p>
 <div class="w3-example">
 <div class="w3-code notranslate htmlHigh">
@@ -497,7 +518,7 @@ solid powderblue;<br>&nbsp;&nbsp;margin: 50px;<br>
 </div>
 <hr>
 
-<h2>Атрибут класса - class</h2>
+<h2 id="c10">Атрибут класса - class</h2>
 <p>Чтобы указать стиль для определённых типов элементов, добавьте атрибут <code class="w3-codespan">class</code> к элементу:</p>
 <div class="w3-example">
 <div class="w3-code notranslate htmlHigh">
@@ -513,7 +534,7 @@ p.error {<br>&nbsp;&nbsp;color: red;<br>}</div>
 <p>Класс <b>class</b> указывается в css с помощью символа <b>.</b> (точка) и название класса.</p>
 <hr>
 
-<h2>Внешние ссылки</h2>
+<h2 id="c11">Внешние ссылки</h2>
 <p>На внешние таблицы стилей можно ссылаться по полному URL или по пути относительно текущей веб-страницы.</p>
 <p>В этом примере используется полный URL-адрес для ссылки на таблицу стилей:</p>
 
@@ -565,7 +586,7 @@ p.error {<br>&nbsp;&nbsp;color: red;<br>}</div>
   <li>ИСпользуйте CSS свойство <code class="w3-codespan">margin</code> для установки отступа за пределами границ</li>
 </ul>
 <hr>
-<h2>HTML Упражнения</h2>
+<h2 id="c12">HTML Упражнения</h2>
 <form autocomplete="off" id="w3-exerciseform" action="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_css1" method="post" target="_blank">
 <h2 class="heading">Проверьте себя с помощью упражнений</h2>
 <div class="exercisewindow">
@@ -605,7 +626,7 @@ p.error {<br>&nbsp;&nbsp;color: red;<br>}</div>
 </form>
 <hr>
 
-<h2>HTML Теги стиля</h2>
+<h2 id="c13">HTML Теги стиля</h2>
 <table class="w3-table-all notranslate">
 <tr>
 <th>Тег</th>
@@ -624,7 +645,7 @@ p.error {<br>&nbsp;&nbsp;color: red;<br>}</div>
   <p>Для получения полного списка всех доступных тегов HTML, посетите наш <a href="../tags/default.html">HTML Справочник тегов</a>.</p>
 </div>
 
-<br>
+<hr>
 <div class="w3-clear nextprev">
 <a class="w3-left w3-btn" href="html_colors.html">&#10094; Prev</a>
 <a class="w3-right w3-btn" href="html_links.html">Next &#10095;</a>

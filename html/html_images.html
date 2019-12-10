@@ -345,6 +345,26 @@
 <a class="w3-right w3-btn" href="html_images_imagemap.html">Next &#10095;</a>
 </div>
 <hr>
+
+<div class="sum">
+<h4>В этой теме:</h4>
+<ul>
+  <li><a href="#c1"><em>HTML Синтаксис изображений. Тег <code class="w3-codespan">img</code>, атрибут <code class="w3-codespan">src</code></em></a></li>
+  <li><a href="#c2"><em>Атрибут <code class="w3-codespan">alt</code></em></a></li>
+  <li><a href="#c3"><em>Размер изображения - <code class="w3-codespan">width</code> и <code class="w3-codespan">height</code> - ширина и высота</em></a></li>
+  <li><a href="#c4"><em>Ширина и высота или стиль?</em></a></li>
+  <li><a href="#c5"><em>Изображения в другой папке</em></a></li>
+  <li><a href="#c6"><em>Изображения на другом сервере</em></a></li>
+  <li><a href="#c7"><em>Анимированные изображения</em></a></li>
+  <li><a href="#c8"><em>Изображение как ссылка</em></a></li>
+  <li><a href="#c9"><em>Плавающее изображение</em></a></li>
+  <li><a href="#c10"><em>HTML Считыватели экрана (скринридеры)</em></a></li>
+  <li><a href="#c11"><em>HTML Упражнения</em></a></li>
+  <li><a href="#c12"><em>HTML теги изображений</em></a></li>
+</ul>
+</div>
+<hr>
+
 <p class="intro">Изображения могут улучшить дизайн и внешний вид веб-страницы.</p>
 <hr>
 
@@ -384,7 +404,7 @@ alt=&quot;Flowers in Chania&quot;&gt;<br>
 </div>
 <hr>
 
-<h2>HTML Синтаксис изображений</h2>
+<h2 id="c1">HTML Синтаксис изображений</h2>
 <p>В HTML изображения определяются с помощью тега <code class="w3-codespan">&lt;img&gt;</code>.</p>
 <p>Тег <code class="w3-codespan">&lt;img&gt;</code> пустой, содержит только атрибуты и не имеет закрывающего тега.</p>
 <p>Атрибут <code class="w3-codespan">src</code> указывает URL (веб-адрес) изображения:</p>
@@ -394,7 +414,7 @@ alt=&quot;Flowers in Chania&quot;&gt;<br>
 </div></div>
 <hr>
 
-<h2>Атрибут alt</h2>
+<h2 id="c2">Атрибут alt</h2>
 <p>Атрибут <code class="w3-codespan">alt</code> предоставляет альтернативный текст для изображения, если пользователь по какой-либо причине не может его просмотреть: из-за медленного Интернет-соединения, ошибки в атрибуте src или если пользователь использует программу чтения с экрана (скринридер).</p>
 <p>Значение атрибута <code class="w3-codespan">alt</code> должно описывать изображение, т.е. то, что на нём изображено:</p>
 <div class="w3-example">
@@ -417,7 +437,7 @@ alt=&quot;Flowers in Chania&quot;&gt;<br>
 </div>
 <hr>
 
-<h2>Размер изображения - Width и Height - Ширина и Высота</h2>
+<h2 id="c3">Размер изображения - Width и Height - Ширина и Высота</h2>
 <p>Вы можете использовать атрибут <code class="w3-codespan">style</code> для указания ширины и высоты изображения.</p>
 <div class="w3-example">
 <h3>Пример</h3>
@@ -442,7 +462,7 @@ alt=&quot;Flowers in Chania&quot;&gt;<br>
 </div>
 <hr>
 
-<h2>Ширина и высота или стиль?</h2>
+<h2 id="c4">Ширина и высота или стиль?</h2>
 <p>Атрибуты <code class="w3-codespan">width</code>, <code class="w3-codespan">height</code> и <code class="w3-codespan">style</code> валидны в HTML.</p>
 <p>Однако мы рекомендуем использовать атрибут <code class="w3-codespan">style</code>. Это препятствует тому, чтобы таблицы стилей изменили размер изображений:</p>
 <div class="w3-example">
@@ -454,7 +474,7 @@ alt=&quot;Flowers in Chania&quot;&gt;<br>
 </div>
 <hr>
 
-<h2>Изображения в другой папке</h2>
+<h2 id="c5">Изображения в другой папке</h2>
 <p>Если не указано, браузер ожидает найти изображение в той же папке, в которой находится и веб-страница.</p>
 <p>Однако изображения обычно хранятся в подпапках (других папках). Затем вы должны включить имя папки в атрибут <code class="w3-codespan">src</code>:</p>
 <div class="w3-example">
@@ -470,7 +490,7 @@ alt=&quot;HTML5 Icon&quot; style=&quot;width:128px;height:128px;&quot;&gt;
 </div>
 <hr>
 
-<h2>Изображения на другом сервере</h2>
+<h2 id="c6">Изображения на другом сервере</h2>
 <p>Некоторые веб-сайты хранят свои изображения на специальных серверах изображений.</p>
 <p>На самом деле, вы можете получить доступ к изображениям с любого веб-адреса в мире, прописав полный путь к изображению:</p>
 <div class="w3-example">
@@ -486,7 +506,7 @@ alt=&quot;HTML5 Icon&quot; style=&quot;width:128px;height:128px;&quot;&gt;
 </div>
 <hr>
 
-<h2>Анимированные изображения</h2>
+<h2 id="c7">Анимированные изображения</h2>
 <p>HTML позволяет использовать анимированные GIF:</p>
 <div class="w3-example">
 <h3>Пример</h3>
@@ -497,7 +517,7 @@ alt=&quot;HTML5 Icon&quot; style=&quot;width:128px;height:128px;&quot;&gt;
 </div>
 <hr>
 
-<h2>Изображение как ссылка</h2>
+<h2 id="c8">Изображение как ссылка</h2>
 <p>Чтобы использовать изображение в качестве ссылки, поставьте тег <code class="w3-codespan">&lt;img&gt;</code> внутри тега <code class="w3-codespan">&lt;a&gt;</code>:</p>
 <div class="w3-example">
 <h3>Пример</h3>
@@ -513,7 +533,7 @@ style=&quot;width:42px;height:42px;border:0;&quot;&gt;<br>&lt;/a&gt;
 </div>
 <hr>
 
-<h2>Плавающее изображение</h2>
+<h2 id="c9">Плавающее изображение</h2>
 <p>Используйте CSS свойство <code class="w3-codespan">float</code> позволяющее изображению плавать вправо или влево от текста:</p>
 <div class="w3-example">
 <h3>Пример</h3>
@@ -532,7 +552,7 @@ the text.&lt;/p&gt;</div>
 </div>
 
 <hr>
-<h2>HTML Считыватели экрана (скринридеры)</h2>
+<h2 id="c10">HTML Считыватели экрана (скринридеры)</h2>
 <p>Программа чтения с экрана - это программа, которая читает код HTML, преобразует текст и позволяет пользователю &quot;прослушивать&quot; контент. Программы чтения с экрана полезны для людей с нарушениями зрения или для обучения.</p>
 <hr>
 
@@ -553,7 +573,8 @@ the text.&lt;/p&gt;</div>
 <p><strong>Примечание:</strong> Загрузка изображений занимает некоторое время. Большие изображения могут замедлить вашу страницу. Используйте изображения умеренно, при возможности максимально уменьшая их размеры.</p>
 </div>
 <hr>
-<h2>HTML Упражнения</h2>
+
+<h2 id="c11">HTML Упражнения</h2>
 <form autocomplete="off" id="w3-exerciseform" action="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_images1" method="post" target="_blank">
 <h2 class="shadow-black-1">Проверьте себя с помощью упражнений</h2>
 <div class="exercisewindow">
@@ -569,7 +590,7 @@ the text.&lt;/p&gt;</div>
 </form>
 <hr>
 
-<h2>HTML теги изображений</h2>
+<h2 id="c12">HTML теги изображений</h2>
 <table class="w3-table-all notranslate">
 <tr>
 <th>Тег</th>
