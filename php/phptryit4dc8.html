@@ -1,8 +1,5 @@
-
 <!DOCTYPE html>
 <html lang="en-US">
-
-<!-- Mirrored from www.w3schools.com/php/phptryit.asp?filename=tryphp_date5 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Sep 2019 08:49:07 GMT -->
 <head>
 <title>PHP Tryit Editor v1.1</title>
 <meta name="viewport" content="width=device-width">
@@ -19,15 +16,7 @@
 <script src="../lib/codemirror_css.js"></script>
 <script src="../lib/codemirror_clike.js"></script>
 <script src="../lib/codemirror_php.js"></script>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','../../www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-3855518-1', 'auto');
-  ga('require', 'displayfeatures');
-  ga('send', 'pageview');
-</script>
+
 
 <script src="../../snigelweb-com.videoplayerhub.com/videoloader.js" async></script>
 
@@ -413,13 +402,11 @@ font-style:normal;
 <body>
 
 <?php
-$d=strtotime("10:30pm April 15 2014");
-echo "Created date is " . date("Y-m-d h:i:sa", $d);
+$d=strtotime("15:30pm February 24 2019");
+echo "Дата создания " . date("Y-m-d h:i:sa", $d);
 ?>
 
 </body>
-
-<!-- Mirrored from www.w3schools.com/php/phptryit.asp?filename=tryphp_date5 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Sep 2019 08:49:07 GMT -->
 </html>
 </textarea>
         <form id="codeForm" autocomplete="off" style="margin:0px;display:none;">
@@ -549,10 +536,21 @@ function retheme() {
   var cc = document.body.className;
   if (cc.indexOf("darktheme") > -1) {
     document.body.className = cc.replace("darktheme", "");
+    if (opener) {opener.document.body.className = cc.replace("darktheme", "");}
+    localStorage.setItem("preferredmode", "light");
   } else {
     document.body.className += " darktheme";
+    if (opener) {opener.document.body.className += " darktheme";}
+    localStorage.setItem("preferredmode", "dark");
   }
 }
+(
+function setThemeMode() {
+  var x = localStorage.getItem("preferredmode");
+  if (x == "dark") {
+    document.body.className += " darktheme";
+  }
+})();
 function showFrameSize() {
   var t;
   var width, height;
@@ -630,8 +628,9 @@ function dragmove(e) {
 function dragend() {
   document.getElementById("shield").style.display = "none";
   dragging = false;
-  if (window.editor) {
-    window.editor.refresh();
+  var vend = navigator.vendor;
+  if (window.editor && vend.indexOf("Apple") == -1) {
+      window.editor.refresh();
   }
 }
 if (window.addEventListener) {              
@@ -651,7 +650,9 @@ function colorcoding() {
   //Opera Mini refreshes the page when trying to edit the textarea.
   if (ua && ua.toUpperCase().indexOf("OPERA MINI") > -1) { return false; }
   window.editor = CodeMirror.fromTextArea(document.getElementById("textareaCode"), {
-    mode: "application/x-httpd-php"
+    mode: "application/x-httpd-php",
+    lineWrapping: true,
+    smartIndent: false
   });
 //  window.editor.on("change", function () {window.editor.save();});
 }
