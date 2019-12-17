@@ -140,13 +140,28 @@
           <!--Код на странице-->
 <textarea autocomplete="off" id="textareaCode" wrap="soft" spellcheck="false"><!DOCTYPE html>
 <html>
+<head>
+<script>
+function clickCounter() {
+  if (typeof(Storage) !== "undefined") {
+    if (localStorage.clickcount) {
+      localStorage.clickcount = Number(localStorage.clickcount)+1;
+    } else {
+      localStorage.clickcount = 1;
+    }
+    document.getElementById("result").innerHTML = "Вы нажали кнопку " + localStorage.clickcount + " time(s).";
+  } else {
+    document.getElementById("result").innerHTML = "Извините, ваш браузер не поддерживает веб-хранилище...";
+  }
+}
+</script>
+</head>
 <body>
 
-<h2 title="I'm a header">Атрибут title</h2>
-
-<p title="I'm a tooltip">
-Наведите указатель мыши на этот параграф, чтобы отобразить атрибут заголовка в виде всплывающей подсказки.
-</p>
+<p><button onclick="clickCounter()" type="button">Click me!</button></p>
+<div id="result"></div>
+<p>Нажмите на кнопку, чтобы увидеть увеличение счетчика.</p>
+<p>Закройте вкладку браузера (или окно) и повторите попытку, и счетчик продолжит считать (не сбрасывается).</p>
 
 </body>
 </html>

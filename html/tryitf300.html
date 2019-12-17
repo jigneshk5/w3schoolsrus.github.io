@@ -140,13 +140,41 @@
           <!--Код на странице-->
 <textarea autocomplete="off" id="textareaCode" wrap="soft" spellcheck="false"><!DOCTYPE html>
 <html>
+<head>
+<style>
+/* Стиль элемента с идентификатором "myHeader" */
+#myHeader {
+  background-color: lightblue;
+  color: black;
+  padding: 40px;
+  text-align: center;
+}
+
+/* Стиль всех элементов с именем класса "city" */
+.city {
+  background-color: tomato;
+  color: white;
+  padding: 10px;
+}
+</style>
+</head>
 <body>
 
-<h2 title="I'm a header">Атрибут title</h2>
+<h2>Отличия между Class и ID</h2>
+<p>Страница HTML может иметь только один уникальный идентификатор, примененный к одному конкретному элементу, в то время как имя класса может быть применено к нескольким элементам.</p>
 
-<p title="I'm a tooltip">
-Наведите указатель мыши на этот параграф, чтобы отобразить атрибут заголовка в виде всплывающей подсказки.
-</p>
+<!-- Уникальный элемент -->
+<h1 id="myHeader">My Cities</h1>
+
+<!-- Несколько похожих элементов -->
+<h2 class="city">Украина</h2>
+<p>Украина - это самая большая страна Европы.</p>
+
+<h2 class="city">Париж</h2>
+<p>Китай - это самая большая страна Азии.</p>
+
+<h2 class="city">Россия</h2>
+<p>Россия - это самая грязная страна в мире.</p>
 
 </body>
 </html>

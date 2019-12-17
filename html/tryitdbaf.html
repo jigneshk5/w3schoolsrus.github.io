@@ -139,14 +139,40 @@
 
           <!--Код на странице-->
 <textarea autocomplete="off" id="textareaCode" wrap="soft" spellcheck="false"><!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <title>Пример Bootstrap</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="../../ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="../../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
 <body>
 
-<h2 title="I'm a header">Атрибут title</h2>
-
-<p title="I'm a tooltip">
-Наведите указатель мыши на этот параграф, чтобы отобразить атрибут заголовка в виде всплывающей подсказки.
-</p>
+<div class="container">
+  <div class="jumbotron">
+    <h1>Мой первый раз с Bootstrap</h1>
+    <p>Измените размер этой адаптивной страницы, чтобы увидеть эффект!</p>
+  </div>
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>Столбец 1</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Столбец 2</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Столбец 3</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+  </div>
+</div>
 
 </body>
 </html>

@@ -139,14 +139,105 @@
 
           <!--Код на странице-->
 <textarea autocomplete="off" id="textareaCode" wrap="soft" spellcheck="false"><!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Стили header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Создайте две колонки / блока, которые плавают рядом друг с другом */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* только для демонстрации, должны быть удалены */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Стиль списка в меню */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* только для демонстрации, должны быть удалены */
+}
+
+/* Очистить float после столбцов */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Стиль footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Адаптивный макет - две колонки / блока укладываются друг на друга, а не рядом, на маленьких экранах */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
 <body>
 
-<h2 title="I'm a header">Атрибут title</h2>
+<h2>CSS Макет Float</h2>
+<p>В этом примере мы создали заголовок, два столбца / блока и нижний колонтитул. На небольших экранах столбцы будут накладываться друг на друга.</p>
+<p>Измените размер окна браузера, чтобы увидеть адаптивный эффект (вы узнаете больше об этом в нашей следующей главе - HTML Адаптивность.)</p>
 
-<p title="I'm a tooltip">
-Наведите указатель мыши на этот параграф, чтобы отобразить атрибут заголовка в виде всплывающей подсказки.
-</p>
+<header>
+  <h2>Города</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">Лондон</a></li>
+      <li><a href="#">Париж</a></li>
+      <li><a href="#">Токио</a></li>
+    </ul>
+  </nav>
+
+  <article>
+    <h1>Лондон</h1>
+    <p>Лондон является столицей Англии. Это самый густонаселенный город в Соединенном Королевстве, с населением более 13 миллионов человек.</p>
+    <p>Располагаясь на реке Темзе, Лондон был крупным поселением в течение двух тысячелетий, его история восходит к его основанию римлянами, которые назвали его Londinium.</p>
+  </article>
+</section>
+
+<footer>
+  <p>Footer</p>
+</footer>
 
 </body>
 </html>

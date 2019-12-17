@@ -142,11 +142,16 @@
 <html>
 <body>
 
-<h2 title="I'm a header">Атрибут title</h2>
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+Ваш браузер не поддерживает тег HTML5 canvas.</canvas>
 
-<p title="I'm a tooltip">
-Наведите указатель мыши на этот параграф, чтобы отобразить атрибут заголовка в виде всплывающей подсказки.
-</p>
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.moveTo(0,0);
+ctx.lineTo(200,100);
+ctx.stroke();
+</script>
 
 </body>
 </html>

@@ -142,10 +142,18 @@
 <html>
 <body>
 
-<h2 title="I'm a header">Атрибут title</h2>
+<h2>Поле Range</h2>
+<p>В зависимости от поддержки браузера: <br> Тип ввода "range" может отображаться в виде ползунка.<p>
 
-<p title="I'm a tooltip">
-Наведите указатель мыши на этот параграф, чтобы отобразить атрибут заголовка в виде всплывающей подсказки.
+<form action="https://www.w3schools.com/action_page.php" method="get">
+  Points:
+  <input type="range" name="points" min="0" max="10">
+  <input type="submit">
+</form>
+
+<p>
+<b>Примечание:</b>
+type="range" не поддерживается в Internet Explorer 9 и более ранних версиях.
 </p>
 
 </body>

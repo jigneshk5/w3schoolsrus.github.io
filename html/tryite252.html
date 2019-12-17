@@ -142,11 +142,17 @@
 <html>
 <body>
 
-<h2 title="I'm a header">Атрибут title</h2>
+<h2>Атрибут formtarget</h2>
+<p>Атрибут formtarget указывает имя или ключевое слово, которое указывает, где отображать ответ, полученный после отправки формы.</p>
 
-<p title="I'm a tooltip">
-Наведите указатель мыши на этот параграф, чтобы отобразить атрибут заголовка в виде всплывающей подсказки.
-</p>
+<form action="https://www.w3schools.com/action_page.php">
+  Имя: <input type="text" name="fname"><br>
+  Фамилия: <input type="text" name="lname"><br>
+  <input type="submit" value="Отправить как обычно">
+  <input type="submit" formtarget="_blank" value="Отправить в новом окне/вкладке">
+</form>
+
+<p><strong>Примечание:</strong> Атрибут formtarget тега input не поддерживается в Internet Explorer 9 и более ранних версиях.</p>
 
 </body>
 </html>

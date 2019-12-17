@@ -140,13 +140,85 @@
           <!--Код на странице-->
 <textarea autocomplete="off" id="textareaCode" wrap="soft" spellcheck="false"><!DOCTYPE html>
 <html>
-<body>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+.menu {
+  float: left;
+  width: 20%;
+}
+.menuitem {
+  padding: 8px;
+  margin-top: 7px;
+  border-bottom: 1px solid #f1f1f1;
+}
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+  overflow: hidden;
+}
+.right {
+  background-color: lightblue;
+  float: left;
+  width: 20%;
+  padding: 10px 15px;
+  margin-top: 7px;
+}
 
-<h2 title="I'm a header">Атрибут title</h2>
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body style="font-family:Verdana;">
 
-<p title="I'm a tooltip">
-Наведите указатель мыши на этот параграф, чтобы отобразить атрибут заголовка в виде всплывающей подсказки.
-</p>
+<div style="background-color:#f1f1f1;padding:15px;">
+  <h1>Чинкве-Терре</h1>
+  <h3>Изменить размер окна браузера</h3>
+</div>
+
+<div style="overflow:auto">
+  <div class="menu">
+    <div class="menuitem">Прогулка</div>
+    <div class="menuitem">Транспорт</div>
+    <div class="menuitem">История</div>
+    <div class="menuitem">Галерея</div>
+  </div>
+
+  <div class="main">
+    <h2>Прогулка</h2>
+    <p>Прогулка от Монтероссо до Риомаджоре займет у вас около двух часов, дайте или займите час в зависимости от погодных условий и вашей физической формы.</p>
+    <img src="img_5terre.jpg" style="width:100%">
+  </div>
+
+  <div class="right">
+    <h2>Что?</h2>
+    <p>Чинкве-Терре состоит из пяти деревень: Монтероссо, Вернацца, Корнилья, Манарола и Риомаджоре.</p>
+    <h2>Где?</h2>
+    <p>На северо-западе стоит Итальянская Ривьера, к северу от города Специя.</p>
+    <h2>Цена?</h2>
+    <p>Прогулка бесплатная!</p>
+  </div>
+</div>
+
+<div style="background-color:#f1f1f1;text-align:center;padding:10px;margin-top:7px;font-size:12px;"> Эта веб-страница является частью демонстрации отзывчивого веб-дизайна. Измените размер окна браузера, чтобы увидеть, как содержимое реагирует на изменение размера.</div>
 
 </body>
 </html>

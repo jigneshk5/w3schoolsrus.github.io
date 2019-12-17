@@ -142,11 +142,45 @@
 <html>
 <body>
 
-<h2 title="I'm a header">Атрибут title</h2>
+<p>Нажмите кнопку, чтобы получить ваши координаты.</p>
 
-<p title="I'm a tooltip">
-Наведите указатель мыши на этот параграф, чтобы отобразить атрибут заголовка в виде всплывающей подсказки.
-</p>
+<button onclick="getLocation()">Тыкни тут!</button>
+
+<p id="demo"></p>
+
+<script>
+var x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition, showError);
+  } else {
+    x.innerHTML = "Геолокация не поддерживается этим браузером.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude +
+  "<br>Longitude: " + position.coords.longitude;
+}
+
+function showError(error) {
+  switch(error.code) {
+    case error.PERMISSION_DENIED:
+      x.innerHTML = "Пользователь отклонил запрос на геолокацию."
+      break;
+    case error.POSITION_UNAVAILABLE:
+      x.innerHTML = "Информация о местоположении недоступна."
+      break;
+    case error.TIMEOUT:
+      x.innerHTML = "Запрос на получение тайм-аута расположения пользователя."
+      break;
+    case error.UNKNOWN_ERROR:
+      x.innerHTML = "Произошла неизвестная ошибка."
+      break;
+  }
+}
+</script>
 
 </body>
 </html>

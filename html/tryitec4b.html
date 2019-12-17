@@ -142,14 +142,23 @@
 <html>
 <body>
 
-<h2 title="I'm a header">Атрибут title</h2>
+<h1>Получение обновлений сервера</h1>
+<div id="result"></div>
 
-<p title="I'm a tooltip">
-Наведите указатель мыши на этот параграф, чтобы отобразить атрибут заголовка в виде всплывающей подсказки.
-</p>
+<script>
+if(typeof(EventSource) !== "undefined") {
+  var source = new EventSource("demo_sse.php");
+  source.onmessage = function(event) {
+    document.getElementById("result").innerHTML += event.data + "<br>";
+  };
+} else {
+  document.getElementById("result").innerHTML = "Извините, ваш браузер не поддерживает отправленные сервером события...";
+}
+</script>
 
 </body>
 </html>
+
 </textarea>
           <!-- / Код на странице-->
 

@@ -140,13 +140,25 @@
           <!--Код на странице-->
 <textarea autocomplete="off" id="textareaCode" wrap="soft" spellcheck="false"><!DOCTYPE html>
 <html>
+<style>
+.city {
+  background-color: tomato;
+  color: white;
+  padding: 10px;
+}
+
+.main {
+  text-align: center;
+}
+</style>
 <body>
 
-<h2 title="I'm a header">Атрибут title</h2>
+<h2>Несколько классов</h2>
+<p>Все три заголовка имеют название класса "city". Кроме того, Лондон также имеет имя класса "main", которое выравнивает текст по центру.</p>
 
-<p title="I'm a tooltip">
-Наведите указатель мыши на этот параграф, чтобы отобразить атрибут заголовка в виде всплывающей подсказки.
-</p>
+<h2 class="city main">Лондон</h2>
+<h2 class="city">Париж</h2>
+<h2 class="city">Токио</h2>
 
 </body>
 </html>

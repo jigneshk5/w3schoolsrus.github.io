@@ -142,11 +142,18 @@
 <html>
 <body>
 
-<h2 title="I'm a header">Атрибут title</h2>
+<h2>Атрибут target</h2>
+<p>При отправке этой формы результат будет открыт в новой вкладке браузера:</p>
 
-<p title="I'm a tooltip">
-Наведите указатель мыши на этот параграф, чтобы отобразить атрибут заголовка в виде всплывающей подсказки.
-</p>
+<form action="https://www.w3schools.com/action_page.php" target="_blank">
+  Имя:<br>
+  <input type="text" name="firstname" value="Mickey">
+  <br>
+  Фамилия:<br>
+  <input type="text" name="lastname" value="Mouse">
+  <br><br>
+  <input type="submit" value="Submit">
+</form>
 
 </body>
 </html>

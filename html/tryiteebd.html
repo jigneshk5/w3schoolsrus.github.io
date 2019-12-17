@@ -39,7 +39,7 @@
         <span onclick="hideAndResetModal()" class="w3-button w3-display-topright" style="font-weight:bold;">&times;</span>
         <div id="preSave" class="w3-panel">
           <h2>Сохраните ваш код</h2>
-          <p>Если вы нажмете кнопку "Сохранить", ваш код будет сохранен, и вы получите URL, которым вы можете поделиться с другими.</p>
+          <p>Если вы нажмете кнопку «Сохранить», ваш код будет сохранен, и вы получите URL, которым вы можете поделиться с другими.</p>
           <div style="height:34px">
             <p>
               <button class="w3-btn w3-green" style="margin-right:15px" title="Сохранить" onclick="saveFile(document.getElementById('textareaCode').value);">Сохранить</button>
@@ -138,15 +138,19 @@
         <div id="textareawrapper">
 
           <!--Код на странице-->
-<textarea autocomplete="off" id="textareaCode" wrap="soft" spellcheck="false"><!DOCTYPE html>
+<textarea autocomplete="off" id="textareaCode" wrap="logical" spellcheck="false">
+<!DOCTYPE html>
 <html>
 <body>
 
-<h2 title="I'm a header">Атрибут title</h2>
+<h1>Это заголовок 1</h1>
+<h2>Это заголовок 2</h2>
+<h3>Это заголовок 3</h3>
+<h4>Это заголовок 4</h4>
+<h5>Это заголовок 5</h5>
+<h6>Это заголовок 6</h6>
 
-<p title="I'm a tooltip">
-Наведите указатель мыши на этот параграф, чтобы отобразить атрибут заголовка в виде всплывающей подсказки.
-</p>
+<p><b>Примечание.</b> Размеры заголовков определяются самими браузерами по умолчанию. Но при необходимости можно задать другие размеры заголовков с помощью CSS.</p>
 
 </body>
 </html>

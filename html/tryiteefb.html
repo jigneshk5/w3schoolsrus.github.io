@@ -142,11 +142,33 @@
 <html>
 <body>
 
-<h2 title="I'm a header">Атрибут title</h2>
+<p>Считать цифры: <output id="result"></output></p>
+<button onclick="startWorker()">Start Worker</button>
+<button onclick="stopWorker()">Stop Worker</button>
 
-<p title="I'm a tooltip">
-Наведите указатель мыши на этот параграф, чтобы отобразить атрибут заголовка в виде всплывающей подсказки.
-</p>
+<p><strong>Примечание:</strong> Internet Explorer 9 и более ранние версии не поддерживают веб-работников.</p>
+
+<script>
+var w;
+
+function startWorker() {
+  if(typeof(Worker) !== "undefined") {
+    if(typeof(w) == "undefined") {
+      w = new Worker("demo_workers.js");
+    }
+    w.onmessage = function(event) {
+      document.getElementById("result").innerHTML = event.data;
+    };
+  } else {
+    document.getElementById("result").innerHTML = "Извините, ваш браузер не поддерживает веб-работников...";
+  }
+}
+
+function stopWorker() {
+  w.terminate();
+  w = undefined;
+}
+</script>
 
 </body>
 </html>
