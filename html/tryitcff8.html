@@ -141,24 +141,20 @@
 <textarea autocomplete="off" id="textareaCode" wrap="soft" spellcheck="false"><!DOCTYPE html>
 <html>
 <body>
-<script>
-function light(sw) {
-  var pic;
-  if (sw == 0) {
-    pic = "pic_bulboff.gif"
-  } else {
-    pic = "pic_bulbon.gif"
-  }
-  document.getElementById('myImage').src = pic;
-}
-</script>
 
-<img id="myImage" src="pic_bulboff.gif" width="100" height="180">
+<h2>HTML формы</h2>
 
-<p>
-<button type="button" onclick="light(1)">Включить свет</button>
-<button type="button" onclick="light(0)">Выключить свет</button>
-</p>
+<form action="https://www.w3schools.com/action_page.php">
+  Имя:<br>
+  <input type="text" name="firstname" value="Mickey">
+  <br>
+  Фамилия:<br>
+  <input type="text" name="lastname" value="Mouse">
+  <br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<p>Если вы нажмете кнопку "Отправить", данные формы будут отправлены на страницу "/action_page.php".</p>
 
 </body>
 </html>

@@ -141,24 +141,16 @@
 <textarea autocomplete="off" id="textareaCode" wrap="soft" spellcheck="false"><!DOCTYPE html>
 <html>
 <body>
-<script>
-function light(sw) {
-  var pic;
-  if (sw == 0) {
-    pic = "pic_bulboff.gif"
-  } else {
-    pic = "pic_bulbon.gif"
-  }
-  document.getElementById('myImage').src = pic;
-}
-</script>
-
-<img id="myImage" src="pic_bulboff.gif" width="100" height="180">
 
 <p>
-<button type="button" onclick="light(1)">Включить свет</button>
-<button type="button" onclick="light(0)">Выключить свет</button>
+Это ссылка на email:
+<a href="mailto:someone@example.com?Subject=Hello%20again" target="_top">
+Отправить письмо</a>
 </p>
+
+<p>Ссылка будет работать только в том случае, если у вас установлена электронная почта.</p>
+
+<p>(Пробелы между словами следует заменить на% 20, чтобы браузер правильно отображал текст)</p>
 
 </body>
 </html>

@@ -141,24 +141,15 @@
 <textarea autocomplete="off" id="textareaCode" wrap="soft" spellcheck="false"><!DOCTYPE html>
 <html>
 <body>
-<script>
-function light(sw) {
-  var pic;
-  if (sw == 0) {
-    pic = "pic_bulboff.gif"
-  } else {
-    pic = "pic_bulbon.gif"
-  }
-  document.getElementById('myImage').src = pic;
-}
-</script>
 
-<img id="myImage" src="pic_bulboff.gif" width="100" height="180">
+<h2>Поле для телефона</h2>
+<p><strong>input type="tel"</strong> используется для полей ввода, которые должны содержать номер телефона:</p>
 
-<p>
-<button type="button" onclick="light(1)">Включить свет</button>
-<button type="button" onclick="light(0)">Выключить свет</button>
-</p>
+<form action="https://www.w3schools.com/action_page.php">
+Телефон: <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+<input type="submit">
+<span>Формат: 123-45-678</span>
+</form>
 
 </body>
 </html>

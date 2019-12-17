@@ -140,25 +140,25 @@
           <!--Код на странице-->
 <textarea autocomplete="off" id="textareaCode" wrap="soft" spellcheck="false"><!DOCTYPE html>
 <html>
-<body>
-<script>
-function light(sw) {
-  var pic;
-  if (sw == 0) {
-    pic = "pic_bulboff.gif"
-  } else {
-    pic = "pic_bulbon.gif"
-  }
-  document.getElementById('myImage').src = pic;
+<head>
+<style>
+.cities {
+  background-color: black;
+  color: white;
+  padding: 20px;
 }
-</script>
+</style>
+</head>
+<body>
 
-<img id="myImage" src="pic_bulboff.gif" width="100" height="180">
+<h2>Атрибут class</h2>
+<p>Используйте CSS для стилизации элемента с именем класса "cities":</p>
 
-<p>
-<button type="button" onclick="light(1)">Включить свет</button>
-<button type="button" onclick="light(0)">Выключить свет</button>
-</p>
+<div class="cities">
+  <h2>Лондон</h2>
+  <p>Лондон - столица Англии. Это самый густонаселенный город в Соединенном Королевстве, с населением более 13 миллионов человек.</p>
+  <p>Стоя на реке Темзе, Лондон был крупным поселением в течение двух тысячелетий, его история восходит к его основанию римлянами, которые назвали его Londinium.</p>
+</div>
 
 </body>
 </html>

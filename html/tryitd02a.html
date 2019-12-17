@@ -140,25 +140,18 @@
           <!--Код на странице-->
 <textarea autocomplete="off" id="textareaCode" wrap="soft" spellcheck="false"><!DOCTYPE html>
 <html>
-<body>
-<script>
-function light(sw) {
-  var pic;
-  if (sw == 0) {
-    pic = "pic_bulboff.gif"
-  } else {
-    pic = "pic_bulbon.gif"
-  }
-  document.getElementById('myImage').src = pic;
+<head>
+<style>
+span.note {
+  font-size: 120%;
+  color: red;
 }
-</script>
+</style>
+</head>
+<body>
 
-<img id="myImage" src="pic_bulboff.gif" width="100" height="180">
-
-<p>
-<button type="button" onclick="light(1)">Включить свет</button>
-<button type="button" onclick="light(0)">Выключить свет</button>
-</p>
+<h1>Мой <span class="note">важный</span> заголовок</h1>
+<p>Это какой-то <span class="note">важный</span> текст.</p>
 
 </body>
 </html>

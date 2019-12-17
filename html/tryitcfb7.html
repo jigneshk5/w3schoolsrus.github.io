@@ -141,24 +141,11 @@
 <textarea autocomplete="off" id="textareaCode" wrap="soft" spellcheck="false"><!DOCTYPE html>
 <html>
 <body>
-<script>
-function light(sw) {
-  var pic;
-  if (sw == 0) {
-    pic = "pic_bulboff.gif"
-  } else {
-    pic = "pic_bulbon.gif"
-  }
-  document.getElementById('myImage').src = pic;
-}
-</script>
 
-<img id="myImage" src="pic_bulboff.gif" width="100" height="180">
+<h2>Удаление границы Iframe</h2>
+<p>Чтобы удалить границу по умолчанию для iframe, используйте CSS:</p>
 
-<p>
-<button type="button" onclick="light(1)">Включить свет</button>
-<button type="button" onclick="light(0)">Выключить свет</button>
-</p>
+<iframe src="demo_iframe.html" style="border:none;"></iframe>
 
 </body>
 </html>

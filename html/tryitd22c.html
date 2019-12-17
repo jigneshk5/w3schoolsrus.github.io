@@ -141,24 +141,16 @@
 <textarea autocomplete="off" id="textareaCode" wrap="soft" spellcheck="false"><!DOCTYPE html>
 <html>
 <body>
-<script>
-function light(sw) {
-  var pic;
-  if (sw == 0) {
-    pic = "pic_bulboff.gif"
-  } else {
-    pic = "pic_bulbon.gif"
-  }
-  document.getElementById('myImage').src = pic;
-}
-</script>
 
-<img id="myImage" src="pic_bulboff.gif" width="100" height="180">
+<h2>Атрибут required</h2>
+<p>Атрибут required указывает, что поле ввода должно быть заполнено перед отправкой формы.</p>
 
-<p>
-<button type="button" onclick="light(1)">Включить свет</button>
-<button type="button" onclick="light(0)">Выключить свет</button>
-</p>
+<form action="https://www.w3schools.com/action_page.php">
+  Имя пользователя: <input type="text" name="usrname" required>
+  <input type="submit">
+</form>
+
+<p><strong>Примечание:</strong> Атрибут required тега input не поддерживается в Internet Explorer 9 и более ранних версиях или в Safari предыдущей версии 10.1.</p>
 
 </body>
 </html>

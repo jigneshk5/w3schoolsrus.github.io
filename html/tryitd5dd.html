@@ -139,26 +139,73 @@
 
           <!--Код на странице-->
 <textarea autocomplete="off" id="textareaCode" wrap="soft" spellcheck="false"><!DOCTYPE html>
-<html>
-<body>
-<script>
-function light(sw) {
-  var pic;
-  if (sw == 0) {
-    pic = "pic_bulboff.gif"
-  } else {
-    pic = "pic_bulbon.gif"
-  }
-  document.getElementById('myImage').src = pic;
-}
+<html lang="en">
+<head>
+<title>HTML5</title>
+<meta charset="utf-8">
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js">
 </script>
+<![endif]-->
+<style>
+body {
+  font-family: Verdana, sans-serif;
+  font-size: 0.8em;
+}
 
-<img id="myImage" src="pic_bulboff.gif" width="100" height="180">
+header, nav, section, article, footer, div.city {
+  border: 1px solid grey;
+  margin: 5px;
+  padding: 8px;
+}
 
-<p>
-<button type="button" onclick="light(1)">Включить свет</button>
-<button type="button" onclick="light(0)">Выключить свет</button>
-</p>
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 5px;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>HTML5 Скелет</h1>
+</header>
+
+<nav>
+  <ul>
+    <li>Новости</li>
+    <li>Спорт</li>
+    <li>Погода</li>
+  </ul>
+</nav>
+
+<article>
+  <h2>Знаменитые города</h2>
+
+  <div class="city">
+    <h2>Лондон</h2>
+    <p>Лондон является столицей Англии. Это самый густонаселенный город в Соединенном Королевстве, с населением более 13 миллионов человек.</p>
+  </div>
+
+  <div class="city">
+    <h2>Париж</h2>
+    <p>Париж - столица и самый густонаселенный город Франции.</p>
+  </div>
+
+  <div class="city">
+    <h2>Токио</h2>
+    <p>Токио - столица Японии, центр Большого Токийского района и самый густонаселенный мегаполис в мире.</p>
+  </div>
+</article>
+
+<footer>
+  <p>&amp;copy; 2019 W3Schools. Все права защищены.</p>
+</footer>
 
 </body>
 </html>
