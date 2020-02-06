@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="keywords" content="HTML,CSS,w3c,w3schools,на русском,уроки,для начинающих,курс,основы,язык,стили,стилизация,элементы,справочники,css3,примеры,упражнения,код">
-<meta name="description" content="Хорошо организованные уроки по CSS для начинающих веб-разработчиков, примеры кода. Как создать сайт. W3Schools на русском">
+<meta name="description" content="Хорошо организованные уроки по CSS для начинающих веб-разработчиков, примеры кода. Каскадные таблицы стилей. Стилизация веб страниц. Как создать сайт. Основы создания сайтов. W3Schools на русском">
 <link rel="icon" href="../favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="../w3css/4/w3.css">
 <link href='https://fonts.googleapis.com/css?family=Source%20Code%20Pro' rel='stylesheet'>
@@ -44,12 +44,14 @@
       <a class="w3-bar-item w3-button" href='../xml/default.html' title='XML Tutorial'>XML</a>
       <a class="w3-bar-item w3-button" id='topnavbtn_tutorials' href='javascript:void(0);' onclick='w3_open_nav("tutorials")' title='Tutorials'>БОЛЬШЕ <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style='display:none'></i></a>
       <a href='javascript:void(0);' class='topnav-icons fa w3-right w3-bar-item w3-button' onclick='open_search(this)' title='Поиск на сайте'>&#128269;</a>
+      <!-- Смена светлой темы на тёмную окна кода-->
+      <a href='javascript:void(0);' class='topnav-icons fa w3-right w3-bar-item w3-button' onclick='changecodetheme(this)' title='Toggle Dark Code'>&#9681;</a>
       <a class="w3-bar-item w3-button w3-right" target="_blank" href='https://drive.google.com/open?id=1fddM8chCC273SbiTEYVNLorbZ2qij7fp'>КНИГИ</a>
-      <a class="w3-bar-item w3-button w3-right" id='topnavbtn_exercises' href='javascript:void(0);' onclick='w3_open_nav("exercises")' title='Exercises'>УПРАЖНЕНИЯ <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style='display:none'></i></a>     
+      <a class="w3-bar-item w3-button w3-right" id='topnavbtn_exercises' href='javascript:void(0);' onclick='w3_open_nav("exercises")' title='Exercises'>УПРАЖНЕНИЯ <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style='display:none'></i></a>
       <a class="w3-bar-item w3-button w3-right" id='topnavbtn_references' href='javascript:void(0);' onclick='w3_open_nav("references")' title='References'>СПРАВОЧНИКИ <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style='display:none'></i></a>
 
     </div>
-    <div id='nav_tutorials' class='w3-bar-block w3-card-2' style="display:none;">   
+    <div id='nav_tutorials' class='w3-bar-block w3-card-2' style="display:none;">
       <span onclick='w3_close_nav("tutorials")' class='w3-button w3-xlarge w3-right' style="position:absolute;right:0;font-weight:bold;">&times;</span>
       <div class='w3-row-padding' style="padding:24px 48px">
         <div class='w3-col l3 m6'>
@@ -87,9 +89,11 @@
           <a class="w3-bar-item w3-button" href='../js/js_ajax_intro.html'>Выучить AJAX</a>
           <a class="w3-bar-item w3-button" href="../w3js/default.html">Выучить W3.JS</a>
           <h3>Программирование</h3>
-          <a class="w3-bar-item w3-button" href='../python/default.html'>Выучить Python</a>
-          <a class="w3-bar-item w3-button" href='../java/default.html'>Выучить Java</a>
-          <a class="w3-bar-item w3-button" href='../cpp/default.html'>Выучить C++</a>
+          <a class="w3-bar-item w3-button" href='../python/default.html'>Уроки Python</a>
+          <a class="w3-bar-item w3-button" href='../java/default.html'>Уроки Java</a>
+          <a class="w3-bar-item w3-button" href='../cpp/default.html'>Уроки C++</a>
+          <a class="w3-bar-item w3-button" href='../cs/default.html'>Уроки C#</a>
+          <a class="w3-bar-item w3-button" href='../python/python_ml_getting_started.html'>Уроки Машинное обучение</a>
           <div class="w3-hide-small"><br class="w3-hide-medium w3_hide-small"><br class="w3-hide-medium w3_hide-small"></div>
         </div>
         <div class='w3-col l3 m6'>
@@ -490,7 +494,7 @@ s.setAttribute('data-timestamp', +new Date());
     <h4><a href="../howto/default.html" class="w3-hover-text-white">КАК СДЕЛАТЬ</a></h4>
   </div>
   <div class="w3-container w3-left-align w3-padding-16">
-    <a href="../howto/howto_js_tabs.html">Вкладки</a><br>    
+    <a href="../howto/howto_js_tabs.html">Вкладки</a><br>
     <a href="../howto/howto_css_dropdown.html">Выпадающее меню</a><br>
     <a href="../howto/howto_js_accordion.html">Меню аккордеон</a><br>
     <a href="../howto/howto_js_sidenav.html">Боковая навигация</a><br>
