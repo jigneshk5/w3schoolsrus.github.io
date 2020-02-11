@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<title>JavaScript Учебник. Уроки для начинающих. W3Schools на русском</title>
+<title>JavaScript Data Types / Типы данных. Уроки для начинающих. W3Schools на русском</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="Keywords" content="JavaScript,js,w3schools,на русском,уроки,для начинающих,курс,основы,язык,программирования,справочники,примеры,упражнения,код">
-<meta name="Description" content="Уроки по языку программирования JavaScript для начинающих. Основы. Примеры кода. Как создать динамический сайт. W3Schools на русском языке">
+<meta name="Keywords" content="типы,данных,JavaScript,js,w3schools,на русском,уроки,для начинающих,курс,основы,язык,программирования,справочники,примеры,упражнения,код">
+<meta name="Description" content="Переменные JavaScript могут содержать множество типов данных: числа, строки, объекты, массивы, булевы значения и многое другое. Концепция типов данных. Уроки по языку программирования JavaScript для начинающих. Основы для новичков. Примеры кода. W3Schools на русском языке">
 <link rel="icon" href="../favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="../w3css/4/w3.css">
 </head>
@@ -548,7 +548,7 @@ var z = 123e-5;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// 0.00123</div>
 <h3>Пример</h3>
 <div class="w3-code notranslate jsHigh">
 	var x = 5;<br>var y = 5;<br>var z = 6;<br>(x == y)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	// Returns true<br>(x == z)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // Возвращает false</div>
+	// Возвращает true<br>(x == z)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // Возвращает false</div>
 <a target="_blank" class="w3-btn w3-margin-bottom" href="tryit4b23.html?filename=tryjs_datatypes_bolean">Попробуйте сами &raquo;</a></div>
 <p>Булевы значения часто используются в условном тестировании.</p>
 <p>Вы узнаете больше об условном тестировании позже в этом учебнике.</p>
@@ -581,111 +581,100 @@ var person = {firstName:&quot;John&quot;, lastName:&quot;Doe&quot;, age:50, eyeC
 </div>
 <a class="w3-btn w3-margin-bottom" href="tryit6830.html?filename=tryjs_datatypes_object" target="_blank">Попробуйте сами &raquo;</a>
 </div>
-<p>The object (person) in the example above has 4 properties: firstName, lastName, age, and eyeColor.</p>
-<p>You will learn more about objects later in this tutorial.</p>
+<p>Объект (персона) в примере выше имеет 4 свойства: firstName, lastName, age и eyeColor.</p>
+<p>Вы узнаете больше об объектах позже в этом учебнике.</p>
 
 <hr>
-<h2>The typeof Operator</h2>
-<p>You can use the JavaScript <code class="w3-codespan">typeof</code> operator to find the type
-of a JavaScript variable.</p>
-<p>The <code class="w3-codespan">typeof</code> operator returns the type of a variable or an expression:</p>
+<h2>Оператор typeof</h2>
+<p>Вы можете использовать оператор JavaScript <code class="w3-codespan">typeof</code> чтобы найти тип JavaScript переменной.</p>
+<p>Оператор <code class="w3-codespan">typeof</code> возвращает тип переменной или выражения:</p>
 <div class="w3-example">
-  <h3>Example</h3>
+  <h3>Пример</h3>
 <div class="w3-code notranslate jsHigh">
-typeof &quot;&quot;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Returns
+typeof &quot;&quot;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Возвращает
  &quot;string&quot;<br>
-typeof &quot;John&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Returns
+typeof &quot;John&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Возвращает
  &quot;string&quot;<br>
-typeof &quot;John Doe&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Returns
+typeof &quot;John Doe&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Возвращает
  &quot;string&quot;</div>
   <a class="w3-btn w3-margin-bottom" href="tryit2b45.html?filename=tryjs_datatypes_typeof_string" target="_blank">Попробуйте сами &raquo;</a>
 </div>
 
-
 <div class="w3-example">
-  <h3>Example</h3>
+  <h3>Пример</h3>
 <div class="w3-code notranslate jsHigh">
-typeof 0&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Returns
+typeof 0&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Возвращает
  &quot;number&quot;<br>
-  typeof 314&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // Returns
+  typeof 314&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // Возвращает
  &quot;number&quot;<br>
-  typeof 3.14&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // Returns
+  typeof 3.14&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // Возвращает
  &quot;number&quot;<br>
-  typeof (3)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // Returns
- &quot;number&quot;<br>typeof (3 + 4)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // Returns
+  typeof (3)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // Возвращает
+ &quot;number&quot;<br>typeof (3 + 4)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // Возвращает
  &quot;number&quot;</div>
   <a class="w3-btn w3-margin-bottom" href="tryit2bc6.html?filename=tryjs_datatypes_typeof_number" target="_blank">Попробуйте сами &raquo;</a>
 </div>
 
 
 <hr>
-<h2>Undefined</h2>
-<p>In JavaScript, a variable without a value, has the value <code class="w3-codespan">undefined</code>.
-The type is also <code class="w3-codespan">undefined</code>.</p>
+<h2>Undefined / неопределённое значение</h2>
+<p>В JavaScript переменная без значения имеет значение <code class="w3-codespan">undefined</code>.
+Тип также <code class="w3-codespan">undefined</code>.</p>
 <div class="w3-example">
-<h3>Example</h3>
+<h3>Пример</h3>
 <div class="w3-code notranslate jsHigh">
- var car;&nbsp;&nbsp;&nbsp; // Value is undefined,
-    type is undefined</div>
+ var car;&nbsp;&nbsp;&nbsp; // Значение не определено, тип не определен</div>
 <a class="w3-btn w3-margin-bottom" href="tryitd162.html?filename=tryjs_datatypes_undefined" target="_blank">Попробуйте сами &raquo;</a>
 </div>
-<p>Any variable can be emptied, by setting the value to <code class="w3-codespan">undefined</code>.
-The type will also be <code class="w3-codespan">undefined</code>.</p>
+<p>Любую переменную можно очистить, установив значение в <code class="w3-codespan">undefined</code>.
+Тип также будет <code class="w3-codespan">undefined</code>.</p>
 <div class="w3-example">
-<h3>Example</h3>
+<h3>Пример</h3>
 <div class="w3-code notranslate jsHigh">
-    car = undefined;&nbsp;&nbsp;&nbsp; // Value is undefined,
-    type is undefined</div>
+    car = undefined;&nbsp;&nbsp;&nbsp; // Значение не определено, тип не определен</div>
 <a class="w3-btn w3-margin-bottom" href="tryit4941.html?filename=tryjs_datatypes_undefined_2" target="_blank">Попробуйте сами &raquo;</a>
 </div>
-
 <hr>
 
-<h2>Empty Values </h2>
-<p>An empty value has nothing to do with <code class="w3-codespan">undefined</code>.</p>
-<p>An empty string has both a legal value and a type.</p>
+<h2>Пустые значения</h2>
+<p>Пустое значение не имеет ничего общего с <code class="w3-codespan">undefined</code>.</p>
+<p>Пустая строка имеет допустимое значение и тип.</p>
 <div class="w3-example">
-<h3>Example</h3>
+<h3>Пример</h3>
 <div class="w3-code notranslate jsHigh">
- var car = &quot;&quot;;&nbsp;&nbsp;&nbsp; //
-    The value is
-    &quot;&quot;, the typeof is &quot;string&quot;</div>
+ var car = &quot;&quot;;&nbsp;&nbsp;&nbsp; // Значение является &quot;&quot;, typeof является &quot;string&quot;</div>
 <a class="w3-btn w3-margin-bottom" href="tryita645.html?filename=tryjs_datatypes_empty" target="_blank">Попробуйте сами &raquo;</a>
 </div>
-
 <hr>
 
-<h2>Null</h2>
-<p>In JavaScript <code class="w3-codespan">null</code> is &quot;nothing&quot;. It is supposed to be something that doesn't exist.</p>
-<p>Unfortunately, in JavaScript, the data type of <code class="w3-codespan">null</code> is an object.</p>
+<h2>Null / Ноль</h2>
+<p>В JavaScript <code class="w3-codespan">null</code> - это &quot;ничто&quot;. Предполагается, что это нечто, чего не существует.</p>
+<p>К сожалению, в JavaScript, тип данных <code class="w3-codespan">null</code> является объектом.</p>
 
 <div class="w3-panel w3-note">
-<p>You can consider it a bug in JavaScript that <code class="w3-codespan">typeof null</code> is an object. It should be <code class="w3-codespan">null</code>.</p>
+<p>Можно считать ошибкой в JavaScript, когда <code class="w3-codespan">typeof null</code> является объектом. Он должен быть <code class="w3-codespan">null</code>.</p>
 </div>
 
-<p>You can empty an object by setting it to <code class="w3-codespan">null</code>:</p>
+<p>Объект можно очистить, установив его в <code class="w3-codespan">null</code>:</p>
 <div class="w3-example">
-<h3>Example</h3>
+<h3>Пример</h3>
 <div class="w3-code notranslate jsHigh">
-    var person = {firstName:&quot;John&quot;, lastName:&quot;Doe&quot;, age:50, eyeColor:&quot;blue&quot;};<br>person = null;&nbsp;&nbsp;&nbsp; //
-	Now value is null,
-    but type is still an object<br>
+    var person = {firstName:&quot;John&quot;, lastName:&quot;Doe&quot;, age:50, eyeColor:&quot;blue&quot;};<br>person = null;&nbsp;&nbsp;&nbsp; // Теперь значение равно null, но тип по-прежнему является object<br>
 </div>
 <a class="w3-btn w3-margin-bottom" href="tryitb742.html?filename=tryjs_datatypes_null" target="_blank">Попробуйте сами &raquo;</a>
 </div>
-<p>You can also empty an object by setting it to <code class="w3-codespan">undefined</code>:</p>
+<p>Также можно очистить объект, установив его <code class="w3-codespan">undefined</code>:</p>
 <div class="w3-example">
-<h3>Example</h3>
+<h3>Пример</h3>
 <div class="w3-code notranslate jsHigh">
-    var person = {firstName:&quot;John&quot;, lastName:&quot;Doe&quot;, age:50, eyeColor:&quot;blue&quot;};<br>person = undefined;&nbsp;&nbsp; //
-	Now both value and type is undefined<br>
+    var person = {firstName:&quot;John&quot;, lastName:&quot;Doe&quot;, age:50, eyeColor:&quot;blue&quot;};<br>person = undefined;&nbsp;&nbsp; //	Теперь и значение, и тип не определены<br>
 </div>
 <a class="w3-btn w3-margin-bottom" href="tryitc5c2.html?filename=tryjs_datatypes_undefined_1" target="_blank">Попробуйте сами &raquo;</a>
 </div>
 <hr>
 
-<h2>Difference Between Undefined and Null</h2>
-<p><code class="w3-codespan">undefined</code> and <code class="w3-codespan">null</code> are equal in value but different in type:</p>
+<h2>Различия между Undefined и Null</h2>
+<p><code class="w3-codespan">undefined</code> и <code class="w3-codespan">null</code> равноценны, но различаются по типу:</p>
 <div class="w3-example">
 <div class="w3-code notranslate jsHigh">
  typeof undefined&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -698,10 +687,9 @@ The type will also be <code class="w3-codespan">undefined</code>.</p>
 
 
 <hr>
-<h2>Primitive Data</h2>
-<p>A primitive data value is a single simple data value with no additional
-properties and methods.</p>
-<p>The <code class="w3-codespan">typeof</code> operator can return one of these primitive types:</p>
+<h2>Примитивные данные</h2>
+<p>Примитивное значение данных - это одно простое значение данных без дополнительных свойств и методов.</p>
+<p>Оператор <code class="w3-codespan">typeof</code> может вернуть один из этих примитивных типов:</p>
 <ul>
   <li><code class="w3-codespan">string</code></li>
   <li><code class="w3-codespan">number</code></li>
@@ -709,52 +697,48 @@ properties and methods.</p>
   <li><code class="w3-codespan">undefined</code></li>
 </ul>
 <div class="w3-example">
-  <h3>Example</h3>
+  <h3>Пример</h3>
 <div class="w3-code notranslate jsHigh">
-typeof &quot;John&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Returns
- &quot;string&quot; <br>
-typeof 3.14&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Returns
- &quot;number&quot;<br>
-typeof true &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Returns
- &quot;boolean&quot;<br>typeof false&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Returns
+typeof &quot;John&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Возвращает &quot;string&quot; <br>
+typeof 3.14&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Возвращает &quot;number&quot;<br>
+typeof true &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Возвращает  &quot;boolean&quot;<br>typeof false&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Возвращает
  &quot;boolean&quot;<br>typeof x&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	// Returns &quot;undefined&quot; (if x has no value)</div>
+	// Возвращает &quot;undefined&quot; (если х не имеет значения)</div>
   <a class="w3-btn w3-margin-bottom" href="tryit1bd2.html?filename=tryjs_datatypes_typeof_primitive" target="_blank">Попробуйте сами &raquo;</a>
 </div>
-
 <hr>
-<h2>Complex Data</h2>
-<p>The <code class="w3-codespan">typeof</code> operator can return one of two complex types:</p>
+
+<h2>Комплексные данные</h2>
+<p>Оператор <code class="w3-codespan">typeof</code> может вернуть один из двух сложных типов:</p>
 <ul>
   <li><code class="w3-codespan">function</code></li>
   <li><code class="w3-codespan">object</code></li>
 </ul>
 
-<p>The <code class="w3-codespan">typeof</code> operator returns &quot;object&quot; for objects, arrays, and null.</p>
-<p>The <code class="w3-codespan">typeof</code> operator does not return &quot;object&quot; for functions.</p>
+<p>Оператор <code class="w3-codespan">typeof</code> возвращает &quot;object&quot; для объектов, массивов и null.</p>
+<p>Оператор <code class="w3-codespan">typeof</code> не возвращает &quot;object&quot; для функций.</p>
 
 <div class="w3-example">
-<h3>Example</h3>
+<h3>Пример</h3>
 <div class="w3-code notranslate jsHigh">
-typeof {name:'John', age:34}&nbsp;// Returns &quot;object&quot;<br>
+typeof {name:'John', age:34}&nbsp;// Возвращает &quot;object&quot;<br>
 typeof [1,2,3,4]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-// Returns &quot;object&quot; (not &quot;array&quot;, see note below)<br>
-typeof null&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // Returns
-	&quot;object&quot;<br>typeof function myFunc(){}&nbsp;&nbsp; // Returns &quot;function&quot;<br>
+// Возвращает &quot;object&quot; (не &quot;массив&quot;, смотрите примечание выше)<br>
+typeof null&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // Возвращает &quot;object&quot;<br>typeof function myFunc(){}&nbsp;&nbsp; // Возвращает &quot;function&quot;<br>
 </div>
 <a class="w3-btn w3-margin-bottom" href="tryit5aa8.html?filename=tryjs_datatypes_typeof_complex" target="_blank">Попробуйте сами &raquo;</a>
 </div>
 
 <div class="w3-panel w3-note">
-<p>The <code class="w3-codespan">typeof</code> operator returns &quot;<code class="w3-codespan">object</code>&quot; for arrays because in JavaScript arrays are objects.</p>
+<p>Оператор <code class="w3-codespan">typeof</code> возвращает &quot;<code class="w3-codespan">object</code>&quot; для массивов, потому что в JavaScript массивы являются объектами.</p>
 </div>
 <hr>
 
 <form autocomplete="off" spellcheck="false" id="w3-exerciseform" action="https://www.w3schools.com/js/exercise_js.asp?filename=exercise_js_datatypes1" method="post" target="_blank">
-<h2>Test Yourself With Exercises</h2>
+<h2 class="shadow-black-1">Проверьте себя с помощью упражнений</h2>
 <div class="exercisewindow">
-<h2>Exercise:</h2>
-<p>Use comments to describe the correct data type of the following variables:</p>
+<h2>Упражнение:</h2>
+<p>Используйте комментарии, чтобы описать правильный тип данных следующих переменных:</p>
 <div class="exerciseprecontainer">
 <pre>
 var length = 16;            // <input name="ex1" maxlength="6" style="width: 64px;">
@@ -766,15 +750,14 @@ var x = {
 </pre>
 </div>
 <br>
-<button type="submit" class="w3-btn w3-margin-bottom">Submit Answer &raquo;</button>
-<p><a target="_blank" href="exercise_jsb215.html?filename=exercise_js_datatypes1">Start the Exercise</a></p>
+<button type="submit" class="w3-btn w3-margin-bottom">Отправить ответ &raquo;</button>
+<p><a target="_blank" href="exercise_jsb215.html?filename=exercise_js_datatypes1">Начать упражнение</a></p>
 </div>
 </form>
-<hr>
 
-<br>
+<hr>
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="js_assignment.html">&#10094; Previous</a>
+<a class="w3-left w3-btn" href="js_assignment.html">&#10094; Prev</a>
 <a class="w3-right w3-btn" href="js_functions.html">Next &#10095;</a>
 </div>
 
@@ -785,7 +768,7 @@ var x = {
 <script>
 var disqus_config = function () {
 this.page.url = w3schoolsrus.github.io; // канонический URL страницы
-this.page.identifier = w3schoolsrus.github.io / js / js_.html; // уникальный идентификатор страницы
+this.page.identifier = w3schoolsrus.github.io / js / js_datatypes.html; // уникальный идентификатор страницы
 };
 (function() { // Не редактировать ниже этой линии
 var d = document, s = d.createElement('script');
