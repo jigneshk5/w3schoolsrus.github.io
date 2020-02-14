@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<title>JavaScript Учебник. Уроки для начинающих. W3Schools на русском</title>
+<title>JavaScript Arrays / Массивы. Уроки для начинающих. W3Schools на русском</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="Keywords" content="JavaScript,js,w3schools,на русском,уроки,для начинающих,курс,основы,язык,программирования,справочники,примеры,упражнения,код">
-<meta name="Description" content="Уроки по языку программирования JavaScript для начинающих. Основы. Примеры кода. W3Schools на русском языке">
+<meta name="Keywords" content="arrays,массивы,переменная,JavaScript,js,w3schools,на русском,уроки,для начинающих,курс,основы,язык,программирования,справочник,пример,упражнения,код">
+<meta name="Description" content="Arrays. Массивы в JavaScript - используются для хранения нескольких значений в одной переменной. Что такое массив? - это специальная переменная, которая может содержать более одного значения за раз. Доступ к элементам, изменение элемента массива. W3Schools на русском языке">
 <link rel="icon" href="../favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="../w3css/4/w3.css">
 </head>
@@ -703,8 +703,7 @@ person[2] = 46;<br>var x = person.length;&nbsp;&nbsp;&nbsp;&nbsp;
 var person = [];<br>
 person[&quot;firstName&quot;] = &quot;John&quot;;<br>
 person[&quot;lastName&quot;] = &quot;Doe&quot;;<br>
-person[&quot;age&quot;] = 46;<br>var x = person.length;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// person.length will
- return 0<br>var y = person[0];&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+person[&quot;age&quot;] = 46;<br>var x = person.length;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// person.length вернёт 0<br>var y = person[0];&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
  // person[0] вернёт undefined</div>
 <a class="w3-btn w3-margin-bottom" href="tryitb623.html?filename=tryjs_array_associative_2" target="_blank">Попробуйте сами &raquo;</a>
 </div>
@@ -721,103 +720,96 @@ person[&quot;age&quot;] = 46;<br>var x = person.length;&nbsp;&nbsp;&nbsp;&nbsp;&
 
 <h2>Когда использовать массивы. Когда использовать объекты.</h2>
 <ul>
-<li>JavaScript does not support associative arrays.</li>
-<li>You should use <strong>objects</strong> when you want the element names to be
-<strong>strings (text)</strong>.</li>
-<li>You should use <strong>arrays</strong> when you want the element names to be
-<strong>numbers</strong>.</li>
+<li>JavaScript не поддерживает ассоциативные массивы.</li>
+<li>Необходимо использовать <strong>объекты</strong> когда хотите, чтобы имена элементов были <strong>строками (текстом)</strong>.</li>
+<li>Необходимо использовать <strong>массивы</strong>, когда хотите, чтобы имена элементов были <strong>числами</strong>.</li>
 </ul>
 <hr>
 
-<h2>Avoid new Array()</h2>
-<p>There is no need to use the JavaScript's built-in array constructor <code class="w3-codespan">new</code> Array().</p>
-<p><strong>Use <code class="w3-codespan">[]</code> instead.</strong></p>
-<p>These two different statements both create a new empty array named points:</p>
+<h2>Избегайте new Array()</h2>
+<p>Нет необходимости использовать встроенный в JavaScript конструктор массива <code class="w3-codespan">new</code> Array().</p>
+<p><strong>Используйте <code class="w3-codespan">[]</code> вместо этого.</strong></p>
+<p>Эти два разных оператора создают новый пустой массив с именем points:</p>
 
 <div class="w3-example">
 <div class="w3-code notranslate jsHigh">
-  var points = new Array();&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Bad<br>
-var points = [];&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Good&nbsp;
+  var points = new Array();&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Плохо<br>
+var points = [];&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Хорошо&nbsp;
 </div>
 </div>
-<p>These two different statements both create a new array containing 6 numbers:</p>
+<p>Эти два разных оператора создают новый массив, содержащий 6 чисел:</p>
 
 <div class="w3-example">
 <div class="w3-code notranslate jsHigh">
-var points = new Array(40, 100, 1, 5, 25, 10); // Bad<br>
-var points = [40, 100, 1, 5, 25, 10];&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // Good
+var points = new Array(40, 100, 1, 5, 25, 10); // Плохо<br>
+var points = [40, 100, 1, 5, 25, 10];&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // Хорошо
 </div>
 <a class="w3-btn w3-margin-bottom" href="tryitedd6.html?filename=tryjs_array_literal" target="_blank">Попробуйте сами &raquo;</a>
 </div>
 
-<p>The <code class="w3-codespan">new</code> keyword only complicates the code. It can also
-produce some unexpected results:</p>
+<p>Ключевое слово <code class="w3-codespan">new</code> только усложняет код. Это также может привести к неожиданным результатам:</p>
 
 <div class="w3-example">
 <div class="w3-code notranslate jsHigh">
-var points = new Array(40, 100);&nbsp;&nbsp;// Creates an array with two elements (40 and 100)</div>
+var points = new Array(40, 100);&nbsp;&nbsp;// Создает массив с двумя элементами (40 и 100)</div>
 </div>
 
-<p>What if I remove one of the elements?</p>
+<p>А что, если удалить один из элементов?</p>
 
 <div class="w3-example">
 <div class="w3-code notranslate jsHigh">
-  var points = new Array(40);&nbsp;&nbsp;// Creates an array with 40 undefined elements !!!!!</div>
+  var points = new Array(40);&nbsp;&nbsp;// Создает массив с 40 неопределенными элементами !!!!!</div>
 <a class="w3-btn w3-margin-bottom" href="tryit070f.html?filename=tryjs_array_new_error" target="_blank">Попробуйте сами &raquo;</a>
 </div>
 <hr>
 
-<h2>How to Recognize an Array</h2>
-<p>A common question is: How do I know if a variable is an array?</p>
-<p>The problem is that the JavaScript operator <code class="w3-codespan">typeof</code> returns
+<h2>Как распознать массив</h2>
+<p>Общий вопрос: как узнать, является ли переменная массивом?</p>
+<p>Проблема в том, что JavaScript оператор <code class="w3-codespan">typeof</code> возвращает
 &quot;<code class="w3-codespan">object</code>&quot;:</p>
 
 <div class="w3-example">
 <div class="w3-code notranslate jsHigh">
 var fruits = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];<br><br>
-  typeof fruits;&nbsp;&nbsp;&nbsp; // returns object</div>
+  typeof fruits;&nbsp;&nbsp;&nbsp; // возвращает объект</div>
 <a class="w3-btn w3-margin-bottom" href="tryit3023.html?filename=tryjs_array_typeof" target="_blank">Попробуйте сами &raquo;</a>
 </div>
-<p>The typeof operator returns object because a JavaScript array is an
-object. </p>
-<h3>Solution 1:</h3>
-<p>To solve this problem ECMAScript 5 defines a new method <code class="w3-codespan">Array.isArray()</code>:</p>
+<p>Оператор typeof возвращает объект, потому что массив JavaScript является объектом.</p>
+<h3>Решение 1:</h3>
+<p>Для решения этой проблемы ECMAScript 5 определяет новый метод <code class="w3-codespan">Array.isArray()</code>:</p>
 
 <div class="w3-example">
 <div class="w3-code notranslate jsHigh">
-  Array.isArray(fruits);&nbsp;&nbsp; // returns true</div>
+  Array.isArray(fruits);&nbsp;&nbsp; // возвращает true</div>
  <a class="w3-btn w3-margin-bottom" href="tryit6577.html?filename=tryjs_array_isarray_method" target="_blank">Попробуйте сами &raquo;</a>
 </div>
-<p>The problem with this solution is that ECMAScript 5 is <strong>not supported
-in older browsers</strong>.</p>
-<h3>Solution 2:</h3>
-<p>To solve this problem you can create your own <code class="w3-codespan">isArray()</code> function:</p>
+<p>Проблема с этим решением заключается в том, что ECMAScript 5 <strong>не поддерживается в старых браузерах</strong>.</p>
+<h3>Решение 2:</h3>
+<p>Чтобы решить эту проблему, вы можете создать свою собственную функцию <code class="w3-codespan">isArray()</code>:</p>
 
 <div class="w3-example">
 <div class="w3-code notranslate jsHigh">
  function isArray(x) {<br>&nbsp; return x.constructor.toString().indexOf(&quot;Array&quot;) &gt; -1;<br>}</div>
 <a class="w3-btn w3-margin-bottom" href="tryit287a.html?filename=tryjs_array_isarray" target="_blank">Попробуйте сами &raquo;</a>
 </div>
-<p>The function above always returns true if the argument is an array.</p>
-<p>Or more precisely: it returns true if the object prototype contains the word
-&quot;Array&quot;.</p>
-<h3>Solution 3:</h3>
-<p>The <code class="w3-codespan">instanceof</code> operator returns true if an object is created
-by a given constructor:</p>
+<p>Функция выше всегда возвращает true, если аргумент является массивом.</p>
+<p>Или точнее: он возвращает true, если в прототипе объекта содержится слово &quot;Array&quot;.</p>
+<h3>Решение 3:</h3>
+<p>Оператор <code class="w3-codespan">instanceof</code> возвращает true, если объект создан данным конструктором:</p>
 
 <div class="w3-example">
 <div class="w3-code notranslate jsHigh">
 var fruits = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];<br>
-    <br>fruits instanceof Array;&nbsp;&nbsp; // returns true</div>
+    <br>fruits instanceof Array;&nbsp;&nbsp; // возвращает true</div>
  <a class="w3-btn w3-margin-bottom" href="tryit7797.html?filename=tryjs_array_instanceof" target="_blank">Попробуйте сами &raquo;</a>
 </div>
 <hr>
 
 <form autocomplete="off" spellcheck="false" id="w3-exerciseform" action="https://www.w3schools.com/js/exercise_js.asp?filename=exercise_js_arrays1" method="post" target="_blank">
-<h2>Test Yourself With Exercises</h2>
+<h2 class="shadow-black-1">Проверьте себя с помощью упражнений</h2>
 <div class="exercisewindow">
-<h2>Exercise:</h2>
-<p>Get the value "<code class="w3-codespan">Volvo</code>" from the <code class="w3-codespan">cars</code> array.</p>
+<h2>Упражнение:</h2>
+<p>Получите значение "<code class="w3-codespan">Volvo</code>" из массива <code class="w3-codespan">cars</code>.</p>
 <div class="exerciseprecontainer">
 <pre>
 var cars = ["Saab", "Volvo", "BMW"];
@@ -825,14 +817,14 @@ var x = <input name="ex1" maxlength="7" style="width: 74px;">;
 </pre>
 </div>
 <br>
-<button type="submit" class="w3-btn w3-margin-bottom">Submit Answer &raquo;</button>
-<p><a target="_blank" href="exercise_jsba43.html?filename=exercise_js_arrays1">Start the Exercise</a></p>
+<button type="submit" class="w3-btn w3-margin-bottom">Отправить ответ &raquo;</button>
+<p><a target="_blank" href="exercise_jsba43.html?filename=exercise_js_arrays1">Начать упражнение</a></p>
 </div>
 </form>
 
 <hr>
 <div class="w3-clear nextprev">
-  <a class="w3-left w3-btn" href="js_number_methods.html">&#10094; Previous</a>
+  <a class="w3-left w3-btn" href="js_number_methods.html">&#10094; Prev</a>
   <a class="w3-right w3-btn" href="js_array_methods.html">Next &#10095;</a>
 </div>
 
@@ -843,7 +835,7 @@ var x = <input name="ex1" maxlength="7" style="width: 74px;">;
 <script>
 var disqus_config = function () {
 this.page.url = w3schoolsrus.github.io; // канонический URL страницы
-this.page.identifier = w3schoolsrus.github.io / js / js_.html; // уникальный идентификатор страницы
+this.page.identifier = w3schoolsrus.github.io / js / js_arrays.html; // уникальный идентификатор страницы
 };
 (function() { // Не редактировать ниже этой линии
 var d = document, s = d.createElement('script');
