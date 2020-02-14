@@ -404,8 +404,8 @@
 </div>
 <hr>
 
-<h2>Тег &lt;script&gt;</h2>
-<p>В HTML код JavaScript должен быть вставлен между тегами <code class="w3-codespan">&lt;script&gt;</code> и <code class="w3-codespan">&lt;/script&gt;</code>.</p>
+<h2>Как подключить JavaScript? Тег &lt;script&gt;</h2>
+<p>На HTML-странице <strong>JavaScript код</strong> должен быть вставлен между тегами <code class="w3-codespan">&lt;script&gt;</code> и <code class="w3-codespan">&lt;/script&gt;</code>.</p>
 <div class="w3-example">
 <h3>Пример</h3>
 <div class="w3-code notranslate htmlHigh">
@@ -420,19 +420,19 @@ document.getElementById(&quot;demo&quot;).innerHTML = &quot;Мой первый 
 
 <div class="w3-panel w3-note">
 <p>Старые примеры JavaScript могут использовать атрибут type: &lt;script type=&quot;text/javascript&quot;&gt;.<br>
-Атрибут type не обязателен. JavaScript является языком сценариев в HTML по умолчанию.</p>
+Атрибут type не обязателен. JavaScript является языком сценариев (скриптов) в HTML по умолчанию.</p>
 </div>
 
 <hr>
 <h2>Функции и события JavaScript</h2>
-<p>JavaScript <code class="w3-codespan">function</code> это блок кода JavaScript, который может быть выполнен при &quot;вызове&quot;.</p>
+<p>JavaScript <code class="w3-codespan">function</code> - это блок кода JavaScript, который может быть выполнен при &quot;вызове&quot;.</p>
 <p>Например, функция может быть вызвана, когда происходит <b>событие</b>, например, когда пользователь нажимает кнопку.</p>
 <div class="w3-panel w3-note">
 <p>Вы узнаете намного больше о функциях и событиях в последующих главах этого учебника.</p>
 </div>
 <hr>
 
-<h2>JavaScript в &lt;head&gt; или &lt;body&gt;</h2>
+<h2>JavaScript в &lt;head&gt; или &lt;body&gt;?</h2>
 <p>Вы можете разместить любое количество скриптов в HTML-документе.</p>
 <p>Скрипты могут быть размещены в <code class="w3-codespan">&lt;body&gt;</code> или в <code class="w3-codespan">&lt;head&gt;</code> разделах HTML страницы, или в обеих разделах.</p>
 
@@ -483,7 +483,7 @@ function myFunction() {<br>
 </div>
 
 <div class="w3-panel w3-note">
-<p>Размещение сценариев в нижней части элемента &lt;body&gt; улучшает скорость отображения, поскольку интерпретация сценариев замедляет отображение.</p>
+<p>Размещение скриптов в нижней части элемента &lt;body&gt; улучшает скорость отображения, поскольку интерпретация скриптов замедляет отображение веб-страницы. По возможности старайтесь размещать JavaScript код именно в конце HTML-страницы.</p>
 </div>
 <hr>
 
@@ -500,7 +500,7 @@ function myFunction() {<br>
 
 <p>Внешние сценарии удобны, когда один и тот же код используется на разных веб-страницах (по аналогии из файлами .css).</p>
 <p>Файлы JavaScript имеют расширение <strong>.js</strong>.</p>
-<p>Чтобы использовать внешний скрипт, укажите имя файла скрипта в атрибуте <code class="w3-codespan">src</code> (source) тега <code class="w3-codespan">&lt;script&gt;</code>:</p>
+<p>Чтобы использовать внешний скрипт, укажите имя файла скрипта в атрибуте <code class="w3-codespan">src</code> (сокращенно от source) тега <code class="w3-codespan">&lt;script&gt;</code>:</p>
 <div class="w3-example">
 <h3>Пример</h3>
 <div class="w3-code notranslate htmlHigh">
@@ -512,7 +512,7 @@ function myFunction() {<br>
 <p>Скрипт будет вести себя так, как если бы он был расположен именно там, где находится тег <code class="w3-codespan">&lt;script&gt;</code>.</p>
 
 <div class="w3-panel w3-note">
-<p>Внешние скрипты не могут содержать теги <code class="w3-codespan">&lt;script&gt;</code>.</p>
+<p>Внешние скрипты не могут содержать теги <code class="w3-codespan">&lt;script&gt;</code>. В них содержится непосредственно сам JavaScript код.</p>
 </div>
 
 <hr>
@@ -523,7 +523,7 @@ function myFunction() {<br>
  <li>Это облегчает чтение и поддержку отдельно HTML и JavaScript</li>
  <li>Кэшированные файлы JavaScript могут ускорить загрузку страниц</li>
 </ul>
-<p>Чтобы добавить несколько скриптовых файлов на одну страницу - используйте несколько тегов script:</p>
+<p>Чтобы добавить несколько скриптовых файлов на одну страницу - используйте несколько тегов <code class="w3-codespan">&lt;script&gt;</code>:</p>
 <div class="w3-example">
 <h3>Пример</h3>
 <div class="w3-code notranslate htmlHigh">
@@ -560,12 +560,14 @@ function myFunction() {<br>
 <div class="w3-code notranslate htmlHigh">
 &lt;script src=&quot;myScript1.js&quot;&gt;&lt;/script&gt;
 </div>
-<p><a target="_blank" href="tryit9593.html?filename=tryjs_whereto_external" class="w3-btn">Try it Yourself &raquo;</a></p>
+<p><a target="_blank" href="tryit9593.html?filename=tryjs_whereto_external" class="w3-btn">Попробуйте сами &raquo;</a></p>
 </div>
 
 <div class="w3-panel w3-note">
-<p>Вы можете прочитать больше о путях к файлам в главе <a href="../html/html_filepaths.html">HTML Пути к файлам</a>.</p>
+<p>Вы можете прочитать больше о путях к файлам в главе <a href="../html/html_filepaths.html">HTML Пути к файлам</a> на нашем сайте.</p>
 </div>
+
+<p>Для написания скриптов на языке JavaScript используются точно такие же редакторы кода, как и для написания обычного HTML-кода. О том, какие можно использовать редакторы кода, вы можете прочитать в разделе <a href="../html/html_editors.html">HTML Редакторы</a>.</p>
 
 <hr>
 <div class="w3-clear nextprev">
