@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<title>JavaScript Учебник. Уроки для начинающих. W3Schools на русском</title>
+<title>JavaScript Методы итерации массива. Уроки для начинающих. W3Schools на русском</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="Keywords" content="JavaScript,js,w3schools,на русском,уроки,для начинающих,курс,язык,программирования,справочник,пример,упражнения,код">
-<meta name="Description" content="Уроки по языку программирования JavaScript для начинающих. Основы. Примеры кода. W3Schools на русском языке">
+<meta name="Keywords" content="методы,итерации,массива,JavaScript,js,w3schools,на русском,уроки,для начинающих,курс,язык,программирования,справочник,пример,упражнения,код">
+<meta name="Description" content="JavaScript методы итерации массива работают с каждым элементом массива. Методы: Array.forEach(), Array.map(), Array.filter(), Array.reduce(), Array.reduceRight(), Array.every(), Array.some(), Array.indexOf(), Array.lastIndexOf(), Array.find(), Array.findIndex(). Уроки по JavaScript для начинающих. Примеры кода. W3Schools на русском языке">
 <link rel="icon" href="../favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="../w3css/4/w3.css">
 <link rel="stylesheet" href="../browserref.css">
@@ -464,7 +464,7 @@ txt = txt + value + &quot;&lt;br&gt;&quot;; <br>
 </div>
 <hr>
 
-<h2>Метод Array.map()</h2>
+<h2>Array.map()</h2>
 <p>Метод <code class="w3-codespan">map()</code> создает новый массив, выполняя функцию для каждого элемента массива.</p>
 <p>Метод <code class="w3-codespan">map()</code> не выполняет функцию для элементов массива без значений.</p>
 <p>Метод <code class="w3-codespan">map()</code> не меняет исходный массив.</p>
@@ -572,11 +572,11 @@ function myFunction(value) {<br>
 
 <h2>Array.reduce()</h2>
 <p>Метод <code class="w3-codespan">reduce()</code> запускает функцию для каждого элемента массива, чтобы получить (уменьшить) значение.</p>
-<p>The <code class="w3-codespan">reduce()</code> method works from left-to-right in the array. See also <code class="w3-codespan">reduceRight()</code>.</p>
+<p>Метод <code class="w3-codespan">reduce()</code> работает слева направо в массиве. Смотрите также <code class="w3-codespan">reduceRight()</code>.</p>
 <div class="w3-panel w3-note">
-<p>The <code class="w3-codespan">reduce()</code> method does not reduce the original array.</p>
+<p>Метод <code class="w3-codespan">reduce()</code> не уменьшает исходный массив.</p>
 </div>
-<p>This example finds the sum of all numbers in an array:</p>
+<p>Этот пример находит сумму всех чисел в массиве:</p>
 <div class="w3-example">
 <h3>Пример</h3>
 <div class="w3-code notranslate jsHigh">
@@ -585,16 +585,15 @@ function myFunction(value) {<br>
   return total + value;<br>} </div>
 <a target="_blank" class="w3-btn w3-margin-bottom" href="tryit4a7a.html?filename=tryjs_array_reduce">Попробуйте сами &raquo;</a>
 </div>
-<p>Note that the function takes 4 arguments:</p>
+<p>Обратите внимание, что функция принимает 4 аргумента:</p>
 <ul>
-  <li>The total (the initial value / previously returned value)</li>
-  <li>The item value</li>
-  <li>The item index </li>
-  <li>The array itself</li>
+  <li>Итого (total) (начальное значение / ранее возвращенное значение)</li>
+  <li>Значение элемента (value)</li>
+  <li>Индекс элемента (index)</li>
+  <li>Сам массив (array)</li>
 </ul>
 
-<p>The example above does not use the index and array parameters. It can be
-rewritten to:</p>
+<p>В приведенном выше примере не используются параметры индекса и массива. Это можно переписать на:</p>
 <div class="w3-example">
 <h3>Пример</h3>
 <div class="w3-code notranslate jsHigh">
@@ -604,16 +603,15 @@ rewritten to:</p>
   <a class="w3-btn w3-margin-bottom" href="tryitb82f.html?filename=tryjs_array_reduce_2" target="_blank">Попробуйте сами &raquo;</a>
 </div>
 
-<p>The <code class="w3-codespan">reduce()</code> method can accept an initial value:</p>
+<p>Метод <code class="w3-codespan">reduce()</code> может принять начальное значение:</p>
 <div class="w3-example">
 <h3>Пример</h3>
 <div class="w3-code notranslate jsHigh">
-  var numbers1 = [45, 4, 9, 16, 25];<br>var sum = numbers1.reduce(myFunction,
-  100);<br>
-  <br>function myFunction(total, value) {<br>&nbsp;&nbsp;return total + value;<br>} </div>
+  var numbers1 = [45, 4, 9, 16, 25];<br>var sum = numbers1.reduce(myFunction, 100);<br><br>
+  function myFunction(total, value) {<br>&nbsp;&nbsp;return total + value;<br>} </div>
   <a class="w3-btn w3-margin-bottom" href="tryitef72.html?filename=tryjs_array_reduce_initial" target="_blank">Попробуйте сами &raquo;</a>
 </div>
-<p><code class="w3-codespan">Array.reduce()</code> is supported in all browsers except Internet Explorer 8 or earlier.</p>
+<p><code class="w3-codespan">Array.reduce()</code> поддерживается во всех браузерах, кроме Internet Explorer 8 или более ранней.</p>
 <div class="w3-responsive">
 <table class="browserref notranslate">
   <tbody><tr>
@@ -632,16 +630,15 @@ rewritten to:</p>
   </tr>
 </tbody></table>
 </div>
-
 <hr>
 
 <h2>Array.reduceRight()</h2>
-<p>The <code class="w3-codespan">reduceRight()</code> method runs a function on each array element to produce (reduce it to) a single value.</p>
-<p>The <code class="w3-codespan">reduceRight()</code> works from right-to-left in the array. See also <code class="w3-codespan">reduce()</code>.</p>
+<p>Метод <code class="w3-codespan">reduceRight()</code> запускает функцию для каждого элемента массива, чтобы получить (уменьшить) значение.</p>
+<p>Метод <code class="w3-codespan">reduceRight()</code> работает справа налево в массиве. Смотрите также <code class="w3-codespan">reduce()</code>.</p>
 <div class="w3-panel w3-note">
-<p>The <code class="w3-codespan">reduceRight()</code> method does not reduce the original array.</p>
+<p>Метод <code class="w3-codespan">reduceRight()</code> не уменьшает исходный массив.</p>
 </div>
-<p>This example finds the sum of all numbers in an array:</p>
+<p>Этот пример находит сумму всех чисел в массиве:</p>
 <div class="w3-example">
 <h3>Пример</h3>
 <div class="w3-code notranslate jsHigh">
@@ -650,16 +647,15 @@ rewritten to:</p>
   return total + value;<br>} </div>
   <a class="w3-btn w3-margin-bottom" href="tryit02e4.html?filename=tryjs_array_reduce_right" target="_blank">Попробуйте сами &raquo;</a>
 </div>
-<p>Note that the function takes 4 arguments:</p>
+<p>Обратите внимание, что функция принимает 4 аргумента:</p>
 <ul>
-<li>The total (the initial value / previously returned value)</li>
-  <li>The item value</li>
-  <li>The item index </li>
-  <li>The array itself</li>
+  <li>Итого (total) (начальное значение / ранее возвращенное значение)</li>
+  <li>Значение элемента (value)</li>
+  <li>Индекс элемента (index)</li>
+  <li>Сам массив (array)</li>
 </ul>
 
-<p>The example above does not use the index and array parameters. It can be
-rewritten to:</p>
+<p>В приведенном выше примере не используются параметры индекса и массива. Это можно переписать на:</p>
 <div class="w3-example">
 <h3>Пример</h3>
 <div class="w3-code notranslate jsHigh">
@@ -668,7 +664,7 @@ rewritten to:</p>
   <a class="w3-btn w3-margin-bottom" href="tryit82b3.html?filename=tryjs_array_reduce_right_2" target="_blank">Попробуйте сами &raquo;</a>
 </div>
 
-<p><code class="w3-codespan">Array.reduceRight()</code> is supported in all browsers except Internet Explorer 8 or earlier.</p>
+<p><code class="w3-codespan">Array.reduceRight()</code> поддерживается во всех браузерах, кроме Internet Explorer 8 или более ранней.</p>
 <div class="w3-responsive">
 <table class="browserref notranslate">
   <tbody><tr>
@@ -687,41 +683,37 @@ rewritten to:</p>
   </tr>
 </tbody></table>
 </div>
-
 <hr>
 
 <h2>Array.every()</h2>
-<p>The <code class="w3-codespan">every()</code> method check if all array values pass a test.</p>
+<p>Метод <code class="w3-codespan">every()</code> проверяет, все ли значения массива проходят тест.</p>
 
-<p>This example check if all array values are larger than 18:</p>
+<p>В этом примере проверяется, все ли значения массива больше 18:</p>
 <div class="w3-example">
 <h3>Пример</h3>
 <div class="w3-code notranslate jsHigh">
-  var numbers = [45, 4, 9, 16, 25];<br>var allOver18 =
-  numbers.every(myFunction);<br><br>function myFunction(value, index, array) {<br>
-  &nbsp; return
-  value &gt; 18;<br>} </div>
+  var numbers = [45, 4, 9, 16, 25];<br>var allOver18 = numbers.every(myFunction);<br><br>
+  function myFunction(value, index, array) {<br>
+  &nbsp; return value &gt; 18;<br>} </div>
 <a target="_blank" class="w3-btn w3-margin-bottom" href="tryite1b5.html?filename=tryjs_array_every">Попробуйте сами &raquo;</a>
 </div>
-<p>Note that the function takes 3 arguments:</p>
+<p>Обратите внимание, что функция принимает 3 аргумента:</p>
 <ul>
-  <li>The item value</li>
-  <li>The item index </li>
-  <li>The array itself</li>
+  <li>Значение элемента (value)</li>
+  <li>Индекс элемента (index)</li>
+  <li>Сам массив (array)</li>
 </ul>
 
-<p>When a callback function uses the first parameter only (value), the other
-parameters can be omitted:</p>
+<p>Когда функция обратного вызова использует только первый параметр (значение), другие параметры могут быть опущены:</p>
 <div class="w3-example">
 <h3>Пример</h3>
 <div class="w3-code notranslate jsHigh">
   var numbers = [45, 4, 9, 16, 25];<br>var allOver18 =
-  numbers.every(myFunction);<br><br>function myFunction(value) {<br>&nbsp; return
-  value &gt; 18;<br>} </div>
+  numbers.every(myFunction);<br><br>function myFunction(value) {<br>&nbsp; return value &gt; 18;<br>} </div>
   <a class="w3-btn w3-margin-bottom" href="tryite9a4.html?filename=tryjs_array_every_2" target="_blank">Попробуйте сами &raquo;</a>
 </div>
 
-<p><code class="w3-codespan">Array.every()</code> is supported in all browsers except Internet Explorer 8 or earlier.</p>
+<p><code class="w3-codespan">Array.every()</code> поддерживается во всех браузерах, кроме Internet Explorer 8 или более ранней.</p>
 <div class="w3-responsive">
 <table class="browserref notranslate">
   <tbody><tr>
@@ -740,29 +732,27 @@ parameters can be omitted:</p>
   </tr>
 </tbody></table>
 </div>
-
 <hr>
 
 <h2>Array.some()</h2>
-<p>The <code class="w3-codespan">some()</code> method check if some array values pass a test.</p>
+<p>Метод <code class="w3-codespan">some()</code> проверяет, проходят ли некоторые значения массива тест.</p>
 
-<p>This example check if some array values are larger than 18:</p>
+<p>Этот пример проверяет, если некоторые значения массива больше 18:</p>
 <div class="w3-example">
 <h3>Пример</h3>
 <div class="w3-code notranslate jsHigh">
   var numbers = [45, 4, 9, 16, 25];<br>var someOver18 = numbers.some(myFunction);<br><br>function myFunction(value, index, array) {<br>
-  &nbsp; return
-  value &gt; 18;<br>} </div>
+  &nbsp; return value &gt; 18;<br>} </div>
   <a class="w3-btn w3-margin-bottom" href="tryit847f.html?filename=tryjs_array_some" target="_blank">Попробуйте сами &raquo;</a>
 </div>
-<p>Note that the function takes 3 arguments:</p>
+<p>Обратите внимание, что функция принимает 3 аргумента:</p>
 <ul>
-  <li>The item value</li>
-<li>The item index </li>
-<li>The array itself</li>
+  <li>Значение элемента (value)</li>
+  <li>Индекс элемента (index)</li>
+  <li>Сам массив (array)</li>
 </ul>
 
-<p><code class="w3-codespan">Array.some()</code> is supported in all browsers except Internet Explorer 8 or earlier.</p>
+<p><code class="w3-codespan">Array.some()</code> поддерживается во всех браузерах, кроме Internet Explorer 8 или более ранней.</p>
 <div class="w3-responsive">
 <table class="browserref notranslate">
   <tbody><tr>
@@ -781,14 +771,14 @@ parameters can be omitted:</p>
   </tr>
 </tbody></table>
 </div>
-
 <hr>
+
 <h2>Array.indexOf()</h2>
-<p>The <code class="w3-codespan">indexOf()</code> method searches an array for an element value and returns its position.</p>
-<p><strong>Note:</strong> The first item has position 0, the second item has position 1, and so on.</p>
+<p>Метод <code class="w3-codespan">indexOf()</code> ищет в массиве значение элемента и возвращает его позицию.</p>
+<p><strong>Примечание:</strong> Первый элемент имеет позицию 0, второй элемент имеет позицию 1 и т.д.</p>
 <div class="w3-example">
 <h3>Пример</h3>
-<p>Search an array for the item "Apple":</p>
+<p>Поиск в массиве для элемента "Apple":</p>
 <div class="w3-code notranslate jsHigh">
 var fruits = [&quot;Apple&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];<br>
 var a = fruits.indexOf("Apple");
@@ -796,7 +786,7 @@ var a = fruits.indexOf("Apple");
 <a target="_blank" href="tryit1483.html?filename=tryjs_array_indexof" class="w3-btn w3-margin-bottom">Попробуйте сами &raquo;</a>
 </div>
 
-<p><code class="w3-codespan">Array.indexOf()</code> is supported in all browsers except Internet Explorer 8 or earlier.</p>
+<p><code class="w3-codespan">Array.indexOf()</code> поддерживается во всех браузерах, кроме Internet Explorer 8 или более ранней.</p>
 <div class="w3-responsive">
 <table class="browserref notranslate">
   <tr>
@@ -816,7 +806,7 @@ var a = fruits.indexOf("Apple");
 </table>
 </div>
 
-<h3>Syntax</h3>
+<h3>Синтаксис</h3>
 <div class="w3-code w3-border notranslate">
 <div>
 <i>array</i>.indexOf(<em>item</em>,<em> start</em>)
@@ -826,25 +816,23 @@ var a = fruits.indexOf("Apple");
 <table class="w3-table-all notranslate">
   <tr>
     <td><em>item</em></td>
-    <td>Required. The item to search for.</td>
+    <td>Обязательный. Элемент для поиска.</td>
   </tr>
   <tr>
     <td><em>start</em></td>
-    <td>Optional. Where to start the search. Negative values will start at the given position counting from the end, and search to the end.</td>
+    <td>Необязательный. С чего начать поиск. Отрицательные значения начнутся с заданной позиции, считая с конца, и начнут поиск до конца.</td>
   </tr>
 </table>
 
-<p><code class="w3-codespan">Array.indexOf()</code> returns -1 if the item is not found.</p>
-<p>If the item is present more than once, it returns the position of the first
-occurrence.</p>
+<p><code class="w3-codespan">Array.indexOf()</code> возвращает -1, если элемент не найден.</p>
+<p>Если элемент присутствует более одного раза, он возвращает позицию первого вхождения.</p>
 <hr>
 
 <h2>Array.lastIndexOf()</h2>
-<p><code class="w3-codespan">Array.lastIndexOf()</code> is the same as <code class="w3-codespan">Array.indexOf()</code>, but
-returns the position of the last occurrence of the specified element.</p>
+<p><code class="w3-codespan">Array.lastIndexOf()</code> такой же как <code class="w3-codespan">Array.indexOf()</code>, но возвращает позицию последнего вхождения указанного элемента.</p>
 <div class="w3-example">
 <h3>Пример</h3>
-<p>Search an array for the item "Apple":</p>
+<p>Поиск в массиве для элемента "Apple":</p>
 <div class="w3-code notranslate jsHigh">
 var fruits = [&quot;Apple&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];<br>
 var a = fruits.lastIndexOf("Apple");
@@ -852,7 +840,7 @@ var a = fruits.lastIndexOf("Apple");
 <a target="_blank" href="tryita0d0.html?filename=tryjs_array_lastindexof" class="w3-btn w3-margin-bottom">Попробуйте сами &raquo;</a>
 </div>
 
-<p><code class="w3-codespan">Array.lastIndexOf()</code> is supported in all browsers except Internet Explorer 8 or earlier.</p>
+<p><code class="w3-codespan">Array.lastIndexOf()</code> поддерживается во всех браузерах, кроме Internet Explorer 8 или более ранней.</p>
 <div class="w3-responsive">
 <table class="browserref notranslate">
   <tr>
@@ -872,44 +860,40 @@ var a = fruits.lastIndexOf("Apple");
 </table>
 </div>
 
-<h3>Syntax</h3>
+<h3>Синтаксис</h3>
 <div class="w3-code w3-border notranslate"><div>
 <i>array</i>.lastIndexOf(<em>item</em>,<em> start</em>)</div></div>
 <table class="w3-table-all notranslate">
   <tr>
     <td><em>item</em></td>
-    <td>Required. The item to search for</td>
+    <td>Обязательный. Элемент для поиска</td>
   </tr>
   <tr>
     <td><em>start</em></td>
-    <td>Optional. Where to start the search. Negative values will start at the given position counting from the end, and search to the beginning</td>
+    <td>Необязательный. С чего начать поиск. Отрицательные значения начнутся с заданной позиции, начиная с конца, и начнут поиск до начала</td>
   </tr>
 </table>
 <hr>
 
 <h2>Array.find()</h2>
-<p>The <code class="w3-codespan">find()</code> method returns the value of the first array element that passes a
-test function.</p>
+<p>Метод <code class="w3-codespan">find()</code> метод возвращает значение первого элемента массива, который проходит тестовую функцию.</p>
 
-<p>This example finds (returns the value of) the first element that is larger
-than 18:</p>
+<p>Этот пример находит (возвращает значение) первый элемент, который больше 18:</p>
 <div class="w3-example">
 <h3>Пример</h3>
 <div class="w3-code notranslate jsHigh">
   var numbers = [4, 9, 16, 25, 29];<br>var first =
-  numbers.find(myFunction);<br><br>function myFunction(value, index, array) {<br>&nbsp;&nbsp;return
-  value &gt; 18;<br>} </div>
+  numbers.find(myFunction);<br><br>function myFunction(value, index, array) {<br>&nbsp;&nbsp;return value &gt; 18;<br>} </div>
   <a class="w3-btn w3-margin-bottom" href="tryit217d.html?filename=tryjs_array_find" target="_blank">Попробуйте сами &raquo;</a>
 </div>
-<p>Note that the function takes 3 arguments:</p>
+<p>Обратите внимание, что функция принимает 3 аргумента:</p>
 <ul>
-  <li>The item value</li>
-  <li>The item index </li>
-  <li>The array itself</li>
+  <li>Значение элемента (value)</li>
+  <li>Индекс элемента (index)</li>
+  <li>Сам массив (array)</li>
 </ul>
 
-<p><code class="w3-codespan">Array.find()</code> is not supported in older browsers. The first browser versions
-with full support is listed below.</p>
+<p><code class="w3-codespan">Array.find()</code> не поддерживается в старых браузерах. Первые версии браузера с полной поддержкой перечислены ниже.</p>
 <div class="w3-responsive">
 <table class="browserref notranslate">
   <tbody><tr>
@@ -928,14 +912,12 @@ with full support is listed below.</p>
   </tr>
 </tbody></table>
 </div>
-
 <hr>
 
 <h2>Array.findIndex()</h2>
-<p>The <code class="w3-codespan">findIndex()</code> method returns the index of the first array element that
-passes a test function.</p>
+<p>Метод <code class="w3-codespan">findIndex()</code> возвращает индекс первого элемента массива, который проходит тестовую функцию.</p>
 
-<p>This example finds the index of the first element that is larger than 18:</p>
+<p>Этот пример находит индекс первого элемента, который больше 18:</p>
 <div class="w3-example">
 <h3>Пример</h3>
 <div class="w3-code notranslate jsHigh">
@@ -945,15 +927,14 @@ passes a test function.</p>
   value &gt; 18;<br>} </div>
   <a class="w3-btn w3-margin-bottom" href="tryit7c02.html?filename=tryjs_array_find_index" target="_blank">Попробуйте сами &raquo;</a>
 </div>
-<p>Note that the function takes 3 arguments:</p>
+<p>Обратите внимание, что функция принимает 3 аргумента:</p>
 <ul>
-  <li>The item value</li>
-<li>The item index </li>
-<li>The array itself</li>
+  <li>Значение элемента (value)</li>
+  <li>Индекс элемента (index)</li>
+  <li>Сам массив (array)</li>
 </ul>
 
-<p><code class="w3-codespan">Array.findIndex()</code> is not supported in older browsers. The first browser
-versions with full support is listed below.</p>
+<p><code class="w3-codespan">Array.findIndex()</code> не поддерживается в старых браузерах. Первые версии браузера с полной поддержкой перечислены ниже.</p>
 <div class="w3-responsive">
 <table class="browserref notranslate">
   <tbody><tr>
@@ -973,10 +954,10 @@ versions with full support is listed below.</p>
 </tbody>
 </table>
 </div>
-<br>
-<br>
+
+<hr>
 <div class="w3-clear nextprev">
-  <a class="w3-left w3-btn" href="js_array_sort.html">&#10094; Previous</a>
+  <a class="w3-left w3-btn" href="js_array_sort.html">&#10094; Prev</a>
   <a class="w3-right w3-btn" href="js_dates.html">Next &#10095;</a>
 </div>
 
@@ -987,7 +968,7 @@ versions with full support is listed below.</p>
 <script>
 var disqus_config = function () {
 this.page.url = w3schoolsrus.github.io; // канонический URL страницы
-this.page.identifier = w3schoolsrus.github.io / js / js_.html; // уникальный идентификатор страницы
+this.page.identifier = w3schoolsrus.github.io / js / js_array_iteration.html; // уникальный идентификатор страницы
 };
 (function() { // Не редактировать ниже этой линии
 var d = document, s = d.createElement('script');
