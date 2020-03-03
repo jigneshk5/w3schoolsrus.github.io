@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<title>JavaScript Учебник. Уроки для начинающих. W3Schools на русском</title>
+<title>JavaScript Область действия. Уроки для начинающих. W3Schools на русском</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="Keywords" content="JavaScript,js,w3schools,на русском,уроки,для начинающих,курс,язык,программирования,справочник,пример,упражнения,код">
-<meta name="Description" content="Уроки по языку программирования JavaScript для начинающих. Основы. Примеры кода. W3Schools на русском языке">
+<meta name="Keywords" content="сфера,область,действия,переменные,JavaScript,js,w3schools,на русском,уроки,для начинающих,курс,язык,программирования,справочник,пример,упражнения,код">
+<meta name="Description" content="Область действия определяет доступность (видимость) переменных. В JavaScript есть два типа области действия: локальная и глобальная. Каждая функция создает новую область действия. W3Schools на русском языке">
 <link rel="icon" href="../favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="../w3css/4/w3.css">
 </head>
@@ -423,110 +423,93 @@
 <div class="w3-example">
 <h3>Пример</h3>
 <div class="w3-code notranslate jsHigh">
-// code here can NOT use carName<br><br>function myFunction() {<br>
+// код здесь НЕ МОЖЕТ использовать carName<br><br>function myFunction() {<br>
 &nbsp;&nbsp;var carName = &quot;Volvo&quot;;<br><br>
-  &nbsp; // code here CAN use carName<br><br>}
+  &nbsp; // код здесь МОЖЕТ использовать carName<br><br>}
 </div>
-<a class="w3-btn w3-margin-bottom" href="tryitc354.html?filename=tryjs_scope_local" target="_blank">Try it Yourself &raquo;</a>
+<a class="w3-btn w3-margin-bottom" href="tryitc354.html?filename=tryjs_scope_local" target="_blank">Попробуйте сами &raquo;</a>
 </div>
-<p>Since local variables are only recognized inside their functions, variables with the same name can be used in different functions.</p>
-<p>Local variables are created when a function starts, and deleted when the function is completed.</p>
+<p>Поскольку локальные переменные распознаются только внутри их функций, переменные с одинаковым именем могут использоваться в разных функциях.</p>
+<p>Локальные переменные создаются при запуске функции и удаляются по завершении функции.</p>
 <hr>
 
-<h2>Global JavaScript Variables</h2>
-<p>A variable declared outside a function, becomes <strong>GLOBAL</strong>.</p>
-<p>A global variable has <strong>global scope</strong>: All scripts and functions
-on a web page can access it.&nbsp;</p>
+<h2>Глобальные переменные JavaScript</h2>
+<p>Переменная, объявленная вне функции, становится <strong>GLOBAL</strong> (глобальной).</p>
+<p>Глобальная переменная имеет <strong>глобальную область</strong>: все скрипты и функции на веб-странице могут получить к ней доступ.</p>
 
 <div class="w3-example">
 <h3>Пример</h3>
 <div class="w3-code notranslate jsHigh">
 var carName = &quot;Volvo&quot;;<br><br>
-// code here can use carName<br><br>
+// код, в котором можно использовать carName<br><br>
 function myFunction() {<br><br>
-&nbsp;&nbsp;// code here can also use carName <br><br>}
+&nbsp;&nbsp;// код, в котором также можно использовать carName<br><br>}
 </div>
-<a class="w3-btn w3-margin-bottom" href="tryit2bb1.html?filename=tryjs_scope_global" target="_blank">Try it Yourself &raquo;</a>
+<a class="w3-btn w3-margin-bottom" href="tryit2bb1.html?filename=tryjs_scope_global" target="_blank">Попробуйте сами &raquo;</a>
 </div>
-
 <hr>
-<h2>JavaScript Variables</h2>
-<p>In JavaScript, objects and functions are also variables.</p>
+
+<h2>JavaScript Переменные</h2>
+<p>В JavaScript объекты и функции также являются переменными.</p>
 <div class="w3-panel w3-note">
-<p>Scope determines the accessibility of variables, objects, and functions from
-different parts of the code.</p>
-</div>
-
-
-<hr>
-<div id="midcontentadcontainer" style="overflow:auto;text-align:center">
-<!-- MidContent -->
-
-  <!--<pre>mid_content, all: [300,250][336,280][728,90][970,250][970,90][320,50][468,60]</pre>-->
-  <div id="snhb-mid_content-0"></div>
-
+<p>Область действия определяет доступность переменных, объектов и функций из разных частей кода.</p>
 </div>
 <hr>
 
-<h2>Automatically Global</h2>
-<p>If you assign a value to a variable that has not been declared, it will automatically become a <b>GLOBAL</b> variable.</p>
-<p>This code example will declare a global variable <code class="w3-codespan">carName</code>, even if
-the value is assigned inside a function.</p>
+<h2>Автоматически Глобальная</h2>
+<p>Если вы присвоите значение переменной, которая не была объявлена, она автоматически станет переменной <b>GLOBAL</b>.</p>
+<p>В этом примере кода будет объявлена глобальная переменная <code class="w3-codespan"> carName</code>, даже если значение назначено внутри функции.</p>
 
 <div class="w3-example">
 <h3>Пример</h3>
 <div class="w3-code notranslate jsHigh">
- myFunction();<br><br>// code here can use carName
+ myFunction();<br><br>// код, в котором можно использовать carName
  <br><br>function myFunction() {<br>
   &nbsp; carName = &quot;Volvo&quot;;<br>}</div>
-<a class="w3-btn w3-margin-bottom" href="tryit3105.html?filename=tryjs_local_global" target="_blank">Try it Yourself &raquo;</a>
+<a class="w3-btn w3-margin-bottom" href="tryit3105.html?filename=tryjs_local_global" target="_blank">Попробуйте сами &raquo;</a>
 </div>
-
 <hr>
-<h2>Strict Mode</h2>
-<p>All modern browsers support running JavaScript in "Strict Mode".</p>
-<p>You will learn more about how to use strict mode in a later chapter of this tutorial.</p>
+
+<h2>Строгий режим</h2>
+<p>Все современные браузеры поддерживают запуск JavaScript в &quot;Strict Mode&quot; (&quot;строгом режиме&quot;).</p>
+<p>Вы узнаете больше о том, как использовать строгий режим, в следующей главе этого учебника.</p>
 
 <div class="w3-panel w3-warning">
-<p>In &quot;Strict Mode&quot;, undeclared variables are not automatically global.</p>
+<p>В &quot;строгом режиме&quot; необъявленные переменные не являются автоматически глобальными.</p>
 </div>
-
 <hr>
-<h2>Global Variables in HTML</h2>
-<p>With JavaScript, the global scope is the complete JavaScript environment. </p>
-<p>In HTML, the global scope is the window object. All global variables belong to the window object.</p>
+
+<h2>Глобальные переменные в HTML</h2>
+<p>С JavaScript глобальная область действия - это полная среда JavaScript.</p>
+<p>В HTML глобальной областью является объект окна. Все глобальные переменные принадлежат объекту окна.</p>
 
 <div class="w3-example">
 <h3>Пример</h3>
 <div class="w3-code notranslate jsHigh">
- var carName = &quot;Volvo&quot;;<br><br>// code here
- can use window.carName<br></div>
-<a class="w3-btn w3-margin-bottom" href="tryit3956.html?filename=tryjs_scope_window" target="_blank">Try it Yourself &raquo;</a>
+ var carName = &quot;Volvo&quot;;<br><br>// код, в котором можно использовать window.carName<br></div>
+<a class="w3-btn w3-margin-bottom" href="tryit3956.html?filename=tryjs_scope_window" target="_blank">Попробуйте сами &raquo;</a>
 </div>
-
 <hr>
-<h2>Warning</h2>
+
+<h2>Предупреждение</h2>
 <div class="w3-panel w3-warning">
-<p>Do NOT create global variables unless you intend to.</p>
-<p>Your global variables (or functions) can overwrite window variables (or
-functions).<br>Any function, including the window object, can overwrite your global
-variables and functions.</p>
+<p>НЕ создавайте глобальные переменные, если вы не собираетесь их использовать.</p>
+<p>Глобальные переменные (или функции) могут перезаписывать оконные переменные (или функции). <br>Любая функция, включая объект окна, может перезаписывать глобальные переменные и функции.</p>
 </div>
-
-<hr>
-<h2>The Lifetime of JavaScript Variables</h2>
-<p>The lifetime of a JavaScript variable starts when it is declared.</p>
-<p>Local variables are deleted when the function is completed.</p>
-<p>In a web browser, global variables are deleted when you close the browser
-window (or tab).</p>
 <hr>
 
-<h2>Function Arguments</h2>
-<p>Function arguments (parameters) work as local variables inside functions.</p>
+<h2>Время жизни переменных JavaScript</h2>
+<p>Время жизни переменной JavaScript начинается с момента ее объявления.</p>
+<p>Локальные переменные удаляются после завершения функции.</p>
+<p>В веб-браузере глобальные переменные удаляются при закрытии окна браузера (или вкладки).</p>
 <hr>
 
+<h2>Аргументы функции</h2>
+<p>Аргументы функции (параметры) работают как локальные переменные внутри функций.</p>
+
+<hr>
 <div class="w3-clear nextprev">
-  <a class="w3-left w3-btn" href="js_errors.html">&#10094; Previous</a>
+  <a class="w3-left w3-btn" href="js_errors.html">&#10094; Prev</a>
   <a class="w3-right w3-btn" href="js_hoisting.html">Next &#10095;</a>
 </div>
 
@@ -537,7 +520,7 @@ window (or tab).</p>
 <script>
 var disqus_config = function () {
 this.page.url = w3schoolsrus.github.io; // канонический URL страницы
-this.page.identifier = w3schoolsrus.github.io / js / js_.html; // уникальный идентификатор страницы
+this.page.identifier = w3schoolsrus.github.io / js / js_scope.html; // уникальный идентификатор страницы
 };
 (function() { // Не редактировать ниже этой линии
 var d = document, s = d.createElement('script');
