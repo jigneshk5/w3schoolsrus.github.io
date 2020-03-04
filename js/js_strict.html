@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<title>JavaScript Учебник. Уроки для начинающих. W3Schools на русском</title>
+<title>JavaScript Use Strict / Строгий режим. Уроки для начинающих. W3Schools на русском</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="Keywords" content="JavaScript,js,w3schools,на русском,уроки,для начинающих,курс,язык,программирования,справочник,пример,упражнения,код">
-<meta name="Description" content="Уроки по языку программирования JavaScript для начинающих. Основы. Примеры кода. W3Schools на русском языке">
+<meta name="Keywords" content="use,strict,строгий,режим,ключевые,слова,JavaScript,js,w3schools,на русском,уроки,для начинающих,курс,язык,программирования,справочник,пример,упражнения,код">
+<meta name="Description" content="Директива use strict определяет, что код JavaScript должен выполняться в строгом режиме. В строгом режиме нельзя использовать необъявленные переменные. Объявленный в начале скрипта, строгий режим имеет глобальную область действия. W3Schools на русском языке">
 <link rel="icon" href="../favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="../w3css/4/w3.css">
 <link rel="stylesheet" type="text/css" href="../browserref.css">
@@ -639,29 +639,23 @@ alert (x);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nb
 </p>
 </div>
 
-<p>The <code class="w3-codespan">this</code> keyword in functions behaves
-differently in strict mode.</p>
-<p>The <code class="w3-codespan">this</code> keyword refers to the object that
-called the function.</p>
-<p>If the object is not specified, functions in strict mode
-will return <code class="w3-codespan">undefined</code> and functions in normal
-mode will return the global object (window):</p>
+<p>Ключевое слово <code class="w3-codespan">this</code> в функциях ведет себя по-разному в строгом режиме.</p>
+<p>Ключевое слово <code class="w3-codespan">this</code> относится к объекту, который вызвал функцию.</p>
+<p>Если объект не указан, функции в строгом режиме вернут <code class="w3-codespan">undefined</code>, а функции в обычном режиме вернут глобальный объект (окно):</p>
 <div class="w3-example">
 <div class="w3-code notranslate jsHigh">
 &quot;use strict&quot;;<br>function myFunction() {<br>&nbsp;
-  alert(this); // will alert &quot;undefined&quot;<br>}<br>myFunction(); </div>
+  alert(this); // будет выведено &quot;undefined&quot;<br>}<br>myFunction(); </div>
 <p>
 <a class="w3-btn" href="tryitbae9.html?filename=tryjs_strict_this" target="_blank">Попробуйте сами &raquo;</a>
 </p>
 </div>
-
 <hr>
-<h2>Future Proof!</h2>
+
+<h2>На будущее!</h2>
+<p><strong>Ключевые слова</strong>, зарезервированные для будущих версий JavaScript, НЕ могут использоваться в качестве имен переменных в строгом режиме.</p>
 <p>
-Keywords reserved for future JavaScript versions can NOT be used as variable
-names in strict mode.</p>
-<p>
-These are:</p>
+Это слова:</p>
 <ul>
   <li>implements</li>
   <li>interface</li>
@@ -683,9 +677,8 @@ These are:</p>
 </div>
 
 <div class="w3-panel w3-warning">
-<h2>Watch Out!</h2>
-<p>The &quot;use strict&quot; directive is only recognized at the <strong>beginning</strong> of a script
-or a function.</p>
+<h2>Внимание!</h2>
+<p>Директива &quot;use strict&quot; распознается только в <strong>начале</strong> скрипта или функции.</p>
 </div>
 
 <hr>
