@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<title>JavaScript Учебник. Уроки для начинающих. W3Schools на русском</title>
+<title>JavaScript Ключевое слово Let. Уроки для начинающих. W3Schools на русском</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="Keywords" content="JavaScript,js,w3schools,на русском,уроки,для начинающих,курс,язык,программирования,справочник,пример,упражнения,код">
-<meta name="Description" content="Уроки по языку программирования JavaScript для начинающих. Основы. Примеры кода. W3Schools на русском языке">
+<meta name="Keywords" content="ключевое,слово,let,global,scope,область,действия,JavaScript,js,w3schools,на русском,уроки,для начинающих,пример">
+<meta name="Description" content="ES2015 представил два важных новых ключевых слова JavaScript: let и const, которые предоставляют переменные (и константы) Block Scope в JavaScript.  Global Scope и Function Scope. Примеры кода. W3Schools на русском языке">
 <link rel="icon" href="../favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="../w3css/4/w3.css">
+<link rel="stylesheet" href="../browserref.css">
 </head>
 
 <body>
@@ -426,8 +427,8 @@ function myFunction() {<br>&nbsp; // код, в котором также мож
 <p><strong>Глобальные</strong> переменные могут быть доступны из любого места в программе JavaScript. </p>
 <hr>
 
-<h2>Function Scope / Функциональная область действия</h2>
-<p>Переменные, объявленные <strong>локально</strong> (внутри функции) имеют <strong> Function Scope</strong> (функциональную область действия).</p>
+<h2>Function Scope / Область действия функции</h2>
+<p>Переменные, объявленные <strong>локально</strong> (внутри функции) имеют <strong> Function Scope</strong> (область действия функции).</p>
 
 <div class="w3-example">
 <h3>Пример</h3>
@@ -441,75 +442,71 @@ function myFunction() {<br>&nbsp; // код, в котором также мож
 <p>Доступ к <strong>локальным</strong> переменным возможен только из функции, в которой они объявлены. </p>
 <hr>
 
-<h2>JavaScript Block Scope</h2>
-<p>Variables declared with the <code class="w3-codespan">var</code> keyword can not have <strong>Block
-Scope</strong>.</p>
-<p>Variables declared inside a block <strong>{}</strong> can be accessed from
-outside the block. </p>
+<h2>JavaScript Block Scope / Область действия блока</h2>
+<p>Переменные, объявленные с ключевым словом <code class="w3-codespan">var</code> не могут иметь <strong>Block Scope</strong>.</p>
+<p>Переменные, объявленные внутри блока <strong>{}</strong> могут быть доступны вне блока.</p>
 
 <div class="w3-example">
-<h3>Example</h3>
+<h3>Пример</h3>
 <div class="w3-code notranslate jsHigh">
 { <br>
 &nbsp;&nbsp;var x = 2; <br>
   }<br>
-// x CAN be used here</div>
+// x МОЖЕТ быть использован здесь</div>
 </div>
 
-<p>Before ES2015 JavaScript did not have <strong>Block Scope</strong>.</p>
+<p>До ES2015 в JavaScript не было <strong>Block Scope</strong>.</p>
 
-<p>Variables declared with the <code class="w3-codespan">let</code> keyword can have Block Scope.</p>
-<p>Variables declared inside a block <strong>{}</strong> can not be accessed
-from outside the block:</p>
+<p>Переменные, объявленные с ключевым словом <code class="w3-codespan">let</code>, могут иметь Block Scope.</p>
+<p>Переменные, объявленные внутри блока <strong>{}</strong>, недоступны вне блока:</p>
 
 <div class="w3-example">
-<h3>Example</h3>
+<h3>Пример</h3>
 <div class="w3-code notranslate jsHigh">
 { <br>
 &nbsp;&nbsp;let x = 2;<br>
   }<br>
-// x can NOT be used here</div>
+// x НЕ МОЖЕТ использоваться здесь</div>
 </div>
-
 <hr>
-<h2>Redeclaring Variables</h2>
 
-<p>Redeclaring a variable using the <code class="w3-codespan">var</code> keyword can impose problems.</p>
-<p>Redeclaring a variable inside a block will also redeclare the variable
-outside the block:</p>
+<h2>Переопределение переменных</h2>
+
+<p>Повторное выделение переменной с помощью ключевого слова <code class="w3-codespan">var</code> может вызвать проблемы.</p>
+<p>Переопределение переменной внутри блока также повторно объявит переменную вне блока:</p>
 
 <div class="w3-example">
-<h3>Example</h3>
+<h3>Пример</h3>
 <div class="w3-code notranslate jsHigh">
 var x = 10;<br>
-// Here x is 10<br>
+// здесь x является 10<br>
 { <br>
 &nbsp;&nbsp;var x = 2;<br>
-  &nbsp; // Here x is 2<br>}<br>
-// Here x is 2</div>
+  &nbsp; // здесь x является 2<br>}<br>
+// здесь x является 2</div>
 <a class="w3-btn w3-margin-bottom" href="tryit4b44.html?filename=tryjs_es6_var" target="_blank">Попробуйте сами &raquo;</a>
 </div>
 
-<p>Redeclaring a variable using the <code class="w3-codespan">let</code> keyword can solve this problem.</p>
-<p>Redeclaring a variable inside a block will not redeclare the variable outside
-the block:</p>
+<p>Повторное выделение переменной с помощью ключевого слова <code class="w3-codespan">let</code> может решить эту проблему.</p>
+<p>Переопределение переменной внутри блока не приведет к повторному объявлению переменной вне блока:</p>
 
 <div class="w3-example">
-<h3>Example</h3>
+<h3>Пример</h3>
 <div class="w3-code notranslate jsHigh">
 var x = 10;<br>
-// Here x is 10<br>
+// здесь x является 10<br>
 { <br>
 &nbsp;&nbsp;let x = 2;<br>
-&nbsp;&nbsp;// Here x is 2<br>}<br>
-// Here x is 10
+&nbsp;&nbsp;// здесь x является 2<br>}<br>
+// здесь x является 10
 </div>
 <a class="w3-btn w3-margin-bottom" href="tryit535e.html?filename=tryjs_es6_let" target="_blank">Попробуйте сами &raquo;</a>
 </div>
 <hr>
-<h2>Browser Support</h2>
-<p>The <code class="w3-codespan">let</code> keyword is not fully supported in Internet Explorer 11 or earlier.</p>
-<p>The following table defines the first browser versions with full support for the <code class="w3-codespan">let</code> keyword: </p>
+
+<h2>Поддержка браузерами</h2>
+<p>Ключевое слово <code class="w3-codespan">let</code> не полностью поддерживается в Internet Explorer 11 или более ранней версии.</p>
+<p>В следующей таблице указаны первые версии браузера с полной поддержкой ключевого слова <code class="w3-codespan">let</code>:</p>
 <div class="w3-responsive">
 <table class="browserref notranslate">
   <tbody><tr style="height:50px;">
@@ -537,52 +534,42 @@ var x = 10;<br>
 </div>
 <hr>
 
-<h2>Loop Scope</h2>
+<h2>Loop Scope / Область действия цикла</h2>
 
-<p>Using <code class="w3-codespan">var</code> in a loop:</p>
+<p>Использование <code class="w3-codespan">var</code> в цикле:</p>
 
 <div class="w3-example">
-<h3>Example</h3>
+<h3>Пример</h3>
 <div class="w3-code notranslate jsHigh">
 var i = 5;<br>
 for (var i = 0; i &lt; 10; i++) {<br>
-&nbsp;&nbsp;// some statements<br>}<br>
-// Here i is 10
+&nbsp;&nbsp;// некоторые объявления<br>}<br>
+// здесь i является 10
 </div>
 <a class="w3-btn w3-margin-bottom" href="tryit1893.html?filename=tryjs_let_for_loop1" target="_blank">Попробуйте сами &raquo;</a>
 </div>
 
-<p>Using <code class="w3-codespan">let</code> in a loop:</p>
+<p>Использование <code class="w3-codespan">let</code> в цикле:</p>
 
 <div class="w3-example">
-<h3>Example</h3>
+<h3>Пример</h3>
 <div class="w3-code notranslate jsHigh">
 let i = 5;<br>
 for (let i = 0; i &lt; 10; i++) {<br>
-  &nbsp; // some statements<br>}<br>
-// Here i is 5
+  &nbsp; // некоторые объявления<br>}<br>
+// здесь i является 5
 </div>
  <a class="w3-btn w3-margin-bottom" href="tryit0d27.html?filename=tryjs_let_for_loop2" target="_blank">Попробуйте сами &raquo;</a>
 </div>
-<p>In the first example, using <code class="w3-codespan">var</code>, the variable declared in
-the loop redeclares the variable outside the loop. </p>
-<p>In the second example, using <code class="w3-codespan">let</code>, the variable declared in
-the loop does not redeclare the variable outside the loop. </p>
-<p>When <code class="w3-codespan">let</code> is used to declare the i variable in a loop, the i
-variable will only be visible within the loop. </p>
-<hr>
-<div id="midcontentadcontainer" style="overflow:auto;text-align:center">
-<!-- MidContent -->
 
-  <!--<pre>mid_content, all: [300,250][336,280][728,90][970,250][970,90][320,50][468,60]</pre>-->
-  <div id="snhb-mid_content-0"></div>
-
-</div>
+<p>В первом примере, используя <code class="w3-codespan">var</code>, переменная, объявленная в цикле, повторно объявляет переменную вне цикла.</p>
+<p>Во втором примере, используя <code class="w3-codespan">let</code>, переменная, объявленная в цикле, не объявляет переменную вне цикла.</p>
+<p>Когда <code class="w3-codespan">let</code> используется для объявления переменной <b>i</b> в цикле, переменная <b>i</b> будет видна только внутри цикла.</p>
 <hr>
-<h2>Function Scope</h2>
-<p>Variables declared with <code class="w3-codespan">var</code> and <code class="w3-codespan">let</code> are
-quite similar when declared inside a function.</p>
-<p>They will both have <strong>Function Scope</strong>:</p>
+
+<h2>Function Scope / Область действия функции</h2>
+<p>Переменные, объявленные с помощью <code class="w3-codespan">var</code> и <code class="w3-codespan">let</code> очень похожи, когда объявлены внутри функции.</p>
+<p>Они оба будут иметь <strong>Function Scope</strong> (область действия функции):</p>
 <div class="w3-example">
 <div class="w3-code notranslate jsHigh">
 function myFunction() {<br>
@@ -599,10 +586,9 @@ function myFunction() {<br>
 </div>
 
 <hr>
-<h2>Global Scope</h2>
-<p>Variables declared with <code class="w3-codespan">var</code> and <code class="w3-codespan">let</code> are
-quite similar when declared outside a block.</p>
-<p>They will both have <strong>Global Scope</strong>:</p>
+<h2>Global Scope / Глобальная область действия</h2>
+<p>Переменные, объявленные с помощью <code class="w3-codespan">var</code> и <code class="w3-codespan">let</code> очень похожи, когда объявлены вне блока.</p>
+<p>У них обоих будет <strong>Global Scope</strong>:</p>
 <div class="w3-example">
 <div class="w3-code notranslate jsHigh">
 var x = 2;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -614,136 +600,120 @@ var x = 2;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   let x = 2;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //
   Global scope</div>
 </div>
-
 <hr>
-<h2>Global Variables in HTML</h2>
-<p>With JavaScript, the global scope is the JavaScript environment. </p>
-<p>In HTML, the global scope is the window object.</p>
-<p>Global variables defined with the <code class="w3-codespan">var</code> keyword belong to the window object:</p>
+
+<h2>Глобальные переменные в HTML</h2>
+<p>С JavaScript глобальная область действия - это среда JavaScript.</p>
+<p>В HTML глобальной областью является объект окна.</p>
+<p>Глобальные переменные, определенные с помощью ключевого слова <code class="w3-codespan">var</code>, относятся к объекту окна:</p>
 
 <div class="w3-example">
-<h3>Example</h3>
+<h3>Пример</h3>
 <div class="w3-code notranslate jsHigh">
 var carName = &quot;Volvo&quot;;<br>
-// code here can use window.carName
+// в данном коде можно использовать window.carName
 </div>
 <a class="w3-btn w3-margin-bottom" href="tryitc629.html?filename=tryjs_let_scope" target="_blank">Попробуйте сами &raquo;</a>
 </div>
-<p>Global variables defined with the <code class="w3-codespan">let</code> keyword do not belong to the window object:</p>
+<p>Глобальные переменные, определенные с помощью ключевого слова <code class="w3-codespan">let</code> не принадлежат объекту окна:</p>
 
 <div class="w3-example">
-<h3>Example</h3>
+<h3>Пример</h3>
 <div class="w3-code notranslate jsHigh">
 let carName = &quot;Volvo&quot;;<br>
-// code here can not use window.carName
+// в данном коде нельзя использовать window.carName
 </div>
 <a class="w3-btn w3-margin-bottom" href="tryit50ea.html?filename=tryjs_let_global" target="_blank">Попробуйте сами &raquo;</a>
 </div>
-
 <hr>
-<h2>Redeclaring</h2>
-<p>Redeclaring a JavaScript variable with <code class="w3-codespan">var</code> is allowed
-anywhere in a program:</p>
+
+<h2>Переопределение (повторное объявление)</h2>
+<p>Переопределение переменной JavaScript с помощью <code class="w3-codespan">var</code> разрешено в любом месте программы:</p>
 
 <div class="w3-example">
-<h3>Example</h3>
+<h3>Пример</h3>
 <div class="w3-code notranslate jsHigh">
 var x = 2;<br><br>
-  //
-  Now x is 2<br>
+  // теперь x является 2<br>
 &nbsp;<br>
   var x = 3;<br>
-  <br>// Now x is 3</div>
+  <br>// теперь x является 3</div>
 <a class="w3-btn w3-margin-bottom" href="tryit4365.html?filename=tryjs_let_redeclare_var" target="_blank">Попробуйте сами &raquo;</a>
 </div>
-<p>Redeclaring a <code class="w3-codespan">var</code> variable with <code class="w3-codespan">let</code>, in the same scope, or in
-the same block, is not allowed:</p>
+
+<p>Переопределение переменной <code class="w3-codespan">var</code> с помощью <code class="w3-codespan">let</code> в той же области или в том же блоке не допускается:</p>
 
 <div class="w3-example">
-<h3>Example</h3>
+<h3>Пример</h3>
 <div class="w3-code notranslate jsHigh">
-  var x = 2;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // Allowed<br>
-  let x = 3;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;// Not allowed<br><br>{<br>&nbsp;&nbsp;var x = 4;&nbsp;&nbsp; // Allowed<br>
-  &nbsp;
-  let x = 5&nbsp;&nbsp;&nbsp;// Not allowed<br>}<br>
+  var x = 2;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // допускается<br> let x = 3;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;// не допускается<br><br>{<br>&nbsp;&nbsp;var x = 4;&nbsp;&nbsp; // допускается<br>&nbsp; let x = 5&nbsp;&nbsp;&nbsp;// не допускается<br>}<br>
   </div>
 </div>
 
-<p>Redeclaring a <code class="w3-codespan">let</code> variable with <code class="w3-codespan">let</code>, in the same scope, or in
-the same block, is not allowed:</p>
+<p>Переопределение переменной <code class="w3-codespan">let</code> с помощью <code class="w3-codespan">let</code> в том же объеме или в том же блоке не допускается:</p>
 
 <div class="w3-example">
-<h3>Example</h3>
+<h3>Пример</h3>
 <div class="w3-code notranslate jsHigh">
-  let x = 2;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // Allowed<br>
-  let x = 3;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;// Not allowed<br><br>{<br>&nbsp;
-  let x = 4;&nbsp;&nbsp; // Allowed<br>
+  let x = 2;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // допускается<br>
+  let x = 3;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;// не допускается<br><br>{<br>&nbsp;
+  let x = 4;&nbsp;&nbsp; // допускается<br>
   &nbsp;
-  let x = 5;&nbsp;&nbsp;&nbsp;// Not allowed<br>}<br>
+  let x = 5;&nbsp;&nbsp;&nbsp;// не допускается<br>}<br>
   </div>
 </div>
 
-<p>Redeclaring a <code class="w3-codespan">let</code> variable with <code class="w3-codespan">var</code>, in the same scope, or in
-the same block, is not allowed:</p>
+<p>Переопределение переменной <code class="w3-codespan">let</code> с помощью <code class="w3-codespan">var</code> в том же объеме или в том же блоке не допускается:</p>
 
 <div class="w3-example">
-<h3>Example</h3>
+<h3>Пример</h3>
 <div class="w3-code notranslate jsHigh">
-  let x = 2;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // Allowed<br>
-  var x = 3;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;// Not allowed<br><br>{<br>&nbsp;&nbsp;let x = 4;&nbsp;&nbsp; // Allowed<br>
+  let x = 2;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // допускается<br>
+  var x = 3;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;// не допускается<br><br>{<br>&nbsp;&nbsp;let x = 4;&nbsp;&nbsp; // допускается<br>
   &nbsp;
-  var x = 5;&nbsp;&nbsp;&nbsp;// Not allowed<br>}<br>
+  var x = 5;&nbsp;&nbsp;&nbsp;// не допускается<br>}<br>
   </div>
 </div>
 
-<p>Redeclaring a variable with <code class="w3-codespan">let</code>, in another scope, or in
-another block, is allowed:</p>
+<p>Переопределение переменной с помощью <code class="w3-codespan">let</code> в другом объёме или в другом блоке допускается:</p>
 
 <div class="w3-example">
-<h3>Example</h3>
+<h3>Пример</h3>
 <div class="w3-code notranslate jsHigh">
-  let x = 2;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // Allowed<br><br>{<br>&nbsp;
-  let x = 3;&nbsp;&nbsp; // Allowed<br>
-  }<br>
-  <br>
-  {<br>
-  &nbsp;
-  let x = 4;&nbsp;&nbsp;&nbsp;// Allowed<br>
+  let x = 2;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // допускается<br><br>{<br>&nbsp;
+  let x = 3;&nbsp;&nbsp; // допускается<br>
+  }<br><br>
+  {<br> &nbsp; let x = 4;&nbsp;&nbsp;&nbsp;// допускается<br>
   }</div>
 <a class="w3-btn w3-margin-bottom" href="tryit6952.html?filename=tryjs_let_redeclare" target="_blank">Попробуйте сами &raquo;</a>
 </div>
-
-
 <hr>
-<h2>Hoisting</h2>
-<p>Variables defined with <code class="w3-codespan">var</code> are <strong>hoisted</strong> to the top (if you don't know what Hoisting is, read our <a href="js_hoisting.html">
-Hoisting Chapter</a>).
-<p>You can use a variable before it is declared:</p>
+
+<h2>Hoisting / Подъём</h2>
+<p>Переменные, определенные с помощью <code class="w3-codespan">var</code>, <strong>поднимаются</strong> наверх (если вы не знаете, что такое Hoisting, прочитайте наш <a href="js_hoisting.html">Hoisting раздел</a>).
+<p>Вы можете использовать переменную до того, как она будет объявлена:</p>
 <div class="w3-example">
-<h3>Example</h3>
+<h3>Пример</h3>
 <div class="w3-code notranslate jsHigh">
-  // you CAN use carName here<br>
+  // Здесь вы можете использовать carName<br>
   var carName;
 </div>
 <a class="w3-btn w3-margin-bottom" href="tryit50d6.html?filename=tryjs_let_hoisting_var" target="_blank">Попробуйте сами &raquo;</a>
 </div>
 
-
-<p>Variables defined with <code class="w3-codespan">let</code> are not hoisted to the top.<p>Using a <code class="w3-codespan">let</code> variable before it is declared will result in a
-<code class="w3-codespan">ReferenceError</code>.</p>
-<p>The variable is in a &quot;temporal dead zone&quot; from the start
-of the block until it is declared:</p>
+<p>Переменные, определенные с помощью <code class="w3-codespan">let</code>, не поднимаются наверх.</p>
+<p>Использование переменной <code class="w3-codespan">let</code> до её объявления приведёт к результату <code class="w3-codespan">ReferenceError</code> (ошибке).</p>
+<p>Переменная находится в &quot;temporal dead zone&quot; (&quot;временной мертвой зоне&quot;) от начала блока до его объявления:</p>
 <div class="w3-example">
-<h3>Example</h3>
+<h3>Пример</h3>
 <div class="w3-code notranslate jsHigh">
-  // you can NOT use carName here<br>
+  // здесь вы НЕ можете использовать carName<br>
   let carName;</div>
 </div>
-
-<br>
+<hr>
 
 <div class="w3-clear nextprev">
-  <a class="w3-left w3-btn" href="js_this.html">&#10094; Previous</a>
+  <a class="w3-left w3-btn" href="js_this.html">&#10094; Prev</a>
   <a class="w3-right w3-btn" href="js_const.html">Next &#10095;</a>
 </div>
 
@@ -754,7 +724,7 @@ of the block until it is declared:</p>
 <script>
 var disqus_config = function () {
 this.page.url = w3schoolsrus.github.io; // канонический URL страницы
-this.page.identifier = w3schoolsrus.github.io / js / js_.html; // уникальный идентификатор страницы
+this.page.identifier = w3schoolsrus.github.io / js / js_let.html; // уникальный идентификатор страницы
 };
 (function() { // Не редактировать ниже этой линии
 var d = document, s = d.createElement('script');
