@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<title>JavaScript Учебник. Уроки для начинающих. W3Schools на русском</title>
+<title>JavaScript Ключевое слово Const. Уроки для начинающих. W3Schools на русском</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="Keywords" content="JavaScript,js,w3schools,на русском,уроки,для начинающих,курс,язык,программирования,справочник,пример,упражнения,код">
-<meta name="Description" content="Уроки по языку программирования JavaScript для начинающих. Основы. Примеры кода. W3Schools на русском языке">
+<meta name="Keywords" content="ключевое,слово,const,постоянное,разрешено,JavaScript,js,w3schools,на русском,уроки,для начинающих,курс,язык,программирования,справочник,пример,упражнения,код">
+<meta name="Description" content="ES2015 представил два важных новых ключевых слова JavaScript: let и const. Переменные, определенные с помощью const ведут себя, как переменные let, за исключением того, что они не могут быть переназначены. Примеры кода. W3Schools на русском языке">
 <link rel="icon" href="../favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="../w3css/4/w3.css">
 <link rel="stylesheet" href="../browserref.css">
@@ -579,68 +579,62 @@ var x = 2;&nbsp;&nbsp;&nbsp; //&nbsp; Разрешено<br>var x = 3;&nbsp;&nbs
   </div>
 </div>
 
-<p>Redeclaring or reassigning an existing <code class="w3-codespan">const</code> variable, in the same scope, or in
-the same block, is not allowed:</p>
+<p>Переопределение или переназначение существующей переменной <code class="w3-codespan">const</code> в той же области или в том же блоке не разрешено:</p>
 
 <div class="w3-example">
 <h3>Пример</h3>
 <div class="w3-code notranslate jsHigh">
-  const x = 2;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // Allowed<br>
-  const x = 3;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;// Not allowed<br>x = 3;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;// Not allowed<br>
-  var x = 3;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;// Not allowed<br>
-  let x = 3;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;// Not allowed<br>
-  <br>{<br>&nbsp;
-  const x = 2;&nbsp;&nbsp; // Allowed<br>
-  &nbsp;
-  const x = 3;&nbsp;&nbsp;&nbsp;// Not allowed<br>&nbsp; x = 3;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  // Not allowed<br>&nbsp; var x = 3;&nbsp;&nbsp;&nbsp;&nbsp;
-  // Not allowed<br>&nbsp; let x = 3;&nbsp;&nbsp;&nbsp;&nbsp;
-  // Not allowed<br>}<br>
+  const x = 2;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // Разрешено<br>
+  const x = 3;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;// Не разрешено<br>x = 3;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;// Не разрешено<br>
+  var x = 3;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;// Не разрешено<br>
+  let x = 3;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;// Не разрешено<br><br>{<br>&nbsp;
+  const x = 2;&nbsp;&nbsp; // Разрешено<br>&nbsp;
+  const x = 3;&nbsp;&nbsp;&nbsp;// Не разрешено<br>&nbsp; x = 3;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  // Не разрешено<br>&nbsp; var x = 3;&nbsp;&nbsp;&nbsp;&nbsp;
+  // Не разрешено<br>&nbsp; let x = 3;&nbsp;&nbsp;&nbsp;&nbsp;
+  // Не разрешено<br>}<br>
   </div>
 </div>
 
-<p>Redeclaring a variable with <code class="w3-codespan">const</code>, in another scope, or in another block, is allowed:</p>
+<p>Разрешается повторное выделение переменной с помощью <code class="w3-codespan">const</code> в другой области или в другом блоке:</p>
 
 <div class="w3-example">
 <h3>Пример</h3>
 <div class="w3-code notranslate jsHigh">
-  const x = 2;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // Allowed<br><br>{<br>&nbsp;
-  const x = 3;&nbsp;&nbsp; // Allowed<br>
+  const x = 2;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // Разрешено<br><br>{<br>&nbsp;
+  const x = 3;&nbsp;&nbsp; // Разрешено<br>
   }<br>
   <br>
   {<br>
-&nbsp;&nbsp;const x = 4;&nbsp;&nbsp;&nbsp;// Allowed<br>
+&nbsp;&nbsp;const x = 4;&nbsp;&nbsp;&nbsp;// Разрешено<br>
   }</div>
 </div>
-
 <hr>
-<h2>Hoisting</h2>
 
-<p>Variables defined with <code class="w3-codespan">var</code> are <strong>hoisted</strong> to the top (if you don't know what Hoisting is, read our <a href="js_hoisting.html">
-Hoisting Chapter</a>).
+<h2>Hoisting / Подъём</h2>
 
-<p>You can use a <code class="w3-codespan">var</code> variable before it is declared:</p>
+<p>Переменные, определенные с помощью <code class="w3-codespan">var</code> <strong>поднимаются</strong> вверх (если вы не знаете, что такое Hoisting, прочитайте раздел <a href="js_hoisting.html">JS Подъём</a>).
+
+<p>Вы можете использовать переменную <code class="w3-codespan">var</code> до её объявления:</p>
 <div class="w3-example">
 <h3>Пример</h3>
 <div class="w3-code notranslate jsHigh">
-  carName = &quot;Volvo&quot;;&nbsp;&nbsp;&nbsp; // You CAN use carName here<br>
+  carName = &quot;Volvo&quot;;&nbsp;&nbsp;&nbsp; // Вы МОЖЕТЕ использовать здесь carName<br>
   var carName;</div>
 <a class="w3-btn w3-margin-bottom" href="tryit6291.html?filename=tryjs_const_hoisting_var" target="_blank">Попробуйте сами &raquo;</a>
 </div>
 
-
-<p>Variables defined with <code class="w3-codespan">const</code> are not hoisted to the top.<p>A <code class="w3-codespan">const</code>
-variable cannot be used before it is declared:</p>
+<p>Переменные, определенные с помощью <code class="w3-codespan">const</code> не поднимаются наверх.<p>Переменная <code class="w3-codespan">const</code> не может быть использована перед её объявлением:</p>
 <div class="w3-example">
 <h3>Пример</h3>
   <div class="w3-code notranslate jsHigh">
-    carName = &quot;Volvo&quot;;&nbsp;&nbsp;&nbsp; // You can NOT use carName here<br>
+    carName = &quot;Volvo&quot;;&nbsp;&nbsp;&nbsp; // Вы НЕ можете использовать здесь carName<br>
     const carName = &quot;Volvo&quot;;</div>
 </div>
-<br>
+<hr>
 
 <div class="w3-clear nextprev">
-  <a class="w3-left w3-btn" href="js_let.html">&#10094; Previous</a>
+  <a class="w3-left w3-btn" href="js_let.html">&#10094; Prev</a>
   <a class="w3-right w3-btn" href="js_arrow_function.html">Next &#10095;</a>
 </div>
 
@@ -651,7 +645,7 @@ variable cannot be used before it is declared:</p>
 <script>
 var disqus_config = function () {
 this.page.url = w3schoolsrus.github.io; // канонический URL страницы
-this.page.identifier = w3schoolsrus.github.io / js / js_.html; // уникальный идентификатор страницы
+this.page.identifier = w3schoolsrus.github.io / js / js_const.html; // уникальный идентификатор страницы
 };
 (function() { // Не редактировать ниже этой линии
 var d = document, s = d.createElement('script');
