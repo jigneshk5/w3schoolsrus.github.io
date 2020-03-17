@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<title>JavaScript Учебник. Уроки для начинающих. W3Schools на русском</title>
+<title>JavaScript Руководство по стилю и условные обозначения. W3Schools на русском</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="Keywords" content="JavaScript,js,w3schools,на русском,уроки,для начинающих,курс,язык,программирования,справочник,пример,упражнения,код">
-<meta name="Description" content="Уроки по языку программирования JavaScript для начинающих. Основы. Примеры кода. W3Schools на русском языке">
+<meta name="Keywords" content="соглашение,руководство,кодирование,программы,JavaScript,js,w3schools,на русском,уроки,для начинающих,курс,язык,программирования,справочник,пример,упражнения,код">
+<meta name="Description" content="Соглашения о кодировании JavaScript - это рекомендации по стилю программирования. Включают: правила именования и объявления для переменных и функций; использования пробелов, отступов и комментариев; практику и принципы программирования. Примеры. W3Schools на русском языке">
 <link rel="icon" href="../favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="../w3css/4/w3.css">
 </head>
@@ -409,8 +409,8 @@
 <h2>Соглашения о кодировании JavaScript</h2>
 <p>Соглашения о кодировании - это <strong>рекомендации по стилю программирования</strong>. Они обычно включают:</p>
 <ul>
-  <li>Правила именования и объявления для переменных и функций.</li>
-  <li>Правила использования пробелов, отступов и комментариев.</li>
+  <li>Правила именования и объявления для переменных и функций</li>
+  <li>Правила использования пробелов, отступов и комментариев</li>
   <li>Практику и принципы программирования</li>
 </ul>
 
@@ -423,7 +423,7 @@
 
 <div class="w3-panel w3-note">
 <p>На этой странице описаны общие соглашения кода JavaScript, используемые W3Schools.<br>
-Вам необходимо также прочитать следующую главу &quot;Лучшие практики&quot;, чтобы узнать, как избежать ошибок при кодировании.</p>
+Вам необходимо также прочитать следующую главу <a href="js_best_practices.html">JavaScript. Лучшие практики</a>, чтобы узнать, как избежать ошибок при кодировании.</p>
 </div>
 <hr>
 
@@ -543,59 +543,51 @@ function toCelsius(fahrenheit) {<br>
 </div>
 <hr>
 
-<h2>Line Length &lt; 80</h2>
-<p>For readability, avoid lines longer than 80
-characters.</p>
-<p>If a JavaScript statement does not fit on one line, the best place to break
-it, is after an operator or a comma.</p>
+<h2>Длина строки &lt; 80</h2>
+<p>Для удобства чтения избегайте строк длиной более 80 символов.</p>
+<p>Если JavaScript объявление (инструкция, оператор) не помещается в одну строку, лучше всего его разбить после объявления или запятой.</p>
 <div class="w3-example">
-<h3>Example</h3>
+<h3>Пример</h3>
 <div class="w3-code notranslate jsHigh">
 document.getElementById(&quot;demo&quot;).innerHTML =<br>
   &quot;Hello Dolly.&quot;;
 </div>
-<a class="w3-btn w3-margin-bottom" href="tryit93f6.html?filename=tryjs_line_break" target="_blank">Try it Yourself &raquo;</a>
+<a class="w3-btn w3-margin-bottom" href="tryit93f6.html?filename=tryjs_line_break" target="_blank">Попробуйте сами &raquo;</a>
 </div>
 <hr>
 
-<h2>Naming Conventions</h2>
-<p>Always use the same naming convention for all your code. For example:</p>
+<h2>Соглашения об именах</h2>
+<p>Всегда используйте одно и то же соглашение об именах для всего вашего кода. Например:</p>
 <ul>
-<li>Variable and function names written as <strong>camelCase</strong></li>
-<li>Global variables written in <strong>UPPERCASE </strong>(We don't, but it's
-quite common)</li>
-<li>Constants (like PI) written in <strong>UPPERCASE</strong></li>
+  <li>Имена переменных и функций записываются как <strong>camelCase</strong> (верблюжий регистр)</li>
+  <li>Глобальные переменные записываются в <strong>UPPERCASE</strong> - ВЕРХНЕМ РЕГИСТРЕ. (Мы так не делаем, но это встречается довольно часто)</li>
+  <li>Константы (например, число PI) записываются в <strong>UPPERCASE</strong> - ВЕРХНЕМ РЕГИСТРЕ</li>
 </ul>
-<p>Should you use <strong>hyp-hens</strong>, <strong>camelCase</strong>, or
-<strong>under_scores</strong> in variable names?</p>
-<p>This is a question programmers often discuss. The answer depends on who you
-ask:</p>
-<p><strong>Hyphens in HTML and CSS:</strong></p>
-<p>HTML5 attributes can start with data- (data-quantity, data-price).</p>
-<p>CSS uses hyphens in property-names (font-size).</p>
+<p>Следует ли использовать <strong>де-фисы</strong>, <strong>верблюжийРегистр</strong> или <strong>под_чёркивания</strong> в именах переменных?</p>
+<p>Этот вопрос часто обсуждают программисты. Ответ зависит от того, кого вы спрашиваете:</p>
+<p><strong>Дефисы в HTML и CSS:</strong></p>
+<p>Атрибуты HTML5 могут начинаться с data- (data-quantity, data-price).</p>
+<p>CSS использует дефисы в именах свойств (font-size).</p>
 
 <div class="w3-panel w3-warning">
-<p>Hyphens can be mistaken as subtraction attempts. Hyphens are not allowed in JavaScript names.</p>
+<p>В JavaScript дефисы могут быть ошибочно приняты за попытки вычитания. Дефисы не допускаются в именах JavaScript.</p>
 </div>
 
-<p><strong>Underscores:</strong></p>
-<p>Many programmers prefer to use underscores (date_of_birth), especially in SQL
-databases.</p>
-<p>Underscores are often used in PHP documentation.</p>
+<p><strong>Подчёркивания:</strong></p>
+<p>Многие программисты предпочитают использовать подчеркивание (date_of_birth), особенно в базах данных SQL.</p>
+<p>Подчеркивания часто используются в документации PHP.</p>
 <p><strong>PascalCase:</strong></p>
-<p>PascalCase is often preferred by C programmers.</p>
+<p>PascalCase часто предпочитают программисты на языке C.</p>
 <p><strong>camelCase:</strong></p>
-<p>camelCase is used by JavaScript itself, by jQuery, and other JavaScript
-libraries.</p>
+<p>camelCase используется самим JavaScript, jQuery и другими библиотеками JavaScript.</p>
 
 <div class="w3-panel w3-warning">
-<p>Do not start names with a $ sign. It will put you in conflict with many JavaScript library names.</p>
+<p>Не начинайте имена со знака $. Это поставит вас в конфликт со многими именами библиотек JavaScript.</p>
 </div>
-
 <hr>
-<h2>Loading JavaScript in HTML</h2>
-<p>Use simple syntax for loading external scripts (the type attribute is not
-necessary):</p>
+
+<h2>Загрузка JavaScript в HTML</h2>
+<p>Используйте простой синтаксис для загрузки внешних скриптов (атрибут type НЕ НУЖЕН, как было в предыдущих версиях HTML):</p>
 
 <div class="w3-example">
 <div class="w3-code notranslate htmlHigh">
@@ -603,9 +595,8 @@ necessary):</p>
 </div>
 <hr>
 
-<h2>Accessing HTML Elements</h2>
-<p>A consequence of using &quot;untidy&quot; HTML styles, might result in JavaScript errors.</p>
-<p>These two JavaScript statements will produce different results:</p>
+<h2>Доступ к HTML элементам</h2>
+<p>Следствие использования &quot;грязных&quot;, &quot;беспорядочных&quot; HTML стилей может привести к ошибкам JavaScript:</p>
 
 <div class="w3-example">
 <div class="w3-code notranslate jsHigh">
@@ -613,41 +604,34 @@ necessary):</p>
  getElementById(&quot;Demo&quot;)<br><br>var obj = getElementById(&quot;demo&quot;)
 </div>
 </div>
-<p>If possible, use the same naming convention (as JavaScript) in HTML. </p>
+<p>Если возможно, используйте то же соглашение об именах (как JavaScript) в HTML.</p>
+<p>Для ознакомления посетите <a href="../html/html5_syntax.html">Гид по HTML стилю</a>.</p>
+<hr>
 
+<h2>Расширения файлов</h2>
+<p>HTML-файлы должны иметь расширение <strong>.html</strong> (не <strong>.htm</strong>).</p>
+<p>CSS-файлы должны иметь расширение <strong>.css</strong>.</p>
+<p>JavaScript-файлы должны иметь расширение <strong>.js</strong>.</p>
+<hr>
 
-<p><a href="../html/html5_syntax.html">Visit the HTML Style Guide</a>.</p>
+<h2>Используйте имена файлов в нижнем регистре</h2>
+<p>Большинство веб-серверов (Apache, Unix) чувствительны к регистру имен файлов:</p>
+<p>london.jpg не может быть доступен как London.jpg.</p>
+<p>Другие веб-серверы (Microsoft, IIS) не чувствительны к регистру:</p>
+<p>london.jpg может быть доступен как London.jpg или london.jpg.</p>
+<p>Если вы используете сочетание верхнего и нижнего регистра, вы должны быть чрезвычайно последовательными.</p>
+<p>Если вы перейдете с нечувствительного к регистру сервера на чувствительный к регистру сервер, даже небольшие ошибки могут испортить ваш веб-сайт и он перестанет работать.</p>
+<p>Чтобы избежать этих проблем, всегда используйте имена файлов в нижнем регистре (если это возможно).</p>
+<hr>
 
+<h2>Производительность</h2>
+<p>Соглашения о кодировании не используются компьютерами. Большинство правил мало влияют на выполнение программ.</p>
+<p>Отступы и лишние пробелы не важны в маленьких скриптах.</p>
+<p>Для кода в разработке удобочитаемость должна быть предпочтительной. Большие производственные скрипты должны быть уменьшены, насколько это возможно.</p>
 
 <hr>
-<h2>File Extensions</h2>
-<p>HTML files should have a <strong>.html</strong> extension (not <strong>.htm</strong>).</p>
-<p>CSS files should have a <strong>.css</strong> extension.</p>
-<p>JavaScript files should have a <strong>.js</strong> extension.</p>
-
-<hr>
-<h2>Use Lower Case File Names</h2>
-<p>Most web servers (Apache, Unix) are case sensitive about file names:</p>
-<p>london.jpg cannot be accessed as London.jpg. </p>
-<p>Other web servers (Microsoft, IIS) are not case sensitive:</p>
-<p>london.jpg can be accessed as London.jpg or london.jpg.</p>
-<p>If you use a mix of upper and lower case, you have to be extremely
-consistent.</p>
-<p>If you move from a case insensitive, to a case sensitive server, even small
-errors can break your web site.</p>
-<p>To avoid these problems, always use lower case file names (if possible). </p>
-
-
-<hr>
-<h2>Performance</h2>
-<p>Coding conventions are not used by computers. Most rules have
-little impact on the execution of programs.</p>
-<p>Indentation and extra spaces are not significant in small scripts.</p>
-<p>For code in development, readability should be preferred. Larger production
-scripts should be minified.&nbsp; </p>
-<br>
 <div class="w3-clear nextprev">
-  <a class="w3-left w3-btn" href="js_debugging.html">&#10094; Previous</a>
+  <a class="w3-left w3-btn" href="js_debugging.html">&#10094; Prev</a>
 <a class="w3-right w3-btn" href="js_best_practices.html">Next &#10095;</a>
 </div>
 
@@ -658,7 +642,7 @@ scripts should be minified.&nbsp; </p>
 <script>
 var disqus_config = function () {
 this.page.url = w3schoolsrus.github.io; // канонический URL страницы
-this.page.identifier = w3schoolsrus.github.io / js / js_.html; // уникальный идентификатор страницы
+this.page.identifier = w3schoolsrus.github.io / js / js_conventions.html; // уникальный идентификатор страницы
 };
 (function() { // Не редактировать ниже этой линии
 var d = document, s = d.createElement('script');
