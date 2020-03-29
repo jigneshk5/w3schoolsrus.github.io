@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<title>JavaScript Учебник. Уроки для начинающих. W3Schools на русском</title>
+<title>JavaScript Производительность. Уроки для начинающих. W3Schools на русском</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="Keywords" content="JavaScript,js,w3schools,на русском,уроки,для начинающих,курс,язык,программирования,справочник,пример,упражнения,код">
-<meta name="Description" content="Уроки по языку программирования JavaScript для начинающих. Основы. Примеры кода. W3Schools на русском языке">
+<meta name="Keywords" content="производительность,JavaScript,js,w3schools,на русском,уроки,для начинающих,курс,язык,программирования,справочник,пример,упражнения,код">
+<meta name="Description" content="Как ускорить JavaScript код? Уменьшить активность в циклах. Уменьшить доступ и размер DOM. Избегайте ненужных переменных. Задержка загрузки скриптов. JavaScript для начинающих. W3Schools на русском языке">
 <link rel="icon" href="../favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="../w3css/4/w3.css">
 </head>
@@ -443,22 +443,20 @@ l = arr.length;<br>for (i = 0; i &lt; l; i++) {</div>
 
 <h2>Уменьшить размер DOM</h2>
 <p>Сохраняйте количество элементов в HTML DOM небольшим.</p>
-<p>This will always
-improve page loading, and speed up rendering (page display), especially on smaller devices.</p>
-<p>Every attempt to search the DOM (like getElementsByTagName) will benefit
-from a smaller DOM.</p>
+<p>Это всегда улучшает загрузку страницы и ускоряет рендеринг (отображение страницы), особенно на небольших устройствах.</p>
+<p>Каждая попытка поиска в DOM (например, getElementsByTagName) будет иметь выгоду от меньшего DOM.</p>
 <hr>
 
-<h2>Avoid Unnecessary Variables</h2>
-<p>Don't create new variables if you don't plan to save values.</p>
-<p>Often you can replace code like this:</p>
+<h2>Избегайте ненужных переменных</h2>
+<p>Не создавайте новые переменные, если вы не планируете сохранять значения.</p>
+<p>Часто можно заменить код следующим образом:</p>
 <div class="w3-example">
 <div class="w3-code notranslate jsHigh">
 var fullName = firstName + &quot; &quot; + lastName;<br>
 document.getElementById(&quot;demo&quot;).innerHTML = fullName;
 </div>
 </div>
-<p>With this:</p>
+<p>этим:</p>
 <div class="w3-example">
 <div class="w3-code notranslate jsHigh">
 document.getElementById(&quot;demo&quot;).innerHTML = firstName + &quot; &quot; + lastName
@@ -466,23 +464,18 @@ document.getElementById(&quot;demo&quot;).innerHTML = firstName + &quot; &quot; 
 </div>
 <hr>
 
-<h2>Delay JavaScript Loading</h2>
-<p>Putting your scripts at the bottom of the page body lets the browser load the
-page first.</p>
-<p>While a script is downloading, the browser will not start any other
-downloads. In addition all parsing and rendering activity might be blocked.</p>
+<h2>Задержка JavaScript Загрузки</h2>
+<p>Помещение скриптов внизу тела страницы (перед тегом <code class="w3-codespan">&lt;/body&gt;</code>) позволяет браузеру сначала загрузить страницу.</p>
+<p>Во время загрузки скрипта браузер не будет запускать другие загрузки. Кроме того, все операции разбора (парсинга) и рендеринга могут быть заблокированы.</p>
 
 <div class="w3-panel w3-note">
-<p>The HTTP specification defines that browsers should not download more than
-two components in parallel.</p>
+<p>Спецификация HTTP определяет, что браузеры не должны загружать более двух компонентов параллельно.</p>
 </div>
 
-<p>An alternative is to use <code class="w3-codespan">defer=&quot;true&quot;</code> in the script tag. The
-defer attribute specifies that the script should be executed after the page has
-finished parsing, but it only works for external scripts.</p>
-<p>If possible, you can add your script to the page by code, after the page has loaded:</p>
+<p>Альтернативой является использование <code class="w3-codespan">defer=&quot;true&quot;</code> в теге script. Атрибут defer указывает, что скрипт должен выполняться после завершения анализа страницы, но он работает только для внешних скриптов.</p>
+<p>Если возможно, вы можете добавить свой скрипт на страницу по коду после загрузки страницы:</p>
 <div class="w3-example">
-<h3>Example</h3>
+<h3>Пример</h3>
 <div class="w3-code notranslate htmlHigh">
 &lt;script&gt;<br>window.onload = function() {<br>&nbsp;
 var element = document.createElement(&quot;script&quot;);<br>&nbsp;
@@ -491,13 +484,13 @@ document.body.appendChild(element);<br>};<br>&lt;/script&gt;</div>
 </div>
 <hr>
 
-<h2>Avoid Using with</h2>
-<p>Avoid using the <code class="w3-codespan">with</code> keyword. It has a negative effect on
-speed. It also clutters up JavaScript scopes.</p>
-<p>The <code class="w3-codespan">with</code> keyword is <strong>not allowed</strong> in strict mode.</p>
-<br>
+<h2>Избегайте использования with</h2>
+<p>Избегайте использования ключевого слова <code class="w3-codespan">with</code>. Это отрицательно сказывается на скорости. Это также загромождает области JavaScript.</p>
+<p>Ключевое слово <code class="w3-codespan">with</code> является <strong>не допустимым</strong> в строгом режиме.</p>
+
+<hr>
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="js_mistakes.html">&#10094; Previous</a>
+<a class="w3-left w3-btn" href="js_mistakes.html">&#10094; Prev</a>
 <a class="w3-right w3-btn" href="js_reserved.html">Next &#10095;</a>
 </div>
 
@@ -508,7 +501,7 @@ speed. It also clutters up JavaScript scopes.</p>
 <script>
 var disqus_config = function () {
 this.page.url = w3schoolsrus.github.io; // канонический URL страницы
-this.page.identifier = w3schoolsrus.github.io / js / js_.html; // уникальный идентификатор страницы
+this.page.identifier = w3schoolsrus.github.io / js / js_performance.html; // уникальный идентификатор страницы
 };
 (function() { // Не редактировать ниже этой линии
 var d = document, s = d.createElement('script');
