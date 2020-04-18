@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<title>Случайный текст с помощью JavaScript. Готовые скрипты</title>
+<title>Случайное число с помощью JavaScript. Готовые скрипты</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="keywords" content="готовые,скрипты,случайный,рандомный,текст,javascript,script">
-<meta name="description" content="Готовые скрипты на Javascript. Как сделать появление случайного текста на веб-странице с помощью JavaScript? Рабочий код. W3Schools на русском языке">
+<meta name="keywords" content="готовые,скрипты,случайное,рандомное,число,javascript,script">
+<meta name="description" content="Готовые скрипты на Javascript. Как сделать появление псевдослучайного числа на веб-странице с помощью JavaScript? Рабочий код. W3Schools на русском языке">
 <link rel="icon" href="../favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="../w3css/4/w3.css">
 </head>
@@ -254,56 +254,46 @@
   <div class='w3-row w3-white'>
     <div class='w3-col l10 m12' id='main'>
 
-<h1>Случайный текст и заголовок</h1>
+<h1>Случайное число</h1>
 
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="randomlink.html" title="Предыдущая страница">&#10094; Prev</a>
-<a class="w3-right w3-btn" href="randomtext.html" title="Следующая страница">Next &#10095;</a>
+<a class="w3-left w3-btn" href="randomtext.html" title="Предыдущая страница">&#10094; Prev</a>
+<a class="w3-right w3-btn" href="randomnumber.html" title="Следующая страница">Next &#10095;</a>
 </div>
 <hr>
 
-<h3>Случайный текст и заголовок на веб-странице с помощью JavaScript</h3>
-<p>При помощи данного скрипта можно сделать появление случайного (рандомного) текста на веб-странице вместе из заголовком. Скопируйте данный код и вставьте в нужное место на веб-странице.</p>
+<h3>Псевдослучайное число на веб-странице с помощью JavaScript</h3>
+<p>При помощи данного скрипта можно сделать появление псевдослучайного (рандомного) числа в заданном диапазоне на веб-странице (в рассматриваемом примере одно- и двузначное число от 1 до 100). Вместо 100 нужно поставить число, которое больше на 1 Вашего максимального диапазона. Может использоваться как вспомогательный алгоритм генератора псевдослучайных чисел. Скопируйте данный код и вставьте в нужное место на веб-странице.</p>
 
 <div class="w3-example">
 <h3>Пример</h3>
 <div class="w3-code notranslate jsHigh">
-&lt;script&gt;<br>
-var a=Math.round(Math.random()*4)<br>
-// это число должно совпадать с максимальным индексом таблицы ссылок<br>
-<br>
-txt = new Array();<br>
-txt[0]="Текст 01"<br>
-txt[1]="Текст 02"<br>
-txt[2]="Текст 03"<br>
-txt[3]="Текст 04"<br>
-txt[4]="Текст 05"<br>
-document.write (""+txt[a]+"");<br>
-&lt;/script&gt;
+  &lt;script&gt;<br>
+  var tmp = Math.round((Math.random() * (100 - 1)));<br>
+  &lt;/script&gt;<br>
+  Случайное число:<br>
+  &lt;script&gt;<br>
+  document.write(tmp);<br>
+  &lt;/script&gt;
 </div>
 <p>Вставьте данный скрипт на веб-страницу между тегами &lt;body&gt; и &lt;/body&gt;.</p>
 </div>
 <h3>Результат:</h3>
 <div class="w3-example">
+  <script>
+var tmp = Math.round((Math.random() * (100 - 1)));
+</script>
+Случайное число:
 <script>
-var a=Math.round(Math.random()*4)
-// это число должно совпадать с максимальным индексом таблицы ссылок
-
-txt = new Array();
-txt[0]="Текст 01"
-txt[1]="Текст 02"
-txt[2]="Текст 03"
-txt[3]="Текст 04"
-txt[4]="Текст 05"
-document.write (""+txt[a]+"");
+document.write(tmp);
 </script>
 </div>
-<p>При обновлении веб-страницы (при нажатии клавиши F5 на клавиатуре), текст будет меняться в случайном порядке.</p>
+<p>При обновлении веб-страницы (при нажатии клавиши F5 на клавиатуре), число будет меняться в случайном порядке в диапазоне от 1 до 100.</p>
 <hr>
 
 <div class="w3-clear nextprev">
-  <a class="w3-left w3-btn" href="randomlink.html" title="Предыдущая страница">&#10094; Prev</a>
-  <a class="w3-right w3-btn" href="randomtext.html" title="Следующая страница">Next &#10095;</a>
+  <a class="w3-left w3-btn" href="randomtext.html" title="Предыдущая страница">&#10094; Prev</a>
+  <a class="w3-right w3-btn" href="randomnumber.html" title="Следующая страница">Next &#10095;</a>
 </div>
 
 </div>
