@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<title>Случайный текст с помощью JavaScript. Готовые скрипты</title>
+<title>Страшилка для лузеров с помощью JavaScript. Готовые скрипты</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="keywords" content="готовые,скрипты,случайный,рандомный,текст,javascript,script">
-<meta name="description" content="Готовые скрипты на Javascript. Как сделать появление случайного текста на веб-странице с помощью JavaScript? Рабочий код. W3Schools на русском языке">
+<meta name="keywords" content="готовые,скрипты,страшная,страшилка,предупреждения,javascript,script,скрипт">
+<meta name="description" content="Готовые скрипты на Javascript. Страшилка для лузеров на веб-странице с помощью JavaScript. Предупреждение для новичков. Как напугать пользователя ПК? Рабочий код. W3Schools на русском языке">
 <link rel="icon" href="../favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="../w3css/4/w3.css">
 </head>
@@ -261,56 +261,46 @@
   <div class='w3-row w3-white'>
     <div class='w3-col l10 m12' id='main'>
 
-<h1>Случайный текст и заголовок</h1>
+<h1>Страшилка для лузеров</h1>
 
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="randomlink.html" title="Предыдущая страница">&#10094; Prev</a>
-<a class="w3-right w3-btn" href="randomnumber.html" title="Следующая страница">Next &#10095;</a>
+<a class="w3-left w3-btn" href="questionpage.html" title="Предыдущая страница">&#10094; Prev</a>
+<a class="w3-right w3-btn" href="matrix.html" title="Следующая страница">Next &#10095;</a>
 </div>
 <hr>
 
-<h3>Случайный текст и заголовок на веб-странице с помощью JavaScript</h3>
-<p>При помощи данного скрипта можно сделать появление случайного (рандомного) текста на веб-странице вместе из заголовком. Скопируйте данный код и вставьте в нужное место на веб-странице.</p>
+<h3>Страшилка для лузеров с помощью предупреждений на JavaScript</h3>
+<p>С помощью данного скрипта можно выводить на экран предупреждения о повреждении копьютера, вирусах и прочий бред, который может напугать начинающих пользователей ПК. Скопируйте данный код и вставьте в нужном месте на веб-странице.</p>
 
 <div class="w3-example">
-<h3>Пример</h3>
+<h3>Пример кода</h3>
 <div class="w3-code notranslate jsHigh">
-&lt;script&gt;<br>
-var a=Math.round(Math.random()*4)<br>
-// это число должно совпадать с максимальным индексом таблицы ссылок<br>
-<br>
-txt = new Array();<br>
-txt[0]="Текст 01"<br>
-txt[1]="Текст 02"<br>
-txt[2]="Текст 03"<br>
-txt[3]="Текст 04"<br>
-txt[4]="Текст 05"<br>
-document.write (""+txt[a]+"");<br>
-&lt;/script&gt;
+  &lt;script&gt;<br>
+  function confirmClose() {<br>
+    &nbsp;alert("Ошибка: 107x has occurred. Неопределённый вирус инфицирует ваш жёсткий диск. Сейчас будут удалены все файлы на вашем компьютере.")<br>
+    &nbsp;if (confirm("Сообщите вашему поставщику жёсткого диска об этой ошибке."))<br>
+    &nbsp;alert('Вирус уничтожен, но информация на вашем компьютере может быть повреждена.');<br>
+    &nbsp;else alert('Вы не можете отменить данную операцию, вам придётся перезагрузить Ваш компьютер!');<br>
+    &nbsp;{<br>
+    &nbsp;&nbsp;parent.close();<br>
+    &nbsp;}<br>
+  }<br>
+  &lt;/script&gt;<br>
+  &lt;form&gt;<br>
+  &nbsp;&lt;input type="button" value ="Нажмите сюда" onClick="confirmClose()"&gt;<br>
+  &lt;/form&gt;<br>
 </div>
-<p>Вставьте данный скрипт на веб-страницу между тегами &lt;body&gt; и &lt;/body&gt;.</p>
 </div>
-<h3>Результат:</h3>
-<div class="w3-example">
-<script>
-var a=Math.round(Math.random()*4)
-// это число должно совпадать с максимальным индексом таблицы ссылок
+<hr>
 
-txt = new Array();
-txt[0]="Текст 01"
-txt[1]="Текст 02"
-txt[2]="Текст 03"
-txt[3]="Текст 04"
-txt[4]="Текст 05"
-document.write (""+txt[a]+"");
-</script>
-</div>
-<p>При обновлении веб-страницы (при нажатии клавиши F5 на клавиатуре), текст будет меняться в случайном порядке.</p>
+<h3>Результат работы скрипта</h3>
+<p>Результат работы скрипта можно посмотреть в <a href="horrorstory_ex.html" target="_blank">отдельном окне</a></p>
+
 <hr>
 
 <div class="w3-clear nextprev">
-  <a class="w3-left w3-btn" href="randomlink.html" title="Предыдущая страница">&#10094; Prev</a>
-  <a class="w3-right w3-btn" href="randomnumber.html" title="Следующая страница">Next &#10095;</a>
+  <a class="w3-left w3-btn" href="questionpage.html" title="Предыдущая страница">&#10094; Prev</a>
+  <a class="w3-right w3-btn" href="matrix.html" title="Следующая страница">Next &#10095;</a>
 </div>
 
 </div>

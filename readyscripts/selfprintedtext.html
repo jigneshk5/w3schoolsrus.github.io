@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<title>Случайный текст с помощью JavaScript. Готовые скрипты</title>
+<title>Самопечатающийся текст с помощью JavaScript. Готовые скрипты</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="keywords" content="готовые,скрипты,случайный,рандомный,текст,javascript,script">
-<meta name="description" content="Готовые скрипты на Javascript. Как сделать появление случайного текста на веб-странице с помощью JavaScript? Рабочий код. W3Schools на русском языке">
+<meta name="keywords" content="готовые,скрипты,вывод,самопечатающийся,текст,на экране,вывод,текста,javascript,script">
+<meta name="description" content="Готовые скрипты на Javascript. Вывод самопечатающегося текста на веб-странице с помощью JavaScript. Задаётся нужная скорость печати. Рабочий код. W3Schools на русском языке">
 <link rel="icon" href="../favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="../w3css/4/w3.css">
 </head>
@@ -261,56 +261,91 @@
   <div class='w3-row w3-white'>
     <div class='w3-col l10 m12' id='main'>
 
-<h1>Случайный текст и заголовок</h1>
+<h1>Вывод самопечатающегося текста на веб-странице</h1>
 
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="randomlink.html" title="Предыдущая страница">&#10094; Prev</a>
-<a class="w3-right w3-btn" href="randomnumber.html" title="Следующая страница">Next &#10095;</a>
+<a class="w3-left w3-btn" href="216webcolors.html" title="Предыдущая страница">&#10094; Prev</a>
+<a class="w3-right w3-btn" href="questionpage.html" title="Следующая страница">Next &#10095;</a>
 </div>
 <hr>
 
-<h3>Случайный текст и заголовок на веб-странице с помощью JavaScript</h3>
-<p>При помощи данного скрипта можно сделать появление случайного (рандомного) текста на веб-странице вместе из заголовком. Скопируйте данный код и вставьте в нужное место на веб-странице.</p>
+<h3>Вывод самопечатающего текста на веб-странице с помощью JavaScript</h3>
+<p>С помощью данного скрипта можно вывести на экран самопечатающий текст, как-будто его набирает человек на клавиатуре. Скопируйте данный код и вставке в нужном месте на веб-странице.</p>
 
 <div class="w3-example">
-<h3>Пример</h3>
+<h3>Пример скрипта</h3>
 <div class="w3-code notranslate jsHigh">
-&lt;script&gt;<br>
-var a=Math.round(Math.random()*4)<br>
-// это число должно совпадать с максимальным индексом таблицы ссылок<br>
+  &lt;script&gt;<br>
+  var chr = -1;<br>
+  var txt = 'Компьютер набирает самопечатающийся текст'<br>
+  var l = txt.length<br>
+  var p = "_"<br>
+  function changetext()<br>
+  {<br>
+  chr++;<br>
+  t = document.all["text"].innerHTML<br>
+  tt = t.substring(0,t.length-p.length)<br>
+  if(txt.charAt(chr)!="&lt;")<br>
+  {<br>
+  document.all["text"].innerHTML= tt + txt.charAt(chr) + p<br>
+  }<br>
+  else {<br>
+  document.all["text"].innerHTML= tt + txt.substring(chr, chr+4) + p<br>
+  chr=chr+3<br>
+  }<br>
+  setTimeout("changetext()", 40)<br>
+  }<br>
+  function str(num) {<br>
+  var s = ""<br>
+  for(i=0; i&lt;num; i++)<br>
+  {  s = s + " "  }<br>
+  return s  }<br>
+  &lt;/script&gt;<br>
 <br>
-txt = new Array();<br>
-txt[0]="Текст 01"<br>
-txt[1]="Текст 02"<br>
-txt[2]="Текст 03"<br>
-txt[3]="Текст 04"<br>
-txt[4]="Текст 05"<br>
-document.write (""+txt[a]+"");<br>
-&lt;/script&gt;
+  &lt;body onload="changetext()"&gt;<br>
+  &lt;font id="text"&gt;&lt;/font&gt;<br>
 </div>
-<p>Вставьте данный скрипт на веб-страницу между тегами &lt;body&gt; и &lt;/body&gt;.</p>
 </div>
-<h3>Результат:</h3>
-<div class="w3-example">
-<script>
-var a=Math.round(Math.random()*4)
-// это число должно совпадать с максимальным индексом таблицы ссылок
+<hr>
+<p>Если текст большой и есть необходимость сделать абзац (или перевод строки), то в выводимом тексте можно вставить тег <code class="w3-codespan">&lt;br&gt;</code>. Также можно регулировать скорость печатания текста параметром <strong>setTimeout</strong>, изменяя число (в приведенном коде 40). Чем меньше данное число - тем скорость будет быстрее.</p>
+<hr>
+<h3>Результат работы скрипта:</h3>
 
-txt = new Array();
-txt[0]="Текст 01"
-txt[1]="Текст 02"
-txt[2]="Текст 03"
-txt[3]="Текст 04"
-txt[4]="Текст 05"
-document.write (""+txt[a]+"");
+<script>
+var chr = -1;
+var txt = 'Компьютер набирает самопечатающийся текст. Так, как будто за клавиатурой находится человек. Скорость можно регулировать. Текст тоже можно записать любой. Только поисковые системы не смогут увидеть и проиндексировать этот скрипт. <br>Компьютер набирает самопечатающийся текст. Так, как будто за клавиатурой находится человек. Скорость можно регулировать. Текст тоже можно записать любой. И даже абзац для программы не проблема, как Вы видите. Только поисковые системы не смогут увидеть и проиндексировать этот скрипт.'
+var l = txt.length
+var p = "_"
+function changetext()
+{
+chr++;
+t = document.all["text"].innerHTML
+tt = t.substring(0,t.length-p.length)
+if(txt.charAt(chr)!="<")
+{
+document.all["text"].innerHTML= tt + txt.charAt(chr) + p
+}
+else {
+document.all["text"].innerHTML= tt + txt.substring(chr, chr+4) + p
+chr=chr+3
+}
+setTimeout("changetext()", 40)
+}
+function str(num) {
+var s = ""
+for(i=0; i<num; i++)
+{  s = s + " "  }
+return s  }
 </script>
-</div>
-<p>При обновлении веб-страницы (при нажатии клавиши F5 на клавиатуре), текст будет меняться в случайном порядке.</p>
+
+<body onload="changetext()">
+<font id="text"></font>
+
 <hr>
 
 <div class="w3-clear nextprev">
-  <a class="w3-left w3-btn" href="randomlink.html" title="Предыдущая страница">&#10094; Prev</a>
-  <a class="w3-right w3-btn" href="randomnumber.html" title="Следующая страница">Next &#10095;</a>
+  <a class="w3-left w3-btn" href="216webcolors.html" title="Предыдущая страница">&#10094; Prev</a>
+  <a class="w3-right w3-btn" href="questionpage.html" title="Следующая страница">Next &#10095;</a>
 </div>
 
 </div>
