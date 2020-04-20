@@ -1,16 +1,28 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<title>Случайное число с помощью JavaScript. Готовые скрипты</title>
+<title>Возраст сайта. Сколько дней живет сайт. Код на JavaScript</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="keywords" content="готовые,скрипты,случайное,рандомное,число,javascript,script">
-<meta name="description" content="Готовые скрипты на Javascript. Как сделать появление псевдослучайного числа на веб-странице с помощью JavaScript? Рабочий код. W3Schools на русском языке">
+<meta name="keywords" content="готовые,скрипты,возраст,сайта,сколько,дней,живет,javascript,script,скрипт">
+<meta name="description" content="Готовые скрипты на Javascript. Как узнать возраст сайта? Сколько дней живёт сайт? Применение чистого кода JavaScript. Рабочий код. W3Schools на русском языке">
 <link rel="icon" href="../favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="../w3css/4/w3.css">
+<script>
+function lifeSite() {
+  var start = new Date('September 22, 2019'); // Дата создания сайта
+  var end = new Date();
+  var life = Math.round((end.getTime() - start.getTime()) / (1000 * 60 * 60 * 24));
+  var suffix = new Array("день", "дня", "дней");
+  var keys = [2, 0, 1, 1, 1, 2];
+  var mod = life % 100;
+  var suffix_key = mod > 4 && mod < 20 ? 2 : keys[Math.min(mod%10, 5)];
+  document.getElementById("life_site").innerHTML = life + " " + suffix[suffix_key];
+}
+</script>
 </head>
 
-<body>
+<body onload="lifeSite()">
 <div id="mainContent">
 <div class='w3-container top'>
   <a class='w3schools-logo notranslate' href='../index.html'>w3schools<span class='dotcom'>.на русском</span></a>
@@ -267,46 +279,62 @@
   <div class='w3-row w3-white'>
     <div class='w3-col l10 m12' id='main'>
 
-<h1>Случайное число</h1>
+<h1>Возраст сайта. Сколько дней живёт сайт?</h1>
 
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="randomtext.html" title="Предыдущая страница">&#10094; Prev</a>
-<a class="w3-right w3-btn" href="tablesorting.html" title="Следующая страница">Next &#10095;</a>
+<a class="w3-left w3-btn" href="imagehover.html" title="Предыдущая страница">&#10094; Prev</a>
+<a class="w3-right w3-btn" href="timer.html" title="Следующая страница">Next &#10095;</a>
 </div>
 <hr>
 
-<h3>Псевдослучайное число на веб-странице с помощью JavaScript</h3>
-<p>При помощи данного скрипта можно сделать появление псевдослучайного (рандомного) числа в заданном диапазоне на веб-странице (в рассматриваемом примере одно- и двузначное число от 1 до 100). Вместо 100 нужно поставить число, которое больше на 1 Вашего максимального диапазона. Может использоваться как вспомогательный алгоритм генератора псевдослучайных чисел. Скопируйте данный код и вставьте в нужное место на веб-странице.</p>
+<h3>Скрипт на JavaScript, который позволяет узнать возраст сайта</h3>
+<p>С помощью данного скрипта на языке <strong>JavaScript</strong> можно узнать, сколько дней работает сайт. Скрипт написан на чистом <strong>JavaScript</strong>, без использования каких-либо библиотек и фреймворков.</p>
+<p>Для создания такого эффекта необходимо написать следующий код:</p>
 
 <div class="w3-example">
-<h3>Пример</h3>
+<h3>Пример JavaScript-кода:</h3>
 <div class="w3-code notranslate jsHigh">
   &lt;script&gt;<br>
-  var tmp = Math.round((Math.random() * (100 - 1)));<br>
-  &lt;/script&gt;<br>
-  Случайное число:<br>
-  &lt;script&gt;<br>
-  document.write(tmp);<br>
+  function lifeSite() {<br>
+    &nbsp;var start = new Date('September 22, 2019'); // Дата создания сайта<br>
+    &nbsp;var end = new Date();<br>
+    &nbsp;var life = Math.round((end.getTime() - start.getTime()) / (1000 * 60 * 60 * 24));<br>
+    &nbsp;var suffix = new Array("день", "дня", "дней");<br>
+    &nbsp;var keys = [2, 0, 1, 1, 1, 2];<br>
+    &nbsp;var mod = life % 100;<br>
+    &nbsp;var suffix_key = mod > 4 && mod < 20 ? 2 : keys[Math.min(mod%10, 5)];<br>
+    &nbsp;document.getElementById("life_site").innerHTML = life + " " + suffix[suffix_key];<br>
+  }<br>
   &lt;/script&gt;
 </div>
-<p>Вставьте данный скрипт на веб-страницу между тегами &lt;body&gt; и &lt;/body&gt;.</p>
 </div>
-<h3>Результат:</h3>
+<p>JavaScript-код необходимо вставить между тегами <code class="w3-codespan">&lt;head&gt;</code> и <code class="w3-codespan">&lt;/head&gt;</code>.</p>
+<p>Дату создания сайта вы можете менять непосредственно в JavaScript-коде.</p>
+
 <div class="w3-example">
-  <script>
-var tmp = Math.round((Math.random() * (100 - 1)));
-</script>
-Случайное число:
-<script>
-document.write(tmp);
-</script>
+<h3>Пример HTML-кода:</h3>
+<div class="w3-code notranslate htmlHigh">
+  &lt;p&gt;Этот сайт существует уже: &lt;span id="life_site" style="color: #0a0; font-size: 120%; font-weight: bold;"&gt;&lt;/span&gt;&lt;/p&gt;
 </div>
-<p>При обновлении веб-страницы (при нажатии клавиши F5 на клавиатуре), число будет меняться в случайном порядке в диапазоне от 1 до 100.</p>
+</div>
+
+<p>Скопируйте данный html-код и вставьте его в нужном месте на веб-странице между тегами <code class="w3-codespan">&lt;body&gt;</code> и <code class="w3-codespan">&lt;/body&gt;</code>.</p>
+<p>Также пропишите для тега <code class="w3-codespan">&lt;body&gt;</code> следующее значение:</p>
+<div class="w3-example">
+<div class="w3-code notranslate htmlHigh">
+&lt;body onload="lifeSite()"&gt;
+</div>
+</div>
 <hr>
 
+<h3>Результат работы скрипта</h3>
+
+<p>Этот сайт существует уже: <span id="life_site" style="color: #0a0; font-size: 120%; font-weight: bold;"></span></p>
+
+<hr>
 <div class="w3-clear nextprev">
-  <a class="w3-left w3-btn" href="randomtext.html" title="Предыдущая страница">&#10094; Prev</a>
-  <a class="w3-right w3-btn" href="tablesorting.html" title="Следующая страница">Next &#10095;</a>
+  <a class="w3-left w3-btn" href="imagehover.html" title="Предыдущая страница">&#10094; Prev</a>
+  <a class="w3-right w3-btn" href="timer.html" title="Следующая страница">Next &#10095;</a>
 </div>
 
 </div>

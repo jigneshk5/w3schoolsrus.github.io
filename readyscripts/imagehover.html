@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<title>Случайное число с помощью JavaScript. Готовые скрипты</title>
+<title>Появление изображения при наведении мыши на ссылку. Код JavaScript</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="keywords" content="готовые,скрипты,случайное,рандомное,число,javascript,script">
-<meta name="description" content="Готовые скрипты на Javascript. Как сделать появление псевдослучайного числа на веб-странице с помощью JavaScript? Рабочий код. W3Schools на русском языке">
+<meta name="keywords" content="готовые,скрипты,появление,плавное,изображения,при наведении,мыши,javascript,script,скрипт">
+<meta name="description" content="Готовые скрипты на Javascript. Как сделать планую смену изображений (слайдшоу)? Применение чистого JavaScript. Рабочий код. W3Schools на русском языке">
 <link rel="icon" href="../favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="../w3css/4/w3.css">
 </head>
@@ -267,46 +267,77 @@
   <div class='w3-row w3-white'>
     <div class='w3-col l10 m12' id='main'>
 
-<h1>Случайное число</h1>
+<h1>Появление изображения при наведении мыши на ссылку</h1>
 
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="randomtext.html" title="Предыдущая страница">&#10094; Prev</a>
-<a class="w3-right w3-btn" href="tablesorting.html" title="Следующая страница">Next &#10095;</a>
+<a class="w3-left w3-btn" href="imagechange.html" title="Предыдущая страница">&#10094; Prev</a>
+<a class="w3-right w3-btn" href="siteage.html" title="Следующая страница">Next &#10095;</a>
 </div>
 <hr>
 
-<h3>Псевдослучайное число на веб-странице с помощью JavaScript</h3>
-<p>При помощи данного скрипта можно сделать появление псевдослучайного (рандомного) числа в заданном диапазоне на веб-странице (в рассматриваемом примере одно- и двузначное число от 1 до 100). Вместо 100 нужно поставить число, которое больше на 1 Вашего максимального диапазона. Может использоваться как вспомогательный алгоритм генератора псевдослучайных чисел. Скопируйте данный код и вставьте в нужное место на веб-странице.</p>
+<h3>Появление изображения при наведении мыши на ссылку с помощью JavaScript</h3>
+<p>С помощью данного скрипта можно создать эффект <strong>появления изображения</strong> при наведении мыши на ссылку <strong>с помощью чистого JavaScript кода</strong>.</p>
+<p>Для создания такого эффекта необходимо написать следующий код:</p>
 
 <div class="w3-example">
-<h3>Пример</h3>
+<h3>Пример JavaScript-кода:</h3>
 <div class="w3-code notranslate jsHigh">
   &lt;script&gt;<br>
-  var tmp = Math.round((Math.random() * (100 - 1)));<br>
-  &lt;/script&gt;<br>
-  Случайное число:<br>
-  &lt;script&gt;<br>
-  document.write(tmp);<br>
+    &nbsp;function showLinkImage(id) {<br>
+      &nbsp;&nbsp;document.getElementById(id).style.display = "block";<br>
+    }<br>
+    &nbsp;function hideLinkImage(id) {<br>
+      &nbsp;&nbsp;document.getElementById(id).style.display = "none";<br>
+    }<br>
   &lt;/script&gt;
 </div>
-<p>Вставьте данный скрипт на веб-страницу между тегами &lt;body&gt; и &lt;/body&gt;.</p>
 </div>
-<h3>Результат:</h3>
+
 <div class="w3-example">
-  <script>
-var tmp = Math.round((Math.random() * (100 - 1)));
-</script>
-Случайное число:
-<script>
-document.write(tmp);
-</script>
+<h3>Пример HTML-кода:</h3>
+<div class="w3-code notranslate htmlHigh">
+  &lt;a href="#" onmouseover="showLinkImage('pic_1')" onmouseout="hideLinkImage('pic_1')"&gt;Изображение №1&lt;/a&gt;<br>
+  &lt;div id="pic_1" style="display: none; position: absolute;"&gt;<br>
+    &nbsp;&lt;img src="img01.jpg" alt="Изображение 1" /&gt;<br>
+  &lt;/div&gt;<br>
+  &lt;a href="#" onmouseover="showLinkImage('pic_2')" onmouseout="hideLinkImage('pic_2')"&gt;Изображение №2&lt;/a&gt;<br>
+  &lt;div id="pic_2" style="display: none; position: absolute;"&gt;<br>
+    &nbsp;&lt;img src="img02.jpg" alt="Изображение 2" /&gt;<br>
+  &lt;/div&gt;
 </div>
-<p>При обновлении веб-страницы (при нажатии клавиши F5 на клавиатуре), число будет меняться в случайном порядке в диапазоне от 1 до 100.</p>
+</div>
+
+<p>Скопируйте данный javascript-код и вставьте его в голове веб-страницы между тегами <code class="w3-codespan">&lt;head&gt;</code> и <code class="w3-codespan">&lt;/head&gt;</code>, а html-код вставьте в нужном месте на веб-странице между тегами <code class="w3-codespan">&lt;body&gt;</code> и <code class="w3-codespan">&lt;/body&gt;</code>. Также укажите своё расположение изображений с помощью тега <code class="w3-codespan">&lt;img&gt;</code>.</p>
 <hr>
 
+<h3>Результат работы скрипта</h3>
+<p>Наведите курсор мыши на ссылки ниже.</p>
+
+<script>
+  function showLinkImage(id) {
+    document.getElementById(id).style.display = "block";
+  }
+  function hideLinkImage(id) {
+    document.getElementById(id).style.display = "none";
+  }
+</script>
+
+<a href="#" onmouseover="showLinkImage('pic_1')" onmouseout="hideLinkImage('pic_1')">Изображение №1</a>
+<div id="pic_1" style="display: none; position: absolute;">
+  <img src="img01.jpg" alt="Изображение 1" />
+</div>
+<a href="#" onmouseover="showLinkImage('pic_2')" onmouseout="hideLinkImage('pic_2')">Изображение №2</a>
+<div id="pic_2" style="display: none; position: absolute;">
+  <img src="img02.jpg" alt="Изображение 2" />
+</div>
+<hr>
+<p>Обратите внимание, что изображения появляются при наведении мыши на ссылку, и при этом располагаются сверху над остальными объектами на веб-странице (как бы накладываются сверху), что не вызывает резких рывков и перемещения других объектов на странице.</p>
+<p>Если же вам необходимо, чтобы изображения не накладывались сверху на другие объекты, а сдвигали их, то поменяйте положение изображений на значение <code>position: relative</code> в html-коде.</p>
+
+<hr>
 <div class="w3-clear nextprev">
-  <a class="w3-left w3-btn" href="randomtext.html" title="Предыдущая страница">&#10094; Prev</a>
-  <a class="w3-right w3-btn" href="tablesorting.html" title="Следующая страница">Next &#10095;</a>
+  <a class="w3-left w3-btn" href="imagechange.html" title="Предыдущая страница">&#10094; Prev</a>
+  <a class="w3-right w3-btn" href="siteage.html" title="Следующая страница">Next &#10095;</a>
 </div>
 
 </div>

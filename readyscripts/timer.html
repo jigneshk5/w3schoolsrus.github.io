@@ -1,16 +1,45 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<title>Случайное число с помощью JavaScript. Готовые скрипты</title>
+<title>Таймер на сайте. Код на чистом JavaScript</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="keywords" content="готовые,скрипты,случайное,рандомное,число,javascript,script">
-<meta name="description" content="Готовые скрипты на Javascript. Как сделать появление псевдослучайного числа на веб-странице с помощью JavaScript? Рабочий код. W3Schools на русском языке">
+<meta name="keywords" content="готовые,скрипты,таймер,время,код,javascript,script,скрипт">
+<meta name="description" content="Готовые скрипты на Javascript. Создание таймера, который отсчитывает время на сайте. Применение чистого кода JavaScript. Рабочий код. W3Schools на русском языке">
 <link rel="icon" href="../favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="../w3css/4/w3.css">
+<script>
+  function startTimer() {
+    var my_timer = document.getElementById("my_timer");
+    var time = my_timer.innerHTML;
+    var arr = time.split(":");
+    var h = arr[0];
+    var m = arr[1];
+    var s = arr[2];
+    if (s == 0) {
+      if (m == 0) {
+        if (h == 0) {
+          alert("Ваше время вышло");
+          window.location.reload();
+          return;
+        }
+        h--;
+        m = 60;
+        if (h < 10) h = "0" + h;
+      }
+      m--;
+      if (m < 10) m = "0" + m;
+      s = 59;
+    }
+    else s--;
+    if (s < 10) s = "0" + s;
+    document.getElementById("my_timer").innerHTML = h+":"+m+":"+s;
+    setTimeout(startTimer, 1000);
+  }
+</script>
 </head>
 
-<body>
+<body onload="startTimer()">
 <div id="mainContent">
 <div class='w3-container top'>
   <a class='w3schools-logo notranslate' href='../index.html'>w3schools<span class='dotcom'>.на русском</span></a>
@@ -267,46 +296,78 @@
   <div class='w3-row w3-white'>
     <div class='w3-col l10 m12' id='main'>
 
-<h1>Случайное число</h1>
+<h1>Таймер на сайте</h1>
 
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="randomtext.html" title="Предыдущая страница">&#10094; Prev</a>
-<a class="w3-right w3-btn" href="tablesorting.html" title="Следующая страница">Next &#10095;</a>
+<a class="w3-left w3-btn" href="siteage.html" title="Предыдущая страница">&#10094; Prev</a>
+<a class="w3-right w3-btn" href="timer.html" title="Следующая страница">Next &#10095;</a>
 </div>
 <hr>
 
-<h3>Псевдослучайное число на веб-странице с помощью JavaScript</h3>
-<p>При помощи данного скрипта можно сделать появление псевдослучайного (рандомного) числа в заданном диапазоне на веб-странице (в рассматриваемом примере одно- и двузначное число от 1 до 100). Вместо 100 нужно поставить число, которое больше на 1 Вашего максимального диапазона. Может использоваться как вспомогательный алгоритм генератора псевдослучайных чисел. Скопируйте данный код и вставьте в нужное место на веб-странице.</p>
+<h3>Таймер на сайте, который отсчитывает время. Скрипт на JavaScript</h3>
+<p>С помощью данного скрипта на языке <strong>JavaScript</strong> можно установить <strong>таймер</strong>, который отсчитывает время от указанного до нуля. Скрипт написан на чистом <strong>JavaScript</strong>, без использования каких-либо библиотек и фреймворков.</p>
+<p>Для создания такого <strong>таймера</strong> необходимо написать следующий код:</p>
 
 <div class="w3-example">
-<h3>Пример</h3>
+<h3>Пример JavaScript-кода:</h3>
 <div class="w3-code notranslate jsHigh">
   &lt;script&gt;<br>
-  var tmp = Math.round((Math.random() * (100 - 1)));<br>
-  &lt;/script&gt;<br>
-  Случайное число:<br>
-  &lt;script&gt;<br>
-  document.write(tmp);<br>
+    &nbsp;function startTimer() {<br>
+      &nbsp;&nbsp;var my_timer = document.getElementById("my_timer");<br>
+      &nbsp;&nbsp;var time = my_timer.innerHTML;<br>
+      &nbsp;&nbsp;var arr = time.split(":");<br>
+      &nbsp;&nbsp;var h = arr[0];<br>
+      &nbsp;&nbsp;var m = arr[1];<br>
+      &nbsp;&nbsp;var s = arr[2];<br>
+      &nbsp;&nbsp;if (s == 0) {<br>
+        &nbsp;&nbsp;&nbsp;if (m == 0) {<br>
+          &nbsp;&nbsp;&nbsp;if (h == 0) {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;alert("Ваше время вышло");<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;window.location.reload();<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;return;<br>
+          &nbsp;&nbsp;&nbsp;}<br>
+          &nbsp;&nbsp;&nbsp;h--;<br>
+          &nbsp;&nbsp;&nbsp;m = 60;<br>
+          &nbsp;&nbsp;&nbsp;if (h < 10) h = "0" + h;<br>
+        &nbsp;&nbsp;}<br>
+        &nbsp;&nbsp;m--;<br>
+        &nbsp;&nbsp;if (m < 10) m = "0" + m;<br>
+        &nbsp;&nbsp;s = 59;<br>
+      &nbsp;}<br>
+      &nbsp;else s--;<br>
+      &nbsp;if (s < 10) s = "0" + s;<br>
+      &nbsp;document.getElementById("my_timer").innerHTML = h+":"+m+":"+s;<br>
+      &nbsp;setTimeout(startTimer, 1000);<br>
+    }<br>
   &lt;/script&gt;
 </div>
-<p>Вставьте данный скрипт на веб-страницу между тегами &lt;body&gt; и &lt;/body&gt;.</p>
 </div>
-<h3>Результат:</h3>
+<p>JavaScript-код необходимо вставить между тегами <code class="w3-codespan">&lt;head&gt;</code> и <code class="w3-codespan">&lt;/head&gt;</code>.</p>
+<p>Начальное значение таймера задаётся в html-коде внутри тегов <code class="w3-codespan">&lt;span&gt;</code> и <code class="w3-codespan">&lt;/span&gt;</code> в виде: <b>часы:минуты:секунды</b>.</p>
+
 <div class="w3-example">
-  <script>
-var tmp = Math.round((Math.random() * (100 - 1)));
-</script>
-Случайное число:
-<script>
-document.write(tmp);
-</script>
+<h3>Пример HTML-кода:</h3>
+<div class="w3-code notranslate htmlHigh">
+  &lt;p&gt;&lt;span id="my_timer" style="color: #f00; font-size: 120%; font-weight: bold;"&gt;01:05:00&lt;/span&gt;&lt;/p&gt;
 </div>
-<p>При обновлении веб-страницы (при нажатии клавиши F5 на клавиатуре), число будет меняться в случайном порядке в диапазоне от 1 до 100.</p>
+</div>
+
+<p>Скопируйте данный html-код и вставьте его в нужном месте на веб-странице между тегами <code class="w3-codespan">&lt;body&gt;</code> и <code class="w3-codespan">&lt;/body&gt;</code>.</p>
+<p>Также пропишите для тега <code class="w3-codespan">&lt;body&gt;</code> следующее значение:</p>
+<div class="w3-example">
+<div class="w3-code notranslate htmlHigh">
+  &lt;body onload="startTimer()"&gt;
+</div>
+</div>
 <hr>
 
+<h3>Результат работы скрипта</h3>
+<p><span id="my_timer" style="color: #f00; font-size: 120%; font-weight: bold;">01:05:00</span></p>
+
+<hr>
 <div class="w3-clear nextprev">
-  <a class="w3-left w3-btn" href="randomtext.html" title="Предыдущая страница">&#10094; Prev</a>
-  <a class="w3-right w3-btn" href="tablesorting.html" title="Следующая страница">Next &#10095;</a>
+  <a class="w3-left w3-btn" href="siteage.html" title="Предыдущая страница">&#10094; Prev</a>
+  <a class="w3-right w3-btn" href="timer.html" title="Следующая страница">Next &#10095;</a>
 </div>
 
 </div>

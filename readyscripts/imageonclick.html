@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<title>Случайное число с помощью JavaScript. Готовые скрипты</title>
+<title>Увеличение изображения при клике с помощью JavaScript. Готовые скрипты</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="keywords" content="готовые,скрипты,случайное,рандомное,число,javascript,script">
-<meta name="description" content="Готовые скрипты на Javascript. Как сделать появление псевдослучайного числа на веб-странице с помощью JavaScript? Рабочий код. W3Schools на русском языке">
+<meta name="keywords" content="готовые,скрипты,увеличение,изображения,клике,javascript,script,скрипт">
+<meta name="description" content="Готовые скрипты на Javascript. Как сделать увеличение изображения при клике на нём? Применение чистого JavaScript. Рабочий код. W3Schools на русском языке">
 <link rel="icon" href="../favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="../w3css/4/w3.css">
 </head>
@@ -267,46 +267,67 @@
   <div class='w3-row w3-white'>
     <div class='w3-col l10 m12' id='main'>
 
-<h1>Случайное число</h1>
+<h1>Увеличение изображения при клике</h1>
 
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="randomtext.html" title="Предыдущая страница">&#10094; Prev</a>
-<a class="w3-right w3-btn" href="tablesorting.html" title="Следующая страница">Next &#10095;</a>
+<a class="w3-left w3-btn" href="buttonmore.html" title="Предыдущая страница">&#10094; Prev</a>
+<a class="w3-right w3-btn" href="imagechange.html" title="Следующая страница">Next &#10095;</a>
 </div>
 <hr>
 
-<h3>Псевдослучайное число на веб-странице с помощью JavaScript</h3>
-<p>При помощи данного скрипта можно сделать появление псевдослучайного (рандомного) числа в заданном диапазоне на веб-странице (в рассматриваемом примере одно- и двузначное число от 1 до 100). Вместо 100 нужно поставить число, которое больше на 1 Вашего максимального диапазона. Может использоваться как вспомогательный алгоритм генератора псевдослучайных чисел. Скопируйте данный код и вставьте в нужное место на веб-странице.</p>
+<h3>Увеличение изображения при клике с помощью JavaScript</h3>
+<p>С помощью данного скрипта можно создать эффект увеличения изображения при клике на нём, без перехода на отдельную страницу.</p>
+<p>Для создания такого эффекта необходимо вставить следующий код:</p>
 
 <div class="w3-example">
-<h3>Пример</h3>
+<h3>Пример JavaScript-кода:</h3>
 <div class="w3-code notranslate jsHigh">
-  &lt;script&gt;<br>
-  var tmp = Math.round((Math.random() * (100 - 1)));<br>
-  &lt;/script&gt;<br>
-  Случайное число:<br>
-  &lt;script&gt;<br>
-  document.write(tmp);<br>
-  &lt;/script&gt;
+&lt;script&gt;<br>
+var bigsize = "300"; // Размер большой картинки<br>
+var smallsize = "150"; // Размер маленькой картинки<br>
+function changeSizeImage(im) {<br>
+  if(im.height == bigsize) im.height = smallsize;<br>
+  else im.height = bigsize;<br>
+}<br>
+&lt;/script&gt;
 </div>
-<p>Вставьте данный скрипт на веб-страницу между тегами &lt;body&gt; и &lt;/body&gt;.</p>
 </div>
-<h3>Результат:</h3>
+
 <div class="w3-example">
-  <script>
-var tmp = Math.round((Math.random() * (100 - 1)));
-</script>
-Случайное число:
-<script>
-document.write(tmp);
-</script>
+<h3>Пример HTML-кода:</h3>
+<div class="w3-code notranslate htmlHigh">
+  &lt;div style="float:left;"&gt;<br>
+  &lt;img src="img01.jpg" height="150" onclick="changeSizeImage(this)" alt="" /&gt;&nbsp;<br>
+  &lt;p&gt;&lt;b&gt;Фото 1&lt;/b&gt;&lt;/p&gt;<br>
+  &lt;/div&gt;<br>
+  &lt;img src="img02.jpg" height="150" onclick="changeSizeImage(this)" alt="" /&gt;<br>
+  &lt;p&gt;&lt;b&gt;Фото 2&lt;/b&gt;&lt;/p&gt;
 </div>
-<p>При обновлении веб-страницы (при нажатии клавиши F5 на клавиатуре), число будет меняться в случайном порядке в диапазоне от 1 до 100.</p>
+</div>
+
+<p>Скопируйте данный код и вставьте в нужном месте на веб-странице между тегами <code class="w3-codespan">&lt;body&gt;</code> и <code class="w3-codespan">&lt;/body&gt;</code>.</p>
 <hr>
 
+<h3>Результат работы скрипта</h3>
+<script>
+var bigsize = "300"; // Размер большой картинки
+var smallsize = "150"; // Размер маленькой картинки
+function changeSizeImage(im) {
+if(im.height == bigsize) im.height = smallsize;
+else im.height = bigsize;
+}
+</script>
+<div style="float:left;">
+<img src="img01.jpg" height="150" onclick="changeSizeImage(this)" alt="" />&nbsp;
+<p><b>Фото 1</b></p>
+</div>
+<img src="img02.jpg" height="150" onclick="changeSizeImage(this)" alt="" />
+<p><b>Фото 2</b></p>
+<p>Кликните на изображении мышкой, чтобы увидеть эффект.</p>
+<hr>
 <div class="w3-clear nextprev">
-  <a class="w3-left w3-btn" href="randomtext.html" title="Предыдущая страница">&#10094; Prev</a>
-  <a class="w3-right w3-btn" href="tablesorting.html" title="Следующая страница">Next &#10095;</a>
+  <a class="w3-left w3-btn" href="buttonmore.html" title="Предыдущая страница">&#10094; Prev</a>
+  <a class="w3-right w3-btn" href="imagechange.html" title="Следующая страница">Next &#10095;</a>
 </div>
 
 </div>
