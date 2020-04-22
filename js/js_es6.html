@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<title>JavaScript Учебник. Уроки для начинающих. W3Schools на русском</title>
+<title>ECMAScript 6 - ECMAScript 2015. W3Schools на русском</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="Keywords" content="JavaScript,js,w3schools,на русском,уроки,для начинающих,курс,язык,программирования,справочник,пример,упражнения,код">
-<meta name="Description" content="Уроки по языку программирования JavaScript для начинающих. Основы. Примеры кода. W3Schools на русском языке">
+<meta name="Keywords" content="ECMAScript 6,ECMAScript 2015,JavaScript,js,w3schools,на русском,уроки,для начинающих,курс,язык,программирования,справочник,пример,упражнения,код">
+<meta name="Description" content="Что такое ECMAScript 6? Также известен как ES6 и ECMAScript 2015. Некоторые программисты называют его JavaScript 6. Новые функции ES6. W3Schools на русском языке. Уроки онлайн для новичков">
 <link rel="icon" href="../favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="../w3css/4/w3.css">
 <link rel="stylesheet" href="../browserref.css">
@@ -502,37 +502,29 @@ const x = (x, y) =&gt; x * y;<br>
 <a class="w3-btn w3-margin-bottom" href="tryit306c.html?filename=tryjs_es6_arrow" target="_blank">Попробуйте сами &raquo;</a>
 </div>
 
-<p>Arrow functions do not have their own <code class="w3-codespan">this</code>.
-They are not well suited for defining <strong>object methods</strong>.</p>
-<p>Arrow functions are not hoisted. They must be defined <strong>before</strong> they are used.</p>
-<p>Using <code class="w3-codespan">const</code>
-is safer than using <code class="w3-codespan">var</code>, because a function expression is
-always constant value.</p>
-<p>You can only omit the <code class="w3-codespan">return</code> keyword and the curly brackets if the function is a single statement.
-Because of this, it might be a good habit to always keep them:</p>
+<p>Функции стрелок не имеют своих собственных <code class="w3-codespan">this</code>. Они не очень подходят для определения <strong>методов объекта</strong>.</p>
+<p>Функции стрелок не подняты. Они должны быть определены <strong>до</strong> их использования.</p>
+<p>Использование <code class="w3-codespan">const</code> безопаснее, чем использование <code class="w3-codespan">var</code>, поскольку выражение функции всегда является постоянным значением.</p>
+<p>Вы можете опустить ключевое слово <code class="w3-codespan">return</code> и фигурные скобки только в том случае, если функция представляет собой одну инструкцию (оператор). Поэтому это может быть хорошей привычкой всегда иметь их:</p>
 <div class="w3-example">
-<h3>Example</h3>
+<h3>Пример</h3>
 <div class="w3-code notranslate jsHigh">
 const x = (x, y) =&gt; { return x * y };<br>
 </div>
 <a class="w3-btn w3-margin-bottom" href="tryit54c0.html?filename=tryjs_es6_arrow_safe" target="_blank">Попробуйте сами &raquo;</a>
 </div>
-<p>Learn more about Arrow Functions in our <a href="js_arrow_function.html">JavaScript Arrow Function</a> chapter.</p>
+<p>Подробнее о функциях стрелок читайте в разделе <a href="js_arrow_function.html">JavaScript Функции стрелок</a> на нашем сайте.</p>
 <hr>
 
-<h2>Classes</h2>
-<p>ES6 introduced classes.</p>
-<p>A class is a type of function, but instead of using the keyword
-<code class="w3-codespan">function</code> to initiate it, we use the keyword
-<code class="w3-codespan">class</code>, and the properties are assigned inside a
-<code class="w3-codespan">constructor()</code> method.</p>
-<p>Use the keyword <code class="w3-codespan">class</code> to create a class, and
-always add a constructor method.</p>
-<p>The constructor method is called each time the class object is initialized.</p>
+<h2>Классы</h2>
+<p>ES6 ввел классы.</p>
+<p>Класс является типом функции, но вместо того, чтобы использовать ключевое слово <code class="w3-codespan">function</code> для его инициирования, мы используем ключевое слово <code class="w3-codespan">class</code>, а свойства назначаются внутри метода <code class="w3-codespan">constructor()</code>.</p>
+<p>Используйте ключевое слово <code class="w3-codespan">class</code> для создания класса и всегда добавляйте метод конструктора.</p>
+<p>Метод конструктора вызывается каждый раз, когда объект класса инициализируется.</p>
 
 <div class="w3-example">
-  <h3>Example</h3>
-<p>A simple class definition for a class named &quot;Car&quot;:</p>
+  <h3>Пример</h3>
+<p>Простое определение класса для класса с именем &quot;Car&quot;:</p>
 <div class="w3-code notranslate jsHigh">
 class Car {<br>&nbsp;
   constructor(brand) {<br>&nbsp;&nbsp;&nbsp; this.carname = brand;<br>&nbsp;
@@ -540,67 +532,60 @@ class Car {<br>&nbsp;
 </div>
 </div>
 
-<p>Now you can create objects using the Car class:</p>
+<p>Теперь вы можете создавать объекты, используя класс Car:</p>
 
 <div class="w3-example">
-<h3>Example</h3>
-<p>Create an object called &quot;mycar&quot; based on the Car class:</p>
+<h3>Пример</h3>
+<p>Создайте объект &quot;mycar&quot; на основе класса Car:</p>
 <div class="w3-code notranslate jsHigh">
 class Car {<br>&nbsp;
   constructor(brand) {<br>&nbsp;&nbsp;&nbsp; this.carname = brand;<br>&nbsp;
   }<br>}<br>mycar = new Car(&quot;Ford&quot;);
 </div>
-<p>
-<a target="_blank" class="w3-btn" href="tryit966c.html?filename=tryjs_classes_init">Попробуйте сами &raquo;</a>
-</p>
+<p><a target="_blank" class="w3-btn" href="tryit966c.html?filename=tryjs_classes_init">Попробуйте сами &raquo;</a></p>
 </div>
 
-<p>Learn more about classes in our <a href="js_classes.html">JavaScript Classes</a> chapter.</p>
-
+<p>Узнать больше про классы вы можете в разделе <a href="js_classes.html">JavaScript Классы</a> на нашем сайте.</p>
 <hr>
-<h2>Default Parameter Values</h2>
-<p>ES6 allows function parameters to have default values.</p>
+
+<h2>Значения параметров по умолчанию</h2>
+<p>ES6 позволяет параметрам функции иметь значения по умолчанию.</p>
 <div class="w3-example">
-<h3>Example</h3>
+<h3>Пример</h3>
 <div class="w3-code notranslate jsHigh">
 function myFunction(x, y = 10) {<br>&nbsp;
-  // y is 10 if not passed or undefined<br>&nbsp;
-  return x + y;<br>}<br>myFunction(5); // will return 15</div>
+  // y равен 10 если не пройден или не определен<br>&nbsp;
+  return x + y;<br>}<br>myFunction(5); // вернёт 15</div>
 <a class="w3-btn w3-margin-bottom" href="tryitd242.html?filename=tryjs_es6_default" target="_blank">Попробуйте сами &raquo;</a>
 </div>
 <hr>
 
 <h2>Array.find()</h2>
-<p>The <code class="w3-codespan">find()</code> method returns the value of the first array element that passes a
-test function.</p>
+<p>Метод <code class="w3-codespan">find()</code> возвращает значение первого элемента массива, который проходит тестовую функцию.</p>
 
-<p>This example finds (returns the value of ) the first element that is larger
-than 18:</p>
+<p>Этот пример находит первый элемент (возвращает значение), который больше 18:</p>
 <div class="w3-example">
-<h3>Example</h3>
+<h3>Пример</h3>
 <div class="w3-code notranslate jsHigh">
   var numbers = [4, 9, 16, 25, 29];<br>var first =
   numbers.find(myFunction);<br><br>function myFunction(value, index, array) {<br>
-  &nbsp; return
-  value &gt; 18;<br>} </div>
+  &nbsp; return value &gt; 18;<br>} </div>
   <a class="w3-btn w3-margin-bottom" href="tryit217d.html?filename=tryjs_array_find" target="_blank">Попробуйте сами &raquo;</a>
 </div>
-<p>Note that the function takes 3 arguments:</p>
+<p>Обратите внимание, что функция принимает 3 аргумента:</p>
 <ul>
-  <li>The item value</li>
-<li>The item index </li>
-<li>The array itself</li>
+  <li>Значение (value)</li>
+  <li>Индекс (index)</li>
+  <li>Сам массив (array)</li>
 </ul>
-
 <hr>
 
 <h2>Array.findIndex()</h2>
-<p>The <code class="w3-codespan">findIndex()</code> method returns the index of the first array element that
-passes a test function.</p>
+<p>Метод <code class="w3-codespan">findIndex()</code> возвращает индекс первого элемента массива, который проходит тестовую функцию.</p>
 
-<p>This example finds the index of the first element that is larger than 18:</p>
+<p>Этот пример находит индекс первого элемента, который больше 18:</p>
 <div class="w3-example">
-<h3>Example</h3>
+<h3>Пример</h3>
 <div class="w3-code notranslate jsHigh">
   var numbers = [4, 9, 16, 25, 29];<br>var first =
   numbers.findIndex(myFunction);<br><br>function myFunction(value, index, array) {<br>
@@ -608,38 +593,37 @@ passes a test function.</p>
   value &gt; 18;<br>} </div>
   <a class="w3-btn w3-margin-bottom" href="tryit7c02.html?filename=tryjs_array_find_index" target="_blank">Попробуйте сами &raquo;</a>
 </div>
-<p>Note that the function takes 3 arguments:</p>
+<p>Обратите внимание, что функция принимает 3 аргумента:</p>
 <ul>
-  <li>The item value</li>
-<li>The item index </li>
-<li>The array itself</li>
+  <li>Значение (value)</li>
+  <li>Индекс (index)</li>
+  <li>Сам массив (array)</li>
 </ul>
-
 <hr>
 
-<h2>New Number Properties</h2>
-<p>ES6 added the following properties to the Number object:</p>
+<h2>Свойства нового числа (New Number)</h2>
+<p>ES6 добавил следующие свойства к объекту Number:</p>
 <ul>
 <li><code class="w3-codespan">EPSILON</code></li>
 <li><code class="w3-codespan">MIN_SAFE_INTEGER</code></li>
 <li><code class="w3-codespan">MAX_SAFE_INTEGER</code></li>
 </ul>
 <div class="w3-example">
-<h3>Example</h3>
+<h3>Пример</h3>
 <div class="w3-code notranslate jsHigh">
 var x = Number.EPSILON;
 </div>
 <a class="w3-btn w3-margin-bottom" href="tryit8dca.html?filename=tryjs_es6_epsilon" target="_blank">Попробуйте сами &raquo;</a>
 </div>
 <div class="w3-example">
-<h3>Example</h3>
+<h3>Пример</h3>
 <div class="w3-code notranslate jsHigh">
 var x = Number.MIN_SAFE_INTEGER;
 </div>
 <a class="w3-btn w3-margin-bottom" href="tryita56f.html?filename=tryjs_es6_min_safe" target="_blank">Попробуйте сами &raquo;</a>
 </div>
 <div class="w3-example">
-<h3>Example</h3>
+<h3>Пример</h3>
 <div class="w3-code notranslate jsHigh">
 var x = Number.MAX_SAFE_INTEGER;
 </div>
@@ -647,102 +631,101 @@ var x = Number.MAX_SAFE_INTEGER;
 </div>
 <hr>
 
-<h2>New Number Methods</h2>
-<p>ES6 added 2 new methods to the Number object:</p>
+<h2>Методы нового числа (New Number)</h2>
+<p>ES6 добавил 2 новых метода к объекту Number:</p>
 <ul>
 <li><code class="w3-codespan">Number.isInteger()</code></li>
 <li><code class="w3-codespan">Number.isSafeInteger()</code></li>
 </ul>
 <hr>
 
-<h2>The Number.isInteger() Method</h2>
-<p>The <code class="w3-codespan">Number.isInteger()</code> method returns <code class="w3-codespan">true</code> if the argument is an integer.</p>
+<h2>Метод Number.isInteger()</h2>
+<p>Метод <code class="w3-codespan">Number.isInteger()</code> возвращает <code class="w3-codespan">true</code>, если аргумент является целым числом.</p>
 <div class="w3-example">
-<h3>Example</h3>
+<h3>Пример</h3>
 <div class="w3-code notranslate jsHigh">
-Number.isInteger(10);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // returns true<br>
-Number.isInteger(10.5);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // returns false<br>
+Number.isInteger(10);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // возвращает true<br>
+Number.isInteger(10.5);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // возвращает false<br>
 </div>
 <a class="w3-btn w3-margin-bottom" href="tryitc48e.html?filename=tryjs_es6_isinteger" target="_blank">Попробуйте сами &raquo;</a>
 </div>
 <hr>
-<h2>The Number.isSafeInteger() Method</h2>
-<p>A safe integer is an integer that can be exactly represented as a double precision number.</p>
-<p>The <code class="w3-codespan">Number.isSafeInteger()</code> method returns <code class="w3-codespan">true</code> if the argument is a safe integer.</p>
+
+<h2>Метод Number.isSafeInteger()</h2>
+<p>Безопасное целое число (safe integer) - это целое число, которое может быть точно представлено как число с двойной точностью.</p>
+<p>Метод <code class="w3-codespan">Number.isSafeInteger()</code> возвращает <code class="w3-codespan">true</code>, если аргумент является безопасным целым числом.</p>
 <div class="w3-example">
-<h3>Example</h3>
+<h3>Пример</h3>
 <div class="w3-code notranslate jsHigh">
-Number.isSafeInteger(10);&nbsp;&nbsp;&nbsp;&nbsp;// returns true<br>
-Number.isSafeInteger(12345678901234567890);&nbsp; // returns false<br>
+Number.isSafeInteger(10);&nbsp;&nbsp;&nbsp;&nbsp;// возвращает true<br>
+Number.isSafeInteger(12345678901234567890);&nbsp; // возвращает false<br>
 </div>
 <a class="w3-btn w3-margin-bottom" href="tryitc91c.html?filename=tryjs_es6_issafeinteger" target="_blank">Попробуйте сами &raquo;</a>
 </div>
 
 <div class="w3-container w3-note">
-<p>Safe integers are all integers from -(2<sup>53</sup> - 1) to +(2<sup>53</sup> - 1).<br>
-This is safe: 9007199254740991. This is not safe: 9007199254740992.</p>
+<p>Безопасные целые числа - это целые числа от -(2<sup>53</sup> - 1) до +(2<sup>53</sup> - 1).<br>
+Это безопасное: 9007199254740991. Это не безопасное: 9007199254740992.</p>
 </div>
 <hr>
-<h2>New Global Methods</h2>
-<p>ES6 also added 2 new global number methods:</p>
+
+<h2>Новые глобальные методы (New Global)</h2>
+<p>ES6 также добавил 2 новых глобальных метода чисел:</p>
 <ul>
 <li><code class="w3-codespan">isFinite()</code></li>
   <li><code class="w3-codespan">isNaN()</code></li>
 </ul>
 <hr>
-<h2>The isFinite() Method</h2>
-<p>The global <code class="w3-codespan">isFinite()</code> method returns <code class="w3-codespan">false</code> if the argument is <code class="w3-codespan">Infinity</code> or <code class="w3-codespan">NaN</code>.</p>
-<p>Otherwise it returns <code class="w3-codespan">true</code>:</p>
+
+<h2>Метод isFinite()</h2>
+<p>Глобальный метод <code class="w3-codespan">isFinite()</code> возвращает <code class="w3-codespan">false</code>, если аргумент является <code class="w3-codespan">Infinity</code> или <code class="w3-codespan">NaN</code>. В противном случае он возвращает <code class="w3-codespan">true</code>:</p>
 <div class="w3-example">
-<h3>Example</h3>
+<h3>Пример</h3>
 <div class="w3-code notranslate jsHigh">
-isFinite(10/0);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // returns false<br>
-isFinite(10/1);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // returns true<br>
+isFinite(10/0);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // возвращает false<br>
+isFinite(10/1);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // возвращает true<br>
 </div>
 <a class="w3-btn w3-margin-bottom" href="tryit6019.html?filename=tryjs_es6_isfinite" target="_blank">Попробуйте сами &raquo;</a>
 </div>
 <hr>
 
-<h2>The isNaN() Method</h2>
-<p>The global <code class="w3-codespan">isNaN()</code> method returns <code class="w3-codespan">true</code> if the argument is <code class="w3-codespan">NaN</code>. Otherwise it returns <code class="w3-codespan">false</code>:</p>
+<h2>Метод isNaN()</h2>
+<p>Глобальный метод <code class="w3-codespan">isNaN()</code> возвращает <code class="w3-codespan">true</code>, если аргумент является <code class="w3-codespan">NaN</code>. В противном случае он возвращает <code class="w3-codespan">false</code>:</p>
 <div class="w3-example">
-<h3>Example</h3>
+<h3>Пример</h3>
 <div class="w3-code notranslate jsHigh">
-isNaN("Hello");&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // returns true<br>
+isNaN("Hello");&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // возвращает true<br>
 </div>
 <a class="w3-btn w3-margin-bottom" href="tryit3ccf-2.html?filename=tryjs_es6_isnan" target="_blank">Попробуйте сами &raquo;</a>
 </div>
-
-
 <hr>
 
-<h2>Exponentiation Operator</h2>
-<p>The <strong>exponentiation</strong> operator (<code class="w3-codespan">**</code>) raises the first operand to the power of the second operand.</p>
+<h2>Оператор возведения в степень</h2>
+<p>Оператор <strong>возведения в степень</strong> (<code class="w3-codespan">**</code>) возводит в степень первый операнд в значение второго операнда.</p>
 <div class="w3-example">
-<h3>Example</h3>
+<h3>Пример</h3>
 <div class="w3-code notranslate jsHigh">
 var x = 5;<br>
   var z =
- x ** 2;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // result is 25
+ x ** 2;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // результат 25
 </div>
   <a class="w3-btn w3-margin-bottom" href="tryitc86f.html?filename=tryjs_es6_exponent1" target="_blank">Попробуйте сами &raquo;</a>
 </div>
 
-<p><code class="w3-codespan">x ** y</code> produces the same result as <code class="w3-codespan">Math.pow(x,y)</code>:</p>
+<p><code class="w3-codespan">x ** y</code> дает тот же результат, что и <code class="w3-codespan">Math.pow(x,y)</code>:</p>
 <div class="w3-example">
-<h3>Example</h3>
+<h3>Пример</h3>
 <div class="w3-code notranslate jsHigh">
 var x = 5;<br>
   var z =
-  Math.pow(x,2);&nbsp;&nbsp; // result is 25
+  Math.pow(x,2);&nbsp;&nbsp; // результат 25
 </div>
   <a class="w3-btn w3-margin-bottom" href="tryite8bc.html?filename=tryjs_es6_exponent2" target="_blank">Попробуйте сами &raquo;</a>
 </div>
-
 <hr>
 
 <div class="w3-clear nextprev">
-  <a class="w3-left w3-btn" href="js_es5.html">&#10094; Previous</a>
+  <a class="w3-left w3-btn" href="js_es5.html">&#10094; Prev</a>
   <a class="w3-right w3-btn" href="js_json.html">Next &#10095;</a>
 </div>
 
@@ -753,7 +736,7 @@ var x = 5;<br>
 <script>
 var disqus_config = function () {
 this.page.url = w3schoolsrus.github.io; // канонический URL страницы
-this.page.identifier = w3schoolsrus.github.io / js / js_.html; // уникальный идентификатор страницы
+this.page.identifier = w3schoolsrus.github.io / js / js_es6.html; // уникальный идентификатор страницы
 };
 (function() { // Не редактировать ниже этой линии
 var d = document, s = d.createElement('script');
