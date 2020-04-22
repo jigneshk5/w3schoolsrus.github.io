@@ -8,6 +8,21 @@
 <meta name="Description" content="Проверка HTML формы может быть сделана с помощью JavaScript. Можно проверять числовой ввод. Автоматическая проверка HTML формы. Проверка данных. Лучшие бесплатные уроки онлайн для начинающих. W3Schools на русском языке">
 <link rel="icon" href="../favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="../w3css/4/w3.css">
+<script>
+function myFunction() {
+    var x;
+    var text = "Input OK";
+
+    //Получить значение поля ввода с id="numb"
+    x = document.getElementById("numb").value;
+
+    // Если x не является числом, или x меньше единицы, или x больше 10, то
+    if (isNaN(x) || x < 1 || x > 10) {
+        text = "Not valid";
+    }
+    document.getElementById("demo").innerHTML = text;
+}
+</script>
 </head>
 
 <body>
