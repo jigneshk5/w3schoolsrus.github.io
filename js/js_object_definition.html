@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<title>JavaScript Учебник. Уроки для начинающих. W3Schools на русском</title>
+<title>JavaScript Объекты. Уроки для начинающих. W3Schools на русском</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="Keywords" content="JavaScript,js,w3schools,на русском,уроки,для начинающих,курс,язык,программирования,справочник,пример,упражнения,код">
-<meta name="Description" content="Уроки по языку программирования JavaScript для начинающих. Основы. Примеры кода. W3Schools на русском языке">
+<meta name="Keywords" content="JavaScript,объекты,js,w3schools,на русском,уроки,для начинающих,курс,язык,программирования,справочник,пример,упражнения,код">
+<meta name="Description" content="В JavaScript почти всё является объектом - логические, числа, строки, даты, математические, регулярные выражения, массивы, функции, объекты. Кроме примитивов. Уроки онлайн бесплатно. W3Schools на русском языке">
 <link rel="icon" href="../favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="../w3css/4/w3.css">
 </head>
@@ -568,22 +568,20 @@ var person = {firstName:&quot;John&quot;, lastName:&quot;Doe&quot;, age:50, eyeC
 <hr>
 
 <h2>Использование литерала объекта</h2>
-<p>This is the easiest way to create a JavaScript Object.</p>
-<p>Using an object literal, you both define and create an object in one
-statement.</p>
-<p>An object literal is a list of name:value pairs (like age:50) inside curly braces {}.</p>
-<p>The following example creates a new JavaScript object with four properties:</p>
+<p>Это самый простой способ создать объект JavaScript.</p>
+<p>Используя литерал объекта, вы одновременно определяете и создаете объект в одном выражении.</p>
+<p>Литерал объекта - это список пар имя:значение (например, возраст:50) внутри фигурных скобок {}.</p>
+<p>В следующем примере создается новый объект JavaScript с четырьмя свойствами:</p>
 <div class="w3-example">
-<h3>Example</h3>
+<h3>Пример</h3>
 <div class="w3-code notranslate jsHigh">
- var
-person = {firstName:&quot;John&quot;, lastName:&quot;Doe&quot;, age:50, eyeColor:&quot;blue&quot;};
+var person = {firstName:&quot;John&quot;, lastName:&quot;Doe&quot;, age:50, eyeColor:&quot;blue&quot;};
 </div>
 <a target="_blank" class="w3-btn w3-margin-bottom" href="tryit4cba.html?filename=tryjs_object_create_1">Попробуйте сами &raquo;</a>
 </div>
-<p>Spaces and line breaks are not important. An object definition can span multiple lines:</p>
+<p>Пробелы и разрывы строк не важны. Определение объекта может занимать несколько строк:</p>
 <div class="w3-example">
-<h3>Example</h3>
+<h3>Пример</h3>
 <div class="w3-code notranslate jsHigh">
 var person = {<br>&nbsp;&nbsp;firstName: &quot;John&quot;,<br>&nbsp;&nbsp;lastName: &quot;Doe&quot;,<br>&nbsp;&nbsp;age: 50,<br>&nbsp;&nbsp;eyeColor: &quot;blue&quot;<br>};
 </div>
@@ -591,13 +589,12 @@ var person = {<br>&nbsp;&nbsp;firstName: &quot;John&quot;,<br>&nbsp;&nbsp;lastNa
 </div>
 <hr>
 
-<h2>Using the JavaScript Keyword new</h2>
-<p>The following example also creates a new JavaScript object with four properties:</p>
+<h2>Использование JavaScript ключевого слова new</h2>
+<p>В следующем примере также создается новый объект JavaScript с четырьмя свойствами:</p>
 <div class="w3-example">
-<h3>Example</h3>
+<h3>Пример</h3>
 <div class="w3-code notranslate jsHigh">
- var
-person = new Object();<br>
+var person = new Object();<br>
 person.firstName = &quot;John&quot;;<br>
 person.lastName = &quot;Doe&quot;;<br>
 person.age = 50;<br>
@@ -607,40 +604,36 @@ person.eyeColor = &quot;blue&quot;;
 </div>
 
 <div class="w3-panel w3-note">
-<p>The two examples above do exactly the same. There is no need to use <code class="w3-codespan">new Object()</code>.<br>
-For simplicity, readability and execution speed, use the first one (the object literal method).</p>
+<p>Два приведенных выше примера делают то же самое. Там нет необходимости использовать <code class="w3-codespan">new Object()</code>.<br>
+Для простоты, читабельности и скорости выполнения используйте первый (метод литерал объекта).</p>
 </div>
-
 <hr>
 
-<h2>JavaScript Objects are Mutable</h2>
-<p>Objects are mutable: They are addressed by reference, not by value.</p>
-<p>If person is an object, the following statement will not create a copy of person:</p>
+<h2>JavaScript объекты изменяемы (мутабельны)</h2>
+<p>Объекты являются изменяемыми: они адресуются по ссылке, а не по значению.</p>
+<p>Если персона является объектом, следующее утверждение не создаст копию персоны:</p>
 
 <div class="w3-example">
 <div class="w3-code notranslate jsHigh">
-var x = person;&nbsp; // This will not create a copy of person.
+var x = person;&nbsp; // Это не создаст копию персоны.
 </div>
 </div>
 
-<p>The object x is <strong>not a copy</strong> of person. It <strong>is</strong>
-person.
-Both x and person are the same object.</p>
-<p>Any changes to x will also change person, because x and person are the same object. </p>
+<p>Объект x <strong>не является копией</strong> персоны. Он <strong>является</strong> персоной. И x, и персона - это один и тот же объект.</p>
+<p>Любые изменения x также изменят персону, потому что x и персона - это один и тот же объект.</p>
 <div class="w3-example">
-<h3>Example</h3>
+<h3>Пример</h3>
 <div class="w3-code notranslate jsHigh">
 var person = {firstName:&quot;John&quot;, lastName:&quot;Doe&quot;, age:50, eyeColor:&quot;blue&quot;}<br>
  <br>var x = person;<br>
-x.age = 10;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // This will change both x.age and person.age
+x.age = 10;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // Это изменит как x.age так и person.age
 </div>
 <a class="w3-btn w3-margin-bottom" href="tryit53f2.html?filename=tryjs_object_mutable" target="_blank">Попробуйте сами &raquo;</a>
 </div>
+<hr>
 
-
-<br>
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="js_validation_api.html">&#10094; Previous</a>
+<a class="w3-left w3-btn" href="js_validation_api.html">&#10094; Prev</a>
 <a class="w3-right w3-btn" href="js_object_properties.html">Next &#10095;</a>
 </div>
 
@@ -651,7 +644,7 @@ x.age = 10;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // This 
 <script>
 var disqus_config = function () {
 this.page.url = w3schoolsrus.github.io; // канонический URL страницы
-this.page.identifier = w3schoolsrus.github.io / js / js_.html; // уникальный идентификатор страницы
+this.page.identifier = w3schoolsrus.github.io / js / js_object_definition.html; // уникальный идентификатор страницы
 };
 (function() { // Не редактировать ниже этой линии
 var d = document, s = d.createElement('script');
