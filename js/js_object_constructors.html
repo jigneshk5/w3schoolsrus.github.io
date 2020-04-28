@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<title>JavaScript Учебник. Уроки для начинающих. W3Schools на русском</title>
+<title>JavaScript Конструкторы объектов. Уроки для начинающих. W3Schools на русском</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="Keywords" content="JavaScript,js,w3schools,на русском,уроки,для начинающих,курс,язык,программирования,справочник,пример,упражнения,код">
-<meta name="Description" content="Уроки по языку программирования JavaScript для начинающих. Основы. Примеры кода. W3Schools на русском языке">
+<meta name="Keywords" content="JavaScript,js,констуркторы,объектов,строки,числа,логические,булевы,значения,w3schools,на русском,уроки,для начинающих">
+<meta name="Description" content="Способ создания типа объекта заключается в использовании функции конструктора объекта. Ключевое слово this. Добавление к объекту свойства, метода. Добавление свойства и метода в конструктор. Примеры кода. W3Schools на русском языке">
 <link rel="icon" href="../favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="../w3css/4/w3.css">
 </head>
@@ -555,76 +555,66 @@ myMother.changeName(&quot;Doe&quot;);</div>
 <div class="w3-example">
 <h3>Пример</h3>
 <div class="w3-code notranslate jsHigh">
-var x1 = new Object();&nbsp;&nbsp;&nbsp; // A new Object object<br>
-var x2 = new String();&nbsp;&nbsp;&nbsp; // A new String object<br>
-var x3 = new Number();&nbsp;&nbsp;&nbsp; // A new Number object<br>
-var x4 = new Boolean();&nbsp;&nbsp; // A new Boolean object<br>
-var x5 = new Array();&nbsp;&nbsp;&nbsp;&nbsp; // A new Array object<br>
-var x6 = new RegExp();&nbsp;&nbsp;&nbsp; // A new RegExp object<br>
-var x7 = new Function();&nbsp; // A new Function object<br>
-var x8 = new Date();&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // A new Date object
+var x1 = new Object();&nbsp;&nbsp;&nbsp; // Новій объект Object<br>
+var x2 = new String();&nbsp;&nbsp;&nbsp; // Новый объект String<br>
+var x3 = new Number();&nbsp;&nbsp;&nbsp; // Новый объект Number<br>
+var x4 = new Boolean();&nbsp;&nbsp; // Новый объект Boolean<br>
+var x5 = new Array();&nbsp;&nbsp;&nbsp;&nbsp; // Новый объект Array<br>
+var x6 = new RegExp();&nbsp;&nbsp;&nbsp; // Новый объект RegExp<br>
+var x7 = new Function();&nbsp; // Новый объект Function<br>
+var x8 = new Date();&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // Новый объект Date
 </div>
 <a class="w3-btn w3-margin-bottom" href="tryit092f.html?filename=tryjs_object_constructor_builtin" target="_blank">Попробуйте сами &raquo;</a>
 </div>
 
-<p>The <code class="w3-codespan">Math()</code> object is not in the list. <code class="w3-codespan">Math</code> is a global object. The <code class="w3-codespan">new</code> keyword cannot be used on
-<code class="w3-codespan">Math</code>.</p>
-
+<p>Объект <code class="w3-codespan">Math()</code> отсутствует в списке. <code class="w3-codespan">Math</code> является глобальным объектом. Ключевое слово <code class="w3-codespan">new</code> не может использоваться на <code class="w3-codespan">Math</code>.</p>
 <hr>
-<h2>Did You Know?</h2>
-<p>As you can see above, JavaScript has object versions of the primitive
-data types <code class="w3-codespan">String</code>, <code class="w3-codespan">Number</code>, and <code class="w3-codespan">Boolean</code>. But there is no reason to create complex objects. Primitive values
-are much faster.</p>
-<p>ALSO:</p>
-<p>Use object literals <code class="w3-codespan">{}</code> instead of <code class="w3-codespan">new Object()</code>.</p>
-<p>Use string literals <code class="w3-codespan">&quot;&quot;</code> instead of <code class="w3-codespan">new String()</code>.</p>
-<p>Use number literals <code class="w3-codespan">12345</code> instead of <code class="w3-codespan">new Number()</code>.</p>
-<p>Use boolean literals <code class="w3-codespan">true / false</code> instead of <code class="w3-codespan">new Boolean()</code>.</p>
-<p>Use array literals <code class="w3-codespan">[]</code> instead of <code class="w3-codespan">new Array()</code>.</p>
-<p>Use pattern literals <code class="w3-codespan">/()/</code> instead of <code class="w3-codespan">new RegExp()</code>.</p>
-<p>Use function expressions <code class="w3-codespan">() {}</code> instead of <code class="w3-codespan">new Function()</code>.</p>
+
+<h2>Знаете ли вы?</h2>
+<p>Как вы можете видеть выше, в JavaScript есть объектные версии примитивных типов данных <code class="w3-codespan">String</code>, <code class="w3-codespan">Number</code> и <code class="w3-codespan">Boolean</code>. Но нет причин создавать сложные объекты. Примитивные значения намного быстрее.</p>
+<p>ТАКЖЕ:</p>
+<p>Используйте объектные (object) литералы <code class="w3-codespan">{}</code> вместо <code class="w3-codespan">new Object()</code>.</p>
+<p>Используйте строковые (string) литералы <code class="w3-codespan">&quot;&quot;</code> вместо <code class="w3-codespan">new String()</code>.</p>
+<p>Используйте числовые (number) литералы <code class="w3-codespan">12345</code> вместо <code class="w3-codespan">new Number()</code>.</p>
+<p>Используйте логические (boolean) литералы <code class="w3-codespan">true / false</code> вместо <code class="w3-codespan">new Boolean()</code>.</p>
+<p>Используйте литералы массива (array) <code class="w3-codespan">[]</code> вместо <code class="w3-codespan">new Array()</code>.</p>
+<p>Используйте шаблонные (pattern) литералы <code class="w3-codespan">/()/</code> вместо <code class="w3-codespan">new RegExp()</code>.</p>
+<p>Используйте выражения функций (function) <code class="w3-codespan">() {}</code> вместо <code class="w3-codespan">new Function()</code>.</p>
 <div class="w3-example">
 <h3>Пример</h3>
 <div class="w3-code notranslate jsHigh">
-var x1 = {};&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // new object<br>
-var x2 = &quot;&quot;;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // new primitive string<br>
-var x3 = 0;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // new primitive number<br>
-var x4 = false;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // new primitive boolean<br>
-var x5 = [];&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // new array object<br>
-var x6 = /()/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // new regexp object<br>
-var x7 = function(){};&nbsp;&nbsp;// new function object</div>
+var x1 = {};&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // новый объект<br>
+var x2 = &quot;&quot;;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // новая примитивная строка<br>
+var x3 = 0;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // новое примитивное число<br>
+var x4 = false;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // новый примитивный boolean<br>
+var x5 = [];&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // новый объект массива<br>
+var x6 = /()/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // новый объект регулярного выражения<br>
+var x7 = function(){};&nbsp;&nbsp;// новый объект функции</div>
 <a class="w3-btn w3-margin-bottom" href="tryitf533.html?filename=tryjs_object_constructor_builtin1" target="_blank">Попробуйте сами &raquo;</a>
 </div>
-
 <hr>
 
-<h2>String Objects</h2>
-<p>Normally, strings are created as primitives: <code class="w3-codespan">var firstName = &quot;John&quot;</code></p>
-<p>But strings can also be created as objects using the <code class="w3-codespan">new</code> keyword: <code class="w3-codespan">var
-firstName = new
-String(&quot;John&quot;)</code></p>
-<p>Learn why strings should not be created as object in the chapter
-<a href="js_strings.html">JS Strings</a>. </p>
+<h2>Строковые объекты - String</h2>
+<p>Обычно строки создаются как примитивы: <code class="w3-codespan">var firstName = &quot;John&quot;</code></p>
+<p>Но строки также можно создавать как объекты, используя ключевое слово <code class="w3-codespan">new</code>:
+<code class="w3-codespan">var firstName = new String(&quot;John&quot;)</code></p>
+<p>Узнайте, почему строки не должны быть созданы как объект в главе <a href="js_strings.html">JS Строки</a> на нашем сайте.</p>
 <hr>
 
-<h2>Number Objects</h2>
-<p>Normally, numbers are created as primitives: <code class="w3-codespan">var x = 123</code></p>
-<p>But numbers can also be created as objects using the <code class="w3-codespan">new</code> keyword: <code class="w3-codespan">var x = new
-Number(123)</code></p>
-<p>Learn why numbers should not be created as object in the chapter
-<a href="js_numbers.html">JS Numbers</a>. </p>
+<h2>Числовые объекты - Number</h2>
+<p>Обычно числа создаются как примитивы: <code class="w3-codespan">var x = 123</code></p>
+<p>Но числа также можно создавать как объекты, используя ключевое слово <code class="w3-codespan">new</code>:
+<code class="w3-codespan">var x = new Number(123)</code></p>
+<p>Узнайте, почему числа не должны быть созданы как объект в главе
+<a href="js_numbers.html">JS Числа</a>.</p>
 <hr>
 
-<h2>Boolean Objects</h2>
-<p>Normally, booleans are created as primitives: <code class="w3-codespan">var x =
-false</code></p>
-<p>But booleans can also be created as objects using the <code class="w3-codespan">new</code> keyword: <code class="w3-codespan">var x = new
-Boolean(false)</code></p>
-<p>Learn why booleans should not be created as object in the chapter
-<a href="js_booleans.html">JS Booleans</a>. </p>
+<h2>Логические объекты - Boolean</h2>
+<p>Обычно логические (булевы) значения создаются как примитивы: <code class="w3-codespan">var x = false</code></p>
+<p>Но логические значения также можно создавать как объекты, используя ключевое слово <code class="w3-codespan">new</code>: <code class="w3-codespan">var x = new Boolean(false)</code></p>
+<p>Узнайте, почему логические значения не должны создаваться как объекты, в главе <a href="js_booleans.html">JS Булевы</a>. </p>
 
-
-<br>
+<hr>
 <div class="w3-clear nextprev">
   <a class="w3-left w3-btn" href="js_object_accessors.html">&#10094; Prev</a>
   <a class="w3-right w3-btn" href="js_object_prototypes.html">Next &#10095;</a>
@@ -637,7 +627,7 @@ Boolean(false)</code></p>
 <script>
 var disqus_config = function () {
 this.page.url = w3schoolsrus.github.io; // канонический URL страницы
-this.page.identifier = w3schoolsrus.github.io / js / js_.html; // уникальный идентификатор страницы
+this.page.identifier = w3schoolsrus.github.io / js / js_object_constructors.html; // уникальный идентификатор страницы
 };
 (function() { // Не редактировать ниже этой линии
 var d = document, s = d.createElement('script');
