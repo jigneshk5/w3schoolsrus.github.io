@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<title>JavaScript Учебник. Уроки для начинающих. W3Schools на русском</title>
+<title>JavaScript ES5 Методы объекта. Уроки для начинающих. W3Schools на русском</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="Keywords" content="JavaScript,js,w3schools,на русском,уроки,для начинающих,курс,язык,программирования,справочник,пример,упражнения,код">
-<meta name="Description" content="Уроки по языку программирования JavaScript для начинающих. Основы. Примеры кода. W3Schools на русском языке">
+<meta name="Keywords" content="JavaScript,js,методы,объекта,w3schools,на русском,уроки,для начинающих,курс,язык,программирования,справочник,пример,упражнения,код">
+<meta name="Description" content="ECMAScript 5 добавил много новых методов объекта в JavaScript. Изменение значения свойства, метаданных. Возможность заменять геттеры и сеттеры. Добавление свойства, геттеров и сеттеров. Уроки онлайн W3Schools на русском языке">
 <link rel="icon" href="../favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="../w3css/4/w3.css">
 </head>
@@ -472,22 +472,22 @@ enumerable : false&nbsp;&nbsp; // Свойство может быть не пе
 configurable : false // Свойство может быть не перенастроено
 </div>
 </div>
-<p>ES5 allows getters and setters to be changed:</p>
+<p>ES5 позволяет заменять геттеры и сеттеры:</p>
 <div class="w3-example">
 <div class="w3-code notranslate jsHigh">
-// Defining a getter<br>
+// Определение геттера<br>
 get: function() { return language }<br>
-// Defining a setter<br>
+// Определение сеттера<br>
 set: function(value) { language = value }
 </div>
 </div>
-<p>This example makes language read-only:</p>
+<p>Этот пример делает язык (language) только для чтения:</p>
 <div class="w3-example">
 <div class="w3-code notranslate jsHigh">
 Object.defineProperty(person, "language", {writable:false});
 </div>
 </div>
-<p>This example makes language not enumerable:</p>
+<p>Этот пример делает язык (language) не перечисляемым:</p>
 <div class="w3-example">
 <div class="w3-code notranslate jsHigh">
 Object.defineProperty(person, "language", {enumerable:false});
@@ -495,72 +495,61 @@ Object.defineProperty(person, "language", {enumerable:false});
 </div>
 <hr>
 
-<h2>Listing All Properties</h2>
-<p>This example list all properties of an object:</p>
+<h2>Список всех свойств</h2>
+<p>Этот пример перечисляет все свойства объекта:</p>
 <div class="w3-example">
-<h3>Example</h3>
+<h3>Пример</h3>
 <div class="w3-code notranslate jsHigh">
   var person = {<br>&nbsp; firstName: &quot;John&quot;,<br>&nbsp;
   lastName : &quot;Doe&quot;<br>&nbsp; language : &quot;EN&quot; <br>};<br><br>
-  Object.defineProperty(person, &quot;language&quot;, {enumerable:false});<br>Object.getOwnPropertyNames(person);&nbsp; // Returns an array of
-  properties</div>
-  <a class="w3-btn w3-margin-bottom" href="tryitb3f6.html?filename=tryjs_object_es5_2" target="_blank">Try it Yourself &raquo;</a>
+  Object.defineProperty(person, &quot;language&quot;, {enumerable:false});<br>Object.getOwnPropertyNames(person);&nbsp; // Возвращает массив свойств</div>
+  <a class="w3-btn w3-margin-bottom" href="tryitb3f6.html?filename=tryjs_object_es5_2" target="_blank">Попробуйте сами &raquo;</a>
 </div>
-
 <hr>
-<h2>Listing Enumerable Properties</h2>
-<p>This example list only the enumerable properties of an object:</p>
+
+<h2>Перечисление перечислимых свойств</h2>
+<p>В этом примере перечислены только перечисляемые свойства объекта:</p>
 <div class="w3-example">
-<h3>Example</h3>
+<h3>Пример</h3>
 <div class="w3-code notranslate jsHigh">
   var person = {<br>&nbsp;&nbsp;firstName: &quot;John&quot;,<br>&nbsp;
   lastName : &quot;Doe&quot;<br>&nbsp;&nbsp;language : &quot;EN&quot; <br>};<br><br>
-  Object.defineProperty(person, &quot;language&quot;, {enumerable:false});<br>Object.keys(person);&nbsp; // Returns an array
-  of enumerable
-  properties</div>
-  <a class="w3-btn w3-margin-bottom" href="tryit7285.html?filename=tryjs_object_es5_4" target="_blank">Try it Yourself &raquo;</a>
+  Object.defineProperty(person, &quot;language&quot;, {enumerable:false});<br>Object.keys(person);&nbsp; // Возвращает массив перечислимых свойств</div>
+  <a class="w3-btn w3-margin-bottom" href="tryit7285.html?filename=tryjs_object_es5_4" target="_blank">Попробуйте сами &raquo;</a>
 </div>
-
 <hr>
 
-<h2>Adding a Property</h2>
-<p>This example adds a new property to an object:</p>
+<h2>Добавление свойства</h2>
+<p>Этот пример добавляет новое свойство к объекту:</p>
 <div class="w3-example">
-<h3>Example</h3>
+<h3>Пример</h3>
 <div class="w3-code notranslate jsHigh">
-  // Create an object:<br>var person = {<br>&nbsp;&nbsp;firstName: &quot;John&quot;,<br>&nbsp;&nbsp;lastName :
-  &quot;Doe&quot;,<br>&nbsp; language : &quot;EN&quot;<br>};<br><br>// Add a property<br>Object.defineProperty(person, &quot;year&quot;,
+  // Создать объект:<br>var person = {<br>&nbsp;&nbsp;firstName: &quot;John&quot;,<br>&nbsp;&nbsp;lastName :
+  &quot;Doe&quot;,<br>&nbsp; language : &quot;EN&quot;<br>};<br><br>// Добавить свойство<br>Object.defineProperty(person, &quot;year&quot;,
   {value:&quot;2008&quot;});</div>
-  <a class="w3-btn w3-margin-bottom" href="tryit51f6.html?filename=tryjs_object_es5_1" target="_blank">Try it Yourself &raquo;</a>
+  <a class="w3-btn w3-margin-bottom" href="tryit51f6.html?filename=tryjs_object_es5_1" target="_blank">Попробуйте сами &raquo;</a>
 </div>
-
-
-
 <hr>
 
-<h2>Adding Getters and Setters</h2>
-<p>The <code class="w3-codespan">Object.defineProperty()</code> method can also be used to add Getters and
-Setters:</p>
+<h2>Добавление геттеров и сеттеров</h2>
+<p>Метод <code class="w3-codespan">Object.defineProperty()</code> также может быть использован для добавления геттеров и сеттеров:</p>
 <div class="w3-example">
-<h3>Example</h3>
+<h3>Пример</h3>
 <div class="w3-code notranslate jsHigh">
-  //Create an object<br>var person = {firstName:&quot;John&quot;, lastName:&quot;Doe&quot;};<br><br>
-  // Define a getter<br>Object.defineProperty(person, &quot;fullName&quot;, {<br>&nbsp;&nbsp;get :
+  //Создать объект<br>var person = {firstName:&quot;John&quot;, lastName:&quot;Doe&quot;};<br><br>
+  //Определить геттер<br>Object.defineProperty(person, &quot;fullName&quot;, {<br>&nbsp;&nbsp;get :
   function () {return this.firstName + &quot; &quot; + this.lastName;}<br>});</div>
-  <a class="w3-btn w3-margin-bottom" href="tryit36b0.html?filename=tryjs_object_es5_6" target="_blank">Try it Yourself &raquo;</a>
+  <a class="w3-btn w3-margin-bottom" href="tryit36b0.html?filename=tryjs_object_es5_6" target="_blank">Попробуйте сами &raquo;</a>
 </div>
-
-
-
 <hr>
 
-<h2>A Counter Example</h2>
+<h2>Пример счетчика</h2>
 <div class="w3-example">
-<h3>Example</h3>
+<h3>Пример</h3>
 <div class="w3-code notranslate jsHigh">
-// Define object<br>
+// Определить объект<br>
 var obj = {counter:0};<br><br>
-// Define setters<br>
+// Определить сеттеры<br>
 Object.defineProperty(obj, &quot;reset&quot;, {<br>
 &nbsp;&nbsp;get : function () {this.counter = 0;}<br>});<br>
 Object.defineProperty(obj, &quot;increment&quot;, {<br>
@@ -571,21 +560,19 @@ Object.defineProperty(obj, &quot;add&quot;, {<br>
 &nbsp;&nbsp;set : function (value) {this.counter += value;}<br>});<br>
 Object.defineProperty(obj, &quot;subtract&quot;, {<br>
 &nbsp;&nbsp;set : function (i) {this.counter -= i;}<br>});<br><br>
-// Play with the counter:<br>
+// Воспроизвести со счетчиком:<br>
 obj.reset;<br>
 obj.add = 5;<br>
 obj.subtract = 1;<br>
 obj.increment;<br>
 obj.decrement;<br>
 </div>
-  <a class="w3-btn w3-margin-bottom" href="tryit34d0.html?filename=tryjs_object_es5_5" target="_blank">Try it Yourself &raquo;</a>
+  <a class="w3-btn w3-margin-bottom" href="tryit34d0.html?filename=tryjs_object_es5_5" target="_blank">Попробуйте сами &raquo;</a>
 </div>
 
-
-
-<br>
+<hr>
 <div class="w3-clear nextprev">
-  <a class="w3-left w3-btn" href="js_object_prototypes.html">&#10094; Previous</a>
+  <a class="w3-left w3-btn" href="js_object_prototypes.html">&#10094; Prev</a>
 <a class="w3-right w3-btn" href="js_function_definition.html">Next &#10095;</a>
 </div>
 
@@ -596,7 +583,7 @@ obj.decrement;<br>
 <script>
 var disqus_config = function () {
 this.page.url = w3schoolsrus.github.io; // канонический URL страницы
-this.page.identifier = w3schoolsrus.github.io / js / js_.html; // уникальный идентификатор страницы
+this.page.identifier = w3schoolsrus.github.io / js / js_object_es5.html; // уникальный идентификатор страницы
 };
 (function() { // Не редактировать ниже этой линии
 var d = document, s = d.createElement('script');
