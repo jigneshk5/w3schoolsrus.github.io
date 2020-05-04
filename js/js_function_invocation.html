@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<title>JavaScript Учебник. Уроки для начинающих. W3Schools на русском</title>
+<title>JavaScript Обращение к функции | Вызов. Уроки для начинающих. W3Schools на русском</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="Keywords" content="JavaScript,js,w3schools,на русском,уроки,для начинающих,курс,язык,программирования,справочник,пример,упражнения,код">
-<meta name="Description" content="Уроки по языку программирования JavaScript для начинающих. Основы. Примеры кода. W3Schools на русском языке">
+<meta name="Keywords" content="JavaScript,js,обращение,применение,вызов,функции,w3schools,на русском,уроки,для начинающих,курс,язык,программирования,справочник,пример,упражнения,код">
+<meta name="Description" content="Обращение к JavaScript функции. Обычно используется термин call a function (вызов функции) вместо invoke a function (обращение к функции). Ключевое слово this. Бесплатные уроки W3Schools онлайн на русском языке">
 <link rel="icon" href="../favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="../w3css/4/w3.css">
 </head>
@@ -450,27 +450,24 @@ function myFunction(a, b) {<br>
 <hr>
 
 <h2>Ключевое слово <em><strong>this</strong></em></h2>
-<p>In JavaScript, the thing called <code class="w3-codespan">this</code>, is the object that
-&quot;owns&quot; the current code.</p>
-<p>The value of <code class="w3-codespan">this</code>, when used in a function, is the object that &quot;owns&quot; the function. </p>
+<p>В JavaScript то, что называется <code class="w3-codespan">this</code>, является объектом, который &quot;владеет&quot; текущим кодом.</p>
+<p>Значение <code class="w3-codespan">this</code>, когда используется в функции, является объектом, который &quot;владеет&quot; функцией.</p>
 
 <div class="w3-panel w3-note">
-<p>Note that <code class="w3-codespan">this</code> is not a variable.
-It is a keyword. You cannot change the value of <code class="w3-codespan">this</code>.</p>
-<p><strong>Tip:</strong> Read more about the <code class="w3-codespan">this</code> keyword at <a href="js_this.html">JS this Keyword</a>.</p>
+<p>Обратите внимание, что <code class="w3-codespan">this</code> не является переменной. Это ключевое слово. Вы не можете изменить значение <code class="w3-codespan">this</code>.</p>
+<p><strong>Подсказка:</strong> Вы можете прочитать больше про ключевое слово <code class="w3-codespan">this</code> в разделе <a href="js_this.html">JS Ключевое слово this</a> на нашем сайте.</p>
 </div>
-
 <hr>
-<h2>The Global Object</h2>
-<p>When a function is called without an owner object, the value of <code class="w3-codespan">this</code>
-becomes the global object.</p>
-<p>In a web browser the global object is the browser window.</p>
-<p>This example returns the window object as the value of <code class="w3-codespan">this</code>:</p>
+
+<h2>Глобальный объект</h2>
+<p>Когда функция вызывается без объекта-владельца, значение <code class="w3-codespan">this</code> становится глобальным объектом.</p>
+<p>В веб-браузере глобальный объект - это окно браузера.</p>
+<p>Этот пример возвращает объект окна как значение <code class="w3-codespan">this</code>:</p>
 <div class="w3-example">
-<h3>Example</h3>
+<h3>Пример</h3>
 <div class="w3-code notranslate jsHigh">
 var x = myFunction();
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // x will be the window object<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // x будет объектом окна<br><br>
 function myFunction() {<br>
 &nbsp;&nbsp;return this;<br>
 }<br>
@@ -479,18 +476,15 @@ function myFunction() {<br>
 </div>
 
 <div class="w3-panel w3-note">
-<p>Invoking a function as a global function, causes the value of <strong>this</strong> to be the global object.<br>
-Using the window object as a variable can easily crash your program.</p>
+<p>Обращение к функции как к глобальной функции приводит к тому, что значение <strong>this</strong> будет глобальным объектом.<br>Использование объекта окна в качестве переменной может легко привести к краху вашей программы.</p>
 </div>
-
 <hr>
-<h2>Invoking a Function as a Method</h2>
-<p>In JavaScript you can define functions as object methods.</p>
-<p>The following example creates an object (<strong>myObject</strong>), with two
-properties (<strong>firstName</strong> and <strong>lastName</strong>), and a
-method (<strong>fullName</strong>):</p>
+
+<h2>Вызов функции как метода</h2>
+<p>В JavaScript вы можете определить функции как методы объекта.</p>
+<p>В следующем примере создается объект (<strong>myObject</strong>), с двумя свойствами (<strong>firstName</strong> и <strong>lastName</strong>), и методом (<strong>fullName</strong>):</p>
 <div class="w3-example">
-<h3>Example</h3>
+<h3>Пример</h3>
 <div class="w3-code notranslate jsHigh">
 var myObject = {<br>
 &nbsp;&nbsp;firstName:&quot;John&quot;,<br>
@@ -499,65 +493,61 @@ var myObject = {<br>
 &nbsp; &nbsp; return this.firstName + &quot; &quot; + this.lastName;<br>
   &nbsp;&nbsp;}<br>
 }<br>
-myObject.fullName();&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // Will return &quot;John Doe&quot;
+myObject.fullName();&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // Вернёт &quot;John Doe&quot;
 </div>
 <a class="w3-btn w3-margin-bottom" href="tryit9add.html?filename=tryjs_invoke_method" target="_blank">Попробуйте сами &raquo;</a>
 </div>
-<p>The <strong>fullName</strong> method is a function. The function belongs to
-the object. <strong>myObject</strong> is the owner of the function.</p>
-<p>The thing called <code class="w3-codespan">this</code>, is the object that
-&quot;owns&quot; the JavaScript code. In this case the value of <code class="w3-codespan">this</code>
-is <strong>myObject</strong>. </p>
-<p>Test it! Change the <strong>fullName</strong> method to return the value of <code class="w3-codespan">this</code>:</p>
+<p>Метод <strong>fullName</strong> является функцией. Функция принадлежит объекту. <strong>myObject</strong> является владельцем функции.</p>
+<p>То, что называется <code class="w3-codespan">this</code>, является объектом, который
+&quot;владеет&quot; JavaScript кодом. В этом случае значение этого <code class="w3-codespan">this</code>
+является <strong>myObject</strong>.</p>
+<p>Попробуйте это! Измените метод <strong>fullName</strong> для возврата значения <code class="w3-codespan">this</code>:</p>
 <div class="w3-example">
-<h3>Example</h3>
+<h3>Пример</h3>
 <div class="w3-code notranslate jsHigh">
 var myObject = {<br>&nbsp; firstName:&quot;John&quot;,<br>
   &nbsp; lastName: &quot;Doe&quot;,<br>
   &nbsp; fullName: function () {<br>
   &nbsp; &nbsp; return this;<br>
   &nbsp;&nbsp;}<br>}<br>
-myObject.fullName();&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // Will return [object Object] (the owner object)
+myObject.fullName();&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // Вернёт [объект Object] (владелец объекта)
 </div>
 <a class="w3-btn w3-margin-bottom" href="tryit8b8d.html?filename=tryjs_invoke_method_2" target="_blank">Попробуйте сами &raquo;</a>
 </div>
 
 <div class="w3-panel w3-note">
-<p>Invoking a function as an object method, causes the value of <code class="w3-codespan">this</code>
-to be the object itself.</p>
+<p>Вызов функции как метода объекта приводит к тому, что значением <code class="w3-codespan">this</code>
+является сам объект.</p>
 </div>
-
 <hr>
-<h2>Invoking a Function with a Function Constructor</h2>
-<p>If a function invocation is preceded with the <code class="w3-codespan">new</code> keyword,
-it is a constructor invocation.</p>
-<p>It looks like you create a new function, but since JavaScript functions are
-objects you actually create a new object:</p>
+
+<h2>Вызов функции с помощью конструктора функций</h2>
+<p>Если вызову функции предшествует ключевое слово <code class="w3-codespan">new</code> - это вызов конструктора.</p>
+<p>Похоже на то, как вы создаете новую функцию, но поскольку функции JavaScript являются объектами, вы фактически создаёте новый объект:</p>
 <div class="w3-example">
-<h3>Example</h3>
+<h3>Пример</h3>
 <div class="w3-code notranslate jsHigh">
-// This is a function constructor:<br>function myFunction(arg1, arg2) {<br>
+// Это конструктор функции:<br>function myFunction(arg1, arg2) {<br>
   &nbsp; this.firstName = arg1;<br>
 &nbsp;&nbsp;this.lastName&nbsp; = arg2;<br>
 }<br>
 <br>
-// This creates a new object<br>
+// Это создаёт новый объект<br>
 var x = new myFunction(&quot;John&quot;, &quot;Doe&quot;);<br>
 x.firstName;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-// Will return &quot;John&quot;
+// вернёт &quot;John&quot;
 </div>
 <a class="w3-btn w3-margin-bottom" href="tryitf29d.html?filename=tryjs_invoke_constructor" target="_blank">Попробуйте сами &raquo;</a>
 </div>
 
-<p>A constructor invocation creates a new object. The new object inherits the
-properties and methods from its constructor. </p>
+<p>Вызов конструктора создает новый объект. Новый объект наследует свойства и методы от своего конструктора.</p>
 
 <div class="w3-panel w3-note">
-<p>The <code class="w3-codespan">this</code> keyword in the constructor does not have a value.<br>
-The value of <code class="w3-codespan">this</code> will be the new object created when the function is invoked.</p>
+<p>Ключевое слово <code class="w3-codespan">this</code> в конструкторе не имеет значения.<br>
+Значение <code class="w3-codespan">this</code> будет новым объектом, созданным при вызове функции.</p>
 </div>
 
-<br>
+<hr>
 <div class="w3-clear nextprev">
 <a class="w3-left w3-btn" href="js_function_parameters.html">&#10094; Prev</a>
 	<a class="w3-right w3-btn" href="js_function_call.html">Next &#10095;</a>
@@ -570,7 +560,7 @@ The value of <code class="w3-codespan">this</code> will be the new object create
 <script>
 var disqus_config = function () {
 this.page.url = w3schoolsrus.github.io; // канонический URL страницы
-this.page.identifier = w3schoolsrus.github.io / js / js_.html; // уникальный идентификатор страницы
+this.page.identifier = w3schoolsrus.github.io / js / js_function_invocation.html; // уникальный идентификатор страницы
 };
 (function() { // Не редактировать ниже этой линии
 var d = document, s = d.createElement('script');
