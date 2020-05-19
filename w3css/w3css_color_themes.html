@@ -2,9 +2,9 @@
 <!DOCTYPE html>
 <html lang="en-US">
 
-<!-- Mirrored from www.w3schools.com/w3css/w3css_pagination.asp by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 05 May 2020 11:00:41 GMT -->
+<!-- Mirrored from www.w3schools.com/w3css/w3css_color_themes.asp by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 05 May 2020 11:02:37 GMT -->
 <head>
-<title>W3.CSS Pagination</title>
+<title>W3.CSS Color Themes</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="Keywords" content="HTML,CSS,JavaScript,SQL,PHP,jQuery,XML,DOM,Bootstrap,Python,Java,Web development,W3C,tutorials,programming,training,learning,quiz,primer,lessons,references,examples,exercises,source code,colors,demos,tips">
@@ -621,7 +621,13 @@ function w3_getStyleValue(elmnt,style) {
   }
 }
 </script>
+<script src="../lib/w3color.js"></script>
 <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.w3-third a{text-decoration:none}
+.palette td{padding:10px;border-bottom:1px solid white}
+.palette {font-family:monospace;font-size:16px;border:1px solid #ccc;width:100%}
+</style>
 </head>
 <body>
 <div class='w3-container top'>
@@ -932,98 +938,179 @@ function w3_getStyleValue(elmnt,style) {
         <!-- adspace leaderboard -->
        
       </div>
-<h1>W3.CSS <span class="color_h1">Pagination</span></h1>
+<h1>W3.CSS <span class="color_h1">Color Themes</span></h1>
 
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="w3css_tabulators.html">&#10094; Previous</a>
-<a class="w3-right w3-btn" href="w3css_progressbar.html">Next &#10095;</a>
+    <a class="w3-left w3-btn" href="w3css_color_schemes.html">&#10094; Previous</a>
+	<a class="w3-right w3-btn" href="w3css_color_generator.html">Next &#10095;</a>
 </div>
-<hr>
 
-<div class="w3-bar">
-  <a href="javascript:void(0)" class="w3-bar-item w3-button">&laquo;</a>
-  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-red" >1</a>
-  <a href="javascript:void(0)" class="w3-bar-item w3-button">2</a>
-  <a href="javascript:void(0)" class="w3-bar-item w3-button">3</a>
-  <a href="javascript:void(0)" class="w3-bar-item w3-button">4</a>
-  <a href="javascript:void(0)" class="w3-bar-item w3-button">5</a>
-  <a href="javascript:void(0)" class="w3-bar-item w3-button">6</a>
-  <a href="javascript:void(0)" class="w3-bar-item w3-button">&raquo;</a>
+<hr>
+<h2>Color Themes</h2>
+<p>With W3.CSS, it is easy to customize your applications with color themes.</p>
+
+<div class="w3-row-padding" style="margin:0 -16px">
+<div class="w3-half">
+<div class="w3-card-4">
+  <div class="w3-container w3-card-4" style="background-color:#265728;color:white">
+    <h3>Movies 2014</h3>
+  </div>
+  <ul class="w3-ul"  style="background-color:#dbefdc">
+    <li>
+      <h4>Frozen</h4>
+      <p>The response to the animations was ridiculous</p>
+    </li>
+    <li style="background-color:#b7dfb8">
+      <h4>The Fault in Our Stars</h4>
+      <p>Touching, gripping and genuinely well made</p>
+    </li>
+    <li>
+      <h4>The Avengers</h4>
+      <p>A huge success for Marvel and Disney</p>
+    </li>
+  </ul>
+  <div class="w3-container w3-xlarge" style="background-color:#3d8b40;color:white">
+    &laquo;<span class="w3-right">&raquo;</span>
+  </div>
 </div>
-<hr>
+</div>
+<div class="w3-half">
+<div class="w3-card-4">
+  <div class="w3-container w3-card-4" style="background-color:#303030;color:white">
+    <h3>Movies 2014</h3>
+  </div>
+  <ul class="w3-ul" style="background-color:#dfdfdf">
+    <li>
+      <h4>Frozen</h4>
+      <p>The response to the animations was ridiculous</p>
+    </li>
+    <li style="background-color:#c0c0c0">
+      <h4>The Fault in Our Stars</h4>
+      <p>Touching, gripping and genuinely well made</p>
+    </li>
+    <li>
+      <h4>The Avengers</h4>
+      <p>A huge success for Marvel and Disney</p>
+    </li>
+  </ul>
+  <div class="w3-container w3-dark-grey w3-xlarge">
+    &laquo;<span class="w3-right">&raquo;</span>
+  </div>
+</div>
+</div>
+</div>
 
-<h2>Basic Pagination</h2>
-
-<p>If you have a web site with many pages, you may want to use some sort of pagination.</p>
-
-
-<p>To create a basic pagination, use buttons (<strong>w3-button</strong>) in a 
-bar (<strong>w3-bar</strong>).</p>
+<p>All you have to do is add a link to a predefined (or home made) theme:</p>
 
 <div class="w3-example">
-<h3>Example</h3>
+ <h3>Example</h3>
 <div class="w3-code notranslate htmlHigh">
-  &lt;div class=&quot;w3-bar&quot;&gt;<br>&nbsp; &lt;a href=&quot;#&quot; class=&quot;w3-button&quot;&gt;1&lt;/a&gt;<br>&nbsp; 
-  &lt;a href=&quot;#&quot; class=&quot;w3-button&quot;&gt;2&lt;/a&gt;<br>&nbsp; &lt;a href=&quot;#&quot; 
-  class=&quot;w3-button&quot;&gt;3&lt;/a&gt;<br>&nbsp; &lt;a href=&quot;#&quot; class=&quot;w3-button&quot;&gt;4&lt;/a&gt;<br>&nbsp; 
-  &lt;a href=&quot;#&quot; class=&quot;w3-button&quot;&gt;5&lt;/a&gt;<br>&lt;/div&gt;
-</div>
+ &lt;link rel="stylesheet" 
+href="https://www.w3schools.com/w3css/4/w3.css"&gt;<br>&lt;link rel="stylesheet" 
+href="<strong>https://www.w3schools.com/lib/w3-theme-indigo.css</strong>"&gt;</div>
 <p>
-<a class="w3-btn" href="tryit1014.html?filename=tryw3css_pagination" target="_blank">Try It Yourself &raquo;</a>
+<a class="w3-btn" href="tryite419.html?filename=tryw3css_theme_indigo" target="_blank">Try It Yourself &raquo;</a>
 </p>
 </div>
 
-<p>To remove the space between the buttons add a <strong>w3-bar-item</strong> 
-class:</p>
-
-<div class="w3-example">
-<h3>Example</h3>
-<div class="w3-code notranslate htmlHigh">
-&lt;div class=&quot;w3-bar&quot;&gt;<br>
-&nbsp; &lt;a href=&quot;#&quot; class=&quot;w3-button&quot;&gt;&amp;laquo;&lt;/a&gt;<br>
-&nbsp; &lt;a href=&quot;#&quot; class=&quot;w3-button&quot;&gt;1&lt;/a&gt;<br>
-&nbsp; &lt;a href=&quot;#&quot; class=&quot;w3-button&quot;&gt;2&lt;/a&gt;<br>
-&nbsp; &lt;a href=&quot;#&quot; class=&quot;w3-button&quot;&gt;3&lt;/a&gt;<br>
-&nbsp; &lt;a href=&quot;#&quot; class=&quot;w3-button&quot;&gt;4&lt;/a&gt;<br>
-&nbsp; &lt;a href=&quot;#&quot; class=&quot;w3-button&quot;&gt;5&lt;/a&gt;<br>
-&nbsp; &lt;a href=&quot;#&quot; class=&quot;w3-button&quot;&gt;&amp;raquo;&lt;/a&gt;<br>
-&lt;/div&gt;
-</div>
-<p>
-<a class="w3-btn" href="tryitef90.html?filename=tryw3css_pagination_items" target="_blank">Try It Yourself &raquo;</a>
-</p>
-</div>
 <hr>
+<h2>Predefined Themes</h2>
+<p>These are the predefined themes in W3.CSS:</p>
 
-<h2>Pagination Arrows</h2>
-<p>Use HTML entities or icons from an icon library to add pagination arrows:</p>
-
-<div class="w3-bar">
-  <a href="javascript:void(0)" class="w3-button">&laquo;</a>
-  <a href="javascript:void(0)" class="w3-button">1</a>
-  <a href="javascript:void(0)" class="w3-button">2</a>
-  <a href="javascript:void(0)" class="w3-button">3</a>
-  <a href="javascript:void(0)" class="w3-button">4</a>
-  <a href="javascript:void(0)" class="w3-button">&raquo;</a>
-</div>
-
-<div class="w3-example">
-<h3>Example</h3>
-<div class="w3-code notranslate htmlHigh">
-&lt;div class=&quot;w3-bar&quot;&gt;<br>
-&nbsp; &lt;a href=&quot;#&quot; class=&quot;w3-button&quot;&gt;&amp;laquo;&lt;/a&gt;<br>
-&nbsp; &lt;a href=&quot;#&quot; class=&quot;w3-button&quot;&gt;1&lt;/a&gt;<br>
-&nbsp; &lt;a href=&quot;#&quot; class=&quot;w3-button&quot;&gt;2&lt;/a&gt;<br>
-&nbsp; &lt;a href=&quot;#&quot; class=&quot;w3-button&quot;&gt;3&lt;/a&gt;<br>
-&nbsp; &lt;a href=&quot;#&quot; class=&quot;w3-button&quot;&gt;4&lt;/a&gt;<br>
-&nbsp; &lt;a href=&quot;#&quot; class=&quot;w3-button&quot;&gt;5&lt;/a&gt;<br>
-&nbsp; &lt;a href=&quot;#&quot; class=&quot;w3-button&quot;&gt;&amp;raquo;&lt;/a&gt;<br>
-&lt;/div&gt;
-</div>
-<p>
-<a class="w3-btn" href="tryitb745.html?filename=tryw3css_pagination_arrows" target="_blank">Try It Yourself &raquo;</a>
-</p>
-</div>
+<table class="w3-table w3-bordered w3-border w3-large">
+ <tr>
+  <td class="w3-text-red">w3-theme-red</td>
+  <td width="10"><a target="_blank" class="w3-btn w3-medium w3-right w3-red" href="tryit3206.html?filename=tryw3css_theme_red">Try it</a></td>
+ </tr>
+ <tr>
+  <td class="w3-text-pink">w3-theme-pink</td>
+  <td><a target="_blank" class="w3-btn w3-medium w3-right w3-pink" href="tryita4c8.html?filename=tryw3css_theme_pink">Try it</a></td>
+ </tr>
+ <tr>
+  <td class="w3-text-purple">w3-theme-purple</td>
+  <td><a target="_blank" class="w3-btn w3-medium w3-right w3-purple" href="tryit5a42.html?filename=tryw3css_theme_purple">Try it</a></td>
+ </tr>
+ <tr>
+  <td class="w3-text-deep-purple">w3-theme-deep-purple</td>
+  <td><a target="_blank" class="w3-btn w3-medium w3-right w3-deep-purple" href="tryit275d.html?filename=tryw3css_theme_deep-purple">Try it</a></td>
+ </tr>
+ <tr>
+  <td class="w3-text-indigo">w3-theme-indigo</td>
+  <td><a target="_blank" class="w3-btn w3-medium w3-right w3-indigo" href="tryite419.html?filename=tryw3css_theme_indigo">Try it</a></td>
+ </tr>
+ <tr>
+  <td class="w3-text-blue">w3-theme-blue</td>
+  <td><a target="_blank" class="w3-btn w3-medium w3-right w3-blue" href="tryit2412.html?filename=tryw3css_theme_blue">Try it</a></td>
+ </tr>
+ <tr>
+  <td class="w3-text-light-blue">w3-theme-light-blue</td>
+  <td><a target="_blank" class="w3-btn w3-medium w3-right w3-light-blue" href="tryiteefe.html?filename=tryw3css_theme_light-blue">Try it</a></td>
+ </tr>
+ <tr>
+  <td class="w3-text-cyan">w3-theme-cyan</td>
+  <td><a target="_blank" class="w3-btn w3-medium w3-right w3-cyan" href="tryit48ab.html?filename=tryw3css_theme_cyan">Try it</a></td>
+ </tr>
+ <tr>
+  <td class="w3-text-teal">w3-theme-teal</td>
+  <td><a target="_blank" class="w3-btn w3-medium w3-right w3-teal" href="tryit7166.html?filename=tryw3css_theme_teal">Try it</a></td>
+ </tr>
+ <tr>
+  <td class="w3-text-green">w3-theme-green</td>
+  <td><a target="_blank" class="w3-btn w3-medium w3-right w3-green" href="tryitabe1.html?filename=tryw3css_theme_green">Try it</a></td>
+ </tr>
+ <tr>
+  <td class="w3-text-light-green">w3-theme-light-green</td>
+  <td><a target="_blank" class="w3-btn w3-medium w3-right w3-light-green" href="tryita7f7.html?filename=tryw3css_theme_light-green">Try it</a></td>
+ </tr>
+ <tr>
+  <td class="w3-text-lime">w3-theme-lime</td>
+  <td><a target="_blank" class="w3-btn w3-medium w3-right w3-lime" href="tryit02cf.html?filename=tryw3css_theme_lime">Try it</a></td>
+ </tr>
+ <tr>
+  <td class="w3-text-khaki">w3-theme-khaki</td>
+  <td><a target="_blank" class="w3-btn w3-medium w3-right w3-khaki" href="tryit3801.html?filename=tryw3css_theme_khaki">Try it</a></td>
+ </tr>
+ <tr>
+  <td class="w3-text-yellow">w3-theme-yellow</td>
+  <td><a target="_blank" class="w3-btn w3-medium w3-right w3-yellow" href="tryit9b76.html?filename=tryw3css_theme_yellow">Try it</a></td>
+ </tr>
+ <tr>
+  <td class="w3-text-amber">w3-theme-amber</td>
+  <td><a target="_blank" class="w3-btn w3-medium w3-right w3-amber" href="tryitbc14.html?filename=tryw3css_theme_amber">Try it</a></td>
+ </tr>
+ <tr>
+  <td class="w3-text-orange">w3-theme-orange</td>
+  <td><a target="_blank" class="w3-btn w3-medium w3-right w3-orange" href="tryit3bed.html?filename=tryw3css_theme_orange">Try it</a></td>
+ </tr>
+ <tr>
+  <td class="w3-text-deep-orange">w3-theme-deep-orange</td>
+  <td><a target="_blank" class="w3-btn w3-medium w3-right w3-deep-orange" href="tryitab7b.html?filename=tryw3css_theme_deep-orange">Try it</a></td>
+ </tr>
+ <tr>
+  <td class="w3-text-blue-grey">w3-theme-blue-grey</td>
+  <td><a target="_blank" class="w3-btn w3-medium w3-right w3-blue-grey" href="tryite80b.html?filename=tryw3css_theme_blue-grey">Try it</a></td>
+ </tr>
+ <tr>
+  <td class="w3-text-brown">w3-theme-brown</td>
+  <td><a target="_blank" class="w3-btn w3-medium w3-right w3-brown" href="tryit5bb8.html?filename=tryw3css_theme_brown">Try it</a></td>
+ </tr>
+ <tr>
+  <td class="w3-text-grey">w3-theme-grey</td>
+  <td><a target="_blank" class="w3-btn w3-medium w3-right w3-grey" href="tryit63c5.html?filename=tryw3css_theme_grey">Try it</a></td>
+ </tr>
+ <tr>
+  <td class="w3-text-dark-grey">w3-theme-dark-grey</td>
+  <td><a target="_blank" class="w3-btn w3-medium w3-right w3-dark-grey" href="tryitd706.html?filename=tryw3css_theme_dark-grey">Try it</a></td>
+ </tr>
+ <tr>
+  <td class="w3-text-black">w3-theme-black</td>
+  <td><a target="_blank" class="w3-btn w3-medium w3-right w3-black" href="tryitcbc7.html?filename=tryw3css_theme_black">Try it</a></td>
+ </tr>
+ <tr>
+  <td class="w3-text-theme">w3-theme-w3schools</td>
+  <td><a target="_blank" class="w3-btn w3-medium w3-right" href="tryit6900.html?filename=tryw3css_theme_w3schools">Try it</a></td>
+ </tr>
+</table>
 <hr>
 <div id="midcontentadcontainer" style="overflow:auto;text-align:center">
 <!-- MidContent -->
@@ -1032,230 +1119,131 @@ class:</p>
   <div id="snhb-mid_content-0"></div>
     
 </div>
-<hr>
-<h2>Active/Current Link</h2>
 
-<div class="w3-bar">
-  <a href="javascript:void(0)" class="w3-button">&laquo;</a>
-  <a href="javascript:void(0)" class="w3-button w3-green">1</a>
-  <a href="javascript:void(0)" class="w3-button">2</a>
-  <a href="javascript:void(0)" class="w3-button">3</a>
-  <a href="javascript:void(0)" class="w3-button">4</a>
-  <a href="javascript:void(0)" class="w3-button">&raquo;</a>
-</div>
-<p>Use one of the <strong>w3-<em>color</em></strong> classes to indicate which page the user is on:</p>
+<hr>
+
+<h2>Adding Gradients</h2>
+<p>One reader sent us this suggestion: You might want to consider adding a gradient for each theme.</p>
+<p>I used the l2 and l1 colors from the blue theme to create this gradient:</p>
 
 <div class="w3-example">
-<h3>Example</h3>
-<div class="w3-code notranslate htmlHigh">
-&lt;div class=&quot;w3-bar&quot;&gt;<br>
-&nbsp; &lt;a href=&quot;#&quot; class=&quot;w3-button&quot;&gt;&amp;laquo;&lt;/a&gt;<br>
-&nbsp; &lt;a href=&quot;#&quot; class=&quot;w3-button w3-green&quot;&gt;1&lt;/a&gt;<br>
-&nbsp; &lt;a href=&quot;#&quot; class=&quot;w3-button&quot;&gt;2&lt;/a&gt;<br>
-&nbsp; &lt;a href=&quot;#&quot; class=&quot;w3-button&quot;&gt;3&lt;/a&gt;<br>
-&nbsp; &lt;a href=&quot;#&quot; class=&quot;w3-button&quot;&gt;4&lt;/a&gt;<br>
-&nbsp; &lt;a href=&quot;#&quot; class=&quot;w3-button&quot;&gt;&amp;raquo;&lt;/a&gt;<br>
-&lt;/div&gt;
+ <h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+ .w3-theme-gradient {<br>&nbsp; color: #000 !important;<br>&nbsp; 
+ background:-webkit-linear-gradient(top,#64B5F6 25%,#42A5F5 75%)}<br>
+ .w3-theme-gradient {<br>&nbsp; color: #000 !important;<br>&nbsp; background:-moz-linear-gradient(top,#64B5F6 
+ 25%,#42A5F5 75%)}<br>.w3-theme-gradient {<br>&nbsp; color: #000 !important;<br>&nbsp; 
+ background:-o-linear-gradient(top,#64B5F6 25%,#42A5F5 75%)}<br>
+ .w3-theme-gradient {<br>&nbsp; color: #000 !important;<br>&nbsp; background:-ms-linear-gradient(top,#64B5F6 
+ 25%,#42A5F5 75%)}<br>.w3-theme-gradient {<br>&nbsp; color: #000 !important;<br>&nbsp; 
+ background: linear-gradient(top,#64B5F6 25%,#42A5F5 75%)}
 </div>
 <p>
-<a class="w3-btn" href="tryitd1b8.html?filename=tryw3css_pagination_active" target="_blank">Try It Yourself &raquo;</a>
+<a class="w3-btn" href="tryit3c00.html?filename=tryw3css_theme_blue_gradient" target="_blank">Try It Yourself &raquo;</a>
 </p>
 </div>
 <hr>
-
-<h2>Hover Color</h2>
-
-<div class="w3-bar">
-  <a href="javascript:void(0)" class="w3-button w3-hover-purple">&laquo;</a>
-  <a href="javascript:void(0)" class="w3-button w3-hover-green">1</a>
-  <a href="javascript:void(0)" class="w3-button w3-hover-red">2</a>
-  <a href="javascript:void(0)" class="w3-button w3-hover-blue">3</a>
-  <a href="javascript:void(0)" class="w3-button w3-hover-black">4</a>
-  <a href="javascript:void(0)" class="w3-button w3-hover-orange">&raquo;</a>
-</div>
-
-<p>By default, when you move the mouse over the pagination links, they get a grey background color. Use any of the <strong>w3-hover-<em>color</em></strong> classes to change the hover color:</p>
-
-<div class="w3-example">
-<h3>Example</h3>
-<div class="w3-code notranslate htmlHigh">
-&lt;div class=&quot;w3-bar&quot;&gt;<br>&nbsp; &lt;a href=&quot;#&quot; 
-class=&quot;w3-button w3-hover-purple&quot;&gt;&amp;laquo;&lt;/a&gt;<br>&nbsp; &lt;a 
-  href=&quot;#&quot; class=&quot;w3-button w3-hover-green&quot;&gt;1&lt;/a&gt;<br>&nbsp; &lt;a href=&quot;#&quot; 
-  class=&quot;w3-button w3-hover-red&quot;&gt;2&lt;/a&gt;<br>&nbsp; &lt;a href=&quot;#&quot; class=&quot;w3-button 
-  w3-hover-blue&quot;&gt;3&lt;/a&gt;<br>&nbsp; &lt;a href=&quot;#&quot; 
-class=&quot;w3-button w3-hover-black&quot;&gt;4&lt;/a&gt;<br>&nbsp; &lt;a href=&quot;#&quot; 
-class=&quot;w3-button w3-hover-orange&quot;&gt;&amp;raquo;&lt;/a&gt;<br>&lt;/div&gt; </div>
-<p>
-<a class="w3-btn" href="tryitc562.html?filename=tryw3css_pagination_hover" target="_blank">Try It Yourself &raquo;</a>
-</p>
-</div>
-<hr>
-
-<h2>Pagination Sizing</h2>
-<div class="w3-bar w3-small">
-  <a href="javascript:void(0)" class="w3-button">&laquo;</a>
-  <a href="javascript:void(0)" class="w3-button">1</a>
-  <a href="javascript:void(0)" class="w3-button">2</a>
-  <a href="javascript:void(0)" class="w3-button">3</a>
-  <a href="javascript:void(0)" class="w3-button">4</a>
-  <a href="javascript:void(0)" class="w3-button">&raquo;</a>
-</div>
-<div class="w3-bar w3-xlarge">
-  <a href="javascript:void(0)" class="w3-button">&laquo;</a>
-  <a href="javascript:void(0)" class="w3-button">1</a>
-  <a href="javascript:void(0)" class="w3-button">2</a>
-  <a href="javascript:void(0)" class="w3-button">3</a>
-  <a href="javascript:void(0)" class="w3-button">4</a>
-  <a href="javascript:void(0)" class="w3-button">&raquo;</a>
-</div>
-
-<p>Use <strong>w3-tiny</strong>, <strong>w3-small</strong>, <strong>w3-large</strong>, <strong>w3-xlarge</strong>, <strong>w3-xxlarge</strong> or 
-<strong>w3-xxxlarge</strong> to size the pagination:</p>
-
-<div class="w3-example">
-<h3>Example</h3>
-<div class="w3-code notranslate htmlHigh">
-&lt;div class=&quot;w3-bar 
-w3-xlarge&quot;&gt;</div>
-<p>
-<a class="w3-btn" href="tryit774c.html?filename=tryw3css_pagination_size" target="_blank">Try It Yourself &raquo;</a>
-</p>
-</div>
-<hr>
-
-<h2>Centered Pagination</h2>
-<div class="w3-center">
-<div class="w3-bar w3-large">
-  <a href="javascript:void(0)" class="w3-button">&laquo;</a>
-  <a href="javascript:void(0)" class="w3-button">1</a>
-  <a href="javascript:void(0)" class="w3-button">2</a>
-  <a href="javascript:void(0)" class="w3-button">3</a>
-  <a href="javascript:void(0)" class="w3-button">4</a>
-  <a href="javascript:void(0)" class="w3-button">&raquo;</a>
-</div>
-</div>
-<p>To center the pagination, put the "w3-bar" element inside a "w3-center" element:</p>
-
-<div class="w3-example">
-<h3>Example</h3>
-<div class="w3-code notranslate htmlHigh">
-  &lt;div class=&quot;w3-center&quot;&gt;<br>&lt;div class=&quot;w3-bar&quot;&gt;<br>&nbsp; &lt;a href=&quot;#&quot; 
-  class=&quot;w3-bar-item w3-button&quot;&gt;&amp;laquo;&lt;/a&gt;<br>&nbsp; &lt;a href=&quot;#&quot; 
-  class=&quot;w3-button&quot;&gt;1&lt;/a&gt;<br>&nbsp; &lt;a href=&quot;#&quot; class=&quot;w3-button&quot;&gt;2&lt;/a&gt;<br>&nbsp; 
-  &lt;a href=&quot;#&quot; class=&quot;w3-button&quot;&gt;3&lt;/a&gt;<br>&nbsp; &lt;a href=&quot;#&quot; 
-  class=&quot;w3-button&quot;&gt;4&lt;/a&gt;<br>&nbsp; &lt;a href=&quot;#&quot; class=&quot;w3-button&quot;&gt;&amp;raquo;&lt;/a&gt;<br>
-  &lt;/div&gt;<br>&lt;/div&gt;</div>
-<p>
-<a class="w3-btn" href="tryit8dd5.html?filename=tryw3css_pagination_center" target="_blank">Try It Yourself &raquo;</a>
-</p>
-</div>
-<hr>
-
-<h2>Bordered Pagination</h2>
-
-<div class="w3-show-inline-block">
-<div class="w3-bar w3-border">
-  <a class="w3-bar-item w3-button" href="#">&laquo;</a>
-  <a class="w3-bar-item w3-button w3-green" href="#">1</a>
-  <a class="w3-bar-item w3-button" href="#">2</a>
-  <a class="w3-bar-item w3-button" href="#">3</a>
-  <a class="w3-bar-item w3-button" href="#">4</a>
-  <a class="w3-bar-item w3-button" href="#">5</a>
-  <a class="w3-bar-item w3-button" href="#">&raquo;</a>
-</div>
-</div>
-
-<p>Add the <strong>w3-border</strong> class to create a pagination with borders:</p>
-
-<div class="w3-example">
-<h3>Example</h3>
-<div class="w3-code notranslate htmlHigh">
-&lt;div class=&quot;w3-bar 
-w3-border&quot;&gt;</div>
-<p>
-<a class="w3-btn" href="tryit5596.html?filename=tryw3css_pagination_border" target="_blank">Try It Yourself &raquo;</a>
-</p>
-</div>
-
-<h3>Rounded Borders</h3>
-<div class="w3-show-inline-block">
-<div class="w3-bar w3-border w3-round">
-  <a class="w3-bar-item w3-button" href="#">&laquo;</a>
-  <a class="w3-bar-item w3-button w3-green" href="#">1</a>
-  <a class="w3-bar-item w3-button" href="#">2</a>
-  <a class="w3-bar-item w3-button" href="#">3</a>
-  <a class="w3-bar-item w3-button" href="#">4</a>
-  <a class="w3-bar-item w3-button" href="#">5</a>
-  <a class="w3-bar-item w3-button" href="#">&raquo;</a>
-</div>
-</div>
-
-<p>Add the <strong>w3-round</strong> class next to w3-border for rounded borders:</p>
-
-<div class="w3-example">
-<h3>Example</h3>
-<div class="w3-code notranslate htmlHigh">
-&lt;div class=&quot;w3-bar 
-w3-border w3-round&quot;&gt;
-</div>
-<p>
-<a class="w3-btn" href="tryit52e4.html?filename=tryw3css_pagination_border_round" target="_blank">Try It Yourself &raquo;</a>
-</p>
-</div>
-<hr>
-
-<h2>Other Pagination Examples</h2>
-<p>The w3-bar class can also be used to create next/previous buttons:</p>
-<div class="w3-bar w3-border w3-round">
-  <a href="javascript:void(0)" class="w3-button">&#10094; Previous</a>
-  <a href="javascript:void(0)" class="w3-button w3-right">Next &#10095;</a>
-</div>
-<br>  
-<div class="w3-bar w3-border">
-  <a href="javascript:void(0)" class="w3-button w3-border-right">&#10094;</a>
-  <a href="javascript:void(0)" class="w3-button w3-border-left w3-right">&#10095;</a>
-</div>
-
-<div class="w3-example">
-<h3>Next/previous Example</h3>
-<div class="w3-code notranslate htmlHigh">
-
-  &lt;div class=&quot;w3-bar w3-border w3-round&quot;&gt;<br>&nbsp; &lt;a href=&quot;#&quot; 
-  class=&quot;w3-button&quot;&gt;&amp;#10094; Previous&lt;/a&gt;<br>&nbsp; &lt;a href=&quot;#&quot; class=&quot;w3-button 
-  w3-right&quot;&gt;Next &amp;#10095;&lt;/a&gt;<br>&lt;/div&gt;</div>
-<p>
-<a class="w3-btn" href="tryit32be.html?filename=tryw3css_pagination_prevnext" target="_blank">Try It Yourself &raquo;</a>
-</p>
-</div>
-
-<div class="w3-show-inline-block">
-<div class="w3-bar w3-light-grey">
-  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-dark-grey">Home</a>
-  <a href="javascript:void(0)" class="w3-bar-item w3-button">Link 1</a>
-  <a href="javascript:void(0)" class="w3-bar-item w3-button">Link 2</a>
-  <a href="javascript:void(0)" class="w3-bar-item w3-button">Link 3</a>
-</div>
-</div>
-
-<div class="w3-example">
-<h3>Inline Menu Example</h3>
-<div class="w3-code notranslate htmlHigh">
-  &lt;div class=&quot;w3-show-inline-block&quot;&gt;<br>&lt;div class=&quot;w3-bar w3-light-grey&quot;&gt;<br>&nbsp; 
-  &lt;a href=&quot;#&quot; class=&quot;w3-bar-item w3-button w3-dark-grey&quot;&gt;Home&lt;/a&gt;<br>&nbsp; &lt;a 
-  href=&quot;#&quot; class=&quot;w3-bar-item w3-button&quot;&gt;Link 1&lt;/a&gt;<br>&nbsp; &lt;a href=&quot;#&quot; 
-  class=&quot;w3-bar-item w3-button&quot;&gt;Link 2&lt;/a&gt;<br>&nbsp; &lt;a href=&quot;#&quot; 
-  class=&quot;w3-bar-item w3-button&quot;&gt;Link 3&lt;/a&gt;<br>&lt;/div&gt;<br>&lt;/div&gt;
-</div>
-<p>
-<a class="w3-btn" href="tryitcc1f.html?filename=tryw3css_pagination_menu" target="_blank">Try It Yourself &raquo;</a>
-</p>
-</div>
-
+<h2>Downloadable Color Themes</h2>
+<p>Here are some downloadable color themes inspired by Google's Material Design:</p>
+<table class="w3-table w3-bordered w3-striped w3-border">
+ <tr>
+  <th style="width:30%">Style Sheet</th>
+  <th>Description</th>
+ </tr>
+ <tr>
+  <td><a href="../lib/w3-theme-amber.css" target="_blank">w3-theme-amber.css</a></td>
+  <td>Color Theme Amber</td>
+ </tr>
+ <tr>
+  <td><a href="../lib/w3-theme-black.css" target="_blank">w3-theme-black.css</a></td>
+  <td>Color Theme Black</td>
+ </tr>
+ <tr>
+  <td><a href="../lib/w3-theme-blue.css" target="_blank">w3-theme-blue.css</a></td>
+  <td>Color Theme Blue</td>
+ </tr>
+ <tr>
+  <td><a href="../lib/w3-theme-blue-grey.css" target="_blank">w3-theme-blue-grey.css</a></td>
+  <td>Color Theme Blue Grey</td>
+ </tr>
+ <tr>
+  <td><a href="../lib/w3-theme-brown.css" target="_blank">w3-theme-brown.css</a></td>
+  <td>Color Theme Brown</td>
+ </tr>
+ <tr>
+  <td><a href="../lib/w3-theme-cyan.css" target="_blank">w3-theme-cyan.css</a></td>
+  <td>Color Theme Cyan</td>
+ </tr>
+ <tr>
+  <td><a href="../lib/w3-theme-dark-grey.css" target="_blank">w3-theme-dark-grey.css</a></td>
+  <td>Color Theme Dark Grey</td>
+ </tr>
+ <tr>
+  <td><a href="../lib/w3-theme-deep-orange.css" target="_blank">w3-theme-deep-orange.css</a></td>
+  <td>Color Theme Deep Orange</td>
+ </tr>
+ <tr>
+  <td><a href="../lib/w3-theme-deep-purple.css" target="_blank">w3-theme-deep-purple.css</a></td>
+  <td>Color Theme Deep Purple</td>
+ </tr>
+ <tr>
+  <td><a href="../lib/w3-theme-green.css" target="_blank">w3-theme-green.css</a></td>
+  <td>Color Theme Green</td>
+ </tr>
+ <tr>
+  <td><a href="../lib/w3-theme-grey.css" target="_blank">w3-theme-grey.css</a></td>
+  <td>Color Theme Grey</td>
+ </tr>
+ <tr>
+  <td><a href="../lib/w3-theme-indigo.css" target="_blank">w3-theme-indigo.css</a></td>
+  <td>Color Theme Indigo</td>
+ </tr>
+ <tr>
+  <td><a href="../lib/w3-theme-khaki.css" target="_blank">w3-theme-khaki.css</a></td>
+  <td>Color Theme Khaki</td>
+ </tr>
+ <tr>
+  <td><a href="../lib/w3-theme-light-blue.css" target="_blank">w3-theme-light-blue.css</a></td>
+  <td>Color Theme Light Blue</td>
+ </tr>
+ <tr>
+  <td><a href="../lib/w3-theme-light-green.css" target="_blank">w3-theme-light-green.css</a></td>
+  <td>Color Theme Light Green</td>
+ </tr>
+ <tr>
+  <td><a href="../lib/w3-theme-lime.css" target="_blank">w3-theme-lime.css</a></td>
+  <td>Color Theme Lime</td>
+ </tr>
+ <tr>
+  <td><a href="../lib/w3-theme-orange.css" target="_blank">w3-theme-orange.css</a></td>
+  <td>Color Theme Orange</td>
+ </tr>
+ <tr>
+  <td><a href="../lib/w3-theme-pink.css" target="_blank">w3-theme-pink.css</a></td>
+  <td>Color Theme Pink</td>
+ </tr>
+ <tr>
+  <td><a href="../lib/w3-theme-purple.css" target="_blank">w3-theme-purple.css</a></td>
+  <td>Color Theme Purple</td>
+ </tr>
+ <tr>
+  <td><a href="../lib/w3-theme-red.css" target="_blank">w3-theme-red.css</a></td>
+  <td>Color Theme Red</td>
+ </tr>
+ <tr>
+  <td><a href="../lib/w3-theme-teal.css" target="_blank">w3-theme-teal.css</a></td>
+  <td>Color Theme Teal</td>
+ </tr>
+ <tr>
+  <td><a href="../lib/w3-theme-yellow.css" target="_blank">w3-theme-yellow.css</a></td>
+  <td>Color Theme Yellow</td>
+ </tr>
+</table>
+<br>
 <br>
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="w3css_tabulators.html">&#10094; Previous</a>
-<a class="w3-right w3-btn" href="w3css_progressbar.html">Next &#10095;</a>
+    <a class="w3-left w3-btn" href="w3css_color_schemes.html">&#10094; Previous</a>
+	<a class="w3-right w3-btn" href="w3css_color_generator.html">Next &#10095;</a>
 </div>
 </div>
 <div class="w3-col l2 m12" id="right">
@@ -1560,5 +1548,6 @@ While using this site, you agree to have read and accepted our <a href="https://
 <![endif]-->
 </body>
 
-<!-- Mirrored from www.w3schools.com/w3css/w3css_pagination.asp by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 05 May 2020 11:00:46 GMT -->
+<!-- Mirrored from www.w3schools.com/w3css/w3css_color_themes.asp by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 05 May 2020 11:02:56 GMT -->
 </html>
+ 

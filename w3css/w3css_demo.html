@@ -2,9 +2,9 @@
 <!DOCTYPE html>
 <html lang="en-US">
 
-<!-- Mirrored from www.w3schools.com/w3css/w3css_pagination.asp by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 05 May 2020 11:00:41 GMT -->
+<!-- Mirrored from www.w3schools.com/w3css/w3css_demo.asp by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 05 May 2020 11:03:06 GMT -->
 <head>
-<title>W3.CSS Pagination</title>
+<title>W3.CSS Demos</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="Keywords" content="HTML,CSS,JavaScript,SQL,PHP,jQuery,XML,DOM,Bootstrap,Python,Java,Web development,W3C,tutorials,programming,training,learning,quiz,primer,lessons,references,examples,exercises,source code,colors,demos,tips">
@@ -621,8 +621,11 @@ function w3_getStyleValue(elmnt,style) {
   }
 }
 </script>
-<link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+@media screen and (max-width:601px){.w3-btn.w3-padding-large {width:100% ! important;margin-bottom:5px;}}
+</style>
 </head>
+
 <body>
 <div class='w3-container top'>
   <a class='w3schools-logo notranslate' href='http://www.w3schools.com/'>w3schools<span class='dotcom'>.com</span></a>
@@ -932,97 +935,114 @@ function w3_getStyleValue(elmnt,style) {
         <!-- adspace leaderboard -->
        
       </div>
-<h1>W3.CSS <span class="color_h1">Pagination</span></h1>
+<h1>W3.CSS <span class="color_h1">Demos</span></h1>
 
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="w3css_tabulators.html">&#10094; Previous</a>
-<a class="w3-right w3-btn" href="w3css_progressbar.html">Next &#10095;</a>
+<a class="w3-left w3-btn" href="w3css_examples.html">&#10094; Previous</a>
+<a class="w3-right w3-btn" href="w3css_templates.html">Next &#10095;</a>
 </div>
+
 <hr>
+<div class="w3-row-padding" style="margin:16px -16px">
+  <div class="w3-col m6">
+    <div class="w3-container w3-padding-16 w3-card">
+      <h3 class="w3-center">Photo Album</h3>
+      <div class="w3-content" style="max-width:550px">
+        <a href="tryw3css_examples_album.html" target="_blank"><img alt="Demo Web Album" class="w3-border" src="img_photo_album2.jpg" style="width:98%;margin:20px 0"></a></div>
+      <div class="w3-row">
+        <div class="w3-col m6">
+          <a href="tryw3css_examples_album.html" target="_blank" class="w3-btn w3-padding-large w3-dark-grey" style="width:98%">Demo</a>
+        </div>
+        <div class="w3-col m6">
+          <a href="tryit71ca.html?filename=tryw3css_examples_album" target="_blank" class="w3-btn w3-padding-large w3-dark-grey" style="width:100%">Try it &raquo;</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
-<div class="w3-bar">
-  <a href="javascript:void(0)" class="w3-bar-item w3-button">&laquo;</a>
-  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-red" >1</a>
-  <a href="javascript:void(0)" class="w3-bar-item w3-button">2</a>
-  <a href="javascript:void(0)" class="w3-bar-item w3-button">3</a>
-  <a href="javascript:void(0)" class="w3-bar-item w3-button">4</a>
-  <a href="javascript:void(0)" class="w3-bar-item w3-button">5</a>
-  <a href="javascript:void(0)" class="w3-bar-item w3-button">6</a>
-  <a href="javascript:void(0)" class="w3-bar-item w3-button">&raquo;</a>
-</div>
-<hr>
-
-<h2>Basic Pagination</h2>
-
-<p>If you have a web site with many pages, you may want to use some sort of pagination.</p>
-
-
-<p>To create a basic pagination, use buttons (<strong>w3-button</strong>) in a 
-bar (<strong>w3-bar</strong>).</p>
-
-<div class="w3-example">
-<h3>Example</h3>
-<div class="w3-code notranslate htmlHigh">
-  &lt;div class=&quot;w3-bar&quot;&gt;<br>&nbsp; &lt;a href=&quot;#&quot; class=&quot;w3-button&quot;&gt;1&lt;/a&gt;<br>&nbsp; 
-  &lt;a href=&quot;#&quot; class=&quot;w3-button&quot;&gt;2&lt;/a&gt;<br>&nbsp; &lt;a href=&quot;#&quot; 
-  class=&quot;w3-button&quot;&gt;3&lt;/a&gt;<br>&nbsp; &lt;a href=&quot;#&quot; class=&quot;w3-button&quot;&gt;4&lt;/a&gt;<br>&nbsp; 
-  &lt;a href=&quot;#&quot; class=&quot;w3-button&quot;&gt;5&lt;/a&gt;<br>&lt;/div&gt;
-</div>
-<p>
-<a class="w3-btn" href="tryit1014.html?filename=tryw3css_pagination" target="_blank">Try It Yourself &raquo;</a>
-</p>
-</div>
-
-<p>To remove the space between the buttons add a <strong>w3-bar-item</strong> 
-class:</p>
-
-<div class="w3-example">
-<h3>Example</h3>
-<div class="w3-code notranslate htmlHigh">
-&lt;div class=&quot;w3-bar&quot;&gt;<br>
-&nbsp; &lt;a href=&quot;#&quot; class=&quot;w3-button&quot;&gt;&amp;laquo;&lt;/a&gt;<br>
-&nbsp; &lt;a href=&quot;#&quot; class=&quot;w3-button&quot;&gt;1&lt;/a&gt;<br>
-&nbsp; &lt;a href=&quot;#&quot; class=&quot;w3-button&quot;&gt;2&lt;/a&gt;<br>
-&nbsp; &lt;a href=&quot;#&quot; class=&quot;w3-button&quot;&gt;3&lt;/a&gt;<br>
-&nbsp; &lt;a href=&quot;#&quot; class=&quot;w3-button&quot;&gt;4&lt;/a&gt;<br>
-&nbsp; &lt;a href=&quot;#&quot; class=&quot;w3-button&quot;&gt;5&lt;/a&gt;<br>
-&nbsp; &lt;a href=&quot;#&quot; class=&quot;w3-button&quot;&gt;&amp;raquo;&lt;/a&gt;<br>
-&lt;/div&gt;
-</div>
-<p>
-<a class="w3-btn" href="tryitef90.html?filename=tryw3css_pagination_items" target="_blank">Try It Yourself &raquo;</a>
-</p>
-</div>
-<hr>
-
-<h2>Pagination Arrows</h2>
-<p>Use HTML entities or icons from an icon library to add pagination arrows:</p>
-
-<div class="w3-bar">
-  <a href="javascript:void(0)" class="w3-button">&laquo;</a>
-  <a href="javascript:void(0)" class="w3-button">1</a>
-  <a href="javascript:void(0)" class="w3-button">2</a>
-  <a href="javascript:void(0)" class="w3-button">3</a>
-  <a href="javascript:void(0)" class="w3-button">4</a>
-  <a href="javascript:void(0)" class="w3-button">&raquo;</a>
+  <div class="w3-col m6">
+    <div class="w3-container w3-padding-16 w3-card">
+      <h3 class="w3-center">Photo Album II</h3>
+      <div class="w3-content" style="max-width:550px">
+        <a href="tryw3css_examples_album_text.html" target="_blank"><img class="w3-border" src="img_photo_album.jpg" style="width:98%;margin:20px 0" alt="Demo Photo Album 2"></a></div>
+      <div class="w3-row">
+        <div class="w3-col m6">
+          <a href="tryw3css_examples_album_text.html" target="_blank" class="w3-btn w3-padding-large w3-dark-grey" style="width:98%">Demo</a>
+        </div>
+        <div class="w3-col m6">
+          <a href="tryitc7b3.html?filename=tryw3css_examples_album_text" target="_blank" class="w3-btn w3-padding-large w3-dark-grey" style="width:100%">Try it &raquo;</a>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
-<div class="w3-example">
-<h3>Example</h3>
-<div class="w3-code notranslate htmlHigh">
-&lt;div class=&quot;w3-bar&quot;&gt;<br>
-&nbsp; &lt;a href=&quot;#&quot; class=&quot;w3-button&quot;&gt;&amp;laquo;&lt;/a&gt;<br>
-&nbsp; &lt;a href=&quot;#&quot; class=&quot;w3-button&quot;&gt;1&lt;/a&gt;<br>
-&nbsp; &lt;a href=&quot;#&quot; class=&quot;w3-button&quot;&gt;2&lt;/a&gt;<br>
-&nbsp; &lt;a href=&quot;#&quot; class=&quot;w3-button&quot;&gt;3&lt;/a&gt;<br>
-&nbsp; &lt;a href=&quot;#&quot; class=&quot;w3-button&quot;&gt;4&lt;/a&gt;<br>
-&nbsp; &lt;a href=&quot;#&quot; class=&quot;w3-button&quot;&gt;5&lt;/a&gt;<br>
-&nbsp; &lt;a href=&quot;#&quot; class=&quot;w3-button&quot;&gt;&amp;raquo;&lt;/a&gt;<br>
-&lt;/div&gt;
+<div class="w3-row-padding" style="margin:32px -16px">
+  <div class="w3-col m6">
+    <div class="w3-container w3-padding-16 w3-card">
+      <h3 class="w3-center">Newspaper</h3>
+      <div class="w3-content" style="max-width:550px">
+        <a href="tryw3css_examples_newspaper.html" target="_blank"><img alt="Demo Newspaper" class="w3-border" src="img_demo_news.jpg" style="width:98%;margin:20px 0"></a></div>
+      <div class="w3-row">
+        <div class="w3-col m6">
+          <a href="tryw3css_examples_newspaper.html" target="_blank" class="w3-btn w3-padding-large w3-dark-grey" style="width:98%">Demo</a>
+        </div>
+        <div class="w3-col m6">
+          <a href="tryitf929.html?filename=tryw3css_examples_newspaper&amp;stacked=h" target="_blank" class="w3-btn w3-padding-large w3-dark-grey" style="width:100%">Try it &raquo;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-col m6">
+    <div class="w3-container w3-padding-16 w3-card">
+      <h3 class="w3-center">Newspaper (More Space)</h3>
+      <div class="w3-content" style="max-width:550px">
+        <a href="tryw3css_examples_newspaper_space.html" target="_blank"><img alt="Demo Magazine" class="w3-border" src="img_demo_news2.jpg" style="width:98%;margin:20px 0"></a></div>
+      <div class="w3-row">
+        <div class="w3-col m6">
+          <a href="tryw3css_examples_newspaper_space.html" target="_blank" class="w3-btn w3-padding-large w3-dark-grey" style="width:98%">Demo</a>
+        </div>
+        <div class="w3-col m6">
+          <a href="tryit6572.html?filename=tryw3css_examples_newspaper_space&amp;stacked=h" target="_blank" class="w3-btn w3-padding-large w3-dark-grey" style="width:100%">Try it &raquo;</a>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-<p>
-<a class="w3-btn" href="tryitb745.html?filename=tryw3css_pagination_arrows" target="_blank">Try It Yourself &raquo;</a>
-</p>
+
+<div class="w3-row-padding" style="margin:32px -16px">
+  <div class="w3-col m6">
+    <div class="w3-container w3-padding-16 w3-card">
+      <h3 class="w3-center">Blog</h3>
+      <div class="w3-content" style="max-width:550px">
+        <a href="tryw3css_examples_blog.html" target="_blank"><img alt="Demo Newspaper" class="w3-border" src="img_demo_blog.jpg" style="width:98%;margin:20px 0"></a></div>
+      <div class="w3-row">
+        <div class="w3-col m6">
+          <a href="tryw3css_examples_blog.html" target="_blank" class="w3-btn w3-padding-large w3-dark-grey" style="width:98%">Demo</a>
+        </div>
+        <div class="w3-col m6">
+          <a href="tryitc3c8.html?filename=tryw3css_examples_blog&amp;stacked=h" target="_blank" class="w3-btn w3-padding-large w3-dark-grey" style="width:100%">Try it &raquo;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-col m6">
+    <div class="w3-container w3-padding-16 w3-card">
+      <h3 class="w3-center">Magazine</h3>
+      <div class="w3-content" style="max-width:550px">
+        <a href="tryw3css_examples_magazine.html" target="_blank"><img alt="Demo Magazine" class="w3-border" src="img_demo_magazine.jpg" style="width:98%;margin:20px 0"></a></div>
+      <div class="w3-row">
+        <div class="w3-col m6">
+          <a href="tryw3css_examples_magazine.html" target="_blank" class="w3-btn w3-padding-large w3-dark-grey" style="width:98%">Demo</a>
+        </div>
+        <div class="w3-col m6">
+          <a href="tryita030.html?filename=tryw3css_examples_magazine&amp;stacked=h" target="_blank" class="w3-btn w3-padding-large w3-dark-grey" style="width:100%">Try it &raquo;</a>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 <hr>
 <div id="midcontentadcontainer" style="overflow:auto;text-align:center">
@@ -1033,230 +1053,301 @@ class:</p>
     
 </div>
 <hr>
-<h2>Active/Current Link</h2>
 
-<div class="w3-bar">
-  <a href="javascript:void(0)" class="w3-button">&laquo;</a>
-  <a href="javascript:void(0)" class="w3-button w3-green">1</a>
-  <a href="javascript:void(0)" class="w3-button">2</a>
-  <a href="javascript:void(0)" class="w3-button">3</a>
-  <a href="javascript:void(0)" class="w3-button">4</a>
-  <a href="javascript:void(0)" class="w3-button">&raquo;</a>
-</div>
-<p>Use one of the <strong>w3-<em>color</em></strong> classes to indicate which page the user is on:</p>
+<div class="w3-row-padding" style="margin:32px -16px">
+  <div class="w3-col m6">
+    <div class="w3-container w3-padding-16 w3-card">
+      <h3 class="w3-center">Material Design</h3>
+      <div class="w3-content" style="max-width:550px">
+        <a href="tryw3css_examples_material.html" target="_blank"><img alt="Demo Material" class="w3-border" src="img_demo_material.jpg" style="width:98%;margin:20px 0"></a></div>
+      <div class="w3-row">
+        <div class="w3-col m6">
+          <a href="tryw3css_examples_material.html" target="_blank" class="w3-btn w3-padding-large w3-dark-grey" style="width:98%">Demo</a>
+        </div>
+        <div class="w3-col m6">
+          <a href="tryitce5f.html?filename=tryw3css_examples_material" target="_blank" class="w3-btn w3-padding-large w3-dark-grey" style="width:100%">Try it &raquo;</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
-<div class="w3-example">
-<h3>Example</h3>
-<div class="w3-code notranslate htmlHigh">
-&lt;div class=&quot;w3-bar&quot;&gt;<br>
-&nbsp; &lt;a href=&quot;#&quot; class=&quot;w3-button&quot;&gt;&amp;laquo;&lt;/a&gt;<br>
-&nbsp; &lt;a href=&quot;#&quot; class=&quot;w3-button w3-green&quot;&gt;1&lt;/a&gt;<br>
-&nbsp; &lt;a href=&quot;#&quot; class=&quot;w3-button&quot;&gt;2&lt;/a&gt;<br>
-&nbsp; &lt;a href=&quot;#&quot; class=&quot;w3-button&quot;&gt;3&lt;/a&gt;<br>
-&nbsp; &lt;a href=&quot;#&quot; class=&quot;w3-button&quot;&gt;4&lt;/a&gt;<br>
-&nbsp; &lt;a href=&quot;#&quot; class=&quot;w3-button&quot;&gt;&amp;raquo;&lt;/a&gt;<br>
-&lt;/div&gt;
+  <div class="w3-col m6">
+    <div class="w3-container w3-padding-16 w3-card">
+      <h3 class="w3-center">Mail</h3>
+      <div class="w3-content" style="max-width:550px">
+        <a href="tryw3css_examples_mail.html" target="_blank"><img class="w3-border" alt="Demo Mail" src="img_demo_mail.jpg" style="width:98%;margin:20px 0"></a></div>
+      <div class="w3-row">
+        <div class="w3-col m6">
+          <a href="tryw3css_examples_mail.html" target="_blank" class="w3-btn w3-padding-large w3-dark-grey" style="width:98%">Demo</a>
+        </div>
+        <div class="w3-col m6">
+          <a href="tryit854a.html?filename=tryw3css_examples_mail" target="_blank" class="w3-btn w3-padding-large w3-dark-grey" style="width:100%">Try it &raquo;</a>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-<p>
-<a class="w3-btn" href="tryitd1b8.html?filename=tryw3css_pagination_active" target="_blank">Try It Yourself &raquo;</a>
-</p>
+
+<div class="w3-row-padding" style="margin:32px -16px">
+  <div class="w3-col m6">
+    <div class="w3-container w3-padding-16 w3-card">
+      <h3 class="w3-center">Modal Login</h3>
+      <div class="w3-content" style="max-width:550px">
+        <a href="tryw3css_examples_modal_login.html" target="_blank"><img alt="Demo Modal Login" class="w3-border" src="img_demo_modal_login.jpg" style="width:98%;margin:20px 0"></a></div>
+      <div class="w3-row">
+        <div class="w3-col m6">
+          <a href="tryw3css_examples_modal_login.html" target="_blank" class="w3-btn w3-padding-large w3-dark-grey" style="width:98%">Demo</a>
+        </div>
+        <div class="w3-col m6">
+          <a href="tryit4e3a.html?filename=tryw3css_examples_modal_login" target="_blank" class="w3-btn w3-padding-large w3-dark-grey" style="width:100%">Try it &raquo;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-col m6">
+    <div class="w3-container w3-padding-16 w3-card">
+      <h3 class="w3-center">Login Form</h3>
+      <div class="w3-content" style="max-width:550px">
+        <a href="tryw3css_examples_login.html" target="_blank"><img class="w3-border" alt="Login Form" src="img_demo_login.jpg" style="width:98%;margin:20px 0"></a></div>
+      <div class="w3-row">
+        <div class="w3-col m6">
+          <a href="tryw3css_examples_login.html" target="_blank" class="w3-btn w3-padding-large w3-dark-grey" style="width:98%">Demo</a>
+        </div>
+        <div class="w3-col m6">
+          <a href="tryit95e3.html?filename=tryw3css_examples_login" target="_blank" class="w3-btn w3-padding-large w3-dark-grey" style="width:100%">Try it &raquo;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="w3-row-padding" style="margin:32px -16px">
+  <div class="w3-col m6">
+    <div class="w3-container w3-padding-16 w3-card">
+      <h3 class="w3-center">Form Using Icons</h3>
+      <div class="w3-content" style="max-width:550px">
+        <a href="tryw3css_examples_contact.html" target="_blank"><img alt="Demo Modal Login" class="w3-border" src="img_demo_contact.jpg" style="width:98%;margin:20px 0"></a></div>
+      <div class="w3-row">
+        <div class="w3-col m6">
+          <a href="tryw3css_examples_contact.html" target="_blank" class="w3-btn w3-padding-large w3-dark-grey" style="width:98%">Demo</a>
+        </div>
+        <div class="w3-col m6">
+          <a href="tryitb055.html?filename=tryw3css_examples_contact" target="_blank" class="w3-btn w3-padding-large w3-dark-grey" style="width:100%">Try it &raquo;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="w3-col m6">
+    <div class="w3-container w3-padding-16 w3-card">
+      <h3 class="w3-center">Form Using Icons</h3>
+      <div class="w3-content" style="max-width:550px">
+        <a href="tryw3css_examples_widget.html" target="_blank"><img alt="Demo Modal Login" class="w3-border" src="img_demo_widget.jpg" style="width:98%;margin:20px 0"></a></div>
+      <div class="w3-row">
+        <div class="w3-col m6">
+          <a href="tryw3css_examples_widget.html" target="_blank" class="w3-btn w3-padding-large w3-dark-grey" style="width:98%">Demo</a>
+        </div>
+        <div class="w3-col m6">
+          <a href="tryita5b6.html?filename=tryw3css_examples_widget" target="_blank" class="w3-btn w3-padding-large w3-dark-grey" style="width:100%">Try it &raquo;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="w3-row-padding" style="margin:32px -16px">
+  <div class="w3-col m6">
+    <div class="w3-container w3-padding-16 w3-card">
+      <h3 class="w3-center">ADS</h3>
+      <div class="w3-content" style="max-width:550px">
+        <a href="tryw3css_examples_ads.html" target="_blank"><img alt="Demo ADS" class="w3-border" src="img_demo_ads.jpg" style="width:98%;margin:20px 0"></a></div>
+      <div class="w3-row">
+        <div class="w3-col m6">
+          <a href="tryw3css_examples_ads.html" target="_blank" class="w3-btn w3-padding-large w3-dark-grey" style="width:98%">Demo</a>
+        </div>
+        <div class="w3-col m6">
+          <a href="tryitab6f.html?filename=tryw3css_examples_ads" target="_blank" class="w3-btn w3-padding-large w3-dark-grey" style="width:100%">Try it &raquo;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-col m6">
+    <div class="w3-container w3-padding-16 w3-card">
+      <h3 class="w3-center">ADS II</h3>
+      <div class="w3-content" style="max-width:550px">
+        <a href="tryw3css_examples_ads2.html" target="_blank"><img class="w3-border" alt="Demo ADS 2" src="img_demo_ads2.jpg" style="width:98%;margin:20px 0"></a></div>
+      <div class="w3-row">
+        <div class="w3-col m6">
+          <a href="tryw3css_examples_ads2.html" target="_blank" class="w3-btn w3-padding-large w3-dark-grey" style="width:98%">Demo</a>
+        </div>
+        <div class="w3-col m6">
+          <a href="tryit200e.html?filename=tryw3css_examples_ads2" target="_blank" class="w3-btn w3-padding-large w3-dark-grey" style="width:100%">Try it &raquo;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="w3-row-padding" style="margin:32px -16px">
+  <div class="w3-col m6">
+    <div class="w3-container w3-padding-16 w3-card">
+      <h3 class="w3-center">Wine Album</h3>
+      <div class="w3-content" style="max-width:550px">
+        <a href="tryw3css_examples_chardonney.html" target="_blank"><img alt="Demo Wine Album" class="w3-border" src="img_demo_wine.jpg" style="width:98%;margin:20px 0"></a></div>
+      <div class="w3-row">
+        <div class="w3-col m6">
+          <a href="tryw3css_examples_chardonney.html" target="_blank" class="w3-btn w3-padding-large w3-dark-grey" style="width:98%">Demo</a>
+        </div>
+        <div class="w3-col m6">
+          <a href="tryit3142.html?filename=tryw3css_examples_chardonney" target="_blank" class="w3-btn w3-padding-large w3-dark-grey" style="width:100%">Try it &raquo;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-col m6">
+    <div class="w3-container w3-padding-16 w3-card">
+      <h3 class="w3-center">Pricing Table</h3>
+      <div class="w3-content" style="max-width:550px">
+        <a href="tryw3css_examples_pricing_tables.html" target="_blank"><img class="w3-border" alt="Demo Pricing Table" src="img_demo_pricing.jpg" style="width:98%;margin:20px 0"></a></div>
+      <div class="w3-row">
+        <div class="w3-col m6">
+          <a href="tryw3css_examples_pricing_tables.html" target="_blank" class="w3-btn w3-padding-large w3-dark-grey" style="width:98%">Demo</a>
+        </div>
+        <div class="w3-col m6">
+          <a href="tryitc6ab.html?filename=tryw3css_examples_pricing_tables" target="_blank" class="w3-btn w3-padding-large w3-dark-grey" style="width:100%">Try it &raquo;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="w3-row-padding" style="margin:32px -16px">
+  <div class="w3-col m6">
+    <div class="w3-container w3-padding-16 w3-card">
+      <h3 class="w3-center">Homepage</h3>
+      <div class="w3-content" style="max-width:550px">
+        <a href="tryw3css_examples_home.html" target="_blank"><img alt="Demo Homepage" class="w3-border" src="img_demo_homepage.jpg" style="width:98%;margin:20px 0"></a></div>
+      <div class="w3-row">
+        <div class="w3-col m6">
+          <a href="tryw3css_examples_home.html" target="_blank" class="w3-btn w3-padding-large w3-dark-grey" style="width:98%">Demo</a>
+        </div>
+        <div class="w3-col m6">
+          <a href="tryit5cd4.html?filename=tryw3css_examples_home" target="_blank" class="w3-btn w3-padding-large w3-dark-grey" style="width:100%">Try it &raquo;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-col m6">
+    <div class="w3-container w3-padding-16 w3-card">
+      <h3 class="w3-center">Homepage II</h3>
+      <div class="w3-content" style="max-width:550px">
+        <a href="tryw3css_examples_home2.html" target="_blank"><img class="w3-border" alt="Demo Homepage 2" src="img_demo_homepage2.jpg" style="width:98%;margin:20px 0"></a></div>
+      <div class="w3-row">
+        <div class="w3-col m6">
+          <a href="tryw3css_examples_home2.html" target="_blank" class="w3-btn w3-padding-large w3-dark-grey" style="width:98%">Demo</a>
+        </div>
+        <div class="w3-col m6">
+          <a href="tryit097f.html?filename=tryw3css_examples_home2" target="_blank" class="w3-btn w3-padding-large w3-dark-grey" style="width:100%">Try it &raquo;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="w3-container w3-light-grey w3-padding-16 w3-card">
+<h3 class="w3-center">Advertising Example</h3>
+<div class="w3-content" style="max-width:800px">
+<a href="tryw3css_examples_ads3.html" target="_blank">
+<img src="img_deadline.jpg" style="width:98%;margin:20px 0" alt="Advertisement"></a><br>
+<div class="w3-row">
+  <div class="w3-col m6">
+    <a href="tryw3css_examples_ads3.html" target="_blank" class="w3-btn w3-padding-large w3-dark-grey" style="width:98.5%">Demo</a>
+  </div>
+  <div class="w3-col m6">
+    <a href="tryit9b95.html?filename=tryw3css_examples_ads3" target="_blank" class="w3-btn w3-padding-large w3-dark-grey" style="width:98.5%">Try it Yourself</a>
+  </div>
+</div>
+</div>
+</div>
+
+<hr>
+<h2>Mobile Templates</h2>
+
+<div class="w3-row-padding" style="margin:0 -16px">
+<div class="w3-half">
+<div style="max-width:400px;border:1px solid #ccc">
+
+<header class="w3-bar w3-green w3-card-4">
+  <button class="w3-bar-item w3-button" onclick="w3_openSidebar()" style="font-size:50px">&#9776;</button>
+  <h1 class="w3-bar-item">Movies 2014</h1>
+</header>
+
+<div class="w3-panel">
+<div class="w3-row">
+  <div class="w3-col s3">
+    <img src="img_avatar.jpg" style="width:100%">
+  </div>
+  <div class="w3-col s9 w3-container">
+    <h3>Frozen</h3>
+    <p>The response to the animations was ridiculous.</p>
+  </div>
+</div>  
+<hr>
+<div class="w3-row">
+  <div class="w3-col s3">
+    <img src="img_avatar.jpg" style="width:100%">
+  </div>
+  <div class="w3-col s9 w3-container">
+    <h3>The Fault in Our Stars</h3>
+    <p>Touching, gripping and genuinely well made.</p>
+  </div>
 </div>
 <hr>
-
-<h2>Hover Color</h2>
-
-<div class="w3-bar">
-  <a href="javascript:void(0)" class="w3-button w3-hover-purple">&laquo;</a>
-  <a href="javascript:void(0)" class="w3-button w3-hover-green">1</a>
-  <a href="javascript:void(0)" class="w3-button w3-hover-red">2</a>
-  <a href="javascript:void(0)" class="w3-button w3-hover-blue">3</a>
-  <a href="javascript:void(0)" class="w3-button w3-hover-black">4</a>
-  <a href="javascript:void(0)" class="w3-button w3-hover-orange">&raquo;</a>
-</div>
-
-<p>By default, when you move the mouse over the pagination links, they get a grey background color. Use any of the <strong>w3-hover-<em>color</em></strong> classes to change the hover color:</p>
-
-<div class="w3-example">
-<h3>Example</h3>
-<div class="w3-code notranslate htmlHigh">
-&lt;div class=&quot;w3-bar&quot;&gt;<br>&nbsp; &lt;a href=&quot;#&quot; 
-class=&quot;w3-button w3-hover-purple&quot;&gt;&amp;laquo;&lt;/a&gt;<br>&nbsp; &lt;a 
-  href=&quot;#&quot; class=&quot;w3-button w3-hover-green&quot;&gt;1&lt;/a&gt;<br>&nbsp; &lt;a href=&quot;#&quot; 
-  class=&quot;w3-button w3-hover-red&quot;&gt;2&lt;/a&gt;<br>&nbsp; &lt;a href=&quot;#&quot; class=&quot;w3-button 
-  w3-hover-blue&quot;&gt;3&lt;/a&gt;<br>&nbsp; &lt;a href=&quot;#&quot; 
-class=&quot;w3-button w3-hover-black&quot;&gt;4&lt;/a&gt;<br>&nbsp; &lt;a href=&quot;#&quot; 
-class=&quot;w3-button w3-hover-orange&quot;&gt;&amp;raquo;&lt;/a&gt;<br>&lt;/div&gt; </div>
-<p>
-<a class="w3-btn" href="tryitc562.html?filename=tryw3css_pagination_hover" target="_blank">Try It Yourself &raquo;</a>
-</p>
-</div>
-<hr>
-
-<h2>Pagination Sizing</h2>
-<div class="w3-bar w3-small">
-  <a href="javascript:void(0)" class="w3-button">&laquo;</a>
-  <a href="javascript:void(0)" class="w3-button">1</a>
-  <a href="javascript:void(0)" class="w3-button">2</a>
-  <a href="javascript:void(0)" class="w3-button">3</a>
-  <a href="javascript:void(0)" class="w3-button">4</a>
-  <a href="javascript:void(0)" class="w3-button">&raquo;</a>
-</div>
-<div class="w3-bar w3-xlarge">
-  <a href="javascript:void(0)" class="w3-button">&laquo;</a>
-  <a href="javascript:void(0)" class="w3-button">1</a>
-  <a href="javascript:void(0)" class="w3-button">2</a>
-  <a href="javascript:void(0)" class="w3-button">3</a>
-  <a href="javascript:void(0)" class="w3-button">4</a>
-  <a href="javascript:void(0)" class="w3-button">&raquo;</a>
-</div>
-
-<p>Use <strong>w3-tiny</strong>, <strong>w3-small</strong>, <strong>w3-large</strong>, <strong>w3-xlarge</strong>, <strong>w3-xxlarge</strong> or 
-<strong>w3-xxxlarge</strong> to size the pagination:</p>
-
-<div class="w3-example">
-<h3>Example</h3>
-<div class="w3-code notranslate htmlHigh">
-&lt;div class=&quot;w3-bar 
-w3-xlarge&quot;&gt;</div>
-<p>
-<a class="w3-btn" href="tryit774c.html?filename=tryw3css_pagination_size" target="_blank">Try It Yourself &raquo;</a>
-</p>
-</div>
-<hr>
-
-<h2>Centered Pagination</h2>
-<div class="w3-center">
-<div class="w3-bar w3-large">
-  <a href="javascript:void(0)" class="w3-button">&laquo;</a>
-  <a href="javascript:void(0)" class="w3-button">1</a>
-  <a href="javascript:void(0)" class="w3-button">2</a>
-  <a href="javascript:void(0)" class="w3-button">3</a>
-  <a href="javascript:void(0)" class="w3-button">4</a>
-  <a href="javascript:void(0)" class="w3-button">&raquo;</a>
-</div>
-</div>
-<p>To center the pagination, put the "w3-bar" element inside a "w3-center" element:</p>
-
-<div class="w3-example">
-<h3>Example</h3>
-<div class="w3-code notranslate htmlHigh">
-  &lt;div class=&quot;w3-center&quot;&gt;<br>&lt;div class=&quot;w3-bar&quot;&gt;<br>&nbsp; &lt;a href=&quot;#&quot; 
-  class=&quot;w3-bar-item w3-button&quot;&gt;&amp;laquo;&lt;/a&gt;<br>&nbsp; &lt;a href=&quot;#&quot; 
-  class=&quot;w3-button&quot;&gt;1&lt;/a&gt;<br>&nbsp; &lt;a href=&quot;#&quot; class=&quot;w3-button&quot;&gt;2&lt;/a&gt;<br>&nbsp; 
-  &lt;a href=&quot;#&quot; class=&quot;w3-button&quot;&gt;3&lt;/a&gt;<br>&nbsp; &lt;a href=&quot;#&quot; 
-  class=&quot;w3-button&quot;&gt;4&lt;/a&gt;<br>&nbsp; &lt;a href=&quot;#&quot; class=&quot;w3-button&quot;&gt;&amp;raquo;&lt;/a&gt;<br>
-  &lt;/div&gt;<br>&lt;/div&gt;</div>
-<p>
-<a class="w3-btn" href="tryit8dd5.html?filename=tryw3css_pagination_center" target="_blank">Try It Yourself &raquo;</a>
-</p>
-</div>
-<hr>
-
-<h2>Bordered Pagination</h2>
-
-<div class="w3-show-inline-block">
-<div class="w3-bar w3-border">
-  <a class="w3-bar-item w3-button" href="#">&laquo;</a>
-  <a class="w3-bar-item w3-button w3-green" href="#">1</a>
-  <a class="w3-bar-item w3-button" href="#">2</a>
-  <a class="w3-bar-item w3-button" href="#">3</a>
-  <a class="w3-bar-item w3-button" href="#">4</a>
-  <a class="w3-bar-item w3-button" href="#">5</a>
-  <a class="w3-bar-item w3-button" href="#">&raquo;</a>
+<div class="w3-row">
+  <div class="w3-col s3">
+    <img src="img_avatar.jpg" style="width:100%">
+  </div>
+  <div class="w3-col s9 w3-container">
+    <h3>The Avengers</h3>
+    <p>A huge success for Marvel and Disney.</p>
+  </div>
 </div>
 </div>
 
-<p>Add the <strong>w3-border</strong> class to create a pagination with borders:</p>
+<footer class="w3-container" style="background-color:#93cf95;position:relative">
+  <a class="w3-button w3-xlarge w3-circle w3-green" style="background-color:#265728;position:absolute;top:-28px;right:16px;">+</a>
+  <p>Copyright 2016</p>
+</footer>
+<div class="w3-container w3-xlarge" style="background-color:#265728;color:white">&laquo;<span class="w3-right">&raquo;</span></div>
 
-<div class="w3-example">
-<h3>Example</h3>
-<div class="w3-code notranslate htmlHigh">
-&lt;div class=&quot;w3-bar 
-w3-border&quot;&gt;</div>
-<p>
-<a class="w3-btn" href="tryit5596.html?filename=tryw3css_pagination_border" target="_blank">Try It Yourself &raquo;</a>
-</p>
 </div>
+</div>
+<div class="w3-half w3-large">
+<a href="tryw3css_examples_mobile_blue.html" target="_blank" class="w3-button w3-blue">Demo</a>
+<a href="tryit8da7.html?filename=tryw3css_examples_mobile_blue" target="_blank" class="w3-button w3-blue">Try it Yourself &raquo;</a><br><br>
+<a href="tryw3css_examples_mobile_teal.html" target="_blank" class="w3-button w3-teal">Demo</a>
+<a href="tryit3935.html?filename=tryw3css_examples_mobile_teal" target="_blank" class="w3-button w3-teal">Try it Yourself &raquo;</a><br><br>
+<a href="tryw3css_examples_mobile_red.html" target="_blank" class="w3-button w3-red">Demo</a>
+<a href="tryit0d9d.html?filename=tryw3css_examples_mobile_red" target="_blank" class="w3-button w3-red">Try it Yourself &raquo;</a><br><br>
+<a href="tryw3css_examples_mobile_green.html" target="_blank" class="w3-button w3-green">Demo</a>
+<a href="tryit199e.html?filename=tryw3css_examples_mobile_green" target="_blank" class="w3-button w3-green">Try it Yourself &raquo;</a><br><br>
+<a href="tryw3css_examples_mobile_black.html" target="_blank" class="w3-button w3-black">Demo</a>
+<a href="tryit5c63.html?filename=tryw3css_examples_mobile_black" target="_blank" class="w3-button w3-black">Try it Yourself &raquo;</a><br><br>
+<a href="tryw3css_examples_mobile_amber.html" target="_blank" class="w3-button w3-amber">Demo</a>
+<a href="tryit9761.html?filename=tryw3css_examples_mobile_amber" target="_blank" class="w3-button w3-amber">Try it Yourself &raquo;</a><br><br>
 
-<h3>Rounded Borders</h3>
-<div class="w3-show-inline-block">
-<div class="w3-bar w3-border w3-round">
-  <a class="w3-bar-item w3-button" href="#">&laquo;</a>
-  <a class="w3-bar-item w3-button w3-green" href="#">1</a>
-  <a class="w3-bar-item w3-button" href="#">2</a>
-  <a class="w3-bar-item w3-button" href="#">3</a>
-  <a class="w3-bar-item w3-button" href="#">4</a>
-  <a class="w3-bar-item w3-button" href="#">5</a>
-  <a class="w3-bar-item w3-button" href="#">&raquo;</a>
 </div>
-</div>
-
-<p>Add the <strong>w3-round</strong> class next to w3-border for rounded borders:</p>
-
-<div class="w3-example">
-<h3>Example</h3>
-<div class="w3-code notranslate htmlHigh">
-&lt;div class=&quot;w3-bar 
-w3-border w3-round&quot;&gt;
-</div>
-<p>
-<a class="w3-btn" href="tryit52e4.html?filename=tryw3css_pagination_border_round" target="_blank">Try It Yourself &raquo;</a>
-</p>
-</div>
-<hr>
-
-<h2>Other Pagination Examples</h2>
-<p>The w3-bar class can also be used to create next/previous buttons:</p>
-<div class="w3-bar w3-border w3-round">
-  <a href="javascript:void(0)" class="w3-button">&#10094; Previous</a>
-  <a href="javascript:void(0)" class="w3-button w3-right">Next &#10095;</a>
-</div>
-<br>  
-<div class="w3-bar w3-border">
-  <a href="javascript:void(0)" class="w3-button w3-border-right">&#10094;</a>
-  <a href="javascript:void(0)" class="w3-button w3-border-left w3-right">&#10095;</a>
-</div>
-
-<div class="w3-example">
-<h3>Next/previous Example</h3>
-<div class="w3-code notranslate htmlHigh">
-
-  &lt;div class=&quot;w3-bar w3-border w3-round&quot;&gt;<br>&nbsp; &lt;a href=&quot;#&quot; 
-  class=&quot;w3-button&quot;&gt;&amp;#10094; Previous&lt;/a&gt;<br>&nbsp; &lt;a href=&quot;#&quot; class=&quot;w3-button 
-  w3-right&quot;&gt;Next &amp;#10095;&lt;/a&gt;<br>&lt;/div&gt;</div>
-<p>
-<a class="w3-btn" href="tryit32be.html?filename=tryw3css_pagination_prevnext" target="_blank">Try It Yourself &raquo;</a>
-</p>
-</div>
-
-<div class="w3-show-inline-block">
-<div class="w3-bar w3-light-grey">
-  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-dark-grey">Home</a>
-  <a href="javascript:void(0)" class="w3-bar-item w3-button">Link 1</a>
-  <a href="javascript:void(0)" class="w3-bar-item w3-button">Link 2</a>
-  <a href="javascript:void(0)" class="w3-bar-item w3-button">Link 3</a>
-</div>
-</div>
-
-<div class="w3-example">
-<h3>Inline Menu Example</h3>
-<div class="w3-code notranslate htmlHigh">
-  &lt;div class=&quot;w3-show-inline-block&quot;&gt;<br>&lt;div class=&quot;w3-bar w3-light-grey&quot;&gt;<br>&nbsp; 
-  &lt;a href=&quot;#&quot; class=&quot;w3-bar-item w3-button w3-dark-grey&quot;&gt;Home&lt;/a&gt;<br>&nbsp; &lt;a 
-  href=&quot;#&quot; class=&quot;w3-bar-item w3-button&quot;&gt;Link 1&lt;/a&gt;<br>&nbsp; &lt;a href=&quot;#&quot; 
-  class=&quot;w3-bar-item w3-button&quot;&gt;Link 2&lt;/a&gt;<br>&nbsp; &lt;a href=&quot;#&quot; 
-  class=&quot;w3-bar-item w3-button&quot;&gt;Link 3&lt;/a&gt;<br>&lt;/div&gt;<br>&lt;/div&gt;
-</div>
-<p>
-<a class="w3-btn" href="tryitcc1f.html?filename=tryw3css_pagination_menu" target="_blank">Try It Yourself &raquo;</a>
-</p>
 </div>
 
 <br>
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="w3css_tabulators.html">&#10094; Previous</a>
-<a class="w3-right w3-btn" href="w3css_progressbar.html">Next &#10095;</a>
+<a class="w3-left w3-btn" href="w3css_examples.html">&#10094; Previous</a>
+<a class="w3-right w3-btn" href="w3css_templates.html">Next &#10095;</a>
 </div>
+
 </div>
 <div class="w3-col l2 m12" id="right">
 
@@ -1558,7 +1649,8 @@ While using this site, you agree to have read and accepted our <a href="https://
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>  
 <![endif]-->
+
 </body>
 
-<!-- Mirrored from www.w3schools.com/w3css/w3css_pagination.asp by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 05 May 2020 11:00:46 GMT -->
+<!-- Mirrored from www.w3schools.com/w3css/w3css_demo.asp by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 05 May 2020 11:03:38 GMT -->
 </html>
