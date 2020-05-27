@@ -1,11 +1,11 @@
 <!doctype html>
 <html lang="ru">
 <head>
-<title>W3.CSS Учебник. Уроки для начинающих. W3Schools на русском</title>
+<title>W3.CSS Анимация. Уроки для начинающих. W3Schools на русском</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="keywords" content="W3,w3css,w3schools,на русском,уроки,для начинающих">
-<meta name="description" content="Учебник по фреймворку W3.CSS для начинающих. Бесплатные уроки онлайн W3Schools на русском языке">
+<meta name="keywords" content="W3,w3css,анимация,появление,исчезновение,вращение,слева,справа,сверху,снизу,w3schools,на русском,уроки,для начинающих">
+<meta name="description" content="W3.CSS Анимация. Классы анимации: w3-animate-top, w3-animate-bottom, w3-animate-left, w3-animate-right, w3-animate-opacity, w3-animate-zoom, w3-animate-fading, w3-spin. Сверху, снизу, слева, справа, появление, увеличение, вращение, исчезновение элементов. Учебник W3.CSS для начинающих. Бесплатные уроки онлайн W3Schools на русском языке">
 <link rel="icon" href="../favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="4/w3.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -336,13 +336,13 @@
 <hr>
 <div class="w3-row">
 <div class="w3-col s4">
-<button class="w3-button w3-green w3-margin-bottom" style="width:120px" onclick="startAnim('Top')">Top</button><br>
-<button class="w3-button w3-green w3-margin-bottom" style="width:120px" onclick="startAnim('Bottom')">Bottom</button><br>
-<button class="w3-button w3-green w3-margin-bottom" style="width:120px" onclick="startAnim('Left')">Left</button><br>
-<button class="w3-button w3-green w3-margin-bottom" style="width:120px" onclick="startAnim('Right')">Right</button><br>
-<button class="w3-button w3-green w3-margin-bottom" style="width:120px" onclick="startAnim('Fade')">Fade In</button><br>
-<button class="w3-button w3-green w3-margin-bottom" style="width:120px" onclick="startAnim('Zoom')">Zoom</button><br>
-<button class="w3-button w3-green w3-margin-bottom" style="width:120px" onclick="startAnim('Spin')">Spin</button>
+<button class="w3-button w3-green w3-margin-bottom" style="width:120px" onclick="startAnim('Top')">Сверху</button><br>
+<button class="w3-button w3-green w3-margin-bottom" style="width:120px" onclick="startAnim('Bottom')">Снизу</button><br>
+<button class="w3-button w3-green w3-margin-bottom" style="width:120px" onclick="startAnim('Left')">Слева</button><br>
+<button class="w3-button w3-green w3-margin-bottom" style="width:120px" onclick="startAnim('Right')">Справа</button><br>
+<button class="w3-button w3-green w3-margin-bottom" style="width:120px" onclick="startAnim('Fade')">Появление</button><br>
+<button class="w3-button w3-green w3-margin-bottom" style="width:120px" onclick="startAnim('Zoom')">Увеличение</button><br>
+<button class="w3-button w3-green w3-margin-bottom" style="width:120px" onclick="startAnim('Spin')">Вращение</button>
 </div>
 <div class="w3-col s8">
 <div id="Top" class="animTest w3-animate-top">Анимация - это весело!</div>
@@ -352,7 +352,8 @@
 <div id="Fade" class="animTest w3-animate-opacity">Анимация - это весело!</div>
 <div id="Zoom" class="animTest w3-animate-zoom">Анимация - это весело!</div>
 <div id="Spin" class="animTest w3-spin">Анимация - это весело!</div>
-<div id="Normal" class="animTest ">Анимация - это весело!</div>
+<div id="Normal" class="animTest ">Анимация - это весело!
+</div>
 </div>
 </div>
 <hr>
@@ -419,8 +420,8 @@
 </div>
 <hr>
 
-<h2>Animate Left</h2>
-<p>The <strong>w3-animate-left</strong> class slides in an element from left (-300px to 0):</p>
+<h2>Анимация слева</h2>
+<p>Класс <strong>w3-animate-left</strong> вставляет элемент слева (-300px до 0):</p>
 <div class="w3-example">
 <h3>Пример</h3>
  <div class="w3-code notranslate htmlHigh">
@@ -429,9 +430,8 @@
 </div>
 <hr>
 
-<h2>Animate Right</h2>
-<p>The <strong>w3-animate-right</strong> class slides in an element from the
-right (-300px to 0):</p>
+<h2>Анимация справа</h2>
+<p>Класс <strong>w3-animate-right</strong> вставляет элемент справа (-300px до 0):</p>
 <div class="w3-example">
 <h3>Пример</h3>
  <div class="w3-code notranslate htmlHigh">
@@ -440,10 +440,9 @@ right (-300px to 0):</p>
 </div>
 <hr>
 
-<h2>Fade in Elements</h2>
-<p>The <strong>w3-animate-opacity</strong> class animates an element's opacity
-from 0 to 1 in 0.8 seconds.</p>
-<p>Fade in an element with the <strong>w3-animate-opacity</strong> class:</p>
+<h2>Появление элемента</h2>
+<p>Класс <strong>w3-animate-opacity</strong> анимирует непрозрачность элемента от 0 до 1 за 0,8 секунды.</p>
+<p>Появление элемента с помощью класса <strong>w3-animate-opacity</strong>:</p>
 <div class="w3-example">
 <h3>Пример</h3>
  <div class="w3-code notranslate htmlHigh">
@@ -452,10 +451,9 @@ from 0 to 1 in 0.8 seconds.</p>
 </div>
 <hr>
 
-<h2>Zoom in Elements</h2>
-<p>The <strong>w3-animate-zoom</strong> class animates an element from 0 to 100%
-in size.</p>
-<p>Zoom in an element with the <strong>w3-animate-zoom</strong> class:</p>
+<h2>Увеличение элемента</h2>
+<p>Класс <strong>w3-animate-zoom</strong> анимирует элемент (производит увеличение) размером от 0 до 100% .</p>
+<p>Увеличить (масштабировать) элемент с помощью класса <strong>w3-animate-zoom</strong>:</p>
 <div class="w3-example">
 <h3>Пример</h3>
  <div class="w3-code notranslate htmlHigh">
@@ -464,33 +462,29 @@ in size.</p>
 </div>
 <hr>
 
-<h2>Spin Elements</h2>
-<p>The <strong>w3-spin</strong> class spins an element 360 degrees:</p>
-<p>
-<i class="fa fa-spinner w3-spin" style="font-size:64px"></i>
-</p>
+<h2>Вращение элементов</h2>
+<p>Класс <strong>w3-spin</strong> вращает элементы на 360 градусов:</p>
+<p><i class="fa fa-spinner w3-spin" style="font-size:64px"></i></p>
 <div class="w3-example">
 <h3>Пример</h3>
  <div class="w3-code notranslate htmlHigh">
      &lt;div class=&quot;w3-spin&quot;&gt;..&lt;/div&gt;</div>
 <a class="w3-btn w3-margin-top w3-margin-bottom" href="tryit1ac7.html?filename=tryw3css_animate-spin" target="_blank">Попробуйте сами &raquo;</a>
 </div>
-
 <hr>
 
-<h2>Fading Infinite</h2>
-<p>The <strong>w3-animate-fading</strong> class fades in and out an element every 10 seconds (continuously):</p>
-<h3 class="w3-animate-fading w3-padding w3-dark-grey">Animate Fade In and Out</h3>
+<h2>Постоянное исчезновение и появление</h2>
+<p>Класс <strong>w3-animate-fading</strong> вводит и выводит элемент каждые 10 секунд (непрерывно):</p>
+<h3 class="w3-animate-fading w3-padding w3-dark-grey">Анимация исчезновения и появления</h3>
 <div class="w3-example">
 <h3>Пример</h3>
  <div class="w3-code notranslate htmlHigh">
      &lt;div class=&quot;w3-animate-fading&quot;&gt;..&lt;/div&gt;</div>
  <a class="w3-btn w3-margin-top w3-margin-bottom" href="tryit7bbb.html?filename=tryw3css_animate_fading" target="_blank">Попробуйте сами &raquo;</a>
 </div>
-
 <hr>
 
-<h2>Fade All</h2>
+<h2>Появление всего</h2>
 <div class="w3-example">
 <h3>Пример</h3>
  <div class="w3-code notranslate htmlHigh">
@@ -513,7 +507,7 @@ function startAnim(animName) {
 }
 </script>
 
-<br>
+<hr>
 <div class="w3-clear nextprev">
   <a class="w3-left w3-btn" href="w3css_layout.html">&#10094; Prev</a>
 <a class="w3-right w3-btn" href="w3css_effects.html">Next &#10095;</a>
@@ -526,7 +520,7 @@ function startAnim(animName) {
 <script>
 var disqus_config = function () {
 this.page.url = w3schoolsrus.github.io; // канонический URL страницы
-this.page.identifier = w3schoolsrus.github.io / w3css / w3css_.html; // уникальный идентификатор страницы
+this.page.identifier = w3schoolsrus.github.io / w3css / w3css_animate.html; // уникальный идентификатор страницы
 };
 (function() { // Не редактировать ниже этой линии
 var d = document, s = d.createElement('script');
