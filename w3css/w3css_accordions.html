@@ -1,11 +1,11 @@
 <!doctype html>
 <html lang="ru">
 <head>
-<title>W3.CSS Учебник. Уроки для начинающих. W3Schools на русском</title>
+<title>W3.CSS Аккордеоны. Уроки для начинающих. W3Schools на русском</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="keywords" content="W3,w3css,w3schools,на русском,уроки,для начинающих">
-<meta name="description" content="Учебник по фреймворку W3.CSS для начинающих. Бесплатные уроки онлайн W3Schools на русском языке">
+<meta name="keywords" content="W3,w3css,аккордеоны,w3schools,на русском,уроки,для начинающих">
+<meta name="description" content="W3.CSS Аккордеоны. Аккордеонные кнопки. Ширина, содержимое аккордеона. В боковой панели (сайдбаре). Анимированные аккордеоны. Учебник по фреймворку W3.CSS для начинающих. Бесплатные уроки онлайн W3Schools на русском языке">
 <link rel="icon" href="../favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="4/w3.css">
 </head>
@@ -329,83 +329,79 @@
 </div>
 <hr>
 
-<p>Click on the "Open Section" buttons below to see how accordions work:</p>
-<button onclick="myFunct('Demo1')" class="w3-button w3-light-grey w3-block w3-left-align" id="clickthis">Open Section 1</button>
+<p>Нажмите на кнопку «Открыть раздел» ниже, чтобы увидеть, как работают аккордеоны:</p>
+<button onclick="myFunct('Demo1')" class="w3-button w3-light-grey w3-block w3-left-align" id="clickthis">Открыть раздел 1</button>
 <div id="Demo1" class="w3-hide w3-border">
   <div class="w3-container">
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
   </div>
 </div>
-<button onclick="myFunct('Demo2')" class="w3-button w3-block w3-light-grey w3-left-align">Open Section 2</button>
+<button onclick="myFunct('Demo2')" class="w3-button w3-block w3-light-grey w3-left-align">Открыть раздел 2</button>
 <div id="Demo2" class="w3-hide w3-border">
-  <a class="w3-button w3-block w3-white w3-left-align" href="javascript:void(0)">Link 1</a>
-  <a class="w3-button w3-block w3-white w3-left-align" href="javascript:void(0)">Link 2</a>
-  <a class="w3-button w3-block w3-white w3-left-align" href="javascript:void(0)">Link 3</a>
+  <a class="w3-button w3-block w3-white w3-left-align" href="javascript:void(0)">Ссылка 1</a>
+  <a class="w3-button w3-block w3-white w3-left-align" href="javascript:void(0)">Ссылка 2</a>
+  <a class="w3-button w3-block w3-white w3-left-align" href="javascript:void(0)">Ссылка 3</a>
 </div>
-<button onclick="myFunct('Demo3')" class="w3-button w3-block w3-light-grey w3-left-align">Open Section 3</button>
+<button onclick="myFunct('Demo3')" class="w3-button w3-block w3-light-grey w3-left-align">Открыть раздел 3</button>
 <div id="Demo3" class="w3-hide w3-border">
   <div class="w3-container">
-    <p>Accordion with Images:</p>
+    <p>Аккордеон с изображениями:</p>
     <img src="img_snowtops.jpg" style="width:30%;" alt="Alps">
-    <p>French Alps</p>
+    <p>Французские Альпы</p>
   </div>
 </div>
 <hr>
 
-<h2>Accordion</h2>
-<p>An accordion is used to show (and hide) HTML content.</p>
-<p>Use the <strong>w3-hide </strong>class to hide the accordion content.</p>
-<p>Use any kind of button to open and close the content:</p>
+<h2>Аккордеон</h2>
+<p>Аккордеон используется для отображения (и скрытия) содержимого HTML.</p>
+<p>Используйте класс <strong>w3-hide</strong> чтобы скрыть содержание аккордеона.</p>
+<p>Используйте любую кнопку, чтобы открыть и закрыть содержимое:</p>
 <div class="w3-example">
-<h3>Example</h3>
+<h3>Пример</h3>
 <div class="w3-code notranslate htmlHigh">
   &lt;button onclick=&quot;myFunction('Demo1')&quot;
-class=&quot;w3-button w3-block w3-left-align&quot;&gt;<br>Open Section 1&lt;/button&gt;<br>
-  <br>&lt;div id=&quot;Demo1&quot; class=&quot;w3-container
-  w3-hide&quot;&gt;<br>&nbsp;
-&lt;p&gt;Some text..&lt;/p&gt;<br>&lt;/div&gt;<br><br>&lt;script&gt;<br>
-function myFunction(id) {<br>&nbsp;&nbsp;var x =
-document.getElementById(id);<br>&nbsp; if (x.className.indexOf(&quot;w3-show&quot;)
-== -1) {<br>&nbsp;&nbsp;&nbsp; x.className += &quot; w3-show&quot;;<br>&nbsp; } else { <br>&nbsp;&nbsp;&nbsp;
+class=&quot;w3-button w3-block w3-left-align&quot;&gt;<br>Открыть раздел 1&lt;/button&gt;<br>
+  <br>&lt;div id=&quot;Demo1&quot; class=&quot;w3-container w3-hide&quot;&gt;<br>&nbsp;
+&lt;p&gt;Какой-то текст..&lt;/p&gt;<br>&lt;/div&gt;<br><br>&lt;script&gt;<br>
+function myFunction(id) {<br>&nbsp;&nbsp;var x = document.getElementById(id);<br>&nbsp; if (x.className.indexOf(&quot;w3-show&quot;) == -1) {<br>&nbsp;&nbsp;&nbsp; x.className += &quot; w3-show&quot;;<br>&nbsp; } else { <br>&nbsp;&nbsp;&nbsp;
 x.className = x.className.replace(&quot; w3-show&quot;, &quot;&quot;);<br>&nbsp;&nbsp;}<br>
 }<br>&lt;/script&gt;</div>
 <p>
-<a target="_blank" href="tryit7700.html?filename=tryw3css_accordion" class="w3-btn">Try it Yourself &raquo;</a>
+<a target="_blank" href="tryit7700.html?filename=tryw3css_accordion" class="w3-btn">Попробуйте сами &raquo;</a>
 </p>
 </div>
 
-<p>Both the element that is used to open the accordion and the accordion's
-content can be any HTML element.</p>
-
+<p>И элемент, который используется для открытия аккордеона, и контент аккордеона могут быть любым элементом HTML.</p>
 <hr>
-<h2>Accordion vs. Dropdown</h2>
-<p>This table shows the difference between an accordion and a dropdown:</p>
+
+<h2>Аккордеон vs. Dropdown</h2>
+<p>Эта таблица показывает разницу между аккордеоном и выпадающим элементом:</p>
 <table class="w3-table-all">
-<tr><th style="width:50%">Accordion</th><th>Dropdown</th></tr>
+<tr><th style="width:50%">Аккордеон</th><th>Dropdown</th></tr>
 <tr>
-<td>Content pushes the page content down</td>
-<td>Content lays over existing the page content</td>
+<td>Контент выталкивает содержимое страницы вниз</td>
+<td>Контент лежит поверх существующего контента страницы</td>
 </tr>
 <tr>
-<td>Content is often 100% wide</td>
-<td>Content is 160px wide (default)</td>
+<td>Содержание часто составляет 100%</td>
+<td>Контент шириной 160px (по умолчанию)</td>
 </tr>
 <tr>
-<td>Often used to open multiple sections</td>
-<td>Often used to open one section</td>
+<td>Часто используется для открытия нескольких разделов</td>
+<td>Часто используется для открытия одного раздела</td>
 </tr>
 </table>
 
 <div class="w3-row">
 <div class="w3-half">
-<h4>Accordions</h4>
-<button onclick="myFunc('Demo5')" class="w3-padding-16 w3-button w3-block w3-left-align w3-red w3-hover-pink">Accordion 1 &nbsp;<i class="fa fa-caret-down"></i></button>
+<h4>Аккордеоны</h4>
+<button onclick="myFunc('Demo5')" class="w3-padding-16 w3-button w3-block w3-left-align w3-red w3-hover-pink">Аккордеон 1 &nbsp;<i class="fa fa-caret-down"></i></button>
 <div id="Demo5" class="w3-hide w3-card">
-  <a class="w3-button w3-block w3-left-align" href="javascript:void(0)">Link 1</a>
-  <a class="w3-button w3-block w3-left-align" href="javascript:void(0)">Link 2</a>
-  <a class="w3-button w3-block w3-left-align" href="javascript:void(0)">Link 3</a>
+  <a class="w3-button w3-block w3-left-align" href="javascript:void(0)">Ссылка 1</a>
+  <a class="w3-button w3-block w3-left-align" href="javascript:void(0)">Ссылка 2</a>
+  <a class="w3-button w3-block w3-left-align" href="javascript:void(0)">Ссылка 3</a>
 </div>
-<button onclick="myFunc('Demo4')" class="w3-padding-16 w3-button w3-block w3-left-align w3-red w3-hover-pink">Accordion 2 &nbsp;<i class="fa fa-caret-down"></i></button>
+<button onclick="myFunc('Demo4')" class="w3-padding-16 w3-button w3-block w3-left-align w3-red w3-hover-pink">Аккордеон 2 &nbsp;<i class="fa fa-caret-down"></i></button>
 <div id="Demo4" class="w3-hide w3-card">
   <div class="w3-container">
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -414,26 +410,25 @@ content can be any HTML element.</p>
 </div>
 <div class="w3-half">
 <div class="testmargin">
-<h4>Dropdowns</h4>
+<h4>Выпадающие элементы</h4>
 <div class="w3-dropdown-click" style="margin-bottom:73px">
-  <button onclick="myFunction()"class="w3-button w3-red w3-hover-pink w3-padding-16">Dropdown &nbsp;<i class="fa fa-caret-down"></i></button>
+  <button onclick="myFunction()" class="w3-button w3-red w3-hover-pink w3-padding-16">Dropdown <i class="fa fa-caret-down"></i></button>
   <div id="myDropdown" class="w3-dropdown-content w3-bar-block w3-card">
-    <a class="w3-bar-item w3-button" style="color:#000" href="javascript:void(0)">Link 1</a>
-    <a class="w3-bar-item w3-button" style="color:#000" href="javascript:void(0)">Link 2</a>
-    <a class="w3-bar-item w3-button" style="color:#000" href="javascript:void(0)">Link 3</a>
+    <a class="w3-bar-item w3-button" style="color:#000" href="javascript:void(0)">Ссылка 1</a>
+    <a class="w3-bar-item w3-button" style="color:#000" href="javascript:void(0)">Ссылка 2</a>
+    <a class="w3-bar-item w3-button" style="color:#000" href="javascript:void(0)">Ссылка 3</a>
   </div>
 </div>
 </div>
 
 <script>
-/* When the user clicks on the button,
-toggle between hiding and showing the dropdown content */
+/* Когда пользователь нажимает кнопку, переключайтесь между скрытием и отображением выпадающего содержимого */
 function myFunction() {
     var x = document.getElementById("myDropdown");
     if (x.classList) {
         x.classList.toggle("w3-show");
     } else {
-        // Fallback for IE9
+        // Откат для IE9
         var classes = x.className.split(" ");
         var i = classes.indexOf("w3-show");
 
@@ -448,61 +443,51 @@ function myFunction() {
 </div>
 </div>
 <hr>
-<div id="midcontentadcontainer" style="overflow:auto;text-align:center">
-<!-- MidContent -->
 
-  <!--<pre>mid_content, all: [300,250][336,280][728,90][970,250][970,90][320,50][468,60]</pre>-->
-  <div id="snhb-mid_content-0"></div>
+<h2>Аккордеонные Кнопки</h2>
+<p>Вы можете использовать любой элемент HTML, чтобы открыть содержание аккордеона. Мы предпочитаем кнопку с классом <strong>w3-block</strong>, чтобы охватить всю ширину страницы (ширина 100%).</p>
+<p>Помните, что кнопки в W3.CSS центрированы по умолчанию. Используйте класс <strong>w3-left-align</strong>, если хотите, чтобы они были выровнены по левому краю. Тем не менее, вы не должны обязательно следовать нашему подходу - аккордеон будет хорошо выглядеть в любом случае:</p>
 
-</div>
-<hr>
-<h2>Accordion Buttons</h2>
-<p>You can use any HTML element to open the accordion content. We prefer a button with a
-<strong>w3-block</strong> class, to span the entire width of the page (100%
-width).</p>
-<p>Remember that buttons in W3.CSS are centered by default. Use the <strong>w3-left-align</strong> class if you want
-them left-aligned instead. However, you do not have to follow our approach - an accordion will look good either way:</p>
-
-<button onclick="myFunc('Demo9')" class="w3-button w3-black">Normal button</button>
+<button onclick="myFunc('Demo9')" class="w3-button w3-black">Обычная кнопка</button>
 <div id="Demo9" class="w3-hide w3-container w3-light-grey">
   <p>Lorem ipsum...</p>
 </div>
-<button onclick="myFunc('Demo7')" class="w3-button w3-block w3-left-align w3-green">Left aligned and full-width</button>
+<button onclick="myFunc('Demo7')" class="w3-button w3-block w3-left-align w3-green">Выровненный слева и на всю ширину</button>
 <div id="Demo7" class="w3-hide w3-container">
   <p>Lorem ipsum...</p>
 </div>
-<button onclick="myFunc('Demo8')" class="w3-btn w3-block w3-red">Centered and full-width</button>
+<button onclick="myFunc('Demo8')" class="w3-btn w3-block w3-red">По центру и на всю ширину</button>
 <div id="Demo8" class="w3-hide w3-container w3-center w3-pale-red">
-  <p>Centered content as well!</p>
+  <p>Контент центрирован также!</p>
 </div>
 
 <div class="w3-example">
-<h3>Example</h3>
+<h3>Пример</h3>
 <div class="w3-code notranslate htmlHigh">
   &lt;button onclick=&quot;myFunc('Demo1')&quot;
-class=&quot;w3-button&quot;&gt;<br>Normal button&lt;/button&gt;<br><br>&lt;div id=&quot;Demo1&quot; class=&quot;w3-hide&quot;&gt;<br>&nbsp; &lt;p&gt;Lorem ipsum...&lt;/p&gt;<br>&lt;/div&gt;<br>
+class=&quot;w3-button&quot;&gt;<br>Обычная кнопка&lt;/button&gt;<br><br>&lt;div id=&quot;Demo1&quot; class=&quot;w3-hide&quot;&gt;<br>&nbsp; &lt;p&gt;Lorem ipsum...&lt;/p&gt;<br>&lt;/div&gt;<br>
   <br>&lt;button onclick=&quot;myFunc('Demo2')&quot; class=&quot;w3-button w3-block w3-left-align
-w3-green&quot;&gt;<br>Left aligned and full-width&lt;/button&gt;<br><br>&lt;div id=&quot;Demo2&quot; class=&quot;w3-hide&quot;&gt;<br>&nbsp; &lt;p&gt;Lorem ipsum...&lt;/p&gt;<br>&lt;/div&gt;<br>
+w3-green&quot;&gt;<br>Выровненный слева и на всю ширину&lt;/button&gt;<br><br>&lt;div id=&quot;Demo2&quot; class=&quot;w3-hide&quot;&gt;<br>&nbsp; &lt;p&gt;Lorem ipsum...&lt;/p&gt;<br>&lt;/div&gt;<br>
   <br>&lt;button onclick=&quot;myFunc('Demo3')&quot; class=&quot;w3-btn w3-block
-w3-red&quot;&gt;<br>Centered and full-width&lt;/button&gt;<br>
+w3-red&quot;&gt;<br>По центру и на всю ширину&lt;/button&gt;<br>
   <br>&lt;div id=&quot;Demo3&quot;
 class=&quot;w3-hide w3-center&quot;&gt;<br>&nbsp;
-&lt;p&gt;Centered content as well!&lt;/p&gt;<br>&lt;/div&gt;</div>
+&lt;p&gt;Контент центрирован также!!&lt;/p&gt;<br>&lt;/div&gt;</div>
 <p>
-<a target="_blank" href="tryit6f5a.html?filename=tryw3css_accordion_buttons" class="w3-btn">Try it Yourself &raquo;</a>
+<a target="_blank" href="tryit6f5a.html?filename=tryw3css_accordion_buttons" class="w3-btn">Попробуйте сами &raquo;</a>
 </p>
 </div>
 <hr>
 
-<h2>Active Accordion Buttons</h2>
-<p>Use JavaScript to highlight accordions that are open (clicked on):</p>
-<button onclick="myFuncx('Demo10')" class="w3-button w3-block w3-black w3-left-align">Open Section 1</button>
+<h2>Активные Аккордеонные Кнопки</h2>
+<p>Используйте JavaScript, чтобы выделить открытые (кликнутые) аккордеоны:</p>
+<button onclick="myFuncx('Demo10')" class="w3-button w3-block w3-black w3-left-align">Открыть раздел 1</button>
 <div id="Demo10" class="w3-hide w3-container">
-    <p>Some text..</p>
+    <p>Какой-то текст..</p>
 </div>
-<button onclick="myFuncx('Demo11')" class="w3-button w3-block w3-black w3-left-align">Open Section 2</button>
+<button onclick="myFuncx('Demo11')" class="w3-button w3-block w3-black w3-left-align">Открыть раздел 2</button>
 <div id="Demo11" class="w3-hide w3-container">
-    <p>Some other text..</p>
+    <p>Какой-то другой текст..</p>
 </div>
 
 <script>
@@ -519,93 +504,92 @@ function myFuncx(id) {
     }}
 </script>
 <div class="w3-example">
-<h3>Example</h3>
+<h3>Пример</h3>
 <div class="w3-code notranslate jsHigh">
-// Add the w3-red class to all opened accordions<br>var x =
+// Добавьте класс w3-red ко всем открытым аккордеонам<br>var x =
 document.getElementById(id);<br>if (x.className.indexOf(&quot;w3-show&quot;) == -1) {<br>&nbsp;
 x.className += &quot; w3-show&quot;;<br>&nbsp; x.previousElementSibling.className += &quot;
 w3-red&quot;;<br>} else { <br>&nbsp; x.className = x.className.replace(&quot;w3-show&quot;,
 &quot;&quot;);<br>&nbsp; x.previousElementSibling.className =
 <br>&nbsp; x.previousElementSibling.className.replace(&quot;w3-red&quot;, &quot;&quot;);<br>}</div>
 <p>
-<a target="_blank" href="tryit170e.html?filename=tryw3css_accordion_active" class="w3-btn">Try it Yourself &raquo;</a>
+<a target="_blank" href="tryit170e.html?filename=tryw3css_accordion_active" class="w3-btn">Попробуйте сами &raquo;</a>
 </p>
 </div>
 <hr>
 
-<h2>Accordion Width</h2>
-<p>By default, the width of block is 100%. To override this, change the
-CSS width property of the accordion container:</p>
+<h2>Ширина Аккордеона</h2>
+<p>По умолчанию ширина блока составляет 100%. Чтобы переопределить это, измените CSS свойство <b>width</b> контейнера <b>accordion</b>:</p>
 <div class="w3-light-grey" style="width:25%">
   <button onclick="myFunc('Demo25')" class="w3-button w3-black w3-block testbtn">
   25%</button>
   <div id="Demo25" class="w3-container w3-hide">
-    <p>Some text..</p>
+    <p>Какой-то текст..</p>
   </div>
 </div>
 <div class="w3-light-grey" style="width:50%">
   <button onclick="myFunc('Demo26')" class="w3-button w3-black w3-block testbtn">
   50%</button>
   <div id="Demo26" class="w3-container w3-hide">
-    <p>Some text..</p>
+    <p>Какой-то текст..</p>
   </div>
 </div>
 <div class="w3-light-grey" style="width:75%">
   <button onclick="myFunc('Demo27')" class="w3-button w3-black w3-block testbtn">
   75%</button>
   <div id="Demo27" class="w3-container w3-hide">
-    <p>Some text..</p>
+    <p>Какой-то текст..</p>
   </div>
 </div>
 <div class="w3-light-grey">
   <button onclick="myFunc('Demo28')" class="w3-button w3-black w3-block testbtn">
-  Default (100%)</button>
+  По умолчанию (100%)</button>
   <div id="Demo28" class="w3-container w3-hide">
-    <p>Some text..</p>
+    <p>Какой-то текст..</p>
   </div>
 </div>
 
 <div class="w3-example">
-<h3>Example</h3>
+<h3>Пример</h3>
 <div class="w3-code notranslate htmlHigh">
 &lt;div class=&quot;w3-light-grey&quot; style=&quot;width:50%&quot;&gt;<br>&nbsp; &lt;button onclick=&quot;myFunction('Demo1')&quot;
 class=&quot;w3-button w3-block&quot;&gt;<br>&nbsp;&nbsp;&nbsp; 50%<br>&nbsp;
 &lt;/button&gt;<br>&nbsp; &lt;div id=&quot;Demo1&quot; class=&quot;w3-hide&quot;&gt;<br>
 &nbsp;&nbsp;&nbsp; &lt;p&gt;Some text..&lt;/p&gt;<br>&nbsp; &lt;/div&gt;<br>&lt;/div&gt;</div>
 <p>
-<a target="_blank" href="tryit6990.html?filename=tryw3css_accordion_width" class="w3-btn">Try it Yourself &raquo;</a>
+<a target="_blank" href="tryit6990.html?filename=tryw3css_accordion_width" class="w3-btn">Попробуйте сами &raquo;</a>
 </p>
 </div>
 <hr>
 
-<h2>Accordion Content</h2>
-<h5>Accordion with links:</h5>
+<h2>Содержимое аккордеона</h2>
+<h5>Аккордеон со ссылками:</h5>
 <div>
   <button onclick="myFuncx('Demo12')" class="w3-button w3-block w3-left-align testbtn w3-light-grey">
-  Accordion</button>
+  Аккордеон</button>
   <div id="Demo12" class="w3-hide">
-  <a class="w3-button w3-block w3-left-align" href="javascript:void(0)">Link 1</a>
-  <a class="w3-button w3-block w3-left-align" href="javascript:void(0)">Link 2</a>
-  <a class="w3-button w3-block w3-left-align" href="javascript:void(0)">Link 3</a>
+  <a class="w3-button w3-block w3-left-align" href="javascript:void(0)">Ссылка 1</a>
+  <a class="w3-button w3-block w3-left-align" href="javascript:void(0)">Ссылка 2</a>
+  <a class="w3-button w3-block w3-left-align" href="javascript:void(0)">Ссылка 3</a>
   </div>
 </div>
 
 <div class="w3-example">
-<h3>Example</h3>
+<h3>Пример</h3>
 <div class="w3-code notranslate htmlHigh">
   &lt;button onclick=&quot;myFunction('Demo1')&quot;
-class=&quot;w3-button w3-block w3-left-align&quot;&gt;<br>Accordion&lt;/button&gt;<br><br>&lt;div id=&quot;Demo1&quot; class=&quot;w3-hide&quot;&gt;<br>&nbsp;
-  &lt;a href=&quot;#&quot; class=&quot;w3-button w3-block w3-left-align&quot;&gt;Link 1&lt;/a&gt;<br>&nbsp; &lt;a href=&quot;#&quot;
-  class=&quot;w3-button w3-block w3-left-align&quot;&gt;Link 2&lt;/a&gt;<br>&nbsp; &lt;a href=&quot;#&quot;
-  class=&quot;w3-button w3-block w3-left-align&quot;&gt;Link 3&lt;/a&gt;<br>&lt;/div&gt;</div>
+class=&quot;w3-button w3-block w3-left-align&quot;&gt;<br>Аккордеон&lt;/button&gt;<br><br>&lt;div id=&quot;Demo1&quot; class=&quot;w3-hide&quot;&gt;<br>&nbsp;
+  &lt;a href=&quot;#&quot; class=&quot;w3-button w3-block w3-left-align&quot;&gt;Ссылка 1&lt;/a&gt;<br>&nbsp; &lt;a href=&quot;#&quot;
+  class=&quot;w3-button w3-block w3-left-align&quot;&gt;Ссылка 2&lt;/a&gt;<br>&nbsp; &lt;a href=&quot;#&quot;
+  class=&quot;w3-button w3-block w3-left-align&quot;&gt;Ссылка 3&lt;/a&gt;<br>&lt;/div&gt;</div>
 <p>
-<a target="_blank" href="tryit1bba.html?filename=tryw3css_accordion_links" class="w3-btn">Try it Yourself &raquo;</a>
+<a target="_blank" href="tryit1bba.html?filename=tryw3css_accordion_links" class="w3-btn">Попробуйте сами &raquo;</a>
 </p>
 </div>
 
-<h5>Accordion as a List:</h5>
+<h5>Аккордеон как список:</h5>
 <button onclick="myFuncx('Demo13')" class="w3-button w3-block w3-left-align testbtn w3-light-grey">
-Accordion</button>
+Аккордеон</button>
 <div id="Demo13" class="w3-hide">
 <ul class="w3-ul">
   <li>Jill</li>
@@ -615,62 +599,61 @@ Accordion</button>
 </div>
 
 <div class="w3-example">
-<h3>Example</h3>
+<h3>Пример</h3>
 <div class="w3-code notranslate htmlHigh">
   &lt;button onclick=&quot;myFunction('Demo1')&quot;
-class=&quot;w3-button w3-block w3-left-align&quot;&gt;<br>Accordion&lt;/button&gt;<br><br>&lt;div id=&quot;Demo1&quot; class=&quot;w3-hide&quot;&gt;<br>
+class=&quot;w3-button w3-block w3-left-align&quot;&gt;<br>Аккордеон&lt;/button&gt;<br><br>&lt;div id=&quot;Demo1&quot; class=&quot;w3-hide&quot;&gt;<br>
   &nbsp; &lt;ul class=&quot;w3-ul&quot;&gt;<br>&nbsp;&nbsp;&nbsp; &lt;li&gt;Jill&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp;
 &lt;li&gt;Eve&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp; &lt;li&gt;Adam&lt;/li&gt;<br>&nbsp;
 &lt;/ul&gt;<br>&lt;/div&gt;</div>
 <p>
-<a target="_blank" href="tryit8330.html?filename=tryw3css_accordion_lists" class="w3-btn">Try it Yourself &raquo;</a>
+<a target="_blank" href="tryit8330.html?filename=tryw3css_accordion_lists" class="w3-btn">Попробуйте сами &raquo;</a>
 </p>
 </div>
 
-<h5>Accordion inside a Sidebar (You will learn more about sidebars later):</h5>
+<h5>Аккордеон внутри боковой панели (вы узнаете больше о боковых панелях позже в этом учебнике):</h5>
 <iframe src="demo_ifr_accordion_sidebar.html" style="border:1px solid #ccc;width:100%;height:350px"></iframe>
 
 <div class="w3-example">
-<h3>Example</h3>
+<h3>Пример</h3>
 <div class="w3-code notranslate htmlHigh">
 &lt;div class=&quot;w3-sidebar w3-bar-block w3-light-grey w3-card&quot; style=&quot;width:200px;&quot;&gt;<br>&nbsp;
-&lt;a href=&quot;#&quot; class=&quot;w3-bar-item w3-button&quot;&gt;Link 1&lt;/a&gt; <br>&nbsp;
-&lt;a href=&quot;#&quot; class=&quot;w3-bar-item w3-button&quot; onclick=&quot;myAccFunc()&quot;&gt;Accordion&lt;/a&gt;<br>&nbsp; &lt;div
+&lt;a href=&quot;#&quot; class=&quot;w3-bar-item w3-button&quot;&gt;Ссылка 1&lt;/a&gt; <br>&nbsp;
+&lt;a href=&quot;#&quot; class=&quot;w3-bar-item w3-button&quot; onclick=&quot;myAccFunc()&quot;&gt;Аккордеон&lt;/a&gt;<br>&nbsp; &lt;div
 id=&quot;demoAcc&quot; class=&quot;w3-hide&quot;&gt;<br>&nbsp;&nbsp;&nbsp;
-&lt;a href=&quot;#&quot; class=&quot;w3-bar-item w3-button&quot;&gt;Link&lt;/a&gt;<br>&nbsp;&nbsp;&nbsp; &lt;a href=&quot;#&quot;
-  class=&quot;w3-bar-item w3-button&quot;&gt;Link&lt;/a&gt;<br>&nbsp; &lt;/div&gt;<br>&nbsp; &lt;div class=&quot;w3-dropdown-click&quot;&gt;<br>&nbsp;&nbsp;&nbsp;
+&lt;a href=&quot;#&quot; class=&quot;w3-bar-item w3-button&quot;&gt;Ссылка&lt;/a&gt;<br>&nbsp;&nbsp;&nbsp; &lt;a href=&quot;#&quot;
+  class=&quot;w3-bar-item w3-button&quot;&gt;Ссылка&lt;/a&gt;<br>&nbsp; &lt;/div&gt;<br>&nbsp; &lt;div class=&quot;w3-dropdown-click&quot;&gt;<br>&nbsp;&nbsp;&nbsp;
 &lt;a href=&quot;#&quot; class=&quot;w3-bar-item w3-button&quot; onclick=&quot;myDropFunc()&quot;&gt;Dropdown&lt;/a&gt;<br>&nbsp;&nbsp;&nbsp; &lt;div
 id=&quot;demoDrop&quot; class=&quot;w3-dropdown-content&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&lt;a href=&quot;#&quot; class=&quot;w3-bar-item w3-button&quot;&gt;Link&lt;/a&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;a href=&quot;#&quot;
-  class=&quot;w3-bar-item w3-button&quot;&gt;Link&lt;/a&gt;<br>&nbsp;&nbsp;&nbsp;
+&lt;a href=&quot;#&quot; class=&quot;w3-bar-item w3-button&quot;&gt;Ссылка&lt;/a&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;a href=&quot;#&quot;
+  class=&quot;w3-bar-item w3-button&quot;&gt;Ссылка&lt;/a&gt;<br>&nbsp;&nbsp;&nbsp;
 &lt;/div&gt;<br>&nbsp; &lt;/div&gt;<br>&nbsp; &lt;a href=&quot;#&quot; class=&quot;w3-bar-item
-  w3-button&quot;&gt;Link 2&lt;/a&gt; <br>&nbsp; &lt;a href=&quot;#&quot;
-  class=&quot;w3-bar-item w3-button&quot;&gt;Link 3&lt;/a&gt;<br>
+  w3-button&quot;&gt;Ссылка 2&lt;/a&gt; <br>&nbsp; &lt;a href=&quot;#&quot;
+  class=&quot;w3-bar-item w3-button&quot;&gt;Ссылка 3&lt;/a&gt;<br>
 &lt;/div&gt;</div>
 <p>
-<a target="_blank" href="tryit8615.html?filename=tryw3css_accordion_sidebar" class="w3-btn">Try it Yourself &raquo;</a>
+<a target="_blank" href="tryit8615.html?filename=tryw3css_accordion_sidebar" class="w3-btn">Попробуйте сами &raquo;</a>
 </p>
 </div>
 <hr>
 
-<h2>Animated Accordions</h2>
-<p>Use any of the w3-animate-<em>classes</em> to fade, zoom or slide in the accordion content:</p>
+<h2>Анимированные Аккордеоны</h2>
+<p>Используйте любой из w3-animate-<em>классов</em> для плавного появления, увеличения или скольжения содержимого аккордеона:</p>
 <div class="w3-light-grey">
-  <button onclick="myFunc('Demo17')" class="w3-padding-16 w3-button w3-block w3-left-align">Accordion</button>
+  <button onclick="myFunc('Demo17')" class="w3-padding-16 w3-button w3-block w3-left-align">Аккордеон</button>
   <div id="Demo17" class="w3-hide w3-animate-zoom">
-    <a class="w3-button w3-block w3-left-align" href="javascript:void(0)">Link 1</a>
-    <a class="w3-button w3-block w3-left-align" href="javascript:void(0)">Link 2</a>
-    <a class="w3-button w3-block w3-left-align" href="javascript:void(0)">Link 3</a>
+    <a class="w3-button w3-block w3-left-align" href="javascript:void(0)">Ссылка 1</a>
+    <a class="w3-button w3-block w3-left-align" href="javascript:void(0)">Ссылка 2</a>
+    <a class="w3-button w3-block w3-left-align" href="javascript:void(0)">Ссылка 3</a>
   </div>
 </div>
 
 <div class="w3-example">
-<h3>Example</h3>
+<h3>Пример</h3>
 <div class="w3-code notranslate htmlHigh">
-&lt;div id=&quot;Demo1&quot; class=&quot;w3-hide
-w3-animate-zoom&quot;&gt;</div>
+&lt;div id=&quot;Demo1&quot; class=&quot;w3-hide w3-animate-zoom&quot;&gt;</div>
 <p>
-<a class="w3-btn" href="tryit26a5.html?filename=tryw3css_accordion_animate" target="_blank">Try it Yourself &raquo;</a>
+<a class="w3-btn" href="tryit26a5.html?filename=tryw3css_accordion_animate" target="_blank">Попробуйте сами &raquo;</a>
 </p>
 </div>
 
@@ -710,7 +693,7 @@ function myFunc(id) {
 }
 </script>
 
-<br>
+<hr>
 <div class="w3-clear nextprev">
 <a class="w3-left w3-btn" href="w3css_dropdowns.html">&#10094; Prev</a>
 <a class="w3-right w3-btn" href="w3css_navigation.html">Next &#10095;</a>
@@ -723,7 +706,7 @@ function myFunc(id) {
 <script>
 var disqus_config = function () {
 this.page.url = w3schoolsrus.github.io; // канонический URL страницы
-this.page.identifier = w3schoolsrus.github.io / w3css / w3css_.html; // уникальный идентификатор страницы
+this.page.identifier = w3schoolsrus.github.io / w3css / w3css_accordions.html; // уникальный идентификатор страницы
 };
 (function() { // Не редактировать ниже этой линии
 var d = document, s = d.createElement('script');
