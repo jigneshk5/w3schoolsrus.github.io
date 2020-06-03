@@ -1,6 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en-US">
-<head><title>C# Tutorial (C Sharp)</title>
+
+<!-- Mirrored from www.w3schools.com/cs/cs_classes.asp by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 06 Dec 2019 18:41:29 GMT -->
+<head>
+<title>C# Classes and Objects</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="Keywords" content="HTML,CSS,JavaScript,SQL,PHP,jQuery,XML,DOM,Bootstrap,Python,Java,Web development,W3C,tutorials,programming,training,learning,quiz,primer,lessons,references,examples,exercises,source code,colors,demos,tips">
@@ -87,7 +91,7 @@ width:204px;
 position:fixed;
 top:0;
 padding-top:112px;
-padding-bottom:0;
+padding-bottom:0;    
 height:100%;
 width:220px;
 background-color:transparent;
@@ -185,7 +189,7 @@ box-shadow:0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 #sidenav h2 {font-size:26px;width:100%;}
 #sidenav a {padding:3px 2px 3px 24px;font-size:17px}
-#leftmenuinner {
+#leftmenuinner {  
 overflow:auto;
 -webkit-overflow-scrolling:touch;
 height:100%;
@@ -272,7 +276,7 @@ a.btnsmall:active,a.btnsmall:hover {color:#4CAF50;background-color:#ffffff}
 .csspropertycolor{color:red}
 .csspropertyvaluecolor{color:mediumblue}
 .cssdelimitercolor{color:black}
-.cssimportantcolor{color:red}
+.cssimportantcolor{color:red}  
 .jscolor{color:black}
 .jskeywordcolor{color:mediumblue}
 .jsstringcolor{color:brown}
@@ -293,16 +297,16 @@ a.btnsmall:active,a.btnsmall:hover {color:#4CAF50;background-color:#ffffff}
 .phpkeywordcolor{color:mediumblue}
 .phpglobalcolor{color:goldenrod}
 .phpstringcolor{color:brown}
-.phpnumbercolor{color:red}
+.phpnumbercolor{color:red}  
 .pythoncolor{color:black}
 .pythonkeywordcolor{color:mediumblue}
 .pythonstringcolor{color:brown}
-.pythonnumbercolor{color:red}
+.pythonnumbercolor{color:red}  
 .angularstatementcolor{color:red}
 .sqlcolor{color:black}
 .sqlkeywordcolor{color:mediumblue}
 .sqlstringcolor{color:brown}
-.sqlnumbercolor{color:}
+.sqlnumbercolor{color:} 
 .darktheme .w3-code{background-color:rgb(40,44,52);color:white;border-left-color:rgb(40,44,52)}
 .darktheme .w3-example pre{background-color:rgb(40,44,52)!important;border-left-color:rgb(40,44,52)}
 .darktheme .tagcolor{color:#88ccbb/*green2*/!important}
@@ -563,10 +567,10 @@ function fix_stickyad() {
   var elem = document.getElementById("stickyadcontainer");
   if (!elem) {return false;}
   if (document.getElementById("skyscraper")) {
-    var skyWidth = Number(w3_getStyleValue(document.getElementById("skyscraper"), "width").replace("px", ""));
+    var skyWidth = Number(w3_getStyleValue(document.getElementById("skyscraper"), "width").replace("px", ""));  
     }
   else {
-    var skyWidth = Number(w3_getStyleValue(document.getElementById("right"), "width").replace("px", ""));
+    var skyWidth = Number(w3_getStyleValue(document.getElementById("right"), "width").replace("px", ""));  
   }
   elem.style.width = skyWidth + "px";
   if (window.innerWidth <= 992) {
@@ -586,7 +590,7 @@ function fix_stickyad() {
 
     }
   } else {
-    if ((docTop + 60) - stickypos < 0) {
+    if ((docTop + 60) - stickypos < 0) {  
       elem.style.position = "";
       elem.style.top = stickypos + "px";
       stickyadstatus = "";
@@ -614,6 +618,11 @@ function w3_getStyleValue(elmnt,style) {
   }
 }
 </script>
+<style type="text/css">
+.javaHigh {
+  text-align: right;
+}
+</style>
 </head>
 <body>
 <div class='w3-container top'>
@@ -665,7 +674,7 @@ function w3_getStyleValue(elmnt,style) {
           <a class="w3-bar-item w3-button" href='../graphics/svg_intro.html'>Learn SVG</a>
           <a class="w3-bar-item w3-button" href='../graphics/canvas_intro.html'>Learn Canvas</a>
           <a class="w3-bar-item w3-button" href='../howto/default.html'>Learn How To</a>
-          <a class="w3-bar-item w3-button" href='../sass/default.html'>Learn Sass</a>
+          <a class="w3-bar-item w3-button" href='../sass/default.html'>Learn Sass</a>          
           <div class="w3-hide-large w3-hide-small">
             <h3>XML</h3>
             <a class="w3-bar-item w3-button" href='../xml/default.html'>Learn XML</a>
@@ -700,7 +709,7 @@ function w3_getStyleValue(elmnt,style) {
           <a class="w3-bar-item w3-button" href='../php/default.html'>Learn PHP</a>
           <a class="w3-bar-item w3-button" href='../asp/default.html'>Learn ASP</a>
           <a class="w3-bar-item w3-button" href='../nodejs/default.html'>Learn Node.js</a>
-          <a class="w3-bar-item w3-button" href='../nodejs/nodejs_raspberrypi.html'>Learn Raspberry Pi</a>
+          <a class="w3-bar-item w3-button" href='../nodejs/nodejs_raspberrypi.html'>Learn Raspberry Pi</a>          
           <h3>Web Building</h3>
           <a class="w3-bar-item w3-button" href="../w3css/w3css_templates.html">Web Templates</a>
           <a class="w3-bar-item w3-button" href='../browsers/default.html'>Web Statistics</a>
@@ -892,96 +901,146 @@ function w3_getStyleValue(elmnt,style) {
         <!--<pre>main_leaderboard, all: [728,90][970,90][320,50][468,60]</pre>-->
         <div id="snhb-main_leaderboard-0"></div>
         <!-- adspace leaderboard -->
-
+       
       </div>
-<h1>C# <span class="color_h1">Tutorial</span></h1>
+<h1>C# <span class="color_h1">Classes and Objects</span></h1>
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="../default.html">&#10094; Home</a>
-<a class="w3-right w3-btn" href="cs_intro.html">Next &#10095;</a>
+<a class="w3-left w3-btn" href="cs_oop.html">&#10094; Previous</a>
+<a class="w3-right w3-btn" href="cs_class_members.html">Next &#10095;</a>
 </div>
-
-<div class="w3-panel w3-info intro">
-<p>C# (C-Sharp) is a programming language developed by Microsoft that runs on the .NET
-Framework.</p>
-<p>C# is used to develop web apps, desktop apps, mobile apps, games and much
-more.</p>
-<a class="w3-btn w3-margin-bottom" href="cs_intro.html">Start learning C# now &raquo;</a>
-</div>
-
+<hr>
+<h2>Classes and Objects</h2>
+<p>You learned from the previous chapter that C# is an object-oriented programming language.</p>
+<p>Everything in C# is associated with classes and objects, along with its 
+attributes and 
+methods. For example: in real life, a car is an object. The car has <strong>
+attributes</strong>, such as weight and color, and <strong>
+methods</strong>, such as drive and brake.</p>
+<p>A Class is like an object constructor, or a "blueprint" for creating objects.</p>
 <hr>
 
-<h2>Examples in Each Chapter</h2>
-<p>Our &quot;Show C#&quot; tool makes it easy to learn C#, it shows both the
-code and the result.</p>
+<h2>Create a Class</h2>
+<p>To create a class, use the <code class="w3-codespan">class</code> keyword:</p>
+<div class="w3-example">
+<p>Create a class named "<code class="w3-codespan">Car</code>&quot; with a variable <code class="w3-codespan">color</code>:</p>
+<pre class="language-csharp w3-white"><code>class Car 
+{
+&nbsp; string color = &quot;red&quot;;
+}</code></pre>
+</div>
+<div class="w3-note w3-panel">
+<p>When a variable is declared directly in a class, it is often referred to as a
+<strong>field</strong> (or attribute).</p>
+<p>It is not required, but it is a good practice to start with an uppercase first letter when naming classes. Also, it is common that the name of the C# file and the class matches, as it makes our code organized. However it is not required (like in Java).</p>
+</div>
+<hr>
 
+<h2>Create an Object</h2>
+<p>An object is created from a class. We have already created the class named <code class="w3-codespan">
+Car</code>, 
+so now we can use this to create objects.</p>
+<p>To create an object of <code class="w3-codespan">Car</code>, 
+specify the class name, followed by the object name, and use the keyword <code class="w3-codespan">new</code>:</p>
 <div class="w3-example">
 <h3>Example</h3>
-<pre class="language-csharp w3-white"><code>using System;
-
-namespace HelloWorld
+<p>Create an object called "<code class="w3-codespan">myObj</code>&quot; and use 
+it to print the value of 
+<code class="w3-codespan">color</code>:</p>
+<pre class="language-csharp w3-white" data-line="7,8"><code>class Car 
 {
-  class Program
+&nbsp; string color = &quot;red&quot;;
+
+&nbsp; static void Main(string[] args)
   {
-    static void Main(string[] args)
-    {
-      Console.WriteLine("Hello World!");
-    }
+&nbsp;&nbsp;&nbsp; Car <strong>myObj</strong> = new Car();
+&nbsp;&nbsp;&nbsp; Console.WriteLine(myObj.color);
+&nbsp; }
+}</code></pre>
+<p>
+<a target="_blank" class="w3-btn" href="showjavacac3.html?filename=demo_class">Run example &raquo;</a>
+</p>
+</div>
+<div class="w3-note w3-panel">
+<p>Note that we use the dot syntax (<code class="w3-codespan">.</code>) to access variables/fields inside a class (<code class="w3-codespan">myObj.color</code>). You will learn more about 
+fields in the next chapter.</p>
+</div>
+<hr>
+
+<h2>Multiple Objects</h2>
+<p>You can create multiple objects of one class:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<p>Create two objects of <code class="w3-codespan">Car</code>:</p>
+<pre class="language-csharp w3-white" data-line="7,8"><code>class Car
+{
+  string color = &quot;red&quot;;
+  static void Main(string[] args)
+  {
+    Car myObj1 = new Car();
+    Car myObj2 = new Car();
+    Console.WriteLine(myObj1.color);
+    Console.WriteLine(myObj2.color);
   }
 }</code></pre>
 <p>
-<a target="_blank" class="w3-btn" href="showjava4c57.html?filename=demo_helloworld">Run example &raquo;</a>
+<a target="_blank" class="w3-btn" href="showjava6510.html?filename=demo_class_multi_obj">Run example &raquo;</a>
 </p>
 </div>
 
-<p><b>Click on the &quot;Run example&quot; button to see how it works.</b></p>
-<div class="w3-panel w3-note">
-<p>We recommend reading this tutorial, in the sequence listed in the left menu.</p>
-</div>
 <hr>
 
-<div>
-<h2>C# Exercises</h2>
-<form autocomplete="off" spellcheck="false" id="w3-exerciseform" action="https://www.w3schools.com/cs/exercise.asp?filename=exercise_syntax1" method="post" target="_blank">
-<h2>Test Yourself With Exercises</h2>
-<div class="exercisewindow">
-<h2>Exercise:</h2>
-<p>Insert the missing part of the code below to output "Hello World!".</p>
-<div class="exerciseprecontainer">
-<pre style="overflow: auto;">
-static void <input name="ex1" maxlength="4" style="width: 45px;">(string[] args)
+<h2>Using Multiple Classes</h2>
+<p>You can also create an object of a class and access it in another class. This 
+is often used for better organization of classes (one class has all the 
+fields and methods, while the other class holds the <code class="w3-codespan">Main()</code> method (code to 
+be executed)). </p>
+<ul>
+<li>Car.cs</li>
+<li>Program.cs</li>
+</ul>
+<div class="w3-example">
+<h4>Car.cs</h4>
+<pre class="language-csharp w3-white"><code>class Car 
 {
-  <input name="ex2" maxlength="7" style="width: 75px;">.<input name="ex3" maxlength="9" style="width: 93px;">("Hello World!");
+&nbsp; public string color = &quot;red&quot;;
 }
-</pre>
+</code></pre>
 </div>
-<br>
-<button type="submit" class="w3-btn w3-margin-bottom">Submit Answer &raquo;</button>
-<p><a target="_blank" href="exercisef5ec.html?filename=exercise_syntax1">Start the Exercise</a></p>
+<div class="w3-example">
+<h4>Program.cs</h4>
+<pre class="language-csharp w3-white"><code>class Program
+{
+  static void Main(string[] args)
+  {
+    Car myObj = new Car();
+    Console.WriteLine(myObj.color);
+  }
+}</code></pre>
+<p><a target="_blank" class="w3-btn" href="showjava_classes84fa.html?filename=demo_classes">Run example &raquo;</a>
+</p>
 </div>
-</form>
+<div class="w3-note w3-panel">
+<p>Did you notice the <code class="w3-codespan">public</code> keyword? It is called an <strong>access modifier</strong>, 
+which specifies that the <code class="w3-codespan">color</code> variable/field of <code class="w3-codespan">Car</code> is accessible for other classes as well, such as <code class="w3-codespan">
+Program</code>.</p>
+<p>You will learn much more about <strong>access modifiers</strong> and <strong>classes/objects</strong> in the next chapters.</p>
 </div>
 <hr>
-
-<h2>Learn by Examples</h2>
-<p>Learn by examples! This tutorial supplements all explanations with clarifying examples.</p>
-<p><a href="cs_examples.html" class="w3-button w3-light-grey">See All C# Examples</a></p>
-<hr>
-<br>
 
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="../default.html">&#10094; Home</a>
-<a class="w3-right w3-btn" href="cs_intro.html">Next &#10095;</a>
+<a class="w3-left w3-btn" href="cs_oop.html">&#10094; Previous</a>
+<a class="w3-right w3-btn" href="cs_class_members.html">Next &#10095;</a>
 </div>
 </div>
 <div class="w3-col l2 m12" id="right">
 
 <div class="sidesection">
   <div id="skyscraper">
-
+  
     <!--<pre>wide_skyscraper, all: [160,600][300,600][320,50][120,600][300,1050]</pre>-->
     <div id="snhb-wide_skyscraper-0"></div>
     <!-- adspace wide-->
-
+  
   </div>
 </div>
 
@@ -1080,7 +1139,7 @@ Read More &raquo;</a>
 <div id="stickypos" class="sidesection" style="text-align:center;position:sticky;top:50px;">
   <div id="stickyadcontainer">
     <div style="position:relative;margin:auto;">
-
+      
       <!--<pre>sidebar_sticky, desktop: [120,600][160,600][300,600][300,250]</pre>-->
       <div id="snhb-sidebar_sticky-0"></div>
       <script>
@@ -1098,8 +1157,8 @@ Read More &raquo;</a>
                 snhb.queue.push(function(){  snhb.startAuction(["mid_content"]); });
               }
           }
-      </script>
-
+      </script>  
+      
     </div>
   </div>
 </div>
@@ -1144,14 +1203,14 @@ Read More &raquo;</a>
 </div>
 <hr>
 <div class="w3-light-grey w3-padding w3-margin-bottom" id="err_form" style="display:none;position:relative">
-<span onclick="this.parentElement.style.display='none'" class="w3-button w3-display-topright w3-large">&times;</span>
+<span onclick="this.parentElement.style.display='none'" class="w3-button w3-display-topright w3-large">&times;</span>     
 <h2>Your Suggestion:</h2>
 <form>
-<div class="w3-section">
+<div class="w3-section">      
 <label for="err_email">Your E-mail:</label>
 <input class="w3-input w3-border" type="text" style="margin-top:5px;width:100%" id="err_email" name="err_email">
 </div>
-<div class="w3-section">
+<div class="w3-section">      
 <label for="err_email">Page address:</label>
 <input class="w3-input w3-border" type="text" style="width:100%;margin-top:5px" id="err_url" name="err_url" disabled="disabled">
 </div>
@@ -1159,14 +1218,14 @@ Read More &raquo;</a>
 <label for="err_email">Description:</label>
 <textarea rows="10" class="w3-input w3-border" id="err_desc" name="err_desc" style="width:100%;margin-top:5px;resize:vertical;"></textarea>
 </div>
-<div class="form-group">
+<div class="form-group">        
 <button type="button" class="w3-button w3-dark-grey" onclick="sendErr()">Submit</button>
 </div>
 <br>
 </form>
 </div>
 <div class="w3-container w3-light-grey w3-padding" id="err_sent" style="display:none;position:relative">
-<span onclick="this.parentElement.style.display='none'" class="w3-button w3-display-topright">&times;</span>
+<span onclick="this.parentElement.style.display='none'" class="w3-button w3-display-topright">&times;</span>     
 <h2>Thank You For Helping Us!</h2>
 <p>Your message has been sent to W3Schools.</p>
 </div>
@@ -1239,8 +1298,8 @@ Read More &raquo;</a>
 Get Certified &raquo;</a>
 
 </div>
-</div>
-</div>
+</div>        
+</div>        
 
 <hr>
 <div class="w3-center w3-small w3-opacity">
@@ -1261,7 +1320,9 @@ While using this site, you agree to have read and accepted our <a href="../about
 <script src="../../translate.google.com/translate_a/elementa0d8.html?cb=googleTranslateElementInit"></script>
 <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>  
 <![endif]-->
 </body>
+
+<!-- Mirrored from www.w3schools.com/cs/cs_classes.asp by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 06 Dec 2019 18:41:29 GMT -->
 </html>
